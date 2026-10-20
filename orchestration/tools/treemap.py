@@ -3,7 +3,8 @@
 
 Each outer cell is a 64 KiB address block of SLPM_666.75; each inner cell is one declared code range,
 sized by bytes. Green ranges are accepted C++ (exact symbol match); grey ranges are still original-byte fallback.
-Prints the totals it drew so the README can quote the same numbers.
+Also rewrites the table between the progress markers in README.md, so the picture and the numbers always agree.
+The tracked git hook in .githooks/pre-commit runs this on every commit.
 """
 import json
 import sys
@@ -14,6 +15,7 @@ ROOT = r"C:\Users\KoZa\Documents\AGENTS"
 LAYOUT = ROOT + r"\Public\tools\kh2-reference\layout.tsv"
 RANGES = ROOT + r"\Codex\analysis\final-mix\native-build\compiler-range-verification.json"
 OUT_DEFAULT = ROOT + r"\Codex\docs\progress.svg"
+README = ROOT + r"\Codex\README.md"
 
 WIDTH, HEIGHT = 1200, 640
 BLOCK = 0x10000
@@ -71,6 +73,21 @@ def squarify(items, x, y, w, h):
     return out
 
 
+def update_readme(declared, accepted, done, total):
+    start, end = "<!-- progress:start -->", "<!-- progress:end -->"
+    with open(README, "r", encoding="utf-8") as handle:
+        text = handle.read()
+    head, rest = text.split(start, 1)
+    _, tail = rest.split(end, 1)
+    table = ("\n| Measure | Value |\n| --- | ---: |\n"
+             f"| Functions matching the original instruction for instruction | {accepted:,} |\n"
+             f"| Declared code ranges | {declared:,} |\n"
+             f"| Accepted share of declared code bytes | {done / total * 100:.1f}% ({done:,} of {total:,}) |\n"
+             f"| Original-byte fallback ranges remaining | {declared - accepted:,} (includes 4 zero-padded ranges) |\n")
+    with open(README, "w", encoding="utf-8", newline="") as handle:
+        handle.write(head + start + table + end + tail)
+
+
 def main():
     target = sys.argv[1] if len(sys.argv) > 1 else OUT_DEFAULT
     layout = read_layout()
@@ -117,6 +134,7 @@ def main():
 
     with open(target, "w", encoding="utf-8", newline="\n") as handle:
         handle.write("\n".join(svg) + "\n")
+    update_readme(len(layout), len(accepted), done_total, total)
     print(f"wrote {target}: {len(layout):,} ranges, {len(accepted):,} accepted, "
           f"{done_total:,}/{total:,} bytes ({done_total / total * 100:.1f}%)")
 

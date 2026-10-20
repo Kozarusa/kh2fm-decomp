@@ -1,0 +1,4 @@
+#!/bin/sh
+# Keep docs/progress.svg and the README progress table current. Never blocks a commit.
+python -I orchestration/tools/treemap.py >/dev/null 2>&1 && git add docs/progress.svg README.md
+exit 0
