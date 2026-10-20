@@ -1,0 +1,13 @@
+# 002811f8 blocked
+- Range: 002811f8, 60 bytes. Versions tried: 7. Best: v4 with 13 differing words (68/60 bytes).
+- First difference of the best version: `!! 002811fc: 19c00009  blez	t6,0x281224                                 | 002811fc: 19c0000a  blez	t6,281228 <func_002811f8+0x30>`
+- Changes tried:
+  - C21 rewrite mirroring the original block order, index initialised before the `if`, `while (value != key)`: v1 18 words.
+  - C21 same loop with the index initialised inside the `if (count > 0)` (drops the hoisted `move`/`addiu`): v2 17 words.
+  - C7(b) top-tested `while (index < count)` with the value test inside the body: v3 17 words.
+  - C21 `do { value = *table; if (value == key) break; table += 10; index++; } while (index < count);` inside the `if`: v4 13 words (best; registers t5/t6/t7, loop head, branch-likely back edge and `movn` tail all match).
+  - C7(a) index initialised before the guard with `s32* table`: v5 17 words (plain `bnez` back edge, `move` before `blez`).
+  - C8(a) conditional move written as `result = -1; if (index < count) result = index;` on top of v4: v6 13 words (byte-identical output to v4, no improvement).
+  - C7(b) loop condition `while (value != key && index < count)`: v7 17 words (guard tested twice, `li t6,1` tail).
+- Why it stops here: no improvement for 3 versions (v5 17, v6 13, v7 17 all failed to beat v4's 13; streak reached 3 with 1 of 8 versions unused).
+- Next hypothesis: the last 13 words are one hoisted `slt t7,t5,t6` in the preheader plus the `b`/`slt` trampoline the found path needs, because the end block starts at `li v0,-1` instead of the `slt`; try C11(c) `register T asm("$13")`/`asm("$14")` bindings for the index and count plus C9 a `volatile` reload so the return comparison is recomputed inside the merge block and the trampoline disappears.

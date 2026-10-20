@@ -1,0 +1,24 @@
+001bd618: compiled 80 bytes, target 80 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001bd618: 27bdfff0  addiu	sp,sp,-16                                  | 001bd618: 27bdfff0  addiu	sp,sp,-16
+   001bd61c: 30a500ff  andi	a1,a1,0xff                                  | 001bd61c: 30a500ff  andi	a1,a1,0xff
+   001bd620: ffbf0000  sd	ra,0(sp)                                      | 001bd620: ffbf0000  sd	ra,0(sp)
+   001bd624: 248d09e8  addiu	t5,a0,2536                                 | 001bd624: 248d09e8  addiu	t5,a0,2536
+   001bd628: 8c8e08c0  lw	t6,2240(a0)                                   | 001bd628: 8c8e08c0  lw	t6,2240(a0)
+   001bd62c: adc00000  sw	zero,0(t6)                                    | 001bd62c: adc00000  sw	zero,0(t6)
+   001bd630: 8c8f08c0  lw	t7,2240(a0)                                   | 001bd630: 8c8f08c0  lw	t7,2240(a0)
+   001bd634: 15ed000a  bne	t7,t5,0x1bd660                               | 001bd634: 15ed000a  bne	t7,t5,1bd660 <func_001bd618+0x48>
+   001bd638: 25eefffc  addiu	t6,t7,-4                                   | 001bd638: 25eefffc  addiu	t6,t7,-4
+   001bd63c: ac8008c0  sw	zero,2240(a0)                                 | 001bd63c: ac8008c0  sw	zero,2240(a0)
+   001bd640: 10a00005  beqz	a1,0x1bd658                                 | 001bd640: 10a00005  beqz	a1,1bd658 <func_001bd618+0x40>
+   001bd644: dfbf0000  ld	ra,0(sp)                                      | 001bd644: dfbf0000  ld	ra,0(sp)
+   001bd648: 24040004  li	a0,4                                          | 001bd648: 24040004  li	a0,4
+   001bd64c: 0000282d  move	a1,zero                                     | 001bd64c: 0000282d  move	a1,zero
+   001bd650: 080ae8ba  j	0x2ba2e8                                       | 001bd650: 080ae8ba  j	2ba2e8 <func_002ba2e8>
+   001bd654: 27bd0010  addiu	sp,sp,16                                   | 001bd654: 27bd0010  addiu	sp,sp,16
+   001bd658: 03e00008  jr	ra                                            | 001bd658: 03e00008  jr	ra
+   001bd65c: 27bd0010  addiu	sp,sp,16                                   | 001bd65c: 27bd0010  addiu	sp,sp,16
+   001bd660: 1000fff7  b	0x1bd640                                       | 001bd660: 1000fff7  b	1bd640 <func_001bd618+0x28>
+   001bd664: ac8e08c0  sw	t6,2240(a0)                                   | 001bd664: ac8e08c0  sw	t6,2240(a0)

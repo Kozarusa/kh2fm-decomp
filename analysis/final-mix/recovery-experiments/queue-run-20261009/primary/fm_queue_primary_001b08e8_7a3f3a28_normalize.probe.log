@@ -1,0 +1,4 @@
+In file included from recovery-experiments/fm_queue_primary_001b08e8_7a3f3a28_normalize/probe.cpp:2:
+src/kn/fvector.hpp:1:9: warning: #pragma once is obsolete
+Exact probe matches: 1/1
+Detailed proof: analysis/final-mix/recovery-experiments/queue-run-20261009/primary/fm_queue_primary_001b08e8_7a3f3a28_normalize.verification.json

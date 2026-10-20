@@ -1,0 +1,28 @@
+00179b68: compiled 84 bytes, target 96 bytes, exact=False
+Differing words: 21. First difference at instruction 0 (0-based).
+
+ORIGINAL                                                                | COMPILED
+!! 00179b68: 27bdffe0  addiu	sp,sp,-32                                  | 00179b68: 27bdfff0  addiu	sp,sp,-16
+   00179b6c: 2405000c  li	a1,12                                         | 00179b6c: 2405000c  li	a1,12
+   00179b70: ffb00000  sd	s0,0(sp)                                      | 00179b70: ffb00000  sd	s0,0(sp)
+!! 00179b74: ffb10008  sd	s1,8(sp)                                      | 00179b74: ffbf0008  sd	ra,8(sp)
+   00179b78: 0080802d  move	s0,a0                                       | 00179b78: 0080802d  move	s0,a0
+!! 00179b7c: ffbf0010  sd	ra,16(sp)                                     | 00179b7c: 3c040001  lui	a0,0x1
+!! 00179b80: 3c040001  lui	a0,0x1                                       | 00179b80: 0c069a88  jal	1a6a20 <func_001a6a20>
+!! 00179b84: 0000882d  move	s1,zero                                     | 00179b84: 34840002  ori	a0,a0,0x2
+!! 00179b88: 0c069a88  jal	0x1a6a20                                     | 00179b88: 8c4f0004  lw	t7,4(v0)
+!! 00179b8c: 34840002  ori	a0,a0,0x2                                    | 00179b8c: 15e00005  bnez	t7,179ba4 <func_00179b68+0x3c>
+!! 00179b90: 8c4f0004  lw	t7,4(v0)                                      | 00179b90: 0200202d  move	a0,s0
+!! 00179b94: 15e00005  bnez	t7,0x179bac                                 | 00179b94: 0c05daa4  jal	176a90 <func_00176a90>
+!! 00179b98: 0200202d  move	a0,s0                                       | 00179b98: 00000000  nop
+!! 00179b9c: 0c05daa4  jal	0x176a90                                     | 00179b9c: 10400002  beqz	v0,179ba8 <func_00179b68+0x40>
+!! 00179ba0: 00000000  nop                                              | 00179ba0: 0000782d  move	t7,zero
+!! 00179ba4: 10400003  beqz	v0,0x179bb4                                 | 00179ba4: 240f0001  li	t7,1
+!! 00179ba8: 0220102d  move	v0,s1                                       | 00179ba8: dfb00000  ld	s0,0(sp)
+!! 00179bac: 24110001  li	s1,1                                          | 00179bac: 01e0102d  move	v0,t7
+!! 00179bb0: 0220102d  move	v0,s1                                       | 00179bb0: dfbf0008  ld	ra,8(sp)
+!! 00179bb4: dfb00000  ld	s0,0(sp)                                      | 00179bb4: 03e00008  jr	ra
+!! 00179bb8: dfb10008  ld	s1,8(sp)                                      | 00179bb8: 27bd0010  addiu	sp,sp,16
+!! 00179bbc: dfbf0010  ld	ra,16(sp)                                     | 
+!! 00179bc0: 03e00008  jr	ra                                            | 
+!! 00179bc4: 27bd0020  addiu	sp,sp,32                                   | 

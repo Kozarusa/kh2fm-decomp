@@ -1,0 +1,33 @@
+001e7798: compiled 116 bytes, target 116 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001e7798: 24adfff0  addiu	t5,a1,-16                                  | 001e7798: 24adfff0  addiu	t5,a1,-16
+   001e779c: ada00008  sw	zero,8(t5)                                    | 001e779c: ada00008  sw	zero,8(t5)
+   001e77a0: ac8d0000  sw	t5,0(a0)                                      | 001e77a0: ac8d0000  sw	t5,0(a0)
+   001e77a4: 8c8e000c  lw	t6,12(a0)                                     | 001e77a4: 8c8e000c  lw	t6,12(a0)
+   001e77a8: 8caffff0  lw	t7,-16(a1)                                    | 001e77a8: 8caffff0  lw	t7,-16(a1)
+   001e77ac: 01ed7823  subu	t7,t7,t5                                    | 001e77ac: 01ed7823  subu	t7,t7,t5
+   001e77b0: 01cf7023  subu	t6,t6,t7                                    | 001e77b0: 01cf7023  subu	t6,t6,t7
+   001e77b4: ac8e000c  sw	t6,12(a0)                                     | 001e77b4: ac8e000c  sw	t6,12(a0)
+   001e77b8: 8dae0004  lw	t6,4(t5)                                      | 001e77b8: 8dae0004  lw	t6,4(t5)
+   001e77bc: 51c0000a  beqzl	t6,0x1e77e8                                | 001e77bc: 51c0000a  beqzl	t6,1e77e8 <func_001e7798+0x50>
+   001e77c0: 8da50000  lw	a1,0(t5)                                      | 001e77c0: 8da50000  lw	a1,0(t5)
+   001e77c4: 8dcf0008  lw	t7,8(t6)                                      | 001e77c4: 8dcf0008  lw	t7,8(t6)
+   001e77c8: 55e00007  bnezl	t7,0x1e77e8                                | 001e77c8: 55e00007  bnezl	t7,1e77e8 <func_001e7798+0x50>
+   001e77cc: 8da50000  lw	a1,0(t5)                                      | 001e77cc: 8da50000  lw	a1,0(t5)
+   001e77d0: 8caffff0  lw	t7,-16(a1)                                    | 001e77d0: 8caffff0  lw	t7,-16(a1)
+   001e77d4: 01c0682d  move	t5,t6                                       | 001e77d4: 01c0682d  move	t5,t6
+   001e77d8: adcf0000  sw	t7,0(t6)                                      | 001e77d8: adcf0000  sw	t7,0(t6)
+   001e77dc: 8ca5fff0  lw	a1,-16(a1)                                    | 001e77dc: 8ca5fff0  lw	a1,-16(a1)
+   001e77e0: acae0004  sw	t6,4(a1)                                      | 001e77e0: acae0004  sw	t6,4(a1)
+   001e77e4: 8da50000  lw	a1,0(t5)                                      | 001e77e4: 8da50000  lw	a1,0(t5)
+   001e77e8: 8caf0008  lw	t7,8(a1)                                      | 001e77e8: 8caf0008  lw	t7,8(a1)
+   001e77ec: 15e00005  bnez	t7,0x1e7804                                 | 001e77ec: 15e00005  bnez	t7,1e7804 <func_001e7798+0x6c>
+   001e77f0: 00000000  nop                                              | 001e77f0: 00000000  nop
+   001e77f4: 8caf0000  lw	t7,0(a1)                                      | 001e77f4: 8caf0000  lw	t7,0(a1)
+   001e77f8: adaf0000  sw	t7,0(t5)                                      | 001e77f8: adaf0000  sw	t7,0(t5)
+   001e77fc: 8ca50000  lw	a1,0(a1)                                      | 001e77fc: 8ca50000  lw	a1,0(a1)
+   001e7800: acad0004  sw	t5,4(a1)                                      | 001e7800: acad0004  sw	t5,4(a1)
+   001e7804: 03e00008  jr	ra                                            | 001e7804: 03e00008  jr	ra
+   001e7808: 00000000  nop                                              | 001e7808: 00000000  nop

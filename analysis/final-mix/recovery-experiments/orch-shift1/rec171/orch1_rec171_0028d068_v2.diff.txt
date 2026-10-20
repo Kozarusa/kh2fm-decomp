@@ -1,0 +1,28 @@
+0028d068: compiled 96 bytes, target 96 bytes, exact=False
+Differing words: 4. First difference at instruction 5 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0028d068: 04a10012  bgez	a1,0x28d0b4                                 | 0028d068: 04a10012  bgez	a1,28d0b4 <func_0028d068+0x4c>
+   0028d06c: 3c0e0036  lui	t6,0x36                                      | 0028d06c: 3c0e0036  lui	t6,0x36
+   0028d070: 3c0e0036  lui	t6,0x36                                      | 0028d070: 3c0e0036  lui	t6,0x36
+   0028d074: 8dcff404  lw	t7,-3068(t6)   ; = D_0035f404                 | 0028d074: 8dcff404  lw	t7,-3068(t6)   ; = D_0035f404
+   0028d078: 19e0000c  blez	t7,0x28d0ac                                 | 0028d078: 19e0000c  blez	t7,28d0ac <func_0028d068+0x44>
+!! 0028d07c: 0000682d  move	t5,zero                                     | 0028d07c: 01c0582d  move	t3,t6
+!! 0028d080: 01c0582d  move	t3,t6                                       | 0028d080: 0000682d  move	t5,zero
+   0028d084: 3c0c0036  lui	t4,0x36                                      | 0028d084: 3c0c0036  lui	t4,0x36
+   0028d088: 8d8ff40c  lw	t7,-3060(t4)   ; = D_0035f40c                 | 0028d088: 8d8ff40c  lw	t7,-3060(t4)   ; = D_0035f40c
+   0028d08c: 000d7080  sll	t6,t5,0x2                                    | 0028d08c: 000d7080  sll	t6,t5,0x2
+   0028d090: 25ad0001  addiu	t5,t5,1                                    | 0028d090: 25ad0001  addiu	t5,t5,1
+   0028d094: 01cf7021  addu	t6,t6,t7                                    | 0028d094: 01cf7021  addu	t6,t6,t7
+   0028d098: adc40000  sw	a0,0(t6)                                      | 0028d098: adc40000  sw	a0,0(t6)
+   0028d09c: 8d6ff404  lw	t7,-3068(t3)                                  | 0028d09c: 8d6ff404  lw	t7,-3068(t3)
+   0028d0a0: 01af782a  slt	t7,t5,t7                                     | 0028d0a0: 01af782a  slt	t7,t5,t7
+!! 0028d0a4: 55e0fff9  bnezl	t7,0x28d08c                                | 0028d0a4: 15e0fff8  bnez	t7,28d088 <func_0028d068+0x20>
+!! 0028d0a8: 8d8ff40c  lw	t7,-3060(t4)   ; = D_0035f40c                 | 0028d0a8: 00000000  nop
+   0028d0ac: 03e00008  jr	ra                                            | 0028d0ac: 03e00008  jr	ra
+   0028d0b0: 00000000  nop                                              | 0028d0b0: 00000000  nop
+   0028d0b4: 00057880  sll	t7,a1,0x2                                    | 0028d0b4: 00057880  sll	t7,a1,0x2
+   0028d0b8: 8dcdf40c  lw	t5,-3060(t6)                                  | 0028d0b8: 8dcdf40c  lw	t5,-3060(t6)
+   0028d0bc: 01ed7821  addu	t7,t7,t5                                    | 0028d0bc: 01ed7821  addu	t7,t7,t5
+   0028d0c0: 03e00008  jr	ra                                            | 0028d0c0: 03e00008  jr	ra
+   0028d0c4: ade40000  sw	a0,0(t7)                                      | 0028d0c4: ade40000  sw	a0,0(t7)

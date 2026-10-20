@@ -1,0 +1,184 @@
+
+SLPM_666.75:     file format elf32-littlemips
+
+Disassembly of section main:
+
+00203a40 <main+0x103a40>:
+  203a40:	2008ffff 	addi	t0,zero,-1
+  203a44:	48a81000 	qmtc2	t0,vf2
+  203a48:	4a00143f 	vrxor	R,vf2x
+  203a4c:	4b01043c 	vrnext.x	vf1,R
+  203a50:	4a00143f 	vrxor	R,vf2x
+  203a54:	4b01043c 	vrnext.x	vf1,R
+  203a58:	4a00143f 	vrxor	R,vf2x
+  203a5c:	4b01043c 	vrnext.x	vf1,R
+  203a60:	4a00143f 	vrxor	R,vf2x
+  203a64:	4b01043c 	vrnext.x	vf1,R
+  203a68:	4a00143f 	vrxor	R,vf2x
+  203a6c:	4b01043c 	vrnext.x	vf1,R
+  203a70:	4b02113c 	vitof0.x	vf2,vf2
+  203a74:	4b020868 	vadd.x	vf1,vf1,vf2
+  203a78:	482f0800 	qmfc2	t7,vf1
+  203a7c:	03e00008 	jr	ra
+  203a80:	448f0000 	mtc1	t7,$f0
+
+
+SLPM_666.75:     file format elf32-littlemips
+
+Disassembly of section main:
+
+00207260 <main+0x107260>:
+  207260:	2008ffff 	addi	t0,zero,-1
+  207264:	48a81000 	qmtc2	t0,vf2
+  207268:	4a00143f 	vrxor	R,vf2x
+  20726c:	4b01043c 	vrnext.x	vf1,R
+  207270:	4a00143f 	vrxor	R,vf2x
+  207274:	4b01043c 	vrnext.x	vf1,R
+  207278:	4a00143f 	vrxor	R,vf2x
+  20727c:	4b01043c 	vrnext.x	vf1,R
+  207280:	4a00143f 	vrxor	R,vf2x
+  207284:	4b01043c 	vrnext.x	vf1,R
+  207288:	4a00143f 	vrxor	R,vf2x
+  20728c:	4b01043c 	vrnext.x	vf1,R
+  207290:	4b02113c 	vitof0.x	vf2,vf2
+  207294:	4b020868 	vadd.x	vf1,vf1,vf2
+  207298:	482f0800 	qmfc2	t7,vf1
+  20729c:	03e00008 	jr	ra
+  2072a0:	448f0000 	mtc1	t7,$f0
+
+
+SLPM_666.75:     file format elf32-littlemips
+
+Disassembly of section main:
+
+00209fb8 <main+0x109fb8>:
+  209fb8:	2008ffff 	addi	t0,zero,-1
+  209fbc:	48a81000 	qmtc2	t0,vf2
+  209fc0:	4a00143f 	vrxor	R,vf2x
+  209fc4:	4b01043c 	vrnext.x	vf1,R
+  209fc8:	4a00143f 	vrxor	R,vf2x
+  209fcc:	4b01043c 	vrnext.x	vf1,R
+  209fd0:	4a00143f 	vrxor	R,vf2x
+  209fd4:	4b01043c 	vrnext.x	vf1,R
+  209fd8:	4a00143f 	vrxor	R,vf2x
+  209fdc:	4b01043c 	vrnext.x	vf1,R
+  209fe0:	4a00143f 	vrxor	R,vf2x
+  209fe4:	4b01043c 	vrnext.x	vf1,R
+  209fe8:	4b02113c 	vitof0.x	vf2,vf2
+  209fec:	4b020868 	vadd.x	vf1,vf1,vf2
+  209ff0:	482f0800 	qmfc2	t7,vf1
+  209ff4:	03e00008 	jr	ra
+  209ff8:	448f0000 	mtc1	t7,$f0
+
+
+SLPM_666.75:     file format elf32-littlemips
+
+Disassembly of section main:
+
+0020b410 <main+0x10b410>:
+  20b410:	2008ffff 	addi	t0,zero,-1
+  20b414:	48a81000 	qmtc2	t0,vf2
+  20b418:	4a00143f 	vrxor	R,vf2x
+  20b41c:	4b01043c 	vrnext.x	vf1,R
+  20b420:	4a00143f 	vrxor	R,vf2x
+  20b424:	4b01043c 	vrnext.x	vf1,R
+  20b428:	4a00143f 	vrxor	R,vf2x
+  20b42c:	4b01043c 	vrnext.x	vf1,R
+  20b430:	4a00143f 	vrxor	R,vf2x
+  20b434:	4b01043c 	vrnext.x	vf1,R
+  20b438:	4a00143f 	vrxor	R,vf2x
+  20b43c:	4b01043c 	vrnext.x	vf1,R
+  20b440:	4b02113c 	vitof0.x	vf2,vf2
+  20b444:	4b020868 	vadd.x	vf1,vf1,vf2
+  20b448:	482f0800 	qmfc2	t7,vf1
+  20b44c:	03e00008 	jr	ra
+  20b450:	448f0000 	mtc1	t7,$f0
+
+
+SLPM_666.75:     file format elf32-littlemips
+
+Disassembly of section main:
+
+00178cf8 <main+0x78cf8>:
+  178cf8:	248e0020 	addiu	t6,a0,32
+  178cfc:	4be0006c 	vsub.wxyz	vf1,vf0,vf0
+  178d00:	f9c10000 	sqc2	vf1,0(t6)
+  178d04:	8c8f0b44 	lw	t7,2884(a0)
+  178d08:	25ef0a30 	addiu	t7,t7,2608
+  178d0c:	4be0006c 	vsub.wxyz	vf1,vf0,vf0
+  178d10:	f9e10000 	sqc2	vf1,0(t7)
+  178d14:	24840010 	addiu	a0,a0,16
+  178d18:	4be0006c 	vsub.wxyz	vf1,vf0,vf0
+  178d1c:	f8810000 	sqc2	vf1,0(a0)
+  178d20:	03e00008 	jr	ra
+  178d24:	00000000 	nop
+
+
+SLPM_666.75:     file format elf32-littlemips
+
+Disassembly of section main:
+
+002f3d08 <main+0x1f3d08>:
+  2f3d08:	d8a40000 	lqc2	vf4,0(a1)
+  2f3d0c:	d8a50010 	lqc2	vf5,16(a1)
+  2f3d10:	d8a60020 	lqc2	vf6,32(a1)
+  2f3d14:	d8a70030 	lqc2	vf7,48(a1)
+  2f3d18:	24070004 	li	a3,4
+  2f3d1c:	d8c80000 	lqc2	vf8,0(a2)
+  2f3d20:	4be821bc 	vmulax.wxyz	ACC,vf4,vf8x
+  2f3d24:	4be828bd 	vmadday.wxyz	ACC,vf5,vf8y
+  2f3d28:	4be830be 	vmaddaz.wxyz	ACC,vf6,vf8z
+  2f3d2c:	4be83a4b 	vmaddw.wxyz	vf9,vf7,vf8w
+  2f3d30:	f8890000 	sqc2	vf9,0(a0)
+  2f3d34:	20e7ffff 	addi	a3,a3,-1
+  2f3d38:	20c60010 	addi	a2,a2,16
+  2f3d3c:	1407fff7 	bne	zero,a3,0x2f3d1c
+  2f3d40:	20840010 	addi	a0,a0,16
+  2f3d44:	03e00008 	jr	ra
+  2f3d48:	00000000 	nop
+
+
+SLPM_666.75:     file format elf32-littlemips
+
+Disassembly of section main:
+
+002f47d8 <main+0x1f47d8>:
+  2f47d8:	d8a40000 	lqc2	vf4,0(a1)
+  2f47dc:	d8a50010 	lqc2	vf5,16(a1)
+  2f47e0:	d8a60020 	lqc2	vf6,32(a1)
+  2f47e4:	d8a70030 	lqc2	vf7,48(a1)
+  2f47e8:	d8c80000 	lqc2	vf8,0(a2)
+  2f47ec:	4be821bc 	vmulax.wxyz	ACC,vf4,vf8x
+  2f47f0:	4be828bd 	vmadday.wxyz	ACC,vf5,vf8y
+  2f47f4:	4be830be 	vmaddaz.wxyz	ACC,vf6,vf8z
+  2f47f8:	4be83a4b 	vmaddw.wxyz	vf9,vf7,vf8w
+  2f47fc:	4be903bc 	vdiv	Q,vf0w,vf9w
+  2f4800:	4a0003bf 	vwaitq
+  2f4804:	4bc04a5c 	vmulq.xyz	vf9,vf9,Q
+  2f4808:	10e00002 	beqz	a3,0x2f4814
+  2f480c:	4bea497d 	vftoi4.wxyz	vf10,vf9
+  2f4810:	4a6a497c 	vftoi0.wz	vf10,vf9
+  2f4814:	03e00008 	jr	ra
+  2f4818:	f88a0000 	sqc2	vf10,0(a0)
+
+
+SLPM_666.75:     file format elf32-littlemips
+
+Disassembly of section main:
+
+00222568 <main+0x122568>:
+  222568:	2008ffff 	addi	t0,zero,-1
+  22256c:	48a81000 	qmtc2	t0,vf2
+  222570:	4a00143f 	vrxor	R,vf2x
+  222574:	4b02113c 	vitof0.x	vf2,vf2
+  222578:	4b01043c 	vrnext.x	vf1,R
+  22257c:	4b020868 	vadd.x	vf1,vf1,vf2
+  222580:	482f0800 	qmfc2	t7,vf1
+  222584:	448f0000 	mtc1	t7,$f0
+  222588:	3c0f0037 	lui	t7,0x37
+  22258c:	25ef0bc8 	addiu	t7,t7,3016
+  222590:	c5e10000 	lwc1	$f1,0(t7)
+  222594:	46010002 	mul.s	$f0,$f0,$f1
+  222598:	46000064 	cvt.w.s	$f1,$f0
+  22259c:	03e00008 	jr	ra
+  2225a0:	44020800 	mfc1	v0,$f1

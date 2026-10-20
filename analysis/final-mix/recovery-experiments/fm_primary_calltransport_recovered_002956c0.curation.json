@@ -1,0 +1,14 @@
+{
+  "probe_source": "analysis/final-mix/recovery-experiments/fm_primary_calltransport_v1_002956c0.cpp",
+  "probe_source_sha256": "ea37da5638efcd461fbbf01e8929efa603405e2fce744f3470c4c66681124b29",
+  "probe_proof_sha256": "f8ea866931712e4db0e5c9942406c904d8c21098aa89e531a346ab82b70529dd",
+  "curated_source": "analysis/final-mix/recovery-experiments/fm_primary_calltransport_recovered_002956c0.cpp",
+  "curated_source_sha256": "ea37da5638efcd461fbbf01e8929efa603405e2fce744f3470c4c66681124b29",
+  "selected_addresses": [
+    "002956c0"
+  ],
+  "exclusion_receipt": null,
+  "limitations": [
+    "Curated source still requires a new probe, registration and full build."
+  ]
+}

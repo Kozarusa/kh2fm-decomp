@@ -1,0 +1,28 @@
+0019eb60: compiled 96 bytes, target 96 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0019eb60: 27bdffe0  addiu	sp,sp,-32                                  | 0019eb60: 27bdffe0  addiu	sp,sp,-32
+   0019eb64: ffb00000  sd	s0,0(sp)                                      | 0019eb64: ffb00000  sd	s0,0(sp)
+   0019eb68: ffb10008  sd	s1,8(sp)                                      | 0019eb68: ffb10008  sd	s1,8(sp)
+   0019eb6c: ffbf0010  sd	ra,16(sp)                                     | 0019eb6c: ffbf0010  sd	ra,16(sp)
+   0019eb70: 0000802d  move	s0,zero                                     | 0019eb70: 0000802d  move	s0,zero
+   0019eb74: 3c110035  lui	s1,0x35                                      | 0019eb74: 3c110035  lui	s1,0x35
+   0019eb78: de2fecc8  ld	t7,-4920(s1)   ; = D_0034ecc8                 | 0019eb78: de2fecc8  ld	t7,-4920(s1)   ; = D_0034ecc8
+   0019eb7c: 020f7816  dsrlv	t7,t7,s0                                   | 0019eb7c: 020f7816  dsrlv	t7,t7,s0
+   0019eb80: 31ef0001  andi	t7,t7,0x1                                   | 0019eb80: 31ef0001  andi	t7,t7,0x1
+   0019eb84: 31ef00ff  andi	t7,t7,0xff                                  | 0019eb84: 31ef00ff  andi	t7,t7,0xff
+   0019eb88: 31ef00ff  andi	t7,t7,0xff                                  | 0019eb88: 31ef00ff  andi	t7,t7,0xff
+   0019eb8c: 51e00004  beqzl	t7,0x19eba0                                | 0019eb8c: 51e00004  beqzl	t7,19eba0 <func_0019eb60+0x40>
+   0019eb90: 26100001  addiu	s0,s0,1                                    | 0019eb90: 26100001  addiu	s0,s0,1
+   0019eb94: 0c057ba4  jal	0x15ee90                                     | 0019eb94: 0c057ba4  jal	15ee90 <func_0015ee90>
+   0019eb98: 0200202d  move	a0,s0                                       | 0019eb98: 0200202d  move	a0,s0
+   0019eb9c: 26100001  addiu	s0,s0,1                                    | 0019eb9c: 26100001  addiu	s0,s0,1
+   0019eba0: 2a0f0040  slti	t7,s0,64                                    | 0019eba0: 2a0f0040  slti	t7,s0,64
+   0019eba4: 55e0fff5  bnezl	t7,0x19eb7c                                | 0019eba4: 55e0fff5  bnezl	t7,19eb7c <func_0019eb60+0x1c>
+   0019eba8: de2fecc8  ld	t7,-4920(s1)   ; = D_0034ecc8                 | 0019eba8: de2fecc8  ld	t7,-4920(s1)   ; = D_0034ecc8
+   0019ebac: dfb00000  ld	s0,0(sp)                                      | 0019ebac: dfb00000  ld	s0,0(sp)
+   0019ebb0: dfb10008  ld	s1,8(sp)                                      | 0019ebb0: dfb10008  ld	s1,8(sp)
+   0019ebb4: dfbf0010  ld	ra,16(sp)                                     | 0019ebb4: dfbf0010  ld	ra,16(sp)
+   0019ebb8: 03e00008  jr	ra                                            | 0019ebb8: 03e00008  jr	ra
+   0019ebbc: 27bd0020  addiu	sp,sp,32                                   | 0019ebbc: 27bd0020  addiu	sp,sp,32

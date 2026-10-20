@@ -1,0 +1,11 @@
+#include "../common/types.h"
+extern "C" u32 func_00239bf8(s32, s32);
+
+void func_001ac2a8(s32* object, s32 first, s32 second, s32 third) {
+    if (first != 0) {
+        func_00239bf8((s32)(object + 3), first + 1);
+    }
+    object[2] = third;
+    object[0] = first;
+    object[1] = second;
+}

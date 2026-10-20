@@ -1,0 +1,30 @@
+00105de0: compiled 104 bytes, target 104 bytes, exact=False
+Differing words: 8. First difference at instruction 12 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00105de0: 27bdfff0  addiu	sp,sp,-16                                  | 00105de0: 27bdfff0  addiu	sp,sp,-16
+   00105de4: ffb00000  sd	s0,0(sp)                                      | 00105de4: ffb00000  sd	s0,0(sp)
+   00105de8: ffbf0008  sd	ra,8(sp)                                      | 00105de8: ffbf0008  sd	ra,8(sp)
+   00105dec: 0c040ece  jal	0x103b38                                     | 00105dec: 0c040ece  jal	103b38 <func_00103b38>
+   00105df0: 0080802d  move	s0,a0                                       | 00105df0: 0080802d  move	s0,a0
+   00105df4: 54400011  bnezl	v0,0x105e3c                                | 00105df4: 54400011  bnezl	v0,105e3c <func_00105de0+0x5c>
+   00105df8: dfb00000  ld	s0,0(sp)                                      | 00105df8: dfb00000  ld	s0,0(sp)
+   00105dfc: 3c0e0033  lui	t6,0x33                                      | 00105dfc: 3c0e0033  lui	t6,0x33
+   00105e00: 8dcfb984  lw	t7,-18044(t6)   ; = D_0032b984                | 00105e00: 8dcfb984  lw	t7,-18044(t6)   ; = D_0032b984
+   00105e04: 39ef0002  xori	t7,t7,0x2                                   | 00105e04: 39ef0002  xori	t7,t7,0x2
+   00105e08: 51e0000c  beqzl	t7,0x105e3c                                | 00105e08: 51e0000c  beqzl	t7,105e3c <func_00105de0+0x5c>
+   00105e0c: dfb00000  ld	s0,0(sp)                                      | 00105e0c: dfb00000  ld	s0,0(sp)
+!! 00105e10: 3c0e0034  lui	t6,0x34                                      | 00105e10: 3c0f0034  lui	t7,0x34
+   00105e14: dfbf0008  ld	ra,8(sp)                                      | 00105e14: dfbf0008  ld	ra,8(sp)
+!! 00105e18: add0cbac  sw	s0,-13396(t6)   ; = D_0033cbac                | 00105e18: adf0cbac  sw	s0,-13396(t7)   ; = D_0033cbac
+!! 00105e1c: 240d0001  li	t5,1                                          | 00105e1c: 240e0001  li	t6,1
+!! 00105e20: 3c0f0034  lui	t7,0x34                                      | 00105e20: 3c040034  lui	a0,0x34
+!! 00105e24: 3c040034  lui	a0,0x34                                      | 00105e24: 3c0f0034  lui	t7,0x34
+!! 00105e28: a1edcbb0  sb	t5,-13392(t7)   ; = D_0033cbb0                | 00105e28: dfb00000  ld	s0,0(sp)
+!! 00105e2c: 2484cb80  addiu	a0,a0,-13440   ; = D_0033cb80              | 00105e2c: a1eecbb0  sb	t6,-13392(t7)   ; = D_0033cbb0
+!! 00105e30: dfb00000  ld	s0,0(sp)                                      | 00105e30: 2484cb80  addiu	a0,a0,-13440   ; = D_0033cb80
+   00105e34: 08040820  j	0x102080                                       | 00105e34: 08040820  j	102080 <func_00102080>
+   00105e38: 27bd0010  addiu	sp,sp,16                                   | 00105e38: 27bd0010  addiu	sp,sp,16
+   00105e3c: dfbf0008  ld	ra,8(sp)                                      | 00105e3c: dfbf0008  ld	ra,8(sp)
+   00105e40: 03e00008  jr	ra                                            | 00105e40: 03e00008  jr	ra
+   00105e44: 27bd0010  addiu	sp,sp,16                                   | 00105e44: 27bd0010  addiu	sp,sp,16

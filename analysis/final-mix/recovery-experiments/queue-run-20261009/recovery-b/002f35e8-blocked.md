@@ -1,0 +1,5 @@
+# 002f35e8: branch-delay address materialization
+
+The complete original range is40 bytes. Canonical u32 indexing produces40 bytes but hoists the index shift before the comparison and uses t6/t7 rather than v0/v1. u64 indexing grows48 bytes. A guard read/write marker with the original argument as additional live input restores exact sltiu v0 and branch displacement, but leaves the index shift in the branch delay slot and the LUI later. Index/base markers add instructions; explicit native high/index controls preserve complete failures. No compiler impossibility is established. Next hypothesis: constrain the live table-address high component without preventing speculative LUI placement, and defer index materialization through a real guard-dependent expression so the original high-address LUI occupies the branch delay slot. Do not shorten the range or repeat simple fixed-base markers.
+
+002f35e8-blocked-evidence.json binds each complete original range, isolated source and compiler proof.

@@ -1,0 +1,22 @@
+001abba8: compiled 72 bytes, target 72 bytes, exact=False
+Differing words: 4. First difference at instruction 8 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001abba8: 27bdffe0  addiu	sp,sp,-32                                  | 001abba8: 27bdffe0  addiu	sp,sp,-32
+   001abbac: ffb00000  sd	s0,0(sp)                                      | 001abbac: ffb00000  sd	s0,0(sp)
+   001abbb0: ffb10008  sd	s1,8(sp)                                      | 001abbb0: ffb10008  sd	s1,8(sp)
+   001abbb4: 24900014  addiu	s0,a0,20                                   | 001abbb4: 24900014  addiu	s0,a0,20
+   001abbb8: ffbf0010  sd	ra,16(sp)                                     | 001abbb8: ffbf0010  sd	ra,16(sp)
+   001abbbc: 0080882d  move	s1,a0                                       | 001abbbc: 0080882d  move	s1,a0
+   001abbc0: 0c08eb36  jal	0x23acd8                                     | 001abbc0: 0c08eb36  jal	23acd8 <func_0023acd8>
+   001abbc4: 0200202d  move	a0,s0                                       | 001abbc4: 0200202d  move	a0,s0
+!! 001abbc8: 8e2e0010  lw	t6,16(s1)                                     | 001abbc8: 8e2e000c  lw	t6,12(s1)
+   001abbcc: 0200202d  move	a0,s0                                       | 001abbcc: 0200202d  move	a0,s0
+!! 001abbd0: 8e2f000c  lw	t7,12(s1)                                     | 001abbd0: 8e2f0010  lw	t7,16(s1)
+   001abbd4: dfbf0010  ld	ra,16(sp)                                     | 001abbd4: dfbf0010  ld	ra,16(sp)
+!! 001abbd8: ae0e014c  sw	t6,332(s0)                                    | 001abbd8: ae0e0148  sw	t6,328(s0)
+!! 001abbdc: ae0f0148  sw	t7,328(s0)                                    | 001abbdc: ae0f014c  sw	t7,332(s0)
+   001abbe0: dfb10008  ld	s1,8(sp)                                      | 001abbe0: dfb10008  ld	s1,8(sp)
+   001abbe4: dfb00000  ld	s0,0(sp)                                      | 001abbe4: dfb00000  ld	s0,0(sp)
+   001abbe8: 0808eb78  j	0x23ade0                                       | 001abbe8: 0808eb78  j	23ade0 <func_0023ade0>
+   001abbec: 27bd0020  addiu	sp,sp,32                                   | 001abbec: 27bd0020  addiu	sp,sp,32

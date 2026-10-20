@@ -1,0 +1,250 @@
+{
+  "worker_id": "worker-b",
+  "round": 7,
+  "role": "cooperating worker, self-selected disjoint fallback batch after round 6",
+  "written": "2026-10-08",
+  "previous_rounds": {
+    "round5": "5/5 exact (closed)",
+    "round6": "in progress: 0016e8f8 and 00288610 exact, 001ac700 2 words, 001002a0/0030f690/0030f6a0/0030f6b0 frameless-thunk blocker, 0021cda0 5 words, 002f1e00 gp-relative",
+    "round7": "8/10 exact; two compiler-level open (scratch-register choice, frame-pointer idiom)"
+  },
+  "selection_method": {
+    "picker": "analysis/final-mix/worker-coordination/worker-b/round-7/pick_targets.py",
+    "registered_rows_seen": 5511,
+    "screening": "only ranges that open with a real frame push (addiu sp,sp,-N) and contain at least one sd/ld; COP1/CO2/premul/bltz shapes excluded; every worker-b round 1-6 address and the 29 primary-reserved addresses excluded; size window 20-120 bytes",
+    "rationale": "rounds 5 and 6 showed this compiler reproduces framed integer functions almost word-for-word but always adds a 16-byte frame to frameless sibling-call thunks, so the budget goes to framed bodies only",
+    "post_selection": "each claimed range was decoded from the original ELF and its Ghidra record read before claiming"
+  },
+  "original_elf_sha256": "d869ce4b8edd61cb978c4ff9ede595fe4d7d7b21cbb96a145275217120d8bc87",
+  "claimed_addresses": [
+    {
+      "address": "003062a0",
+      "end": "003062c0",
+      "size": 32
+    },
+    {
+      "address": "003062c0",
+      "end": "003062e0",
+      "size": 32
+    },
+    {
+      "address": "003062e0",
+      "end": "00306300",
+      "size": 32
+    },
+    {
+      "address": "00306300",
+      "end": "00306320",
+      "size": 32
+    },
+    {
+      "address": "00366db0",
+      "end": "00366dd0",
+      "size": 32
+    },
+    {
+      "address": "002954e0",
+      "end": "00295504",
+      "size": 36
+    },
+    {
+      "address": "00308cd0",
+      "end": "00308cf4",
+      "size": 36
+    },
+    {
+      "address": "002b99a0",
+      "end": "002b99c8",
+      "size": 40
+    },
+    {
+      "address": "00196170",
+      "end": "00196198",
+      "size": 40
+    },
+    {
+      "address": "0023fb00",
+      "end": "0023fb28",
+      "size": 40
+    }
+  ],
+  "range_verification": {
+    "method": "sha256 of the declared byte range recomputed from the original ELF, cross-checked against /root/kh2fm-build/layout.tsv",
+    "helper": "analysis/final-mix/worker-coordination/worker-b/round-7/r7_dump_orig.py",
+    "evidence": "analysis/final-mix/worker-coordination/worker-b/round-7/r7_range_hashes.txt",
+    "disassembly": "analysis/final-mix/worker-coordination/worker-b/round-7/r7_orig_disasm.txt",
+    "raw_bytes": "analysis/final-mix/worker-coordination/worker-b/round-7/<address>.orig.hex"
+  },
+  "intended_outputs": {
+    "sources": "analysis/final-mix/recovery-experiments/fm_worker_b_round7_<address>_v<NN>.cpp",
+    "proofs": "analysis/final-mix/recovery-experiments/fm_worker_b_round7_<address>_v<NN>.verification.json",
+    "report": "analysis/final-mix/worker-coordination/worker-b/round-7/REPORT.md"
+  },
+  "compiler_use": {
+    "image": "kh2-local/ps2-compiler:3.2-ee-040921-objdiff",
+    "probe": "AGENTS/Public/tools/kh2-audit/probe_fm_source.py",
+    "isolation": "per-source scratch directory only; no shared stage input, layout.tsv, functions.tsv, manifest or build output is written",
+    "coordination": "compiler-status.json is advisory and primary-owned; re-read before each batch",
+    "not_done": "no full build, no docker restart, no stage synchronization, no shared-output mutation, no executable byte patching"
+  },
+  "ownership": {
+    "worker_b": "isolated proposals, worker claims, worker-b reports",
+    "primary": "active sources, functions.tsv, layout.tsv, stage synchronization, full builds, manifests, cumulative receipts, Ghidra, checkpoints, HANDOFF.md"
+  },
+  "acceptance_baseline": "5,511 equal-size exact matches (registration row count observed when this claim was written)",
+  "round7_result": {
+    "summary": "8/10 exact; two compiler-level open (scratch-register choice, frame-pointer idiom)",
+    "exact": {
+      "00196170": {
+        "status": "EXACT",
+        "source": "fm_worker_b_round7_00196170_solved.cpp",
+        "source_sha256": "5f91dc9097775384539aefea0d38a9676c8e7b1c7662d3e4669228ec3c9e3cc9",
+        "proof": "analysis/final-mix/recovery-experiments/fm_worker_b_round7_00196170_solved.verification.json",
+        "exact_match": true,
+        "boundary_agreement": true,
+        "compiled_size": 40,
+        "target_size": 40,
+        "differing_words": 0,
+        "mechanism": "global symbol constants under the non-carry rule (0x350330 / 0x1c61b00); the call's result stored straight to the global"
+      },
+      "0023fb00": {
+        "status": "EXACT",
+        "source": "fm_worker_b_round7_0023fb00_solved.cpp",
+        "source_sha256": "c6a22e3ba4ac96b19c1fad517871b81081590426a807f2cfec3da140847b6ba1",
+        "proof": "analysis/final-mix/recovery-experiments/fm_worker_b_round7_0023fb00_solved.verification.json",
+        "exact_match": true,
+        "boundary_agreement": true,
+        "compiled_size": 40,
+        "target_size": 40,
+        "differing_words": 0,
+        "mechanism": "two globals (0x36ebe0 / 0x36ebec) written around a void call; the tail store lands in the second half of the frame"
+      },
+      "003062a0": {
+        "status": "EXACT",
+        "source": "fm_worker_b_round7_003062a0_solved.cpp",
+        "source_sha256": "70e5c38f64ee722281b14118f1b94da89a1531d5453ee1420270e60a62b0ec35",
+        "proof": "analysis/final-mix/recovery-experiments/fm_worker_b_round7_003062a0_solved.verification.json",
+        "exact_match": true,
+        "boundary_agreement": true,
+        "compiled_size": 32,
+        "target_size": 32,
+        "differing_words": 0,
+        "mechanism": "bare `asm volatile(\"sync\")` after a void call emits the sync instruction verbatim"
+      },
+      "003062c0": {
+        "status": "EXACT",
+        "source": "fm_worker_b_round7_003062c0_solved.cpp",
+        "source_sha256": "8dd691ab2c642a2313d2a4462f8798731b3e927d500251ecc0a23a765c192623",
+        "proof": "analysis/final-mix/recovery-experiments/fm_worker_b_round7_003062c0_solved.verification.json",
+        "exact_match": true,
+        "boundary_agreement": true,
+        "compiled_size": 32,
+        "target_size": 32,
+        "differing_words": 0,
+        "mechanism": "same shape as 003062a0 (callee 0x003053d0)"
+      },
+      "003062e0": {
+        "status": "EXACT",
+        "source": "fm_worker_b_round7_003062e0_solved.cpp",
+        "source_sha256": "9df962b84c186ce0a62ac42c3cad1c9de62e0af7aa9775714d3fe3aa69440a5e",
+        "proof": "analysis/final-mix/recovery-experiments/fm_worker_b_round7_003062e0_solved.verification.json",
+        "exact_match": true,
+        "boundary_agreement": true,
+        "compiled_size": 32,
+        "target_size": 32,
+        "differing_words": 0,
+        "mechanism": "same shape as 003062a0 (callee 0x003053e0)"
+      },
+      "00306300": {
+        "status": "EXACT",
+        "source": "fm_worker_b_round7_00306300_solved.cpp",
+        "source_sha256": "419c16452c2b71a96df7ea252d730a85c8402e74574b9c822f5fbecd5bf16382",
+        "proof": "analysis/final-mix/recovery-experiments/fm_worker_b_round7_00306300_solved.verification.json",
+        "exact_match": true,
+        "boundary_agreement": true,
+        "compiled_size": 32,
+        "target_size": 32,
+        "differing_words": 0,
+        "mechanism": "same shape as 003062a0 (callee 0x003053f0)"
+      },
+      "00366db0": {
+        "status": "EXACT",
+        "source": "fm_worker_b_round7_00366db0_solved.cpp",
+        "source_sha256": "ed9442fd3e20f5fcae7745a4181ee1c40b3047a53d2ef4906d413f68dd694175",
+        "proof": "analysis/final-mix/recovery-experiments/fm_worker_b_round7_00366db0_solved.verification.json",
+        "exact_match": true,
+        "boundary_agreement": true,
+        "compiled_size": 32,
+        "target_size": 32,
+        "differing_words": 0,
+        "mechanism": "`u16` parameter yields `andi a0,a0,0xffff` in the call's delay slot, then `asm volatile(\"sync\")`"
+      },
+      "002954e0": {
+        "status": "EXACT",
+        "source": "fm_worker_b_round7_002954e0_solved.cpp",
+        "source_sha256": "1f8599294969142cf541f5b9827b9c408ace5362b71e05b064f598aeafedf29a",
+        "proof": "analysis/final-mix/recovery-experiments/fm_worker_b_round7_002954e0_solved.verification.json",
+        "exact_match": true,
+        "boundary_agreement": true,
+        "compiled_size": 36,
+        "target_size": 36,
+        "differing_words": 0,
+        "mechanism": "a trailing `asm volatile(\"\")` blocks GCC's sibling-call rewrite, keeping the second call a real jal"
+      }
+    },
+    "unresolved": {
+      "00308cd0": {
+        "status": "OPEN",
+        "best": "v05",
+        "compiled_size": 36,
+        "target_size": 36,
+        "differing_words": [
+          16,
+          24
+        ],
+        "difference": "compiled `lui t7,0x36` / `sw zero,0x60dc(t7)` vs target `lui v0,0x36` / `sw zero,0x60dc(v0)`",
+        "attempted": [
+          "plain u32 global",
+          "volatile u32 global",
+          "*(u32 *)&DAT = 0",
+          "trailing asm volatile(\"\")",
+          "s32 global"
+        ],
+        "reason": "single scratch-register choice for the symbol materialisation; no C spelling tried moves it from $t7 to $v0"
+      },
+      "002b99a0": {
+        "status": "OPEN",
+        "best": "v03",
+        "compiled_size": 24,
+        "target_size": 40,
+        "differing_words": [
+          4,
+          8,
+          12,
+          16,
+          20,
+          24,
+          28,
+          32,
+          36
+        ],
+        "difference": "target uses the s8 frame-pointer prologue (`sd s8,0(sp); move s8,sp; ... move sp,s8; ld s8,0(sp)`) and does not save ra; GCC emits a frameless body, or a 16-byte frame saving no callee-saved register",
+        "attempted": [
+          "plain global read",
+          "pointer + memory barrier",
+          "address-of-volatile-local to force a frame"
+        ],
+        "reason": "GCC 3.2 -O2 does not reproduce this leaf-with-frame-pointer idiom from C"
+      }
+    },
+    "cumulative_worker_b_exact": {
+      "round2": 4,
+      "round3": 3,
+      "round4": 5,
+      "round5": 5,
+      "round6": 2,
+      "round7": 8,
+      "total": 27
+    }
+  }
+}

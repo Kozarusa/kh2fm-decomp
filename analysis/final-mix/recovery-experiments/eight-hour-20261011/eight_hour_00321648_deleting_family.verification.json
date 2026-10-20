@@ -1,0 +1,18 @@
+{
+  "source_sha256": "edc8dd6e102645f7c80913a0a21bb40fba9ea4676e8edc3e4f486e79a79c721c",
+  "source": "analysis/final-mix/recovery-experiments/eight-hour-20261011/eight_hour_00321648_deleting_family.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "00321648",
+      "symbol": "_Z13func_00321648Pj",
+      "compiled_size": 52,
+      "target_size": 52,
+      "ghidra_body_size": 52,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd2735000f3c0000b0ff6025ef250800bfff00008facb447070c2d8080002d2000020800bfdf0000b0df081904081000bd27",
+      "target_hex": "f0ffbd2735000f3c0000b0ff6025ef250800bfff00008facb447070c2d8080002d2000020800bfdf0000b0df081904081000bd27"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "wp_dir": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\orch-shift1\\rec181",
+  "start": "2026-10-18T12:37:00Z",
+  "reviewed": [
+    "002a6878"
+  ],
+  "blocked_reports": [
+    "002a00f0-BLOCKED.md",
+    "002a1ec8-BLOCKED.md",
+    "002a6308-BLOCKED.md",
+    "002a74c0-BLOCKED.md",
+    "002a7678-BLOCKED.md"
+  ],
+  "results": [
+    {
+      "level": "PASS",
+      "address": "002a6878",
+      "detail": "112 bytes exact; source orch1_rec181_002a6878_v3.cpp"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/DEVIATIONS.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/GPT6-MEMORY.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/HANDOFF.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/ORCHESTRATION.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/PROGRESS.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/ROSTER.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/briefs/REC-template.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/briefs/rec183.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/briefs/rec184.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/tools/record_checkpoint_docs.py"
+    }
+  ]
+}

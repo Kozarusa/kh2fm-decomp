@@ -1,0 +1,28 @@
+002b9bd0: compiled 96 bytes, target 96 bytes, exact=False
+Differing words: 5. First difference at instruction 17 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   002b9bd0: 27bdfff0  addiu	sp,sp,-16                                  | 002b9bd0: 27bdfff0  addiu	sp,sp,-16
+   002b9bd4: ffbf0000  sd	ra,0(sp)                                      | 002b9bd4: ffbf0000  sd	ra,0(sp)
+   002b9bd8: 0c0ada47  jal	0x2b691c                                     | 002b9bd8: 0c0ada47  jal	2b691c <func_002b691c>
+   002b9bdc: 0000202d  move	a0,zero                                     | 002b9bdc: 0000202d  move	a0,zero
+   002b9be0: 0c0aef78  jal	0x2bbde0                                     | 002b9be0: 0c0aef78  jal	2bbde0 <func_002bbde0>
+   002b9be4: 00000000  nop                                              | 002b9be4: 00000000  nop
+   002b9be8: 0c0aeb30  jal	0x2bacc0                                     | 002b9be8: 0c0aeb30  jal	2bacc0 <func_002bacc0>
+   002b9bec: 00000000  nop                                              | 002b9bec: 00000000  nop
+   002b9bf0: 0c0ae6b4  jal	0x2b9ad0                                     | 002b9bf0: 0c0ae6b4  jal	2b9ad0 <func_002b9ad0>
+   002b9bf4: 00000000  nop                                              | 002b9bf4: 00000000  nop
+   002b9bf8: 0c0ae720  jal	0x2b9c80                                     | 002b9bf8: 0c0ae720  jal	2b9c80 <func_002b9c80>
+   002b9bfc: 00000000  nop                                              | 002b9bfc: 00000000  nop
+   002b9c00: 0c0af54e  jal	0x2bd538                                     | 002b9c00: 0c0af54e  jal	2bd538 <func_002bd538>
+   002b9c04: 00000000  nop                                              | 002b9c04: 00000000  nop
+   002b9c08: 3c0f0033  lui	t7,0x33                                      | 002b9c08: 3c0f0033  lui	t7,0x33
+   002b9c0c: dfbf0000  ld	ra,0(sp)                                      | 002b9c0c: dfbf0000  ld	ra,0(sp)
+   002b9c10: 8de4b91c  lw	a0,-18148(t7)   ; = D_0032b91c                | 002b9c10: 8de4b91c  lw	a0,-18148(t7)   ; = D_0032b91c
+!! 002b9c14: 3c060007  lui	a2,0x7                                       | 002b9c14: 3c07002c  lui	a3,0x2c
+!! 002b9c18: 3c07002c  lui	a3,0x2c                                      | 002b9c18: 3c060007  lui	a2,0x7
+!! 002b9c1c: 0000282d  move	a1,zero                                     | 002b9c1c: 24e79c60  addiu	a3,a3,-25504   ; = D_002b9c60
+!! 002b9c20: 24e79c60  addiu	a3,a3,-25504   ; = D_002b9c60              | 002b9c20: 34c6a12a  ori	a2,a2,0xa12a
+!! 002b9c24: 34c6a12a  ori	a2,a2,0xa12a                                 | 002b9c24: 0000282d  move	a1,zero
+   002b9c28: 080409e2  j	0x102788                                       | 002b9c28: 080409e2  j	102788 <func_00102788>
+   002b9c2c: 27bd0010  addiu	sp,sp,16                                   | 002b9c2c: 27bd0010  addiu	sp,sp,16

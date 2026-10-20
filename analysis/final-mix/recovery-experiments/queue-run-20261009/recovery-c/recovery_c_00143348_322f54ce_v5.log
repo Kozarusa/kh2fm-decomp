@@ -1,0 +1,3 @@
+Exact probe matches: 0/1
+Detailed proof: analysis/final-mix/recovery-experiments/queue-run-20261009/recovery-c/recovery_c_00143348_322f54ce_v5.verification.json
+recovery-experiments/recovery_c_00143348_322f54ce_v5/probe.cpp:9:2: warning: no newline at end of file

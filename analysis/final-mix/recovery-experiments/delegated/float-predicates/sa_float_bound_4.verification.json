@@ -1,0 +1,18 @@
+{
+  "source_sha256": "3852c50dcbbc54a0fafbc982d521d1d2973b61ebc71d8782ac10c4428ef9855c",
+  "source": "analysis/final-mix/recovery-experiments/delegated/float-predicates/sa_float_bound_4.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "0010f6f8",
+      "symbol": "_Z13func_0010f6f8fj",
+      "compiled_size": 80,
+      "target_size": 76,
+      "ghidra_body_size": 76,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "f8078f8c0400ef310f00e0152d1000008c04848c0c00801000000000840180c480018e8c2000804602000c466400004600080f44010002242a70cf010200c015000000002d1000000800e00300000000",
+      "target_hex": "f8078f8c0400ef310e00e0152d1000008c04848c0b00801000000000840180c480018e8c2000804602000c466400004600080f442a70cf010200c015010002242d1000000800e00300000000"
+    }
+  ]
+}

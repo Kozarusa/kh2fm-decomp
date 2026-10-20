@@ -1,0 +1,14 @@
+{
+  "probe_source": "analysis/final-mix/recovery-experiments/eight-hour-20261011/eight_hour_0014f030_scalar_interpolation_2.cpp",
+  "probe_source_sha256": "7cb356c194f927ee0a754024db4dbb275857993acce53979aff5d4331c350ab6",
+  "probe_proof_sha256": "7bfae61b0927f88f065b4560579d6bb53942fe1110ee324f6b8b30db30aaa614",
+  "curated_source": "analysis/final-mix/recovery-experiments/fm_primary_queueetaprime_recovered_0014f030.cpp",
+  "curated_source_sha256": "19eafa83c33598c71562ce586190ca423676cd83c91070554e9366cbc98f957b",
+  "selected_addresses": [
+    "0014f030"
+  ],
+  "exclusion_receipt": null,
+  "limitations": [
+    "Curated source still requires a new probe, registration and full build."
+  ]
+}

@@ -1,0 +1,19 @@
+#include "../common/types.h"
+extern "C" u8* volatile D_0035dcf4;
+void func_0022e368(u8* object) {
+    register s32 count asm("$13") = 0; // why: original keeps loop count in t5
+    register s32 offset asm("$12") = 0; // why: original keeps byte offset in t4
+    do {
+        u8* pointer = D_0035dcf4 + offset;
+        ++count;
+        if (*(volatile s32*)(pointer + 4) == -1) {
+            *(volatile s32*)(pointer + 4) = *(s16*)(object + 8);
+            *(volatile s32*)(D_0035dcf4 + offset) = *(s16*)(object + 10);
+            *(volatile u16*)(D_0035dcf4 + offset + 8) = *(u16*)(object + 12);
+            *(volatile u16*)(D_0035dcf4 + offset + 46) = *(u16*)(object + 4);
+            *(volatile s32*)(D_0035dcf4 + offset + 12) = 0;
+            return;
+        }
+        offset += 52;
+    } while (count < 96);
+}

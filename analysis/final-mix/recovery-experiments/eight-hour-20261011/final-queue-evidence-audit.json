@@ -1,0 +1,316 @@
+{
+  "live_database_integrity": "ok",
+  "backup_integrity": "ok",
+  "backup_sha256": "fa30d31cae7ba7dbf3e744f8594e958b1ab8d7ccea0a385497ac908bc389f040",
+  "backup": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\eight-hour-20261011\\recovery-queue-final.sqlite3",
+  "eight_medium_blocker_reports_verified": [
+    {
+      "address": "0010cce0",
+      "state": "ready",
+      "queue": "medium-register-and-branch",
+      "report": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\eight-hour-20261011\\0010cce0-medium-blocker.md",
+      "report_sha256": "b163c99498eefaf6a58d0146f22206eab4043456752bef1bf695238dc00e3ca8"
+    },
+    {
+      "address": "00170ee8",
+      "state": "ready",
+      "queue": "medium-register-and-branch",
+      "report": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\eight-hour-20261011\\00170ee8-medium-blocker.md",
+      "report_sha256": "a55d4864cd7a113b06c732993e00e59a9ab4ff55ba3ce8d1157eaa100467ea50"
+    },
+    {
+      "address": "00160488",
+      "state": "ready",
+      "queue": "medium-register-and-branch",
+      "report": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\eight-hour-20261011\\00160488-medium-blocker.md",
+      "report_sha256": "815e1b0f1cc194c6fb16f6582612336eaed285b063e78a28133a18fb54720c35"
+    },
+    {
+      "address": "0018f0b0",
+      "state": "ready",
+      "queue": "medium-register-and-branch",
+      "report": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\eight-hour-20261011\\0018f0b0-medium-blocker.md",
+      "report_sha256": "c362929600e607a63d15ac82b2b44e07374c914134856da03def0d4f4b7915d6"
+    },
+    {
+      "address": "00161548",
+      "state": "ready",
+      "queue": "medium-register-and-branch",
+      "report": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\eight-hour-20261011\\00161548-medium-blocker.md",
+      "report_sha256": "e96777968a26b960abad8f8ac5bc0f2cc6060d3b3084fa71a397d696462d1668"
+    },
+    {
+      "address": "0016ffc8",
+      "state": "ready",
+      "queue": "medium-register-and-branch",
+      "report": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\eight-hour-20261011\\0016ffc8-medium-blocker.md",
+      "report_sha256": "bcb3fca6160aa8de337ce62e5f80537ea68a03e47cffb20802738cf045fa9faf"
+    },
+    {
+      "address": "0018dbd8",
+      "state": "ready",
+      "queue": "medium-register-and-branch",
+      "report": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\eight-hour-20261011\\0018dbd8-medium-blocker.md",
+      "report_sha256": "2563419d9ad9cb4baa5a3f6636578a1eba29a201d1a18e9186648613a1bb5db2"
+    },
+    {
+      "address": "00192818",
+      "state": "ready",
+      "queue": "medium-register-and-branch",
+      "report": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\eight-hour-20261011\\00192818-medium-blocker.md",
+      "report_sha256": "bdda490d06b9e3c6901afe6dcd692e3f86ce663f45cce4497c93db3a1be8ec96"
+    }
+  ],
+  "state_counts": [
+    {
+      "state": "accepted",
+      "queue": "general",
+      "count": 380
+    },
+    {
+      "state": "ready",
+      "queue": "address-prologue-scheduling",
+      "count": 4
+    },
+    {
+      "state": "ready",
+      "queue": "aggregate-abi-layout",
+      "count": 1
+    },
+    {
+      "state": "ready",
+      "queue": "allocator-pointer-lifetimes",
+      "count": 1
+    },
+    {
+      "state": "ready",
+      "queue": "argument-register-scheduling",
+      "count": 2
+    },
+    {
+      "state": "ready",
+      "queue": "bitmap-index-register-lifetime",
+      "count": 1
+    },
+    {
+      "state": "ready",
+      "queue": "branch-delay-address-lifetime",
+      "count": 2
+    },
+    {
+      "state": "ready",
+      "queue": "branch-delay-lifetime",
+      "count": 2
+    },
+    {
+      "state": "ready",
+      "queue": "byte-prologue-scheduling",
+      "count": 1
+    },
+    {
+      "state": "ready",
+      "queue": "callback-address-scheduling",
+      "count": 1
+    },
+    {
+      "state": "ready",
+      "queue": "conditional-argument-transport",
+      "count": 1
+    },
+    {
+      "state": "ready",
+      "queue": "constructor-buffer-alias",
+      "count": 1
+    },
+    {
+      "state": "ready",
+      "queue": "constructor-final-store-alias",
+      "count": 2
+    },
+    {
+      "state": "ready",
+      "queue": "context-save-runtime",
+      "count": 2
+    },
+    {
+      "state": "ready",
+      "queue": "control-transfer",
+      "count": 1
+    },
+    {
+      "state": "ready",
+      "queue": "digit-loop-scheduling",
+      "count": 1
+    },
+    {
+      "state": "ready",
+      "queue": "dispatch-result-lifetime",
+      "count": 1
+    },
+    {
+      "state": "ready",
+      "queue": "float-address-prologue",
+      "count": 1
+    },
+    {
+      "state": "ready",
+      "queue": "float-boolean-epilogue",
+      "count": 1
+    },
+    {
+      "state": "ready",
+      "queue": "float-branch-layout",
+      "count": 1
+    },
+    {
+      "state": "ready",
+      "queue": "float-condition-block-layout",
+      "count": 1
+    },
+    {
+      "state": "ready",
+      "queue": "float-conversion-scheduling",
+      "count": 1
+    },
+    {
+      "state": "ready",
+      "queue": "float-epilogues",
+      "count": 1
+    },
+    {
+      "state": "ready",
+      "queue": "float-predicate-lifetimes",
+      "count": 1
+    },
+    {
+      "state": "ready",
+      "queue": "float-result-register-allocation",
+      "count": 1
+    },
+    {
+      "state": "ready",
+      "queue": "general",
+      "count": 5191
+    },
+    {
+      "state": "ready",
+      "queue": "header-mirror-scheduling",
+      "count": 1
+    },
+    {
+      "state": "ready",
+      "queue": "indexed-bit-scheduling",
+      "count": 1
+    },
+    {
+      "state": "ready",
+      "queue": "indexed-header-copy",
+      "count": 1
+    },
+    {
+      "state": "ready",
+      "queue": "indexed-table-scheduling",
+      "count": 1
+    },
+    {
+      "state": "ready",
+      "queue": "initialization-store-groups",
+      "count": 1
+    },
+    {
+      "state": "ready",
+      "queue": "linked-list-memory-lifetime",
+      "count": 1
+    },
+    {
+      "state": "ready",
+      "queue": "loop-save-order",
+      "count": 1
+    },
+    {
+      "state": "ready",
+      "queue": "medium-register-and-branch",
+      "count": 8
+    },
+    {
+      "state": "ready",
+      "queue": "primary-store-epilogues",
+      "count": 2
+    },
+    {
+      "state": "ready",
+      "queue": "prologue-load-scheduling",
+      "count": 1
+    },
+    {
+      "state": "ready",
+      "queue": "prologue-save-order",
+      "count": 4
+    },
+    {
+      "state": "ready",
+      "queue": "prologue-scheduling",
+      "count": 1
+    },
+    {
+      "state": "ready",
+      "queue": "sdk-callback-prologue",
+      "count": 1
+    },
+    {
+      "state": "ready",
+      "queue": "sdk-frame-abi",
+      "count": 1
+    },
+    {
+      "state": "ready",
+      "queue": "sdk-list-branch-layout",
+      "count": 4
+    },
+    {
+      "state": "ready",
+      "queue": "sdk-prologue-operation-scheduling",
+      "count": 1
+    },
+    {
+      "state": "ready",
+      "queue": "sdk-range-guard-branch-layout",
+      "count": 1
+    },
+    {
+      "state": "ready",
+      "queue": "structured-startup-assembly-review",
+      "count": 2
+    },
+    {
+      "state": "ready",
+      "queue": "table-initializer-layout",
+      "count": 1
+    },
+    {
+      "state": "ready",
+      "queue": "tail-call-frame-elision",
+      "count": 1
+    },
+    {
+      "state": "ready",
+      "queue": "teardown-global-allocation",
+      "count": 1
+    },
+    {
+      "state": "ready",
+      "queue": "variadic-frame-layout",
+      "count": 1
+    },
+    {
+      "state": "ready",
+      "queue": "wrapper-prologue-save-order",
+      "count": 2
+    },
+    {
+      "state": "reserved",
+      "queue": "general",
+      "count": 30
+    }
+  ]
+}

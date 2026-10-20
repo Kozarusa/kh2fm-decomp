@@ -1,0 +1,25 @@
+0015c228: compiled 84 bytes, target 84 bytes, exact=False
+Differing words: 10. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0015c228: 54800006  bnezl	a0,0x15c244                                | 0015c228: 54800006  bnezl	a0,15c244 <func_0015c228+0x1c>
+!! 0015c22c: 8c8f0000  lw	t7,0(a0)                                      | 0015c22c: 8c8e0000  lw	t6,0(a0)
+   0015c230: 3c0f0035  lui	t7,0x35                                      | 0015c230: 3c0f0035  lui	t7,0x35
+   0015c234: 3c0e0035  lui	t6,0x35                                      | 0015c234: 3c0e0035  lui	t6,0x35
+   0015c238: ade0af24  sw	zero,-20700(t7)   ; = D_0034af24              | 0015c238: ade0af24  sw	zero,-20700(t7)   ; = D_0034af24
+   0015c23c: 03e00008  jr	ra                                            | 0015c23c: 03e00008  jr	ra
+   0015c240: adc0af20  sw	zero,-20704(t6)   ; = D_0034af20              | 0015c240: adc0af20  sw	zero,-20704(t6)   ; = D_0034af20
+!! 0015c244: 3c0e0035  lui	t6,0x35                                      | 0015c244: 3c0d0035  lui	t5,0x35
+   0015c248: 240c0068  li	t4,104                                        | 0015c248: 240c0068  li	t4,104
+!! 0015c24c: 008f7821  addu	t7,a0,t7                                    | 0015c24c: 008e7021  addu	t6,a0,t6
+!! 0015c250: adcfaf20  sw	t7,-20704(t6)   ; = D_0034af20                | 0015c250: adaeaf20  sw	t6,-20704(t5)   ; = D_0034af20
+!! 0015c254: 8c8d0004  lw	t5,4(a0)                                      | 0015c254: 8c8f0004  lw	t7,4(a0)
+!! 0015c258: 3c0f0035  lui	t7,0x35                                      | 0015c258: 3c0e0035  lui	t6,0x35
+   0015c25c: 51800001  beqzl	t4,0x15c264                                | 0015c25c: 51800001  beqzl	t4,15c264 <func_0015c228+0x3c>
+   0015c260: 000001cd  break	0x7                                        | 0015c260: 000001cd  break	0x7
+!! 0015c264: 01ac001b  divu	zero,t5,t4                                  | 0015c264: 01ec001b  divu	zero,t7,t4
+!! 0015c268: fde0af30  sd	zero,-20688(t7)   ; = D_0034af30              | 0015c268: fdc0af30  sd	zero,-20688(t6)   ; = D_0034af30
+   0015c26c: 3c0e0035  lui	t6,0x35                                      | 0015c26c: 3c0e0035  lui	t6,0x35
+!! 0015c270: 00006812  mflo	t5                                          | 0015c270: 00007812  mflo	t7
+   0015c274: 03e00008  jr	ra                                            | 0015c274: 03e00008  jr	ra
+!! 0015c278: adcdaf24  sw	t5,-20700(t6)   ; = D_0034af24                | 0015c278: adcfaf24  sw	t7,-20700(t6)   ; = D_0034af24

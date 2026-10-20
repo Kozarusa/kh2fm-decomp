@@ -1,0 +1,18 @@
+{
+  "source_sha256": "77fc69c61e389916245be77cbfa7b9646cf84886fee59c1ab28a216e62c98810",
+  "source": "analysis/final-mix/recovery-experiments/eight-hour-20261011/eight_hour_0010cce0_node_return_lifetime_v3_1.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "0010cce0",
+      "symbol": "_Z13func_0010cce0y",
+      "compiled_size": 76,
+      "target_size": 80,
+      "ghidra_body_size": 80,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "f0ffbd270000b0ff0800bfff2d808000f2e6060c2d2000022d8040002d204000060000122d1000004a4b040c00000000f7ff4010000000002d1000020000b0df0800bfdf0800e0031000bd27",
+      "target_hex": "f0ffbd270000b0ff0800bfff2d808000f2e6060c2d2000022d804000060040142d2040002d1000020800bfdf0000b0df0800e0031000bd274a4b040c00000000f9ff40142d100002f1ff001000000000"
+    }
+  ]
+}

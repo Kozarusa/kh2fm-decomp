@@ -1,0 +1,24 @@
+0019b380: compiled 80 bytes, target 80 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0019b380: 8c8f0008  lw	t7,8(a0)                                      | 0019b380: 8c8f0008  lw	t7,8(a0)
+   0019b384: 0000602d  move	t4,zero                                     | 0019b384: 0000602d  move	t4,zero
+   0019b388: 95ef0008  lhu	t7,8(t7)                                     | 0019b388: 95ef0008  lhu	t7,8(t7)
+   0019b38c: 11e0000d  beqz	t7,0x19b3c4                                 | 0019b38c: 11e0000d  beqz	t7,19b3c4 <func_0019b380+0x44>
+   0019b390: 8c8d002c  lw	t5,44(a0)                                     | 0019b390: 8c8d002c  lw	t5,44(a0)
+   0019b394: 01e0582d  move	t3,t7                                       | 0019b394: 01e0582d  move	t3,t7
+   0019b398: 240a000c  li	t2,12                                         | 0019b398: 240a000c  li	t2,12
+   0019b39c: 91af0005  lbu	t7,5(t5)                                     | 0019b39c: 91af0005  lbu	t7,5(t5)
+   0019b3a0: 11e50009  beq	t7,a1,0x19b3c8                               | 0019b3a0: 11e50009  beq	t7,a1,19b3c8 <func_0019b380+0x48>
+   0019b3a4: 01a0102d  move	v0,t5                                       | 0019b3a4: 01a0102d  move	v0,t5
+   0019b3a8: 95af0002  lhu	t7,2(t5)                                     | 0019b3a8: 95af0002  lhu	t7,2(t5)
+   0019b3ac: 258c0001  addiu	t4,t4,1                                    | 0019b3ac: 258c0001  addiu	t4,t4,1
+   0019b3b0: 018b702a  slt	t6,t4,t3                                     | 0019b3b0: 018b702a  slt	t6,t4,t3
+   0019b3b4: 01ea7818  mult	t7,t7,t2                                    | 0019b3b4: 01ea7818  mult	t7,t7,t2
+   0019b3b8: 01af7821  addu	t7,t5,t7                                    | 0019b3b8: 01af7821  addu	t7,t5,t7
+   0019b3bc: 15c0fff7  bnez	t6,0x19b39c                                 | 0019b3bc: 15c0fff7  bnez	t6,19b39c <func_0019b380+0x1c>
+   0019b3c0: 25ed0008  addiu	t5,t7,8                                    | 0019b3c0: 25ed0008  addiu	t5,t7,8
+   0019b3c4: 0000102d  move	v0,zero                                     | 0019b3c4: 0000102d  move	v0,zero
+   0019b3c8: 03e00008  jr	ra                                            | 0019b3c8: 03e00008  jr	ra
+   0019b3cc: 00000000  nop                                              | 0019b3cc: 00000000  nop

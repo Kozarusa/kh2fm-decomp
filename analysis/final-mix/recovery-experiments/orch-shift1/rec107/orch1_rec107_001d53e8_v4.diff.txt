@@ -1,0 +1,29 @@
+001d53e8: compiled 100 bytes, target 100 bytes, exact=False
+Differing words: 6. First difference at instruction 9 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001d53e8: 27bdfff0  addiu	sp,sp,-16                                  | 001d53e8: 27bdfff0  addiu	sp,sp,-16
+   001d53ec: 3c0f0035  lui	t7,0x35                                      | 001d53ec: 3c0f0035  lui	t7,0x35
+   001d53f0: ffbf0000  sd	ra,0(sp)                                      | 001d53f0: ffbf0000  sd	ra,0(sp)
+   001d53f4: 0c06c524  jal	0x1b1490                                     | 001d53f4: 0c06c524  jal	1b1490 <func_001b1490>
+   001d53f8: 8de4276c  lw	a0,10092(t7)   ; = D_0035276c                 | 001d53f8: 8de4276c  lw	a0,10092(t7)   ; = D_0035276c
+   001d53fc: 3c0f0037  lui	t7,0x37                                      | 001d53fc: 3c0f0037  lui	t7,0x37
+   001d5400: 0040202d  move	a0,v0                                       | 001d5400: 0040202d  move	a0,v0
+   001d5404: 81e6e598  lb	a2,-6760(t7)   ; = D_0036e598                 | 001d5404: 81e6e598  lb	a2,-6760(t7)   ; = D_0036e598
+   001d5408: 25eee598  addiu	t6,t7,-6760   ; = D_0036e598               | 001d5408: 25eee598  addiu	t6,t7,-6760   ; = D_0036e598
+!! 001d540c: 81cc0001  lb	t4,1(t6)                                      | 001d540c: 81cc0002  lb	t4,2(t6)
+   001d5410: 2405ffff  li	a1,-1                                         | 001d5410: 2405ffff  li	a1,-1
+!! 001d5414: 81cd0003  lb	t5,3(t6)                                      | 001d5414: 81cd0001  lb	t5,1(t6)
+   001d5418: 0000382d  move	a3,zero                                     | 001d5418: 0000382d  move	a3,zero
+!! 001d541c: 81cf0002  lb	t7,2(t6)                                      | 001d541c: 81cf0003  lb	t7,3(t6)
+!! 001d5420: 000c6200  sll	t4,t4,0x8                                    | 001d5420: 000c6400  sll	t4,t4,0x10
+!! 001d5424: 000d6e00  sll	t5,t5,0x18                                   | 001d5424: 000d6a00  sll	t5,t5,0x8
+!! 001d5428: 000f7c00  sll	t7,t7,0x10                                   | 001d5428: 000f7e00  sll	t7,t7,0x18
+   001d542c: 00cd3025  or	a2,a2,t5                                      | 001d542c: 00cd3025  or	a2,a2,t5
+   001d5430: 01ec7825  or	t7,t7,t4                                      | 001d5430: 01ec7825  or	t7,t7,t4
+   001d5434: 0c05a2e2  jal	0x168b88                                     | 001d5434: 0c05a2e2  jal	168b88 <func_00168b88>
+   001d5438: 00cf3025  or	a2,a2,t7                                      | 001d5438: 00cf3025  or	a2,a2,t7
+   001d543c: 8c440008  lw	a0,8(v0)                                      | 001d543c: 8c440008  lw	a0,8(v0)
+   001d5440: dfbf0000  ld	ra,0(sp)                                      | 001d5440: dfbf0000  ld	ra,0(sp)
+   001d5444: 0807042e  j	0x1c10b8                                       | 001d5444: 0807042e  j	1c10b8 <func_001c10b8>
+   001d5448: 27bd0010  addiu	sp,sp,16                                   | 001d5448: 27bd0010  addiu	sp,sp,16

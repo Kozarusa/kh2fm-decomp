@@ -1,0 +1,2 @@
+#include "../common/types.h"
+void* func_002f35e8(u32 a) { register u32 valid asm("$2")=a<10;asm("" : "+r"(valid) : "r"(a));if(valid){register u32 high asm("$2")=0x360000;asm("" :: "r"(high));register u32 offset asm("$3");asm("sll %0,%1,2" : "=r"(offset) : "r"(a),"r"(high));register u8* base asm("$2");asm("addiu %0,%1,0x3c90" : "=r"(base) : "r"(high),"r"(offset));return *(void**)(base+offset);}return 0; }

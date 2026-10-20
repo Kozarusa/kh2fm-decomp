@@ -1,0 +1,34 @@
+001ac5b8: compiled 120 bytes, target 116 bytes, exact=False
+Differing words: 25. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001ac5b8: 3c0f0035  lui	t7,0x35                                      | 001ac5b8: 3c0f0035  lui	t7,0x35
+!! 001ac5bc: 3c0e01c7  lui	t6,0x1c7                                     | 001ac5bc: 3c0d01c7  lui	t5,0x1c7
+   001ac5c0: 25ef0c50  addiu	t7,t7,3152   ; = D_00350c50                | 001ac5c0: 25ef0c50  addiu	t7,t7,3152   ; = D_00350c50
+!! 001ac5c4: ac8f0000  sw	t7,0(a0)                                      | 001ac5c4: 8daeced0  lw	t6,-12592(t5)   ; = D_01c6ced0
+!! 001ac5c8: 8dcfced0  lw	t7,-12592(t6)   ; = D_01c6ced0                | 001ac5c8: 148e000b  bne	a0,t6,1ac5f8 <func_001ac5b8+0x40>
+!! 001ac5cc: 548f000b  bnel	a0,t7,0x1ac5fc                              | 001ac5cc: ac8f0000  sw	t7,0(a0)
+!! 001ac5d0: 8dee007c  lw	t6,124(t7)                                    | 001ac5d0: 8c8f007c  lw	t7,124(a0)
+!! 001ac5d4: 8c8f007c  lw	t7,124(a0)                                    | 001ac5d4: 0000602d  move	t4,zero
+!! 001ac5d8: 0000682d  move	t5,zero                                     | 001ac5d8: adafced0  sw	t7,-12592(t5)   ; = D_01c6ced0
+!! 001ac5dc: adcfced0  sw	t7,-12592(t6)                                 | 001ac5dc: 3c0f01c7  lui	t7,0x1c7
+!! 001ac5e0: 3c0f01c7  lui	t7,0x1c7                                     | 001ac5e0: 8deeced4  lw	t6,-12588(t7)   ; = D_01c6ced4
+!! 001ac5e4: 25efced0  addiu	t7,t7,-12592   ; = D_01c6ced0              | 001ac5e4: 008e6826  xor	t5,a0,t6
+!! 001ac5e8: 8dee0004  lw	t6,4(t7)                                      | 001ac5e8: 018d700a  movz	t6,t4,t5
+!! 001ac5ec: 508e0001  beql	a0,t6,0x1ac5f4                              | 001ac5ec: adeeced4  sw	t6,-12588(t7)   ; = D_01c6ced4
+!! 001ac5f0: aded0004  sw	t5,4(t7)                                      | 001ac5f0: 03e00008  jr	ra
+!! 001ac5f4: 03e00008  jr	ra                                            | 001ac5f4: ac80007c  sw	zero,124(a0)
+!! 001ac5f8: ac80007c  sw	zero,124(a0)                                  | 001ac5f8: 8dcf007c  lw	t7,124(t6)
+!! 001ac5fc: 11c40008  beq	t6,a0,0x1ac620                               | 001ac5fc: 11e40009  beq	t7,a0,1ac624 <func_001ac5b8+0x6c>
+!! 001ac600: 01e0682d  move	t5,t7                                       | 001ac600: 01c0602d  move	t4,t6
+!! 001ac604: 8dcf007c  lw	t7,124(t6)                                    | 001ac604: 01e0602d  move	t4,t7
+!! 001ac608: 01c0682d  move	t5,t6                                       | 001ac608: 8def007c  lw	t7,124(t7)
+   001ac60c: 00000000  nop                                              | 001ac60c: 00000000  nop
+   001ac610: 00000000  nop                                              | 001ac610: 00000000  nop
+   001ac614: 00000000  nop                                              | 001ac614: 00000000  nop
+!! 001ac618: 15e4fffa  bne	t7,a0,0x1ac604                               | 001ac618: 00000000  nop
+!! 001ac61c: 01e0702d  move	t6,t7                                       | 001ac61c: 55e4fffa  bnel	t7,a0,1ac608 <func_001ac5b8+0x50>
+!! 001ac620: 8c8f007c  lw	t7,124(a0)                                    | 001ac620: 01e0602d  move	t4,t7
+!! 001ac624: 1000ffee  b	0x1ac5e0                                       | 001ac624: 8c8f007c  lw	t7,124(a0)
+!! 001ac628: adaf007c  sw	t7,124(t5)                                    | 001ac628: 1000ffec  b	1ac5dc <func_001ac5b8+0x24>
+!!                                                                      | 001ac62c: ad8f007c  sw	t7,124(t4)

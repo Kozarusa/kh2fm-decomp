@@ -1,0 +1,18 @@
+#include "../common/types.h"
+
+extern "C" void func_001d7cd0(u32);
+extern "C" char func_00351468;
+
+void func_001c2c98(u32 param_1)
+{
+  u32 uVar2;
+  u32 uVar1;
+  func_001d7cd0(param_1);
+  uVar2 = *(u32 *)((u8 *)param_1 + 2748);
+  uVar2 = uVar2 | 4;
+  uVar1 = *(u32 *)((u8 *)param_1 + 1416);
+  uVar1 = uVar1 | 0x200000;
+  *(u32 *)((u8 *)param_1 + 1416) = uVar1;
+  asm("sw %2,%0; sw %3,%1" : "=m"(*(u32*)param_1), "=m"(*(u32*)(param_1+2748)) : "r"((u32)(long)&func_00351468), "r"(uVar2));
+  return;
+}

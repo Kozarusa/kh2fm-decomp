@@ -1,0 +1,20 @@
+002835d8: compiled 64 bytes, target 64 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   002835d8: 27bdfff0  addiu	sp,sp,-16                                  | 002835d8: 27bdfff0  addiu	sp,sp,-16
+   002835dc: ffb00000  sd	s0,0(sp)                                      | 002835dc: ffb00000  sd	s0,0(sp)
+   002835e0: ffbf0008  sd	ra,8(sp)                                      | 002835e0: ffbf0008  sd	ra,8(sp)
+   002835e4: 3c100036  lui	s0,0x36                                      | 002835e4: 3c100036  lui	s0,0x36
+   002835e8: 8e04f2b8  lw	a0,-3400(s0)   ; = D_0035f2b8                 | 002835e8: 8e04f2b8  lw	a0,-3400(s0)   ; = D_0035f2b8
+   002835ec: 0c04e75e  jal	0x139d78                                     | 002835ec: 0c04e75e  jal	139d78 <func_00139d78>
+   002835f0: 24840354  addiu	a0,a0,852                                  | 002835f0: 24840354  addiu	a0,a0,852
+   002835f4: 10400003  beqz	v0,0x283604                                 | 002835f4: 10400003  beqz	v0,283604 <func_002835d8+0x2c>
+   002835f8: 8e04f2b8  lw	a0,-3400(s0)   ; = D_0035f2b8                 | 002835f8: 8e04f2b8  lw	a0,-3400(s0)   ; = D_0035f2b8
+   002835fc: 0c04e544  jal	0x139510                                     | 002835fc: 0c04e544  jal	139510 <func_00139510>
+   00283600: 24840354  addiu	a0,a0,852                                  | 00283600: 24840354  addiu	a0,a0,852
+   00283604: dfb00000  ld	s0,0(sp)                                      | 00283604: dfb00000  ld	s0,0(sp)
+   00283608: 24040001  li	a0,1                                          | 00283608: 24040001  li	a0,1
+   0028360c: dfbf0008  ld	ra,8(sp)                                      | 0028360c: dfbf0008  ld	ra,8(sp)
+   00283610: 080a0e58  j	0x283960                                       | 00283610: 080a0e58  j	283960 <func_00283960>
+   00283614: 27bd0010  addiu	sp,sp,16                                   | 00283614: 27bd0010  addiu	sp,sp,16

@@ -1,0 +1,18 @@
+{
+  "source_sha256": "bb3c34e42bfcdc4eae6a995ea78d4e591d549664ccc517fd848abbc9877b3bd4",
+  "source": "analysis/final-mix/recovery-experiments/fm_primary_queuepi_recovered_001d97f0.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "001d97f0",
+      "symbol": "_Z13func_001d97f0j",
+      "compiled_size": 48,
+      "target_size": 48,
+      "ghidra_body_size": 48,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "33000f3c40200400fefaef2521208f0006008e940100cf25ffffce31e703ce2d0100c05506008fa40800e00300000000",
+      "target_hex": "33000f3c40200400fefaef2521208f0006008e940100cf25ffffce31e703ce2d0100c05506008fa40800e00300000000"
+    }
+  ]
+}

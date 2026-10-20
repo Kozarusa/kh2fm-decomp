@@ -1,0 +1,17 @@
+{
+  "probe_source": "analysis/final-mix/recovery-experiments/fm_primary_transport_v4.cpp",
+  "probe_source_sha256": "a55638d2edb1da39b508ef4bf478998c57ea7dc0a256bc7f876ff037d761faf9",
+  "probe_proof_sha256": "5f6917409357df2789f5826070d69a24ccf42fb82957895218ebe34c4a0bca04",
+  "curated_source": "analysis/final-mix/recovery-experiments/fm_primary_transport_recovered.cpp",
+  "curated_source_sha256": "b8c9855bc8d7e8fcc59a82a4a6ab475e7884ec6ac315373ea1d7f71c27796e8c",
+  "selected_addresses": [
+    "00152990",
+    "00167ee0",
+    "00185e20",
+    "00155410"
+  ],
+  "exclusion_receipt": null,
+  "limitations": [
+    "Curated source still requires a new probe, registration and full build."
+  ]
+}

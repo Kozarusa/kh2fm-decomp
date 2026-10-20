@@ -1,0 +1,9 @@
+[
+  {
+    "address": "0028b1c0",
+    "owner": "eight-hour-primary",
+    "metadata": "{\"address\": \"0028b1c0\", \"end\": \"0028b1e4\", \"bytes\": 36, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [], \"best_proposal\": {\"proof\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_primary_width_01_all.verification.json\", \"source\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_primary_width_01_all.cpp\", \"compiled_bytes\": 40, \"target_bytes\": 36, \"different_words\": 9}}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_0028b1c0_0_cpp.cpp\", \"source_sha256\": \"d46efea40ce4c359864b37635022bf1b7e807ad64394b0794f0fdf0fb9409739\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_0028b1c0_0_cpp.verification.json\", \"proof_sha256\": \"50b7142f767319a3c5bf14d341d6b45295477e899a96679b53602b943321fecc\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_queuelambda_recovered_0028b1c0.cpp"
+  }
+]

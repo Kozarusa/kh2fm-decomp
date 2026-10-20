@@ -1,0 +1,26 @@
+# Track documents, orchestration, archive batches and small text evidence.
+# Large, binary, or machine-owned trees stay out; they are hash-bound elsewhere.
+/analysis/coverage/
+/analysis/recovered-pseudocode/
+/analysis/final-mix/binaries/
+/analysis/final-mix/disc-scripts/
+/analysis/final-mix/rebuilt-*/
+/analysis/final-mix/ghidra-projects/
+/analysis/final-mix/ghidra-mcp-projects/
+/analysis/final-mix/native-pseudocode/
+/analysis/final-mix/native-build/
+/analysis/final-mix/accepted-snapshots/
+/analysis/final-mix/area-script-source/
+/analysis/final-mix/event-script-source/
+/analysis/final-mix/bdscript/
+*.sqlite3
+*.sqlite3-shm
+*.sqlite3-wal
+*.elf
+*.iso
+*.bdx
+*.bin
+*.o
+*.lock
+__pycache__/
+*.pyc

@@ -1,0 +1,72 @@
+[
+  {
+    "source": "analysis/final-mix/recovery-experiments/fm_float_roles_00_0.cpp",
+    "exit_code": 0,
+    "log": "analysis/final-mix/recovery-experiments/fm_float_roles_00_0.probe.log",
+    "functions": 3,
+    "exact": 0
+  },
+  {
+    "source": "analysis/final-mix/recovery-experiments/fm_float_roles_00_1.cpp",
+    "exit_code": 0,
+    "log": "analysis/final-mix/recovery-experiments/fm_float_roles_00_1.probe.log",
+    "functions": 3,
+    "exact": 0
+  },
+  {
+    "source": "analysis/final-mix/recovery-experiments/fm_float_roles_01_0.cpp",
+    "exit_code": 0,
+    "log": "analysis/final-mix/recovery-experiments/fm_float_roles_01_0.probe.log",
+    "functions": 1,
+    "exact": 0
+  },
+  {
+    "source": "analysis/final-mix/recovery-experiments/fm_float_roles_01_1.cpp",
+    "exit_code": 0,
+    "log": "analysis/final-mix/recovery-experiments/fm_float_roles_01_1.probe.log",
+    "functions": 1,
+    "exact": 0
+  },
+  {
+    "source": "analysis/final-mix/recovery-experiments/fm_float_roles_02_0.cpp",
+    "exit_code": 0,
+    "log": "analysis/final-mix/recovery-experiments/fm_float_roles_02_0.probe.log",
+    "functions": 1,
+    "exact": 0
+  },
+  {
+    "source": "analysis/final-mix/recovery-experiments/fm_float_roles_02_1.cpp",
+    "exit_code": 0,
+    "log": "analysis/final-mix/recovery-experiments/fm_float_roles_02_1.probe.log",
+    "functions": 1,
+    "exact": 0
+  },
+  {
+    "source": "analysis/final-mix/recovery-experiments/fm_float_roles_03_0.cpp",
+    "exit_code": 0,
+    "log": "analysis/final-mix/recovery-experiments/fm_float_roles_03_0.probe.log",
+    "functions": 4,
+    "exact": 0
+  },
+  {
+    "source": "analysis/final-mix/recovery-experiments/fm_float_roles_03_1.cpp",
+    "exit_code": 0,
+    "log": "analysis/final-mix/recovery-experiments/fm_float_roles_03_1.probe.log",
+    "functions": 4,
+    "exact": 0
+  },
+  {
+    "source": "analysis/final-mix/recovery-experiments/fm_float_roles_04_0.cpp",
+    "exit_code": 0,
+    "log": "analysis/final-mix/recovery-experiments/fm_float_roles_04_0.probe.log",
+    "functions": 4,
+    "exact": 1
+  },
+  {
+    "source": "analysis/final-mix/recovery-experiments/fm_float_roles_04_1.cpp",
+    "exit_code": 0,
+    "log": "analysis/final-mix/recovery-experiments/fm_float_roles_04_1.probe.log",
+    "functions": 4,
+    "exact": 1
+  }
+]

@@ -1,0 +1,6 @@
+# 00171ea8 blocked
+- Range: 00171ea8, 88 bytes. Versions tried: 6. Best: v3 with 11 differing words (84/88 bytes).
+- First difference of the best version: !! 00171ed4: 3c0f01c6  lui	t7,0x1c6  (compiled: lui t5 / addiu t6 / beq / lq t7 / sq t7,-2944(t5); original keeps the address in t7, uses beql with the pointer store in the delay slot, lq t0 / sq t0,0(t7)).
+- Changes tried: v1 f32 struct with hidden return pointer, 29 words (call setup matched); v2 Quad member struct with operator= self-check, 17 (Quad returned in v0, wrong); v3 f32x4 struct with operator= copying through Quad cast, 11; v4 pointer store from operator= result, 11 (same); v5 Vec4* destination local, worse (extra s1/s2 saves); v6 explicit Quad temp in operator=, 11 (same as v3).
+- Why it stops here: no improvement for 3 versions.
+- Next hypothesis: the original copy likely goes through a different aggregate-copy path (address in one register t7, temp t0); try making the global address a local u32 computed once and non-inlined copy via typedef struct with aligned(16) and no operator=, or the C11 binding of the temp to register "$8".

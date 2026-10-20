@@ -1,0 +1,17 @@
+[
+  {
+    "address": "00315458",
+    "body_bytes": 24,
+    "original_range_sha256": "a684e84ece15a4e4b5845e97b11e87e89c5d7b1622949fda314d43914eecad18"
+  },
+  {
+    "address": "00315470",
+    "body_bytes": 20,
+    "original_range_sha256": "883879c06ea0aeadda34df7c8b2479b4a0b5b8a34a38ce9cb308a7dd6c92559f"
+  },
+  {
+    "address": "00315488",
+    "body_bytes": 16,
+    "original_range_sha256": "9f8958cf9e8ca902be81bc82bef4cccc9a8cb4352cf491d40ab1b6319955a96f"
+  }
+]

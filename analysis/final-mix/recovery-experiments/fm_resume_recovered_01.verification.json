@@ -1,0 +1,29 @@
+{
+  "source_sha256": "91331200e3866ceb2e56fc0817f8b2caae4926f47e3ac012feeedf85d90019a9",
+  "source": "analysis/final-mix/recovery-experiments/fm_resume_recovered_01.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "0010f600",
+      "symbol": "_Z13func_0010f600i",
+      "compiled_size": 72,
+      "target_size": 72,
+      "ghidra_body_size": 72,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd270000bfff0c008f8c0b00e0112d1000000400ef8d0900e0150000bfdf60018f8c0400ef310500e011000000002033040c000000002b1002000000bfdf0800e0031000bd27",
+      "target_hex": "f0ffbd270000bfff0c008f8c0b00e0112d1000000400ef8d0900e0150000bfdf60018f8c0400ef310500e011000000002033040c000000002b1002000000bfdf0800e0031000bd27"
+    },
+    {
+      "address": "00136790",
+      "symbol": "_Z13func_00136790yPi",
+      "compiled_size": 52,
+      "target_size": 52,
+      "ghidra_body_size": 52,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd270000b0ff0800bfff32a2050c2d80a000000002aeff07442400f80f240800bfdf0000b0df24208f00ccc205081000bd27",
+      "target_hex": "f0ffbd270000b0ff0800bfff32a2050c2d80a000000002aeff07442400f80f240800bfdf0000b0df24208f00ccc205081000bd27"
+    }
+  ]
+}

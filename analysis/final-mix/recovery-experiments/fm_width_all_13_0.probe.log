@@ -1,0 +1,14 @@
+Exact probe matches: 6/50
+Detailed proof: analysis/final-mix/recovery-experiments/fm_width_all_13_0.verification.json
+recovery-experiments/fm_width_all_13_0/probe.cpp: In function `void 
+   func_002e7c18(u32*)':
+recovery-experiments/fm_width_all_13_0/probe.cpp:822: warning: right shift 
+   count >= width of type
+recovery-experiments/fm_width_all_13_0/probe.cpp:827: warning: right shift 
+   count >= width of type
+recovery-experiments/fm_width_all_13_0/probe.cpp: In function `void 
+   func_002e7f80(u32*)':
+recovery-experiments/fm_width_all_13_0/probe.cpp:861: warning: right shift 
+   count >= width of type
+recovery-experiments/fm_width_all_13_0/probe.cpp:866: warning: right shift 
+   count >= width of type

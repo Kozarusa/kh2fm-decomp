@@ -1,0 +1,294 @@
+[
+  {
+    "address": "002c1950",
+    "source": "analysis/final-mix/recovery-experiments/queue-run-20261009/primary/fm_queue_primary_002c1950_argumentlive.cpp",
+    "source_sha256": "80629108353437319cbba13c83345d18bc47f44c45d62564f76ee14b4cb79147",
+    "proof": "Codex\\analysis\\final-mix\\recovery-experiments\\queue-run-20261009\\primary\\fm_queue_primary_002c1950_argumentlive.verification.json",
+    "proof_sha256": "f0da9c0a7994eae0f7ec9e03200722f87551efe6ad5e76dd2b57fa7bf5fd671f",
+    "compiled_size": 68,
+    "target_size": 64,
+    "differing_words": [
+      {
+        "word": 7,
+        "compiled": "4001a524",
+        "target": "0000ecc5"
+      },
+      {
+        "word": 8,
+        "compiled": "0000ecc5",
+        "target": "4001a424"
+      },
+      {
+        "word": 9,
+        "compiled": "2d20a000",
+        "target": "22fd050c"
+      },
+      {
+        "word": 10,
+        "compiled": "22fd050c",
+        "target": "2d280000"
+      },
+      {
+        "word": 11,
+        "compiled": "2d280000",
+        "target": "2d200002"
+      },
+      {
+        "word": 12,
+        "compiled": "2d200002",
+        "target": "0800bfdf"
+      },
+      {
+        "word": 13,
+        "compiled": "0800bfdf",
+        "target": "0000b0df"
+      },
+      {
+        "word": 14,
+        "compiled": "0000b0df",
+        "target": "e8170b08"
+      },
+      {
+        "word": 15,
+        "compiled": "e8170b08",
+        "target": "1000bd27"
+      },
+      {
+        "word": 16,
+        "compiled": "1000bd27",
+        "target": ""
+      }
+    ]
+  },
+  {
+    "address": "002c1950",
+    "source": "analysis/final-mix/recovery-experiments/queue-run-20261009/primary/fm_queue_primary_002c1950_castsum.cpp",
+    "source_sha256": "f3db7ef48e7372da5d04551578ed973b833144edbb10ee912cdbbe05799bd843",
+    "proof": "Codex\\analysis\\final-mix\\recovery-experiments\\queue-run-20261009\\primary\\fm_queue_primary_002c1950_castsum.verification.json",
+    "proof_sha256": "ba0cf439a87fd70569067dba28c032dffff86632cea080a3cf370e74effd8b14",
+    "compiled_size": 64,
+    "target_size": 64,
+    "differing_words": [
+      {
+        "word": 8,
+        "compiled": "40010426",
+        "target": "4001a424"
+      }
+    ]
+  },
+  {
+    "address": "002c1950",
+    "source": "analysis/final-mix/recovery-experiments/queue-run-20261009/primary/fm_queue_primary_002c1950_signed.cpp",
+    "source_sha256": "5b06a933b1dad23a91ed556abe8dff7afb9fbfdb97be6000281c1b2b6d82b403",
+    "proof": "Codex\\analysis\\final-mix\\recovery-experiments\\queue-run-20261009\\primary\\fm_queue_primary_002c1950_signed.verification.json",
+    "proof_sha256": "91cf206583435904f8d3e8926e7b9b50f3865d4a030bb736620ca34ab91e11d7",
+    "compiled_size": 64,
+    "target_size": 64,
+    "differing_words": [
+      {
+        "word": 8,
+        "compiled": "40010426",
+        "target": "4001a424"
+      }
+    ]
+  },
+  {
+    "address": "002c1950",
+    "source": "analysis/final-mix/recovery-experiments/queue-run-20261009/primary/fm_queue_primary_002c1950_unsignedsum.cpp",
+    "source_sha256": "61554d3e8940dc847ce7317f468a55d9c6ad9f630b38febd484dea91551fec6d",
+    "proof": "Codex\\analysis\\final-mix\\recovery-experiments\\queue-run-20261009\\primary\\fm_queue_primary_002c1950_unsignedsum.verification.json",
+    "proof_sha256": "d3a77e18c57002ff939c9bbaf04a948bb0f6c6df38b98c02e8fc90cfe10e390a",
+    "compiled_size": 64,
+    "target_size": 64,
+    "differing_words": [
+      {
+        "word": 8,
+        "compiled": "40010426",
+        "target": "4001a424"
+      }
+    ]
+  },
+  {
+    "address": "00305ce0",
+    "source": "analysis/final-mix/recovery-experiments/queue-run-20261009/primary/fm_queue_primary_00305ce0_barrier.cpp",
+    "source_sha256": "0ee9ce33d60ec25679721668bb64628ae98f623d376860930279aa7044950fc8",
+    "proof": "Codex\\analysis\\final-mix\\recovery-experiments\\queue-run-20261009\\primary\\fm_queue_primary_00305ce0_barrier.verification.json",
+    "proof_sha256": "d65b64952f731f40a11fd846b2296bbec4745ba76e988039723c3e55d35d33e2",
+    "compiled_size": 40,
+    "target_size": 40,
+    "differing_words": [
+      {
+        "word": 5,
+        "compiled": "000043ac",
+        "target": "0000bfdf"
+      },
+      {
+        "word": 6,
+        "compiled": "0000bfdf",
+        "target": "000043ac"
+      }
+    ]
+  },
+  {
+    "address": "00305ce0",
+    "source": "analysis/final-mix/recovery-experiments/queue-run-20261009/primary/fm_queue_primary_00305ce0_canonical.cpp",
+    "source_sha256": "5828b6c784dd2ad3f4088619044f66479aadb8127c3c1884ad4ba91fc4f2a5c2",
+    "proof": "Codex\\analysis\\final-mix\\recovery-experiments\\queue-run-20261009\\primary\\fm_queue_primary_00305ce0_canonical.verification.json",
+    "proof_sha256": "1550e14bdf6bd025a4f25338dd82610391dd19058644ae3f9876a340a3c744fa",
+    "compiled_size": 40,
+    "target_size": 40,
+    "differing_words": [
+      {
+        "word": 5,
+        "compiled": "000043ac",
+        "target": "0000bfdf"
+      },
+      {
+        "word": 6,
+        "compiled": "0000bfdf",
+        "target": "000043ac"
+      }
+    ]
+  },
+  {
+    "address": "00305ce0",
+    "source": "analysis/final-mix/recovery-experiments/queue-run-20261009/primary/fm_queue_primary_00305ce0_canonicalplain.cpp",
+    "source_sha256": "d428237a5439990ab9e076699e2426d05455aa95ec1af5ec0e7888ec80d9809d",
+    "proof": "Codex\\analysis\\final-mix\\recovery-experiments\\queue-run-20261009\\primary\\fm_queue_primary_00305ce0_canonicalplain.verification.json",
+    "proof_sha256": "6740d58f073ab783a263a8067901b368e4eaeeee0dd49f9fb3954c9ef69cafc1",
+    "compiled_size": 44,
+    "target_size": 40,
+    "differing_words": [
+      {
+        "word": 4,
+        "compiled": "2d704000",
+        "target": "05000324"
+      },
+      {
+        "word": 6,
+        "compiled": "05000f24",
+        "target": "000043ac"
+      },
+      {
+        "word": 8,
+        "compiled": "0000cfad",
+        "target": "0800e003"
+      },
+      {
+        "word": 9,
+        "compiled": "0800e003",
+        "target": "1000bd27"
+      },
+      {
+        "word": 10,
+        "compiled": "1000bd27",
+        "target": ""
+      }
+    ]
+  },
+  {
+    "address": "00305ce0",
+    "source": "analysis/final-mix/recovery-experiments/queue-run-20261009/primary/fm_queue_primary_00305ce0_valuebarrier.cpp",
+    "source_sha256": "201fcd3251e67ca24d0b43ad0c7888d0ae67a4e8c8b05f6320e4745f9d75dba7",
+    "proof": "Codex\\analysis\\final-mix\\recovery-experiments\\queue-run-20261009\\primary\\fm_queue_primary_00305ce0_valuebarrier.verification.json",
+    "proof_sha256": "d03eaf008e9408b6d7835089e586051eea28d9026f4af4a824e207565d989659",
+    "compiled_size": 40,
+    "target_size": 40,
+    "differing_words": [
+      {
+        "word": 5,
+        "compiled": "000043ac",
+        "target": "0000bfdf"
+      },
+      {
+        "word": 6,
+        "compiled": "0000bfdf",
+        "target": "000043ac"
+      }
+    ]
+  },
+  {
+    "address": "00305ce0",
+    "source": "analysis/final-mix/recovery-experiments/queue-run-20261009/primary/fm_queue_primary_00305ce0_volatile.cpp",
+    "source_sha256": "ab052ce798845217109b616327226d24cb575bbc86e3cec15ae2b8d1762b6b36",
+    "proof": "Codex\\analysis\\final-mix\\recovery-experiments\\queue-run-20261009\\primary\\fm_queue_primary_00305ce0_volatile.verification.json",
+    "proof_sha256": "8c16e4d2939626de537b02070cd99d0070e57802562fbdac0f7a5fc8561e449b",
+    "compiled_size": 40,
+    "target_size": 40,
+    "differing_words": [
+      {
+        "word": 5,
+        "compiled": "000043ac",
+        "target": "0000bfdf"
+      },
+      {
+        "word": 6,
+        "compiled": "0000bfdf",
+        "target": "000043ac"
+      }
+    ]
+  },
+  {
+    "address": "00308cd0",
+    "source": "analysis/final-mix/recovery-experiments/queue-run-20261009/primary/fm_queue_primary_00308cd0_barrier.cpp",
+    "source_sha256": "7c04162cae0010df8ed2ee9a8e37708f18a3bb4bd14b6bd1250648bc69aa43d1",
+    "proof": "Codex\\analysis\\final-mix\\recovery-experiments\\queue-run-20261009\\primary\\fm_queue_primary_00308cd0_barrier.verification.json",
+    "proof_sha256": "7ba18bfcf09fdf92849139ec69a00fc4101942caf9d26ddd32b0be24ee00b3f4",
+    "compiled_size": 36,
+    "target_size": 36,
+    "differing_words": [
+      {
+        "word": 5,
+        "compiled": "dc6040ac",
+        "target": "0000bfdf"
+      },
+      {
+        "word": 6,
+        "compiled": "0000bfdf",
+        "target": "dc6040ac"
+      }
+    ]
+  },
+  {
+    "address": "00308cd0",
+    "source": "analysis/final-mix/recovery-experiments/queue-run-20261009/primary/fm_queue_primary_00308cd0_basebarrier.cpp",
+    "source_sha256": "98641141144f23de7c00404c165c43bf311d97366c42a1623aab28f90282c107",
+    "proof": "Codex\\analysis\\final-mix\\recovery-experiments\\queue-run-20261009\\primary\\fm_queue_primary_00308cd0_basebarrier.verification.json",
+    "proof_sha256": "422bd0d6d7d7b98b3d1fe3165f5c7208df9526b59315ea6f83db2c33f5d4988d",
+    "compiled_size": 36,
+    "target_size": 36,
+    "differing_words": [
+      {
+        "word": 5,
+        "compiled": "dc6040ac",
+        "target": "0000bfdf"
+      },
+      {
+        "word": 6,
+        "compiled": "0000bfdf",
+        "target": "dc6040ac"
+      }
+    ]
+  },
+  {
+    "address": "00308cd0",
+    "source": "analysis/final-mix/recovery-experiments/queue-run-20261009/primary/fm_queue_primary_00308cd0_volatile.cpp",
+    "source_sha256": "9a62f1c78e6c9e060a5852a017c158b2836ab3add412619587555f735030f0d6",
+    "proof": "Codex\\analysis\\final-mix\\recovery-experiments\\queue-run-20261009\\primary\\fm_queue_primary_00308cd0_volatile.verification.json",
+    "proof_sha256": "63c707cf2d2389c01f575574a8f8b2b7f6ff617066827286549a408a886e13a0",
+    "compiled_size": 36,
+    "target_size": 36,
+    "differing_words": [
+      {
+        "word": 5,
+        "compiled": "dc6040ac",
+        "target": "0000bfdf"
+      },
+      {
+        "word": 6,
+        "compiled": "0000bfdf",
+        "target": "dc6040ac"
+      }
+    ]
+  }
+]

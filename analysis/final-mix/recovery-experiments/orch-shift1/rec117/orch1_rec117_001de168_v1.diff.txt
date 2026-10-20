@@ -1,0 +1,26 @@
+001de168: compiled 88 bytes, target 88 bytes, exact=False
+Differing words: 19. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001de168: 27bdfff0  addiu	sp,sp,-16                                  | 001de168: 27bdfff0  addiu	sp,sp,-16
+!! 001de16c: 8c8f0000  lw	t7,0(a0)                                      | 001de16c: 8c8d0000  lw	t5,0(a0)
+   001de170: ffbf0000  sd	ra,0(sp)                                      | 001de170: ffbf0000  sd	ra,0(sp)
+   001de174: 00a0602d  move	t4,a1                                       | 001de174: 00a0602d  move	t4,a1
+!! 001de178: 0000702d  move	t6,zero                                     | 001de178: 8daf0008  lw	t7,8(t5)
+!! 001de17c: 8ded0008  lw	t5,8(t7)                                      | 001de17c: 19e0000c  blez	t7,1de1b0 <func_001de168+0x48>
+!! 001de180: 19a00007  blez	t5,0x1de1a0                                 | 001de180: 0000702d  move	t6,zero
+!! 001de184: 0000102d  move	v0,zero                                     | 001de184: 8c850004  lw	a1,4(a0)
+!! 001de188: 8c850004  lw	a1,4(a0)                                      | 001de188: 94af0002  lhu	t7,2(a1)
+!! 001de18c: 94af0002  lhu	t7,2(a1)                                     | 001de18c: 15ec0004  bne	t7,t4,1de1a0 <func_001de168+0x38>
+!! 001de190: 15ec0006  bne	t7,t4,0x1de1ac                               | 001de190: 25ce0001  addiu	t6,t6,1
+!! 001de194: 25ce0001  addiu	t6,t6,1                                    | 001de194: dfbf0000  ld	ra,0(sp)
+!! 001de198: 0c0777bc  jal	0x1ddef0                                     | 001de198: 080777bc  j	1ddef0 <func_001ddef0>
+!! 001de19c: 00000000  nop                                              | 001de19c: 27bd0010  addiu	sp,sp,16
+!! 001de1a0: dfbf0000  ld	ra,0(sp)                                      | 001de1a0: 8daf0008  lw	t7,8(t5)
+!! 001de1a4: 03e00008  jr	ra                                            | 001de1a4: 01cf782a  slt	t7,t6,t7
+!! 001de1a8: 27bd0010  addiu	sp,sp,16                                   | 001de1a8: 15e0fff7  bnez	t7,1de188 <func_001de168+0x20>
+!! 001de1ac: 01cd782a  slt	t7,t6,t5                                     | 001de1ac: 24a50050  addiu	a1,a1,80
+!! 001de1b0: 15e0fff6  bnez	t7,0x1de18c                                 | 001de1b0: dfbf0000  ld	ra,0(sp)
+!! 001de1b4: 24a50050  addiu	a1,a1,80                                   | 001de1b4: 0000102d  move	v0,zero
+!! 001de1b8: 1000fffa  b	0x1de1a4                                       | 001de1b8: 03e00008  jr	ra
+!! 001de1bc: dfbf0000  ld	ra,0(sp)                                      | 001de1bc: 27bd0010  addiu	sp,sp,16

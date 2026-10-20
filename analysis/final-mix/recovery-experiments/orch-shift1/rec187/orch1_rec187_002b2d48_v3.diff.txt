@@ -1,0 +1,27 @@
+002b2d48: compiled 92 bytes, target 92 bytes, exact=False
+Differing words: 12. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   002b2d48: 27bdffe0  addiu	sp,sp,-32                                  | 002b2d48: 27bdffe0  addiu	sp,sp,-32
+!! 002b2d4c: ffb00000  sd	s0,0(sp)                                      | 002b2d4c: ffb10008  sd	s1,8(sp)
+!! 002b2d50: ffb10008  sd	s1,8(sp)                                      | 002b2d50: ffb00000  sd	s0,0(sp)
+!! 002b2d54: 3c100036  lui	s0,0x36                                      | 002b2d54: 3c110036  lui	s1,0x36
+   002b2d58: ffbf0010  sd	ra,16(sp)                                     | 002b2d58: ffbf0010  sd	ra,16(sp)
+!! 002b2d5c: 8e04f634  lw	a0,-2508(s0)   ; = D_0035f634                 | 002b2d5c: 8e24f634  lw	a0,-2508(s1)   ; = D_0035f634
+!! 002b2d60: 0000882d  move	s1,zero                                     | 002b2d60: 0000802d  move	s0,zero
+   002b2d64: 0c04e75e  jal	0x139d78                                     | 002b2d64: 0c04e75e  jal	139d78 <func_00139d78>
+   002b2d68: 24844e18  addiu	a0,a0,19992                                | 002b2d68: 24844e18  addiu	a0,a0,19992
+   002b2d6c: 54400007  bnezl	v0,0x2b2d8c                                | 002b2d6c: 54400007  bnezl	v0,2b2d8c <func_002b2d48+0x44>
+!! 002b2d70: 24110001  li	s1,1                                          | 002b2d70: 24100001  li	s0,1
+!! 002b2d74: 8e04f634  lw	a0,-2508(s0)   ; = D_0035f634                 | 002b2d74: 8e24f634  lw	a0,-2508(s1)   ; = D_0035f634
+   002b2d78: 0c04e75e  jal	0x139d78                                     | 002b2d78: 0c04e75e  jal	139d78 <func_00139d78>
+   002b2d7c: 24844fb0  addiu	a0,a0,20400                                | 002b2d7c: 24844fb0  addiu	a0,a0,20400
+   002b2d80: 10400003  beqz	v0,0x2b2d90                                 | 002b2d80: 10400003  beqz	v0,2b2d90 <func_002b2d48+0x48>
+!! 002b2d84: 0220102d  move	v0,s1                                       | 002b2d84: 0200102d  move	v0,s0
+!! 002b2d88: 24110001  li	s1,1                                          | 002b2d88: 24100001  li	s0,1
+!! 002b2d8c: 0220102d  move	v0,s1                                       | 002b2d8c: 0200102d  move	v0,s0
+!! 002b2d90: dfb00000  ld	s0,0(sp)                                      | 002b2d90: dfb10008  ld	s1,8(sp)
+!! 002b2d94: dfb10008  ld	s1,8(sp)                                      | 002b2d94: dfb00000  ld	s0,0(sp)
+   002b2d98: dfbf0010  ld	ra,16(sp)                                     | 002b2d98: dfbf0010  ld	ra,16(sp)
+   002b2d9c: 03e00008  jr	ra                                            | 002b2d9c: 03e00008  jr	ra
+   002b2da0: 27bd0020  addiu	sp,sp,32                                   | 002b2da0: 27bd0020  addiu	sp,sp,32

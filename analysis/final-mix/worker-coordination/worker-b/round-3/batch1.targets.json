@@ -1,0 +1,53 @@
+{
+  "original_elf_sha256": "d869ce4b8edd61cb978c4ff9ede595fe4d7d7b21cbb96a145275217120d8bc87",
+  "targets": [
+    {
+      "address": "002f8870",
+      "size": 24,
+      "end": "002f8888",
+      "original_range_sha256": "28ab2e3c6394429fbd9310373a5d8bf09c450dd3e3a27bdc7b61a49f4846e432"
+    },
+    {
+      "address": "00152598",
+      "size": 28,
+      "end": "001525b4",
+      "original_range_sha256": "90666ad02fce52f88b8ef6f7f31894d4270ea7d39f08712a904f55549d31efdb"
+    },
+    {
+      "address": "002d5c20",
+      "size": 28,
+      "end": "002d5c3c",
+      "original_range_sha256": "ab0d8fb2def9a4675cc6b16b0ee5a1b78a7aeaf8f667711d52c5e2d5c2aaeb57"
+    },
+    {
+      "address": "00308da0",
+      "size": 28,
+      "end": "00308dbc",
+      "original_range_sha256": "efbb3939eff78a620a1469049dbb79516ea1dfe6ad2197513e99da15f10f15e1"
+    },
+    {
+      "address": "0028af90",
+      "size": 20,
+      "end": "0028afa4",
+      "original_range_sha256": "1b36e04b76076979672214eb2230c2bf83ddf73d0beb87ccb05902e8e73ffb93"
+    },
+    {
+      "address": "0028ac98",
+      "size": 32,
+      "end": "0028acb8",
+      "original_range_sha256": "50aac8fe01e4e668a432fb3a0203c40b28c3798984d6399bbcd579664b64f181"
+    },
+    {
+      "address": "001c8a90",
+      "size": 28,
+      "end": "001c8aac",
+      "original_range_sha256": "3420b76719c05bed96e829380d3e382a0e82c1e989c0cc8791103d9fd868c974"
+    },
+    {
+      "address": "00100338",
+      "size": 20,
+      "end": "0010034c",
+      "original_range_sha256": "0fe2c5103251f841c797f591421ae02bfec3e9087baa6e5159d8ae777b4741b1"
+    }
+  ]
+}

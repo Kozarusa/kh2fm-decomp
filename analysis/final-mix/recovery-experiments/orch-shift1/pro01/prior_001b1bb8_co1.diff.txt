@@ -1,0 +1,14 @@
+001b1bb8: compiled 40 bytes, target 40 bytes, exact=False
+Differing words: 4. First difference at instruction 0 (0-based).
+
+ORIGINAL                                                                | COMPILED
+!! 001b1bb8: 27bdfff0  addiu	sp,sp,-16                                  | 001b1bb8: a0850014  sb	a1,20(a0)
+!! 001b1bbc: a0850014  sb	a1,20(a0)                                     | 001b1bbc: 27bdfff0  addiu	sp,sp,-16
+!! 001b1bc0: ffbf0000  sd	ra,0(sp)                                      | 001b1bc0: 248f0014  addiu	t7,a0,20
+!! 001b1bc4: 248f0014  addiu	t7,a0,20                                   | 001b1bc4: ffbf0000  sd	ra,0(sp)
+   001b1bc8: a1e80003  sb	t0,3(t7)                                      | 001b1bc8: a1e80003  sb	t0,3(t7)
+   001b1bcc: a1e60001  sb	a2,1(t7)                                      | 001b1bcc: a1e60001  sb	a2,1(t7)
+   001b1bd0: a1e70002  sb	a3,2(t7)                                      | 001b1bd0: a1e70002  sb	a3,2(t7)
+   001b1bd4: dfbf0000  ld	ra,0(sp)                                      | 001b1bd4: dfbf0000  ld	ra,0(sp)
+   001b1bd8: 0806c6f8  j	0x1b1be0                                       | 001b1bd8: 0806c6f8  j	1b1be0 <func_001b1be0>
+   001b1bdc: 27bd0010  addiu	sp,sp,16                                   | 001b1bdc: 27bd0010  addiu	sp,sp,16

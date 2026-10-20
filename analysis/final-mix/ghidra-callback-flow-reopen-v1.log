@@ -1,0 +1,47 @@
+2026-10-07 13:05:46 INFO  (LoggingInitialization) Using log config file: jar:file:/C:/Users/KoZa/Documents/ChatGPT/tools/ghidra-install/ghidra_12.1.4_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml  
+2026-10-07 13:05:46 INFO  (LoggingInitialization) Using log file: C:\Users\KoZa\Documents\ChatGPT\analysis\final-mix\ghidra-callback-flow-reopen-v1.log  
+2026-10-07 13:05:46 DEBUG (GhidraObjectInputFilter) Including serial input filter: FileSystem/data/client.rmi.serial.filter  
+2026-10-07 13:05:46 INFO  (Preferences) Loading user preferences: C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-state\config\ghidra\ghidra_12.1.4_PUBLIC\preferences  
+2026-10-07 13:05:46 INFO  (ClassSearcher) Searching for classes...  
+2026-10-07 13:05:47 INFO  (ClassSearcher) Class search complete (651 ms)  
+2026-10-07 13:05:47 INFO  (DefaultSSLContextInitializer) Initializing SSL Context  
+2026-10-07 13:05:47 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+2026-10-07 13:05:47 INFO  (SecureRandomFactory) Random Number Generator initialization complete: SHA1PRNG  
+2026-10-07 13:05:47 INFO  (DefaultTrustManagerFactory) Trust manager disabled, cacerts have not been set  
+2026-10-07 13:05:47 INFO  (AnalyzeHeadless) Headless startup complete (2149 ms)  
+2026-10-07 13:05:47 INFO  (ClassSearcher) Class searcher loaded 60 extension points (20 false positives)  
+2026-10-07 13:05:48 INFO  (HeadlessAnalyzer) HEADLESS Script Paths:
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\FunctionID\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\GnuDemangler\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\FileFormats\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\BytePatterns\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Processors\8051\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Processors\Atmel\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\PyGhidra\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Processors\PIC\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Extensions\ghidra-emotionengine-reloaded\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\PDB\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\SystemEmulation\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Debug\Debugger\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Processors\DATA\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\SwiftDemangler\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\VersionTracking\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\kh2-audit
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Processors\JVM\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\BSim\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\Decompiler\ghidra_scripts  
+2026-10-07 13:05:48 INFO  (HeadlessAnalyzer) HEADLESS: execution starts  
+2026-10-07 13:05:48 INFO  (HeadlessAnalyzer) Opening existing project: C:\Users\KoZa\Documents\ChatGPT\analysis\final-mix\ghidra-projects\kh2fm  
+2026-10-07 13:05:48 INFO  (HeadlessProject) Opening project: C:\Users\KoZa\Documents\ChatGPT\analysis\final-mix\ghidra-projects\kh2fm  
+2026-10-07 13:05:49 INFO  (HeadlessAnalyzer) REPORT: Processing read-only project file: /SLPM_666.75  
+2026-10-07 13:05:50 INFO  (HeadlessAnalyzer) REPORT: Execute script: InspectFmCallbackFlow.java 'C:\Users\KoZa\Documents\ChatGPT\analysis\final-mix\native-pseudocode\callback-flow-reopened-v1.txt'   
+2026-10-07 13:05:50 INFO  (HeadlessAnalyzer) SCRIPT: C:\Users\KoZa\Documents\ChatGPT\tools\kh2-audit\InspectFmCallbackFlow.java  
+2026-10-07 13:05:50 INFO  (GhidraScript) InspectFmCallbackFlow.java> FM callback flow diagnostic saved: C:\Users\KoZa\Documents\ChatGPT\analysis\final-mix\native-pseudocode\callback-flow-reopened-v1.txt  
+2026-10-07 13:05:50 INFO  (HeadlessAnalyzer) REPORT: Execute script: ExportFmCallbackBoundaries.java 'C:\Users\KoZa\Documents\ChatGPT\analysis\final-mix\native-pseudocode\callback-flow-export-reopened-v1'   
+2026-10-07 13:05:50 INFO  (HeadlessAnalyzer) SCRIPT: C:\Users\KoZa\Documents\ChatGPT\tools\kh2-audit\ExportFmCallbackBoundaries.java  
+2026-10-07 13:05:50 INFO  (GhidraScript) ExportFmCallbackBoundaries.java> FM export finished: 3 candidates, 0 failures, 0 suspicious outputs  

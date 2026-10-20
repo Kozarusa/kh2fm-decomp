@@ -1,0 +1,16 @@
+001dcd88: compiled 48 bytes, target 48 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001dcd88: 27bdfff0  addiu	sp,sp,-16                                  | 001dcd88: 27bdfff0  addiu	sp,sp,-16
+   001dcd8c: 3c0f0035  lui	t7,0x35                                      | 001dcd8c: 3c0f0035  lui	t7,0x35
+   001dcd90: ffbf0000  sd	ra,0(sp)                                      | 001dcd90: ffbf0000  sd	ra,0(sp)
+   001dcd94: 3c0501d6  lui	a1,0x1d6                                     | 001dcd94: 3c0501d6  lui	a1,0x1d6
+   001dcd98: 8de42aec  lw	a0,10988(t7)   ; = D_00352aec                 | 001dcd98: 8de42aec  lw	a0,10988(t7)   ; = D_00352aec
+   001dcd9c: 3c06001e  lui	a2,0x1e                                      | 001dcd9c: 3c06001e  lui	a2,0x1e
+   001dcda0: dfbf0000  ld	ra,0(sp)                                      | 001dcda0: dfbf0000  ld	ra,0(sp)
+   001dcda4: 24a5bb40  addiu	a1,a1,-17600   ; = D_01d5bb40              | 001dcda4: 24a5bb40  addiu	a1,a1,-17600   ; = D_01d5bb40
+   001dcda8: 24c6cd68  addiu	a2,a2,-12952   ; = D_001dcd68              | 001dcda8: 24c6cd68  addiu	a2,a2,-12952   ; = D_001dcd68
+   001dcdac: 0000382d  move	a3,zero                                     | 001dcdac: 0000382d  move	a3,zero
+   001dcdb0: 0805a0e2  j	0x168388                                       | 001dcdb0: 0805a0e2  j	168388 <func_00168388>
+   001dcdb4: 27bd0010  addiu	sp,sp,16                                   | 001dcdb4: 27bd0010  addiu	sp,sp,16

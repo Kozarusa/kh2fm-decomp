@@ -1,0 +1,37 @@
+[
+  {
+    "file": "tools/kh2-audit/sync_fm_boundary_checkpoint.py",
+    "original_sha256": "db5a50e35f55d9c0a4e69aaf9c8ad09acb2bfd7e0916b24c70bfac271d585654",
+    "migrated_sha256": "c0ae20c342a19cfecd9de1d8367d396c7b67f731d66b9d10058612714d44e8ba"
+  },
+  {
+    "file": "tools/kh2-audit/save_fm_native_checkpoint.py",
+    "original_sha256": "c4b224335ef32823a4ef166686ce1e04adf7a48754e9b3d080f61c0acdc8fea9",
+    "migrated_sha256": "63d5ac76ffd4937e46e2e0ca6f9382e700467118f723e4360653fafda9dcc047"
+  },
+  {
+    "file": "tools/kh2-audit/verify_fm_scalar_native_bundle.py",
+    "original_sha256": "24541cee096643a5abd63107e07c5bfecf953e16fcb7bbe20913d80853daaebb",
+    "migrated_sha256": "556ce50eed417b5cc657bcddd6b0cb1505031ed87ad109f59d658f0c7605951f"
+  },
+  {
+    "file": "tools/kh2-audit/verify_fm_native_switch_tables.py",
+    "original_sha256": "0eb453d1c3743405477280ca15411bb2982b40b8e8a792b4a1a817261f4929fd",
+    "migrated_sha256": "5732b1ce8e179749bce59a6cf49a75892b6f2237daa09ed9c5fddbfc133e8fac"
+  },
+  {
+    "file": "tools/kh2-audit/finish_fm_primary_matrix.py",
+    "original_sha256": "36320a724d0bc03593bd732b2ac38382aa586ed4124666a1aed506ab9ee3e52a",
+    "migrated_sha256": "101616277b539620260608f2d73358f008338921940e783b700add8e4d6f156b"
+  },
+  {
+    "file": "tools/kh2-audit/finalize_native_fm.py",
+    "original_sha256": "3214f0a86c13b8a8bae39bef90bf0584f4940ed7b124215481b7c2620f20ef98",
+    "migrated_sha256": "f23ac398e80b42191836084c3c1e1191777d240b381f1682d936a9bd9cc8d5c4"
+  },
+  {
+    "file": "tools/kh2-audit/verify_fm_primary_floatarguments_checkpoint.py",
+    "original_sha256": "ab6bacd472ee600e65862e46e30d64b05ca4dee7c078c1d7c3fe3c82627d0b03",
+    "migrated_sha256": "159c54990fbfa72786cf0522ab98fc8ff57d59d3403bc168140a766706b2483c"
+  }
+]

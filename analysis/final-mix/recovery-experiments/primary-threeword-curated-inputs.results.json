@@ -1,0 +1,86 @@
+[
+  {
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_threeword_recovered_001d14b8.cpp",
+    "exit_code": 0,
+    "log": "analysis/final-mix/recovery-experiments/fm_primary_threeword_recovered_001d14b8.probe.log",
+    "functions": 1,
+    "exact": 1
+  },
+  {
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_threeword_recovered_00177460.cpp",
+    "exit_code": 0,
+    "log": "analysis/final-mix/recovery-experiments/fm_primary_threeword_recovered_00177460.probe.log",
+    "functions": 1,
+    "exact": 1
+  },
+  {
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_threeword_recovered_0023f628.cpp",
+    "exit_code": 0,
+    "log": "analysis/final-mix/recovery-experiments/fm_primary_threeword_recovered_0023f628.probe.log",
+    "functions": 1,
+    "exact": 1
+  },
+  {
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_threeword_recovered_0023f688.cpp",
+    "exit_code": 0,
+    "log": "analysis/final-mix/recovery-experiments/fm_primary_threeword_recovered_0023f688.probe.log",
+    "functions": 1,
+    "exact": 1
+  },
+  {
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_threeword_recovered_0023f6c0.cpp",
+    "exit_code": 0,
+    "log": "analysis/final-mix/recovery-experiments/fm_primary_threeword_recovered_0023f6c0.probe.log",
+    "functions": 1,
+    "exact": 1
+  },
+  {
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_threeword_recovered_0023f740.cpp",
+    "exit_code": 0,
+    "log": "analysis/final-mix/recovery-experiments/fm_primary_threeword_recovered_0023f740.probe.log",
+    "functions": 1,
+    "exact": 1
+  },
+  {
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_threeword_recovered_0028e710.cpp",
+    "exit_code": 0,
+    "log": "analysis/final-mix/recovery-experiments/fm_primary_threeword_recovered_0028e710.probe.log",
+    "functions": 1,
+    "exact": 1
+  },
+  {
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_threeword_recovered_002a01c8.cpp",
+    "exit_code": 0,
+    "log": "analysis/final-mix/recovery-experiments/fm_primary_threeword_recovered_002a01c8.probe.log",
+    "functions": 1,
+    "exact": 1
+  },
+  {
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_threeword_recovered_002a6368.cpp",
+    "exit_code": 0,
+    "log": "analysis/final-mix/recovery-experiments/fm_primary_threeword_recovered_002a6368.probe.log",
+    "functions": 1,
+    "exact": 1
+  },
+  {
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_threeword_recovered_002a7f20.cpp",
+    "exit_code": 0,
+    "log": "analysis/final-mix/recovery-experiments/fm_primary_threeword_recovered_002a7f20.probe.log",
+    "functions": 1,
+    "exact": 1
+  },
+  {
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_threeword_recovered_002a92a0.cpp",
+    "exit_code": 0,
+    "log": "analysis/final-mix/recovery-experiments/fm_primary_threeword_recovered_002a92a0.probe.log",
+    "functions": 1,
+    "exact": 1
+  },
+  {
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_threeword_recovered_0026dcb8.cpp",
+    "exit_code": 0,
+    "log": "analysis/final-mix/recovery-experiments/fm_primary_threeword_recovered_0026dcb8.probe.log",
+    "functions": 1,
+    "exact": 1
+  }
+]

@@ -1,0 +1,21 @@
+001c4080: compiled 68 bytes, target 60 bytes, exact=False
+Differing words: 15. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001c4080: 340fffff  li	t7,0xffff                                     | 001c4080: 340fffff  li	t7,0xffff
+!! 001c4084: 14af000b  bne	a1,t7,0x1c40b4                               | 001c4084: 14af000d  bne	a1,t7,1c40bc <func_001c4080+0x3c>
+   001c4088: 240f0001  li	t7,1                                          | 001c4088: 240f0001  li	t7,1
+!! 001c408c: 148f0009  bne	a0,t7,0x1c40b4                               | 001c408c: 148f000b  bne	a0,t7,1c40bc <func_001c4080+0x3c>
+!! 001c4090: 3c0f01d5  lui	t7,0x1d5                                     | 001c4090: 3c0e01d5  lui	t6,0x1d5
+!! 001c4094: 25ee9574  addiu	t6,t7,-27276   ; = D_01d49574              | 001c4094: 3c0f01d5  lui	t7,0x1d5
+!! 001c4098: a5c50004  sh	a1,4(t6)                                      | 001c4098: 25cd9574  addiu	t5,t6,-27276   ; = D_01d49574
+!! 001c409c: 25cdfffc  addiu	t5,t6,-4                                   | 001c409c: a5a50002  sh	a1,2(t5)
+!! 001c40a0: a1a50002  sb	a1,2(t5)                                      | 001c40a0: a1e59572  sb	a1,-27278(t7)   ; = D_01d49572
+!! 001c40a4: a5e59574  sh	a1,-27276(t7)   ; = D_01d49574                | 001c40a4: a5c59574  sh	a1,-27276(t6)   ; = D_01d49574
+!! 001c40a8: a1a50001  sb	a1,1(t5)                                      | 001c40a8: 3c0f01d5  lui	t7,0x1d5
+!! 001c40ac: a1c5fffc  sb	a1,-4(t6)                                     | 001c40ac: 3c0e01d5  lui	t6,0x1d5
+!! 001c40b0: a5c50002  sh	a1,2(t6)                                      | 001c40b0: a1e59571  sb	a1,-27279(t7)   ; = D_01d49571
+!! 001c40b4: 03e00008  jr	ra                                            | 001c40b4: a1c59570  sb	a1,-27280(t6)   ; = D_01d49570
+!! 001c40b8: 00000000  nop                                              | 001c40b8: a5a50004  sh	a1,4(t5)
+!!                                                                      | 001c40bc: 03e00008  jr	ra
+!!                                                                      | 001c40c0: 00000000  nop

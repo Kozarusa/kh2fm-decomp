@@ -1,0 +1,29 @@
+0015b268: compiled 100 bytes, target 100 bytes, exact=False
+Differing words: 5. First difference at instruction 17 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0015b268: 27bdfff0  addiu	sp,sp,-16                                  | 0015b268: 27bdfff0  addiu	sp,sp,-16
+   0015b26c: ffb00000  sd	s0,0(sp)                                      | 0015b26c: ffb00000  sd	s0,0(sp)
+   0015b270: ffbf0008  sd	ra,8(sp)                                      | 0015b270: ffbf0008  sd	ra,8(sp)
+   0015b274: 3c100035  lui	s0,0x35                                      | 0015b274: 3c100035  lui	s0,0x35
+   0015b278: 8e0faa98  lw	t7,-21864(s0)   ; = D_0034aa98                | 0015b278: 8e0faa98  lw	t7,-21864(s0)   ; = D_0034aa98
+   0015b27c: 15e0000b  bnez	t7,0x15b2ac                                 | 0015b27c: 15e0000b  bnez	t7,15b2ac <func_0015b268+0x44>
+   0015b280: 0080282d  move	a1,a0                                       | 0015b280: 0080282d  move	a1,a0
+   0015b284: 3c0f0035  lui	t7,0x35                                      | 0015b284: 3c0f0035  lui	t7,0x35
+   0015b288: 0c056b60  jal	0x15ad80                                     | 0015b288: 0c056b60  jal	15ad80 <func_0015ad80>
+   0015b28c: 8de4aa9c  lw	a0,-21860(t7)   ; = D_0034aa9c                | 0015b28c: 8de4aa9c  lw	a0,-21860(t7)   ; = D_0034aa9c
+   0015b290: 8e0faa98  lw	t7,-21864(s0)   ; = D_0034aa98                | 0015b290: 8e0faa98  lw	t7,-21864(s0)   ; = D_0034aa98
+   0015b294: dfbf0008  ld	ra,8(sp)                                      | 0015b294: dfbf0008  ld	ra,8(sp)
+   0015b298: 25ef0001  addiu	t7,t7,1                                    | 0015b298: 25ef0001  addiu	t7,t7,1
+   0015b29c: ae0faa98  sw	t7,-21864(s0)   ; = D_0034aa98                | 0015b29c: ae0faa98  sw	t7,-21864(s0)   ; = D_0034aa98
+   0015b2a0: dfb00000  ld	s0,0(sp)                                      | 0015b2a0: dfb00000  ld	s0,0(sp)
+   0015b2a4: 03e00008  jr	ra                                            | 0015b2a4: 03e00008  jr	ra
+   0015b2a8: 27bd0010  addiu	sp,sp,16                                   | 0015b2a8: 27bd0010  addiu	sp,sp,16
+!! 0015b2ac: 3c0e0035  lui	t6,0x35                                      | 0015b2ac: 3c0f0035  lui	t7,0x35
+   0015b2b0: dfb00000  ld	s0,0(sp)                                      | 0015b2b0: dfb00000  ld	s0,0(sp)
+!! 0015b2b4: 8dcfaa9c  lw	t7,-21860(t6)   ; = D_0034aa9c                | 0015b2b4: 8deeaa9c  lw	t6,-21860(t7)   ; = D_0034aa9c
+!! 0015b2b8: dfbf0008  ld	ra,8(sp)                                      | 0015b2b8: 8de4aa9c  lw	a0,-21860(t7)   ; = D_0034aa9c
+!! 0015b2bc: e5ec01b4  swc1	$f12,436(t7)                                | 0015b2bc: e5cc01b4  swc1	$f12,436(t6)
+!! 0015b2c0: 8dc4aa9c  lw	a0,-21860(t6)   ; = D_0034aa9c                | 0015b2c0: dfbf0008  ld	ra,8(sp)
+   0015b2c4: 08056baa  j	0x15aea8                                       | 0015b2c4: 08056baa  j	15aea8 <func_0015aea8>
+   0015b2c8: 27bd0010  addiu	sp,sp,16                                   | 0015b2c8: 27bd0010  addiu	sp,sp,16

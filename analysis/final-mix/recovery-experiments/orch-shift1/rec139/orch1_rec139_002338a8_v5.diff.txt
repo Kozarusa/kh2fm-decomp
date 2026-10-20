@@ -1,0 +1,35 @@
+002338a8: compiled 124 bytes, target 116 bytes, exact=False
+Differing words: 31. First difference at instruction 0 (0-based).
+
+ORIGINAL                                                                | COMPILED
+!! 002338a8: 3c0f0037  lui	t7,0x37                                      | 002338a8: 27bdfff0  addiu	sp,sp,-16
+!! 002338ac: 27bdfff0  addiu	sp,sp,-16                                  | 002338ac: 3c0f0037  lui	t7,0x37
+!! 002338b0: 25ef13ac  addiu	t7,t7,5036   ; = D_003713ac                | 002338b0: afa40000  sw	a0,0(sp)
+!! 002338b4: c5e00000  lwc1	$f0,0(t7)                                   | 002338b4: 25ef13ac  addiu	t7,t7,5036   ; = D_003713ac
+!! 002338b8: 46006032  c.eq.s	$f12,$f0                                  | 002338b8: c5e00000  lwc1	$f0,0(t7)
+!! 002338bc: 45010010  bc1t	0x233900                                    | 002338bc: 46006032  c.eq.s	$f12,$f0
+!! 002338c0: afa40000  sw	a0,0(sp)                                      | 002338c0: 4501000c  bc1t	2338f4 <func_002338a8+0x4c>
+!! 002338c4: 00047e42  srl	t7,a0,0x19                                   | 002338c4: 00046e02  srl	t5,a0,0x18
+!! 002338c8: 00042602  srl	a0,a0,0x18                                   | 002338c8: 05a00010  bltz	t5,23390c <func_002338a8+0x64>
+!! 002338cc: 308e0001  andi	t6,a0,0x1                                   | 002338cc: 31af0001  andi	t7,t5,0x1
+!! 002338d0: 0480000e  bltz	a0,0x23390c                                 | 002338d0: 448d0800  mtc1	t5,$f1
+!! 002338d4: 01cf7025  or	t6,t6,t7                                      | 002338d4: 46800860  cvt.s.w	$f1,$f1
+!! 002338d8: 44840000  mtc1	a0,$f0                                      | 002338d8: 460c0842  mul.s	$f1,$f1,$f12
+!! 002338dc: 46800020  cvt.s.w	$f0,$f0                                  | 002338dc: 46000864  cvt.w.s	$f1,$f1
+!! 002338e0: 460c0002  mul.s	$f0,$f0,$f12                               | 002338e0: 440e0800  mfc1	t6,$f1
+!! 002338e4: 46000064  cvt.w.s	$f1,$f0                                  | 002338e4: 2dcf0100  sltiu	t7,t6,256
+!! 002338e8: 44040800  mfc1	a0,$f1                                      | 002338e8: 11e00005  beqz	t7,233900 <func_002338a8+0x58>
+!! 002338ec: 2c8f0100  sltiu	t7,a0,256                                  | 002338ec: 240fffff  li	t7,-1
+!! 002338f0: 55e00003  bnezl	t7,0x233900                                | 002338f0: a3ae0003  sb	t6,3(sp)
+!! 002338f4: a3a40003  sb	a0,3(sp)                                      | 002338f4: 8fa20000  lw	v0,0(sp)
+!! 002338f8: 240fffff  li	t7,-1                                         | 002338f8: 03e00008  jr	ra
+!! 002338fc: a3af0003  sb	t7,3(sp)                                      | 002338fc: 27bd0010  addiu	sp,sp,16
+!! 00233900: 8fa20000  lw	v0,0(sp)                                      | 00233900: a3af0003  sb	t7,3(sp)
+!! 00233904: 03e00008  jr	ra                                            | 00233904: 1000fffb  b	2338f4 <func_002338a8+0x4c>
+!! 00233908: 27bd0010  addiu	sp,sp,16                                   | 00233908: 00000000  nop
+!! 0023390c: 448e0000  mtc1	t6,$f0                                      | 0023390c: 00047642  srl	t6,a0,0x19
+!! 00233910: 46800020  cvt.s.w	$f0,$f0                                  | 00233910: 01ee7825  or	t7,t7,t6
+!! 00233914: 1000fff2  b	0x2338e0                                       | 00233914: 448f0800  mtc1	t7,$f1
+!! 00233918: 46000000  add.s	$f0,$f0,$f0                                | 00233918: 46800860  cvt.s.w	$f1,$f1
+!!                                                                      | 0023391c: 1000ffee  b	2338d8 <func_002338a8+0x30>
+!!                                                                      | 00233920: 46010840  add.s	$f1,$f1,$f1

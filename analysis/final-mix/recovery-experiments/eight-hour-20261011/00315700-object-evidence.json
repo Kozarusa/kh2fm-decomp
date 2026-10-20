@@ -1,0 +1,42 @@
+{
+  "address": "00315700",
+  "accepted": false,
+  "proofs": [
+    {
+      "source": "eight_hour_00315700_object_u32_0.cpp",
+      "source_sha256": "1ed59ec2e6f4b304ccefd8f815111df4f6add8bbd6d20ebf6cdd5d7cf77a51be",
+      "proof": "eight_hour_00315700_object_u32_0.verification.json",
+      "proof_sha256": "b930c143d3477407e4a1177f7479d7a4eb10b3b3b473701ec438f48efad30b12",
+      "compiled_bytes": 56,
+      "target_bytes": 56,
+      "differing_words": 2
+    },
+    {
+      "source": "eight_hour_00315700_object_u32_1.cpp",
+      "source_sha256": "388a509540bcca87887757e70aa0e18b010309d13e415d9e046883516761ac0d",
+      "proof": "eight_hour_00315700_object_u32_1.verification.json",
+      "proof_sha256": "0079a0ef8d6c67bee5bf9f957d4439a3d4145889f629d8df413987a2700a7064",
+      "compiled_bytes": 56,
+      "target_bytes": 56,
+      "differing_words": 2
+    },
+    {
+      "source": "eight_hour_00315700_object_voidpointer_0.cpp",
+      "source_sha256": "71ff7abf2f438971fd3212186c9190c26b9325e46f5d281e6fabdcaef362f251",
+      "proof": "eight_hour_00315700_object_voidpointer_0.verification.json",
+      "proof_sha256": "dc69a26cb7ad134b98efe70f2f8a8defeed9b8634952930d9bb58f3690d603b5",
+      "compiled_bytes": 56,
+      "target_bytes": 56,
+      "differing_words": 2
+    },
+    {
+      "source": "eight_hour_00315700_object_voidpointer_1.cpp",
+      "source_sha256": "6259dda82b48a575d65ce7339dc55bb6f87a29bdce80be128e7899393767c46e",
+      "proof": "eight_hour_00315700_object_voidpointer_1.verification.json",
+      "proof_sha256": "4a8e761a61079c928746818619c67df1bea8ef112b879410a0cbbdd540c29249",
+      "compiled_bytes": 56,
+      "target_bytes": 56,
+      "differing_words": 2
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+00283e48: compiled 112 bytes, target 112 bytes, exact=False
+Differing words: 16. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00283e48: 27bdfff0  addiu	sp,sp,-16                                  | 00283e48: 27bdfff0  addiu	sp,sp,-16
+!! 00283e4c: 3c0d0036  lui	t5,0x36                                      | 00283e4c: 3c0f0036  lui	t7,0x36
+   00283e50: ffbf0000  sd	ra,0(sp)                                      | 00283e50: ffbf0000  sd	ra,0(sp)
+!! 00283e54: 8daef2b4  lw	t6,-3404(t5)   ; = D_0035f2b4                 | 00283e54: 8deef2b4  lw	t6,-3404(t7)   ; = D_0035f2b4
+!! 00283e58: 81cf000e  lb	t7,14(t6)                                     | 00283e58: 81cd000e  lb	t5,14(t6)
+!! 00283e5c: 81cd000d  lb	t5,13(t6)                                     | 00283e5c: 81cc000d  lb	t4,13(t6)
+!! 00283e60: 01cf7021  addu	t6,t6,t7                                    | 00283e60: 25af0001  addiu	t7,t5,1
+!! 00283e64: 25ef0001  addiu	t7,t7,1                                    | 00283e64: 01cd6821  addu	t5,t6,t5
+!! 00283e68: 01ed782a  slt	t7,t7,t5                                     | 00283e68: 01ec782a  slt	t7,t7,t4
+   00283e6c: 55e00004  bnezl	t7,0x283e80                                | 00283e6c: 55e00004  bnezl	t7,283e80 <func_00283e48+0x38>
+!! 00283e70: 81cd0005  lb	t5,5(t6)                                      | 00283e70: 81ae0005  lb	t6,5(t5)
+   00283e74: dfbf0000  ld	ra,0(sp)                                      | 00283e74: dfbf0000  ld	ra,0(sp)
+   00283e78: 080a0d6a  j	0x2835a8                                       | 00283e78: 080a0d6a  j	2835a8 <func_002835a8>
+   00283e7c: 27bd0010  addiu	sp,sp,16                                   | 00283e7c: 27bd0010  addiu	sp,sp,16
+   00283e80: 3c0f0037  lui	t7,0x37                                      | 00283e80: 3c0f0037  lui	t7,0x37
+   00283e84: 25ef42c8  addiu	t7,t7,17096   ; = D_003742c8               | 00283e84: 25ef42c8  addiu	t7,t7,17096   ; = D_003742c8
+   00283e88: dfbf0000  ld	ra,0(sp)                                      | 00283e88: dfbf0000  ld	ra,0(sp)
+!! 00283e8c: 81ce0004  lb	t6,4(t6)                                      | 00283e8c: 81ad0004  lb	t5,4(t5)
+!! 00283e90: 000d68c0  sll	t5,t5,0x3                                    | 00283e90: 000e70c0  sll	t6,t6,0x3
+!! 00283e94: 01af6821  addu	t5,t5,t7                                    | 00283e94: 01cf7021  addu	t6,t6,t7
+!! 00283e98: 000e70c0  sll	t6,t6,0x3                                    | 00283e98: 000d68c0  sll	t5,t5,0x3
+!! 00283e9c: 01cf7021  addu	t6,t6,t7                                    | 00283e9c: 91cc0006  lbu	t4,6(t6)
+!! 00283ea0: 91c40006  lbu	a0,6(t6)                                     | 00283ea0: 01af6821  addu	t5,t5,t7
+!! 00283ea4: 91af0006  lbu	t7,6(t5)                                     | 00283ea4: 91a40006  lbu	a0,6(t5)
+!! 00283ea8: 008f2026  xor	a0,a0,t7                                     | 00283ea8: 008c2026  xor	a0,a0,t4
+   00283eac: 0004202b  sltu	a0,zero,a0                                  | 00283eac: 0004202b  sltu	a0,zero,a0
+   00283eb0: 080a0e40  j	0x283900                                       | 00283eb0: 080a0e40  j	283900 <func_00283900>
+   00283eb4: 27bd0010  addiu	sp,sp,16                                   | 00283eb4: 27bd0010  addiu	sp,sp,16

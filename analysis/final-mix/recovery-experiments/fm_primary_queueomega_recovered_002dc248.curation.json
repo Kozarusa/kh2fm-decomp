@@ -1,0 +1,14 @@
+{
+  "probe_source": "analysis/final-mix/recovery-experiments/eight-hour-20261011/eight_hour_002dc248_float_difference_1.cpp",
+  "probe_source_sha256": "5ad2d1a832c55852eb00716c265b9ea4da66f2dd5d1cf96ee75e0bc84eca58fe",
+  "probe_proof_sha256": "a2f99b5e3f995d2a64fe546fc4b35cec192c57437a58657bf684bdcb8609267c",
+  "curated_source": "analysis/final-mix/recovery-experiments/fm_primary_queueomega_recovered_002dc248.cpp",
+  "curated_source_sha256": "a325fc473efe42b3a7339d34e780b0852af7463790d1ea0f294c46bac864bfd2",
+  "selected_addresses": [
+    "002dc248"
+  ],
+  "exclusion_receipt": null,
+  "limitations": [
+    "Curated source still requires a new probe, registration and full build."
+  ]
+}

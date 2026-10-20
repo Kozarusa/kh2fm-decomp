@@ -1,0 +1,42 @@
+{
+  "session": "2026-10-08-primary-work-v3",
+  "baseline_exact_matches": 5508,
+  "accepted_exact_matches": 5627,
+  "added_exact_ranges": 119,
+  "added_instruction_bytes": 6852,
+  "cpp_ranges": 5631,
+  "fallback_ranges": 5752,
+  "source_inputs": 2134,
+  "cumulative_bundles": 53,
+  "switch_receipts": 2,
+  "whole_executable_byte_exact": true,
+  "limitation": "Whole ELF equality retains original fallback bytes; types, boundaries and runtime behavior remain provisional.",
+  "current_checkpoint": "analysis/final-mix/primary-argumentfinish-checkpoint-2026-10-08.json",
+  "guidance": "Existing round-6 guidance unchanged this run.",
+  "evidence": [
+    {
+      "file": "analysis/final-mix/primary-workerbacklog-checkpoint-2026-10-08.json",
+      "sha256": "0c596523dce4c6b8ed56048de007bb11cbcd2742cc19face4a5fbf5a40436248"
+    },
+    {
+      "file": "analysis/final-mix/primary-argumentfinish-checkpoint-2026-10-08.json",
+      "sha256": "04a593da55eeea9fbb2d0153432f9ed064308686bfd95b95e8536359e867eb44"
+    },
+    {
+      "file": "analysis/final-mix/recovery-experiments/primary-workerbacklog-alias-regression.json",
+      "sha256": "293e9498c1029184044e62fbf0b59b06a6b9f10bb48d6fc43e38b7c94c60b30a"
+    },
+    {
+      "file": "analysis/final-mix/recovery-experiments/fm_primary_conditiontransport_v6_00307f68_1.verification.json",
+      "sha256": "4517ce05cd48da1afbe3b20bc539ee92df258b6b89a29ea65f32000996620020"
+    },
+    {
+      "file": "analysis/final-mix/recovery-experiments/fm_primary_conditiontransport_v6_00307f68_2.verification.json",
+      "sha256": "a9bf955b1e1f70f317379af9dc0176ffb861f2d2131de9d852de751baaa22d1d"
+    },
+    {
+      "file": "analysis/final-mix/recovery-experiments/fm_primary_conditiontransport_v6_00307f68_3.verification.json",
+      "sha256": "682b83ac24dd9512cec9bc8d80ecebdd9d027b534333ba982ad502a1df51b97e"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+00275f08: compiled 88 bytes, target 92 bytes, exact=False
+Differing words: 3. First difference at instruction 20 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00275f08: 27bdffe0  addiu	sp,sp,-32                                  | 00275f08: 27bdffe0  addiu	sp,sp,-32
+   00275f0c: ffb00000  sd	s0,0(sp)                                      | 00275f0c: ffb00000  sd	s0,0(sp)
+   00275f10: ffb10008  sd	s1,8(sp)                                      | 00275f10: ffb10008  sd	s1,8(sp)
+   00275f14: 0080802d  move	s0,a0                                       | 00275f14: 0080802d  move	s0,a0
+   00275f18: ffbf0010  sd	ra,16(sp)                                     | 00275f18: ffbf0010  sd	ra,16(sp)
+   00275f1c: 3c110036  lui	s1,0x36                                      | 00275f1c: 3c110036  lui	s1,0x36
+   00275f20: 8e24f20c  lw	a0,-3572(s1)   ; = D_0035f20c                 | 00275f20: 8e24f20c  lw	a0,-3572(s1)   ; = D_0035f20c
+   00275f24: 0c04e75e  jal	0x139d78                                     | 00275f24: 0c04e75e  jal	139d78 <func_00139d78>
+   00275f28: 2484051c  addiu	a0,a0,1308                                 | 00275f28: 2484051c  addiu	a0,a0,1308
+   00275f2c: 06010008  bgez	s0,0x275f50                                 | 00275f2c: 06010008  bgez	s0,275f50 <func_00275f08+0x48>
+   00275f30: 0200202d  move	a0,s0                                       | 00275f30: 0200202d  move	a0,s0
+   00275f34: 8e2ff20c  lw	t7,-3572(s1)   ; = D_0035f20c                 | 00275f34: 8e2ff20c  lw	t7,-3572(s1)   ; = D_0035f20c
+   00275f38: ade006b4  sw	zero,1716(t7)                                 | 00275f38: ade006b4  sw	zero,1716(t7)
+   00275f3c: dfb00000  ld	s0,0(sp)                                      | 00275f3c: dfb00000  ld	s0,0(sp)
+   00275f40: dfb10008  ld	s1,8(sp)                                      | 00275f40: dfb10008  ld	s1,8(sp)
+   00275f44: dfbf0010  ld	ra,16(sp)                                     | 00275f44: dfbf0010  ld	ra,16(sp)
+   00275f48: 03e00008  jr	ra                                            | 00275f48: 03e00008  jr	ra
+   00275f4c: 27bd0020  addiu	sp,sp,32                                   | 00275f4c: 27bd0020  addiu	sp,sp,32
+   00275f50: 0c064812  jal	0x192048                                     | 00275f50: 0c064812  jal	192048 <func_00192048>
+   00275f54: 8e30f20c  lw	s0,-3572(s1)                                  | 00275f54: 8e30f20c  lw	s0,-3572(s1)
+!! 00275f58: 2610051c  addiu	s0,s0,1308                                 | 00275f58: 1000fff8  b	275f3c <func_00275f08+0x34>
+!! 00275f5c: 1000fff7  b	0x275f3c                                       | 00275f5c: ae0206b4  sw	v0,1716(s0)
+!! 00275f60: ae020198  sw	v0,408(s0)                                    | 

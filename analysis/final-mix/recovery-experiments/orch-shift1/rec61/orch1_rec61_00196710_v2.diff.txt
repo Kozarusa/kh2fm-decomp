@@ -1,0 +1,26 @@
+00196710: compiled 88 bytes, target 88 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00196710: 27bdfff0  addiu	sp,sp,-16                                  | 00196710: 27bdfff0  addiu	sp,sp,-16
+   00196714: ffb00000  sd	s0,0(sp)                                      | 00196714: ffb00000  sd	s0,0(sp)
+   00196718: ffbf0008  sd	ra,8(sp)                                      | 00196718: ffbf0008  sd	ra,8(sp)
+   0019671c: 0c0659a6  jal	0x196698                                     | 0019671c: 0c0659a6  jal	196698 <func_00196698>
+   00196720: 0080802d  move	s0,a0                                       | 00196720: 0080802d  move	s0,a0
+   00196724: 00108040  sll	s0,s0,0x1                                    | 00196724: 00108040  sll	s0,s0,0x1
+   00196728: 3c0f01c6  lui	t7,0x1c6                                     | 00196728: 3c0f01c6  lui	t7,0x1c6
+   0019672c: 8dee1b08  lw	t6,6920(t7)   ; = D_01c61b08                  | 0019672c: 8dee1b08  lw	t6,6920(t7)   ; = D_01c61b08
+   00196730: 020e8021  addu	s0,s0,t6                                    | 00196730: 020e8021  addu	s0,s0,t6
+   00196734: 92040002  lbu	a0,2(s0)                                     | 00196734: 92040002  lbu	a0,2(s0)
+   00196738: 0c0658e2  jal	0x196388                                     | 00196738: 0c0658e2  jal	196388 <func_00196388>
+   0019673c: 92050003  lbu	a1,3(s0)                                     | 0019673c: 92050003  lbu	a1,3(s0)
+   00196740: 04400005  bltz	v0,0x196758                                 | 00196740: 04400005  bltz	v0,196758 <func_00196710+0x48>
+   00196744: 0040202d  move	a0,v0                                       | 00196744: 0040202d  move	a0,v0
+   00196748: dfb00000  ld	s0,0(sp)                                      | 00196748: dfb00000  ld	s0,0(sp)
+   0019674c: dfbf0008  ld	ra,8(sp)                                      | 0019674c: dfbf0008  ld	ra,8(sp)
+   00196750: 080658fe  j	0x1963f8                                       | 00196750: 080658fe  j	1963f8 <func_001963f8>
+   00196754: 27bd0010  addiu	sp,sp,16                                   | 00196754: 27bd0010  addiu	sp,sp,16
+   00196758: dfb00000  ld	s0,0(sp)                                      | 00196758: dfb00000  ld	s0,0(sp)
+   0019675c: dfbf0008  ld	ra,8(sp)                                      | 0019675c: dfbf0008  ld	ra,8(sp)
+   00196760: 03e00008  jr	ra                                            | 00196760: 03e00008  jr	ra
+   00196764: 27bd0010  addiu	sp,sp,16                                   | 00196764: 27bd0010  addiu	sp,sp,16

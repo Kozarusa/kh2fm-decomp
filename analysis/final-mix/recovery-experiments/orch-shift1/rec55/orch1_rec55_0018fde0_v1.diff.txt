@@ -1,0 +1,15 @@
+0018fde0: compiled 44 bytes, target 44 bytes, exact=False
+Differing words: 7. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0018fde0: 27bdfff0  addiu	sp,sp,-16                                  | 0018fde0: 27bdfff0  addiu	sp,sp,-16
+!! 0018fde4: ffbf0000  sd	ra,0(sp)                                      | 0018fde4: 0080782d  move	t7,a0
+!! 0018fde8: 8c86000c  lw	a2,12(a0)                                     | 0018fde8: ffbf0000  sd	ra,0(sp)
+!! 0018fdec: 8c8f0000  lw	t7,0(a0)                                      | 0018fdec: 8c86000c  lw	a2,12(a0)
+   0018fdf0: c48c0008  lwc1	$f12,8(a0)                                  | 0018fdf0: c48c0008  lwc1	$f12,8(a0)
+!! 0018fdf4: 0006302b  sltu	a2,zero,a2                                  | 0018fdf4: 8de50004  lw	a1,4(t7)
+!! 0018fdf8: 8c850004  lw	a1,4(a0)                                      | 0018fdf8: 0006302b  sltu	a2,zero,a2
+!! 0018fdfc: dfbf0000  ld	ra,0(sp)                                      | 0018fdfc: 8c840000  lw	a0,0(a0)
+!! 0018fe00: 01e0202d  move	a0,t7                                       | 0018fe00: dfbf0000  ld	ra,0(sp)
+   0018fe04: 0806d438  j	0x1b50e0                                       | 0018fe04: 0806d438  j	1b50e0 <func_001b50e0>
+   0018fe08: 27bd0010  addiu	sp,sp,16                                   | 0018fe08: 27bd0010  addiu	sp,sp,16

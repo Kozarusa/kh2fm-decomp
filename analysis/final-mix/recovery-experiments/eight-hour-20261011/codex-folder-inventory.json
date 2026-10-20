@@ -1,0 +1,2563 @@
+{
+  "root": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex",
+  "scope": "All reachable child directories; symbolic links and directory junctions are not followed. Snapshot during ongoing recovery.",
+  "elapsed_seconds": 19.689152002334595,
+  "directory_count": 393,
+  "file_count": 150050,
+  "total_bytes": 2144341363,
+  "extensions": {
+    ".json": 107898,
+    ".log": 22648,
+    ".cpp": 5805,
+    ".event": 2956,
+    ".bdx": 2530,
+    ".area-script": 2131,
+    ".c": 1161,
+    ".xml": 1043,
+    ".py": 933,
+    ".txt": 886,
+    ".bdscript": 733,
+    ".hex": 354,
+    ".elf": 166,
+    ".md": 164,
+    ".tsv": 164,
+    ".gz": 82,
+    ".prp": 78,
+    ".gbf": 78,
+    ".irx": 48,
+    ".jsonl": 32,
+    ".bin": 28,
+    ".sh": 25,
+    ".comp": 20,
+    ".orig": 20,
+    ".ranges": 20,
+    ".x": 9,
+    ".dat": 9,
+    ".bak": 6,
+    ".pyc": 6,
+    ".gpr": 3,
+    ".before-link-repair": 3,
+    ".s": 3,
+    ".05": 1,
+    ".75": 1,
+    ".lock": 1,
+    ".lock~": 1,
+    ".ps": 1,
+    ".o": 1,
+    ".sqlite3": 1,
+    ".h": 1
+  },
+  "rollup_to_depth_three": {
+    ".": {
+      "files": 150050,
+      "bytes": 2144341363,
+      "directories": 393
+    },
+    "analysis": {
+      "files": 150046,
+      "bytes": 2144298594,
+      "directories": 391
+    },
+    "analysis/coverage": {
+      "files": 2669,
+      "bytes": 36131576,
+      "directories": 8
+    },
+    "analysis/coverage/bdx": {
+      "files": 435,
+      "bytes": 5410844,
+      "directories": 1
+    },
+    "analysis/coverage/binaries": {
+      "files": 43,
+      "bytes": 4244508,
+      "directories": 2
+    },
+    "analysis/coverage/disc-scripts": {
+      "files": 2176,
+      "bytes": 13038844,
+      "directories": 4
+    },
+    "analysis/final-mix": {
+      "files": 146215,
+      "bytes": 2107040226,
+      "directories": 378
+    },
+    "analysis/final-mix/accepted-snapshots": {
+      "files": 117351,
+      "bytes": 1283192238,
+      "directories": 165
+    },
+    "analysis/final-mix/area-script-source": {
+      "files": 727,
+      "bytes": 706186,
+      "directories": 1
+    },
+    "analysis/final-mix/bdscript": {
+      "files": 733,
+      "bytes": 36264563,
+      "directories": 1
+    },
+    "analysis/final-mix/binaries": {
+      "files": 44,
+      "bytes": 4450856,
+      "directories": 2
+    },
+    "analysis/final-mix/disc-scripts": {
+      "files": 2503,
+      "bytes": 15419394,
+      "directories": 4
+    },
+    "analysis/final-mix/event-script-source": {
+      "files": 1043,
+      "bytes": 50593949,
+      "directories": 1
+    },
+    "analysis/final-mix/ghidra-mcp-projects": {
+      "files": 61,
+      "bytes": 179273323,
+      "directories": 32
+    },
+    "analysis/final-mix/ghidra-projects": {
+      "files": 58,
+      "bytes": 132136322,
+      "directories": 32
+    },
+    "analysis/final-mix/native-build": {
+      "files": 2205,
+      "bytes": 17813830,
+      "directories": 1
+    },
+    "analysis/final-mix/native-pseudocode": {
+      "files": 145,
+      "bytes": 168616601,
+      "directories": 64
+    },
+    "analysis/final-mix/path-migration-2026-10-08": {
+      "files": 15,
+      "bytes": 84738,
+      "directories": 1
+    },
+    "analysis/final-mix/rebuilt-area-script": {
+      "files": 727,
+      "bytes": 294572,
+      "directories": 1
+    },
+    "analysis/final-mix/rebuilt-bdx": {
+      "files": 733,
+      "bytes": 6044126,
+      "directories": 1
+    },
+    "analysis/final-mix/rebuilt-event-script": {
+      "files": 1043,
+      "bytes": 9080696,
+      "directories": 1
+    },
+    "analysis/final-mix/recovery-drafts": {
+      "files": 5,
+      "bytes": 22420,
+      "directories": 1
+    },
+    "analysis/final-mix/recovery-experiments": {
+      "files": 16857,
+      "bytes": 38853151,
+      "directories": 17
+    },
+    "analysis/final-mix/tool-integrations": {
+      "files": 9,
+      "bytes": 1909322,
+      "directories": 1
+    },
+    "analysis/final-mix/worker-coordination": {
+      "files": 1770,
+      "bytes": 4744585,
+      "directories": 51
+    },
+    "analysis/recovered-pseudocode": {
+      "files": 1161,
+      "bytes": 1121204,
+      "directories": 4
+    },
+    "analysis/recovered-pseudocode/ovl_gumibattle.x": {
+      "files": 59,
+      "bytes": 82460,
+      "directories": 1
+    },
+    "analysis/recovered-pseudocode/ovl_gumimenu.x": {
+      "files": 58,
+      "bytes": 102425,
+      "directories": 1
+    },
+    "analysis/recovered-pseudocode/SLUS_210.05": {
+      "files": 1044,
+      "bytes": 936319,
+      "directories": 1
+    },
+    "tools": {
+      "files": 0,
+      "bytes": 0,
+      "directories": 1
+    }
+  },
+  "directories": [
+    {
+      "directory": ".",
+      "direct_files": 4,
+      "direct_bytes": 42769,
+      "child_directories": 2
+    },
+    {
+      "directory": "analysis",
+      "direct_files": 1,
+      "direct_bytes": 5588,
+      "child_directories": 3
+    },
+    {
+      "directory": "analysis/coverage",
+      "direct_files": 15,
+      "direct_bytes": 13437380,
+      "child_directories": 3
+    },
+    {
+      "directory": "analysis/coverage/bdx",
+      "direct_files": 435,
+      "direct_bytes": 5410844,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/coverage/binaries",
+      "direct_files": 42,
+      "direct_bytes": 4233535,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/coverage/binaries/PAD2",
+      "direct_files": 1,
+      "direct_bytes": 10973,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/coverage/disc-scripts",
+      "direct_files": 0,
+      "direct_bytes": 0,
+      "child_directories": 3
+    },
+    {
+      "directory": "analysis/coverage/disc-scripts/ai",
+      "direct_files": 629,
+      "direct_bytes": 4553202,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/coverage/disc-scripts/area_script",
+      "direct_files": 677,
+      "direct_bytes": 201556,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/coverage/disc-scripts/event_script",
+      "direct_files": 870,
+      "direct_bytes": 8284086,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix",
+      "direct_files": 186,
+      "direct_bytes": 157539354,
+      "child_directories": 18
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots",
+      "direct_files": 0,
+      "direct_bytes": 0,
+      "child_directories": 81
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-addressalias",
+      "direct_files": 3,
+      "direct_bytes": 640702,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-addressalias/native-build",
+      "direct_files": 1187,
+      "direct_bytes": 14154467,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-aliashelpers",
+      "direct_files": 3,
+      "direct_bytes": 676690,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-aliashelpers/native-build",
+      "direct_files": 1393,
+      "direct_bytes": 14920339,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-allocatorfinish",
+      "direct_files": 3,
+      "direct_bytes": 639226,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-allocatorfinish/native-build",
+      "direct_files": 1181,
+      "direct_bytes": 14129898,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-animationfinish",
+      "direct_files": 3,
+      "direct_bytes": 636304,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-animationfinish/native-build",
+      "direct_files": 1169,
+      "direct_bytes": 14081028,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-argumentfinish",
+      "direct_files": 2,
+      "direct_bytes": 604334,
+      "child_directories": 2
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-argumentfinish/native-build",
+      "direct_files": 1146,
+      "direct_bytes": 13996591,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-argumentfinish/tools",
+      "direct_files": 2,
+      "direct_bytes": 61438,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-bytewrapper",
+      "direct_files": 3,
+      "direct_bytes": 684300,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-bytewrapper/native-build",
+      "direct_files": 1427,
+      "direct_bytes": 15068520,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-callbackaddress",
+      "direct_files": 3,
+      "direct_bytes": 667531,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-callbackaddress/native-build",
+      "direct_files": 1342,
+      "direct_bytes": 14730792,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-callbackfamily",
+      "direct_files": 3,
+      "direct_bytes": 652108,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-callbackfamily/native-build",
+      "direct_files": 1254,
+      "direct_bytes": 14398698,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-callbackreturn",
+      "direct_files": 3,
+      "direct_bytes": 669469,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-callbackreturn/native-build",
+      "direct_files": 1355,
+      "direct_bytes": 14773350,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-calltransport",
+      "direct_files": 3,
+      "direct_bytes": 658879,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-calltransport/native-build",
+      "direct_files": 1301,
+      "direct_bytes": 14559068,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-clearloop",
+      "direct_files": 3,
+      "direct_bytes": 660552,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-clearloop/native-build",
+      "direct_files": 1310,
+      "direct_bytes": 14593884,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-conditionfinish",
+      "direct_files": 3,
+      "direct_bytes": 634909,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-conditionfinish/native-build",
+      "direct_files": 1163,
+      "direct_bytes": 14056409,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-conditionresult",
+      "direct_files": 3,
+      "direct_bytes": 655346,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-conditionresult/native-build",
+      "direct_files": 1284,
+      "direct_bytes": 14492174,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-controlshape",
+      "direct_files": 2,
+      "direct_bytes": 603158,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-controlshape/native-build",
+      "direct_files": 842,
+      "direct_bytes": 13200606,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-delegatedbatch",
+      "direct_files": 3,
+      "direct_bytes": 698160,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-delegatedbatch/native-build",
+      "direct_files": 1478,
+      "direct_bytes": 15319199,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-dependencyfamily",
+      "direct_files": 3,
+      "direct_bytes": 662010,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-dependencyfamily/native-build",
+      "direct_files": 1316,
+      "direct_bytes": 14623290,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-flagguard",
+      "direct_files": 3,
+      "direct_bytes": 688341,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-flagguard/native-build",
+      "direct_files": 1441,
+      "direct_bytes": 15136145,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-floatdenominator",
+      "direct_files": 3,
+      "direct_bytes": 637726,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-floatdenominator/native-build",
+      "direct_files": 1175,
+      "direct_bytes": 14105766,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-floatiterator",
+      "direct_files": 3,
+      "direct_bytes": 665734,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-floatiterator/native-build",
+      "direct_files": 1336,
+      "direct_bytes": 14700702,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-floatresult",
+      "direct_files": 3,
+      "direct_bytes": 690114,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-floatresult/native-build",
+      "direct_files": 1448,
+      "direct_bytes": 15170438,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-framealias",
+      "direct_files": 3,
+      "direct_bytes": 643282,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-framealias/native-build",
+      "direct_files": 1202,
+      "direct_bytes": 14210479,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-freshhelpers",
+      "direct_files": 3,
+      "direct_bytes": 674842,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-freshhelpers/native-build",
+      "direct_files": 1384,
+      "direct_bytes": 14883286,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-globalargument",
+      "direct_files": 3,
+      "direct_bytes": 686189,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-globalargument/native-build",
+      "direct_files": 1434,
+      "direct_bytes": 15102074,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-globalcall",
+      "direct_files": 3,
+      "direct_bytes": 642046,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-globalcall/native-build",
+      "direct_files": 1193,
+      "direct_bytes": 14179999,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-indexedmask",
+      "direct_files": 3,
+      "direct_bytes": 694315,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-indexedmask/native-build",
+      "direct_files": 1462,
+      "direct_bytes": 15244145,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-loadorder",
+      "direct_files": 2,
+      "direct_bytes": 603110,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-loadorder/native-build",
+      "direct_files": 826,
+      "direct_bytes": 13153753,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-lookupswitch",
+      "direct_files": 4,
+      "direct_bytes": 696463,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-lookupswitch/native-build",
+      "direct_files": 1455,
+      "direct_bytes": 15205285,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-maskpair",
+      "direct_files": 3,
+      "direct_bytes": 696344,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-maskpair/native-build",
+      "direct_files": 1469,
+      "direct_bytes": 15278691,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-mediumcall",
+      "direct_files": 3,
+      "direct_bytes": 671459,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-mediumcall/native-build",
+      "direct_files": 1370,
+      "direct_bytes": 14819409,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-memoryfamily",
+      "direct_files": 3,
+      "direct_bytes": 649084,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-memoryfamily/native-build",
+      "direct_files": 1237,
+      "direct_bytes": 14334743,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-mixedtransport",
+      "direct_files": 3,
+      "direct_bytes": 657119,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-mixedtransport/native-build",
+      "direct_files": 1290,
+      "direct_bytes": 14520325,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-nearhelper",
+      "direct_files": 3,
+      "direct_bytes": 644588,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-nearhelper/native-build",
+      "direct_files": 1211,
+      "direct_bytes": 14242284,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-offsetpair",
+      "direct_files": 3,
+      "direct_bytes": 653934,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-offsetpair/native-build",
+      "direct_files": 1275,
+      "direct_bytes": 14458680,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-packetalias",
+      "direct_files": 3,
+      "direct_bytes": 678538,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-packetalias/native-build",
+      "direct_files": 1402,
+      "direct_bytes": 14956221,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-packetnext",
+      "direct_files": 2,
+      "direct_bytes": 603014,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-packetnext/native-build",
+      "direct_files": 805,
+      "direct_bytes": 13097504,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-packetorder",
+      "direct_files": 2,
+      "direct_bytes": 603038,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-packetorder/native-build",
+      "direct_files": 813,
+      "direct_bytes": 13120045,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-packetreturn",
+      "direct_files": 2,
+      "direct_bytes": 603350,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-packetreturn/native-build",
+      "direct_files": 894,
+      "direct_bytes": 13342924,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-predicatereg",
+      "direct_files": 2,
+      "direct_bytes": 603134,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-predicatereg/native-build",
+      "direct_files": 834,
+      "direct_bytes": 13176798,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-quadtransport",
+      "direct_files": 3,
+      "direct_bytes": 682254,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-quadtransport/native-build",
+      "direct_files": 1418,
+      "direct_bytes": 15027542,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-resumeoct",
+      "direct_files": 2,
+      "direct_bytes": 602894,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-resumeoct/native-build",
+      "direct_files": 782,
+      "direct_bytes": 13043678,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-scalartransport",
+      "direct_files": 2,
+      "direct_bytes": 603206,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-scalartransport/native-build",
+      "direct_files": 853,
+      "direct_bytes": 13231015,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-storeorder",
+      "direct_files": 2,
+      "direct_bytes": 603254,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-storeorder/native-build",
+      "direct_files": 866,
+      "direct_bytes": 13265858,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-tablelookup",
+      "direct_files": 3,
+      "direct_bytes": 673115,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-tablelookup/native-build",
+      "direct_files": 1377,
+      "direct_bytes": 14850769,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-tailcallload",
+      "direct_files": 3,
+      "direct_bytes": 650596,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-tailcallload/native-build",
+      "direct_files": 1248,
+      "direct_bytes": 14372328,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-virtualaddress",
+      "direct_files": 3,
+      "direct_bytes": 645892,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-virtualaddress/native-build",
+      "direct_files": 1217,
+      "direct_bytes": 14268045,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-virtualguard",
+      "direct_files": 3,
+      "direct_bytes": 680334,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-virtualguard/native-build",
+      "direct_files": 1411,
+      "direct_bytes": 14994005,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-virtualsiblings",
+      "direct_files": 3,
+      "direct_bytes": 647446,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-virtualsiblings/native-build",
+      "direct_files": 1226,
+      "direct_bytes": 14299365,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-workerbacklog",
+      "direct_files": 2,
+      "direct_bytes": 603374,
+      "child_directories": 2
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-workerbacklog/native-build",
+      "direct_files": 902,
+      "direct_bytes": 13374307,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-workerbacklog/tools",
+      "direct_files": 2,
+      "direct_bytes": 60934,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-workerfive",
+      "direct_files": 2,
+      "direct_bytes": 603302,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-workerfive/native-build",
+      "direct_files": 879,
+      "direct_bytes": 13301491,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-workerround",
+      "direct_files": 3,
+      "direct_bytes": 633685,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-workerround/native-build",
+      "direct_files": 1152,
+      "direct_bytes": 14021512,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-wrapperorder",
+      "direct_files": 3,
+      "direct_bytes": 664006,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-08-before-wrapperorder/native-build",
+      "direct_files": 1327,
+      "direct_bytes": 14665196,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuealpha",
+      "direct_files": 3,
+      "direct_bytes": 700518,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuealpha/native-build",
+      "direct_files": 1493,
+      "direct_bytes": 15375608,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuealphaprime",
+      "direct_files": 3,
+      "direct_bytes": 762037,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuealphaprime/native-build",
+      "direct_files": 1977,
+      "direct_bytes": 17135041,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuebeta",
+      "direct_files": 3,
+      "direct_bytes": 702622,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuebeta/native-build",
+      "direct_files": 1510,
+      "direct_bytes": 15438549,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuebetaprime",
+      "direct_files": 3,
+      "direct_bytes": 765109,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuebetaprime/native-build",
+      "direct_files": 2096,
+      "direct_bytes": 17416941,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuechi",
+      "direct_files": 3,
+      "direct_bytes": 754759,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuechi/native-build",
+      "direct_files": 1914,
+      "direct_bytes": 16910156,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuedelta",
+      "direct_files": 3,
+      "direct_bytes": 706999,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuedelta/native-build",
+      "direct_files": 1570,
+      "direct_bytes": 15636966,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuedeltaprime",
+      "direct_files": 3,
+      "direct_bytes": 771389,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuedeltaprime/native-build",
+      "direct_files": 2156,
+      "direct_bytes": 17613645,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queueepsilon",
+      "direct_files": 3,
+      "direct_bytes": 709265,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queueepsilon/native-build",
+      "direct_files": 1602,
+      "direct_bytes": 15740167,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queueepsilonprime",
+      "direct_files": 3,
+      "direct_bytes": 774614,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queueepsilonprime/native-build",
+      "direct_files": 2171,
+      "direct_bytes": 17678932,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queueeta",
+      "direct_files": 3,
+      "direct_bytes": 714194,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queueeta/native-build",
+      "direct_files": 1680,
+      "direct_bytes": 15989454,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuegamma",
+      "direct_files": 3,
+      "direct_bytes": 704659,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuegamma/native-build",
+      "direct_files": 1537,
+      "direct_bytes": 15527277,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuegammaprime",
+      "direct_files": 3,
+      "direct_bytes": 768167,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuegammaprime/native-build",
+      "direct_files": 2125,
+      "direct_bytes": 17510839,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queueiota",
+      "direct_files": 3,
+      "direct_bytes": 725932,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queueiota/native-build",
+      "direct_files": 1801,
+      "direct_bytes": 16343404,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuekappa",
+      "direct_files": 3,
+      "direct_bytes": 728020,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuekappa/native-build",
+      "direct_files": 1808,
+      "direct_bytes": 16381025,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuelambda",
+      "direct_files": 3,
+      "direct_bytes": 730226,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuelambda/native-build",
+      "direct_files": 1815,
+      "direct_bytes": 16419744,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuemu",
+      "direct_files": 3,
+      "direct_bytes": 732552,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuemu/native-build",
+      "direct_files": 1822,
+      "direct_bytes": 16457989,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuenu",
+      "direct_files": 3,
+      "direct_bytes": 734529,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuenu/native-build",
+      "direct_files": 1833,
+      "direct_bytes": 16504515,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queueomega",
+      "direct_files": 3,
+      "direct_bytes": 759427,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queueomega/native-build",
+      "direct_files": 1952,
+      "direct_bytes": 17049012,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queueomicron",
+      "direct_files": 3,
+      "direct_bytes": 738540,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queueomicron/native-build",
+      "direct_files": 1853,
+      "direct_bytes": 16597065,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuephi",
+      "direct_files": 3,
+      "direct_bytes": 752503,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuephi/native-build",
+      "direct_files": 1903,
+      "direct_bytes": 16857551,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuepi",
+      "direct_files": 3,
+      "direct_bytes": 741060,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuepi/native-build",
+      "direct_files": 1860,
+      "direct_bytes": 16636762,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuepsi",
+      "direct_files": 3,
+      "direct_bytes": 757083,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuepsi/native-build",
+      "direct_files": 1931,
+      "direct_bytes": 16975134,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuerho",
+      "direct_files": 3,
+      "direct_bytes": 743113,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuerho/native-build",
+      "direct_files": 1869,
+      "direct_bytes": 16680861,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuesigma",
+      "direct_files": 3,
+      "direct_bytes": 745241,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuesigma/native-build",
+      "direct_files": 1876,
+      "direct_bytes": 16721350,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuetau",
+      "direct_files": 3,
+      "direct_bytes": 747623,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuetau/native-build",
+      "direct_files": 1883,
+      "direct_bytes": 16761561,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuetheta",
+      "direct_files": 3,
+      "direct_bytes": 716602,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuetheta/native-build",
+      "direct_files": 1729,
+      "direct_bytes": 16146116,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queueupsilon",
+      "direct_files": 3,
+      "direct_bytes": 749839,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queueupsilon/native-build",
+      "direct_files": 1892,
+      "direct_bytes": 16807486,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuexi",
+      "direct_files": 3,
+      "direct_bytes": 736549,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuexi/native-build",
+      "direct_files": 1844,
+      "direct_bytes": 16552849,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuezeta",
+      "direct_files": 3,
+      "direct_bytes": 711977,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuezeta/native-build",
+      "direct_files": 1655,
+      "direct_bytes": 15901702,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuezetaprime",
+      "direct_files": 3,
+      "direct_bytes": 778074,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/accepted-snapshots/2026-10-09-before-queuezetaprime/native-build",
+      "direct_files": 2196,
+      "direct_bytes": 17763023,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/area-script-source",
+      "direct_files": 727,
+      "direct_bytes": 706186,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/bdscript",
+      "direct_files": 733,
+      "direct_bytes": 36264563,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/binaries",
+      "direct_files": 43,
+      "direct_bytes": 4439883,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/binaries/PAD2",
+      "direct_files": 1,
+      "direct_bytes": 10973,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/disc-scripts",
+      "direct_files": 0,
+      "direct_bytes": 0,
+      "child_directories": 3
+    },
+    {
+      "directory": "analysis/final-mix/disc-scripts/ai",
+      "direct_files": 733,
+      "direct_bytes": 6044126,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/disc-scripts/area_script",
+      "direct_files": 727,
+      "direct_bytes": 294572,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/disc-scripts/event_script",
+      "direct_files": 1043,
+      "direct_bytes": 9080696,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/event-script-source",
+      "direct_files": 1043,
+      "direct_bytes": 50593949,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-mcp-projects",
+      "direct_files": 3,
+      "direct_bytes": 233,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-mcp-projects/kh2fm.rep",
+      "direct_files": 1,
+      "direct_bytes": 163,
+      "child_directories": 3
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-mcp-projects/kh2fm.rep/idata",
+      "direct_files": 2,
+      "direct_bytes": 2822,
+      "child_directories": 2
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-mcp-projects/kh2fm.rep/idata/00",
+      "direct_files": 16,
+      "direct_bytes": 8045,
+      "child_directories": 16
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-mcp-projects/kh2fm.rep/idata/00/~00000000.db",
+      "direct_files": 3,
+      "direct_bytes": 141672448,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-mcp-projects/kh2fm.rep/idata/00/~00000001.db",
+      "direct_files": 1,
+      "direct_bytes": 1490944,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-mcp-projects/kh2fm.rep/idata/00/~00000002.db",
+      "direct_files": 1,
+      "direct_bytes": 1703936,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-mcp-projects/kh2fm.rep/idata/00/~00000003.db",
+      "direct_files": 1,
+      "direct_bytes": 2916352,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-mcp-projects/kh2fm.rep/idata/00/~00000004.db",
+      "direct_files": 1,
+      "direct_bytes": 2818048,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-mcp-projects/kh2fm.rep/idata/00/~00000005.db",
+      "direct_files": 1,
+      "direct_bytes": 1130496,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-mcp-projects/kh2fm.rep/idata/00/~00000006.db",
+      "direct_files": 1,
+      "direct_bytes": 1835008,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-mcp-projects/kh2fm.rep/idata/00/~00000007.db",
+      "direct_files": 1,
+      "direct_bytes": 2834432,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-mcp-projects/kh2fm.rep/idata/00/~00000008.db",
+      "direct_files": 1,
+      "direct_bytes": 1130496,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-mcp-projects/kh2fm.rep/idata/00/~00000009.db",
+      "direct_files": 1,
+      "direct_bytes": 1622016,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-mcp-projects/kh2fm.rep/idata/00/~0000000a.db",
+      "direct_files": 1,
+      "direct_bytes": 1327104,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-mcp-projects/kh2fm.rep/idata/00/~0000000b.db",
+      "direct_files": 1,
+      "direct_bytes": 1359872,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-mcp-projects/kh2fm.rep/idata/00/~0000000c.db",
+      "direct_files": 1,
+      "direct_bytes": 1310720,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-mcp-projects/kh2fm.rep/idata/00/~0000000d.db",
+      "direct_files": 1,
+      "direct_bytes": 1687552,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-mcp-projects/kh2fm.rep/idata/00/~0000000e.db",
+      "direct_files": 1,
+      "direct_bytes": 1130496,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-mcp-projects/kh2fm.rep/idata/00/~0000000f.db",
+      "direct_files": 1,
+      "direct_bytes": 1294336,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-mcp-projects/kh2fm.rep/idata/01",
+      "direct_files": 9,
+      "direct_bytes": 4527,
+      "child_directories": 9
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-mcp-projects/kh2fm.rep/idata/01/~00000010.db",
+      "direct_files": 1,
+      "direct_bytes": 1228800,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-mcp-projects/kh2fm.rep/idata/01/~00000011.db",
+      "direct_files": 1,
+      "direct_bytes": 1130496,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-mcp-projects/kh2fm.rep/idata/01/~00000012.db",
+      "direct_files": 1,
+      "direct_bytes": 1376256,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-mcp-projects/kh2fm.rep/idata/01/~00000013.db",
+      "direct_files": 1,
+      "direct_bytes": 1163264,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-mcp-projects/kh2fm.rep/idata/01/~00000014.db",
+      "direct_files": 1,
+      "direct_bytes": 1867776,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-mcp-projects/kh2fm.rep/idata/01/~00000015.db",
+      "direct_files": 1,
+      "direct_bytes": 1294336,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-mcp-projects/kh2fm.rep/idata/01/~00000016.db",
+      "direct_files": 1,
+      "direct_bytes": 1343488,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-mcp-projects/kh2fm.rep/idata/01/~00000017.db",
+      "direct_files": 1,
+      "direct_bytes": 1228800,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-mcp-projects/kh2fm.rep/idata/01/~00000018.db",
+      "direct_files": 1,
+      "direct_bytes": 1359872,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-mcp-projects/kh2fm.rep/user",
+      "direct_files": 1,
+      "direct_bytes": 63,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-mcp-projects/kh2fm.rep/versioned",
+      "direct_files": 2,
+      "direct_bytes": 126,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-projects",
+      "direct_files": 1,
+      "direct_bytes": 0,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-projects/kh2fm.rep",
+      "direct_files": 1,
+      "direct_bytes": 163,
+      "child_directories": 3
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-projects/kh2fm.rep/idata",
+      "direct_files": 2,
+      "direct_bytes": 2822,
+      "child_directories": 2
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-projects/kh2fm.rep/idata/00",
+      "direct_files": 16,
+      "direct_bytes": 8045,
+      "child_directories": 16
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-projects/kh2fm.rep/idata/00/~00000000.db",
+      "direct_files": 2,
+      "direct_bytes": 94535680,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-projects/kh2fm.rep/idata/00/~00000001.db",
+      "direct_files": 1,
+      "direct_bytes": 1490944,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-projects/kh2fm.rep/idata/00/~00000002.db",
+      "direct_files": 1,
+      "direct_bytes": 1703936,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-projects/kh2fm.rep/idata/00/~00000003.db",
+      "direct_files": 1,
+      "direct_bytes": 2916352,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-projects/kh2fm.rep/idata/00/~00000004.db",
+      "direct_files": 1,
+      "direct_bytes": 2818048,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-projects/kh2fm.rep/idata/00/~00000005.db",
+      "direct_files": 1,
+      "direct_bytes": 1130496,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-projects/kh2fm.rep/idata/00/~00000006.db",
+      "direct_files": 1,
+      "direct_bytes": 1835008,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-projects/kh2fm.rep/idata/00/~00000007.db",
+      "direct_files": 1,
+      "direct_bytes": 2834432,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-projects/kh2fm.rep/idata/00/~00000008.db",
+      "direct_files": 1,
+      "direct_bytes": 1130496,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-projects/kh2fm.rep/idata/00/~00000009.db",
+      "direct_files": 1,
+      "direct_bytes": 1622016,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-projects/kh2fm.rep/idata/00/~0000000a.db",
+      "direct_files": 1,
+      "direct_bytes": 1327104,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-projects/kh2fm.rep/idata/00/~0000000b.db",
+      "direct_files": 1,
+      "direct_bytes": 1359872,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-projects/kh2fm.rep/idata/00/~0000000c.db",
+      "direct_files": 1,
+      "direct_bytes": 1310720,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-projects/kh2fm.rep/idata/00/~0000000d.db",
+      "direct_files": 1,
+      "direct_bytes": 1687552,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-projects/kh2fm.rep/idata/00/~0000000e.db",
+      "direct_files": 1,
+      "direct_bytes": 1130496,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-projects/kh2fm.rep/idata/00/~0000000f.db",
+      "direct_files": 1,
+      "direct_bytes": 1294336,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-projects/kh2fm.rep/idata/01",
+      "direct_files": 9,
+      "direct_bytes": 4527,
+      "child_directories": 9
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-projects/kh2fm.rep/idata/01/~00000010.db",
+      "direct_files": 1,
+      "direct_bytes": 1228800,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-projects/kh2fm.rep/idata/01/~00000011.db",
+      "direct_files": 1,
+      "direct_bytes": 1130496,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-projects/kh2fm.rep/idata/01/~00000012.db",
+      "direct_files": 1,
+      "direct_bytes": 1376256,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-projects/kh2fm.rep/idata/01/~00000013.db",
+      "direct_files": 1,
+      "direct_bytes": 1163264,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-projects/kh2fm.rep/idata/01/~00000014.db",
+      "direct_files": 1,
+      "direct_bytes": 1867776,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-projects/kh2fm.rep/idata/01/~00000015.db",
+      "direct_files": 1,
+      "direct_bytes": 1294336,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-projects/kh2fm.rep/idata/01/~00000016.db",
+      "direct_files": 1,
+      "direct_bytes": 1343488,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-projects/kh2fm.rep/idata/01/~00000017.db",
+      "direct_files": 1,
+      "direct_bytes": 1228800,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-projects/kh2fm.rep/idata/01/~00000018.db",
+      "direct_files": 1,
+      "direct_bytes": 1359872,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-projects/kh2fm.rep/user",
+      "direct_files": 1,
+      "direct_bytes": 63,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/ghidra-projects/kh2fm.rep/versioned",
+      "direct_files": 2,
+      "direct_bytes": 126,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-build",
+      "direct_files": 2205,
+      "direct_bytes": 17813830,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode",
+      "direct_files": 25,
+      "direct_bytes": 27897309,
+      "child_directories": 8
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/callback-boundary-export",
+      "direct_files": 3,
+      "direct_bytes": 2561,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/callback-flow-export-final-v1",
+      "direct_files": 2,
+      "direct_bytes": 1476,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/callback-flow-export-reopened-v1",
+      "direct_files": 2,
+      "direct_bytes": 1476,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/callback-flow-export-v1",
+      "direct_files": 2,
+      "direct_bytes": 1476,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/callback-flow-project-backup-v1",
+      "direct_files": 1,
+      "direct_bytes": 0,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/callback-flow-project-backup-v1/kh2fm.rep",
+      "direct_files": 1,
+      "direct_bytes": 163,
+      "child_directories": 3
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/callback-flow-project-backup-v1/kh2fm.rep/idata",
+      "direct_files": 2,
+      "direct_bytes": 2822,
+      "child_directories": 2
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/callback-flow-project-backup-v1/kh2fm.rep/idata/00",
+      "direct_files": 16,
+      "direct_bytes": 8045,
+      "child_directories": 16
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/callback-flow-project-backup-v1/kh2fm.rep/idata/00/~00000000.db",
+      "direct_files": 2,
+      "direct_bytes": 94404608,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/callback-flow-project-backup-v1/kh2fm.rep/idata/00/~00000001.db",
+      "direct_files": 1,
+      "direct_bytes": 1490944,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/callback-flow-project-backup-v1/kh2fm.rep/idata/00/~00000002.db",
+      "direct_files": 1,
+      "direct_bytes": 1703936,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/callback-flow-project-backup-v1/kh2fm.rep/idata/00/~00000003.db",
+      "direct_files": 1,
+      "direct_bytes": 2916352,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/callback-flow-project-backup-v1/kh2fm.rep/idata/00/~00000004.db",
+      "direct_files": 1,
+      "direct_bytes": 2818048,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/callback-flow-project-backup-v1/kh2fm.rep/idata/00/~00000005.db",
+      "direct_files": 1,
+      "direct_bytes": 1130496,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/callback-flow-project-backup-v1/kh2fm.rep/idata/00/~00000006.db",
+      "direct_files": 1,
+      "direct_bytes": 1835008,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/callback-flow-project-backup-v1/kh2fm.rep/idata/00/~00000007.db",
+      "direct_files": 1,
+      "direct_bytes": 2834432,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/callback-flow-project-backup-v1/kh2fm.rep/idata/00/~00000008.db",
+      "direct_files": 1,
+      "direct_bytes": 1130496,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/callback-flow-project-backup-v1/kh2fm.rep/idata/00/~00000009.db",
+      "direct_files": 1,
+      "direct_bytes": 1622016,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/callback-flow-project-backup-v1/kh2fm.rep/idata/00/~0000000a.db",
+      "direct_files": 1,
+      "direct_bytes": 1327104,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/callback-flow-project-backup-v1/kh2fm.rep/idata/00/~0000000b.db",
+      "direct_files": 1,
+      "direct_bytes": 1359872,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/callback-flow-project-backup-v1/kh2fm.rep/idata/00/~0000000c.db",
+      "direct_files": 1,
+      "direct_bytes": 1310720,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/callback-flow-project-backup-v1/kh2fm.rep/idata/00/~0000000d.db",
+      "direct_files": 1,
+      "direct_bytes": 1687552,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/callback-flow-project-backup-v1/kh2fm.rep/idata/00/~0000000e.db",
+      "direct_files": 1,
+      "direct_bytes": 1130496,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/callback-flow-project-backup-v1/kh2fm.rep/idata/00/~0000000f.db",
+      "direct_files": 1,
+      "direct_bytes": 1294336,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/callback-flow-project-backup-v1/kh2fm.rep/idata/01",
+      "direct_files": 9,
+      "direct_bytes": 4527,
+      "child_directories": 9
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/callback-flow-project-backup-v1/kh2fm.rep/idata/01/~00000010.db",
+      "direct_files": 1,
+      "direct_bytes": 1228800,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/callback-flow-project-backup-v1/kh2fm.rep/idata/01/~00000011.db",
+      "direct_files": 1,
+      "direct_bytes": 1130496,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/callback-flow-project-backup-v1/kh2fm.rep/idata/01/~00000012.db",
+      "direct_files": 1,
+      "direct_bytes": 1376256,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/callback-flow-project-backup-v1/kh2fm.rep/idata/01/~00000013.db",
+      "direct_files": 1,
+      "direct_bytes": 1163264,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/callback-flow-project-backup-v1/kh2fm.rep/idata/01/~00000014.db",
+      "direct_files": 1,
+      "direct_bytes": 1867776,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/callback-flow-project-backup-v1/kh2fm.rep/idata/01/~00000015.db",
+      "direct_files": 1,
+      "direct_bytes": 1294336,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/callback-flow-project-backup-v1/kh2fm.rep/idata/01/~00000016.db",
+      "direct_files": 1,
+      "direct_bytes": 1343488,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/callback-flow-project-backup-v1/kh2fm.rep/idata/01/~00000017.db",
+      "direct_files": 1,
+      "direct_bytes": 1228800,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/callback-flow-project-backup-v1/kh2fm.rep/idata/01/~00000018.db",
+      "direct_files": 1,
+      "direct_bytes": 1359872,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/callback-flow-project-backup-v1/kh2fm.rep/user",
+      "direct_files": 1,
+      "direct_bytes": 63,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/callback-flow-project-backup-v1/kh2fm.rep/versioned",
+      "direct_files": 2,
+      "direct_bytes": 126,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/iop",
+      "direct_files": 0,
+      "direct_bytes": 0,
+      "child_directories": 24
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/iop/DBCMAN.IRX",
+      "direct_files": 2,
+      "direct_bytes": 54591,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/iop/DS2O.IRX",
+      "direct_files": 2,
+      "direct_bytes": 50024,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/iop/LIBSD.IRX",
+      "direct_files": 2,
+      "direct_bytes": 75788,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/iop/LIBSSL.IRX",
+      "direct_files": 2,
+      "direct_bytes": 311137,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/iop/MCMAN.IRX",
+      "direct_files": 2,
+      "direct_bytes": 336340,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/iop/MCSERV.IRX",
+      "direct_files": 2,
+      "direct_bytes": 34556,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/iop/ROM_CDVDFSV.IRX",
+      "direct_files": 2,
+      "direct_bytes": 103752,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/iop/ROM_CDVDMAN.IRX",
+      "direct_files": 2,
+      "direct_bytes": 227987,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/iop/ROM_EESYNC.IRX",
+      "direct_files": 2,
+      "direct_bytes": 3962,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/iop/ROM_FILEIO.IRX",
+      "direct_files": 2,
+      "direct_bytes": 76610,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/iop/ROM_IOMAN.IRX",
+      "direct_files": 2,
+      "direct_bytes": 40067,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/iop/ROM_LOADCORE.IRX",
+      "direct_files": 2,
+      "direct_bytes": 32730,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/iop/ROM_LOADFILE.IRX",
+      "direct_files": 2,
+      "direct_bytes": 40013,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/iop/ROM_MODLOAD.IRX",
+      "direct_files": 2,
+      "direct_bytes": 79007,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/iop/ROM_ROMDRV.IRX",
+      "direct_files": 2,
+      "direct_bytes": 9182,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/iop/ROM_SIFCMD.IRX",
+      "direct_files": 2,
+      "direct_bytes": 42415,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/iop/ROM_SIFMAN.IRX",
+      "direct_files": 2,
+      "direct_bytes": 19556,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/iop/ROM_STDIO.IRX",
+      "direct_files": 2,
+      "direct_bytes": 10299,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/iop/ROM_SYSCLIB.IRX",
+      "direct_files": 2,
+      "direct_bytes": 29050,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/iop/ROM_SYSMEM.IRX",
+      "direct_files": 2,
+      "direct_bytes": 19946,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/iop/ROM_THREADMAN.IRX",
+      "direct_files": 2,
+      "direct_bytes": 152252,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/iop/ROM_TIMEMANI.IRX",
+      "direct_files": 2,
+      "direct_bytes": 16369,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/iop/SIO2D.IRX",
+      "direct_files": 2,
+      "direct_bytes": 22899,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/iop/SIO2MAN.IRX",
+      "direct_files": 2,
+      "direct_bytes": 27671,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/jump-table-export",
+      "direct_files": 3,
+      "direct_bytes": 127701,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/native-pseudocode/overlays",
+      "direct_files": 2,
+      "direct_bytes": 6763149,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/path-migration-2026-10-08",
+      "direct_files": 15,
+      "direct_bytes": 84738,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/rebuilt-area-script",
+      "direct_files": 727,
+      "direct_bytes": 294572,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/rebuilt-bdx",
+      "direct_files": 733,
+      "direct_bytes": 6044126,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/rebuilt-event-script",
+      "direct_files": 1043,
+      "direct_bytes": 9080696,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/recovery-drafts",
+      "direct_files": 5,
+      "direct_bytes": 22420,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/recovery-experiments",
+      "direct_files": 10476,
+      "direct_bytes": 31437030,
+      "child_directories": 4
+    },
+    {
+      "directory": "analysis/final-mix/recovery-experiments/delegated",
+      "direct_files": 0,
+      "direct_bytes": 0,
+      "child_directories": 6
+    },
+    {
+      "directory": "analysis/final-mix/recovery-experiments/delegated/float-predicates",
+      "direct_files": 64,
+      "direct_bytes": 36318,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/recovery-experiments/delegated/framed-epilogues",
+      "direct_files": 20,
+      "direct_bytes": 40944,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/recovery-experiments/delegated/framed-transport",
+      "direct_files": 9,
+      "direct_bytes": 11079,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/recovery-experiments/delegated/global-copy",
+      "direct_files": 30,
+      "direct_bytes": 31188,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/recovery-experiments/delegated/global-initializers",
+      "direct_files": 25,
+      "direct_bytes": 20165,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/recovery-experiments/delegated/lookup-search",
+      "direct_files": 54,
+      "direct_bytes": 51027,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/recovery-experiments/eight-hour-20261011",
+      "direct_files": 3186,
+      "direct_bytes": 4964069,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/recovery-experiments/queue-run-20261009",
+      "direct_files": 0,
+      "direct_bytes": 0,
+      "child_directories": 4
+    },
+    {
+      "directory": "analysis/final-mix/recovery-experiments/queue-run-20261009/primary",
+      "direct_files": 340,
+      "direct_bytes": 417070,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/recovery-experiments/queue-run-20261009/recovery-a",
+      "direct_files": 453,
+      "direct_bytes": 482035,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/recovery-experiments/queue-run-20261009/recovery-b",
+      "direct_files": 1201,
+      "direct_bytes": 717066,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/recovery-experiments/queue-run-20261009/recovery-c",
+      "direct_files": 879,
+      "direct_bytes": 569874,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/recovery-experiments/workerbacklog-alias-regression-v1",
+      "direct_files": 1,
+      "direct_bytes": 34075,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/recovery-experiments/workerbacklog-alias-regression-v1/src",
+      "direct_files": 0,
+      "direct_bytes": 0,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/recovery-experiments/workerbacklog-alias-regression-v1/src/anon",
+      "direct_files": 119,
+      "direct_bytes": 41211,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/tool-integrations",
+      "direct_files": 9,
+      "direct_bytes": 1909322,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination",
+      "direct_files": 13,
+      "direct_bytes": 2379935,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b",
+      "direct_files": 47,
+      "direct_bytes": 194676,
+      "child_directories": 40
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/recovered",
+      "direct_files": 2,
+      "direct_bytes": 6620,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/round-10",
+      "direct_files": 19,
+      "direct_bytes": 30825,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/round-11",
+      "direct_files": 24,
+      "direct_bytes": 42189,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/round-12",
+      "direct_files": 21,
+      "direct_bytes": 41871,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/round-13",
+      "direct_files": 23,
+      "direct_bytes": 33814,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/round-13/__pycache__",
+      "direct_files": 2,
+      "direct_bytes": 13659,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/round-14",
+      "direct_files": 21,
+      "direct_bytes": 42980,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/round-14/__pycache__",
+      "direct_files": 1,
+      "direct_bytes": 13700,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/round-15",
+      "direct_files": 25,
+      "direct_bytes": 47958,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/round-16",
+      "direct_files": 25,
+      "direct_bytes": 48289,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/round-17",
+      "direct_files": 27,
+      "direct_bytes": 50580,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/round-17/round-17",
+      "direct_files": 0,
+      "direct_bytes": 0,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/round-18",
+      "direct_files": 24,
+      "direct_bytes": 45974,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/round-19",
+      "direct_files": 23,
+      "direct_bytes": 39094,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/round-2",
+      "direct_files": 34,
+      "direct_bytes": 91698,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/round-2/__pycache__",
+      "direct_files": 1,
+      "direct_bytes": 3277,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/round-20",
+      "direct_files": 23,
+      "direct_bytes": 34720,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/round-21",
+      "direct_files": 26,
+      "direct_bytes": 46051,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/round-22",
+      "direct_files": 32,
+      "direct_bytes": 60747,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/round-23",
+      "direct_files": 30,
+      "direct_bytes": 53447,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/round-24",
+      "direct_files": 23,
+      "direct_bytes": 44021,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/round-25",
+      "direct_files": 23,
+      "direct_bytes": 38900,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/round-26",
+      "direct_files": 23,
+      "direct_bytes": 41406,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/round-27",
+      "direct_files": 13,
+      "direct_bytes": 28627,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/round-3",
+      "direct_files": 17,
+      "direct_bytes": 33848,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/round-4",
+      "direct_files": 39,
+      "direct_bytes": 195794,
+      "child_directories": 2
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/round-4/analysis",
+      "direct_files": 0,
+      "direct_bytes": 0,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/round-4/analysis/final-mix",
+      "direct_files": 0,
+      "direct_bytes": 0,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/round-4/analysis/final-mix/recovery-experiments",
+      "direct_files": 16,
+      "direct_bytes": 6311,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/round-4/__pycache__",
+      "direct_files": 1,
+      "direct_bytes": 13328,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/round-5",
+      "direct_files": 19,
+      "direct_bytes": 45412,
+      "child_directories": 1
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/round-5/scratch",
+      "direct_files": 8,
+      "direct_bytes": 1945,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/round-6",
+      "direct_files": 17,
+      "direct_bytes": 29473,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/round-7",
+      "direct_files": 17,
+      "direct_bytes": 30003,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/round-8",
+      "direct_files": 19,
+      "direct_bytes": 29713,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/round-9",
+      "direct_files": 19,
+      "direct_bytes": 28521,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/variants",
+      "direct_files": 20,
+      "direct_bytes": 18013,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/variants10",
+      "direct_files": 176,
+      "direct_bytes": 142160,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/variants11",
+      "direct_files": 120,
+      "direct_bytes": 102375,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/variants2",
+      "direct_files": 14,
+      "direct_bytes": 13554,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/variants3",
+      "direct_files": 12,
+      "direct_bytes": 8634,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/variants4",
+      "direct_files": 18,
+      "direct_bytes": 18612,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/variants5",
+      "direct_files": 20,
+      "direct_bytes": 21001,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/variants6",
+      "direct_files": 34,
+      "direct_bytes": 37432,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/variants7",
+      "direct_files": 46,
+      "direct_bytes": 44758,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/variants8",
+      "direct_files": 56,
+      "direct_bytes": 52455,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/variants9",
+      "direct_files": 496,
+      "direct_bytes": 352447,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/_fd",
+      "direct_files": 60,
+      "direct_bytes": 34311,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/final-mix/worker-coordination/worker-b/__pycache__",
+      "direct_files": 1,
+      "direct_bytes": 9427,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/recovered-pseudocode",
+      "direct_files": 0,
+      "direct_bytes": 0,
+      "child_directories": 3
+    },
+    {
+      "directory": "analysis/recovered-pseudocode/ovl_gumibattle.x",
+      "direct_files": 59,
+      "direct_bytes": 82460,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/recovered-pseudocode/ovl_gumimenu.x",
+      "direct_files": 58,
+      "direct_bytes": 102425,
+      "child_directories": 0
+    },
+    {
+      "directory": "analysis/recovered-pseudocode/SLUS_210.05",
+      "direct_files": 1044,
+      "direct_bytes": 936319,
+      "child_directories": 0
+    },
+    {
+      "directory": "tools",
+      "direct_files": 0,
+      "direct_bytes": 0,
+      "child_directories": 0
+    }
+  ],
+  "errors": []
+}

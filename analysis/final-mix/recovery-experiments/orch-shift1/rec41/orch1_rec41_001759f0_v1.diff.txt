@@ -1,0 +1,35 @@
+001759f0: compiled 124 bytes, target 124 bytes, exact=False
+Differing words: 20. First difference at instruction 4 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001759f0: 27bdffe0  addiu	sp,sp,-32                                  | 001759f0: 27bdffe0  addiu	sp,sp,-32
+   001759f4: ffb00000  sd	s0,0(sp)                                      | 001759f4: ffb00000  sd	s0,0(sp)
+   001759f8: ffb10008  sd	s1,8(sp)                                      | 001759f8: ffb10008  sd	s1,8(sp)
+   001759fc: ffbf0010  sd	ra,16(sp)                                     | 001759fc: ffbf0010  sd	ra,16(sp)
+!! 00175a00: 0c066144  jal	0x198510                                     | 00175a00: 0080802d  move	s0,a0
+!! 00175a04: 0080802d  move	s0,a0                                       | 00175a04: 0c066144  jal	198510 <func_00198510>
+!! 00175a08: 10400012  beqz	v0,0x175a54                                 | 00175a08: 0000882d  move	s1,zero
+!! 00175a0c: 0000782d  move	t7,zero                                     | 00175a0c: 10400010  beqz	v0,175a50 <func_001759f0+0x60>
+   00175a10: 26100af8  addiu	s0,s0,2808                                 | 00175a10: 26100af8  addiu	s0,s0,2808
+!! 00175a14: 0000882d  move	s1,zero                                     | 00175a14: 8e0f0000  lw	t7,0(s0)
+!! 00175a18: 8e0f0000  lw	t7,0(s0)                                      | 00175a18: 26100004  addiu	s0,s0,4
+!! 00175a1c: 26100004  addiu	s0,s0,4                                    | 00175a1c: 11e00007  beqz	t7,175a3c <func_001759f0+0x4c>
+!! 00175a20: 11e00007  beqz	t7,0x175a40                                 | 00175a20: 01e0202d  move	a0,t7
+!! 00175a24: 01e0202d  move	a0,t7                                       | 00175a24: 8def0000  lw	t7,0(t7)
+!! 00175a28: 8def0000  lw	t7,0(t7)                                      | 00175a28: 8de20024  lw	v0,36(t7)
+!! 00175a2c: 8de20024  lw	v0,36(t7)                                     | 00175a2c: 0040f809  jalr	v0
+!! 00175a30: 0040f809  jalr	v0                                          | 00175a30: 00000000  nop
+!! 00175a34: 00000000  nop                                              | 00175a34: 10400007  beqz	v0,175a54 <func_001759f0+0x64>
+!! 00175a38: 10400006  beqz	v0,0x175a54                                 | 00175a38: 0000782d  move	t7,zero
+!! 00175a3c: 0000782d  move	t7,zero                                     | 00175a3c: 26310001  addiu	s1,s1,1
+!! 00175a40: 26310001  addiu	s1,s1,1                                    | 00175a40: 2a2f0002  slti	t7,s1,2
+!! 00175a44: 2a2f0002  slti	t7,s1,2                                     | 00175a44: 55e0fff4  bnezl	t7,175a18 <func_001759f0+0x28>
+!! 00175a48: 55e0fff4  bnezl	t7,0x175a1c                                | 00175a48: 8e0f0000  lw	t7,0(s0)
+!! 00175a4c: 8e0f0000  lw	t7,0(s0)                                      | 00175a4c: 24110001  li	s1,1
+!! 00175a50: 240f0001  li	t7,1                                          | 00175a50: 0220782d  move	t7,s1
+   00175a54: dfb00000  ld	s0,0(sp)                                      | 00175a54: dfb00000  ld	s0,0(sp)
+   00175a58: 01e0102d  move	v0,t7                                       | 00175a58: 01e0102d  move	v0,t7
+   00175a5c: dfb10008  ld	s1,8(sp)                                      | 00175a5c: dfb10008  ld	s1,8(sp)
+   00175a60: dfbf0010  ld	ra,16(sp)                                     | 00175a60: dfbf0010  ld	ra,16(sp)
+   00175a64: 03e00008  jr	ra                                            | 00175a64: 03e00008  jr	ra
+   00175a68: 27bd0020  addiu	sp,sp,32                                   | 00175a68: 27bd0020  addiu	sp,sp,32

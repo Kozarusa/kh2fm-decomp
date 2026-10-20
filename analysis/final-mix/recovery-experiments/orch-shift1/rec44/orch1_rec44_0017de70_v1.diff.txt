@@ -1,0 +1,23 @@
+0017de70: compiled 76 bytes, target 76 bytes, exact=False
+Differing words: 2. First difference at instruction 11 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0017de70: 27bdfff0  addiu	sp,sp,-16                                  | 0017de70: 27bdfff0  addiu	sp,sp,-16
+   0017de74: 3c0f0035  lui	t7,0x35                                      | 0017de74: 3c0f0035  lui	t7,0x35
+   0017de78: ffbf0000  sd	ra,0(sp)                                      | 0017de78: ffbf0000  sd	ra,0(sp)
+   0017de7c: 0000302d  move	a2,zero                                     | 0017de7c: 0000302d  move	a2,zero
+   0017de80: 0000382d  move	a3,zero                                     | 0017de80: 0000382d  move	a3,zero
+   0017de84: 8c8e048c  lw	t6,1164(a0)                                   | 0017de84: 8c8e048c  lw	t6,1164(a0)
+   0017de88: 8ded2130  lw	t5,8496(t7)   ; = D_00352130                  | 0017de88: 8ded2130  lw	t5,8496(t7)   ; = D_00352130
+   0017de8c: c5c00004  lwc1	$f0,4(t6)                                   | 0017de8c: c5c00004  lwc1	$f0,4(t6)
+   0017de90: c5a10058  lwc1	$f1,88(t5)                                  | 0017de90: c5a10058  lwc1	$f1,88(t5)
+   0017de94: 46800020  cvt.s.w	$f0,$f0                                  | 0017de94: 46800020  cvt.s.w	$f0,$f0
+   0017de98: 8c8f0000  lw	t7,0(a0)                                      | 0017de98: 8c8f0000  lw	t7,0(a0)
+!! 0017de9c: 8de20078  lw	v0,120(t7)                                    | 0017de9c: 8dee0078  lw	t6,120(t7)
+   0017dea0: 46010002  mul.s	$f0,$f0,$f1                                | 0017dea0: 46010002  mul.s	$f0,$f0,$f1
+   0017dea4: 46000064  cvt.w.s	$f1,$f0                                  | 0017dea4: 46000064  cvt.w.s	$f1,$f0
+!! 0017dea8: 0040f809  jalr	v0                                          | 0017dea8: 01c0f809  jalr	t6
+   0017deac: 44050800  mfc1	a1,$f1                                      | 0017deac: 44050800  mfc1	a1,$f1
+   0017deb0: dfbf0000  ld	ra,0(sp)                                      | 0017deb0: dfbf0000  ld	ra,0(sp)
+   0017deb4: 03e00008  jr	ra                                            | 0017deb4: 03e00008  jr	ra
+   0017deb8: 27bd0010  addiu	sp,sp,16                                   | 0017deb8: 27bd0010  addiu	sp,sp,16

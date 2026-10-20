@@ -1,0 +1,18 @@
+00198aa8: compiled 56 bytes, target 56 bytes, exact=False
+Differing words: 2. First difference at instruction 10 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00198aa8: 14e00006  bnez	a3,0x198ac4                                 | 00198aa8: 14e00006  bnez	a3,198ac4 <func_00198aa8+0x1c>
+   00198aac: 240e03e8  li	t6,1000                                       | 00198aac: 240e03e8  li	t6,1000
+   00198ab0: 8c8f09b4  lw	t7,2484(a0)                                   | 00198ab0: 8c8f09b4  lw	t7,2484(a0)
+   00198ab4: 11e00003  beqz	t7,0x198ac4                                 | 00198ab4: 11e00003  beqz	t7,198ac4 <func_00198aa8+0x1c>
+   00198ab8: 2407ffff  li	a3,-1                                         | 00198ab8: 2407ffff  li	a3,-1
+   00198abc: 85e70002  lh	a3,2(t7)                                      | 00198abc: 85e70002  lh	a3,2(t7)
+   00198ac0: 240e03e8  li	t6,1000                                       | 00198ac0: 240e03e8  li	t6,1000
+   00198ac4: 240f000c  li	t7,12                                         | 00198ac4: 240f000c  li	t7,12
+   00198ac8: 00ee7018  mult	t6,a3,t6                                    | 00198ac8: 00ee7018  mult	t6,a3,t6
+   00198acc: 00af7818  mult	t7,a1,t7                                    | 00198acc: 00af7818  mult	t7,a1,t7
+!! 00198ad0: 01c67021  addu	t6,t6,a2                                    | 00198ad0: 008f7821  addu	t7,a0,t7
+!! 00198ad4: 008f7821  addu	t7,a0,t7                                    | 00198ad4: 01c67021  addu	t6,t6,a2
+   00198ad8: 03e00008  jr	ra                                            | 00198ad8: 03e00008  jr	ra
+   00198adc: adee09e4  sw	t6,2532(t7)                                   | 00198adc: adee09e4  sw	t6,2532(t7)

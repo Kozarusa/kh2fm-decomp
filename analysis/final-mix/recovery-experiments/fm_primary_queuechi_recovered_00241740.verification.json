@@ -1,0 +1,18 @@
+{
+  "source_sha256": "5f47c4b1768acbbfdb2023300132ee13e1faedd6e7c882b3f51532e548ad1e0b",
+  "source": "analysis/final-mix/recovery-experiments/fm_primary_queuechi_recovered_00241740.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "00241740",
+      "symbol": "_Z13func_00241740i",
+      "compiled_size": 44,
+      "target_size": 44,
+      "ghidra_body_size": 44,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd270000bfff040081040000bfdf36000f3c94ecee8d0100c4812d28000013000624020309081000bd27",
+      "target_hex": "f0ffbd270000bfff040081040000bfdf36000f3c94ecee8d0100c4812d28000013000624020309081000bd27"
+    }
+  ]
+}

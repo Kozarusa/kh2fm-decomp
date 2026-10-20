@@ -1,0 +1,310 @@
+{
+  "source_sha256": "35ffbfae0acb17ff7d39719682d10067f0eaf2dc218de5629a96338790ed582f",
+  "main_export_sha256": "aa24f5742f14453ebe408146889dcebdb4236a7b8bf0a7cab209cad2f2ec84f6",
+  "post_call_barrier": true,
+  "rows": [
+    {
+      "address": "002924d0",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_07.cpp",
+      "prior_source_sha256": "cf777f50f809824dc78bcacea16d05ceee0fb5376e674507837c1e95c241d5cd",
+      "target_size": 76
+    },
+    {
+      "address": "0029df98",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_07.cpp",
+      "prior_source_sha256": "cf777f50f809824dc78bcacea16d05ceee0fb5376e674507837c1e95c241d5cd",
+      "target_size": 36
+    },
+    {
+      "address": "0029e050",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_07.cpp",
+      "prior_source_sha256": "cf777f50f809824dc78bcacea16d05ceee0fb5376e674507837c1e95c241d5cd",
+      "target_size": 36
+    },
+    {
+      "address": "0029e258",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_07.cpp",
+      "prior_source_sha256": "cf777f50f809824dc78bcacea16d05ceee0fb5376e674507837c1e95c241d5cd",
+      "target_size": 60
+    },
+    {
+      "address": "002b73ac",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_08.cpp",
+      "prior_source_sha256": "55e592ba4071481420b6f8e6bbec7538863fcc6076edf2616387a5a18037f055",
+      "target_size": 96
+    },
+    {
+      "address": "002b788c",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_08.cpp",
+      "prior_source_sha256": "55e592ba4071481420b6f8e6bbec7538863fcc6076edf2616387a5a18037f055",
+      "target_size": 96
+    },
+    {
+      "address": "002b78ec",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_08.cpp",
+      "prior_source_sha256": "55e592ba4071481420b6f8e6bbec7538863fcc6076edf2616387a5a18037f055",
+      "target_size": 64
+    },
+    {
+      "address": "002b792c",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_08.cpp",
+      "prior_source_sha256": "55e592ba4071481420b6f8e6bbec7538863fcc6076edf2616387a5a18037f055",
+      "target_size": 80
+    },
+    {
+      "address": "002b797c",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_08.cpp",
+      "prior_source_sha256": "55e592ba4071481420b6f8e6bbec7538863fcc6076edf2616387a5a18037f055",
+      "target_size": 80
+    },
+    {
+      "address": "002b7c34",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_08.cpp",
+      "prior_source_sha256": "55e592ba4071481420b6f8e6bbec7538863fcc6076edf2616387a5a18037f055",
+      "target_size": 112
+    },
+    {
+      "address": "002b7ca4",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_08.cpp",
+      "prior_source_sha256": "55e592ba4071481420b6f8e6bbec7538863fcc6076edf2616387a5a18037f055",
+      "target_size": 72
+    },
+    {
+      "address": "002b7cec",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_08.cpp",
+      "prior_source_sha256": "55e592ba4071481420b6f8e6bbec7538863fcc6076edf2616387a5a18037f055",
+      "target_size": 112
+    },
+    {
+      "address": "002b7d5c",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_08.cpp",
+      "prior_source_sha256": "55e592ba4071481420b6f8e6bbec7538863fcc6076edf2616387a5a18037f055",
+      "target_size": 88
+    },
+    {
+      "address": "002b7db4",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_08.cpp",
+      "prior_source_sha256": "55e592ba4071481420b6f8e6bbec7538863fcc6076edf2616387a5a18037f055",
+      "target_size": 128
+    },
+    {
+      "address": "002b7e34",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_08.cpp",
+      "prior_source_sha256": "55e592ba4071481420b6f8e6bbec7538863fcc6076edf2616387a5a18037f055",
+      "target_size": 64
+    },
+    {
+      "address": "002b7e74",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_08.cpp",
+      "prior_source_sha256": "55e592ba4071481420b6f8e6bbec7538863fcc6076edf2616387a5a18037f055",
+      "target_size": 72
+    },
+    {
+      "address": "002b7ebc",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_08.cpp",
+      "prior_source_sha256": "55e592ba4071481420b6f8e6bbec7538863fcc6076edf2616387a5a18037f055",
+      "target_size": 64
+    },
+    {
+      "address": "002b7efc",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_08.cpp",
+      "prior_source_sha256": "55e592ba4071481420b6f8e6bbec7538863fcc6076edf2616387a5a18037f055",
+      "target_size": 64
+    },
+    {
+      "address": "002b7f3c",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_08.cpp",
+      "prior_source_sha256": "55e592ba4071481420b6f8e6bbec7538863fcc6076edf2616387a5a18037f055",
+      "target_size": 72
+    },
+    {
+      "address": "002b7f84",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_08.cpp",
+      "prior_source_sha256": "55e592ba4071481420b6f8e6bbec7538863fcc6076edf2616387a5a18037f055",
+      "target_size": 56
+    },
+    {
+      "address": "002b7fbc",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_08.cpp",
+      "prior_source_sha256": "55e592ba4071481420b6f8e6bbec7538863fcc6076edf2616387a5a18037f055",
+      "target_size": 64
+    },
+    {
+      "address": "002b7ffc",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_08.cpp",
+      "prior_source_sha256": "55e592ba4071481420b6f8e6bbec7538863fcc6076edf2616387a5a18037f055",
+      "target_size": 64
+    },
+    {
+      "address": "002b803c",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_08.cpp",
+      "prior_source_sha256": "55e592ba4071481420b6f8e6bbec7538863fcc6076edf2616387a5a18037f055",
+      "target_size": 64
+    },
+    {
+      "address": "002b8374",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_08.cpp",
+      "prior_source_sha256": "55e592ba4071481420b6f8e6bbec7538863fcc6076edf2616387a5a18037f055",
+      "target_size": 64
+    },
+    {
+      "address": "002b83b4",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_08.cpp",
+      "prior_source_sha256": "55e592ba4071481420b6f8e6bbec7538863fcc6076edf2616387a5a18037f055",
+      "target_size": 56
+    },
+    {
+      "address": "002b83ec",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_08.cpp",
+      "prior_source_sha256": "55e592ba4071481420b6f8e6bbec7538863fcc6076edf2616387a5a18037f055",
+      "target_size": 72
+    },
+    {
+      "address": "002b9968",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_08.cpp",
+      "prior_source_sha256": "55e592ba4071481420b6f8e6bbec7538863fcc6076edf2616387a5a18037f055",
+      "target_size": 56
+    },
+    {
+      "address": "002b99c8",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_08.cpp",
+      "prior_source_sha256": "55e592ba4071481420b6f8e6bbec7538863fcc6076edf2616387a5a18037f055",
+      "target_size": 56
+    },
+    {
+      "address": "002b9a00",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_08.cpp",
+      "prior_source_sha256": "55e592ba4071481420b6f8e6bbec7538863fcc6076edf2616387a5a18037f055",
+      "target_size": 56
+    },
+    {
+      "address": "002b9a38",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_08.cpp",
+      "prior_source_sha256": "55e592ba4071481420b6f8e6bbec7538863fcc6076edf2616387a5a18037f055",
+      "target_size": 64
+    },
+    {
+      "address": "002b9a78",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_08.cpp",
+      "prior_source_sha256": "55e592ba4071481420b6f8e6bbec7538863fcc6076edf2616387a5a18037f055",
+      "target_size": 64
+    },
+    {
+      "address": "002b9b78",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_08.cpp",
+      "prior_source_sha256": "55e592ba4071481420b6f8e6bbec7538863fcc6076edf2616387a5a18037f055",
+      "target_size": 88
+    },
+    {
+      "address": "002b9ed0",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_08.cpp",
+      "prior_source_sha256": "55e592ba4071481420b6f8e6bbec7538863fcc6076edf2616387a5a18037f055",
+      "target_size": 84
+    },
+    {
+      "address": "002ba040",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_08.cpp",
+      "prior_source_sha256": "55e592ba4071481420b6f8e6bbec7538863fcc6076edf2616387a5a18037f055",
+      "target_size": 108
+    },
+    {
+      "address": "002ba0b0",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_08.cpp",
+      "prior_source_sha256": "55e592ba4071481420b6f8e6bbec7538863fcc6076edf2616387a5a18037f055",
+      "target_size": 68
+    },
+    {
+      "address": "002ba0f8",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_08.cpp",
+      "prior_source_sha256": "55e592ba4071481420b6f8e6bbec7538863fcc6076edf2616387a5a18037f055",
+      "target_size": 68
+    },
+    {
+      "address": "002ba140",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_08.cpp",
+      "prior_source_sha256": "55e592ba4071481420b6f8e6bbec7538863fcc6076edf2616387a5a18037f055",
+      "target_size": 72
+    },
+    {
+      "address": "002ba1b8",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_08.cpp",
+      "prior_source_sha256": "55e592ba4071481420b6f8e6bbec7538863fcc6076edf2616387a5a18037f055",
+      "target_size": 72
+    },
+    {
+      "address": "002ba3b8",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_08.cpp",
+      "prior_source_sha256": "55e592ba4071481420b6f8e6bbec7538863fcc6076edf2616387a5a18037f055",
+      "target_size": 44
+    },
+    {
+      "address": "002bb3f0",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_08.cpp",
+      "prior_source_sha256": "55e592ba4071481420b6f8e6bbec7538863fcc6076edf2616387a5a18037f055",
+      "target_size": 116
+    },
+    {
+      "address": "002bbd58",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_08.cpp",
+      "prior_source_sha256": "55e592ba4071481420b6f8e6bbec7538863fcc6076edf2616387a5a18037f055",
+      "target_size": 72
+    },
+    {
+      "address": "002bc158",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_08.cpp",
+      "prior_source_sha256": "55e592ba4071481420b6f8e6bbec7538863fcc6076edf2616387a5a18037f055",
+      "target_size": 48
+    },
+    {
+      "address": "002bc398",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_08.cpp",
+      "prior_source_sha256": "55e592ba4071481420b6f8e6bbec7538863fcc6076edf2616387a5a18037f055",
+      "target_size": 84
+    },
+    {
+      "address": "002bcbf0",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_08.cpp",
+      "prior_source_sha256": "55e592ba4071481420b6f8e6bbec7538863fcc6076edf2616387a5a18037f055",
+      "target_size": 112
+    },
+    {
+      "address": "002bd260",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_08.cpp",
+      "prior_source_sha256": "55e592ba4071481420b6f8e6bbec7538863fcc6076edf2616387a5a18037f055",
+      "target_size": 68
+    },
+    {
+      "address": "002ae280",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_medium_02.cpp",
+      "prior_source_sha256": "d44ba6ed26e90d9cd00a074f700e8e652da7c5638519978c9f9a2bc5709ebe88",
+      "target_size": 160
+    },
+    {
+      "address": "002b89e4",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_medium_02.cpp",
+      "prior_source_sha256": "d44ba6ed26e90d9cd00a074f700e8e652da7c5638519978c9f9a2bc5709ebe88",
+      "target_size": 140
+    },
+    {
+      "address": "002b96a4",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_medium_02.cpp",
+      "prior_source_sha256": "d44ba6ed26e90d9cd00a074f700e8e652da7c5638519978c9f9a2bc5709ebe88",
+      "target_size": 132
+    },
+    {
+      "address": "002b97d8",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_medium_02.cpp",
+      "prior_source_sha256": "d44ba6ed26e90d9cd00a074f700e8e652da7c5638519978c9f9a2bc5709ebe88",
+      "target_size": 148
+    },
+    {
+      "address": "002bb510",
+      "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_medium_02.cpp",
+      "prior_source_sha256": "d44ba6ed26e90d9cd00a074f700e8e652da7c5638519978c9f9a2bc5709ebe88",
+      "target_size": 148
+    }
+  ],
+  "limitations": [
+    "Callee types are proposals, not established APIs. No active sources changed."
+  ]
+}

@@ -1,0 +1,34 @@
+001850a0: compiled 112 bytes, target 120 bytes, exact=False
+Differing words: 6. First difference at instruction 24 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001850a0: 27bdffd0  addiu	sp,sp,-48                                  | 001850a0: 27bdffd0  addiu	sp,sp,-48
+   001850a4: ffb00010  sd	s0,16(sp)                                     | 001850a4: ffb00010  sd	s0,16(sp)
+   001850a8: ffb10018  sd	s1,24(sp)                                     | 001850a8: ffb10018  sd	s1,24(sp)
+   001850ac: ffbf0020  sd	ra,32(sp)                                     | 001850ac: ffbf0020  sd	ra,32(sp)
+   001850b0: 00a0802d  move	s0,a1                                       | 001850b0: 00a0802d  move	s0,a1
+   001850b4: 0080882d  move	s1,a0                                       | 001850b4: 0080882d  move	s1,a0
+   001850b8: 8caf0508  lw	t7,1288(a1)                                   | 001850b8: 8caf0508  lw	t7,1288(a1)
+   001850bc: 15e00009  bnez	t7,0x1850e4                                 | 001850bc: 15e00009  bnez	t7,1850e4 <func_001850a0+0x44>
+   001850c0: 00a0202d  move	a0,a1                                       | 001850c0: 00a0202d  move	a0,a1
+   001850c4: 4be0006c  vsub.wxyz	vf1,vf0,vf0                            | 001850c4: 4be0006c  vsub.wxyz	vf1,vf0,vf0
+   001850c8: fa210000  sqc2	vf1,0(s1)                                   | 001850c8: fa210000  sqc2	vf1,0(s1)
+   001850cc: 0220102d  move	v0,s1                                       | 001850cc: 0220102d  move	v0,s1
+   001850d0: dfb00010  ld	s0,16(sp)                                     | 001850d0: dfb00010  ld	s0,16(sp)
+   001850d4: dfb10018  ld	s1,24(sp)                                     | 001850d4: dfb10018  ld	s1,24(sp)
+   001850d8: dfbf0020  ld	ra,32(sp)                                     | 001850d8: dfbf0020  ld	ra,32(sp)
+   001850dc: 03e00008  jr	ra                                            | 001850dc: 03e00008  jr	ra
+   001850e0: 27bd0030  addiu	sp,sp,48                                   | 001850e0: 27bd0030  addiu	sp,sp,48
+   001850e4: 0c05b00a  jal	0x16c028                                     | 001850e4: 0c05b00a  jal	16c028 <func_0016c028>
+   001850e8: 00000000  nop                                              | 001850e8: 00000000  nop
+   001850ec: 8e050508  lw	a1,1288(s0)                                   | 001850ec: 8e050508  lw	a1,1288(s0)
+   001850f0: 0040302d  move	a2,v0                                       | 001850f0: 0040302d  move	a2,v0
+   001850f4: 26070550  addiu	a3,s0,1360                                 | 001850f4: 26070550  addiu	a3,s0,1360
+   001850f8: 0c0b2f28  jal	0x2cbca0                                     | 001850f8: 0c0b2f28  jal	2cbca0 <func_002cbca0>
+   001850fc: 03a0202d  move	a0,sp                                       | 001850fc: 03a0202d  move	a0,sp
+!! 00185100: 523dfff3  beql	s1,sp,0x1850d0                              | 00185100: 123dfff2  beq	s1,sp,1850cc <func_001850a0+0x2c>
+!! 00185104: 0220102d  move	v0,s1                                       | 00185104: 7baf0000  lq	t7,0(sp)
+!! 00185108: 7ba80000  lq	t0,0(sp)                                      | 00185108: 1000fff0  b	1850cc <func_001850a0+0x2c>
+!! 0018510c: 7e280000  sq	t0,0(s1)                                      | 0018510c: 7e2f0000  sq	t7,0(s1)
+!! 00185110: 1000ffef  b	0x1850d0                                       | 
+!! 00185114: 0220102d  move	v0,s1                                       | 

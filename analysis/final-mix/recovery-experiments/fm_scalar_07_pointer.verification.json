@@ -1,0 +1,29 @@
+{
+  "source_sha256": "c4726ad70a0bc221e98e5e2a961f0b330ff2706301d92a2a667d152d3366765a",
+  "source": "analysis/final-mix/recovery-experiments/fm_scalar_07_pointer.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "002827f0",
+      "symbol": "_Z13func_002827f0Phyy",
+      "compiled_size": 104,
+      "target_size": 104,
+      "ghidra_body_size": 104,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "e0ffbd270000b0ff0800b1ff1000b2ff2d80a0001800bfff2d88c000dc070a0c2d90800008104f8e2d2040022d2800020700e0152d3020020000b0df0800b1df1000b2df1800bfdf160a0a082000bd270000b0df0800b1df1000b2df1800bfdfc00a0a082000bd27",
+      "target_hex": "e0ffbd270000b0ff0800b1ff1000b2ff2d80a0001800bfff2d88c000dc070a0c2d90800008104f8e2d2040022d2800020700e0152d3020020000b0df0800b1df1000b2df1800bfdf160a0a082000bd270000b0df0800b1df1000b2df1800bfdfc00a0a082000bd27"
+    },
+    {
+      "address": "00290a10",
+      "symbol": "_Z13func_00290a10Phyy",
+      "compiled_size": 80,
+      "target_size": 80,
+      "ghidra_body_size": 80,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "e0ffbd270800b1ff0000b0ff2d8880001000bfff2d20a0002d80c0003ec2050cffff05242d2020022d30000258420a0c2d28400001000f240000b0df10002fa21000bfdf0800b1df0800e0032000bd27",
+      "target_hex": "e0ffbd270800b1ff0000b0ff2d8880001000bfff2d20a0002d80c0003ec2050cffff05242d2020022d30000258420a0c2d28400001000f240000b0df10002fa21000bfdf0800b1df0800e0032000bd27"
+    }
+  ]
+}

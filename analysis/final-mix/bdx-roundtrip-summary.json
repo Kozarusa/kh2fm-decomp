@@ -1,0 +1,15 @@
+{
+  "executable_sha256": "d869ce4b8edd61cb978c4ff9ede595fe4d7d7b21cbb96a145275217120d8bc87",
+  "payload_count": 733,
+  "decoder_assembly_sha256": "1122ea3ac788e7046fca0955367c0701ba3a091a52e85313376df654711316f7",
+  "decoded_instruction_count": 430476,
+  "preserved_data_word_count": 1898057,
+  "status_counts": {
+    "byte_exact_roundtrip": 733
+  },
+  "limitations": [
+    "Byte equality verifies reconstruction, not VM behavior or complete instruction decoding.",
+    "OpenKH can retain unvisited bytes as data; matching output is not proof all bytes are instructions.",
+    "No native EE, IOP, VU, area-script, or event-script equivalence is claimed by this check."
+  ]
+}

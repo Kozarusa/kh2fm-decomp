@@ -1,0 +1,24 @@
+001c7950: compiled 80 bytes, target 76 bytes, exact=False
+Differing words: 18. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001c7950: 27bdffe0  addiu	sp,sp,-32                                  | 001c7950: 27bdffe0  addiu	sp,sp,-32
+!! 001c7954: ffbf0010  sd	ra,16(sp)                                     | 001c7954: 0080682d  move	t5,a0
+!! 001c7958: 8c8f0028  lw	t7,40(a0)                                     | 001c7958: ffbf0010  sd	ra,16(sp)
+!! 001c795c: 31ef0001  andi	t7,t7,0x1                                   | 001c795c: 0000102d  move	v0,zero
+!! 001c7960: 11e0000b  beqz	t7,0x1c7990                                 | 001c7960: 8c8f0028  lw	t7,40(a0)
+!! 001c7964: 0000102d  move	v0,zero                                     | 001c7964: 00a0202d  move	a0,a1
+!! 001c7968: 78880000  lq	t0,0(a0)                                      | 001c7968: 31ef0001  andi	t7,t7,0x1
+!! 001c796c: 7fa80000  sq	t0,0(sp)                                      | 001c796c: 11e00009  beqz	t7,1c7994 <func_001c7950+0x44>
+!! 001c7970: 8c8f004c  lw	t7,76(a0)                                     | 001c7970: 03a0282d  move	a1,sp
+!! 001c7974: c7a00004  lwc1	$f0,4(sp)                                   | 001c7974: 8dae004c  lw	t6,76(t5)
+!! 001c7978: c5e10004  lwc1	$f1,4(t7)                                   | 001c7978: c7a00004  lwc1	$f0,4(sp)
+!! 001c797c: 00a0202d  move	a0,a1                                       | 001c797c: c5c10004  lwc1	$f1,4(t6)
+!! 001c7980: 03a0282d  move	a1,sp                                       | 001c7980: 79af0000  lq	t7,0(t5)
+   001c7984: 46010000  add.s	$f0,$f0,$f1                                | 001c7984: 46010000  add.s	$f0,$f0,$f1
+!! 001c7988: 0c0693fe  jal	0x1a4ff8                                     | 001c7988: 7faf0000  sq	t7,0(sp)
+!! 001c798c: e7a00004  swc1	$f0,4(sp)                                   | 001c798c: 0c0693fe  jal	1a4ff8 <func_001a4ff8>
+!! 001c7990: dfbf0010  ld	ra,16(sp)                                     | 001c7990: e7a00004  swc1	$f0,4(sp)
+!! 001c7994: 03e00008  jr	ra                                            | 001c7994: dfbf0010  ld	ra,16(sp)
+!! 001c7998: 27bd0020  addiu	sp,sp,32                                   | 001c7998: 03e00008  jr	ra
+!!                                                                      | 001c799c: 27bd0020  addiu	sp,sp,32

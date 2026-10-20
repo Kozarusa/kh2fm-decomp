@@ -1,0 +1,16 @@
+[
+  {
+    "address": "00154288",
+    "owner": "orch1-rec20",
+    "metadata": "{\"address\": \"00154288\", \"end\": \"001542c4\", \"bytes\": 60, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [], \"best_proposal\": {\"proof\": \"analysis/final-mix/recovery-experiments/fm_scalar_01.verification.json\", \"source\": \"analysis/final-mix/recovery-experiments/fm_scalar_01.cpp\", \"compiled_bytes\": 48, \"target_bytes\": 60, \"different_words\": 11}}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\orch-shift1\\\\rec20\\\\orch1_rec20_00154288_v3.cpp\", \"source_sha256\": \"d7fa1538ea0079fa2d6ba9a25febb9cc34a51889d281bae27c513e2629ebb420\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\orch-shift1\\\\rec20\\\\orch1_rec20_00154288_v3.verification.json\", \"proof_sha256\": \"4876424f6272688ad37e86c4b367845184c6b9a95cb931e810dd6e0da06aeff8\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_orchan_recovered_00154288.cpp"
+  },
+  {
+    "address": "001542c8",
+    "owner": "orch1-rec20",
+    "metadata": "{\"address\": \"001542c8\", \"end\": \"00154330\", \"bytes\": 104, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [\"001387f8\", \"001541d8\", \"00154288\"], \"best_proposal\": null}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\orch-shift1\\\\rec20\\\\orch1_rec20_001542c8_v1.cpp\", \"source_sha256\": \"4401cda19d128d0e00fb107e18b41e511884950ffa22e46167cdf0af24218e0f\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\orch-shift1\\\\rec20\\\\orch1_rec20_001542c8_v1.verification.json\", \"proof_sha256\": \"9b9a742b5147dbf9ff7aafa5130c4673b5a93e928b9fdc9cd6781538ca35b569\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_orchan_recovered_001542c8.cpp"
+  }
+]

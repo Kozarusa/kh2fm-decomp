@@ -1,0 +1,28 @@
+[
+  {
+    "source": "analysis/final-mix/recovery-experiments/fm_scalar_medium_00.cpp",
+    "exit_code": 1,
+    "log": "analysis/final-mix/recovery-experiments/fm_scalar_medium_00.probe.log"
+  },
+  {
+    "source": "analysis/final-mix/recovery-experiments/fm_scalar_medium_01.cpp",
+    "exit_code": 0,
+    "log": "analysis/final-mix/recovery-experiments/fm_scalar_medium_01.probe.log",
+    "functions": 100,
+    "exact": 2
+  },
+  {
+    "source": "analysis/final-mix/recovery-experiments/fm_scalar_medium_02.cpp",
+    "exit_code": 0,
+    "log": "analysis/final-mix/recovery-experiments/fm_scalar_medium_02.probe.log",
+    "functions": 100,
+    "exact": 0
+  },
+  {
+    "source": "analysis/final-mix/recovery-experiments/fm_scalar_medium_03.cpp",
+    "exit_code": 0,
+    "log": "analysis/final-mix/recovery-experiments/fm_scalar_medium_03.probe.log",
+    "functions": 34,
+    "exact": 0
+  }
+]

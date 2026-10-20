@@ -1,0 +1,6 @@
+# 001c2ce8 blocked
+- Range: 001c2ce8, 76 bytes. Versions tried: 6. Best: v1 and v3 with 2 differing words (76/76 bytes).
+- First difference of the best version: v1: !! 001c2d20: ae0f0000  sw	t7,0(s0)  (compiled sw t6,2748(s0)); v3: !! 001c2d18: 35ce0004  ori	t6,t6,0x4  (compiled addiu t7,t7,5224)
+- Changes tried: v1 copy of lay01 v1 (2, final stores swapped); v2 blocker hypothesis, asm-opaque copy of the object pointer for the table store (15, 80 bytes: stores ordered but an extra move t4,s0); v3 twin 001c2c98 v4 recipe, asm ties plus t5/t6/t7 bindings (2, stores exact, ori/addiu swapped); v4 v3 plus "+r"(mode) in the first tie (4: ori/addiu now exact, but lui 0x35 is hoisted above the or so the 0x200000 constant moves from t7 to t4); v5 v4 without the t7 binding of table (4, no change); v6 v3 plus a separate mode tie before the table address (7).
+- Why it stops here: no improvement for 3 versions.
+- Next hypothesis: from v4 (only the 0x200000 constant register and the lui 0x35 position differ), keep the table address formation from being scheduled above the flags or, e.g. bind the 0x200000 constant to $15 as its own register variable or make the table tie take flags as "+r" input so lui 0x35 cannot rise above it.

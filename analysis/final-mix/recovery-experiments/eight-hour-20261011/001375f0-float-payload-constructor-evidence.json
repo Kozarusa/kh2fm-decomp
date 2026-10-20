@@ -1,0 +1,132 @@
+{
+  "address": "001375f0",
+  "accepted": false,
+  "proofs": [
+    {
+      "source": "eight_hour_001375f0_float_payload_constructor_0.cpp",
+      "source_sha256": "eca6042ff3975adf2fdb931ce7155087505887c3937c3f5581b2e6f6ae2899b5",
+      "proof": "eight_hour_001375f0_float_payload_constructor_0.verification.json",
+      "proof_sha256": "49ef6c4cf7f12eac6b0f5f06c50a72314db408de8ee3a2f7fccb231076711b68",
+      "compiled_bytes": 60,
+      "target_bytes": 64,
+      "differing_words": 14
+    },
+    {
+      "source": "eight_hour_001375f0_float_payload_constructor_1.cpp",
+      "source_sha256": "236463cf1cc918a54370ee805df1950df401718722b35466c0b77d645411a36c",
+      "proof": "eight_hour_001375f0_float_payload_constructor_1.verification.json",
+      "proof_sha256": "c4fea3abe8dfcd7581892fce7623109461b244a04dd9ca26fafb0c216f02f3d1",
+      "compiled_bytes": 64,
+      "target_bytes": 64,
+      "differing_words": 2
+    },
+    {
+      "source": "eight_hour_001375f0_v2_float_address_lifetimes_0.cpp",
+      "source_sha256": "2e7d47faf8defb90476cb0bcb623a0d062c76e9d2d2f8eb0ddbc501a0763b851",
+      "proof": "eight_hour_001375f0_v2_float_address_lifetimes_0.verification.json",
+      "proof_sha256": "533d28dc52feca5fa4b16d062a20e5f86280243e8bff6303f96defb200195696",
+      "compiled_bytes": 64,
+      "target_bytes": 64,
+      "differing_words": 2
+    },
+    {
+      "source": "eight_hour_001375f0_v2_float_address_lifetimes_1.cpp",
+      "source_sha256": "10faaeb544fd97a25602d88b19eae61e825bc5e45c614a6e14deca47a7482b1d",
+      "proof": "eight_hour_001375f0_v2_float_address_lifetimes_1.verification.json",
+      "proof_sha256": "dbd406c70f6579d979bd51488c30f80154fd3c7ae9340d5f9592503d2e3f4948",
+      "compiled_bytes": 64,
+      "target_bytes": 64,
+      "differing_words": 2
+    },
+    {
+      "source": "eight_hour_001375f0_v2_float_address_lifetimes_2.cpp",
+      "source_sha256": "f027f77abf7fb64c30f67418a1e58dfbd82faa8b1e0dbc73d732d20b06c799f3",
+      "proof": "eight_hour_001375f0_v2_float_address_lifetimes_2.verification.json",
+      "proof_sha256": "162230ff62ba74397a173e51843d98068b563b745a49da4bf94698466a139ef2",
+      "compiled_bytes": 64,
+      "target_bytes": 64,
+      "differing_words": 2
+    },
+    {
+      "source": "eight_hour_001375f0_v2_float_address_lifetimes_3.cpp",
+      "source_sha256": "15c36cac675485f72226a182ad22fbb94cca786b39ce6c3240c98a03c2726624",
+      "proof": "eight_hour_001375f0_v2_float_address_lifetimes_3.verification.json",
+      "proof_sha256": "35652922fe60cedd52703c5e5756e811a6bd0e890214c3b121fb555424c437c1",
+      "compiled_bytes": 64,
+      "target_bytes": 64,
+      "differing_words": 2
+    },
+    {
+      "source": "eight_hour_001375f0_v3_object_carrier_and_address_0.cpp",
+      "source_sha256": "236463cf1cc918a54370ee805df1950df401718722b35466c0b77d645411a36c",
+      "proof": "eight_hour_001375f0_v3_object_carrier_and_address_0.verification.json",
+      "proof_sha256": "6370c42b504c10fa72538d4a815fc54cda31afeb26b5774dbe4fafda8cf09ad9",
+      "compiled_bytes": 64,
+      "target_bytes": 64,
+      "differing_words": 2
+    },
+    {
+      "source": "eight_hour_001375f0_v3_object_carrier_and_address_1.cpp",
+      "source_sha256": "4005da16a178a57738d13d99626f3f89b6884c2aab5f791cff026655761b7707",
+      "proof": "eight_hour_001375f0_v3_object_carrier_and_address_1.verification.json",
+      "proof_sha256": "504628ed93eb09e94ba011082c53e8e77f2f99573dfa8b36c3519f3a2b9b131e",
+      "compiled_bytes": 72,
+      "target_bytes": 64,
+      "differing_words": 11
+    },
+    {
+      "source": "eight_hour_001375f0_v3_object_carrier_and_address_2.cpp",
+      "source_sha256": "861c0972ed46cb6ec7b58da7f6aa32e817b7356171ee73c4438fa32304d380bd",
+      "proof": "eight_hour_001375f0_v3_object_carrier_and_address_2.verification.json",
+      "proof_sha256": "8081a29f544444146d5f1a81d022a5b4e647da3952bcb0a1f91e9abe7100923f",
+      "compiled_bytes": 64,
+      "target_bytes": 64,
+      "differing_words": 5
+    },
+    {
+      "source": "eight_hour_001375f0_v3_object_carrier_and_address_3.cpp",
+      "source_sha256": "0f1143ed514593e210790c12e5ca87ba0f051650233a1d2eab83ff62aaa111bc",
+      "proof": "eight_hour_001375f0_v3_object_carrier_and_address_3.verification.json",
+      "proof_sha256": "149d61159fa7c67b4da8dba6b49e25823b98b4b1c231a832a009157d860b5831",
+      "compiled_bytes": 72,
+      "target_bytes": 64,
+      "differing_words": 16
+    },
+    {
+      "source": "eight_hour_001375f0_v4_helper_word_widths_0.cpp",
+      "source_sha256": "236463cf1cc918a54370ee805df1950df401718722b35466c0b77d645411a36c",
+      "proof": "eight_hour_001375f0_v4_helper_word_widths_0.verification.json",
+      "proof_sha256": "80885f83aaa1799d15296c4c3902a5f00cb720317bd8878bf7bc40c91f5e7ec0",
+      "compiled_bytes": 64,
+      "target_bytes": 64,
+      "differing_words": 2
+    },
+    {
+      "source": "eight_hour_001375f0_v4_helper_word_widths_1.cpp",
+      "source_sha256": "e4fad6d4b630e72246c9670456a1ce6d85787bae4e29b5617fa9ec22fe1db5a2",
+      "proof": "eight_hour_001375f0_v4_helper_word_widths_1.verification.json",
+      "proof_sha256": "f4e78e1dcc8603acc540068c491baf14dde524e88eefc8a4cf1543c4760affb4",
+      "compiled_bytes": 64,
+      "target_bytes": 64,
+      "differing_words": 2
+    },
+    {
+      "source": "eight_hour_001375f0_v4_helper_word_widths_2.cpp",
+      "source_sha256": "05c4e801dbf1d4d00cea5b29a26cbc7ab8d6bdcf522ae15d491ad7e1fef539b1",
+      "proof": "eight_hour_001375f0_v4_helper_word_widths_2.verification.json",
+      "proof_sha256": "9058e70d438ae88391710e50803f35464c57f004529d814a0ae238b0df0fc952",
+      "compiled_bytes": 64,
+      "target_bytes": 64,
+      "differing_words": 2
+    },
+    {
+      "source": "eight_hour_001375f0_v4_helper_word_widths_3.cpp",
+      "source_sha256": "32e0d4714393dd742ac16f5d64c1daba28af5936f1dcb8944e72670c665d95db",
+      "proof": "eight_hour_001375f0_v4_helper_word_widths_3.verification.json",
+      "proof_sha256": "9dffd2d7c720bbdf236a47f91c285b1e2f5ea8d9ae8b1a283d79ba8e318cc185",
+      "compiled_bytes": 64,
+      "target_bytes": 64,
+      "differing_words": 2
+    }
+  ]
+}

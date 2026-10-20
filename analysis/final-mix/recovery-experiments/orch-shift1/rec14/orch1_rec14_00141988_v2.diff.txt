@@ -1,0 +1,32 @@
+00141988: compiled 112 bytes, target 112 bytes, exact=False
+Differing words: 20. First difference at instruction 0 (0-based).
+
+ORIGINAL                                                                | COMPILED
+!! 00141988: 94ae0002  lhu	t6,2(a1)                                     | 00141988: 94af0002  lhu	t7,2(a1)
+!! 0014198c: 8c8f0010  lw	t7,16(a0)                                     | 0014198c: 8c8e0010  lw	t6,16(a0)
+!! 00141990: 000e7100  sll	t6,t6,0x4                                    | 00141990: 000f7900  sll	t7,t7,0x4
+!! 00141994: 01ee7821  addu	t7,t7,t6                                    | 00141994: 94ad0004  lhu	t5,4(a1)
+!! 00141998: accf0000  sw	t7,0(a2)                                      | 00141998: 01cf7021  addu	t6,t6,t7
+!! 0014199c: 94ae0004  lhu	t6,4(a1)                                     | 0014199c: 94ac0006  lhu	t4,6(a1)
+!! 001419a0: 8c8f0010  lw	t7,16(a0)                                     | 001419a0: acce0000  sw	t6,0(a2)
+!! 001419a4: 000e7100  sll	t6,t6,0x4                                    | 001419a4: 000d6900  sll	t5,t5,0x4
+!! 001419a8: 01ee7821  addu	t7,t7,t6                                    | 001419a8: 000c6100  sll	t4,t4,0x4
+!! 001419ac: accf0004  sw	t7,4(a2)                                      | 001419ac: 94ab0008  lhu	t3,8(a1)
+!! 001419b0: 94ae0006  lhu	t6,6(a1)                                     | 001419b0: 8c8e0010  lw	t6,16(a0)
+!! 001419b4: 8c8f0010  lw	t7,16(a0)                                     | 001419b4: 000b5100  sll	t2,t3,0x4
+!! 001419b8: 000e7100  sll	t6,t6,0x4                                    | 001419b8: 01cd7021  addu	t6,t6,t5
+!! 001419bc: 01ee7821  addu	t7,t7,t6                                    | 001419bc: acce0004  sw	t6,4(a2)
+!! 001419c0: accf0008  sw	t7,8(a2)                                      | 001419c0: 8c8f0010  lw	t7,16(a0)
+!! 001419c4: 94ae0008  lhu	t6,8(a1)                                     | 001419c4: 340effff  li	t6,0xffff
+!! 001419c8: 340fffff  li	t7,0xffff                                     | 001419c8: 01ec7821  addu	t7,t7,t4
+!! 001419cc: 11cf0007  beq	t6,t7,0x1419ec                               | 001419cc: 116e0007  beq	t3,t6,1419ec <func_00141988+0x64>
+!! 001419d0: 000e6900  sll	t5,t6,0x4                                    | 001419d0: accf0008  sw	t7,8(a2)
+   001419d4: 8c8f0010  lw	t7,16(a0)                                     | 001419d4: 8c8f0010  lw	t7,16(a0)
+   001419d8: 240e0004  li	t6,4                                          | 001419d8: 240e0004  li	t6,4
+!! 001419dc: 01ed7821  addu	t7,t7,t5                                    | 001419dc: 01ea7821  addu	t7,t7,t2
+   001419e0: acce0010  sw	t6,16(a2)                                     | 001419e0: acce0010  sw	t6,16(a2)
+   001419e4: 03e00008  jr	ra                                            | 001419e4: 03e00008  jr	ra
+   001419e8: accf000c  sw	t7,12(a2)                                     | 001419e8: accf000c  sw	t7,12(a2)
+   001419ec: 240f0003  li	t7,3                                          | 001419ec: 240f0003  li	t7,3
+   001419f0: 03e00008  jr	ra                                            | 001419f0: 03e00008  jr	ra
+   001419f4: accf0010  sw	t7,16(a2)                                     | 001419f4: accf0010  sw	t7,16(a2)

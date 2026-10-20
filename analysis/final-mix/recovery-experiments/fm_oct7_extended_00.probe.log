@@ -1,0 +1,93 @@
+recovery-experiments/fm_oct7_extended_00/probe.cpp: In function `void 
+   func_00105748(long long unsigned int)':
+recovery-experiments/fm_oct7_extended_00/probe.cpp:305: warning: cast to 
+   pointer from integer of different size
+recovery-experiments/fm_oct7_extended_00/probe.cpp: In function `u32 
+   func_00132ab0(long long int, long long int)':
+recovery-experiments/fm_oct7_extended_00/probe.cpp:703: warning: cast to 
+   pointer from integer of different size
+recovery-experiments/fm_oct7_extended_00/probe.cpp:704: warning: cast to 
+   pointer from integer of different size
+recovery-experiments/fm_oct7_extended_00/probe.cpp: In function `void 
+   func_00134c00(long long int, long long unsigned int)':
+recovery-experiments/fm_oct7_extended_00/probe.cpp:803: warning: cast to 
+   pointer from integer of different size
+recovery-experiments/fm_oct7_extended_00/probe.cpp:804: warning: cast to 
+   pointer from integer of different size
+recovery-experiments/fm_oct7_extended_00/probe.cpp: In function `void 
+   func_0015d2e8(unsigned int, unsigned int, long long unsigned int, long long 
+   unsigned int, long long unsigned int, char, unsigned char, char)':
+recovery-experiments/fm_oct7_extended_00/probe.cpp:1681: warning: assignment to 
+   `u32' from `float'
+recovery-experiments/fm_oct7_extended_00/probe.cpp:1681: warning: argument to `
+   unsigned int' from `float'
+recovery-experiments/fm_oct7_extended_00/probe.cpp: In function `u32 
+   func_00165db8(int, u64*, u16*, long long unsigned int, long long unsigned 
+   int, unsigned char, u32*, long long unsigned int, int)':
+recovery-experiments/fm_oct7_extended_00/probe.cpp:1723: warning: cast to 
+   pointer from integer of different size
+recovery-experiments/fm_oct7_extended_00/probe.cpp:1736: warning: invalid 
+   conversion from `int*' to `unsigned int'
+recovery-experiments/fm_oct7_extended_00/probe.cpp:1746: warning: invalid 
+   conversion from `int*' to `unsigned int'
+recovery-experiments/fm_oct7_extended_00/probe.cpp: In function `void 
+   func_00179cb8(long long unsigned int)':
+recovery-experiments/fm_oct7_extended_00/probe.cpp:1854: warning: cast to 
+   pointer from integer of different size
+recovery-experiments/fm_oct7_extended_00/probe.cpp:1871: warning: cast to 
+   pointer from integer of different size
+recovery-experiments/fm_oct7_extended_00/probe.cpp:1875: warning: cast to 
+   pointer from integer of different size
+recovery-experiments/fm_oct7_extended_00/probe.cpp: In function `u64 
+   func_00179fd0(unsigned int, long long unsigned int, long long unsigned int, 
+   long long unsigned int)':
+recovery-experiments/fm_oct7_extended_00/probe.cpp:1903: warning: cast to 
+   pointer from integer of different size
+recovery-experiments/fm_oct7_extended_00/probe.cpp: In function `void 
+   func_0017fba0(long long unsigned int, long long unsigned int)':
+recovery-experiments/fm_oct7_extended_00/probe.cpp:2038: `stack0xffffffc0' 
+   undeclared (first use this function)
+recovery-experiments/fm_oct7_extended_00/probe.cpp:2038: (Each undeclared 
+   identifier is reported only once for each function it appears in.)
+recovery-experiments/fm_oct7_extended_00/probe.cpp: In function `void 
+   func_00180058(unsigned int, long long unsigned int, long long unsigned int, 
+   char*, unsigned int, unsigned int, long long int)':
+recovery-experiments/fm_oct7_extended_00/probe.cpp:2084: warning: cast to 
+   pointer from integer of different size
+recovery-experiments/fm_oct7_extended_00/probe.cpp: In function `void 
+   func_0018eb98(int*, long long unsigned int)':
+recovery-experiments/fm_oct7_extended_00/probe.cpp:2331: warning: cast to 
+   pointer from integer of different size
+recovery-experiments/fm_oct7_extended_00/probe.cpp: In function `void 
+   func_0019a308(long long unsigned int)':
+recovery-experiments/fm_oct7_extended_00/probe.cpp:2484: warning: cast to 
+   pointer from integer of different size
+recovery-experiments/fm_oct7_extended_00/probe.cpp: In function `u32 
+   func_0019dbc0(long long unsigned int, long long unsigned int, long long 
+   unsigned int, int, int)':
+recovery-experiments/fm_oct7_extended_00/probe.cpp:2644: warning: cast to 
+   pointer from integer of different size
+recovery-experiments/fm_oct7_extended_00/probe.cpp:2655: warning: cast to 
+   pointer from integer of different size
+recovery-experiments/fm_oct7_extended_00/probe.cpp:2661: warning: cast to 
+   pointer from integer of different size
+recovery-experiments/fm_oct7_extended_00/probe.cpp:2667: warning: cast to 
+   pointer from integer of different size
+recovery-experiments/fm_oct7_extended_00/probe.cpp:2669: warning: cast to 
+   pointer from integer of different size
+recovery-experiments/fm_oct7_extended_00/probe.cpp: In function `void 
+   func_001b7c80(int*, long long unsigned int)':
+recovery-experiments/fm_oct7_extended_00/probe.cpp:3005: warning: cast to 
+   pointer from integer of different size
+recovery-experiments/fm_oct7_extended_00/probe.cpp: In function `void 
+   func_001beb00(int)':
+recovery-experiments/fm_oct7_extended_00/probe.cpp:3247: warning: cast to 
+   pointer from integer of different size
+Traceback (most recent call last):
+  File "/mnt/c/Users/KoZa/Documents/ChatGPT/tools/kh2-audit/probe_fm_source.py", line 36, in <module>
+    run(f'/opt/ps2/gcc/bin/ee-g++ -O2 -g0 -x c++ -fno-exceptions -fno-rtti -fpermissive -ffunction-sections -c {relative}/probe.cpp -o {relative}/probe.o')
+  File "/mnt/c/Users/KoZa/Documents/ChatGPT/tools/kh2-audit/probe_fm_source.py", line 32, in run
+    subprocess.run(['docker', 'run', '--rm', '--platform', 'linux/amd64',
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['docker', 'run', '--rm', '--platform', 'linux/amd64', '-v', '/root/kh2fm-build:/work', '-w', '/work', 'kh2-local/ps2-compiler:3.2-ee-040921-objdiff', 'bash', '-lc', '/opt/ps2/gcc/bin/ee-g++ -O2 -g0 -x c++ -fno-exceptions -fno-rtti -fpermissive -ffunction-sections -c recovery-experiments/fm_oct7_extended_00/probe.cpp -o recovery-experiments/fm_oct7_extended_00/probe.o']' returned non-zero exit status 1.

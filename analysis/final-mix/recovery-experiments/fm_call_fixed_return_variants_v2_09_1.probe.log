@@ -1,0 +1,17 @@
+Exact probe matches: 0/45
+Detailed proof: analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_09_1.verification.json
+recovery-experiments/fm_call_fixed_return_variants_v2_09_1/probe.cpp: In 
+   function `void func_0022e1f8(long long unsigned int, unsigned int)':
+recovery-experiments/fm_call_fixed_return_variants_v2_09_1/probe.cpp:84: warning: cast
+   to pointer from integer of different size
+recovery-experiments/fm_call_fixed_return_variants_v2_09_1/probe.cpp: In 
+   function `void func_00240240(int, long long unsigned int, long long unsigned 
+   int)':
+recovery-experiments/fm_call_fixed_return_variants_v2_09_1/probe.cpp:315: warning: invalid
+   conversion from `u8*' to `long long unsigned int'
+recovery-experiments/fm_call_fixed_return_variants_v2_09_1/probe.cpp: In 
+   function `void func_00241fd0(long long unsigned int, unsigned int)':
+recovery-experiments/fm_call_fixed_return_variants_v2_09_1/probe.cpp:330: warning: cast
+   to pointer from integer of different size
+recovery-experiments/fm_call_fixed_return_variants_v2_09_1/probe.cpp:332: warning: cast
+   to pointer from integer of different size

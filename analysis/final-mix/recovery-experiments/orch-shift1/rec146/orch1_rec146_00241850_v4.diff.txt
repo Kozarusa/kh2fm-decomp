@@ -1,0 +1,30 @@
+00241850: compiled 104 bytes, target 104 bytes, exact=False
+Differing words: 9. First difference at instruction 7 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00241850: 27bdfff0  addiu	sp,sp,-16                                  | 00241850: 27bdfff0  addiu	sp,sp,-16
+   00241854: 3c0f0036  lui	t7,0x36                                      | 00241854: 3c0f0036  lui	t7,0x36
+   00241858: ffbf0000  sd	ra,0(sp)                                      | 00241858: ffbf0000  sd	ra,0(sp)
+   0024185c: 00a0702d  move	t6,a1                                       | 0024185c: 00a0702d  move	t6,a1
+   00241860: 00046140  sll	t4,a0,0x5                                    | 00241860: 00046140  sll	t4,a0,0x5
+   00241864: 240500ff  li	a1,255                                        | 00241864: 240500ff  li	a1,255
+   00241868: 11c00009  beqz	t6,0x241890                                 | 00241868: 11c00009  beqz	t6,241890 <func_00241850+0x40>
+!! 0024186c: 8dedec9c  lw	t5,-4964(t7)   ; = D_0035ec9c                 | 0024186c: 8defec9c  lw	t7,-4964(t7)   ; = D_0035ec9c
+   00241870: 3c0f0036  lui	t7,0x36                                      | 00241870: 3c0f0036  lui	t7,0x36
+   00241874: dfbf0000  ld	ra,0(sp)                                      | 00241874: dfbf0000  ld	ra,0(sp)
+   00241878: 8de4ec94  lw	a0,-4972(t7)   ; = D_0035ec94                 | 00241878: 8de4ec94  lw	a0,-4972(t7)   ; = D_0035ec94
+   0024187c: 24060008  li	a2,8                                          | 0024187c: 24060008  li	a2,8
+   00241880: 008c2021  addu	a0,a0,t4                                    | 00241880: 008c2021  addu	a0,a0,t4
+   00241884: 24840020  addiu	a0,a0,32                                   | 00241884: 24840020  addiu	a0,a0,32
+   00241888: 080bf786  j	0x2fde18                                       | 00241888: 080bf786  j	2fde18 <func_002fde18>
+   0024188c: 27bd0010  addiu	sp,sp,16                                   | 0024188c: 27bd0010  addiu	sp,sp,16
+!! 00241890: 3c0e0036  lui	t6,0x36                                      | 00241890: 6ded0008  ldr	t5,8(t7)   ; = D_00360008
+!! 00241894: dfbf0000  ld	ra,0(sp)                                      | 00241894: 69ed000f  ldl	t5,15(t7)   ; = D_0036000f
+!! 00241898: 8dcfec94  lw	t7,-4972(t6)   ; = D_0035ec94                 | 00241898: 3c0e0036  lui	t6,0x36
+!! 0024189c: 018f7821  addu	t7,t4,t7                                    | 0024189c: dfbf0000  ld	ra,0(sp)
+!! 002418a0: 69aa000f  ldl	t2,15(t5)                                    | 002418a0: 8dcfec94  lw	t7,-4972(t6)   ; = D_0035ec94
+!! 002418a4: 6daa0008  ldr	t2,8(t5)                                     | 002418a4: 01ec7821  addu	t7,t7,t4
+!! 002418a8: b1ea0027  sdl	t2,39(t7)                                    | 002418a8: b5ed0020  sdr	t5,32(t7)
+!! 002418ac: b5ea0020  sdr	t2,32(t7)                                    | 002418ac: b1ed0027  sdl	t5,39(t7)
+   002418b0: 03e00008  jr	ra                                            | 002418b0: 03e00008  jr	ra
+   002418b4: 27bd0010  addiu	sp,sp,16                                   | 002418b4: 27bd0010  addiu	sp,sp,16

@@ -1,0 +1,36 @@
+001b3018: compiled 128 bytes, target 128 bytes, exact=False
+Differing words: 1. First difference at instruction 14 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001b3018: 27bdffe0  addiu	sp,sp,-32                                  | 001b3018: 27bdffe0  addiu	sp,sp,-32
+   001b301c: ffb00000  sd	s0,0(sp)                                      | 001b301c: ffb00000  sd	s0,0(sp)
+   001b3020: ffb10008  sd	s1,8(sp)                                      | 001b3020: ffb10008  sd	s1,8(sp)
+   001b3024: ffb20010  sd	s2,16(sp)                                     | 001b3024: ffb20010  sd	s2,16(sp)
+   001b3028: ffbf0018  sd	ra,24(sp)                                     | 001b3028: ffbf0018  sd	ra,24(sp)
+   001b302c: 8c8f0000  lw	t7,0(a0)                                      | 001b302c: 8c8f0000  lw	t7,0(a0)
+   001b3030: 11e00013  beqz	t7,0x1b3080                                 | 001b3030: 11e00013  beqz	t7,1b3080 <func_001b3018+0x68>
+   001b3034: 0080802d  move	s0,a0                                       | 001b3034: 0080802d  move	s0,a0
+   001b3038: 8def0004  lw	t7,4(t7)                                      | 001b3038: 8def0004  lw	t7,4(t7)
+   001b303c: 19e0000d  blez	t7,0x1b3074                                 | 001b303c: 19e0000d  blez	t7,1b3074 <func_001b3018+0x5c>
+   001b3040: 0000902d  move	s2,zero                                     | 001b3040: 0000902d  move	s2,zero
+   001b3044: 0000882d  move	s1,zero                                     | 001b3044: 0000882d  move	s1,zero
+   001b3048: 8e0f0004  lw	t7,4(s0)                                      | 001b3048: 8e0f0004  lw	t7,4(s0)
+   001b304c: 26520001  addiu	s2,s2,1                                    | 001b304c: 26520001  addiu	s2,s2,1
+!! 001b3050: 022f7821  addu	t7,s1,t7                                    | 001b3050: 01f17821  addu	t7,t7,s1
+   001b3054: 8de40080  lw	a0,128(t7)                                    | 001b3054: 8de40080  lw	a0,128(t7)
+   001b3058: 0c0595da  jal	0x165768                                     | 001b3058: 0c0595da  jal	165768 <func_00165768>
+   001b305c: 26310090  addiu	s1,s1,144                                  | 001b305c: 26310090  addiu	s1,s1,144
+   001b3060: 8e0e0000  lw	t6,0(s0)                                      | 001b3060: 8e0e0000  lw	t6,0(s0)
+   001b3064: 8dcf0004  lw	t7,4(t6)                                      | 001b3064: 8dcf0004  lw	t7,4(t6)
+   001b3068: 024f782a  slt	t7,s2,t7                                     | 001b3068: 024f782a  slt	t7,s2,t7
+   001b306c: 55e0fff7  bnezl	t7,0x1b304c                                | 001b306c: 55e0fff7  bnezl	t7,1b304c <func_001b3018+0x34>
+   001b3070: 8e0f0004  lw	t7,4(s0)                                      | 001b3070: 8e0f0004  lw	t7,4(s0)
+   001b3074: 0c041444  jal	0x105110                                     | 001b3074: 0c041444  jal	105110 <func_00105110>
+   001b3078: 8e040004  lw	a0,4(s0)                                      | 001b3078: 8e040004  lw	a0,4(s0)
+   001b307c: ae000000  sw	zero,0(s0)                                    | 001b307c: ae000000  sw	zero,0(s0)
+   001b3080: dfb00000  ld	s0,0(sp)                                      | 001b3080: dfb00000  ld	s0,0(sp)
+   001b3084: dfb10008  ld	s1,8(sp)                                      | 001b3084: dfb10008  ld	s1,8(sp)
+   001b3088: dfb20010  ld	s2,16(sp)                                     | 001b3088: dfb20010  ld	s2,16(sp)
+   001b308c: dfbf0018  ld	ra,24(sp)                                     | 001b308c: dfbf0018  ld	ra,24(sp)
+   001b3090: 03e00008  jr	ra                                            | 001b3090: 03e00008  jr	ra
+   001b3094: 27bd0020  addiu	sp,sp,32                                   | 001b3094: 27bd0020  addiu	sp,sp,32

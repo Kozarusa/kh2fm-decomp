@@ -1,0 +1,33 @@
+00187ab8: compiled 112 bytes, target 116 bytes, exact=False
+Differing words: 25. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00187ab8: 27bdffe0  addiu	sp,sp,-32                                  | 00187ab8: 27bdffe0  addiu	sp,sp,-32
+!! 00187abc: 0000782d  move	t7,zero                                     | 00187abc: ffb00000  sd	s0,0(sp)
+   00187ac0: ffb20010  sd	s2,16(sp)                                     | 00187ac0: ffb20010  sd	s2,16(sp)
+!! 00187ac4: ffb00000  sd	s0,0(sp)                                      | 00187ac4: ffb10008  sd	s1,8(sp)
+!! 00187ac8: ffb10008  sd	s1,8(sp)                                      | 00187ac8: 0080802d  move	s0,a0
+   00187acc: ffbf0018  sd	ra,24(sp)                                     | 00187acc: ffbf0018  sd	ra,24(sp)
+!! 00187ad0: 1080000f  beqz	a0,0x187b10                                 | 00187ad0: 1080000d  beqz	a0,187b08 <func_00187ab8+0x50>
+   00187ad4: 00a0902d  move	s2,a1                                       | 00187ad4: 00a0902d  move	s2,a1
+!! 00187ad8: 0080802d  move	s0,a0                                       | 00187ad8: 0000882d  move	s1,zero
+!! 00187adc: 0000882d  move	s1,zero                                     | 00187adc: 8e0f0000  lw	t7,0(s0)
+!! 00187ae0: 8e0f0000  lw	t7,0(s0)                                      | 00187ae0: 11e00005  beqz	t7,187af8 <func_00187ab8+0x40>
+!! 00187ae4: 11e00005  beqz	t7,0x187afc                                 | 00187ae4: 01e0282d  move	a1,t7
+!! 00187ae8: 01e0282d  move	a1,t7                                       | 00187ae8: 0c0bfc69  jal	2ff1a4 <func_002ff1a4>
+!! 00187aec: 0c0bfc69  jal	0x2ff1a4                                     | 00187aec: 0240202d  move	a0,s2
+!! 00187af0: 0240202d  move	a0,s2                                       | 00187af0: 10400006  beqz	v0,187b0c <func_00187ab8+0x54>
+!! 00187af4: 10400006  beqz	v0,0x187b10                                 | 00187af4: 0200782d  move	t7,s0
+!! 00187af8: 0200782d  move	t7,s0                                       | 00187af8: 26310001  addiu	s1,s1,1
+!! 00187afc: 26310001  addiu	s1,s1,1                                    | 00187afc: 2a2f0080  slti	t7,s1,128
+!! 00187b00: 2a2f0080  slti	t7,s1,128                                   | 00187b00: 15e0fff6  bnez	t7,187adc <func_00187ab8+0x24>
+!! 00187b04: 15e0fff6  bnez	t7,0x187ae0                                 | 00187b04: 26100020  addiu	s0,s0,32
+!! 00187b08: 26100020  addiu	s0,s0,32                                   | 00187b08: 0000782d  move	t7,zero
+!! 00187b0c: 0000782d  move	t7,zero                                     | 00187b0c: dfb00000  ld	s0,0(sp)
+!! 00187b10: dfb00000  ld	s0,0(sp)                                      | 00187b10: 01e0102d  move	v0,t7
+!! 00187b14: 01e0102d  move	v0,t7                                       | 00187b14: dfb10008  ld	s1,8(sp)
+!! 00187b18: dfb10008  ld	s1,8(sp)                                      | 00187b18: dfb20010  ld	s2,16(sp)
+!! 00187b1c: dfb20010  ld	s2,16(sp)                                     | 00187b1c: dfbf0018  ld	ra,24(sp)
+!! 00187b20: dfbf0018  ld	ra,24(sp)                                     | 00187b20: 03e00008  jr	ra
+!! 00187b24: 03e00008  jr	ra                                            | 00187b24: 27bd0020  addiu	sp,sp,32
+!! 00187b28: 27bd0020  addiu	sp,sp,32                                   | 

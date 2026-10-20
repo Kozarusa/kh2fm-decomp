@@ -1,0 +1,36 @@
+
+SLPM_666.75:     file format elf32-littlemips
+
+Disassembly of section main:
+
+002b7334 <main+0x1b7334>:
+  2b7334:	27bdffd0 	addiu	sp,sp,-48
+  2b7338:	ffbe0020 	sd	s8,32(sp)
+  2b733c:	ffbf0028 	sd	ra,40(sp)
+  2b7340:	03a0f02d 	move	s8,sp
+  2b7344:	afc40000 	sw	a0,0(s8)
+  2b7348:	afc50004 	sw	a1,4(s8)
+  2b734c:	afc60008 	sw	a2,8(s8)
+  2b7350:	afc7000c 	sw	a3,12(s8)
+  2b7354:	afc80010 	sw	t0,16(s8)
+  2b7358:	8fcf000c 	lw	t7,12(s8)
+  2b735c:	29ef3a00 	slti	t7,t7,14848
+  2b7360:	15e00003 	bnez	t7,0x2b7370
+  2b7364:	00000000 	nop
+  2b7368:	240f0040 	li	t7,64
+  2b736c:	afcf0010 	sw	t7,16(s8)
+  2b7370:	24040006 	li	a0,6
+  2b7374:	24050015 	li	a1,21
+  2b7378:	8fc60000 	lw	a2,0(s8)
+  2b737c:	8fc70004 	lw	a3,4(s8)
+  2b7380:	8fc80008 	lw	t0,8(s8)
+  2b7384:	8fc9000c 	lw	t1,12(s8)
+  2b7388:	0c0ad9c2 	jal	0x2b6708
+  2b738c:	8fca0010 	lw	t2,16(s8)
+  2b7390:	0040782d 	move	t7,v0
+  2b7394:	01e0102d 	move	v0,t7
+  2b7398:	03c0e82d 	move	sp,s8
+  2b739c:	dfbe0020 	ld	s8,32(sp)
+  2b73a0:	dfbf0028 	ld	ra,40(sp)
+  2b73a4:	03e00008 	jr	ra
+  2b73a8:	27bd0030 	addiu	sp,sp,48

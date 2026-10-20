@@ -1,0 +1,57 @@
+002e8070 [(8, '0400858c', '0400859c'), (12, '00008f8c', '0800868c'), (16, '0800868c', '2ea70b0c'), (20, '0000bfdf', '0000848c'), (24, '2d20e001', '0000bfdf'), (28, '2ea70b08', '0800e003')]
+void func_002e8070(u32 *param_1)
+
+{
+  func_002e9cb8(*param_1,param_1[1],param_1[2]); asm volatile("" ::: "memory");
+  return;
+}
+0016e718 [(12, '00008f8c', '04008594'), (16, '0400858c', '2b300600'), (20, '2b300600', 'da22060c'), (24, '0000bfdf', '0000848c'), (28, '2d20e001', '0000bfdf'), (32, 'da220608', '0800e003')]
+void func_0016e718(u32 *param_1)
+
+{
+  func_00188b68(*param_1,param_1[1],param_1[2] != 0); asm volatile("" ::: "memory");
+  return;
+}
+001713f0 [(12, '0400858c', '0400868c'), (16, '0400ee8d', '0400e58d'), (20, '08008cc4', 'a41a060c'), (24, '0000bfdf', '0800848c'), (28, '2d20c001', '0000bfdf'), (32, 'a41a0608', '0800e003')]
+void func_001713f0(int *param_1)
+
+{
+  func_00186a90(param_1[2],*(u32 *)(*param_1 + 4),param_1[1]); asm volatile("" ::: "memory");
+  return;
+}
+00173e10 [(12, '0400858c', '0400868c'), (16, '0400ee8d', '0400e58d'), (20, '08008cc4', 'a811060c'), (24, '0000bfdf', '0800848c'), (28, '2d20c001', '0000bfdf'), (32, 'a8110608', '0800e003')]
+void func_00173e10(int *param_1)
+
+{
+  func_001846a0(param_1[2],*(u32 *)(*param_1 + 4),param_1[1]); asm volatile("" ::: "memory");
+  return;
+}
+00174168 [(12, '0400858c', '0400868c'), (16, '0400ee8d', '0400e58d'), (20, '08008cc4', 'da0d060c'), (24, '0000bfdf', '0800848c'), (28, '2d20c001', '0000bfdf'), (32, 'da0d0608', '0800e003')]
+void func_00174168(int *param_1)
+
+{
+  func_00183768(param_1[2],*(u32 *)(*param_1 + 4),param_1[1]); asm volatile("" ::: "memory");
+  return;
+}
+0018f2a8 [(12, '0400858c', '0400868c'), (16, '0400ee8d', '0400e59d'), (20, '08008cc4', 'ea18060c'), (24, '0000bfdf', '0800848c'), (28, '2d20c001', '0000bfdf'), (32, 'ea180608', '0800e003')]
+void func_0018f2a8(int *param_1)
+
+{
+  func_001863a8(param_1[2],*(u32 *)(*param_1 + 4),param_1[1]); asm volatile("" ::: "memory");
+  return;
+}
+0018f2d0 [(12, '0400858c', '0400868c'), (16, '0400ee8d', '0400e58d'), (20, '08008cc4', 'de18060c'), (24, '0000bfdf', '0800848c'), (28, '2d20c001', '0000bfdf'), (32, 'de180608', '0800e003')]
+void func_0018f2d0(int *param_1)
+
+{
+  func_00186378(param_1[2],*(u32 *)(*param_1 + 4),param_1[1]); asm volatile("" ::: "memory");
+  return;
+}
+002e7c78 [(12, '08008cc4', '0400868c'), (16, '0400ee8d', '0400e58d'), (20, '0400858c', '5ab1050c'), (24, '0000bfdf', '0800848c'), (28, '2d20c001', '0000bfdf'), (32, '5ab10508', '0800e003')]
+void func_002e7c78(int *param_1)
+
+{
+  func_0016c568(param_1[2],*(u32 *)(*param_1 + 4),param_1[1]); asm volatile("" ::: "memory");
+  return;
+}
+16 disjoint 6-word proposals and full original byte proofs prepared.

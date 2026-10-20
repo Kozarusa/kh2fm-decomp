@@ -1,0 +1,24 @@
+0028b160: compiled 80 bytes, target 76 bytes, exact=False
+Differing words: 19. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0028b160: 948c0004  lhu	t4,4(a0)                                     | 0028b160: 948c0004  lhu	t4,4(a0)
+!! 0028b164: 000c6c00  sll	t5,t4,0x10                                   | 0028b164: 0000702d  move	t6,zero
+!! 0028b168: 000d6c03  sra	t5,t5,0x10                                   | 0028b168: 000c6c00  sll	t5,t4,0x10
+!! 0028b16c: 19a00009  blez	t5,0x28b194                                 | 0028b16c: 000d6c03  sra	t5,t5,0x10
+!! 0028b170: 0000702d  move	t6,zero                                     | 0028b170: 19a00009  blez	t5,28b198 <func_0028b160+0x38>
+!! 0028b174: 8c840028  lw	a0,40(a0)                                     | 0028b174: 00000000  nop
+!! 0028b178: 8c8f0000  lw	t7,0(a0)                                      | 0028b178: 8c840028  lw	a0,40(a0)
+!! 0028b17c: 10af0005  beq	a1,t7,0x28b194                               | 0028b17c: 8c8f0000  lw	t7,0(a0)
+!! 0028b180: 24840004  addiu	a0,a0,4                                    | 0028b180: 10af0005  beq	a1,t7,28b198 <func_0028b160+0x38>
+!! 0028b184: 25ce0001  addiu	t6,t6,1                                    | 0028b184: 24840004  addiu	a0,a0,4
+!! 0028b188: 01cd782a  slt	t7,t6,t5                                     | 0028b188: 25ce0001  addiu	t6,t6,1
+!! 0028b18c: 55e0fffb  bnezl	t7,0x28b17c                                | 0028b18c: 01cd782a  slt	t7,t6,t5
+!! 0028b190: 8c8f0000  lw	t7,0(a0)                                      | 0028b190: 55e0fffb  bnezl	t7,28b180 <func_0028b160+0x20>
+!! 0028b194: 000c7c00  sll	t7,t4,0x10                                   | 0028b194: 8c8f0000  lw	t7,0(a0)
+!! 0028b198: 2402ffff  li	v0,-1                                         | 0028b198: 000c6400  sll	t4,t4,0x10
+!! 0028b19c: 000f7c03  sra	t7,t7,0x10                                   | 0028b19c: 2402ffff  li	v0,-1
+!! 0028b1a0: 01cf782a  slt	t7,t6,t7                                     | 0028b1a0: 000c6403  sra	t4,t4,0x10
+!! 0028b1a4: 03e00008  jr	ra                                            | 0028b1a4: 01cc602a  slt	t4,t6,t4
+!! 0028b1a8: 01cf100b  movn	v0,t6,t7                                    | 0028b1a8: 03e00008  jr	ra
+!!                                                                      | 0028b1ac: 01cc100b  movn	v0,t6,t4

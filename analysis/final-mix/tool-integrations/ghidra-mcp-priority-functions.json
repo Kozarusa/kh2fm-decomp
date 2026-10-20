@@ -1,0 +1,296 @@
+{
+  "endpoint": "/get_functions",
+  "parameters": {
+    "functions": "0x00315458,0x00275438,0x0025eee8",
+    "fields": "entry_point,body_start,body_end,decompiled_code,callees",
+    "include_call_context": "false",
+    "program": "SLPM_666.75"
+  },
+  "response": {
+    "program": "SLPM_666.75",
+    "functions": {
+      "0x00315458": {
+        "name": "FUN_00315458",
+        "size": 24,
+        "address": "00315458",
+        "entry_point": "00315458",
+        "body_start": "00315458",
+        "body_end": "0031546f",
+        "decompiled_code": "\r\nvoid FUN_00315458(code *param_1)\r\n\r\n{\r\n  (*param_1)();\r\n  return;\r\n}\r\n\r\n",
+        "callee_count": 2,
+        "callees": [
+          {
+            "name": "FUN_002fd160",
+            "address": "002fd160"
+          },
+          {
+            "name": "FUN_00315440",
+            "address": "00315440"
+          }
+        ],
+        "revision": {
+          "token": "1791274945369:ccaff019:3",
+          "epoch": "ccaff019",
+          "modification_number": 3,
+          "saved_time": 1791274945369,
+          "unsaved_changes": false,
+          "decompiled": true
+        }
+      },
+      "0x00275438": {
+        "name": "FUN_00275438",
+        "size": 660,
+        "address": "00275438",
+        "entry_point": "00275438",
+        "body_start": "00275438",
+        "body_end": "002756f3",
+        "decompiled_code": "\r\nvoid FUN_00275438(void)\r\n\r\n{\r\n  long lVar1;\r\n  undefined8 uVar2;\r\n  short sVar3;\r\n  bool bVar4;\r\n  undefined4 uVar5;\r\n  int iVar6;\r\n  ulong uVar7;\r\n  \r\n  uVar7 = FUN_00287bc0();\r\n  iVar6 = FUN_00276fa8();\r\n  lVar1 = FUN_00287db0();\r\n  if (lVar1 != 0) {\r\n    lVar1 = FUN_00139d78(DAT_0035f210);\r\n    if (lVar1 != 0) {\r\n      sVar3 = FUN_0023f0c0(DAT_0035f210);\r\n      if (sVar3 != *(short *)(iVar6 + 2)) {\r\n        FUN_0023f070(DAT_0035f210,*(short *)(iVar6 + 2),0xffffffffffffffff);\r\n      }\r\n    }\r\n    lVar1 = FUN_0028acc8(DAT_0035f200);\r\n    if ((lVar1 != 0) && (lVar1 = FUN_0028acb8(DAT_0035f200), lVar1 == 0)) {\r\n      iVar6 = FUN_002891b8(DAT_0035f200,0);\r\n      if ((*(int *)(iVar6 + 400) != 0) || (bVar4 = false, *(int *)(iVar6 + 0x18c) != 0)) {\r\n        bVar4 = true;\r\n      }\r\n      if (!bVar4) {\r\n        FUN_0028aa40(DAT_0035f200);\r\n      }\r\n    }\r\n    lVar1 = FUN_00139d78(DAT_0035f208);\r\n    if (lVar1 != 0) {\r\n      (**(code **)(*DAT_0035f208 + 0x14))();\r\n    }\r\n    FUN_0028f7a0();\r\n    FUN_0028d5d0(DAT_0035f218);\r\n    FUN_002748a0();\r\n    FUN_00276e28();\r\n    FUN_0028ce38();\r\n  }\r\n  FUN_00288018();\r\n  FUN_00276438();\r\n  lVar1 = FUN_00287db0();\r\n  uVar5 = DAT_0035f200;\r\n  if (lVar1 != 0) {\r\n    return;\r\n  }\r\n  if ((((uVar7 == 7) || (uVar7 == 9)) || (uVar7 == 0x1a)) || (uVar7 == 0x22)) goto LAB_00275610;\r\n  if (DAT_0035f220 == '\\0') {\r\n    lVar1 = FUN_0028acc8(DAT_0035f200);\r\n    if ((lVar1 != 0) && (lVar1 = FUN_00287cd0(), lVar1 == 1)) {\r\n      lVar1 = FUN_0028d008(0);\r\n      if (lVar1 == 0) {\r\n        uVar2 = FUN_002891d0(uVar5);\r\n        FUN_00275980(0,uVar2);\r\n        if (DAT_0035f221 == '\\0') {\r\n          uVar2 = FUN_002891d0(uVar5);\r\n          FUN_002759e8(uVar2);\r\n        }\r\n        else {\r\n          FUN_0028d620(DAT_0035f218);\r\n        }\r\n      }\r\n      goto LAB_00275610;\r\n    }\r\n    lVar1 = FUN_00287cd0();\r\n    if (lVar1 != 2) goto LAB_00275610;\r\n    lVar1 = FUN_0028d008(0);\r\n    if (lVar1 != 0) {\r\n      FUN_0028cdb8(0);\r\n    }\r\n  }\r\n  else {\r\n    lVar1 = FUN_0028d008(0);\r\n    if (lVar1 != 0) {\r\n      FUN_0028cdb8(0);\r\n    }\r\n  }\r\n  lVar1 = FUN_0028d6e8(DAT_0035f218);\r\n  if (lVar1 != 0) {\r\n    FUN_0028d5d0(DAT_0035f218);\r\n  }\r\nLAB_00275610:\r\n  if (0x28 < uVar7) {\r\n    return;\r\n  }\r\n                    // WARNING: Could not recover jumptable at 0x00275628. Too many branches\r\n                    // WARNING: Treating indirect jump as call\r\n  (*(code *)(&PTR_LAB_00373bac)[(int)uVar7])();\r\n  return;\r\n}\r\n\r\n",
+        "callee_count": 25,
+        "callees": [
+          {
+            "name": "FUN_00139d78",
+            "address": "00139d78"
+          },
+          {
+            "name": "FUN_0023f070",
+            "address": "0023f070"
+          },
+          {
+            "name": "FUN_0023f0c0",
+            "address": "0023f0c0"
+          },
+          {
+            "name": "FUN_002748a0",
+            "address": "002748a0"
+          },
+          {
+            "name": "FUN_00275980",
+            "address": "00275980"
+          },
+          {
+            "name": "FUN_002759e8",
+            "address": "002759e8"
+          },
+          {
+            "name": "FUN_00276438",
+            "address": "00276438"
+          },
+          {
+            "name": "FUN_00276e28",
+            "address": "00276e28"
+          },
+          {
+            "name": "FUN_00276fa8",
+            "address": "00276fa8"
+          },
+          {
+            "name": "FUN_00287bc0",
+            "address": "00287bc0"
+          },
+          {
+            "name": "FUN_00287cd0",
+            "address": "00287cd0"
+          },
+          {
+            "name": "FUN_00287db0",
+            "address": "00287db0"
+          },
+          {
+            "name": "FUN_00288018",
+            "address": "00288018"
+          },
+          {
+            "name": "FUN_002891b8",
+            "address": "002891b8"
+          },
+          {
+            "name": "FUN_002891d0",
+            "address": "002891d0"
+          },
+          {
+            "name": "FUN_0028aa40",
+            "address": "0028aa40"
+          },
+          {
+            "name": "FUN_0028acb8",
+            "address": "0028acb8"
+          },
+          {
+            "name": "FUN_0028acc8",
+            "address": "0028acc8"
+          },
+          {
+            "name": "FUN_0028cdb8",
+            "address": "0028cdb8"
+          },
+          {
+            "name": "FUN_0028ce38",
+            "address": "0028ce38"
+          },
+          {
+            "name": "FUN_0028d008",
+            "address": "0028d008"
+          },
+          {
+            "name": "FUN_0028d5d0",
+            "address": "0028d5d0"
+          },
+          {
+            "name": "FUN_0028d620",
+            "address": "0028d620"
+          },
+          {
+            "name": "FUN_0028d6e8",
+            "address": "0028d6e8"
+          },
+          {
+            "name": "FUN_0028f7a0",
+            "address": "0028f7a0"
+          }
+        ],
+        "revision": {
+          "token": "1791274945369:ccaff019:3",
+          "epoch": "ccaff019",
+          "modification_number": 3,
+          "saved_time": 1791274945369,
+          "unsaved_changes": false,
+          "decompiled": true
+        }
+      },
+      "0x0025eee8": {
+        "name": "FUN_0025eee8",
+        "size": 1296,
+        "address": "0025eee8",
+        "entry_point": "0025eee8",
+        "body_start": "0025eee8",
+        "body_end": "0025f42b",
+        "decompiled_code": "\r\nvoid FUN_0025eee8(void)\r\n\r\n{\r\n  int iVar1;\r\n  int iVar2;\r\n  ulong uVar3;\r\n  long lVar4;\r\n  long lVar5;\r\n  undefined8 uVar6;\r\n  int iVar7;\r\n  \r\n  uVar3 = FUN_00287bc0();\r\n  lVar4 = FUN_00287db0();\r\n  if (lVar4 != 0) {\r\n    lVar4 = FUN_00139d78(DAT_0035f664);\r\n    if ((lVar4 != 0) && (lVar4 = FUN_0023f0c0(DAT_0035f664), lVar4 != 2)) {\r\n      FUN_0023f070(DAT_0035f664,2,0xffffffffffffffff);\r\n    }\r\n    lVar4 = FUN_0028acc8(DAT_0035f64c);\r\n    if ((lVar4 != 0) && (lVar4 = FUN_0028acb8(DAT_0035f64c), lVar4 == 0)) {\r\n      FUN_0028aa40(DAT_0035f64c);\r\n    }\r\n    lVar4 = FUN_0028acc8(DAT_0035f650);\r\n    if ((lVar4 != 0) && (lVar4 = FUN_0028acb8(DAT_0035f650), lVar4 == 0)) {\r\n      FUN_0028aa40(DAT_0035f650);\r\n    }\r\n    FUN_002b5558();\r\n    FUN_002b4ee0();\r\n    FUN_0028f7a0();\r\n    FUN_0028d5d0(DAT_0035f67c);\r\n    FUN_00263d28();\r\n    FUN_0028ce38();\r\n  }\r\n  FUN_002b6418();\r\n  lVar4 = FUN_00287db0();\r\n  if (lVar4 != 0) {\r\n    return;\r\n  }\r\n  switch(uVar3) {\r\n  default:\r\n    iVar7 = 0;\r\n    break;\r\n  case 1:\r\n  case 0xc:\r\n    iVar7 = DAT_0035f64c;\r\n    break;\r\n  case 5:\r\n  case 7:\r\n  case 0xb:\r\n  case 0x10:\r\n    iVar7 = DAT_0035f650;\r\n  }\r\n  if (iVar7 == 0) {\r\n    if (uVar3 == 0x12) {\r\n      FUN_0028cdb8(1);\r\n    }\r\n    else {\r\n      FUN_0028ce38();\r\n    }\r\n    FUN_0028d620(DAT_0035f67c);\r\n    return;\r\n  }\r\n  lVar4 = 0;\r\n  if (iVar7 != DAT_0035f64c) {\r\n    lVar4 = 1;\r\n    lVar5 = FUN_0028acc8();\r\n    if (lVar5 == 0) {\r\n      lVar4 = 0;\r\n    }\r\n  }\r\n  lVar5 = FUN_0028acc8(iVar7);\r\n  if ((lVar5 == 0) || (lVar5 = FUN_00287cd0(), lVar5 != 1)) {\r\n    lVar5 = FUN_00287cd0();\r\n    if (lVar5 == 2) {\r\n      lVar5 = FUN_00287bc0();\r\n      if ((lVar5 == 0x10) && (lVar5 = FUN_00287c10(), lVar5 != 0xc)) {\r\n        lVar5 = FUN_0028d008(lVar4);\r\n        if (lVar5 != 0) {\r\n          FUN_0028cdb8(lVar4);\r\n        }\r\n        lVar5 = FUN_0028d6e8(DAT_0035f67c);\r\n        if (lVar5 != 0) {\r\nLAB_0025f358:\r\n          FUN_0028d5d0(DAT_0035f67c);\r\n        }\r\n      }\r\n      else {\r\n        lVar5 = FUN_0028d008(lVar4);\r\n        if (lVar5 == 0) {\r\n          lVar5 = FUN_0028d6e8(DAT_0035f67c);\r\n          if (lVar5 != 0) {\r\n            if (lVar4 == 0) goto LAB_0025f3e8;\r\n            goto LAB_0025f39c;\r\n          }\r\n        }\r\n        else {\r\n          FUN_0028cdb8(lVar4);\r\n          if (lVar4 == 0) {\r\nLAB_0025f3e8:\r\n            FUN_0028d5d0(DAT_0035f67c);\r\n          }\r\n          else {\r\n            FUN_0028ce98(0,0);\r\nLAB_0025f39c:\r\n            uVar6 = FUN_002891d0(DAT_0035f64c);\r\n            FUN_0028d660(DAT_0035f67c,uVar6);\r\n          }\r\n        }\r\n        if (lVar4 == 0) goto LAB_0025f1d0;\r\n        lVar5 = FUN_0028acb8(DAT_0035f64c);\r\n        if ((lVar5 != 0) && (lVar5 = FUN_0028d008(0), lVar5 != 0)) {\r\n          FUN_0028cdb8(0);\r\n          goto LAB_0025f358;\r\n        }\r\n      }\r\n    }\r\n  }\r\n  else {\r\n    lVar5 = FUN_0028d008(lVar4);\r\n    if (lVar5 == 0) {\r\n      FUN_0028cc78(lVar4,0,0,DAT_0035f664,0xc,10);\r\n      uVar6 = FUN_002891d0(iVar7);\r\n      FUN_0028cf28(lVar4,uVar6);\r\n      lVar5 = FUN_0028d6e8(DAT_0035f67c);\r\n      if (lVar5 == 0) {\r\n        FUN_0028d1c0(DAT_0035f67c,0x7571,0,0,DAT_0035f664,0x373130,0);\r\n      }\r\n      if (lVar4 != 0) {\r\n        lVar5 = FUN_0028d008(0);\r\n        if (lVar5 == 0) {\r\n          FUN_0028cc78(0,DAT_0035f644,DAT_0035f640,DAT_0035f664,0xc,10);\r\n          uVar6 = FUN_002891d0(DAT_0035f64c);\r\n          FUN_0028cf28(0,uVar6);\r\n        }\r\n        else {\r\n          FUN_0028ce98(0,1);\r\n        }\r\n      }\r\n      uVar6 = FUN_002891d0(iVar7);\r\n    }\r\n    else {\r\n      lVar5 = FUN_0028cf10(lVar4);\r\n      if (lVar5 == 1) {\r\n        FUN_0028ce98(lVar4,0);\r\n      }\r\n      lVar5 = FUN_0028d6e8(DAT_0035f67c);\r\n      if (lVar5 != 0) goto LAB_0025f170;\r\n      FUN_0028d1c0(DAT_0035f67c,0x7571,0,0,DAT_0035f664,0x373130,0);\r\n      uVar6 = FUN_002891d0(iVar7);\r\n    }\r\n    FUN_0028d660(DAT_0035f67c,uVar6);\r\n  }\r\nLAB_0025f170:\r\n  if ((((lVar4 != 0) && (lVar4 = FUN_0028acc8(iVar7), lVar4 != 0)) &&\r\n      (lVar4 = FUN_00287cd0(), lVar4 == 0)) &&\r\n     ((lVar4 = FUN_0028d6e8(DAT_0035f67c), lVar4 != 0 &&\r\n      (iVar1 = *(int *)(DAT_0035f67c + 0x18c), iVar2 = FUN_002891d0(iVar7), iVar1 != iVar2)))) {\r\n    uVar6 = FUN_002891d0(iVar7);\r\n    FUN_0028d660(DAT_0035f67c,uVar6);\r\n  }\r\nLAB_0025f1d0:\r\n  if (0x10 < uVar3) {\r\n    return;\r\n  }\r\n                    // WARNING: Could not recover jumptable at 0x0025f1e8. Too many branches\r\n                    // WARNING: Treating indirect jump as call\r\n  (*(code *)(&PTR_LAB_003730b8)[(int)uVar3])();\r\n  return;\r\n}\r\n\r\n",
+        "callee_count": 28,
+        "callees": [
+          {
+            "name": "FUN_00139d78",
+            "address": "00139d78"
+          },
+          {
+            "name": "FUN_0023f070",
+            "address": "0023f070"
+          },
+          {
+            "name": "FUN_0023f0c0",
+            "address": "0023f0c0"
+          },
+          {
+            "name": "FUN_00263d28",
+            "address": "00263d28"
+          },
+          {
+            "name": "FUN_00287bc0",
+            "address": "00287bc0"
+          },
+          {
+            "name": "FUN_00287c10",
+            "address": "00287c10"
+          },
+          {
+            "name": "FUN_00287cd0",
+            "address": "00287cd0"
+          },
+          {
+            "name": "FUN_00287db0",
+            "address": "00287db0"
+          },
+          {
+            "name": "FUN_002891d0",
+            "address": "002891d0"
+          },
+          {
+            "name": "FUN_0028aa40",
+            "address": "0028aa40"
+          },
+          {
+            "name": "FUN_0028acb8",
+            "address": "0028acb8"
+          },
+          {
+            "name": "FUN_0028acc8",
+            "address": "0028acc8"
+          },
+          {
+            "name": "FUN_0028cc78",
+            "address": "0028cc78"
+          },
+          {
+            "name": "FUN_0028cdb8",
+            "address": "0028cdb8"
+          },
+          {
+            "name": "FUN_0028ce38",
+            "address": "0028ce38"
+          },
+          {
+            "name": "FUN_0028ce98",
+            "address": "0028ce98"
+          },
+          {
+            "name": "FUN_0028cf10",
+            "address": "0028cf10"
+          },
+          {
+            "name": "FUN_0028cf28",
+            "address": "0028cf28"
+          },
+          {
+            "name": "FUN_0028d008",
+            "address": "0028d008"
+          },
+          {
+            "name": "FUN_0028d1c0",
+            "address": "0028d1c0"
+          },
+          {
+            "name": "FUN_0028d5d0",
+            "address": "0028d5d0"
+          },
+          {
+            "name": "FUN_0028d620",
+            "address": "0028d620"
+          },
+          {
+            "name": "FUN_0028d660",
+            "address": "0028d660"
+          },
+          {
+            "name": "FUN_0028d6e8",
+            "address": "0028d6e8"
+          },
+          {
+            "name": "FUN_0028f7a0",
+            "address": "0028f7a0"
+          },
+          {
+            "name": "FUN_002b4ee0",
+            "address": "002b4ee0"
+          },
+          {
+            "name": "FUN_002b5558",
+            "address": "002b5558"
+          },
+          {
+            "name": "FUN_002b6418",
+            "address": "002b6418"
+          }
+        ],
+        "revision": {
+          "token": "1791274945369:ccaff019:3",
+          "epoch": "ccaff019",
+          "modification_number": 3,
+          "saved_time": 1791274945369,
+          "unsaved_changes": false,
+          "decompiled": true
+        }
+      }
+    },
+    "count": 3,
+    "requested": 3
+  }
+}

@@ -1,0 +1,25 @@
+002341e8: compiled 84 bytes, target 84 bytes, exact=False
+Differing words: 8. First difference at instruction 7 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   002341e8: 3c0a0036  lui	t2,0x36                                      | 002341e8: 3c0a0036  lui	t2,0x36
+   002341ec: 3c090036  lui	t1,0x36                                      | 002341ec: 3c090036  lui	t1,0x36
+   002341f0: 8d4ee360  lw	t6,-7328(t2)   ; = D_0035e360                 | 002341f0: 8d4ee360  lw	t6,-7328(t2)   ; = D_0035e360
+   002341f4: 3c0f01db  lui	t7,0x1db                                     | 002341f4: 3c0f01db  lui	t7,0x1db
+   002341f8: 8d2be368  lw	t3,-7320(t1)   ; = D_0035e368                 | 002341f8: 8d2be368  lw	t3,-7320(t1)   ; = D_0035e368
+   002341fc: 25efdc00  addiu	t7,t7,-9216   ; = D_01dadc00               | 002341fc: 25efdc00  addiu	t7,t7,-9216   ; = D_01dadc00
+   00234200: 25cd0001  addiu	t5,t6,1                                    | 00234200: 25cd0001  addiu	t5,t6,1
+!! 00234204: 000e7140  sll	t6,t6,0x5                                    | 00234204: 256c0001  addiu	t4,t3,1
+   00234208: 31ad003f  andi	t5,t5,0x3f                                  | 00234208: 31ad003f  andi	t5,t5,0x3f
+!! 0023420c: 01cf7021  addu	t6,t6,t7                                    | 0023420c: 000e7140  sll	t6,t6,0x5
+!! 00234210: 256c0001  addiu	t4,t3,1                                    | 00234210: ad4de360  sw	t5,-7328(t2)   ; = D_0035e360
+!! 00234214: adc60010  sw	a2,16(t6)                                     | 00234214: 01cf7021  addu	t6,t6,t7
+!! 00234218: 240f0004  li	t7,4                                          | 00234218: ad2ce368  sw	t4,-7320(t1)   ; = D_0035e368
+!! 0023421c: 0160102d  move	v0,t3                                       | 0023421c: 240f0004  li	t7,4
+!! 00234220: ad4de360  sw	t5,-7328(t2)   ; = D_0035e360                 | 00234220: 0160102d  move	v0,t3
+!! 00234224: ad2ce368  sw	t4,-7320(t1)   ; = D_0035e368                 | 00234224: adc60010  sw	a2,16(t6)
+   00234228: adcf0000  sw	t7,0(t6)                                      | 00234228: adcf0000  sw	t7,0(t6)
+   0023422c: adc40008  sw	a0,8(t6)                                      | 0023422c: adc40008  sw	a0,8(t6)
+   00234230: adc5000c  sw	a1,12(t6)                                     | 00234230: adc5000c  sw	a1,12(t6)
+   00234234: 03e00008  jr	ra                                            | 00234234: 03e00008  jr	ra
+   00234238: adcb0004  sw	t3,4(t6)                                      | 00234238: adcb0004  sw	t3,4(t6)

@@ -1,0 +1,14 @@
+{
+  "probe_source": "analysis/final-mix/recovery-experiments/eight-hour-20261011/eight_hour_00194830_positive_mask_v3_1.cpp",
+  "probe_source_sha256": "64ebbb33c28f9a8d35f6517026f09fc4649bade167c3c29ea2dd497501338656",
+  "probe_proof_sha256": "cf842806941dc806bdd50ba97bd5a10fb931b8cd5eb47ce99d5ba7b322783c51",
+  "curated_source": "analysis/final-mix/recovery-experiments/fm_primary_queunuprime_recovered_00194830.cpp",
+  "curated_source_sha256": "d2e4f0b0270881bfd871a913579edc1198494ee29ef80e21b7d67afa328dcc13",
+  "selected_addresses": [
+    "00194830"
+  ],
+  "exclusion_receipt": null,
+  "limitations": [
+    "Curated source still requires a new probe, registration and full build."
+  ]
+}

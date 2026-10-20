@@ -1,0 +1,31 @@
+00175370: compiled 108 bytes, target 108 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00175370: 27bdffe0  addiu	sp,sp,-32                                  | 00175370: 27bdffe0  addiu	sp,sp,-32
+   00175374: ffb10008  sd	s1,8(sp)                                      | 00175374: ffb10008  sd	s1,8(sp)
+   00175378: ffbf0018  sd	ra,24(sp)                                     | 00175378: ffbf0018  sd	ra,24(sp)
+   0017537c: ffb00000  sd	s0,0(sp)                                      | 0017537c: ffb00000  sd	s0,0(sp)
+   00175380: 0080882d  move	s1,a0                                       | 00175380: 0080882d  move	s1,a0
+   00175384: ffb20010  sd	s2,16(sp)                                     | 00175384: ffb20010  sd	s2,16(sp)
+   00175388: 0c041436  jal	0x1050d8                                     | 00175388: 0c041436  jal	1050d8 <func_001050d8>
+   0017538c: 24041280  li	a0,4736                                       | 0017538c: 24041280  li	a0,4736
+   00175390: 8e320000  lw	s2,0(s1)                                      | 00175390: 8e320000  lw	s2,0(s1)
+   00175394: 0040802d  move	s0,v0                                       | 00175394: 0040802d  move	s0,v0
+   00175398: 0040202d  move	a0,v0                                       | 00175398: 0040202d  move	a0,v0
+   0017539c: 0c0bb888  jal	0x2ee220                                     | 0017539c: 0c0bb888  jal	2ee220 <func_002ee220>
+   001753a0: 24510024  addiu	s1,v0,36                                   | 001753a0: 24510024  addiu	s1,v0,36
+   001753a4: 3c0f0035  lui	t7,0x35                                      | 001753a4: 3c0f0035  lui	t7,0x35
+   001753a8: 0240282d  move	a1,s2                                       | 001753a8: 0240282d  move	a1,s2
+   001753ac: 25efe888  addiu	t7,t7,-6008   ; = D_0034e888               | 001753ac: 25efe888  addiu	t7,t7,-6008   ; = D_0034e888
+   001753b0: 0220202d  move	a0,s1                                       | 001753b0: 0220202d  move	a0,s1
+   001753b4: 0c0bb976  jal	0x2ee5d8                                     | 001753b4: 0c0bb976  jal	2ee5d8 <func_002ee5d8>
+   001753b8: ae0f0000  sw	t7,0(s0)                                      | 001753b8: ae0f0000  sw	t7,0(s0)
+   001753bc: 0200202d  move	a0,s0                                       | 001753bc: 0200202d  move	a0,s0
+   001753c0: dfb20010  ld	s2,16(sp)                                     | 001753c0: dfb20010  ld	s2,16(sp)
+   001753c4: 0220282d  move	a1,s1                                       | 001753c4: 0220282d  move	a1,s1
+   001753c8: dfb00000  ld	s0,0(sp)                                      | 001753c8: dfb00000  ld	s0,0(sp)
+   001753cc: dfb10008  ld	s1,8(sp)                                      | 001753cc: dfb10008  ld	s1,8(sp)
+   001753d0: dfbf0018  ld	ra,24(sp)                                     | 001753d0: dfbf0018  ld	ra,24(sp)
+   001753d4: 080bb7ea  j	0x2edfa8                                       | 001753d4: 080bb7ea  j	2edfa8 <func_002edfa8>
+   001753d8: 27bd0020  addiu	sp,sp,32                                   | 001753d8: 27bd0020  addiu	sp,sp,32

@@ -1,0 +1,30 @@
+001dcc60: compiled 92 bytes, target 104 bytes, exact=False
+Differing words: 25. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001dcc60: 27bdffe0  addiu	sp,sp,-32                                  | 001dcc60: 27bdffe0  addiu	sp,sp,-32
+!! 001dcc64: ffb10008  sd	s1,8(sp)                                      | 001dcc64: ffb00000  sd	s0,0(sp)
+!! 001dcc68: ffb00000  sd	s0,0(sp)                                      | 001dcc68: ffb10008  sd	s1,8(sp)
+!! 001dcc6c: ffb20010  sd	s2,16(sp)                                     | 001dcc6c: ffbf0010  sd	ra,16(sp)
+!! 001dcc70: 0080882d  move	s1,a0                                       | 001dcc70: 0080802d  move	s0,a0
+!! 001dcc74: ffbf0018  sd	ra,24(sp)                                     | 001dcc74: 0c07734e  jal	1dcd38 <func_001dcd38>
+!! 001dcc78: 24100001  li	s0,1                                          | 001dcc78: 24110001  li	s1,1
+!! 001dcc7c: 0c07734e  jal	0x1dcd38                                     | 001dcc7c: 50510006  beql	v0,s1,1dcc98 <func_001dcc60+0x38>
+!! 001dcc80: 0000902d  move	s2,zero                                     | 001dcc80: 8e0f0008  lw	t7,8(s0)
+!! 001dcc84: 50500006  beql	v0,s0,0x1dcca0                              | 001dcc84: 0c0722ac  jal	1c8ab0 <func_001c8ab0>
+!! 001dcc88: 8e2f0008  lw	t7,8(s1)                                      | 001dcc88: 00000000  nop
+!! 001dcc8c: 0c0722ac  jal	0x1c8ab0                                     | 001dcc8c: 10510005  beq	v0,s1,1dcca4 <func_001dcc60+0x44>
+!! 001dcc90: 00000000  nop                                              | 001dcc90: 0000202d  move	a0,zero
+!! 001dcc94: 10500006  beq	v0,s0,0x1dccb0                               | 001dcc94: 8e0f0008  lw	t7,8(s0)
+!! 001dcc98: 0240102d  move	v0,s2                                       | 001dcc98: 000f7dc3  sra	t7,t7,0x17
+!! 001dcc9c: 8e2f0008  lw	t7,8(s1)                                      | 001dcc9c: 39ef0001  xori	t7,t7,0x1
+!! 001dcca0: 3c0e0080  lui	t6,0x80                                      | 001dcca0: 31e40001  andi	a0,t7,0x1
+!! 001dcca4: 01ee7824  and	t7,t7,t6                                     | 001dcca4: dfb00000  ld	s0,0(sp)
+!! 001dcca8: 2df20001  sltiu	s2,t7,1                                    | 001dcca8: 0080102d  move	v0,a0
+!! 001dccac: 0240102d  move	v0,s2                                       | 001dccac: dfb10008  ld	s1,8(sp)
+!! 001dccb0: dfb00000  ld	s0,0(sp)                                      | 001dccb0: dfbf0010  ld	ra,16(sp)
+!! 001dccb4: dfb10008  ld	s1,8(sp)                                      | 001dccb4: 03e00008  jr	ra
+!! 001dccb8: dfb20010  ld	s2,16(sp)                                     | 001dccb8: 27bd0020  addiu	sp,sp,32
+!! 001dccbc: dfbf0018  ld	ra,24(sp)                                     | 
+!! 001dccc0: 03e00008  jr	ra                                            | 
+!! 001dccc4: 27bd0020  addiu	sp,sp,32                                   | 

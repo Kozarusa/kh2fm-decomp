@@ -1,0 +1,33 @@
+00200638: compiled 112 bytes, target 116 bytes, exact=False
+Differing words: 8. First difference at instruction 21 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00200638: 27bdfff0  addiu	sp,sp,-16                                  | 00200638: 27bdfff0  addiu	sp,sp,-16
+   0020063c: 3c0501da  lui	a1,0x1da                                     | 0020063c: 3c0501da  lui	a1,0x1da
+   00200640: ffbf0008  sd	ra,8(sp)                                      | 00200640: ffbf0008  sd	ra,8(sp)
+   00200644: 24a5e730  addiu	a1,a1,-6352   ; = D_01d9e730               | 00200644: 24a5e730  addiu	a1,a1,-6352   ; = D_01d9e730
+   00200648: ffb00000  sd	s0,0(sp)                                      | 00200648: ffb00000  sd	s0,0(sp)
+   0020064c: 8ccf000c  lw	t7,12(a2)                                     | 0020064c: 8ccf000c  lw	t7,12(a2)
+   00200650: 3c1001da  lui	s0,0x1da                                     | 00200650: 3c1001da  lui	s0,0x1da
+   00200654: 8dee0004  lw	t6,4(t7)                                      | 00200654: 8dee0004  lw	t6,4(t7)
+   00200658: 0080302d  move	a2,a0                                       | 00200658: 0080302d  move	a2,a0
+   0020065c: 8e04e6e8  lw	a0,-6424(s0)   ; = D_01d9e6e8                 | 0020065c: 8e04e6e8  lw	a0,-6424(s0)   ; = D_01d9e6e8
+   00200660: 00ce3021  addu	a2,a2,t6                                    | 00200660: 00ce3021  addu	a2,a2,t6
+   00200664: 24840050  addiu	a0,a0,80                                   | 00200664: 24840050  addiu	a0,a0,80
+   00200668: 0c0bcf42  jal	0x2f3d08                                     | 00200668: 0c0bcf42  jal	2f3d08 <func_002f3d08>
+   0020066c: 24c600a0  addiu	a2,a2,160                                  | 0020066c: 24c600a0  addiu	a2,a2,160
+   00200670: 8e04e6e8  lw	a0,-6424(s0)   ; = D_01d9e6e8                 | 00200670: 8e04e6e8  lw	a0,-6424(s0)   ; = D_01d9e6e8
+   00200674: 3c0501da  lui	a1,0x1da                                     | 00200674: 3c0501da  lui	a1,0x1da
+   00200678: 24a5e8c0  addiu	a1,a1,-5952   ; = D_01d9e8c0               | 00200678: 24a5e8c0  addiu	a1,a1,-5952   ; = D_01d9e8c0
+   0020067c: 24840050  addiu	a0,a0,80                                   | 0020067c: 24840050  addiu	a0,a0,80
+   00200680: 0c0bcf42  jal	0x2f3d08                                     | 00200680: 0c0bcf42  jal	2f3d08 <func_002f3d08>
+   00200684: 0080302d  move	a2,a0                                       | 00200684: 0080302d  move	a2,a0
+   00200688: 8e06e6e8  lw	a2,-6424(s0)   ; = D_01d9e6e8                 | 00200688: 8e06e6e8  lw	a2,-6424(s0)   ; = D_01d9e6e8
+!! 0020068c: 24c40050  addiu	a0,a2,80                                   | 0020068c: dfbf0008  ld	ra,8(sp)
+!! 00200690: 24c60010  addiu	a2,a2,16                                   | 00200690: 24c40050  addiu	a0,a2,80
+!! 00200694: 0c0bcf42  jal	0x2f3d08                                     | 00200694: dfb00000  ld	s0,0(sp)
+!! 00200698: 0080282d  move	a1,a0                                       | 00200698: 24c60010  addiu	a2,a2,16
+!! 0020069c: dfb00000  ld	s0,0(sp)                                      | 0020069c: 0080282d  move	a1,a0
+!! 002006a0: dfbf0008  ld	ra,8(sp)                                      | 002006a0: 080bcf42  j	2f3d08 <func_002f3d08>
+!! 002006a4: 03e00008  jr	ra                                            | 002006a4: 27bd0010  addiu	sp,sp,16
+!! 002006a8: 27bd0010  addiu	sp,sp,16                                   | 

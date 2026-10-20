@@ -1,0 +1,31 @@
+001945a0: compiled 104 bytes, target 108 bytes, exact=False
+Differing words: 19. First difference at instruction 8 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001945a0: 27bdffe0  addiu	sp,sp,-32                                  | 001945a0: 27bdffe0  addiu	sp,sp,-32
+   001945a4: 248408e0  addiu	a0,a0,2272                                 | 001945a4: 248408e0  addiu	a0,a0,2272
+   001945a8: e7b40010  swc1	$f20,16(sp)                                 | 001945a8: e7b40010  swc1	$f20,16(sp)
+   001945ac: ffb00000  sd	s0,0(sp)                                      | 001945ac: ffb00000  sd	s0,0(sp)
+   001945b0: 46006506  mov.s	$f20,$f12                                  | 001945b0: 46006506  mov.s	$f20,$f12
+   001945b4: ffbf0008  sd	ra,8(sp)                                      | 001945b4: ffbf0008  sd	ra,8(sp)
+   001945b8: 0c06ff58  jal	0x1bfd60                                     | 001945b8: 0c06ff58  jal	1bfd60 <func_001bfd60>
+   001945bc: 00c0802d  move	s0,a2                                       | 001945bc: 00c0802d  move	s0,a2
+!! 001945c0: 3c0e0037  lui	t6,0x37                                      | 001945c0: a0500004  sb	s0,4(v0)
+!! 001945c4: 4600a386  mov.s	$f14,$f20                                  | 001945c4: 00107402  srl	t6,s0,0x10
+!! 001945c8: 25cecf00  addiu	t6,t6,-12544   ; = D_0036cf00              | 001945c8: 00106e02  srl	t5,s0,0x18
+!! 001945cc: a0500004  sb	s0,4(v0)                                      | 001945cc: 4600a386  mov.s	$f14,$f20
+!! 001945d0: c5cd0000  lwc1	$f13,0(t6)                                  | 001945d0: 244f0004  addiu	t7,v0,4
+!! 001945d4: 244f0004  addiu	t7,v0,4                                    | 001945d4: 44806000  mtc1	zero,$f12
+!! 001945d8: 00106602  srl	t4,s0,0x18                                   | 001945d8: 00108202  srl	s0,s0,0x8
+!! 001945dc: 44806000  mtc1	zero,$f12                                   | 001945dc: a1ee0002  sb	t6,2(t7)
+!! 001945e0: 00107202  srl	t6,s0,0x8                                    | 001945e0: a1f00001  sb	s0,1(t7)
+!! 001945e4: a1ec0003  sb	t4,3(t7)                                      | 001945e4: 24440008  addiu	a0,v0,8
+!! 001945e8: 00106c02  srl	t5,s0,0x10                                   | 001945e8: a1ed0003  sb	t5,3(t7)
+!! 001945ec: a1ee0001  sb	t6,1(t7)                                      | 001945ec: dfb00000  ld	s0,0(sp)
+!! 001945f0: a1ed0002  sb	t5,2(t7)                                      | 001945f0: 3c0f0037  lui	t7,0x37
+!! 001945f4: 24440008  addiu	a0,v0,8                                    | 001945f4: dfbf0008  ld	ra,8(sp)
+!! 001945f8: dfb00000  ld	s0,0(sp)                                      | 001945f8: c5edcf00  lwc1	$f13,-12544(t7)   ; = D_0036cf00
+!! 001945fc: dfbf0008  ld	ra,8(sp)                                      | 001945fc: c7b40010  lwc1	$f20,16(sp)
+!! 00194600: c7b40010  lwc1	$f20,16(sp)                                 | 00194600: 0806b664  j	1ad990 <func_001ad990>
+!! 00194604: 0806b664  j	0x1ad990                                       | 00194604: 27bd0020  addiu	sp,sp,32
+!! 00194608: 27bd0020  addiu	sp,sp,32                                   | 

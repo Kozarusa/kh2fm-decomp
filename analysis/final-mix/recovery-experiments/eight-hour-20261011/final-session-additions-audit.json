@@ -1,0 +1,538 @@
+{
+  "accepted_batches": 31,
+  "distinct_new_exact_functions": 281,
+  "native_instruction_bytes": 17708,
+  "all_registered_source_hashes_verified": true,
+  "all_addresses_have_complete_equal_size_compiler_matches": true,
+  "receipts": [
+    {
+      "phase": "queuetheta",
+      "receipt_sha256": "92189c952f9352f9610014921bb8077bd5f45110aa7117f972b9905b12f14397",
+      "functions": 32,
+      "instruction_bytes": 2180,
+      "addresses": [
+        "00102c48",
+        "00102f38",
+        "00103480",
+        "00103500",
+        "00103748",
+        "001037b8",
+        "001039f8",
+        "00103b78",
+        "001045b8",
+        "00104cf0",
+        "00104da0",
+        "00104e18",
+        "00146cb0",
+        "00163828",
+        "00178220",
+        "0018a4d8",
+        "001979d8",
+        "001b2f10",
+        "001cd520",
+        "001d29a0",
+        "001dc5f8",
+        "00258a88",
+        "00276f38",
+        "002806a0",
+        "00287b98",
+        "002c18e0",
+        "002d2070",
+        "002d88a8",
+        "002dce80",
+        "002dd140",
+        "002ffbe0",
+        "00306900"
+      ]
+    },
+    {
+      "phase": "queueiota",
+      "receipt_sha256": "4143ad640a5489cd075501566fbfef1a45742c4ae627b5e75ea0489eeb144cd3",
+      "functions": 1,
+      "instruction_bytes": 48,
+      "addresses": [
+        "00174af8"
+      ]
+    },
+    {
+      "phase": "queuekappa",
+      "receipt_sha256": "ff50a8610d11450497007872f93fe010a1edde36fdb8f43ec050794b9636111e",
+      "functions": 1,
+      "instruction_bytes": 84,
+      "addresses": [
+        "00158ac8"
+      ]
+    },
+    {
+      "phase": "queuelambda",
+      "receipt_sha256": "b55247c2a2aee6563252d14dcbf3fdd72b1012760952dce96668e830e50e4a79",
+      "functions": 1,
+      "instruction_bytes": 36,
+      "addresses": [
+        "0028b1c0"
+      ]
+    },
+    {
+      "phase": "queuemu",
+      "receipt_sha256": "94dfbcc9ad5fa73fef4ab6ac78480349e69c6b0f92284cad95547136f382526d",
+      "functions": 3,
+      "instruction_bytes": 116,
+      "addresses": [
+        "0016e718",
+        "00182838",
+        "002e7b88"
+      ]
+    },
+    {
+      "phase": "queuenu",
+      "receipt_sha256": "143166d189c6d054f8a3dfebf7c4c31a6f1ec34adc77b7d0a22a7c30b53035c4",
+      "functions": 3,
+      "instruction_bytes": 120,
+      "addresses": [
+        "001d97c8",
+        "0023e738",
+        "00288018"
+      ]
+    },
+    {
+      "phase": "queuexi",
+      "receipt_sha256": "77b334365cce31c535fbd328d266ba9d6d81811df7a037afcc3830d7af7686dd",
+      "functions": 2,
+      "instruction_bytes": 84,
+      "addresses": [
+        "001a1db8",
+        "001b1be0"
+      ]
+    },
+    {
+      "phase": "queueomicron",
+      "receipt_sha256": "8f6fed566b689d379079dbcab715a77060e87cb9e445c52f910c78fc17d75a4b",
+      "functions": 1,
+      "instruction_bytes": 40,
+      "addresses": [
+        "0023e788"
+      ]
+    },
+    {
+      "phase": "queuepi",
+      "receipt_sha256": "7f6d5a4c87d0912f36ea756f8ae64699ea1e947c2554ea7925988c2aae75a7ad",
+      "functions": 2,
+      "instruction_bytes": 96,
+      "addresses": [
+        "001d97f0",
+        "001d9820"
+      ]
+    },
+    {
+      "phase": "queuerho",
+      "receipt_sha256": "9ee2972f9c9fe5345a5e8b3bce36984dd68ee7719a5de40f6903efac639db9c7",
+      "functions": 1,
+      "instruction_bytes": 52,
+      "addresses": [
+        "001ad990"
+      ]
+    },
+    {
+      "phase": "queuesigma",
+      "receipt_sha256": "701e3e5513dc8827095236413c25541be6c5926e3b4a65733beb5b43b13ac6b3",
+      "functions": 1,
+      "instruction_bytes": 56,
+      "addresses": [
+        "0023e700"
+      ]
+    },
+    {
+      "phase": "queuetau",
+      "receipt_sha256": "6b30b6f70ed2ab862243d431ca889e1d0abe5819b20df9c2bd7b44cb717700e8",
+      "functions": 2,
+      "instruction_bytes": 100,
+      "addresses": [
+        "001bbcc0",
+        "003160e0"
+      ]
+    },
+    {
+      "phase": "queueupsilon",
+      "receipt_sha256": "281701308d6c3e3b147fe1adce8f87f86e196d631dc373165846fc8bd5855f40",
+      "functions": 3,
+      "instruction_bytes": 144,
+      "addresses": [
+        "00173270",
+        "001bd3e0",
+        "00241fd0"
+      ]
+    },
+    {
+      "phase": "queuephi",
+      "receipt_sha256": "c2ada7443b7fbe5a12ee107bdf3322e4f54cfc3e81fef2fb64ed9d523f8f0cf8",
+      "functions": 3,
+      "instruction_bytes": 160,
+      "addresses": [
+        "002e2e18",
+        "00308650",
+        "0030a690"
+      ]
+    },
+    {
+      "phase": "queuechi",
+      "receipt_sha256": "b8c5879032539efa0e2039ee14d9ebb0d58ee665811c40cff9dc0f8ee0de7332",
+      "functions": 6,
+      "instruction_bytes": 264,
+      "addresses": [
+        "0015cbb8",
+        "001c0268",
+        "001de910",
+        "00241740",
+        "00256b80",
+        "0031e0b8"
+      ]
+    },
+    {
+      "phase": "queuepsi",
+      "receipt_sha256": "f2cef384c8c291d93f70ff7db452386b08db06321cc382162e7a13a8f683dfa2",
+      "functions": 8,
+      "instruction_bytes": 384,
+      "addresses": [
+        "0016f770",
+        "00191bf0",
+        "001b83f0",
+        "001b9c28",
+        "001c2d48",
+        "001de7d8",
+        "002289c0",
+        "00228e28"
+      ]
+    },
+    {
+      "phase": "queueomega",
+      "receipt_sha256": "8ee60bdbea274d460022b54d036f4480dd2f090f69a6e485985aa8e955bae4b1",
+      "functions": 10,
+      "instruction_bytes": 480,
+      "addresses": [
+        "001d3350",
+        "0025a1d0",
+        "00276df8",
+        "00287bd0",
+        "002bd730",
+        "002dc248",
+        "002dd218",
+        "002f1ae0",
+        "00308dc0",
+        "0031e068"
+      ]
+    },
+    {
+      "phase": "queuealphaprime",
+      "receipt_sha256": "026725bd672f09126278d89b1640ed0eca47404c7e61e3623dcdeba57ec464c4",
+      "functions": 57,
+      "instruction_bytes": 2964,
+      "addresses": [
+        "00114850",
+        "00114968",
+        "00114b90",
+        "00114cc8",
+        "00114de0",
+        "00114f38",
+        "00115090",
+        "00115290",
+        "001153e8",
+        "00115560",
+        "001156b8",
+        "001157d0",
+        "00119d08",
+        "0011a340",
+        "0011a510",
+        "0011f5a0",
+        "001207c8",
+        "00128008",
+        "00131770",
+        "00132590",
+        "00133228",
+        "001b01d8",
+        "001d2070",
+        "00236a18",
+        "00239898",
+        "0023c0c0",
+        "0023f870",
+        "00290870",
+        "002d1840",
+        "002d2a58",
+        "002d6af0",
+        "002dab30",
+        "002dad40",
+        "002db580",
+        "002db730",
+        "002ddb80",
+        "002de810",
+        "003157b8",
+        "00315840",
+        "003158c8",
+        "0031e630",
+        "0031f008",
+        "0031f238",
+        "0031f4b8",
+        "0031fe88",
+        "0031ff88",
+        "00320050",
+        "00320118",
+        "003207c8",
+        "00320c80",
+        "00321648",
+        "00324b78",
+        "00325408",
+        "00325550",
+        "003255b8",
+        "00325618",
+        "00325678"
+      ]
+    },
+    {
+      "phase": "queuebetaprime",
+      "receipt_sha256": "7887c07a05de0f71571fdafe1eeede96c465de8bf84d05090117e511bf974dfa",
+      "functions": 12,
+      "instruction_bytes": 768,
+      "addresses": [
+        "001c7c68",
+        "001ca718",
+        "001cbbf8",
+        "001cc0e8",
+        "001cced8",
+        "001d28f0",
+        "001d74f8",
+        "001da278",
+        "002ceaa8",
+        "0031c9a8",
+        "0031ca20",
+        "0031e110"
+      ]
+    },
+    {
+      "phase": "queuegammaprime",
+      "receipt_sha256": "0e73520bfd711f6b15939aee73ab2c84ade8a6914fdf813fe1e6872f2418c421",
+      "functions": 13,
+      "instruction_bytes": 956,
+      "addresses": [
+        "001358c0",
+        "00135900",
+        "0014a950",
+        "0014ba20",
+        "0014ba90",
+        "001ad5a8",
+        "001ad5f0",
+        "001db8f8",
+        "001db950",
+        "0028b750",
+        "0028b788",
+        "002c1aa0",
+        "002ee5d8"
+      ]
+    },
+    {
+      "phase": "queuedeltaprime",
+      "receipt_sha256": "ca4d3448bc957a291dbee511885f8836386456ecc6df554cb9df6d6261729bdf",
+      "functions": 5,
+      "instruction_bytes": 528,
+      "addresses": [
+        "00185b00",
+        "00185b70",
+        "001ae9a0",
+        "001aea00",
+        "002d49c0"
+      ]
+    },
+    {
+      "phase": "queueepsilonprime",
+      "receipt_sha256": "f7e62834aa7329e10dbf8336e8a11c1df94efb904e74a48e79f4b4e9ce367163",
+      "functions": 8,
+      "instruction_bytes": 448,
+      "addresses": [
+        "00105da8",
+        "0010c7f0",
+        "0011c4b0",
+        "0011f238",
+        "001394d8",
+        "0015b4c0",
+        "002cb7c8",
+        "003206f0"
+      ]
+    },
+    {
+      "phase": "queuezetaprime",
+      "receipt_sha256": "c299bdebdfa52e3f5898631b918072562eb8d34b1010359b54ebf88375133bb8",
+      "functions": 2,
+      "instruction_bytes": 168,
+      "addresses": [
+        "002d96d8",
+        "002d9730"
+      ]
+    },
+    {
+      "phase": "queueetaprime",
+      "receipt_sha256": "ac073def8a63b993ec00fe89d041c4dcada3a45978189cfe6b53b1439c86e746",
+      "functions": 3,
+      "instruction_bytes": 168,
+      "addresses": [
+        "0014f030",
+        "002cba50",
+        "00304db0"
+      ]
+    },
+    {
+      "phase": "queuethetaprime",
+      "receipt_sha256": "9320ea7b79634c8ed7c77f0e86194999e8dc505d9b94ebb11d0ec057bd053d86",
+      "functions": 10,
+      "instruction_bytes": 616,
+      "addresses": [
+        "00123d90",
+        "00124100",
+        "00132270",
+        "0013f608",
+        "0014f688",
+        "00153310",
+        "0015a118",
+        "0017c8f0",
+        "001b6f48",
+        "001d4dc0"
+      ]
+    },
+    {
+      "phase": "queueiotaprime",
+      "receipt_sha256": "42d6a40972d4d4515b565545711ef4e5f2190ccc954fd0873667dd77df1f4603",
+      "functions": 7,
+      "instruction_bytes": 444,
+      "addresses": [
+        "0031ae18",
+        "0031c0b8",
+        "0031d770",
+        "0031d7c0",
+        "0031d978",
+        "0031e008",
+        "00322e18"
+      ]
+    },
+    {
+      "phase": "queuekappaprime",
+      "receipt_sha256": "61a6a72be464fc63aae867ca4582c3a826e6b58b88aae35ec8dea39653a9f9b6",
+      "functions": 11,
+      "instruction_bytes": 676,
+      "addresses": [
+        "0015a6c8",
+        "002314c0",
+        "002424c0",
+        "00242980",
+        "002429c0",
+        "00287720",
+        "00287760",
+        "0029e258",
+        "0029e3a0",
+        "002b6b84",
+        "002b7f84"
+      ]
+    },
+    {
+      "phase": "queuelambdaprime",
+      "receipt_sha256": "78f53f74d2c0fb54d23727e9fe002b89777bbcf417d991a31e0294dbed1d6881",
+      "functions": 18,
+      "instruction_bytes": 1120,
+      "addresses": [
+        "002b6bc4",
+        "002b6c04",
+        "002b7078",
+        "002b7108",
+        "002b78ec",
+        "002b7e34",
+        "002b7ebc",
+        "002b7efc",
+        "002b7fbc",
+        "002b7ffc",
+        "002b803c",
+        "002b8374",
+        "002b83b4",
+        "002b9968",
+        "002b99c8",
+        "002b9a00",
+        "002b9a38",
+        "002b9a78"
+      ]
+    },
+    {
+      "phase": "queuemuprime",
+      "receipt_sha256": "d479a3f378d7effeffe8c571485c3053e3871cc4985fedd7844b31247fb6ef93",
+      "functions": 21,
+      "instruction_bytes": 1888,
+      "addresses": [
+        "002b6adc",
+        "002b6b24",
+        "002b6f28",
+        "002b7010",
+        "002b70b8",
+        "002b726c",
+        "002b72e4",
+        "002b7334",
+        "002b73ac",
+        "002b788c",
+        "002b792c",
+        "002b797c",
+        "002b7c34",
+        "002b7ca4",
+        "002b7cec",
+        "002b7d5c",
+        "002b7db4",
+        "002b7e74",
+        "002b7f3c",
+        "002b823c",
+        "002b83ec"
+      ]
+    },
+    {
+      "phase": "queunuprime",
+      "receipt_sha256": "721ec6a19f901eb3386cfbaef9063ac0abecade4100ecbd5c32102192a05ce74",
+      "functions": 18,
+      "instruction_bytes": 1272,
+      "addresses": [
+        "00106a18",
+        "0010f918",
+        "001142e0",
+        "00114328",
+        "00133938",
+        "001339d0",
+        "00136ab8",
+        "0013fec0",
+        "001585a0",
+        "0016df28",
+        "0016df70",
+        "0016e000",
+        "0016e048",
+        "00171268",
+        "001712b0",
+        "00172ae0",
+        "00188fe0",
+        "00194830"
+      ]
+    },
+    {
+      "phase": "queuexiprime",
+      "receipt_sha256": "de5e564953faeb9805eb5ca7240a197c3080e47c04c9c26aa09cd6ac4408e74e",
+      "functions": 16,
+      "instruction_bytes": 1248,
+      "addresses": [
+        "00106a60",
+        "00138140",
+        "00161598",
+        "0016bd10",
+        "0016c358",
+        "0016d640",
+        "0016d8d0",
+        "0016e240",
+        "00171518",
+        "00171640",
+        "00172890",
+        "00173558",
+        "00173dc0",
+        "00175b68",
+        "00176818",
+        "0017a6c8"
+      ]
+    }
+  ]
+}

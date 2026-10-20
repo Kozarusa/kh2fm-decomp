@@ -1,0 +1,35 @@
+0011f078: compiled 116 bytes, target 124 bytes, exact=False
+Differing words: 19. First difference at instruction 12 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0011f078: 27bdffe0  addiu	sp,sp,-32                                  | 0011f078: 27bdffe0  addiu	sp,sp,-32
+   0011f07c: ffb00000  sd	s0,0(sp)                                      | 0011f07c: ffb00000  sd	s0,0(sp)
+   0011f080: ffb10008  sd	s1,8(sp)                                      | 0011f080: ffb10008  sd	s1,8(sp)
+   0011f084: ffb20010  sd	s2,16(sp)                                     | 0011f084: ffb20010  sd	s2,16(sp)
+   0011f088: 0000802d  move	s0,zero                                     | 0011f088: 0000802d  move	s0,zero
+   0011f08c: ffbf0018  sd	ra,24(sp)                                     | 0011f08c: ffbf0018  sd	ra,24(sp)
+   0011f090: 0080882d  move	s1,a0                                       | 0011f090: 0080882d  move	s1,a0
+   0011f094: 00a0902d  move	s2,a1                                       | 0011f094: 00a0902d  move	s2,a1
+   0011f098: 8e2f0000  lw	t7,0(s1)                                      | 0011f098: 8e2f0000  lw	t7,0(s1)
+   0011f09c: 8de20030  lw	v0,48(t7)                                     | 0011f09c: 8de20030  lw	v0,48(t7)
+   0011f0a0: 0040f809  jalr	v0                                          | 0011f0a0: 0040f809  jalr	v0
+   0011f0a4: 0220202d  move	a0,s1                                       | 0011f0a4: 0220202d  move	a0,s1
+!! 0011f0a8: 02507821  addu	t7,s2,s0                                    | 0011f0a8: 0202782a  slt	t7,s0,v0
+!! 0011f0ac: 0202102a  slt	v0,s0,v0                                     | 0011f0ac: 02507021  addu	t6,s2,s0
+!! 0011f0b0: 240e0001  li	t6,1                                          | 0011f0b0: 26100001  addiu	s0,s0,1
+!! 0011f0b4: 14400009  bnez	v0,0x11f0dc                                 | 0011f0b4: 11e0000b  beqz	t7,11f0e4 <func_0011f078+0x6c>
+!! 0011f0b8: 26100001  addiu	s0,s0,1                                    | 0011f0b8: 24020001  li	v0,1
+!! 0011f0bc: 0000702d  move	t6,zero                                     | 0011f0bc: 91cf0000  lbu	t7,0(t6)
+!! 0011f0c0: dfb00000  ld	s0,0(sp)                                      | 0011f0c0: 31ef0004  andi	t7,t7,0x4
+!! 0011f0c4: 01c0102d  move	v0,t6                                       | 0011f0c4: 51e0fff5  beqzl	t7,11f09c <func_0011f078+0x24>
+!! 0011f0c8: dfb10008  ld	s1,8(sp)                                      | 0011f0c8: 8e2f0000  lw	t7,0(s1)
+!! 0011f0cc: dfb20010  ld	s2,16(sp)                                     | 0011f0cc: dfb00000  ld	s0,0(sp)
+!! 0011f0d0: dfbf0018  ld	ra,24(sp)                                     | 0011f0d0: dfb10008  ld	s1,8(sp)
+!! 0011f0d4: 03e00008  jr	ra                                            | 0011f0d4: dfb20010  ld	s2,16(sp)
+!! 0011f0d8: 27bd0020  addiu	sp,sp,32                                   | 0011f0d8: dfbf0018  ld	ra,24(sp)
+!! 0011f0dc: 91ef0000  lbu	t7,0(t7)                                     | 0011f0dc: 03e00008  jr	ra
+!! 0011f0e0: 31ef0004  andi	t7,t7,0x4                                   | 0011f0e0: 27bd0020  addiu	sp,sp,32
+!! 0011f0e4: 55e0fff7  bnezl	t7,0x11f0c4                                | 0011f0e4: 1000fff9  b	11f0cc <func_0011f078+0x54>
+!! 0011f0e8: dfb00000  ld	s0,0(sp)                                      | 0011f0e8: 0000102d  move	v0,zero
+!! 0011f0ec: 1000ffeb  b	0x11f09c                                       | 
+!! 0011f0f0: 8e2f0000  lw	t7,0(s1)                                      | 

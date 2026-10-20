@@ -1,0 +1,29 @@
+002b4f50: compiled 100 bytes, target 100 bytes, exact=False
+Differing words: 2. First difference at instruction 9 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   002b4f50: 27bdfff0  addiu	sp,sp,-16                                  | 002b4f50: 27bdfff0  addiu	sp,sp,-16
+   002b4f54: ffb00000  sd	s0,0(sp)                                      | 002b4f54: ffb00000  sd	s0,0(sp)
+   002b4f58: ffbf0008  sd	ra,8(sp)                                      | 002b4f58: ffbf0008  sd	ra,8(sp)
+   002b4f5c: 3c100036  lui	s0,0x36                                      | 002b4f5c: 3c100036  lui	s0,0x36
+   002b4f60: 0c04e75e  jal	0x139d78                                     | 002b4f60: 0c04e75e  jal	139d78 <func_00139d78>
+   002b4f64: 8e04f654  lw	a0,-2476(s0)   ; = D_0035f654                 | 002b4f64: 8e04f654  lw	a0,-2476(s0)   ; = D_0035f654
+   002b4f68: 10400005  beqz	v0,0x2b4f80                                 | 002b4f68: 10400005  beqz	v0,2b4f80 <func_002b4f50+0x30>
+   002b4f6c: 8e0ff654  lw	t7,-2476(s0)   ; = D_0035f654                 | 002b4f6c: 8e0ff654  lw	t7,-2476(s0)   ; = D_0035f654
+   002b4f70: 8dee0000  lw	t6,0(t7)                                      | 002b4f70: 8dee0000  lw	t6,0(t7)
+!! 002b4f74: 8dcd0014  lw	t5,20(t6)                                     | 002b4f74: 8dc20014  lw	v0,20(t6)
+!! 002b4f78: 01a0f809  jalr	t5                                          | 002b4f78: 0040f809  jalr	v0
+   002b4f7c: 01e0202d  move	a0,t7                                       | 002b4f7c: 01e0202d  move	a0,t7
+   002b4f80: 3c100036  lui	s0,0x36                                      | 002b4f80: 3c100036  lui	s0,0x36
+   002b4f84: 0c0a2b32  jal	0x28acc8                                     | 002b4f84: 0c0a2b32  jal	28acc8 <func_0028acc8>
+   002b4f88: 8e04f650  lw	a0,-2480(s0)   ; = D_0035f650                 | 002b4f88: 8e04f650  lw	a0,-2480(s0)   ; = D_0035f650
+   002b4f8c: 10400004  beqz	v0,0x2b4fa0                                 | 002b4f8c: 10400004  beqz	v0,2b4fa0 <func_002b4f50+0x50>
+   002b4f90: 3c0f0036  lui	t7,0x36                                      | 002b4f90: 3c0f0036  lui	t7,0x36
+   002b4f94: 0c0a2af8  jal	0x28abe0                                     | 002b4f94: 0c0a2af8  jal	28abe0 <func_0028abe0>
+   002b4f98: 8e04f650  lw	a0,-2480(s0)   ; = D_0035f650                 | 002b4f98: 8e04f650  lw	a0,-2480(s0)   ; = D_0035f650
+   002b4f9c: 3c0f0036  lui	t7,0x36                                      | 002b4f9c: 3c0f0036  lui	t7,0x36
+   002b4fa0: dfb00000  ld	s0,0(sp)                                      | 002b4fa0: dfb00000  ld	s0,0(sp)
+   002b4fa4: a1e0f6d0  sb	zero,-2352(t7)   ; = D_0035f6d0               | 002b4fa4: a1e0f6d0  sb	zero,-2352(t7)   ; = D_0035f6d0
+   002b4fa8: dfbf0008  ld	ra,8(sp)                                      | 002b4fa8: dfbf0008  ld	ra,8(sp)
+   002b4fac: 03e00008  jr	ra                                            | 002b4fac: 03e00008  jr	ra
+   002b4fb0: 27bd0010  addiu	sp,sp,16                                   | 002b4fb0: 27bd0010  addiu	sp,sp,16

@@ -1,0 +1,19 @@
+001bbfd0: compiled 56 bytes, target 60 bytes, exact=False
+Differing words: 3. First difference at instruction 12 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001bbfd0: 27bdfff0  addiu	sp,sp,-16                                  | 001bbfd0: 27bdfff0  addiu	sp,sp,-16
+   001bbfd4: ffbf0000  sd	ra,0(sp)                                      | 001bbfd4: ffbf0000  sd	ra,0(sp)
+   001bbfd8: 0c06ed28  jal	0x1bb4a0                                     | 001bbfd8: 0c06ed28  jal	1bb4a0 <func_001bb4a0>
+   001bbfdc: 00000000  nop                                              | 001bbfdc: 00000000  nop
+   001bbfe0: 10400007  beqz	v0,0x1bc000                                 | 001bbfe0: 10400007  beqz	v0,1bc000 <func_001bbfd0+0x30>
+   001bbfe4: 3c0f0037  lui	t7,0x37                                      | 001bbfe4: 3c0f0037  lui	t7,0x37
+   001bbfe8: 0c06ef2c  jal	0x1bbcb0                                     | 001bbfe8: 0c06ef2c  jal	1bbcb0 <func_001bbcb0>
+   001bbfec: 00000000  nop                                              | 001bbfec: 00000000  nop
+   001bbff0: c4400530  lwc1	$f0,1328(v0)                                | 001bbff0: c4400530  lwc1	$f0,1328(v0)
+   001bbff4: dfbf0000  ld	ra,0(sp)                                      | 001bbff4: dfbf0000  ld	ra,0(sp)
+   001bbff8: 03e00008  jr	ra                                            | 001bbff8: 03e00008  jr	ra
+   001bbffc: 27bd0010  addiu	sp,sp,16                                   | 001bbffc: 27bd0010  addiu	sp,sp,16
+!! 001bc000: 25efdc44  addiu	t7,t7,-9148   ; = D_0036dc44               | 001bc000: 1000fffc  b	1bbff4 <func_001bbfd0+0x24>
+!! 001bc004: 1000fffb  b	0x1bbff4                                       | 001bc004: c5e0dc44  lwc1	$f0,-9148(t7)   ; = D_0036dc44
+!! 001bc008: c5e00000  lwc1	$f0,0(t7)                                   | 

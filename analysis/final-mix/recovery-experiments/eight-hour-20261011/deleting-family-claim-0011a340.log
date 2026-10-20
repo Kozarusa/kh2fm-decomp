@@ -1,0 +1,23 @@
+{
+  "leases": [
+    {
+      "address": "0011a340",
+      "token": "2b8982d21a2642198babcfe398b2f4c8",
+      "expires": 1791734956.2267535,
+      "metadata": {
+        "address": "0011a340",
+        "end": "0011a374",
+        "bytes": 52,
+        "priority": 2,
+        "pseudocode_available": true,
+        "callees": [
+          "00105110",
+          "00113668"
+        ],
+        "best_proposal": null
+      },
+      "blocker": null,
+      "attempts": 1
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+Exact probe matches: 2/9
+Detailed proof: analysis/final-mix/recovery-experiments/fm_scalar_08_pointer.verification.json
+recovery-experiments/fm_scalar_08_pointer/probe.cpp: In function `s64 
+   func_002be908(u8*)':
+recovery-experiments/fm_scalar_08_pointer/probe.cpp:100: warning: invalid 
+   conversion from `u64' to `u8*'
+recovery-experiments/fm_scalar_08_pointer/probe.cpp:105: warning: invalid 
+   conversion from `u8*' to `long long int'

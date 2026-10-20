@@ -1,0 +1,24 @@
+00294480: compiled 80 bytes, target 80 bytes, exact=False
+Differing words: 1. First difference at instruction 19 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00294480: 27bdfff0  addiu	sp,sp,-16                                  | 00294480: 27bdfff0  addiu	sp,sp,-16
+   00294484: 240f0002  li	t7,2                                          | 00294484: 240f0002  li	t7,2
+   00294488: ffb00000  sd	s0,0(sp)                                      | 00294488: ffb00000  sd	s0,0(sp)
+   0029448c: ffbf0008  sd	ra,8(sp)                                      | 0029448c: ffbf0008  sd	ra,8(sp)
+   00294490: 808e0006  lb	t6,6(a0)                                      | 00294490: 808e0006  lb	t6,6(a0)
+   00294494: 11cf000a  beq	t6,t7,0x2944c0                               | 00294494: 11cf000a  beq	t6,t7,2944c0 <func_00294480+0x40>
+   00294498: 0000802d  move	s0,zero                                     | 00294498: 0000802d  move	s0,zero
+   0029449c: 0c060540  jal	0x181500                                     | 0029449c: 0c060540  jal	181500 <func_00181500>
+   002944a0: 94840000  lhu	a0,0(a0)                                     | 002944a0: 94840000  lhu	a0,0(a0)
+   002944a4: 54400001  bnezl	v0,0x2944ac                                | 002944a4: 54400001  bnezl	v0,2944ac <func_00294480+0x2c>
+   002944a8: 24100001  li	s0,1                                          | 002944a8: 24100001  li	s0,1
+   002944ac: 0200102d  move	v0,s0                                       | 002944ac: 0200102d  move	v0,s0
+   002944b0: dfbf0008  ld	ra,8(sp)                                      | 002944b0: dfbf0008  ld	ra,8(sp)
+   002944b4: dfb00000  ld	s0,0(sp)                                      | 002944b4: dfb00000  ld	s0,0(sp)
+   002944b8: 03e00008  jr	ra                                            | 002944b8: 03e00008  jr	ra
+   002944bc: 27bd0010  addiu	sp,sp,16                                   | 002944bc: 27bd0010  addiu	sp,sp,16
+   002944c0: 0c068d5c  jal	0x1a3570                                     | 002944c0: 0c068d5c  jal	1a3570 <func_001a3570>
+   002944c4: 94840000  lhu	a0,0(a0)                                     | 002944c4: 94840000  lhu	a0,0(a0)
+   002944c8: 1000fff8  b	0x2944ac                                       | 002944c8: 1000fff8  b	2944ac <func_00294480+0x2c>
+!! 002944cc: 0002802a  slt	s0,zero,v0                                   | 002944cc: 0002802b  sltu	s0,zero,v0

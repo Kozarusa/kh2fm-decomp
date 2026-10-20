@@ -1,0 +1,34 @@
+00166880: compiled 120 bytes, target 120 bytes, exact=False
+Differing words: 2. First difference at instruction 23 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00166880: 27bdffd0  addiu	sp,sp,-48                                  | 00166880: 27bdffd0  addiu	sp,sp,-48
+   00166884: 30c6ffff  andi	a2,a2,0xffff                                | 00166884: 30c6ffff  andi	a2,a2,0xffff
+   00166888: ffb30018  sd	s3,24(sp)                                     | 00166888: ffb30018  sd	s3,24(sp)
+   0016688c: 3108ffff  andi	t0,t0,0xffff                                | 0016688c: 3108ffff  andi	t0,t0,0xffff
+   00166890: ffb00000  sd	s0,0(sp)                                      | 00166890: ffb00000  sd	s0,0(sp)
+   00166894: 3129ffff  andi	t1,t1,0xffff                                | 00166894: 3129ffff  andi	t1,t1,0xffff
+   00166898: 30b300ff  andi	s3,a1,0xff                                  | 00166898: 30b300ff  andi	s3,a1,0xff
+   0016689c: ffb10008  sd	s1,8(sp)                                      | 0016689c: ffb10008  sd	s1,8(sp)
+   001668a0: 00c0282d  move	a1,a2                                       | 001668a0: 00c0282d  move	a1,a2
+   001668a4: ffb20010  sd	s2,16(sp)                                     | 001668a4: ffb20010  sd	s2,16(sp)
+   001668a8: 00e0302d  move	a2,a3                                       | 001668a8: 00e0302d  move	a2,a3
+   001668ac: ffbf0020  sd	ra,32(sp)                                     | 001668ac: ffbf0020  sd	ra,32(sp)
+   001668b0: 0100382d  move	a3,t0                                       | 001668b0: 0100382d  move	a3,t0
+   001668b4: 0080802d  move	s0,a0                                       | 001668b4: 0080802d  move	s0,a0
+   001668b8: 000a8c00  sll	s1,t2,0x10                                   | 001668b8: 000a8c00  sll	s1,t2,0x10
+   001668bc: 000b9400  sll	s2,t3,0x10                                   | 001668bc: 000b9400  sll	s2,t3,0x10
+   001668c0: 0120402d  move	t0,t1                                       | 001668c0: 0120402d  move	t0,t1
+   001668c4: 0c0599bc  jal	0x1666f0                                     | 001668c4: 0c0599bc  jal	1666f0 <func_001666f0>
+   001668c8: 00118c03  sra	s1,s1,0x10                                   | 001668c8: 00118c03  sra	s1,s1,0x10
+   001668cc: 00129403  sra	s2,s2,0x10                                   | 001668cc: 00129403  sra	s2,s2,0x10
+   001668d0: a213000e  sb	s3,14(s0)                                     | 001668d0: a213000e  sb	s3,14(s0)
+   001668d4: a611000a  sh	s1,10(s0)                                     | 001668d4: a611000a  sh	s1,10(s0)
+   001668d8: a612000c  sh	s2,12(s0)                                     | 001668d8: a612000c  sh	s2,12(s0)
+!! 001668dc: dfb10008  ld	s1,8(sp)                                      | 001668dc: dfb00000  ld	s0,0(sp)
+!! 001668e0: dfb00000  ld	s0,0(sp)                                      | 001668e0: dfb10008  ld	s1,8(sp)
+   001668e4: dfb20010  ld	s2,16(sp)                                     | 001668e4: dfb20010  ld	s2,16(sp)
+   001668e8: dfb30018  ld	s3,24(sp)                                     | 001668e8: dfb30018  ld	s3,24(sp)
+   001668ec: dfbf0020  ld	ra,32(sp)                                     | 001668ec: dfbf0020  ld	ra,32(sp)
+   001668f0: 03e00008  jr	ra                                            | 001668f0: 03e00008  jr	ra
+   001668f4: 27bd0030  addiu	sp,sp,48                                   | 001668f4: 27bd0030  addiu	sp,sp,48

@@ -1,0 +1,24 @@
+00244938: compiled 76 bytes, target 80 bytes, exact=False
+Differing words: 15. First difference at instruction 3 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00244938: 27bdfff0  addiu	sp,sp,-16                                  | 00244938: 27bdfff0  addiu	sp,sp,-16
+   0024493c: 0080782d  move	t7,a0                                       | 0024493c: 0080782d  move	t7,a0
+   00244940: ffb00000  sd	s0,0(sp)                                      | 00244940: ffb00000  sd	s0,0(sp)
+!! 00244944: 24040001  li	a0,1                                          | 00244944: 240e0001  li	t6,1
+   00244948: ffbf0008  sd	ra,8(sp)                                      | 00244948: ffbf0008  sd	ra,8(sp)
+!! 0024494c: 15e00006  bnez	t7,0x244968                                 | 0024494c: 15e00005  bnez	t7,244964 <func_00244938+0x2c>
+!! 00244950: 24100001  li	s0,1                                          | 00244950: 24040001  li	a0,1
+   00244954: 0c069b42  jal	0x1a6d08                                     | 00244954: 0c069b42  jal	1a6d08 <func_001a6d08>
+!! 00244958: 00000000  nop                                              | 00244958: 24100001  li	s0,1
+!! 0024495c: 10400005  beqz	v0,0x244974                                 | 0024495c: 10400004  beqz	v0,244970 <func_00244938+0x38>
+!! 00244960: 24040076  li	a0,118                                        | 00244960: 240e0076  li	t6,118
+!! 00244964: 00000000  nop                                              | 00244964: 0c069b42  jal	1a6d08 <func_001a6d08>
+!! 00244968: 0c069b42  jal	0x1a6d08                                     | 00244968: 01c0202d  move	a0,t6
+!! 0024496c: 00000000  nop                                              | 0024496c: 305000ff  andi	s0,v0,0xff
+!! 00244970: 0040802d  move	s0,v0                                       | 00244970: 0200102d  move	v0,s0
+!! 00244974: 0200102d  move	v0,s0                                       | 00244974: dfbf0008  ld	ra,8(sp)
+!! 00244978: dfbf0008  ld	ra,8(sp)                                      | 00244978: dfb00000  ld	s0,0(sp)
+!! 0024497c: dfb00000  ld	s0,0(sp)                                      | 0024497c: 03e00008  jr	ra
+!! 00244980: 03e00008  jr	ra                                            | 00244980: 27bd0010  addiu	sp,sp,16
+!! 00244984: 27bd0010  addiu	sp,sp,16                                   | 

@@ -1,0 +1,26 @@
+{
+  "address": "00319788",
+  "specialty": "sdk-frame-abi",
+  "hypothesis": "Original two-call routine uses daddiu with a 48-byte frame and saves ra at offset 40; the existing exact-size proposal uses addiu with a 16-byte frame and saves ra at offset zero. Calls and return flow already agree. Investigate SDK calling-frame ABI and structured assembly classification; do not assume changing C++ return types alone repairs the frame.",
+  "prior_best": {
+    "address": "00319788",
+    "bytes": 36,
+    "different_words": 4,
+    "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\fm_call_fixed_return_variants_v2_15_1.cpp",
+    "source_sha256": "5e5299b2161e2e4ae00d3edaabd029e9874a8a9a7f4e0d7a89ef1a1c0c647477",
+    "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\fm_call_fixed_return_variants_v2_15_1.verification.json",
+    "proof_sha256": "49252ef431f0091f5abdcccc129cf72351288fd90f10105465c06725a962410e",
+    "state": [
+      "ready",
+      "general"
+    ]
+  },
+  "completed_probes": 0,
+  "best_new": null,
+  "evidence": [],
+  "accepted": false,
+  "limitations": [
+    "Instruction mismatch is not compiler impossibility.",
+    "No unsuccessful proposal is registered."
+  ]
+}

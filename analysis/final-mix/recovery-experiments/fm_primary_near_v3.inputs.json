@@ -1,0 +1,10 @@
+{
+  "prior_source": "analysis/final-mix/recovery-experiments/fm_primary_near_v2.cpp",
+  "prior_source_sha256": "b75fd0c64a72cb2d7998a4252bc95b260497b2e1a323da35869dd22974d1a613",
+  "prior_proof_sha256": "95ea8049ab9919c6d17a3dd69d52fa4204d6e3641e9f621f928b5feda4706ccd",
+  "source_sha256": "2a8acc8bfc01f9d1028af96623fcc042f8a9a738b6db8e5e5e3b4dab9a92d984",
+  "change": "Move FmLocalQuad before the first definition so independent curation retains the shared type.",
+  "limitations": [
+    "New raw and curated probes are required; failed curated source and log remain isolated."
+  ]
+}

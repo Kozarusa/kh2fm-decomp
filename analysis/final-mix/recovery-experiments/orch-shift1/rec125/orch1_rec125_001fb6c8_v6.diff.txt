@@ -1,0 +1,25 @@
+001fb6c8: compiled 84 bytes, target 84 bytes, exact=False
+Differing words: 11. First difference at instruction 4 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001fb6c8: 27bdffd0  addiu	sp,sp,-48                                  | 001fb6c8: 27bdffd0  addiu	sp,sp,-48
+   001fb6cc: 0080702d  move	t6,a0                                       | 001fb6cc: 0080702d  move	t6,a0
+   001fb6d0: ffbf0020  sd	ra,32(sp)                                     | 001fb6d0: ffbf0020  sd	ra,32(sp)
+   001fb6d4: 248d0030  addiu	t5,a0,48                                   | 001fb6d4: 248d0030  addiu	t5,a0,48
+!! 001fb6d8: 0000282d  move	a1,zero                                     | 001fb6d8: afad0014  sw	t5,20(sp)
+!! 001fb6dc: c4800040  lwc1	$f0,64(a0)                                  | 001fb6dc: 0000282d  move	a1,zero
+   001fb6e0: 8c8f0048  lw	t7,72(a0)                                     | 001fb6e0: 8c8f0048  lw	t7,72(a0)
+!! 001fb6e4: c4810044  lwc1	$f1,68(a0)                                  | 001fb6e4: c4800044  lwc1	$f0,68(a0)
+   001fb6e8: afaf0004  sw	t7,4(sp)                                      | 001fb6e8: afaf0004  sw	t7,4(sp)
+!! 001fb6ec: 03a0202d  move	a0,sp                                       | 001fb6ec: c4810040  lwc1	$f1,64(a0)
+!! 001fb6f0: e7a00010  swc1	$f0,16(sp)                                  | 001fb6f0: 3c0f01da  lui	t7,0x1da
+!! 001fb6f4: 3c0f01da  lui	t7,0x1da                                     | 001fb6f4: afae0000  sw	t6,0(sp)
+!! 001fb6f8: e7a1000c  swc1	$f1,12(sp)                                  | 001fb6f8: 25efe8c0  addiu	t7,t7,-5952   ; = D_01d9e8c0
+!! 001fb6fc: 25efe8c0  addiu	t7,t7,-5952   ; = D_01d9e8c0               | 001fb6fc: e7a0000c  swc1	$f0,12(sp)
+!! 001fb700: afad0014  sw	t5,20(sp)                                     | 001fb700: e7a10010  swc1	$f1,16(sp)
+!! 001fb704: afaf0008  sw	t7,8(sp)                                      | 001fb704: 03a0202d  move	a0,sp
+   001fb708: 0c087d88  jal	0x21f620                                     | 001fb708: 0c087d88  jal	21f620 <func_0021f620>
+!! 001fb70c: afae0000  sw	t6,0(sp)                                      | 001fb70c: afaf0008  sw	t7,8(sp)
+   001fb710: dfbf0020  ld	ra,32(sp)                                     | 001fb710: dfbf0020  ld	ra,32(sp)
+   001fb714: 03e00008  jr	ra                                            | 001fb714: 03e00008  jr	ra
+   001fb718: 27bd0030  addiu	sp,sp,48                                   | 001fb718: 27bd0030  addiu	sp,sp,48

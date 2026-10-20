@@ -1,0 +1,36 @@
+{
+  "original_source": "analysis/final-mix/recovery-experiments/fm_primary_width_00_all.cpp",
+  "original_source_sha256": "b5e77fe314e742b6b6a07ca606a7a5638b679e7b7fbcf7bcf55b68f3c65dd31a",
+  "original_proof_sha256": "7e48346c685640d38f5d807fe261f79b434edc1b5e67c389cce55d7379b765f1",
+  "variant_source_sha256": "204451fb55035b2990d8f536e71717a62e6a825843f713a3cdba9509aa9d8402",
+  "parameter_profile": "narrow32",
+  "rows": [
+    {
+      "address": "00132e28",
+      "changed_parameters": [
+        "param_1"
+      ]
+    },
+    {
+      "address": "001954a0",
+      "changed_parameters": [
+        "param_1"
+      ]
+    },
+    {
+      "address": "001b6dd0",
+      "changed_parameters": [
+        "param_1"
+      ]
+    },
+    {
+      "address": "001c1890",
+      "changed_parameters": [
+        "param_1"
+      ]
+    }
+  ],
+  "limitations": [
+    "Parameter types are provisional; only exact compiler bytes can accept a variant."
+  ]
+}

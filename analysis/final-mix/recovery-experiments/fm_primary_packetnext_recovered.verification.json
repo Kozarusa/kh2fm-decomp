@@ -1,0 +1,18 @@
+{
+  "source_sha256": "e499456a66698aa5f303936843305002bf289fe0eaf3af3ce053b8205febf140",
+  "source": "analysis/final-mix/recovery-experiments/fm_primary_packetnext_recovered.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "00171930",
+      "symbol": "_Z13func_00171930Pi",
+      "compiled_size": 48,
+      "target_size": 48,
+      "ghidra_body_size": 48,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "e0ffbd271000bfff04008f8c0000e8790000a87f00008e8c2d28a00304ac050c0400c48d1000bfdf0800e0032000bd27",
+      "target_hex": "e0ffbd271000bfff04008f8c0000e8790000a87f00008e8c2d28a00304ac050c0400c48d1000bfdf0800e0032000bd27"
+    }
+  ]
+}

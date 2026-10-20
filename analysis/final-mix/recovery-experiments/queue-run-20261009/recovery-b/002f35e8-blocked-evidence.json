@@ -1,0 +1,158 @@
+{
+  "address": "002f35e8",
+  "probes": [
+    {
+      "proof": "Codex\\analysis\\final-mix\\recovery-experiments\\queue-run-20261009\\recovery-b\\recovery_b_002f35e8_93a09841_fixed.verification.json",
+      "proof_sha256": "883a688179e6096da77d41b79daa39a407931dc235782b43cda374f096f97a34",
+      "source": "analysis/final-mix/recovery-experiments/queue-run-20261009/recovery-b/recovery_b_002f35e8_93a09841_fixed.cpp",
+      "source_sha256": "475502bf4df3077d8bb0cc4042cd605b020d851b111e04430d7eb0def8cf13db",
+      "row": {
+        "address": "002f35e8",
+        "symbol": "_Z13func_002f35e8j",
+        "compiled_size": 48,
+        "target_size": 40,
+        "ghidra_body_size": 40,
+        "boundary_agreement": true,
+        "exact_match": false,
+        "compiled_hex": "801804000a00842c2d10800006004010000000003600023c903c4224211843000800e0030000628c0800e0032d100000",
+        "target_hex": "0a00822c060040103600023c80180400903c4224211862000800e0030000628c0800e0032d100000"
+      }
+    },
+    {
+      "proof": "Codex\\analysis\\final-mix\\recovery-experiments\\queue-run-20261009\\recovery-b\\recovery_b_002f35e8_93a09841_guardalive.verification.json",
+      "proof_sha256": "6be4756e035f2398e6f43e2755d2b4a892364fe1dc0c15fee4e58d2a7311f24c",
+      "source": "analysis/final-mix/recovery-experiments/queue-run-20261009/recovery-b/recovery_b_002f35e8_93a09841_guardalive.cpp",
+      "source_sha256": "d638cbdd3da0c05c57989b1e0125e2b7f5efdf6a8c7165cb311b555dfa83b55b",
+      "row": {
+        "address": "002f35e8",
+        "symbol": "_Z13func_002f35e8j",
+        "compiled_size": 40,
+        "target_size": 40,
+        "ghidra_body_size": 40,
+        "boundary_agreement": true,
+        "exact_match": false,
+        "compiled_hex": "0a00822c06004010807804003600023c903c42242110e2010800e0030000428c0800e0032d100000",
+        "target_hex": "0a00822c060040103600023c80180400903c4224211862000800e0030000628c0800e0032d100000"
+      }
+    },
+    {
+      "proof": "Codex\\analysis\\final-mix\\recovery-experiments\\queue-run-20261009\\recovery-b\\recovery_b_002f35e8_93a09841_guardmarker.verification.json",
+      "proof_sha256": "f14e2a17ced10005cb325ea994ec9b10f0fd17f1e5faf18d61783a7aae1f4ee8",
+      "source": "analysis/final-mix/recovery-experiments/queue-run-20261009/recovery-b/recovery_b_002f35e8_93a09841_guardmarker.cpp",
+      "source_sha256": "6df424d71bf4273d7b1b0d58e30814529043076058694eda680faec8ce10fba6",
+      "row": {
+        "address": "002f35e8",
+        "symbol": "_Z13func_002f35e8j",
+        "compiled_size": 44,
+        "target_size": 40,
+        "ghidra_body_size": 40,
+        "boundary_agreement": true,
+        "exact_match": false,
+        "compiled_hex": "807004000a00842c2d1080000500401036000f3c903cef252178cf010800e0030000e28d0800e0032d100000",
+        "target_hex": "0a00822c060040103600023c80180400903c4224211862000800e0030000628c0800e0032d100000"
+      }
+    },
+    {
+      "proof": "Codex\\analysis\\final-mix\\recovery-experiments\\queue-run-20261009\\recovery-b\\recovery_b_002f35e8_93a09841_highlifetime.verification.json",
+      "proof_sha256": "052b128e3b63b7d06218d410338658bf4b798d3e5955a21b1ec4dc95820cac01",
+      "source": "analysis/final-mix/recovery-experiments/queue-run-20261009/recovery-b/recovery_b_002f35e8_93a09841_highlifetime.cpp",
+      "source_sha256": "130cb75ddcf8cae6745ccd7a26b60f0c79505f7d2522a59e84dc695b65276e32",
+      "row": {
+        "address": "002f35e8",
+        "symbol": "_Z13func_002f35e8j",
+        "compiled_size": 44,
+        "target_size": 40,
+        "ghidra_body_size": 40,
+        "boundary_agreement": true,
+        "exact_match": false,
+        "compiled_hex": "0a00822c07004010801804003600023c903c4f242d10e001211843000800e0030000628c0800e0032d100000",
+        "target_hex": "0a00822c060040103600023c80180400903c4224211862000800e0030000628c0800e0032d100000"
+      }
+    },
+    {
+      "proof": "Codex\\analysis\\final-mix\\recovery-experiments\\queue-run-20261009\\recovery-b\\recovery_b_002f35e8_93a09841_indexalive.verification.json",
+      "proof_sha256": "c65d04356f80085c8b582c9c5cc863f55980cec9171a6b83a4921984e55e857a",
+      "source": "analysis/final-mix/recovery-experiments/queue-run-20261009/recovery-b/recovery_b_002f35e8_93a09841_indexalive.cpp",
+      "source_sha256": "270af6b99834a31b38036e6255a5e387c5b709e787d9edc306a5d0ea725f2f6b",
+      "row": {
+        "address": "002f35e8",
+        "symbol": "_Z13func_002f35e8j",
+        "compiled_size": 44,
+        "target_size": 40,
+        "ghidra_body_size": 40,
+        "boundary_agreement": true,
+        "exact_match": false,
+        "compiled_hex": "0a00822c070040100000000036000f3c80700400903cef252170cf010800e0030000c28d0800e0032d100000",
+        "target_hex": "0a00822c060040103600023c80180400903c4224211862000800e0030000628c0800e0032d100000"
+      }
+    },
+    {
+      "proof": "Codex\\analysis\\final-mix\\recovery-experiments\\queue-run-20261009\\recovery-b\\recovery_b_002f35e8_93a09841_nativeinput.verification.json",
+      "proof_sha256": "4e3a3a1789658e085894ab927360aa09ba7f1274e1d49b4ef5c6fffed3728282",
+      "source": "analysis/final-mix/recovery-experiments/queue-run-20261009/recovery-b/recovery_b_002f35e8_93a09841_nativeinput.cpp",
+      "source_sha256": "472064424dbfa0e57009114ec7e4d9d6561ffddbb4a1f95abc2241744e153016",
+      "row": {
+        "address": "002f35e8",
+        "symbol": "_Z13func_002f35e8j",
+        "compiled_size": 44,
+        "target_size": 40,
+        "ghidra_body_size": 40,
+        "boundary_agreement": true,
+        "exact_match": false,
+        "compiled_hex": "0a00822c07004010000000003600023c80180400903c4224211843000800e0030000628c0800e0032d100000",
+        "target_hex": "0a00822c060040103600023c80180400903c4224211862000800e0030000628c0800e0032d100000"
+      }
+    },
+    {
+      "proof": "Codex\\analysis\\final-mix\\recovery-experiments\\queue-run-20261009\\recovery-b\\recovery_b_002f35e8_93a09841_pinnedbase.verification.json",
+      "proof_sha256": "53f565566618035e0b9f7ec06a10e0335a9e5b1c78235b9d05e6046d19917dc7",
+      "source": "analysis/final-mix/recovery-experiments/queue-run-20261009/recovery-b/recovery_b_002f35e8_93a09841_pinnedbase.cpp",
+      "source_sha256": "f1dd2c064ec7fbeb39147eb26e3b6f4758c5f32d5694943f7408ffc0c5d20ad3",
+      "row": {
+        "address": "002f35e8",
+        "symbol": "_Z13func_002f35e8j",
+        "compiled_size": 44,
+        "target_size": 40,
+        "ghidra_body_size": 40,
+        "boundary_agreement": true,
+        "exact_match": false,
+        "compiled_hex": "807804000a00842c06008010000000003600023c903c42242110e2010800e0030000428c0800e0032d100000",
+        "target_hex": "0a00822c060040103600023c80180400903c4224211862000800e0030000628c0800e0032d100000"
+      }
+    },
+    {
+      "proof": "Codex\\analysis\\final-mix\\recovery-experiments\\queue-run-20261009\\recovery-b\\recovery_b_002f35e8_93a09841_u32.verification.json",
+      "proof_sha256": "b041734790c4d0c6918ab17d82fc104722c47271df412d7253b8608f7e0fec11",
+      "source": "analysis/final-mix/recovery-experiments/queue-run-20261009/recovery-b/recovery_b_002f35e8_93a09841_u32.cpp",
+      "source_sha256": "69024ef77fe69440f3957ea44f1b81a2a2115a60e6f28c006e893e49e794da1c",
+      "row": {
+        "address": "002f35e8",
+        "symbol": "_Z13func_002f35e8j",
+        "compiled_size": 40,
+        "target_size": 40,
+        "ghidra_body_size": 40,
+        "boundary_agreement": true,
+        "exact_match": false,
+        "compiled_hex": "807004000a00842c0500801036000f3c903cef252178cf010800e0030000e28d0800e0032d100000",
+        "target_hex": "0a00822c060040103600023c80180400903c4224211862000800e0030000628c0800e0032d100000"
+      }
+    },
+    {
+      "proof": "Codex\\analysis\\final-mix\\recovery-experiments\\queue-run-20261009\\recovery-b\\recovery_b_002f35e8_93a09841_u64.verification.json",
+      "proof_sha256": "e4e72ff2c7da96f098458cd62254f6faccf2b55d72b1eb108ab2b5ddd8b1434b",
+      "source": "analysis/final-mix/recovery-experiments/queue-run-20261009/recovery-b/recovery_b_002f35e8_93a09841_u64.cpp",
+      "source_sha256": "0cb4e01bc868c5970902203b75c5986e8ccc5bc9b30ae01fe2cf1e973aee5b61",
+      "row": {
+        "address": "002f35e8",
+        "symbol": "_Z13func_002f35e8y",
+        "compiled_size": 48,
+        "target_size": 40,
+        "ghidra_body_size": 40,
+        "boundary_agreement": true,
+        "exact_match": false,
+        "compiled_hex": "3c7804003f780f000a00842c0600801080700f0036000f3c903cef252178cf010800e0030000e28d0800e0032d100000",
+        "target_hex": "0a00822c060040103600023c80180400903c4224211862000800e0030000628c0800e0032d100000"
+      }
+    }
+  ]
+}

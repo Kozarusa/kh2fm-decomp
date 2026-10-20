@@ -1,0 +1,28 @@
+002b8984: compiled 80 bytes, target 96 bytes, exact=False
+Differing words: 24. First difference at instruction 0 (0-based).
+
+ORIGINAL                                                                | COMPILED
+!! 002b8984: 27bdffe0  addiu	sp,sp,-32                                  | 002b8984: 00000000  nop
+!! 002b8988: ffbe0010  sd	s8,16(sp)                                     | 002b8988: 27bdffe0  addiu	sp,sp,-32
+!! 002b898c: 03a0f02d  move	s8,sp                                       | 002b898c: ffbe0010  sd	s8,16(sp)
+!! 002b8990: afc40000  sw	a0,0(s8)                                      | 002b8990: 03a0f02d  move	s8,sp
+!! 002b8994: afc50004  sw	a1,4(s8)                                      | 002b8994: afc40000  sw	a0,0(s8)
+!! 002b8998: afc60008  sw	a2,8(s8)                                      | 002b8998: afc50004  sw	a1,4(s8)
+!! 002b899c: 8fce0000  lw	t6,0(s8)                                      | 002b899c: afc60008  sw	a2,8(s8)
+!! 002b89a0: 3c0f0004  lui	t7,0x4                                       | 002b89a0: 8fce0000  lw	t6,0(s8)
+!! 002b89a4: 35ef8000  ori	t7,t7,0x8000                                 | 002b89a4: 3c0d0004  lui	t5,0x4
+!! 002b89a8: 01cf7021  addu	t6,t6,t7                                    | 002b89a8: 35ad8000  ori	t5,t5,0x8000
+!! 002b89ac: 8fcf0004  lw	t7,4(s8)                                      | 002b89ac: 0000102d  move	v0,zero
+!! 002b89b0: adcf001c  sw	t7,28(t6)                                     | 002b89b0: 8fcc0004  lw	t4,4(s8)
+!! 002b89b4: 8fce0000  lw	t6,0(s8)                                      | 002b89b4: 01cd7021  addu	t6,t6,t5
+!! 002b89b8: 3c0f0004  lui	t7,0x4                                       | 002b89b8: adcc001c  sw	t4,28(t6)
+!! 002b89bc: 35ef8000  ori	t7,t7,0x8000                                 | 002b89bc: 8fcf0000  lw	t7,0(s8)
+!! 002b89c0: 01cf7021  addu	t6,t6,t7                                    | 002b89c0: 8fce0008  lw	t6,8(s8)
+!! 002b89c4: 8fcf0008  lw	t7,8(s8)                                      | 002b89c4: 01ed7821  addu	t7,t7,t5
+!! 002b89c8: adcf0020  sw	t7,32(t6)                                     | 002b89c8: adee0020  sw	t6,32(t7)
+!! 002b89cc: 0000782d  move	t7,zero                                     | 002b89cc: dfbe0010  ld	s8,16(sp)
+!! 002b89d0: 01e0102d  move	v0,t7                                       | 002b89d0: 03e00008  jr	ra
+!! 002b89d4: 03c0e82d  move	sp,s8                                       | 
+!! 002b89d8: dfbe0010  ld	s8,16(sp)                                     | 
+!! 002b89dc: 03e00008  jr	ra                                            | 
+!! 002b89e0: 27bd0020  addiu	sp,sp,32                                   | 

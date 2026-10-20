@@ -1,0 +1,26 @@
+{
+  "probe_source": "analysis/final-mix/recovery-experiments/fm_scalar_03.cpp",
+  "probe_source_sha256": "05bd735dd67fab30396b27b36e66954ddfee4058923016dca126ea79dfa18bdc",
+  "probe_proof_sha256": "1ddcc13389e9742f711b670a2c1b2b8651021b41d809213a3322e8bef29cd3b0",
+  "curated_source": "analysis/final-mix/recovery-experiments/fm_scalar_recovered_03.cpp",
+  "curated_source_sha256": "de6f9b62f8c5f21a626d3d86f1bbf0c0788eda378062b6041f62d98672968be5",
+  "selected_addresses": [
+    "00197738",
+    "0019af98",
+    "0019d720",
+    "0019f9a8",
+    "001a04f8",
+    "001a1460",
+    "001a5380",
+    "001a53d0",
+    "001aa728",
+    "001abb28",
+    "001abfd8",
+    "001ac028",
+    "001ac208",
+    "001ac258"
+  ],
+  "limitations": [
+    "Curated source still requires a new probe, registration and full build."
+  ]
+}

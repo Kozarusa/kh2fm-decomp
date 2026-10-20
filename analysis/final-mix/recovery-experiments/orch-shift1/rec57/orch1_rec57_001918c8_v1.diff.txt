@@ -1,0 +1,33 @@
+001918c8: compiled 116 bytes, target 108 bytes, exact=False
+Differing words: 27. First difference at instruction 2 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001918c8: 27bdfff0  addiu	sp,sp,-16                                  | 001918c8: 27bdfff0  addiu	sp,sp,-16
+   001918cc: 3c0f0035  lui	t7,0x35                                      | 001918cc: 3c0f0035  lui	t7,0x35
+!! 001918d0: ffbf0000  sd	ra,0(sp)                                      | 001918d0: ffb00000  sd	s0,0(sp)
+!! 001918d4: 0c066e98  jal	0x19ba60                                     | 001918d4: ffbf0008  sd	ra,8(sp)
+!! 001918d8: 8de4e948  lw	a0,-5816(t7)   ; = D_0034e948                 | 001918d8: 0000802d  move	s0,zero
+!! 001918dc: 14400007  bnez	v0,0x1918fc                                 | 001918dc: 0c066e98  jal	19ba60 <func_0019ba60>
+!! 001918e0: 0000682d  move	t5,zero                                     | 001918e0: 9de4e948  lwu	a0,-5816(t7)   ; = D_0034e948
+!! 001918e4: 3c0f01c6  lui	t7,0x1c6                                     | 001918e4: 14400007  bnez	v0,191904 <func_001918c8+0x3c>
+!! 001918e8: ade01960  sw	zero,6496(t7)   ; = D_01c61960                | 001918e8: 3c0f01c6  lui	t7,0x1c6
+!! 001918ec: dfbf0000  ld	ra,0(sp)                                      | 001918ec: ade01960  sw	zero,6496(t7)   ; = D_01c61960
+!! 001918f0: 01a0102d  move	v0,t5                                       | 001918f0: 0200102d  move	v0,s0
+!! 001918f4: 03e00008  jr	ra                                            | 001918f4: dfbf0008  ld	ra,8(sp)
+!! 001918f8: 27bd0010  addiu	sp,sp,16                                   | 001918f8: dfb00000  ld	s0,0(sp)
+!! 001918fc: 0c06d62a  jal	0x1b58a8                                     | 001918fc: 03e00008  jr	ra
+!! 00191900: 00000000  nop                                              | 00191900: 27bd0010  addiu	sp,sp,16
+!! 00191904: 1440fff9  bnez	v0,0x1918ec                                 | 00191904: 0c06d62a  jal	1b58a8 <func_001b58a8>
+!! 00191908: 240d0001  li	t5,1                                          | 00191908: 24100001  li	s0,1
+!! 0019190c: 3c0f0035  lui	t7,0x35                                      | 0019190c: 1440fff9  bnez	v0,1918f4 <func_001918c8+0x2c>
+!! 00191910: 8deef240  lw	t6,-3520(t7)   ; = D_0034f240                 | 00191910: 0200102d  move	v0,s0
+!! 00191914: 3c0f0001  lui	t7,0x1                                       | 00191914: 3c0f0035  lui	t7,0x35
+!! 00191918: 01cf7024  and	t6,t6,t7                                     | 00191918: 3c0e0001  lui	t6,0x1
+!! 0019191c: 15c0fff4  bnez	t6,0x1918f0                                 | 0019191c: 8dedf240  lw	t5,-3520(t7)   ; = D_0034f240
+!! 00191920: dfbf0000  ld	ra,0(sp)                                      | 00191920: 01ae6824  and	t5,t5,t6
+!! 00191924: 0c069a14  jal	0x1a6850                                     | 00191924: 15a0fff4  bnez	t5,1918f8 <func_001918c8+0x30>
+!! 00191928: 00000000  nop                                              | 00191928: dfbf0008  ld	ra,8(sp)
+!! 0019192c: 1000ffef  b	0x1918ec                                       | 0019192c: 0c069a14  jal	1a6850 <func_001a6850>
+!! 00191930: 0002682b  sltu	t5,zero,v0                                  | 00191930: 00000000  nop
+!!                                                                      | 00191934: 1000ffee  b	1918f0 <func_001918c8+0x28>
+!!                                                                      | 00191938: 0040802d  move	s0,v0

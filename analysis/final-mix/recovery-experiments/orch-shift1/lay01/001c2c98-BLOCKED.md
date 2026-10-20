@@ -1,0 +1,6 @@
+# 001c2c98 blocked
+- Range: 001c2c98, 76 bytes. Versions tried: 4. Best: v4 (ties v1) with 2 differing words (76/76 bytes).
+- First difference of the best version: !! 001c2cc8: 35ce0004  ori	t6,t6,0x4  | 001c2cc8: 25ef1468  addiu	t7,t7,5224   ; = D_00351468
+- Changes tried: v1 copy of eight_hour_001c2c98_revisit_store_order_2 with names fixed (2: final table/mode stores swapped); v2 asm "+r"(mode) : "m"(table field) after the table store (11: mode store now after table store, but table store floats above the flags store and registers shift); v3 plus asm "+r"(table) : "m"(flags field) before the table store (11: all three stores now in original order, registers shifted to t4/t5/t6); v4 plus C11c bindings flags $13, mode $14, table $15 (2: every store and register exact; only the ori/addiu pair is swapped).
+- Why it stops here: no improvement for 3 versions (v2-v4 never beat 2, although v4 has a different and much closer residual: the final stores are now exact).
+- Next hypothesis: start from v4; the only residual is that ori (mode |= 4) is scheduled after the table address addiu. Make ori precede the table tie, e.g. add mode to the first asm as "+r"(mode) (asm("" : "+r"(table), "+r"(mode) : "m"(flags field))) or move the mode tie before the table address is formed. The same recipe should also fix the twin 001c2ce8 (identical code).

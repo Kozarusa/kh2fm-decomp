@@ -1,0 +1,16 @@
+[
+  {
+    "address": "001bc6a8",
+    "owner": "orch1-nm18",
+    "metadata": "{\"address\": \"001bc6a8\", \"end\": \"001bc6fc\", \"bytes\": 84, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [\"001bc2a8\"], \"best_proposal\": {\"proof\": \"analysis/final-mix/recovery-experiments/fm_scalar_04.verification.json\", \"source\": \"analysis/final-mix/recovery-experiments/fm_scalar_04.cpp\", \"compiled_bytes\": 108, \"target_bytes\": 84, \"different_words\": 26}}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\orch-shift1\\\\nm18\\\\orch1_nm18_001bc6a8_v2.cpp\", \"source_sha256\": \"cdfc646ef2020a531aa10ee046beb33fe6f8d5a81a94300227a58ff6ad6f430e\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\orch-shift1\\\\nm18\\\\orch1_nm18_001bc6a8_v2.verification.json\", \"proof_sha256\": \"145499bdfee7d32855fd2d8d7351fbc59faa34e0ec2f2e1f57a519d56a9be5cc\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_orchdr_recovered_001bc6a8.cpp"
+  },
+  {
+    "address": "00226050",
+    "owner": "orch1-nm18",
+    "metadata": "{\"address\": \"00226050\", \"end\": \"00226090\", \"bytes\": 64, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [], \"best_proposal\": null}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\orch-shift1\\\\nm18\\\\orch1_nm18_00226050_v8.cpp\", \"source_sha256\": \"f70ec75b4900ddfd1524549aa4158b39ebae30edb26033b694e79cc718c32d60\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\orch-shift1\\\\nm18\\\\orch1_nm18_00226050_v8.verification.json\", \"proof_sha256\": \"58255cde4e79ad407ca8f2eb40c47e92d8c4f067a7d949ed4a1776250678375a\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_orchdr_recovered_00226050.cpp"
+  }
+]

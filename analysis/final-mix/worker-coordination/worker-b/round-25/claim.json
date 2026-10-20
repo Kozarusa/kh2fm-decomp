@@ -1,0 +1,145 @@
+{
+ "round": 25,
+ "worker": "B",
+ "scope": "Recover unregistered framed ranges into byte-exact C++ proposals. Worker B owns isolated proposals and reports only.",
+ "claimed_addresses": [
+  {
+   "address": "00310130",
+   "size": 76,
+   "range_verified": false,
+   "sha256": null
+  },
+  {
+   "address": "003102e0",
+   "size": 76,
+   "range_verified": false,
+   "sha256": null
+  },
+  {
+   "address": "003103f8",
+   "size": 76,
+   "range_verified": false,
+   "sha256": null
+  },
+  {
+   "address": "00310560",
+   "size": 76,
+   "range_verified": false,
+   "sha256": null
+  },
+  {
+   "address": "00316d18",
+   "size": 76,
+   "range_verified": false,
+   "sha256": null
+  },
+  {
+   "address": "00103500",
+   "size": 80,
+   "range_verified": false,
+   "sha256": null
+  },
+  {
+   "address": "0014db78",
+   "size": 80,
+   "range_verified": false,
+   "sha256": null
+  },
+  {
+   "address": "00192818",
+   "size": 80,
+   "range_verified": false,
+   "sha256": null
+  },
+  {
+   "address": "00192940",
+   "size": 80,
+   "range_verified": false,
+   "sha256": null
+  },
+  {
+   "address": "00194980",
+   "size": 80,
+   "range_verified": false,
+   "sha256": null
+  },
+  {
+   "address": "001b43e0",
+   "size": 80,
+   "range_verified": false,
+   "sha256": null
+  },
+  {
+   "address": "001b5a10",
+   "size": 80,
+   "range_verified": false,
+   "sha256": null
+  },
+  {
+   "address": "001bd8c8",
+   "size": 80,
+   "range_verified": false,
+   "sha256": null
+  },
+  {
+   "address": "001bdcd0",
+   "size": 80,
+   "range_verified": false,
+   "sha256": null
+  },
+  {
+   "address": "0023d260",
+   "size": 80,
+   "range_verified": false,
+   "sha256": null
+  },
+  {
+   "address": "002421e8",
+   "size": 80,
+   "range_verified": false,
+   "sha256": null
+  }
+ ],
+ "verification_method": "per-range sha256 of the ELF bytes plus start/end/size agreement against /root/kh2fm-build/layout.tsv, before any source is written",
+ "verification_evidence": "round-25/r25_range_hashes.txt, r25_orig_disasm.txt",
+ "elf": "Public/tools/kh2-reference/SLPM_666.75 sha256 d869ce4b8edd61cb978c4ff9ede595fe4d7d7b21cbb96a145275217120d8bc87",
+ "picker": "round-25/pick_targets.py - round-24's picker; ATTEMPTED harvested automatically from every round-N/claim.json, primary's live claim re-read at run time, four standing exclusions (frame-pointer sd s8; movz/movn if-conversion; lq/sq quad copies; 3+ consecutive same-base stores). 740 candidates; first 16 taken.",
+ "ownership": "Worker B writes only sources under analysis/final-mix/recovery-experiments/ and reports under worker-coordination/worker-b/. Active sources, functions.tsv, layout.tsv, stage sync, full builds, manifests, receipts, Ghidra and HANDOFF.md remain primary's.",
+ "acceptance_baseline": 133,
+ "round25_result": {
+  "status": "COMPLETED ATTEMPT - 0 of 16 recovered, 10 attempted, 6 not started",
+  "exact": {},
+  "attempted": {
+   "001b43e0": {
+    "best_variant": "v02",
+    "measured": "104/80",
+    "reason": "target materialises the global page once into s0 (lui s0,0x1d5) and reloads only the value through it; GCC re-emits the lui per access. v03 was my own error - I dropped the assignment of the call result - and is not evidence."
+   },
+   "001b5a10": {
+    "best_variant": "v02",
+    "measured": "80/80",
+    "reason": "13 words. GCC folds the page offset into the pointer (addiu s0,t7,-29520) where the target keeps lui s0,page + lw off(s0). Same family as round-7 00308cd0 and round-11 0030a2d0."
+   },
+   "001bd8c8": {
+    "best_variant": "v02",
+    "measured": "80/80",
+    "reason": "16 words; the target uses an explicit mult for the index scale."
+   },
+   "00310130": "v01 68/76 (17), v02 84/76 (16). GCC merges the value the target holds live in s1 across the branch, giving a 16-byte frame against the target 48.",
+   "003102e0": "identical body to 00310130 except the middle callee; same result both variants.",
+   "001bdcd0": "72/80, 9 words - closest of the round. Nested beqz on two predicates.",
+   "0023d260": "84/80, 12 words. Three void calls then a byte + word store from two globals; body grew past the target.",
+   "002421e8": "64/80, 14 words. andi 1 then andi 0xff no-op pair not reproduced.",
+   "00103500": "68/80, 15 words. Set-if-absent loop with two globals."
+  },
+  "not_started": [
+   "0014db78",
+   "00192818",
+   "00192940",
+   "00194980"
+  ],
+  "negative_finding": "A global whose PAGE is materialised once into a callee-saved register and reloaded through it is not reproduced by either the plain `volatile` spelling (GCC re-emits the lui per access, 104/80) or the `volatile u32 *` address spelling (GCC folds the offset into the pointer). This is the same family as round-7 00308cd0 and round-11 0030a2d0 and should be added to the parked-class list.",
+  "picker_assessment": "Round 25 scored 0/3 attempted where round 24 scored 5/16 with the same four exclusions in place. Removing the known-bad classes does not make the remaining material reliably easier; the survivors are dominated by callee-saved page registers and explicit `mult`. A future batch should also exclude bodies that materialise a global page into s0/s1.",
+  "branch_idiom_class": "The remaining targets of BOTH rounds 25 and 26 are dominated by branch-structure idioms: beql/beqzl tail skips, a value held live across a branch, and multi-word stack arrays built then passed by address (00192818/00192940 do six lw + six sw). This class is not screened for and should be added to the picker."
+ }
+}

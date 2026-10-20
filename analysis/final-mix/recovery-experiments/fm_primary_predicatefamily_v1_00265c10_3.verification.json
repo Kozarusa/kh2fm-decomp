@@ -1,0 +1,18 @@
+{
+  "source_sha256": "6720b45fd9cda06dbcf477407c6e846b236e80c8da9abaedc7b3a3b3cfc6375a",
+  "source": "analysis/final-mix/recovery-experiments/fm_primary_predicatefamily_v1_00265c10_3.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "00265c10",
+      "symbol": "_Z13func_00265c10v",
+      "compiled_size": 60,
+      "target_size": 60,
+      "ghidra_body_size": 60,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "f0ffbd270000b0ff0800bfffdc5d090c000000002d8040005ee7040c2d2040008401028e0800bfdf410142380000b0df0100422c0800e0031000bd27",
+      "target_hex": "f0ffbd270800bfff0000b0ffdc5d090c000000002d8040005ee7040c2d2040008401028e0800bfdf410142380000b0df0100422c0800e0031000bd27"
+    }
+  ]
+}

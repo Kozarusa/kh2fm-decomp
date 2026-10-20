@@ -1,0 +1,23 @@
+00230878: compiled 76 bytes, target 76 bytes, exact=False
+Differing words: 11. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00230878: 848a0004  lh	t2,4(a0)                                      | 00230878: 848a0004  lh	t2,4(a0)
+!! 0023087c: 0000602d  move	t4,zero                                     | 0023087c: 0000582d  move	t3,zero
+!! 00230880: 3c0b0036  lui	t3,0x36                                      | 00230880: 3c090036  lui	t1,0x36
+!! 00230884: 8d6edce8  lw	t6,-8984(t3)   ; = D_0035dce8                 | 00230884: 8d2edce8  lw	t6,-8984(t1)   ; = D_0035dce8
+!! 00230888: 000c78c0  sll	t7,t4,0x3                                    | 00230888: 000b78c0  sll	t7,t3,0x3
+!! 0023088c: 258c0001  addiu	t4,t4,1                                    | 0023088c: 256b0001  addiu	t3,t3,1
+!! 00230890: 01ee6821  addu	t5,t7,t6                                    | 00230890: 01cf7021  addu	t6,t6,t7
+!! 00230894: 8daf0000  lw	t7,0(t5)                                      | 00230894: 8dcf0000  lw	t7,0(t6)
+   00230898: 11e00006  beqz	t7,0x2308b4                                 | 00230898: 11e00006  beqz	t7,2308b4 <func_00230878+0x3c>
+!! 0023089c: 298e0040  slti	t6,t4,64                                    | 0023089c: 296c0040  slti	t4,t3,64
+   002308a0: 85ef0004  lh	t7,4(t7)                                      | 002308a0: 85ef0004  lh	t7,4(t7)
+   002308a4: 15ea0003  bne	t7,t2,0x2308b4                               | 002308a4: 15ea0003  bne	t7,t2,2308b4 <func_00230878+0x3c>
+   002308a8: 00000000  nop                                              | 002308a8: 00000000  nop
+   002308ac: 03e00008  jr	ra                                            | 002308ac: 03e00008  jr	ra
+!! 002308b0: ada40004  sw	a0,4(t5)                                      | 002308b0: adc40004  sw	a0,4(t6)
+!! 002308b4: 55c0fff4  bnezl	t6,0x230888                                | 002308b4: 1580fff3  bnez	t4,230884 <func_00230878+0xc>
+!! 002308b8: 8d6edce8  lw	t6,-8984(t3)   ; = D_0035dce8                 | 002308b8: 00000000  nop
+   002308bc: 03e00008  jr	ra                                            | 002308bc: 03e00008  jr	ra
+   002308c0: 00000000  nop                                              | 002308c0: 00000000  nop

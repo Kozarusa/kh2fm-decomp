@@ -1,0 +1,18 @@
+{
+  "source_sha256": "0814386346cbc7101e781ca69aaf57125d7df7dec6612a7046f663b703f9e37e",
+  "source": "analysis/final-mix/recovery-experiments/queue-run-20261009/recovery-a/recovery_a_00223608_cd1b65aa_v1.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "00223608",
+      "symbol": "_Z13func_00223608jPj",
+      "compiled_size": 140,
+      "target_size": 140,
+      "ghidra_body_size": 140,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "d0ffbd272000b4ff2800bfff0000b0ff2da080000800b1ff1000b2ff2d80a0001800b3ffe04e0c0c0000a48c0400048ee04e0c0c2d9040000800048ee04e0c0c2d9840000c00048ee04e0c0c2d8840002d2880020000b0df2d3040022000b4df2d3860021000b2df2d4020021800b3df3700043c0800b1df2800bfdf2d484000680c8424f2f70b083000bd27",
+      "target_hex": "d0ffbd272800bfff0000b0ff0800b1ff1000b2ff2d80a0001800b3ff2000b4ff0000acc4e04e0c0c2da0800004000cc6e04e0c0c2d98400008000cc6e04e0c0c2d9040000c000cc6e04e0c0c2d8840002d2880020000b0df2d3060022000b4df2d3840021800b3df2d4020021000b2df3700043c0800b1df2800bfdf2d484000680c8424f2f70b083000bd27"
+    }
+  ]
+}

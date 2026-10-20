@@ -1,0 +1,18 @@
+{
+  "source_sha256": "5c2d7d9cf57486ce2a5cca5a6b40dfa62e03b9da3cd4f9782cdee46cd886d71f",
+  "source": "analysis/final-mix/recovery-experiments/fm_float_roles_01_0.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "001d37a0",
+      "symbol": "_Z13func_001d37a0jPjS_",
+      "compiled_size": 168,
+      "target_size": 112,
+      "ghidra_body_size": 112,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "0400ce8c42780e000100cd312200c0052568af0100008e44200080460400a0e437000f3c0000ce8cd6010b3c30e4e0c50800cd8c2800a0e437000f3c0c00cc8c34e4e0c50000aeac0800adac0c00acac1c00a4ac2c00a0e42000a4ac1000a0ac1400a0ac1800a4ac2400a0ac24ba6f8d0500e051d6010f3c3000e5ad3000a0ac0800e00324ba65ad24ba65ad20bae5ad0800e0033000a0ac00008d4420008046deff001000000046",
+      "target_hex": "0000a8780000887c37000f3c20008ce430e4ef25100080ac0000e0c5d6010d3c140080ac20baae2537000f3c280080e434e4ef2518008ce40000e1c51c008ce42c0081e4240080ac0400cf8d0500e0553000e4ad0400c4ad20baa4ad0800e003300080ac300080ac0800e0030400c4ad"
+    }
+  ]
+}

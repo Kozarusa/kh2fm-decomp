@@ -1,0 +1,36 @@
+0017a968: compiled 128 bytes, target 124 bytes, exact=False
+Differing words: 23. First difference at instruction 6 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0017a968: 27bdffe0  addiu	sp,sp,-32                                  | 0017a968: 27bdffe0  addiu	sp,sp,-32
+   0017a96c: 3c0d01c6  lui	t5,0x1c6                                     | 0017a96c: 3c0d01c6  lui	t5,0x1c6
+   0017a970: ffb00000  sd	s0,0(sp)                                      | 0017a970: ffb00000  sd	s0,0(sp)
+   0017a974: ffb10008  sd	s1,8(sp)                                      | 0017a974: ffb10008  sd	s1,8(sp)
+   0017a978: ffbf0010  sd	ra,16(sp)                                     | 0017a978: ffbf0010  sd	ra,16(sp)
+   0017a97c: 81af0500  lb	t7,1280(t5)   ; = D_01c60500                  | 0017a97c: 81af0500  lb	t7,1280(t5)   ; = D_01c60500
+!! 0017a980: 15e00016  bnez	t7,0x17a9dc                                 | 0017a980: 15e00017  bnez	t7,17a9e0 <func_0017a968+0x78>
+   0017a984: 0080802d  move	s0,a0                                       | 0017a984: 0080802d  move	s0,a0
+!! 0017a988: 44800000  mtc1	zero,$f0                                    | 0017a988: 3c1101c6  lui	s1,0x1c6
+!! 0017a98c: 3c1101c6  lui	s1,0x1c6                                     | 0017a98c: 240e0001  li	t6,1
+!! 0017a990: 262e0510  addiu	t6,s1,1296   ; = D_01c60510                | 0017a990: 262f0510  addiu	t7,s1,1296   ; = D_01c60510
+!! 0017a994: 240f0001  li	t7,1                                          | 0017a994: a1ae0500  sb	t6,1280(t5)   ; = D_01c60500
+!! 0017a998: e5c0000c  swc1	$f0,12(t6)                                  | 0017a998: ade00008  sw	zero,8(t7)
+   0017a99c: 3c040018  lui	a0,0x18                                      | 0017a99c: 3c040018  lui	a0,0x18
+!! 0017a9a0: a1af0500  sb	t7,1280(t5)   ; = D_01c60500                  | 0017a9a0: ade0000c  sw	zero,12(t7)
+   0017a9a4: 2484bef8  addiu	a0,a0,-16648   ; = D_0017bef8              | 0017a9a4: 2484bef8  addiu	a0,a0,-16648   ; = D_0017bef8
+!! 0017a9a8: e6200510  swc1	$f0,1296(s1)   ; = D_01c60510               | 0017a9a8: ae200510  sw	zero,1296(s1)   ; = D_01c60510
+!! 0017a9ac: e5c00004  swc1	$f0,4(t6)                                   | 0017a9ac: 0c0bf462  jal	2fd188 <func_002fd188>
+!! 0017a9b0: 0c0bf462  jal	0x2fd188                                     | 0017a9b0: ade00004  sw	zero,4(t7)
+!! 0017a9b4: e5c00008  swc1	$f0,8(t6)                                   | 0017a9b4: 262f0510  addiu	t7,s1,1296   ; = D_01c60510
+!! 0017a9b8: 262f0510  addiu	t7,s1,1296   ; = D_01c60510                | 0017a9b8: 120f0004  beq	s0,t7,17a9cc <func_0017a968+0x64>
+!! 0017a9bc: 79e80000  lq	t0,0(t7)                                      | 0017a9bc: 0200102d  move	v0,s0
+!! 0017a9c0: 7e080000  sq	t0,0(s0)                                      | 0017a9c0: 79e80000  lq	t0,0(t7)
+!! 0017a9c4: 0200102d  move	v0,s0                                       | 0017a9c4: 7e080000  sq	t0,0(s0)
+!! 0017a9c8: dfb10008  ld	s1,8(sp)                                      | 0017a9c8: 0200102d  move	v0,s0
+!! 0017a9cc: dfb00000  ld	s0,0(sp)                                      | 0017a9cc: dfb10008  ld	s1,8(sp)
+!! 0017a9d0: dfbf0010  ld	ra,16(sp)                                     | 0017a9d0: dfb00000  ld	s0,0(sp)
+!! 0017a9d4: 03e00008  jr	ra                                            | 0017a9d4: dfbf0010  ld	ra,16(sp)
+!! 0017a9d8: 27bd0020  addiu	sp,sp,32                                   | 0017a9d8: 03e00008  jr	ra
+!! 0017a9dc: 1000fff6  b	0x17a9b8                                       | 0017a9dc: 27bd0020  addiu	sp,sp,32
+!! 0017a9e0: 3c1101c6  lui	s1,0x1c6                                     | 0017a9e0: 1000fff4  b	17a9b4 <func_0017a968+0x4c>
+!!                                                                      | 0017a9e4: 3c1101c6  lui	s1,0x1c6

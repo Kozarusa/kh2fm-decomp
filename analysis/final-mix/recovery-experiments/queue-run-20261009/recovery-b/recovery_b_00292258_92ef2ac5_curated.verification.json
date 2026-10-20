@@ -1,0 +1,18 @@
+{
+  "source_sha256": "5d8e69a7d8837a497dce56331defda7b253c848f8fbecb6cc8bbf0e89eed72c5",
+  "source": "analysis/final-mix/recovery-experiments/queue-run-20261009/recovery-b/recovery_b_00292258_92ef2ac5_curated.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "00292258",
+      "symbol": "_Z13func_00292258yPiyyi",
+      "compiled_size": 136,
+      "target_size": 136,
+      "ghidra_body_size": 136,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "d0ffbd272000b4ff0000b0ff0800b1ff2da0a0001800b3ff2d28c0002800bfff2d88e0001000b2ff2d98000134490a0c2d8080002d9040002d20000234490a0c2d2820028c016f962d20000206004e9206004d902378ee010000b0df2178ed010800b1df00008fae1800b3df06004592060046901000b2df2000b4df2800bfdf48490a083000bd27",
+      "target_hex": "d0ffbd272000b4ff0000b0ff0800b1ff2da0a0001800b3ff2d28c0002800bfff2d88e0001000b2ff2d98000134490a0c2d8080002d9040002d20000234490a0c2d2820028c016f962d20000206004e9206004d902378ee010000b0df2178ed010800b1df00008fae1800b3df06004592060046901000b2df2000b4df2800bfdf48490a083000bd27"
+    }
+  ]
+}

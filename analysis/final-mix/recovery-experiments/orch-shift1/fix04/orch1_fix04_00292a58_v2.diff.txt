@@ -1,0 +1,18 @@
+00292a58: compiled 56 bytes, target 56 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00292a58: 27bdfff0  addiu	sp,sp,-16                                  | 00292a58: 27bdfff0  addiu	sp,sp,-16
+   00292a5c: 3c0f0036  lui	t7,0x36                                      | 00292a5c: 3c0f0036  lui	t7,0x36
+   00292a60: ffbf0000  sd	ra,0(sp)                                      | 00292a60: ffbf0000  sd	ra,0(sp)
+   00292a64: 3c0e0036  lui	t6,0x36                                      | 00292a64: 3c0e0036  lui	t6,0x36
+   00292a68: a5c0f4d8  sh	zero,-2856(t6)   ; = D_0035f4d8               | 00292a68: a5c0f4d8  sh	zero,-2856(t6)   ; = D_0035f4d8
+   00292a6c: 0000282d  move	a1,zero                                     | 00292a6c: 0000282d  move	a1,zero
+   00292a70: 8de6f4bc  lw	a2,-2884(t7)   ; = D_0035f4bc                 | 00292a70: 8de6f4bc  lw	a2,-2884(t7)   ; = D_0035f4bc
+   00292a74: 3c0f0036  lui	t7,0x36                                      | 00292a74: 3c0f0036  lui	t7,0x36
+   00292a78: 00063100  sll	a2,a2,0x4                                    | 00292a78: 00063100  sll	a2,a2,0x4
+   00292a7c: 0c0bf786  jal	0x2fde18                                     | 00292a7c: 0c0bf786  jal	2fde18 <func_002fde18>
+   00292a80: 8de4f4d4  lw	a0,-2860(t7)   ; = D_0035f4d4                 | 00292a80: 8de4f4d4  lw	a0,-2860(t7)   ; = D_0035f4d4
+   00292a84: dfbf0000  ld	ra,0(sp)                                      | 00292a84: dfbf0000  ld	ra,0(sp)
+   00292a88: 080a4a66  j	0x292998                                       | 00292a88: 080a4a66  j	292998 <func_00292998>
+   00292a8c: 27bd0010  addiu	sp,sp,16                                   | 00292a8c: 27bd0010  addiu	sp,sp,16

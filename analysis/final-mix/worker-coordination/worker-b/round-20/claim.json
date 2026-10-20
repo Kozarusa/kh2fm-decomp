@@ -1,0 +1,128 @@
+{
+ "round": 20,
+ "worker": "worker-b",
+ "ownership": "isolated recovery batch; worker B writes only its own claim/report/status files and isolated candidate sources under analysis/final-mix/recovery-experiments. Primary owns active sources, functions.tsv, layout.tsv, stage sync, full builds, manifests, receipts, Ghidra and HANDOFF.md.",
+ "selection": {
+  "picker": "round-20/pick_targets.py",
+  "criteria": "registered-but-unclaimed ranges absent from every worker-B round 1-19 claim; framed body opening with addiu sp,sp,-N and saving ra; no branch; 20-120 bytes; integer only",
+  "attempts_excluded": 324,
+  "candidates_after_screening": 927
+ },
+ "compiler_use": "No change to the shared stage, compiler flags or the reference executable. All compilation goes through Public/tools/kh2-audit/probe_fm_source.py on isolated candidate sources only.",
+ "original_elf_sha256": "d869ce4b8edd61cb978c4ff9ede595fe4d7d7b21cbb96a145275217120d8bc87",
+ "claimed_addresses": [
+  {
+   "address": "002b4fb8",
+   "size": 64
+  },
+  {
+   "address": "002b6b84",
+   "size": 64
+  },
+  {
+   "address": "002b6bc4",
+   "size": 64
+  },
+  {
+   "address": "002b6c04",
+   "size": 64
+  },
+  {
+   "address": "002b7078",
+   "size": 64
+  },
+  {
+   "address": "002b7108",
+   "size": 64
+  },
+  {
+   "address": "002b78ec",
+   "size": 64
+  },
+  {
+   "address": "002b7e34",
+   "size": 64
+  },
+  {
+   "address": "002b7ebc",
+   "size": 64
+  },
+  {
+   "address": "002b7efc",
+   "size": 64
+  },
+  {
+   "address": "002b7fbc",
+   "size": 64
+  },
+  {
+   "address": "002b7ffc",
+   "size": 64
+  },
+  {
+   "address": "002b803c",
+   "size": 64
+  },
+  {
+   "address": "002b8374",
+   "size": 64
+  },
+  {
+   "address": "002b9a38",
+   "size": 64
+  },
+  {
+   "address": "002b9a78",
+   "size": 64
+  }
+ ],
+ "verification_method": "r20_dump_orig.py re-reads the original ELF, checks the whole-file sha256, verifies each range sha256 and its start/size against /root/kh2fm-build/layout.tsv, and disassembles with the pinned ee-objdump in kh2-local/ps2-compiler:3.2-ee-040921-objdiff.",
+ "intake": "not yet verified",
+ "round20_result": {
+  "summary": "0 of 16 claimed ranges recovered. All 16 fail on a confirmed build-flag difference: the original was compiled with a frame pointer, the probe harness compiles without one.",
+  "exact": {},
+  "unresolved": [
+   {
+    "addresses": [
+     "002b6b84",
+     "002b6bc4",
+     "002b6c04",
+     "002b7078",
+     "002b7108",
+     "002b78ec",
+     "002b7e34",
+     "002b7ebc",
+     "002b7efc",
+     "002b7fbc",
+     "002b7ffc",
+     "002b803c",
+     "002b8374",
+     "002b9a38",
+     "002b9a78"
+    ],
+    "best": "v02",
+    "measured": "40/64, 15 differing words",
+    "reason": "GCC 3.2 omits the frame pointer. v02 forces the spill the target has (sw a0,0(sp) / lw a2,0(sp) matches sw a0,0(fp) / lw a2,0(fp) in purpose and position) but addresses the frame through sp and emits no sd s8 / move s8,sp / move sp,s8 / ld s8.",
+    "diagnosis": "The original build used -fno-omit-frame-pointer for these translation units. Worker B cannot set compiler flags, so this class is closed as a build-wide flag difference rather than a per-function spelling problem.",
+    "attempts": [
+     "v01 named non-volatile local (GCC discarded it and tail-called, 32/64)",
+     "v02 volatile local, forcing a genuine spill (40/64)"
+    ]
+   },
+   {
+    "address": "002b4fb8",
+    "best": "v02",
+    "measured": "64/64, 9 differing words",
+    "reason": "Two separate faults. The target materialises move v0,zero before the first test so both branch paths converge on one exit; GCC folds the two branch targets into a single beqz. And GCC rewrites the trailing call into a tail call (j 0x28acc8) despite the trailing asm, so the target's real jal followed by ld ra is not reproduced."
+   }
+  ],
+  "compiler_level_findings": [
+   "FRAME POINTER, now confirmed with 19 members: 002b99a0 (r7), 002b6ab8 (r8), 002b81ec and 002b8214 (r10), and the fifteen-member func_002b6708 wrapper family above. v02 on the family reproduces the target's spill exactly and differs only in addressing the frame through sp instead of fp, which is direct evidence that the original object files were built with -fno-omit-frame-pointer. This is the largest and best-evidenced remaining class.",
+   "The spurious andi t7,t7,0xffff after an lhu feeding a shift (seven members, round 19).",
+   "GCC normalises base+offset into the lui immediate (001c5f38).",
+   "A body load's address-materialising lui is never scheduled into the prologue region (round 14 family).",
+   "The $v0-vs-$t7 scratch choice; the jalr $v0 vtable dispatch; prologue sink of a vtable-pointer store; frameless sibling-call thunks."
+  ],
+  "picker_note": "16 targets claimed but the batch reduced to two distinct shapes: a fifteen-member byte-regular wrapper family and one singleton. Checking for byte-identical duplicates before writing sources collapses a batch to a handful of compilations and would have made round 20 one probe rather than thirty-two."
+ }
+}

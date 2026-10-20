@@ -1,0 +1,36 @@
+0021ead0: compiled 124 bytes, target 128 bytes, exact=False
+Differing words: 31. First difference at instruction 0 (0-based).
+
+ORIGINAL                                                                | COMPILED
+!! 0021ead0: 00057882  srl	t7,a1,0x2                                    | 0021ead0: 24af4000  addiu	t7,a1,16384
+   0021ead4: 3c0e0036  lui	t6,0x36                                      | 0021ead4: 3c0e0036  lui	t6,0x36
+!! 0021ead8: 25ce9a20  addiu	t6,t6,-26080   ; = D_00359a20              | 0021ead8: 000f7882  srl	t7,t7,0x2
+!! 0021eadc: 31ef3ffc  andi	t7,t7,0x3ffc                                | 0021eadc: 25ce9a20  addiu	t6,t6,-26080   ; = D_00359a20
+!! 0021eae0: 01ee7821  addu	t7,t7,t6                                    | 0021eae0: 31ef3ffc  andi	t7,t7,0x3ffc
+!! 0021eae4: 24a54000  addiu	a1,a1,16384                                | 0021eae4: 00052882  srl	a1,a1,0x2
+!! 0021eae8: c5e20000  lwc1	$f2,0(t7)                                   | 0021eae8: 01ee7821  addu	t7,t7,t6
+!! 0021eaec: 00052882  srl	a1,a1,0x2                                    | 0021eaec: 30a53ffc  andi	a1,a1,0x3ffc
+!! 0021eaf0: 30a53ffc  andi	a1,a1,0x3ffc                                | 0021eaf0: c5e20000  lwc1	$f2,0(t7)
+!! 0021eaf4: 3c0f0037  lui	t7,0x37                                      | 0021eaf4: 00ae2821  addu	a1,a1,t6
+!! 0021eaf8: 46001047  neg.s	$f1,$f2                                    | 0021eaf8: c4a10000  lwc1	$f1,0(a1)
+!! 0021eafc: 00ae2821  addu	a1,a1,t6                                    | 0021eafc: 3c0f0037  lui	t7,0x37
+!! 0021eb00: 25ef0b50  addiu	t7,t7,2896   ; = D_00370b50                | 0021eb00: c5e30b50  lwc1	$f3,2896(t7)   ; = D_00370b50
+!! 0021eb04: c4a00000  lwc1	$f0,0(a1)                                   | 0021eb04: 46000807  neg.s	$f0,$f1
+!! 0021eb08: c5e30000  lwc1	$f3,0(t7)                                   | 0021eb08: e4810004  swc1	$f1,4(a0)
+!! 0021eb0c: e4820004  swc1	$f2,4(a0)                                   | 0021eb0c: e483003c  swc1	$f3,60(a0)
+!! 0021eb10: e483003c  swc1	$f3,60(a0)                                  | 0021eb10: e4800010  swc1	$f0,16(a0)
+!! 0021eb14: e4810010  swc1	$f1,16(a0)                                  | 0021eb14: e4820014  swc1	$f2,20(a0)
+!! 0021eb18: e4800014  swc1	$f0,20(a0)                                  | 0021eb18: e4820000  swc1	$f2,0(a0)
+!! 0021eb1c: e4800000  swc1	$f0,0(a0)                                   | 0021eb1c: ac800020  sw	zero,32(a0)
+!! 0021eb20: ac800020  sw	zero,32(a0)                                   | 0021eb20: ac800030  sw	zero,48(a0)
+!! 0021eb24: ac800030  sw	zero,48(a0)                                   | 0021eb24: ac800024  sw	zero,36(a0)
+!! 0021eb28: ac800024  sw	zero,36(a0)                                   | 0021eb28: ac800034  sw	zero,52(a0)
+!! 0021eb2c: ac800034  sw	zero,52(a0)                                   | 0021eb2c: ac800008  sw	zero,8(a0)
+!! 0021eb30: ac800008  sw	zero,8(a0)                                    | 0021eb30: ac800018  sw	zero,24(a0)
+!! 0021eb34: ac800018  sw	zero,24(a0)                                   | 0021eb34: e4830028  swc1	$f3,40(a0)
+!! 0021eb38: e4830028  swc1	$f3,40(a0)                                  | 0021eb38: ac800038  sw	zero,56(a0)
+!! 0021eb3c: ac800038  sw	zero,56(a0)                                   | 0021eb3c: ac80000c  sw	zero,12(a0)
+!! 0021eb40: ac80000c  sw	zero,12(a0)                                   | 0021eb40: ac80001c  sw	zero,28(a0)
+!! 0021eb44: ac80001c  sw	zero,28(a0)                                   | 0021eb44: 03e00008  jr	ra
+!! 0021eb48: 03e00008  jr	ra                                            | 0021eb48: ac80002c  sw	zero,44(a0)
+!! 0021eb4c: ac80002c  sw	zero,44(a0)                                   | 

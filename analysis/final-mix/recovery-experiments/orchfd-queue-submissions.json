@@ -1,0 +1,9 @@
+[
+  {
+    "address": "002b6ab8",
+    "owner": "orch1-nm36",
+    "metadata": "{\"address\": \"002b6ab8\", \"end\": \"002b6adc\", \"bytes\": 36, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [], \"best_proposal\": {\"proof\": \"analysis/final-mix/recovery-experiments/fm_worker_b_round8_002b6ab8_v01.verification.json\", \"source\": \"analysis/final-mix/recovery-experiments/fm_worker_b_round8_002b6ab8_v01.cpp\", \"compiled_bytes\": 20, \"target_bytes\": 36, \"different_words\": 8}}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\orch-shift1\\\\nm36\\\\orch1_nm36_002b6ab8_v8.cpp\", \"source_sha256\": \"0ad5907c26a42969a2c7d795b7e2092fb9b9da37f0467e4dc8b23237b569625e\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\orch-shift1\\\\nm36\\\\orch1_nm36_002b6ab8_v8.verification.json\", \"proof_sha256\": \"313c56760fd39492a1821415c8e48e62d97f37a9061a777eb13ec731a8fd32c5\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_orchfd_recovered_002b6ab8.cpp"
+  }
+]

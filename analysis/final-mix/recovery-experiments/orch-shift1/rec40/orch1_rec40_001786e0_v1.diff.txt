@@ -1,0 +1,33 @@
+001786e0: compiled 108 bytes, target 116 bytes, exact=False
+Differing words: 22. First difference at instruction 7 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001786e0: 27bdffd0  addiu	sp,sp,-48                                  | 001786e0: 27bdffd0  addiu	sp,sp,-48
+   001786e4: ffb00010  sd	s0,16(sp)                                     | 001786e4: ffb00010  sd	s0,16(sp)
+   001786e8: ffb10018  sd	s1,24(sp)                                     | 001786e8: ffb10018  sd	s1,24(sp)
+   001786ec: ffbf0020  sd	ra,32(sp)                                     | 001786ec: ffbf0020  sd	ra,32(sp)
+   001786f0: 24900010  addiu	s0,a0,16                                   | 001786f0: 24900010  addiu	s0,a0,16
+   001786f4: 0080882d  move	s1,a0                                       | 001786f4: 0080882d  move	s1,a0
+   001786f8: 4be0006c  vsub.wxyz	vf1,vf0,vf0                            | 001786f8: 4be0006c  vsub.wxyz	vf1,vf0,vf0
+!! 001786fc: fa010000  sqc2	vf1,0(s0)                                   | 001786fc: 0c0b3aec  jal	2cebb0 <func_002cebb0>
+!! 00178700: 0c0b3aec  jal	0x2cebb0                                     | 00178700: fa010000  sqc2	vf1,0(s0)
+!! 00178704: 00000000  nop                                              | 00178704: 1040000c  beqz	v0,178738 <func_001786e0+0x58>
+!! 00178708: 1040000d  beqz	v0,0x178740                                 | 00178708: 03a0202d  move	a0,sp
+!! 0017870c: 03a0202d  move	a0,sp                                       | 0017870c: 3c0f0036  lui	t7,0x36
+!! 00178710: 3c0f0036  lui	t7,0x36                                      | 00178710: 8e260b38  lw	a2,2872(s1)
+!! 00178714: 8e260b38  lw	a2,2872(s1)                                   | 00178714: 8ded1f60  lw	t5,8032(t7)   ; = D_00361f60
+!! 00178718: 8ded1f60  lw	t5,8032(t7)   ; = D_00361f60                  | 00178718: 24c60030  addiu	a2,a2,48
+!! 0017871c: 24c60030  addiu	a2,a2,48                                   | 0017871c: 8daf0000  lw	t7,0(t5)
+!! 00178720: 8daf0000  lw	t7,0(t5)                                      | 00178720: 8dee0024  lw	t6,36(t7)
+!! 00178724: 8dee0024  lw	t6,36(t7)                                     | 00178724: 01c0f809  jalr	t6
+!! 00178728: 01c0f809  jalr	t6                                          | 00178728: 01a0282d  move	a1,t5
+!! 0017872c: 01a0282d  move	a1,t5                                       | 0017872c: 121d0002  beq	s0,sp,178738 <func_001786e0+0x58>
+!! 00178730: 521d0004  beql	s0,sp,0x178744                              | 00178730: 7baf0000  lq	t7,0(sp)
+!! 00178734: dfb00010  ld	s0,16(sp)                                     | 00178734: 7e2f0010  sq	t7,16(s1)
+!! 00178738: 7ba80000  lq	t0,0(sp)                                      | 00178738: dfb00010  ld	s0,16(sp)
+!! 0017873c: 7e080000  sq	t0,0(s0)                                      | 0017873c: dfb10018  ld	s1,24(sp)
+!! 00178740: dfb00010  ld	s0,16(sp)                                     | 00178740: dfbf0020  ld	ra,32(sp)
+!! 00178744: dfb10018  ld	s1,24(sp)                                     | 00178744: 03e00008  jr	ra
+!! 00178748: dfbf0020  ld	ra,32(sp)                                     | 00178748: 27bd0030  addiu	sp,sp,48
+!! 0017874c: 03e00008  jr	ra                                            | 
+!! 00178750: 27bd0030  addiu	sp,sp,48                                   | 

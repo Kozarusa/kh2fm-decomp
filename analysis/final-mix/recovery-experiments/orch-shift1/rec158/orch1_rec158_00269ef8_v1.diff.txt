@@ -1,0 +1,28 @@
+00269ef8: compiled 96 bytes, target 96 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00269ef8: 27bdfff0  addiu	sp,sp,-16                                  | 00269ef8: 27bdfff0  addiu	sp,sp,-16
+   00269efc: ffb00000  sd	s0,0(sp)                                      | 00269efc: ffb00000  sd	s0,0(sp)
+   00269f00: ffbf0008  sd	ra,8(sp)                                      | 00269f00: ffbf0008  sd	ra,8(sp)
+   00269f04: 0c095e78  jal	0x2579e0                                     | 00269f04: 0c095e78  jal	2579e0 <func_002579e0>
+   00269f08: 3c100036  lui	s0,0x36                                      | 00269f08: 3c100036  lui	s0,0x36
+   00269f0c: 0c0a2f96  jal	0x28be58                                     | 00269f0c: 0c0a2f96  jal	28be58 <func_0028be58>
+   00269f10: 8e04f04c  lw	a0,-4020(s0)   ; = D_0035f04c                 | 00269f10: 8e04f04c  lw	a0,-4020(s0)   ; = D_0035f04c
+   00269f14: 50400004  beqzl	v0,0x269f28                                | 00269f14: 50400004  beqzl	v0,269f28 <func_00269ef8+0x30>
+   00269f18: 3c100036  lui	s0,0x36                                      | 00269f18: 3c100036  lui	s0,0x36
+   00269f1c: 0c0a2f86  jal	0x28be18                                     | 00269f1c: 0c0a2f86  jal	28be18 <func_0028be18>
+   00269f20: 8e04f04c  lw	a0,-4020(s0)   ; = D_0035f04c                 | 00269f20: 8e04f04c  lw	a0,-4020(s0)   ; = D_0035f04c
+   00269f24: 3c100036  lui	s0,0x36                                      | 00269f24: 3c100036  lui	s0,0x36
+   00269f28: 0c0a2b32  jal	0x28acc8                                     | 00269f28: 0c0a2b32  jal	28acc8 <func_0028acc8>
+   00269f2c: 8e04f01c  lw	a0,-4068(s0)   ; = D_0035f01c                 | 00269f2c: 8e04f01c  lw	a0,-4068(s0)   ; = D_0035f01c
+   00269f30: 50400006  beqzl	v0,0x269f4c                                | 00269f30: 50400006  beqzl	v0,269f4c <func_00269ef8+0x54>
+   00269f34: dfb00000  ld	s0,0(sp)                                      | 00269f34: dfb00000  ld	s0,0(sp)
+   00269f38: 8e04f01c  lw	a0,-4068(s0)                                  | 00269f38: 8e04f01c  lw	a0,-4068(s0)
+   00269f3c: dfbf0008  ld	ra,8(sp)                                      | 00269f3c: dfbf0008  ld	ra,8(sp)
+   00269f40: dfb00000  ld	s0,0(sp)                                      | 00269f40: dfb00000  ld	s0,0(sp)
+   00269f44: 080a2af8  j	0x28abe0                                       | 00269f44: 080a2af8  j	28abe0 <func_0028abe0>
+   00269f48: 27bd0010  addiu	sp,sp,16                                   | 00269f48: 27bd0010  addiu	sp,sp,16
+   00269f4c: dfbf0008  ld	ra,8(sp)                                      | 00269f4c: dfbf0008  ld	ra,8(sp)
+   00269f50: 03e00008  jr	ra                                            | 00269f50: 03e00008  jr	ra
+   00269f54: 27bd0010  addiu	sp,sp,16                                   | 00269f54: 27bd0010  addiu	sp,sp,16

@@ -1,0 +1,14 @@
+{
+  "probe_source": "analysis/final-mix/recovery-experiments/fm_primary_allocatorstores_v5_001024b0_1.cpp",
+  "probe_source_sha256": "f4a43195328c4547fee1d9f3f5ead9630bf0203f60fb49f9682a73f117be5606",
+  "probe_proof_sha256": "b3dac312ba31b15007f4c347cdd4d94cd7cdde97dc02a94ab6be5fd1e300ae47",
+  "curated_source": "analysis/final-mix/recovery-experiments/fm_primary_allocatorfinish_recovered.cpp",
+  "curated_source_sha256": "f772cdb67029caacfd05e4affea970517c593639fd06a1a90312a43b33fb00ba",
+  "selected_addresses": [
+    "001024b0"
+  ],
+  "exclusion_receipt": null,
+  "limitations": [
+    "Curated source still requires a new probe, registration and full build."
+  ]
+}

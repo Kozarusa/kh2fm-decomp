@@ -1,0 +1,23 @@
+[
+  {
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_workerthree_recovered_0028af90.cpp",
+    "exit_code": 0,
+    "log": "analysis/final-mix/recovery-experiments/fm_primary_workerthree_recovered_0028af90.probe.log",
+    "functions": 1,
+    "exact": 1
+  },
+  {
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_workerthree_recovered_002d5c20.cpp",
+    "exit_code": 0,
+    "log": "analysis/final-mix/recovery-experiments/fm_primary_workerthree_recovered_002d5c20.probe.log",
+    "functions": 1,
+    "exact": 1
+  },
+  {
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_workerthree_recovered_002f8870.cpp",
+    "exit_code": 0,
+    "log": "analysis/final-mix/recovery-experiments/fm_primary_workerthree_recovered_002f8870.probe.log",
+    "functions": 1,
+    "exact": 1
+  }
+]

@@ -1,0 +1,25 @@
+002aa450: compiled 84 bytes, target 84 bytes, exact=False
+Differing words: 4. First difference at instruction 13 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   002aa450: 27bdfff0  addiu	sp,sp,-16                                  | 002aa450: 27bdfff0  addiu	sp,sp,-16
+   002aa454: ffb00000  sd	s0,0(sp)                                      | 002aa454: ffb00000  sd	s0,0(sp)
+   002aa458: ffbf0008  sd	ra,8(sp)                                      | 002aa458: ffbf0008  sd	ra,8(sp)
+   002aa45c: 0c0aa75a  jal	0x2a9d68                                     | 002aa45c: 0c0aa75a  jal	2a9d68 <func_002a9d68>
+   002aa460: 0080802d  move	s0,a0                                       | 002aa460: 0080802d  move	s0,a0
+   002aa464: 00107942  srl	t7,s0,0x5                                    | 002aa464: 00107942  srl	t7,s0,0x5
+   002aa468: 2442013c  addiu	v0,v0,316                                  | 002aa468: 2442013c  addiu	v0,v0,316
+   002aa46c: 000f7880  sll	t7,t7,0x2                                    | 002aa46c: 000f7880  sll	t7,t7,0x2
+   002aa470: 3210001f  andi	s0,s0,0x1f                                  | 002aa470: 3210001f  andi	s0,s0,0x1f
+   002aa474: 01e26021  addu	t4,t7,v0                                    | 002aa474: 01e26021  addu	t4,t7,v0
+   002aa478: 8d8e0000  lw	t6,0(t4)                                      | 002aa478: 8d8e0000  lw	t6,0(t4)
+   002aa47c: 240f0001  li	t7,1                                          | 002aa47c: 240f0001  li	t7,1
+   002aa480: 020f7804  sllv	t7,t7,s0                                    | 002aa480: 020f7804  sllv	t7,t7,s0
+!! 002aa484: 01cf6825  or	t5,t6,t7                                      | 002aa484: 01cf6824  and	t5,t6,t7
+!! 002aa488: 01cf7024  and	t6,t6,t7                                     | 002aa488: 01cf7025  or	t6,t6,t7
+!! 002aa48c: 51c00001  beqzl	t6,0x2aa494                                | 002aa48c: 51a00001  beqzl	t5,2aa494 <func_002aa450+0x44>
+!! 002aa490: ad8d0000  sw	t5,0(t4)                                      | 002aa490: ad8e0000  sw	t6,0(t4)
+   002aa494: dfb00000  ld	s0,0(sp)                                      | 002aa494: dfb00000  ld	s0,0(sp)
+   002aa498: dfbf0008  ld	ra,8(sp)                                      | 002aa498: dfbf0008  ld	ra,8(sp)
+   002aa49c: 03e00008  jr	ra                                            | 002aa49c: 03e00008  jr	ra
+   002aa4a0: 27bd0010  addiu	sp,sp,16                                   | 002aa4a0: 27bd0010  addiu	sp,sp,16

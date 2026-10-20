@@ -1,0 +1,36 @@
+00273678: compiled 128 bytes, target 128 bytes, exact=False
+Differing words: 6. First difference at instruction 23 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00273678: 27bdffe0  addiu	sp,sp,-32                                  | 00273678: 27bdffe0  addiu	sp,sp,-32
+   0027367c: 3c0f0036  lui	t7,0x36                                      | 0027367c: 3c0f0036  lui	t7,0x36
+   00273680: ffb00000  sd	s0,0(sp)                                      | 00273680: ffb00000  sd	s0,0(sp)
+   00273684: ffb10008  sd	s1,8(sp)                                      | 00273684: ffb10008  sd	s1,8(sp)
+   00273688: ffbf0010  sd	ra,16(sp)                                     | 00273688: ffbf0010  sd	ra,16(sp)
+   0027368c: 0000882d  move	s1,zero                                     | 0027368c: 0000882d  move	s1,zero
+   00273690: 0c0a2c10  jal	0x28b040                                     | 00273690: 0c0a2c10  jal	28b040 <func_0028b040>
+   00273694: 8de4f01c  lw	a0,-4068(t7)   ; = D_0035f01c                 | 00273694: 8de4f01c  lw	a0,-4068(t7)   ; = D_0035f01c
+   00273698: 1040000a  beqz	v0,0x2736c4                                 | 00273698: 1040000a  beqz	v0,2736c4 <func_00273678+0x4c>
+   0027369c: 0040802d  move	s0,v0                                       | 0027369c: 0040802d  move	s0,v0
+   002736a0: 3c0f0036  lui	t7,0x36                                      | 002736a0: 3c0f0036  lui	t7,0x36
+   002736a4: 0c0a07c8  jal	0x281f20                                     | 002736a4: 0c0a07c8  jal	281f20 <func_00281f20>
+   002736a8: 8de4f014  lw	a0,-4076(t7)   ; = D_0035f014                 | 002736a8: 8de4f014  lw	a0,-4076(t7)   ; = D_0035f014
+   002736ac: 240f0006  li	t7,6                                          | 002736ac: 240f0006  li	t7,6
+   002736b0: 020f7818  mult	t7,s0,t7                                    | 002736b0: 020f7818  mult	t7,s0,t7
+   002736b4: 004f1021  addu	v0,v0,t7                                    | 002736b4: 004f1021  addu	v0,v0,t7
+   002736b8: 0c068e08  jal	0x1a3820                                     | 002736b8: 0c068e08  jal	1a3820 <func_001a3820>
+   002736bc: 9444fffa  lhu	a0,-6(v0)                                    | 002736bc: 9444fffa  lhu	a0,-6(v0)
+   002736c0: 0040882d  move	s1,v0                                       | 002736c0: 0040882d  move	s1,v0
+   002736c4: 0c095c28  jal	0x2570a0                                     | 002736c4: 0c095c28  jal	2570a0 <func_002570a0>
+   002736c8: 2404001a  li	a0,26                                         | 002736c8: 2404001a  li	a0,26
+   002736cc: 0c04163a  jal	0x1058e8                                     | 002736cc: 0c04163a  jal	1058e8 <func_001058e8>
+   002736d0: 0040802d  move	s0,v0                                       | 002736d0: 0040802d  move	s0,v0
+!! 002736d4: 00107840  sll	t7,s0,0x1                                    | 002736d4: 00108040  sll	s0,s0,0x1
+!! 002736d8: dfbf0010  ld	ra,16(sp)                                     | 002736d8: 02028021  addu	s0,s0,v0
+!! 002736dc: 01e27821  addu	t7,t7,v0                                    | 002736dc: dfbf0010  ld	ra,16(sp)
+!! 002736e0: dfb00000  ld	s0,0(sp)                                      | 002736e0: 261036f0  addiu	s0,s0,14064
+!! 002736e4: 25ef36f0  addiu	t7,t7,14064                                | 002736e4: a6110008  sh	s1,8(s0)
+!! 002736e8: a5f10008  sh	s1,8(t7)                                      | 002736e8: dfb00000  ld	s0,0(sp)
+   002736ec: dfb10008  ld	s1,8(sp)                                      | 002736ec: dfb10008  ld	s1,8(sp)
+   002736f0: 03e00008  jr	ra                                            | 002736f0: 03e00008  jr	ra
+   002736f4: 27bd0020  addiu	sp,sp,32                                   | 002736f4: 27bd0020  addiu	sp,sp,32

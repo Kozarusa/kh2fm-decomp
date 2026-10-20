@@ -1,0 +1,28 @@
+001e35f0: compiled 96 bytes, target 96 bytes, exact=False
+Differing words: 2. First difference at instruction 4 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001e35f0: 908e00a8  lbu	t6,168(a0)                                   | 001e35f0: 908e00a8  lbu	t6,168(a0)
+   001e35f4: 2dcf000d  sltiu	t7,t6,13                                   | 001e35f4: 2dcf000d  sltiu	t7,t6,13
+   001e35f8: 11e00011  beqz	t7,0x1e3640                                 | 001e35f8: 11e00011  beqz	t7,1e3640 <func_001e35f0+0x50>
+   001e35fc: 000e7880  sll	t7,t6,0x2                                    | 001e35fc: 000e7880  sll	t7,t6,0x2
+!! 001e3600: 3c0e0037  lui	t6,0x37                                      | 001e3600: 3c0e0000  lui	t6,0x0
+!! 001e3604: 25ceeb28  addiu	t6,t6,-5336   ; = D_0036eb28               | 001e3604: 25ce0000  addiu	t6,t6,0   ; = D_00000000
+   001e3608: 01ee7821  addu	t7,t7,t6                                    | 001e3608: 01ee7821  addu	t7,t7,t6
+   001e360c: 8ded0000  lw	t5,0(t7)                                      | 001e360c: 8ded0000  lw	t5,0(t7)
+   001e3610: 01a00008  jr	t5                                            | 001e3610: 01a00008  jr	t5
+   001e3614: 00000000  nop                                              | 001e3614: 00000000  nop
+   001e3618: 03e00008  jr	ra                                            | 001e3618: 03e00008  jr	ra
+   001e361c: 24020001  li	v0,1                                          | 001e361c: 24020001  li	v0,1
+   001e3620: 03e00008  jr	ra                                            | 001e3620: 03e00008  jr	ra
+   001e3624: 24020002  li	v0,2                                          | 001e3624: 24020002  li	v0,2
+   001e3628: 03e00008  jr	ra                                            | 001e3628: 03e00008  jr	ra
+   001e362c: 24020003  li	v0,3                                          | 001e362c: 24020003  li	v0,3
+   001e3630: 03e00008  jr	ra                                            | 001e3630: 03e00008  jr	ra
+   001e3634: 24020004  li	v0,4                                          | 001e3634: 24020004  li	v0,4
+   001e3638: 03e00008  jr	ra                                            | 001e3638: 03e00008  jr	ra
+   001e363c: 24020005  li	v0,5                                          | 001e363c: 24020005  li	v0,5
+   001e3640: 03e00008  jr	ra                                            | 001e3640: 03e00008  jr	ra
+   001e3644: 0000102d  move	v0,zero                                     | 001e3644: 0000102d  move	v0,zero
+   001e3648: 03e00008  jr	ra                                            | 001e3648: 03e00008  jr	ra
+   001e364c: 24020006  li	v0,6                                          | 001e364c: 24020006  li	v0,6

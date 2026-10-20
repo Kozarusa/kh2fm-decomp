@@ -1,0 +1,5 @@
+#include "../common/types.h"
+struct GlobalState { u32 table, zero; u8 tag; u8 pad[3]; u32 reserved; u32 unknown; u32 enabled, count, clear1, clear2, clear3, limit; };
+extern "C" char D_0032b930;
+extern "C" volatile GlobalState D_0032b9a0;
+void func_00103080(s64 first,s64 second) { asm("" : "+r"(first)); if(second==0xffff && first==1) { volatile GlobalState* state=&D_0032b9a0; state->table=(u32)&D_0032b930; state->enabled=(u32)first; state->count=130000; state->limit=0x1000; state->tag=0x54; state->zero=0; state->clear1=0; state->clear2=0; state->clear3=0; } }

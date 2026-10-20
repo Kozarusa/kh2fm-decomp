@@ -1,0 +1,19 @@
+001bfd60: compiled 60 bytes, target 60 bytes, exact=False
+Differing words: 10. First difference at instruction 0 (0-based).
+
+ORIGINAL                                                                | COMPILED
+!! 001bfd60: 0000602d  move	t4,zero                                     | 001bfd60: 0000682d  move	t5,zero
+!! 001bfd64: 0000682d  move	t5,zero                                     | 001bfd64: 0000702d  move	t6,zero
+   001bfd68: 8c8f0000  lw	t7,0(a0)                                      | 001bfd68: 8c8f0000  lw	t7,0(a0)
+!! 001bfd6c: 0080102d  move	v0,a0                                       | 001bfd6c: 11e50009  beq	t7,a1,1bfd94 <func_001bfd60+0x34>
+!! 001bfd70: 11e50008  beq	t7,a1,0x1bfd94                               | 001bfd70: 0080102d  move	v0,a0
+!! 001bfd74: 39ee0000  xori	t6,t7,0x0                                   | 001bfd74: 39ec0000  xori	t4,t7,0x0
+!! 001bfd78: 008e600a  movz	t4,a0,t6                                    | 001bfd78: 008c680a  movz	t5,a0,t4
+!! 001bfd7c: 25ad0001  addiu	t5,t5,1                                    | 001bfd7c: 25ce0001  addiu	t6,t6,1
+!! 001bfd80: 29af0008  slti	t7,t5,8                                     | 001bfd80: 29cf0008  slti	t7,t6,8
+   001bfd84: 15e0fff8  bnez	t7,0x1bfd68                                 | 001bfd84: 15e0fff8  bnez	t7,1bfd68 <func_001bfd60+0x8>
+   001bfd88: 24840010  addiu	a0,a0,16                                   | 001bfd88: 24840010  addiu	a0,a0,16
+!! 001bfd8c: ad850000  sw	a1,0(t4)                                      | 001bfd8c: ada50000  sw	a1,0(t5)
+!! 001bfd90: 0180102d  move	v0,t4                                       | 001bfd90: 01a0102d  move	v0,t5
+   001bfd94: 03e00008  jr	ra                                            | 001bfd94: 03e00008  jr	ra
+   001bfd98: 00000000  nop                                              | 001bfd98: 00000000  nop

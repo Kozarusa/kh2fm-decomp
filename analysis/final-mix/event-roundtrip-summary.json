@@ -1,0 +1,12 @@
+{
+  "payload_count": 1043,
+  "status_counts": {
+    "byte_exact_roundtrip": 1043
+  },
+  "decoded_record_count": 169107,
+  "raw_record_count": 3,
+  "limitations": [
+    "Byte equality verifies XML reconstruction, not game behavior.",
+    "Unsupported record variants are explicit RawEvent entries; their semantics remain unresolved."
+  ]
+}

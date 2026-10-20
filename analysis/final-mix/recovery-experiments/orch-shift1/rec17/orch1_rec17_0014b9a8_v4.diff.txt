@@ -1,0 +1,33 @@
+0014b9a8: compiled 112 bytes, target 116 bytes, exact=False
+Differing words: 17. First difference at instruction 10 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0014b9a8: 27bdffe0  addiu	sp,sp,-32                                  | 0014b9a8: 27bdffe0  addiu	sp,sp,-32
+   0014b9ac: 24050020  li	a1,32                                         | 0014b9ac: 24050020  li	a1,32
+   0014b9b0: ffb00010  sd	s0,16(sp)                                     | 0014b9b0: ffb00010  sd	s0,16(sp)
+   0014b9b4: ffbf0018  sd	ra,24(sp)                                     | 0014b9b4: ffbf0018  sd	ra,24(sp)
+   0014b9b8: 0080802d  move	s0,a0                                       | 0014b9b8: 0080802d  move	s0,a0
+   0014b9bc: afa00008  sw	zero,8(sp)                                    | 0014b9bc: afa00008  sw	zero,8(sp)
+   0014b9c0: afa00004  sw	zero,4(sp)                                    | 0014b9c0: afa00004  sw	zero,4(sp)
+   0014b9c4: 03a0202d  move	a0,sp                                       | 0014b9c4: 03a0202d  move	a0,sp
+   0014b9c8: 0c06df9a  jal	0x1b7e68                                     | 0014b9c8: 0c06df9a  jal	1b7e68 <func_001b7e68>
+   0014b9cc: afa00000  sw	zero,0(sp)                                    | 0014b9cc: afa00000  sw	zero,0(sp)
+!! 0014b9d0: 03a0602d  move	t4,sp                                       | 0014b9d0: 240c0001  li	t4,1
+!! 0014b9d4: 240d0001  li	t5,1                                          | 0014b9d4: 8faf0008  lw	t7,8(sp)
+!! 0014b9d8: 8d8f0008  lw	t7,8(t4)                                      | 0014b9d8: 258cffff  addiu	t4,t4,-1
+!! 0014b9dc: 25adffff  addiu	t5,t5,-1                                   | 0014b9dc: 7a0e0000  lq	t6,0(s0)
+!! 0014b9e0: 7a0e0000  lq	t6,0(s0)                                      | 0014b9e0: 8fad0008  lw	t5,8(sp)
+   0014b9e4: 7dee0000  sq	t6,0(t7)                                      | 0014b9e4: 7dee0000  sq	t6,0(t7)
+   0014b9e8: 26100010  addiu	s0,s0,16                                   | 0014b9e8: 26100010  addiu	s0,s0,16
+!! 0014b9ec: 8d8f0008  lw	t7,8(t4)                                      | 0014b9ec: 25ad0010  addiu	t5,t5,16
+!! 0014b9f0: 25ef0010  addiu	t7,t7,16                                   | 0014b9f0: 0581fff8  bgez	t4,14b9d4 <func_0014b9a8+0x2c>
+!! 0014b9f4: 05a1fff8  bgez	t5,0x14b9d8                                 | 0014b9f4: afad0008  sw	t5,8(sp)
+!! 0014b9f8: ad8f0008  sw	t7,8(t4)                                      | 0014b9f8: 0c06e036  jal	1b80d8 <func_001b80d8>
+!! 0014b9fc: 0c06e036  jal	0x1b80d8                                     | 0014b9fc: 03a0202d  move	a0,sp
+!! 0014ba00: 03a0202d  move	a0,sp                                       | 0014ba00: 0c06dfcc  jal	1b7f30 <func_001b7f30>
+!! 0014ba04: 0c06dfcc  jal	0x1b7f30                                     | 0014ba04: 03a0202d  move	a0,sp
+!! 0014ba08: 03a0202d  move	a0,sp                                       | 0014ba08: dfb00010  ld	s0,16(sp)
+!! 0014ba0c: dfb00010  ld	s0,16(sp)                                     | 0014ba0c: dfbf0018  ld	ra,24(sp)
+!! 0014ba10: dfbf0018  ld	ra,24(sp)                                     | 0014ba10: 03e00008  jr	ra
+!! 0014ba14: 03e00008  jr	ra                                            | 0014ba14: 27bd0020  addiu	sp,sp,32
+!! 0014ba18: 27bd0020  addiu	sp,sp,32                                   | 

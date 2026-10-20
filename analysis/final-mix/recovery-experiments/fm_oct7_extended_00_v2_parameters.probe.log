@@ -1,0 +1,46 @@
+Exact probe matches: 1/59
+Detailed proof: analysis/final-mix/recovery-experiments/fm_oct7_extended_00_v2_parameters.verification.json
+recovery-experiments/fm_oct7_extended_00_v2_parameters/probe.cpp: In function 
+   `u32 func_00132ab0(int, int)':
+recovery-experiments/fm_oct7_extended_00_v2_parameters/probe.cpp:703: warning: cast
+   to pointer from integer of different size
+recovery-experiments/fm_oct7_extended_00_v2_parameters/probe.cpp:704: warning: cast
+   to pointer from integer of different size
+recovery-experiments/fm_oct7_extended_00_v2_parameters/probe.cpp: In function 
+   `void func_00134c00(int, unsigned int)':
+recovery-experiments/fm_oct7_extended_00_v2_parameters/probe.cpp:803: warning: cast
+   to pointer from integer of different size
+recovery-experiments/fm_oct7_extended_00_v2_parameters/probe.cpp: In function 
+   `void func_0015d2e8(unsigned int, unsigned int, unsigned int, unsigned int, 
+   unsigned int, char, unsigned char, char)':
+recovery-experiments/fm_oct7_extended_00_v2_parameters/probe.cpp:1681: warning: assignment
+    to `u32' from `float'
+recovery-experiments/fm_oct7_extended_00_v2_parameters/probe.cpp:1681: warning: argument
+    to `unsigned int' from `float'
+recovery-experiments/fm_oct7_extended_00_v2_parameters/probe.cpp: In function 
+   `u32 func_00165db8(int, u64*, u16*, unsigned int, unsigned int, unsigned 
+   char, u32*, unsigned int, int)':
+recovery-experiments/fm_oct7_extended_00_v2_parameters/probe.cpp:1723: warning: cast
+   to pointer from integer of different size
+recovery-experiments/fm_oct7_extended_00_v2_parameters/probe.cpp:1736: warning: invalid
+   conversion from `int*' to `unsigned int'
+recovery-experiments/fm_oct7_extended_00_v2_parameters/probe.cpp:1746: warning: invalid
+   conversion from `int*' to `unsigned int'
+recovery-experiments/fm_oct7_extended_00_v2_parameters/probe.cpp: In function 
+   `void func_00179cb8(unsigned int)':
+recovery-experiments/fm_oct7_extended_00_v2_parameters/probe.cpp:1854: warning: cast
+   to pointer from integer of different size
+recovery-experiments/fm_oct7_extended_00_v2_parameters/probe.cpp:1871: warning: cast
+   to pointer from integer of different size
+recovery-experiments/fm_oct7_extended_00_v2_parameters/probe.cpp:1875: warning: cast
+   to pointer from integer of different size
+recovery-experiments/fm_oct7_extended_00_v2_parameters/probe.cpp: In function 
+   `u32 func_0019dbc0(unsigned int, unsigned int, unsigned int, int, int)':
+recovery-experiments/fm_oct7_extended_00_v2_parameters/probe.cpp:2603: warning: cast
+   to pointer from integer of different size
+recovery-experiments/fm_oct7_extended_00_v2_parameters/probe.cpp:2609: warning: cast
+   to pointer from integer of different size
+recovery-experiments/fm_oct7_extended_00_v2_parameters/probe.cpp: In function 
+   `void func_001beb00(int)':
+recovery-experiments/fm_oct7_extended_00_v2_parameters/probe.cpp:3195: warning: cast
+   to pointer from integer of different size

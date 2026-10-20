@@ -1,0 +1,22 @@
+{
+  "reason": "Grouped declarations omit two externally referenced function addresses from automatic alias collection.",
+  "original_registry_sha256": "d140ad30a277a56f5623ddd6de3554ceaa62c46b5939ec0f0fa3dd6efe6850d8",
+  "repaired_registry_sha256": "f24b9ac93f113728be88ce08f0d3e1b665b0cd69318b0fef976a37e03fddd27f",
+  "preserved_failure_sha256": "e26b456ca48ffeb219f2e0f41d97324ce2bac97884b4186d85af4dcef7bca5fa",
+  "aliases": [
+    {
+      "symbol": "func_00103100",
+      "original_address": "00103100",
+      "caller": "00103480",
+      "source_sha256": "faaf4fe8268710750decc54f2aa7663188193c905cd2f891473b43b810e8756c",
+      "independent_proof_sha256": "8d614ab29f73ded96b27a6082a17e724b8f04350cea220e14d54e6196e87d094"
+    },
+    {
+      "symbol": "func_00104a48",
+      "original_address": "00104a48",
+      "caller": "00104da0",
+      "source_sha256": "fd93879f832b1ce13b1719e2b8c2903575605eaa81e2dc65f25bdc5a28317fa9",
+      "independent_proof_sha256": "fcf03b516a52e6d24ca5c37589ed9f718dbc5b6fd8c5e97c8798af9b005042f8"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+Exact probe matches: 1/1
+Detailed proof: analysis/final-mix/recovery-experiments/queue-run-20261009/recovery-a/recovery_a_00224c20_053b6ad1_v1.verification.json
+recovery-experiments/recovery_a_00224c20_053b6ad1_v1/probe.cpp: In function 
+   `u32 func_00224c20()':
+recovery-experiments/recovery_a_00224c20_053b6ad1_v1/probe.cpp:18: warning: cast
+   from pointer to integer of different size
+recovery-experiments/recovery_a_00224c20_053b6ad1_v1/probe.cpp:22: warning: cast
+   from pointer to integer of different size
+recovery-experiments/recovery_a_00224c20_053b6ad1_v1/probe.cpp:26: warning: cast
+   from pointer to integer of different size
+recovery-experiments/recovery_a_00224c20_053b6ad1_v1/probe.cpp:30: warning: cast
+   from pointer to integer of different size
+recovery-experiments/recovery_a_00224c20_053b6ad1_v1/probe.cpp:34: warning: cast
+   from pointer to integer of different size

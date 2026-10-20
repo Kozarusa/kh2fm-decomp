@@ -1,0 +1,18 @@
+{
+  "source_sha256": "14b67a5b560162d0406ca3c3eee7fe767d0860e903dae58e82f82d7a128aa49b",
+  "source": "analysis/final-mix/recovery-experiments/eight-hour-20261011/eight_hour_00242980_v2_halfword_aliasing_2.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "00242980",
+      "symbol": "_Z13func_00242980P12WordHalfCellS0_",
+      "compiled_size": 64,
+      "target_size": 64,
+      "ghidra_body_size": 64,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "e0ffbd270000b0ff0800b1ff1000bfff2d8080003a16040c2d88a000a0414f841000bfdf00000faea2414e840000b0df00002eae0800b1df0800e0032000bd27",
+      "target_hex": "e0ffbd270000b0ff0800b1ff1000bfff2d8080003a16040c2d88a000a0414f841000bfdf00000faea2414e840000b0df00002eae0800b1df0800e0032000bd27"
+    }
+  ]
+}

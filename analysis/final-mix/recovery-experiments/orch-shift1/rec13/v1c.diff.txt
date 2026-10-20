@@ -1,0 +1,38 @@
+0013f050: compiled 136 bytes, target 128 bytes, exact=False
+Differing words: 16. First difference at instruction 16 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0013f050: 27bdfff0  addiu	sp,sp,-16                                  | 0013f050: 27bdfff0  addiu	sp,sp,-16
+   0013f054: ffbf0000  sd	ra,0(sp)                                      | 0013f054: ffbf0000  sd	ra,0(sp)
+   0013f058: 04810008  bgez	a0,0x13f07c                                 | 0013f058: 04810008  bgez	a0,13f07c <func_0013f050+0x2c>
+   0013f05c: 3c0e0035  lui	t6,0x35                                      | 0013f05c: 3c0e0035  lui	t6,0x35
+   0013f060: 3c0f7fff  lui	t7,0x7fff                                    | 0013f060: 3c0f7fff  lui	t7,0x7fff
+   0013f064: 35efffff  ori	t7,t7,0xffff                                 | 0013f064: 35efffff  ori	t7,t7,0xffff
+   0013f068: 008f7824  and	t7,a0,t7                                     | 0013f068: 008f7824  and	t7,a0,t7
+   0013f06c: adcf8704  sw	t7,-30972(t6)   ; = D_00348704                | 0013f06c: adcf8704  sw	t7,-30972(t6)   ; = D_00348704
+   0013f070: dfbf0000  ld	ra,0(sp)                                      | 0013f070: dfbf0000  ld	ra,0(sp)
+   0013f074: 03e00008  jr	ra                                            | 0013f074: 03e00008  jr	ra
+   0013f078: 27bd0010  addiu	sp,sp,16                                   | 0013f078: 27bd0010  addiu	sp,sp,16
+   0013f07c: 3c0f3fff  lui	t7,0x3fff                                    | 0013f07c: 3c0f3fff  lui	t7,0x3fff
+   0013f080: adc48704  sw	a0,-30972(t6)   ; = D_00348704                | 0013f080: adc48704  sw	a0,-30972(t6)   ; = D_00348704
+   0013f084: 35efffff  ori	t7,t7,0xffff                                 | 0013f084: 35efffff  ori	t7,t7,0xffff
+   0013f088: 008f2024  and	a0,a0,t7                                     | 0013f088: 008f2024  and	a0,a0,t7
+   0013f08c: 240e0001  li	t6,1                                          | 0013f08c: 240e0001  li	t6,1
+!! 0013f090: 108e000d  beq	a0,t6,0x13f0c8                               | 0013f090: 148e0003  bne	a0,t6,13f0a0 <func_0013f050+0x50>
+   0013f094: dfbf0000  ld	ra,0(sp)                                      | 0013f094: dfbf0000  ld	ra,0(sp)
+!! 0013f098: 10800009  beqz	a0,0x13f0c0                                 | 0013f098: 0804fc8c  j	13f230 <func_0013f230>
+!! 0013f09c: 240f0002  li	t7,2                                          | 0013f09c: 27bd0010  addiu	sp,sp,16
+!! 0013f0a0: 108f0005  beq	a0,t7,0x13f0b8                               | 0013f0a0: 14800004  bnez	a0,13f0b4 <func_0013f050+0x64>
+!! 0013f0a4: 240f0003  li	t7,3                                          | 0013f0a4: 240f0002  li	t7,2
+!! 0013f0a8: 148ffff1  bne	a0,t7,0x13f070                               | 0013f0a8: dfbf0000  ld	ra,0(sp)
+!! 0013f0ac: 00000000  nop                                              | 0013f0ac: 08057550  j	15d540 <func_0015d540>
+!! 0013f0b0: 0804fd26  j	0x13f498                                       | 0013f0b0: 27bd0010  addiu	sp,sp,16
+!! 0013f0b4: 27bd0010  addiu	sp,sp,16                                   | 0013f0b4: 148f0004  bne	a0,t7,13f0c8 <func_0013f050+0x78>
+!! 0013f0b8: 0804fcde  j	0x13f378                                       | 0013f0b8: 240f0003  li	t7,3
+!! 0013f0bc: 27bd0010  addiu	sp,sp,16                                   | 0013f0bc: dfbf0000  ld	ra,0(sp)
+!! 0013f0c0: 08057550  j	0x15d540                                       | 0013f0c0: 0804fcde  j	13f378 <func_0013f378>
+   0013f0c4: 27bd0010  addiu	sp,sp,16                                   | 0013f0c4: 27bd0010  addiu	sp,sp,16
+!! 0013f0c8: 0804fc8c  j	0x13f230                                       | 0013f0c8: 148fffea  bne	a0,t7,13f074 <func_0013f050+0x24>
+!! 0013f0cc: 27bd0010  addiu	sp,sp,16                                   | 0013f0cc: dfbf0000  ld	ra,0(sp)
+!!                                                                      | 0013f0d0: 0804fd26  j	13f498 <func_0013f498>
+!!                                                                      | 0013f0d4: 27bd0010  addiu	sp,sp,16

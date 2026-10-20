@@ -1,0 +1,19 @@
+001940b8: compiled 60 bytes, target 52 bytes, exact=False
+Differing words: 13. First difference at instruction 2 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001940b8: 46006b86  mov.s	$f14,$f13                                  | 001940b8: 46006b86  mov.s	$f14,$f13
+   001940bc: 27bdfff0  addiu	sp,sp,-16                                  | 001940bc: 27bdfff0  addiu	sp,sp,-16
+!! 001940c0: a0850680  sb	a1,1664(a0)                                   | 001940c0: ffbf0000  sd	ra,0(sp)
+!! 001940c4: 0080782d  move	t7,a0                                       | 001940c4: 30a500ff  andi	a1,a1,0xff
+!! 001940c8: ffbf0000  sd	ra,0(sp)                                      | 001940c8: 30c600ff  andi	a2,a2,0xff
+!! 001940cc: a1e60681  sb	a2,1665(t7)                                   | 001940cc: a0850680  sb	a1,1664(a0)
+!! 001940d0: 248408c0  addiu	a0,a0,2240                                 | 001940d0: 30e700ff  andi	a3,a3,0xff
+!! 001940d4: 46006346  mov.s	$f13,$f12                                  | 001940d4: a0860681  sb	a2,1665(a0)
+!! 001940d8: a1e70682  sb	a3,1666(t7)                                   | 001940d8: 46006346  mov.s	$f13,$f12
+!! 001940dc: dfbf0000  ld	ra,0(sp)                                      | 001940dc: a0870682  sb	a3,1666(a0)
+!! 001940e0: c5ec08c0  lwc1	$f12,2240(t7)                               | 001940e0: dfbf0000  ld	ra,0(sp)
+!! 001940e4: 0806b664  j	0x1ad990                                       | 001940e4: c48c08c0  lwc1	$f12,2240(a0)
+!! 001940e8: 27bd0010  addiu	sp,sp,16                                   | 001940e8: 248408c0  addiu	a0,a0,2240
+!!                                                                      | 001940ec: 0806b664  j	1ad990 <func_001ad990>
+!!                                                                      | 001940f0: 27bd0010  addiu	sp,sp,16

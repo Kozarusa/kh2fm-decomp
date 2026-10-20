@@ -1,0 +1,27 @@
+0023f5b8: compiled 84 bytes, target 92 bytes, exact=False
+Differing words: 18. First difference at instruction 3 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0023f5b8: 27bdffe0  addiu	sp,sp,-32                                  | 0023f5b8: 27bdffe0  addiu	sp,sp,-32
+   0023f5bc: ffb00000  sd	s0,0(sp)                                      | 0023f5bc: ffb00000  sd	s0,0(sp)
+   0023f5c0: ffb10008  sd	s1,8(sp)                                      | 0023f5c0: ffb10008  sd	s1,8(sp)
+!! 0023f5c4: ffb20010  sd	s2,16(sp)                                     | 0023f5c4: ffbf0010  sd	ra,16(sp)
+   0023f5c8: 00a0802d  move	s0,a1                                       | 0023f5c8: 00a0802d  move	s0,a1
+!! 0023f5cc: ffbf0018  sd	ra,24(sp)                                     | 0023f5cc: 0c04e75e  jal	139d78 <func_00139d78>
+!! 0023f5d0: 0c04e75e  jal	0x139d78                                     | 0023f5d0: 0080882d  move	s1,a0
+!! 0023f5d4: 0080882d  move	s1,a0                                       | 0023f5d4: 06020009  bltzl	s0,23f5fc <func_0023f5b8+0x44>
+!! 0023f5d8: 06020009  bltzl	s0,0x23f600                                | 0023f5d8: dfb00000  ld	s0,0(sp)
+!! 0023f5dc: dfb00000  ld	s0,0(sp)                                      | 0023f5dc: 8e2f0024  lw	t7,36(s1)
+!! 0023f5e0: 8e2f0024  lw	t7,36(s1)                                     | 0023f5e0: 520f0006  beql	s0,t7,23f5fc <func_0023f5b8+0x44>
+!! 0023f5e4: 520f0006  beql	s0,t7,0x23f600                              | 0023f5e4: dfb00000  ld	s0,0(sp)
+!! 0023f5e8: dfb00000  ld	s0,0(sp)                                      | 0023f5e8: 0c064812  jal	192048 <func_00192048>
+!! 0023f5ec: 0c064812  jal	0x192048                                     | 0023f5ec: 0200202d  move	a0,s0
+!! 0023f5f0: 0200202d  move	a0,s0                                       | 0023f5f0: ae300024  sw	s0,36(s1)
+   0023f5f4: ae220020  sw	v0,32(s1)                                     | 0023f5f4: ae220020  sw	v0,32(s1)
+!! 0023f5f8: ae300024  sw	s0,36(s1)                                     | 0023f5f8: dfb00000  ld	s0,0(sp)
+!! 0023f5fc: dfb00000  ld	s0,0(sp)                                      | 0023f5fc: dfb10008  ld	s1,8(sp)
+!! 0023f600: dfb10008  ld	s1,8(sp)                                      | 0023f600: dfbf0010  ld	ra,16(sp)
+!! 0023f604: dfb20010  ld	s2,16(sp)                                     | 0023f604: 03e00008  jr	ra
+!! 0023f608: dfbf0018  ld	ra,24(sp)                                     | 0023f608: 27bd0020  addiu	sp,sp,32
+!! 0023f60c: 03e00008  jr	ra                                            | 
+!! 0023f610: 27bd0020  addiu	sp,sp,32                                   | 

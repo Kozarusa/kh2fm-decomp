@@ -1,0 +1,12 @@
+Exact probe matches: 5/40
+Detailed proof: analysis/final-mix/recovery-experiments/fm_global_probes_v2_02_0.verification.json
+recovery-experiments/fm_global_probes_v2_02_0/probe.cpp: In function `void 
+   func_001e1df8(int)':
+recovery-experiments/fm_global_probes_v2_02_0/probe.cpp:221: warning: assignment
+    to `u32' from `f32'
+recovery-experiments/fm_global_probes_v2_02_0/probe.cpp:221: warning: argument 
+   to `unsigned int' from `f32'
+recovery-experiments/fm_global_probes_v2_02_0/probe.cpp: In function `void 
+   func_0022d7e8()':
+recovery-experiments/fm_global_probes_v2_02_0/probe.cpp:397: warning: invalid 
+   conversion from `s32*' to `u32*'

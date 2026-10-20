@@ -1,0 +1,14 @@
+{
+  "probe_source": "analysis/final-mix/recovery-experiments/fm_primary_fiveword_v1_00171a40.cpp",
+  "probe_source_sha256": "f8a7052652b568a450fc93dd20eb9ee70b67d4c06751bdd7c6b55415e73ed278",
+  "probe_proof_sha256": "a05f6e74061492175c9ca577ca1be79296d46e73faf829db7ef0a53f8d6153c9",
+  "curated_source": "analysis/final-mix/recovery-experiments/fm_primary_fiveword_recovered_00171a40.cpp",
+  "curated_source_sha256": "f8a7052652b568a450fc93dd20eb9ee70b67d4c06751bdd7c6b55415e73ed278",
+  "selected_addresses": [
+    "00171a40"
+  ],
+  "exclusion_receipt": null,
+  "limitations": [
+    "Curated source still requires a new probe, registration and full build."
+  ]
+}

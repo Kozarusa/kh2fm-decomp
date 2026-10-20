@@ -1,0 +1,20 @@
+0013d1d0: compiled 64 bytes, target 56 bytes, exact=False
+Differing words: 10. First difference at instruction 3 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0013d1d0: 27bdfff0  addiu	sp,sp,-16                                  | 0013d1d0: 27bdfff0  addiu	sp,sp,-16
+   0013d1d4: ffbf0000  sd	ra,0(sp)                                      | 0013d1d4: ffbf0000  sd	ra,0(sp)
+   0013d1d8: 8c8f029c  lw	t7,668(a0)                                    | 0013d1d8: 8c8f029c  lw	t7,668(a0)
+!! 0013d1dc: 11e00008  beqz	t7,0x13d200                                 | 0013d1dc: 11e00009  beqz	t7,13d204 <func_0013d1d0+0x34>
+   0013d1e0: dfbf0000  ld	ra,0(sp)                                      | 0013d1e0: dfbf0000  ld	ra,0(sp)
+   0013d1e4: 8def0020  lw	t7,32(t7)                                     | 0013d1e4: 8def0020  lw	t7,32(t7)
+   0013d1e8: 31ef0008  andi	t7,t7,0x8                                   | 0013d1e8: 31ef0008  andi	t7,t7,0x8
+!! 0013d1ec: 11e00004  beqz	t7,0x13d200                                 | 0013d1ec: 11e00006  beqz	t7,13d208 <func_0013d1d0+0x38>
+!! 0013d1f0: 24840104  addiu	a0,a0,260                                  | 0013d1f0: 0000102d  move	v0,zero
+!! 0013d1f4: 0804e566  j	0x139598                                       | 0013d1f4: dfbf0000  ld	ra,0(sp)
+!! 0013d1f8: 27bd0010  addiu	sp,sp,16                                   | 0013d1f8: 24840104  addiu	a0,a0,260
+!! 0013d1fc: 00000000  nop                                              | 0013d1fc: 0804e566  j	139598 <func_00139598>
+!! 0013d200: 03e00008  jr	ra                                            | 0013d200: 27bd0010  addiu	sp,sp,16
+!! 0013d204: 27bd0010  addiu	sp,sp,16                                   | 0013d204: 0000102d  move	v0,zero
+!!                                                                      | 0013d208: 03e00008  jr	ra
+!!                                                                      | 0013d20c: 27bd0010  addiu	sp,sp,16

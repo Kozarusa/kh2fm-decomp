@@ -1,0 +1,26 @@
+001bbb50: compiled 72 bytes, target 88 bytes, exact=False
+Differing words: 13. First difference at instruction 2 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001bbb50: 3c0f01d5  lui	t7,0x1d5                                     | 001bbb50: 3c0f01d5  lui	t7,0x1d5
+   001bbb54: 8def9320  lw	t7,-27872(t7)   ; = D_01d49320                | 001bbb54: 8def9320  lw	t7,-27872(t7)   ; = D_01d49320
+!! 001bbb58: 11e0000a  beqz	t7,0x1bbb84                                 | 001bbb58: 11e0000d  beqz	t7,1bbb90 <func_001bbb50+0x40>
+   001bbb5c: 0000102d  move	v0,zero                                     | 001bbb5c: 0000102d  move	v0,zero
+   001bbb60: 8def0008  lw	t7,8(t7)                                      | 001bbb60: 8def0008  lw	t7,8(t7)
+   001bbb64: 91ee0008  lbu	t6,8(t7)                                     | 001bbb64: 91ee0008  lbu	t6,8(t7)
+   001bbb68: 240f0019  li	t7,25                                         | 001bbb68: 240f0019  li	t7,25
+   001bbb6c: 11cf0007  beq	t6,t7,0x1bbb8c                               | 001bbb6c: 11cf0007  beq	t6,t7,1bbb8c <func_001bbb50+0x3c>
+   001bbb70: 29cd001a  slti	t5,t6,26                                    | 001bbb70: 29cd001a  slti	t5,t6,26
+!! 001bbb74: 11a00007  beqz	t5,0x1bbb94                                 | 001bbb74: 11a00003  beqz	t5,1bbb84 <func_001bbb50+0x34>
+!! 001bbb78: 240f0002  li	t7,2                                          | 001bbb78: 240f0020  li	t7,32
+!! 001bbb7c: 11cf0003  beq	t6,t7,0x1bbb8c                               | 001bbb7c: 0000102d  move	v0,zero
+!! 001bbb80: 00000000  nop                                              | 001bbb80: 240f0002  li	t7,2
+!! 001bbb84: 03e00008  jr	ra                                            | 001bbb84: 15cf0002  bne	t6,t7,1bbb90 <func_001bbb50+0x40>
+   001bbb88: 00000000  nop                                              | 001bbb88: 00000000  nop
+!! 001bbb8c: 03e00008  jr	ra                                            | 001bbb8c: 24020001  li	v0,1
+!! 001bbb90: 24020001  li	v0,1                                          | 001bbb90: 03e00008  jr	ra
+!! 001bbb94: 240f0020  li	t7,32                                         | 001bbb94: 00000000  nop
+!! 001bbb98: 55cffffa  bnel	t6,t7,0x1bbb84                              | 
+!! 001bbb9c: 0000102d  move	v0,zero                                     | 
+!! 001bbba0: 1000fffa  b	0x1bbb8c                                       | 
+!! 001bbba4: 00000000  nop                                              | 

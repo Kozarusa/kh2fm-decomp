@@ -1,0 +1,141 @@
+{
+  "source_sha256": "f63c5c78b4314c51316b88496308bd4c8a9d122c98d456d6ff2a4deb7fb6f939",
+  "superseded_failed_source_sha256": null,
+  "main_export_sha256": "aa24f5742f14453ebe408146889dcebdb4236a7b8bf0a7cab209cad2f2ec84f6",
+  "rows": [
+    {
+      "address": "00310560",
+      "size": 76,
+      "export_sha256": "866b269ec1b194a402e2952e5f28fbcc79a47d798159aaa90d79bcfada09e9f9"
+    },
+    {
+      "address": "003105b0",
+      "size": 108,
+      "export_sha256": "412fb8b0a4566898fb19df73cfe0747b13c7232f59a89b5c9ace989869374d62"
+    },
+    {
+      "address": "00310768",
+      "size": 124,
+      "export_sha256": "70625ab2a5e97e0d8439661416a082f635e328f12f93f23c5e88db2ed873769b"
+    },
+    {
+      "address": "00310900",
+      "size": 84,
+      "export_sha256": "d1f48aa10c71c2634115811da2818ea57580963ba1208d417069f86c929e6fce"
+    },
+    {
+      "address": "00313e80",
+      "size": 88,
+      "export_sha256": "ba9d2af3d82ad7cdbe410bddfb18e1634ab2931a14b42f12567283eba365cfd9"
+    },
+    {
+      "address": "00313ed8",
+      "size": 100,
+      "export_sha256": "7a681424b9af0c96b2792a6f44565f04b8ff538f38614e4835c79dab58159268"
+    },
+    {
+      "address": "00313f40",
+      "size": 88,
+      "export_sha256": "1e21130be2e5333bc569fbae2bc2fc0a6653c05dedd9b80a15f26fe4ff922a5d"
+    },
+    {
+      "address": "00314190",
+      "size": 84,
+      "export_sha256": "549b1a577810f3f19404a87148ebfd76032682493f52cde4f27c558719b62e3b"
+    },
+    {
+      "address": "00314480",
+      "size": 44,
+      "export_sha256": "13e4132d9d1f6de2e41d8f3199cecc26f8f3960f079e637ec549f38090b9035f"
+    },
+    {
+      "address": "003144b0",
+      "size": 84,
+      "export_sha256": "7faa80f285f8d5d71e290dbe6b2c4fc2d7ff414d269bc88eb65340370284ff09"
+    },
+    {
+      "address": "00314640",
+      "size": 84,
+      "export_sha256": "6a5e5ce9d284ec5f05633ea7d02d1d7aac3380d75f241948544b715a9617c07c"
+    },
+    {
+      "address": "00314b00",
+      "size": 56,
+      "export_sha256": "aac0682fc03cf34eab6d227f4525654ed1a38c76931ef2acb732ed082b4650ea"
+    },
+    {
+      "address": "00314b38",
+      "size": 84,
+      "export_sha256": "24d6714f7fc7996c05e23f656981a401e30b687e6317532a5e7f2e894bbe5a2f"
+    },
+    {
+      "address": "00314dd8",
+      "size": 108,
+      "export_sha256": "c4e08204262c47920e03cc4510980d5727eba1b93338c798778b06af0047c40a"
+    },
+    {
+      "address": "003160e0",
+      "size": 48,
+      "export_sha256": "e122ef5a66e705c3f19e619e36719b60d0ded70b78dff823095e932f7649b443"
+    },
+    {
+      "address": "00316d18",
+      "size": 76,
+      "export_sha256": "7922e06027855da84fc93f1def6ef934069b2e0ffff4bcd8591ffd20e5870929"
+    },
+    {
+      "address": "00316f70",
+      "size": 84,
+      "export_sha256": "5616fd316bae425f3356d6c518914c52a8955c4da4174246b2d1ca77276c71f2"
+    },
+    {
+      "address": "00319788",
+      "size": 36,
+      "export_sha256": "25d11c2bd3ecfa22dceccb145192272d421432c3a3a11bac80cf5d9a03fe4884"
+    },
+    {
+      "address": "0031bae0",
+      "size": 40,
+      "export_sha256": "6dcd3aa0fca1b33a9a8409fd059008aef8232b54c7419dc72edf60b38b3df9fd"
+    },
+    {
+      "address": "0031c068",
+      "size": 60,
+      "export_sha256": "4062185044b8b03099d406e37d59b677da751e5543bcd8e4406a16cd21c81040"
+    },
+    {
+      "address": "0031e208",
+      "size": 96,
+      "export_sha256": "2678ec462c68f20e0edb27fc5cc117096a7bcc083897278b654fea1429027b6c"
+    },
+    {
+      "address": "00321728",
+      "size": 104,
+      "export_sha256": "3e2922136c3242259b5d3150e35fa868c4aa11f024c67f589e80cc4e5483de78"
+    },
+    {
+      "address": "00321cb0",
+      "size": 52,
+      "export_sha256": "c072758fc4d97d06575d5c808b31be7b6fa51c79e63c279fbe7fda509d310a30"
+    },
+    {
+      "address": "00322ba8",
+      "size": 52,
+      "export_sha256": "acee6e50d2c9a864f009e2d0bb768b861114f1604b06cd34cafafdbf98995711"
+    },
+    {
+      "address": "00323af8",
+      "size": 88,
+      "export_sha256": "db29a0d8e8c4612f11e3b029ecf8fe44e498cc6994c0e54a11dfb4fcee20ea5e"
+    },
+    {
+      "address": "00324718",
+      "size": 52,
+      "export_sha256": "194e728aba040193e86839fb60a532dcdf926d3bce09bdab8b3c411a8a3b1b71"
+    }
+  ],
+  "limitations": [
+    "Variadic callee declarations are provisional; exact instruction gates decide acceptance.",
+    "A generated proposal is not a verified source recovery."
+  ]
+}

@@ -1,0 +1,22 @@
+001b6d88: compiled 72 bytes, target 72 bytes, exact=False
+Differing words: 3. First difference at instruction 4 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001b6d88: 240f0003  li	t7,3                                          | 001b6d88: 240f0003  li	t7,3
+   001b6d8c: 14af0009  bne	a1,t7,0x1b6db4                               | 001b6d8c: 14af0009  bne	a1,t7,1b6db4 <func_001b6d88+0x2c>
+   001b6d90: 240f0002  li	t7,2                                          | 001b6d90: 240f0002  li	t7,2
+   001b6d94: 908f0000  lbu	t7,0(a0)                                     | 001b6d94: 908f0000  lbu	t7,0(a0)
+!! 001b6d98: 25ee0001  addiu	t6,t7,1                                    | 001b6d98: 31ef00ff  andi	t7,t7,0xff
+!! 001b6d9c: 31ef00ff  andi	t7,t7,0xff                                  | 001b6d9c: 25ee0001  addiu	t6,t7,1
+!! 001b6da0: 2def0003  sltiu	t7,t7,3                                    | 001b6da0: 29ef0003  slti	t7,t7,3
+   001b6da4: 55e00003  bnezl	t7,0x1b6db4                                | 001b6da4: 55e00003  bnezl	t7,1b6db4 <func_001b6d88+0x2c>
+   001b6da8: 240f0002  li	t7,2                                          | 001b6da8: 240f0002  li	t7,2
+   001b6dac: 03e00008  jr	ra                                            | 001b6dac: 03e00008  jr	ra
+   001b6db0: a08e0000  sb	t6,0(a0)                                      | 001b6db0: a08e0000  sb	t6,0(a0)
+   001b6db4: 14af0004  bne	a1,t7,0x1b6dc8                               | 001b6db4: 14af0004  bne	a1,t7,1b6dc8 <func_001b6d88+0x40>
+   001b6db8: a0850000  sb	a1,0(a0)                                      | 001b6db8: a0850000  sb	a1,0(a0)
+   001b6dbc: 908f0003  lbu	t7,3(a0)                                     | 001b6dbc: 908f0003  lbu	t7,3(a0)
+   001b6dc0: 31ef00fe  andi	t7,t7,0xfe                                  | 001b6dc0: 31ef00fe  andi	t7,t7,0xfe
+   001b6dc4: a08f0003  sb	t7,3(a0)                                      | 001b6dc4: a08f0003  sb	t7,3(a0)
+   001b6dc8: 03e00008  jr	ra                                            | 001b6dc8: 03e00008  jr	ra
+   001b6dcc: 00000000  nop                                              | 001b6dcc: 00000000  nop

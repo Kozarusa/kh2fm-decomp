@@ -1,0 +1,18 @@
+{
+  "source_sha256": "a49b6a79c0d0d7b014b1c8d82d6219cecb1fc3ad3e71f731e49e053503b877e9",
+  "source": "analysis/final-mix/recovery-experiments/fm_primary_twowordnext_v1_002247e8.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "002247e8",
+      "symbol": "_Z13func_002247e8v",
+      "compiled_size": 60,
+      "target_size": 60,
+      "ghidra_body_size": 60,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "36000b3c36000f3c20deed8dd8da6e8d0800cd1136000c3cd4da8f8d0100ee250500ef290300e01100000000d4da8eadd8da6dad0800e00300000000",
+      "target_hex": "36000b3c36000f3c20deed8dd8da6e8d0800cd1136000c3cd4da8f8d0100ee250500ef290300e01100000000d4da8eadd8da6dad0800e00300000000"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+0022efb8: compiled 128 bytes, target 96 bytes, exact=False
+Differing words: 28. First difference at instruction 4 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0022efb8: 27bdfff0  addiu	sp,sp,-16                                  | 0022efb8: 27bdfff0  addiu	sp,sp,-16
+   0022efbc: ffb00000  sd	s0,0(sp)                                      | 0022efbc: ffb00000  sd	s0,0(sp)
+   0022efc0: ffbf0008  sd	ra,8(sp)                                      | 0022efc0: ffbf0008  sd	ra,8(sp)
+   0022efc4: 0080802d  move	s0,a0                                       | 0022efc4: 0080802d  move	s0,a0
+!! 0022efc8: 0c08a0bc  jal	0x2282f0                                     | 0022efc8: 94840004  lhu	a0,4(a0)
+!! 0022efcc: 84840004  lh	a0,4(a0)                                      | 0022efcc: 00042400  sll	a0,a0,0x10
+!! 0022efd0: 5440000e  bnezl	v0,0x22f00c                                | 0022efd0: 0c08a0bc  jal	2282f0 <func_002282f0>
+!! 0022efd4: dfb00000  ld	s0,0(sp)                                      | 0022efd4: 00042403  sra	a0,a0,0x10
+!! 0022efd8: 0c089f44  jal	0x227d10                                     | 0022efd8: 54400014  bnezl	v0,22f02c <func_0022efb8+0x74>
+!! 0022efdc: 8604000c  lh	a0,12(s0)                                     | 0022efdc: dfb00000  ld	s0,0(sp)
+!! 0022efe0: 860e0004  lh	t6,4(s0)                                      | 0022efe0: 0c089f44  jal	227d10 <func_00227d10>
+!! 0022efe4: ac4e000c  sw	t6,12(v0)                                     | 0022efe4: 8604000c  lh	a0,12(s0)
+!! 0022efe8: 860e000a  lh	t6,10(s0)                                     | 0022efe8: 960f0004  lhu	t7,4(s0)
+!! 0022efec: 860f0004  lh	t7,4(s0)                                      | 0022efec: 960d0004  lhu	t5,4(s0)
+!! 0022eff0: 01ee7821  addu	t7,t7,t6                                    | 0022eff0: 000f7c00  sll	t7,t7,0x10
+!! 0022eff4: ac4f0010  sw	t7,16(v0)                                     | 0022eff4: 000f7c03  sra	t7,t7,0x10
+!! 0022eff8: 920e0008  lbu	t6,8(s0)                                     | 0022eff8: 960e000a  lhu	t6,10(s0)
+!! 0022effc: a04e0014  sb	t6,20(v0)                                     | 0022effc: 000d6c00  sll	t5,t5,0x10
+!! 0022f000: 920f0009  lbu	t7,9(s0)                                     | 0022f000: 000d6c03  sra	t5,t5,0x10
+!! 0022f004: a04f0015  sb	t7,21(v0)                                     | 0022f004: ac4f000c  sw	t7,12(v0)
+!! 0022f008: dfb00000  ld	s0,0(sp)                                      | 0022f008: 000e7400  sll	t6,t6,0x10
+!! 0022f00c: dfbf0008  ld	ra,8(sp)                                      | 0022f00c: 000e7403  sra	t6,t6,0x10
+!! 0022f010: 03e00008  jr	ra                                            | 0022f010: 01ae6821  addu	t5,t5,t6
+!! 0022f014: 27bd0010  addiu	sp,sp,16                                   | 0022f014: ac4d0010  sw	t5,16(v0)
+!!                                                                      | 0022f018: 920f0008  lbu	t7,8(s0)
+!!                                                                      | 0022f01c: a04f0014  sb	t7,20(v0)
+!!                                                                      | 0022f020: 920e0009  lbu	t6,9(s0)
+!!                                                                      | 0022f024: a04e0015  sb	t6,21(v0)
+!!                                                                      | 0022f028: dfb00000  ld	s0,0(sp)
+!!                                                                      | 0022f02c: dfbf0008  ld	ra,8(sp)
+!!                                                                      | 0022f030: 03e00008  jr	ra
+!!                                                                      | 0022f034: 27bd0010  addiu	sp,sp,16

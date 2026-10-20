@@ -1,0 +1,20 @@
+00174518: compiled 64 bytes, target 64 bytes, exact=False
+Differing words: 3. First difference at instruction 6 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00174518: 27bdfff0  addiu	sp,sp,-16                                  | 00174518: 27bdfff0  addiu	sp,sp,-16
+   0017451c: ffb00000  sd	s0,0(sp)                                      | 0017451c: ffb00000  sd	s0,0(sp)
+   00174520: ffbf0008  sd	ra,8(sp)                                      | 00174520: ffbf0008  sd	ra,8(sp)
+   00174524: 0080802d  move	s0,a0                                       | 00174524: 0080802d  move	s0,a0
+   00174528: 8c850004  lw	a1,4(a0)                                      | 00174528: 8c850004  lw	a1,4(a0)
+   0017452c: 8c8f0000  lw	t7,0(a0)                                      | 0017452c: 8c8f0000  lw	t7,0(a0)
+!! 00174530: c48d0008  lwc1	$f13,8(a0)                                  | 00174530: c60d0008  lwc1	$f13,8(s0)
+   00174534: c60e000c  lwc1	$f14,12(s0)                                 | 00174534: c60e000c  lwc1	$f14,12(s0)
+!! 00174538: 8de40004  lw	a0,4(t7)                                      | 00174538: c4ac000c  lwc1	$f12,12(a1)
+   0017453c: 0c0611e0  jal	0x184780                                     | 0017453c: 0c0611e0  jal	184780 <func_00184780>
+!! 00174540: c4ac000c  lwc1	$f12,12(a1)                                 | 00174540: 8de40004  lw	a0,4(t7)
+   00174544: ae020000  sw	v0,0(s0)                                      | 00174544: ae020000  sw	v0,0(s0)
+   00174548: dfbf0008  ld	ra,8(sp)                                      | 00174548: dfbf0008  ld	ra,8(sp)
+   0017454c: dfb00000  ld	s0,0(sp)                                      | 0017454c: dfb00000  ld	s0,0(sp)
+   00174550: 03e00008  jr	ra                                            | 00174550: 03e00008  jr	ra
+   00174554: 27bd0010  addiu	sp,sp,16                                   | 00174554: 27bd0010  addiu	sp,sp,16

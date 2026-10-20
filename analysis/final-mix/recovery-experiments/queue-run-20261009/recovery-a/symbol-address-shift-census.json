@@ -1,0 +1,290 @@
+[
+  {
+    "address": "00160ac0",
+    "bytes": 76,
+    "different_words": 2,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round27_00160ac0_v01.cpp",
+    "hits": [
+      {
+        "compiled_offset": 40,
+        "target_offset": 28,
+        "compiled": "0x34e709e0",
+        "target": "0x24e709e0"
+      }
+    ]
+  },
+  {
+    "address": "00173518",
+    "bytes": 64,
+    "different_words": 4,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_02_0.cpp",
+    "hits": [
+      {
+        "compiled_offset": 20,
+        "target_offset": 12,
+        "compiled": "0x34c634b0",
+        "target": "0x24c634b0"
+      }
+    ]
+  },
+  {
+    "address": "0014a138",
+    "bytes": 76,
+    "different_words": 4,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round27_0014a138_v02.cpp",
+    "hits": [
+      {
+        "compiled_offset": 40,
+        "target_offset": 28,
+        "compiled": "0x34e7a0a0",
+        "target": "0x24e7a0a0"
+      }
+    ]
+  },
+  {
+    "address": "0031b070",
+    "bytes": 80,
+    "different_words": 4,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round26_0031b070_v02.cpp",
+    "hits": [
+      {
+        "compiled_offset": 16,
+        "target_offset": 16,
+        "compiled": "0x35ef8590",
+        "target": "0x25ef8590"
+      },
+      {
+        "compiled_offset": 24,
+        "target_offset": 24,
+        "compiled": "0x35ce7e60",
+        "target": "0x25ce7e60"
+      },
+      {
+        "compiled_offset": 56,
+        "target_offset": 56,
+        "compiled": "0x35ef7f98",
+        "target": "0x25ef7f98"
+      }
+    ]
+  },
+  {
+    "address": "00307fe0",
+    "bytes": 56,
+    "different_words": 5,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_width_all_14_1.cpp",
+    "hits": [
+      {
+        "compiled_offset": 32,
+        "target_offset": 28,
+        "compiled": "0x34847ee8",
+        "target": "0x24847ee8"
+      }
+    ]
+  },
+  {
+    "address": "001b6ab8",
+    "bytes": 84,
+    "different_words": 6,
+    "source": "analysis/final-mix/recovery-experiments/fm_return_variants_v2_06_0.cpp",
+    "hits": [
+      {
+        "compiled_offset": 28,
+        "target_offset": 36,
+        "compiled": "0x3484e020",
+        "target": "0x2484e020"
+      }
+    ]
+  },
+  {
+    "address": "001d5b78",
+    "bytes": 64,
+    "different_words": 8,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round19_001d5b78_v01.cpp",
+    "hits": [
+      {
+        "compiled_offset": 40,
+        "target_offset": 36,
+        "compiled": "0x350817a0",
+        "target": "0x250817a0"
+      }
+    ]
+  },
+  {
+    "address": "0016f470",
+    "bytes": 68,
+    "different_words": 8,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_02_0.cpp",
+    "hits": [
+      {
+        "compiled_offset": 44,
+        "target_offset": 44,
+        "compiled": "0x34a5c440",
+        "target": "0x24a5c440"
+      }
+    ]
+  },
+  {
+    "address": "001b84b8",
+    "bytes": 100,
+    "different_words": 8,
+    "source": "analysis/final-mix/recovery-experiments/fm_width_all_06_0.cpp",
+    "hits": [
+      {
+        "compiled_offset": 64,
+        "target_offset": 72,
+        "compiled": "0x34a58520",
+        "target": "0x24a58520"
+      }
+    ]
+  },
+  {
+    "address": "0020e548",
+    "bytes": 68,
+    "different_words": 9,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_08_1.cpp",
+    "hits": [
+      {
+        "compiled_offset": 28,
+        "target_offset": 36,
+        "compiled": "0x34840748",
+        "target": "0x24840748"
+      }
+    ]
+  },
+  {
+    "address": "00293350",
+    "bytes": 104,
+    "different_words": 9,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_11_0.cpp",
+    "hits": [
+      {
+        "compiled_offset": 56,
+        "target_offset": 52,
+        "compiled": "0x34e733b8",
+        "target": "0x24e733b8"
+      }
+    ]
+  },
+  {
+    "address": "0019ab30",
+    "bytes": 80,
+    "different_words": 12,
+    "source": "analysis/final-mix/recovery-experiments/fm_scalar_03.cpp",
+    "hits": [
+      {
+        "compiled_offset": 24,
+        "target_offset": 24,
+        "compiled": "0x3484f250",
+        "target": "0x2484f250"
+      }
+    ]
+  },
+  {
+    "address": "0015d730",
+    "bytes": 184,
+    "different_words": 8,
+    "source": "analysis/final-mix/recovery-experiments/fm_scalar_medium_00.cpp",
+    "hits": [
+      {
+        "compiled_offset": 52,
+        "target_offset": 52,
+        "compiled": "0x3484af40",
+        "target": "0x2484af40"
+      },
+      {
+        "compiled_offset": 52,
+        "target_offset": 152,
+        "compiled": "0x3484af40",
+        "target": "0x2484af40"
+      },
+      {
+        "compiled_offset": 88,
+        "target_offset": 88,
+        "compiled": "0x3484b0e0",
+        "target": "0x2484b0e0"
+      },
+      {
+        "compiled_offset": 88,
+        "target_offset": 120,
+        "compiled": "0x3484b0e0",
+        "target": "0x2484b0e0"
+      },
+      {
+        "compiled_offset": 120,
+        "target_offset": 88,
+        "compiled": "0x3484b0e0",
+        "target": "0x2484b0e0"
+      },
+      {
+        "compiled_offset": 120,
+        "target_offset": 120,
+        "compiled": "0x3484b0e0",
+        "target": "0x2484b0e0"
+      },
+      {
+        "compiled_offset": 152,
+        "target_offset": 52,
+        "compiled": "0x3484af40",
+        "target": "0x2484af40"
+      },
+      {
+        "compiled_offset": 152,
+        "target_offset": 152,
+        "compiled": "0x3484af40",
+        "target": "0x2484af40"
+      }
+    ]
+  },
+  {
+    "address": "00224c20",
+    "bytes": 208,
+    "different_words": 9,
+    "source": "analysis/final-mix/recovery-experiments/fm_scalar_medium_02.cpp",
+    "hits": [
+      {
+        "compiled_offset": 32,
+        "target_offset": 32,
+        "compiled": "0x34a50cd8",
+        "target": "0x24a50cd8"
+      },
+      {
+        "compiled_offset": 68,
+        "target_offset": 60,
+        "compiled": "0x34a50ce8",
+        "target": "0x24a50ce8"
+      },
+      {
+        "compiled_offset": 104,
+        "target_offset": 96,
+        "compiled": "0x34a50cf8",
+        "target": "0x24a50cf8"
+      },
+      {
+        "compiled_offset": 140,
+        "target_offset": 132,
+        "compiled": "0x34a50d08",
+        "target": "0x24a50d08"
+      },
+      {
+        "compiled_offset": 176,
+        "target_offset": 168,
+        "compiled": "0x34a50d18",
+        "target": "0x24a50d18"
+      }
+    ]
+  },
+  {
+    "address": "00152688",
+    "bytes": 144,
+    "different_words": 11,
+    "source": "analysis/final-mix/recovery-experiments/fm_return_variants_v2_01_0.cpp",
+    "hits": [
+      {
+        "compiled_offset": 64,
+        "target_offset": 56,
+        "compiled": "0x34a5b248",
+        "target": "0x24a5b248"
+      }
+    ]
+  }
+]

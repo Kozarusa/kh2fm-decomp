@@ -1,0 +1,31 @@
+002adf60: compiled 100 bytes, target 108 bytes, exact=False
+Differing words: 15. First difference at instruction 4 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   002adf60: 3c0f0036  lui	t7,0x36                                      | 002adf60: 3c0f0036  lui	t7,0x36
+   002adf64: 24020001  li	v0,1                                          | 002adf64: 24020001  li	v0,1
+   002adf68: 8deef620  lw	t6,-2528(t7)   ; = D_0035f620                 | 002adf68: 8deef620  lw	t6,-2528(t7)   ; = D_0035f620
+   002adf6c: 0000602d  move	t4,zero                                     | 002adf6c: 0000602d  move	t4,zero
+!! 002adf70: 240a0001  li	t2,1                                          | 002adf70: 24090001  li	t1,1
+!! 002adf74: 25cb0140  addiu	t3,t6,320                                  | 002adf74: 25ca0140  addiu	t2,t6,320
+   002adf78: 04800004  bltz	a0,0x2adf8c                                 | 002adf78: 04800004  bltz	a0,2adf8c <func_002adf60+0x2c>
+   002adf7c: 000c7942  srl	t7,t4,0x5                                    | 002adf7c: 000c7942  srl	t7,t4,0x5
+!! 002adf80: 548c000d  bnel	a0,t4,0x2adfb8                              | 002adf80: 548c000b  bnel	a0,t4,2adfb0 <func_002adf60+0x50>
+   002adf84: 258c0001  addiu	t4,t4,1                                    | 002adf84: 258c0001  addiu	t4,t4,1
+   002adf88: 000c7942  srl	t7,t4,0x5                                    | 002adf88: 000c7942  srl	t7,t4,0x5
+   002adf8c: 318d001f  andi	t5,t4,0x1f                                  | 002adf8c: 318d001f  andi	t5,t4,0x1f
+   002adf90: 000f7880  sll	t7,t7,0x2                                    | 002adf90: 000f7880  sll	t7,t7,0x2
+!! 002adf94: 01aa6804  sllv	t5,t2,t5                                    | 002adf94: 01a96804  sllv	t5,t1,t5
+!! 002adf98: 01eb7821  addu	t7,t7,t3                                    | 002adf98: 01ea7821  addu	t7,t7,t2
+   002adf9c: 8dee0000  lw	t6,0(t7)                                      | 002adf9c: 8dee0000  lw	t6,0(t7)
+   002adfa0: 01cd7024  and	t6,t6,t5                                     | 002adfa0: 01cd7024  and	t6,t6,t5
+!! 002adfa4: 55c00004  bnezl	t6,0x2adfb8                                | 002adfa4: 11c00005  beqz	t6,2adfbc <func_002adf60+0x5c>
+!! 002adfa8: 258c0001  addiu	t4,t4,1                                    | 002adfa8: 0000582d  move	t3,zero
+!! 002adfac: 03e00008  jr	ra                                            | 002adfac: 258c0001  addiu	t4,t4,1
+!! 002adfb0: 0000102d  move	v0,zero                                     | 002adfb0: 298f0004  slti	t7,t4,4
+!! 002adfb4: 00000000  nop                                              | 002adfb4: 15e0fff0  bnez	t7,2adf78 <func_002adf60+0x18>
+!! 002adfb8: 298f0004  slti	t7,t4,4                                     | 002adfb8: 0040582d  move	t3,v0
+!! 002adfbc: 15e0ffee  bnez	t7,0x2adf78                                 | 002adfbc: 03e00008  jr	ra
+!! 002adfc0: 00000000  nop                                              | 002adfc0: 0160102d  move	v0,t3
+!! 002adfc4: 03e00008  jr	ra                                            | 
+!! 002adfc8: 00000000  nop                                              | 

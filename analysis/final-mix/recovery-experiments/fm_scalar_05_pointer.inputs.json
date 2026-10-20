@@ -1,0 +1,17 @@
+{
+  "original_source": "analysis/final-mix/recovery-experiments/fm_scalar_05.cpp",
+  "original_source_sha256": "fb8eb80bdc694d9581df41e11f87208826d1559934e55de00432d783f7b2f291",
+  "original_proof_sha256": "6eb738608a92cb314bfca6d9138215136ea3dfe0259914a4efd5f9ccfd6c8fb8",
+  "variant_source_sha256": "20943df178d208fa640b0effe6cb0763c797f243d648ba0bd34b73b1f80c51e1",
+  "rows": [
+    {
+      "address": "001d7e78",
+      "changed_parameters": [
+        "param_1"
+      ]
+    }
+  ],
+  "limitations": [
+    "Parameter types are provisional; only exact compiler bytes can accept a variant."
+  ]
+}

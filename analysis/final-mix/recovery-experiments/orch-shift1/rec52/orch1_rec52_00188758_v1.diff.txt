@@ -1,0 +1,36 @@
+00188758: compiled 128 bytes, target 128 bytes, exact=False
+Differing words: 1. First difference at instruction 8 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00188758: 27bdffe0  addiu	sp,sp,-32                                  | 00188758: 27bdffe0  addiu	sp,sp,-32
+   0018875c: ffb00000  sd	s0,0(sp)                                      | 0018875c: ffb00000  sd	s0,0(sp)
+   00188760: ffb10008  sd	s1,8(sp)                                      | 00188760: ffb10008  sd	s1,8(sp)
+   00188764: ffbf0010  sd	ra,16(sp)                                     | 00188764: ffbf0010  sd	ra,16(sp)
+   00188768: 0080802d  move	s0,a0                                       | 00188768: 0080802d  move	s0,a0
+   0018876c: 8c8f008c  lw	t7,140(a0)                                    | 0018876c: 8c8f008c  lw	t7,140(a0)
+   00188770: 11e00013  beqz	t7,0x1887c0                                 | 00188770: 11e00013  beqz	t7,1887c0 <func_00188758+0x68>
+   00188774: 0000882d  move	s1,zero                                     | 00188774: 0000882d  move	s1,zero
+!! 00188778: 8c8f009c  lw	t7,156(a0)                                    | 00188778: 908f009c  lbu	t7,156(a0)
+   0018877c: 31ef0001  andi	t7,t7,0x1                                   | 0018877c: 31ef0001  andi	t7,t7,0x1
+   00188780: 31ef00ff  andi	t7,t7,0xff                                  | 00188780: 31ef00ff  andi	t7,t7,0xff
+   00188784: 15e0000f  bnez	t7,0x1887c4                                 | 00188784: 15e0000f  bnez	t7,1887c4 <func_00188758+0x6c>
+   00188788: 0220102d  move	v0,s1                                       | 00188788: 0220102d  move	v0,s1
+   0018878c: 0c061f88  jal	0x187e20                                     | 0018878c: 0c061f88  jal	187e20 <func_00187e20>
+   00188790: 00000000  nop                                              | 00188790: 00000000  nop
+   00188794: 1440000b  bnez	v0,0x1887c4                                 | 00188794: 1440000b  bnez	v0,1887c4 <func_00188758+0x6c>
+   00188798: 0220102d  move	v0,s1                                       | 00188798: 0220102d  move	v0,s1
+   0018879c: 8e0f0098  lw	t7,152(s0)                                    | 0018879c: 8e0f0098  lw	t7,152(s0)
+   001887a0: 29ef012c  slti	t7,t7,300                                   | 001887a0: 29ef012c  slti	t7,t7,300
+   001887a4: 51e00006  beqzl	t7,0x1887c0                                | 001887a4: 51e00006  beqzl	t7,1887c0 <func_00188758+0x68>
+   001887a8: 24110001  li	s1,1                                          | 001887a8: 24110001  li	s1,1
+   001887ac: 0c061f96  jal	0x187e58                                     | 001887ac: 0c061f96  jal	187e58 <func_00187e58>
+   001887b0: 0200202d  move	a0,s0                                       | 001887b0: 0200202d  move	a0,s0
+   001887b4: 14400003  bnez	v0,0x1887c4                                 | 001887b4: 14400003  bnez	v0,1887c4 <func_00188758+0x6c>
+   001887b8: 0220102d  move	v0,s1                                       | 001887b8: 0220102d  move	v0,s1
+   001887bc: 24110001  li	s1,1                                          | 001887bc: 24110001  li	s1,1
+   001887c0: 0220102d  move	v0,s1                                       | 001887c0: 0220102d  move	v0,s1
+   001887c4: dfb00000  ld	s0,0(sp)                                      | 001887c4: dfb00000  ld	s0,0(sp)
+   001887c8: dfb10008  ld	s1,8(sp)                                      | 001887c8: dfb10008  ld	s1,8(sp)
+   001887cc: dfbf0010  ld	ra,16(sp)                                     | 001887cc: dfbf0010  ld	ra,16(sp)
+   001887d0: 03e00008  jr	ra                                            | 001887d0: 03e00008  jr	ra
+   001887d4: 27bd0020  addiu	sp,sp,32                                   | 001887d4: 27bd0020  addiu	sp,sp,32

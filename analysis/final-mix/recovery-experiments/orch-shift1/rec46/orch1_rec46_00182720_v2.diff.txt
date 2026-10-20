@@ -1,0 +1,19 @@
+00182720: compiled 60 bytes, target 60 bytes, exact=False
+Differing words: 6. First difference at instruction 6 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00182720: 340fffff  li	t7,0xffff                                     | 00182720: 340fffff  li	t7,0xffff
+   00182724: 14af000b  bne	a1,t7,0x182754                               | 00182724: 14af000b  bne	a1,t7,182754 <func_00182720+0x34>
+   00182728: 240f0001  li	t7,1                                          | 00182728: 240f0001  li	t7,1
+   0018272c: 148f0009  bne	a0,t7,0x182754                               | 0018272c: 148f0009  bne	a0,t7,182754 <func_00182720+0x34>
+   00182730: 3c0f01c6  lui	t7,0x1c6                                     | 00182730: 3c0f01c6  lui	t7,0x1c6
+   00182734: 25ee0534  addiu	t6,t7,1332   ; = D_01c60534                | 00182734: 25ee0534  addiu	t6,t7,1332   ; = D_01c60534
+!! 00182738: a5c50004  sh	a1,4(t6)                                      | 00182738: a5c50002  sh	a1,2(t6)
+   0018273c: 25cdfffc  addiu	t5,t6,-4                                   | 0018273c: 25cdfffc  addiu	t5,t6,-4
+!! 00182740: a1a50002  sb	a1,2(t5)                                      | 00182740: a5e50534  sh	a1,1332(t7)   ; = D_01c60534
+!! 00182744: a5e50534  sh	a1,1332(t7)   ; = D_01c60534                  | 00182744: a1a50001  sb	a1,1(t5)
+!! 00182748: a1a50001  sb	a1,1(t5)                                      | 00182748: a5c50004  sh	a1,4(t6)
+!! 0018274c: a1c5fffc  sb	a1,-4(t6)                                     | 0018274c: a1a50002  sb	a1,2(t5)
+!! 00182750: a5c50002  sh	a1,2(t6)                                      | 00182750: a1c5fffc  sb	a1,-4(t6)
+   00182754: 03e00008  jr	ra                                            | 00182754: 03e00008  jr	ra
+   00182758: 00000000  nop                                              | 00182758: 00000000  nop

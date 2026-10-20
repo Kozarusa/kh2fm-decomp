@@ -1,0 +1,61 @@
+{
+  "wp_dir": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\orch-shift1\\rec100",
+  "start": "2026-10-13T04:39:53Z",
+  "reviewed": [
+    "001c7950",
+    "001ca950",
+    "001c9db0",
+    "001c9b90",
+    "001c9c00"
+  ],
+  "blocked_reports": [
+    "001c9958-BLOCKED.md"
+  ],
+  "results": [
+    {
+      "level": "PASS",
+      "address": "001c7950",
+      "detail": "76 bytes exact; source orch1_rec100_001c7950_v7.cpp"
+    },
+    {
+      "level": "FAIL",
+      "address": "001ca950",
+      "detail": "raw Ghidra names in source: ['param_1', 'param_2', 'param_3', 'param_4', 'param_5', 'param_6']"
+    },
+    {
+      "level": "PASS",
+      "address": "001c9db0",
+      "detail": "72 bytes exact; source orch1_rec100_001c9db0_v2.cpp"
+    },
+    {
+      "level": "PASS",
+      "address": "001c9b90",
+      "detail": "112 bytes exact; source orch1_rec100_001c9b90_v1.cpp"
+    },
+    {
+      "level": "PASS",
+      "address": "001c9c00",
+      "detail": "120 bytes exact; source orch1_rec100_001c9c00_v1.cpp"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/ORCHESTRATION.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/PROGRESS.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/briefs/rec100.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/briefs/rec99.md"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+00188430: compiled 64 bytes, target 60 bytes, exact=False
+Differing words: 9. First difference at instruction 4 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00188430: 27bdfff0  addiu	sp,sp,-16                                  | 00188430: 27bdfff0  addiu	sp,sp,-16
+   00188434: 3c0e01c6  lui	t6,0x1c6                                     | 00188434: 3c0e01c6  lui	t6,0x1c6
+   00188438: ffbf0000  sd	ra,0(sp)                                      | 00188438: ffbf0000  sd	ra,0(sp)
+   0018843c: 25cf0bd0  addiu	t7,t6,3024   ; = D_01c60bd0                | 0018843c: 25cf0bd0  addiu	t7,t6,3024   ; = D_01c60bd0
+!! 00188440: 00c0602d  move	t4,a2                                       | 00188440: 00a0582d  move	t3,a1
+!! 00188444: 24070003  li	a3,3                                          | 00188444: 00c0602d  move	t4,a2
+   00188448: 8c8d0088  lw	t5,136(a0)                                    | 00188448: 8c8d0088  lw	t5,136(a0)
+   0018844c: 01e0302d  move	a2,t7                                       | 0018844c: 01e0302d  move	a2,t7
+   00188450: dfbf0000  ld	ra,0(sp)                                      | 00188450: dfbf0000  ld	ra,0(sp)
+!! 00188454: adcd0bd0  sw	t5,3024(t6)   ; = D_01c60bd0                  | 00188454: 24050007  li	a1,7
+!! 00188458: ade50004  sw	a1,4(t7)                                      | 00188458: adcd0bd0  sw	t5,3024(t6)   ; = D_01c60bd0
+!! 0018845c: adec0008  sw	t4,8(t7)                                      | 0018845c: 24070003  li	a3,3
+!! 00188460: 24050007  li	a1,7                                          | 00188460: adeb0004  sw	t3,4(t7)
+!! 00188464: 080620d0  j	0x188340                                       | 00188464: adec0008  sw	t4,8(t7)
+!! 00188468: 27bd0010  addiu	sp,sp,16                                   | 00188468: 080620d0  j	188340 <func_00188340>
+!!                                                                      | 0018846c: 27bd0010  addiu	sp,sp,16

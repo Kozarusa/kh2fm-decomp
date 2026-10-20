@@ -1,0 +1,14 @@
+{
+  "probe_source": "analysis/final-mix/recovery-experiments/fm_primary_controlshape_v3_0016b518.cpp",
+  "probe_source_sha256": "a5b58d640ae6024557ddc1883336acc6cf92acc2d411b67281dfcef3c0a749fc",
+  "probe_proof_sha256": "fe12f181a14e18b6433e467d3ac1c4d5f09f2eb03301749ca98e1d18319e4244",
+  "curated_source": "analysis/final-mix/recovery-experiments/fm_primary_controlshape_recovered_0016b518.cpp",
+  "curated_source_sha256": "dfb075ea299983b590a718b2de17fa67a67ae2fbf67bdaa0bc87abff467c6749",
+  "selected_addresses": [
+    "0016b518"
+  ],
+  "exclusion_receipt": null,
+  "limitations": [
+    "Curated source still requires a new probe, registration and full build."
+  ]
+}

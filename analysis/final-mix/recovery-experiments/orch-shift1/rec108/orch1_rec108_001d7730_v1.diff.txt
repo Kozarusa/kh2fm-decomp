@@ -1,0 +1,21 @@
+001d7730: compiled 64 bytes, target 68 bytes, exact=False
+Differing words: 14. First difference at instruction 3 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001d7730: 27bdfff0  addiu	sp,sp,-16                                  | 001d7730: 27bdfff0  addiu	sp,sp,-16
+   001d7734: 3c0f0037  lui	t7,0x37                                      | 001d7734: 3c0f0037  lui	t7,0x37
+   001d7738: ffbf0008  sd	ra,8(sp)                                      | 001d7738: ffbf0008  sd	ra,8(sp)
+!! 001d773c: 25efe5f8  addiu	t7,t7,-6664   ; = D_0036e5f8               | 001d773c: ffb00000  sd	s0,0(sp)
+!! 001d7740: ffb00000  sd	s0,0(sp)                                      | 001d7740: c5ece5f8  lwc1	$f12,-6664(t7)   ; = D_0036e5f8
+!! 001d7744: c5ec0000  lwc1	$f12,0(t7)                                  | 001d7744: 0c071c7e  jal	1c71f8 <func_001c71f8>
+!! 001d7748: 0c071c7e  jal	0x1c71f8                                     | 001d7748: 0080802d  move	s0,a0
+!! 001d774c: 0080802d  move	s0,a0                                       | 001d774c: 8e040050  lw	a0,80(s0)
+!! 001d7750: 8e040050  lw	a0,80(s0)                                     | 001d7750: 8c8e0000  lw	t6,0(a0)
+!! 001d7754: 8c8e0000  lw	t6,0(a0)                                      | 001d7754: 8dcf0058  lw	t7,88(t6)
+!! 001d7758: 8dcf0058  lw	t7,88(t6)                                     | 001d7758: 01e0f809  jalr	t7
+!! 001d775c: 01e0f809  jalr	t7                                          | 001d775c: 0200282d  move	a1,s0
+!! 001d7760: 0200282d  move	a1,s0                                       | 001d7760: dfb00000  ld	s0,0(sp)
+!! 001d7764: dfb00000  ld	s0,0(sp)                                      | 001d7764: dfbf0008  ld	ra,8(sp)
+!! 001d7768: dfbf0008  ld	ra,8(sp)                                      | 001d7768: 03e00008  jr	ra
+!! 001d776c: 03e00008  jr	ra                                            | 001d776c: 27bd0010  addiu	sp,sp,16
+!! 001d7770: 27bd0010  addiu	sp,sp,16                                   | 

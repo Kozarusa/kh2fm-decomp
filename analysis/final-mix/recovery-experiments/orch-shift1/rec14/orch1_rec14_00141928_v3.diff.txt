@@ -1,0 +1,21 @@
+00141928: compiled 68 bytes, target 68 bytes, exact=False
+Differing words: 3. First difference at instruction 4 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00141928: 8c8f0024  lw	t7,36(a0)                                     | 00141928: 8c8f0024  lw	t7,36(a0)
+   0014192c: 19e0000d  blez	t7,0x141964                                 | 0014192c: 19e0000d  blez	t7,141964 <func_00141928+0x3c>
+   00141930: 30a500ff  andi	a1,a1,0xff                                  | 00141930: 30a500ff  andi	a1,a1,0xff
+   00141934: 01e0682d  move	t5,t7                                       | 00141934: 01e0682d  move	t5,t7
+!! 00141938: 240b0001  li	t3,1                                          | 00141938: 0000602d  move	t4,zero
+!! 0014193c: 0000602d  move	t4,zero                                     | 0014193c: 240b0001  li	t3,1
+   00141940: 8c8f0008  lw	t7,8(a0)                                      | 00141940: 8c8f0008  lw	t7,8(a0)
+!! 00141944: 018f7821  addu	t7,t4,t7                                    | 00141944: 01ec7821  addu	t7,t7,t4
+   00141948: 91ee0011  lbu	t6,17(t7)                                    | 00141948: 91ee0011  lbu	t6,17(t7)
+   0014194c: 15c50002  bne	t6,a1,0x141958                               | 0014194c: 15c50002  bne	t6,a1,141958 <func_00141928+0x30>
+   00141950: 258c0014  addiu	t4,t4,20                                   | 00141950: 258c0014  addiu	t4,t4,20
+   00141954: a1eb0010  sb	t3,16(t7)                                     | 00141954: a1eb0010  sb	t3,16(t7)
+   00141958: 25adffff  addiu	t5,t5,-1                                   | 00141958: 25adffff  addiu	t5,t5,-1
+   0014195c: 55a0fff9  bnezl	t5,0x141944                                | 0014195c: 55a0fff9  bnezl	t5,141944 <func_00141928+0x1c>
+   00141960: 8c8f0008  lw	t7,8(a0)                                      | 00141960: 8c8f0008  lw	t7,8(a0)
+   00141964: 03e00008  jr	ra                                            | 00141964: 03e00008  jr	ra
+   00141968: 00000000  nop                                              | 00141968: 00000000  nop

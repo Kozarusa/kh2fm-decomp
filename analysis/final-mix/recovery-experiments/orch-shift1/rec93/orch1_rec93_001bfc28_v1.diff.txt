@@ -1,0 +1,34 @@
+001bfc28: compiled 120 bytes, target 120 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001bfc28: 27bdffe0  addiu	sp,sp,-32                                  | 001bfc28: 27bdffe0  addiu	sp,sp,-32
+   001bfc2c: 3c0f0035  lui	t7,0x35                                      | 001bfc2c: 3c0f0035  lui	t7,0x35
+   001bfc30: ffb00000  sd	s0,0(sp)                                      | 001bfc30: ffb00000  sd	s0,0(sp)
+   001bfc34: ffb20010  sd	s2,16(sp)                                     | 001bfc34: ffb20010  sd	s2,16(sp)
+   001bfc38: ffb10008  sd	s1,8(sp)                                      | 001bfc38: ffb10008  sd	s1,8(sp)
+   001bfc3c: 0000802d  move	s0,zero                                     | 001bfc3c: 0000802d  move	s0,zero
+   001bfc40: ffbf0018  sd	ra,24(sp)                                     | 001bfc40: ffbf0018  sd	ra,24(sp)
+   001bfc44: 3c120004  lui	s2,0x4                                       | 001bfc44: 3c120004  lui	s2,0x4
+   001bfc48: 8df1e948  lw	s1,-5816(t7)   ; = D_0034e948                 | 001bfc48: 8df1e948  lw	s1,-5816(t7)   ; = D_0034e948
+   001bfc4c: 0c06e6f2  jal	0x1b9bc8                                     | 001bfc4c: 0c06e6f2  jal	1b9bc8 <func_001b9bc8>
+   001bfc50: 0200202d  move	a0,s0                                       | 001bfc50: 0200202d  move	a0,s0
+   001bfc54: 0040802d  move	s0,v0                                       | 001bfc54: 0040802d  move	s0,v0
+   001bfc58: 0040202d  move	a0,v0                                       | 001bfc58: 0040202d  move	a0,v0
+   001bfc5c: 14400008  bnez	v0,0x1bfc80                                 | 001bfc5c: 14400008  bnez	v0,1bfc80 <func_001bfc28+0x58>
+   001bfc60: 0220282d  move	a1,s1                                       | 001bfc60: 0220282d  move	a1,s1
+   001bfc64: dfb00000  ld	s0,0(sp)                                      | 001bfc64: dfb00000  ld	s0,0(sp)
+   001bfc68: dfb10008  ld	s1,8(sp)                                      | 001bfc68: dfb10008  ld	s1,8(sp)
+   001bfc6c: dfb20010  ld	s2,16(sp)                                     | 001bfc6c: dfb20010  ld	s2,16(sp)
+   001bfc70: dfbf0018  ld	ra,24(sp)                                     | 001bfc70: dfbf0018  ld	ra,24(sp)
+   001bfc74: 03e00008  jr	ra                                            | 001bfc74: 03e00008  jr	ra
+   001bfc78: 27bd0020  addiu	sp,sp,32                                   | 001bfc78: 27bd0020  addiu	sp,sp,32
+   001bfc7c: 00000000  nop                                              | 001bfc7c: 00000000  nop
+   001bfc80: 8e0f0588  lw	t7,1416(s0)                                   | 001bfc80: 8e0f0588  lw	t7,1416(s0)
+   001bfc84: 01f27824  and	t7,t7,s2                                     | 001bfc84: 01f27824  and	t7,t7,s2
+   001bfc88: 11e0fff0  beqz	t7,0x1bfc4c                                 | 001bfc88: 11e0fff0  beqz	t7,1bfc4c <func_001bfc28+0x24>
+   001bfc8c: 00000000  nop                                              | 001bfc8c: 00000000  nop
+   001bfc90: 0c06fcde  jal	0x1bf378                                     | 001bfc90: 0c06fcde  jal	1bf378 <func_001bf378>
+   001bfc94: 00000000  nop                                              | 001bfc94: 00000000  nop
+   001bfc98: 1000ffec  b	0x1bfc4c                                       | 001bfc98: 1000ffec  b	1bfc4c <func_001bfc28+0x24>
+   001bfc9c: 00000000  nop                                              | 001bfc9c: 00000000  nop

@@ -1,0 +1,14 @@
+{
+  "probe_source": "analysis/final-mix/recovery-experiments/fm_primary_schedule_v3.cpp",
+  "probe_source_sha256": "b921336e909db9263b6046a79487df4ecdedf474b8936e26fd768a0a6d9cb059",
+  "probe_proof_sha256": "7dc6a0c63c52986f241d10b93e33bd14f2b7f74a2cb83d8f99e007bce8cb4448",
+  "curated_source": "analysis/final-mix/recovery-experiments/fm_primary_schedule_recovered.cpp",
+  "curated_source_sha256": "1be0ca4fe4d30d92a3a91fcdd69a345d14eaa8f95e1c77c987e00ccaf096a144",
+  "selected_addresses": [
+    "00188398"
+  ],
+  "exclusion_receipt": null,
+  "limitations": [
+    "Curated source still requires a new probe, registration and full build."
+  ]
+}

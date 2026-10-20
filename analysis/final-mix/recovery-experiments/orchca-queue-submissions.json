@@ -1,0 +1,16 @@
+[
+  {
+    "address": "001a8f10",
+    "owner": "orch1-rec77",
+    "metadata": "{\"address\": \"001a8f10\", \"end\": \"001a8f64\", \"bytes\": 84, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [], \"best_proposal\": {\"proof\": \"analysis/final-mix/recovery-experiments/fm_scalar_03.verification.json\", \"source\": \"analysis/final-mix/recovery-experiments/fm_scalar_03.cpp\", \"compiled_bytes\": 76, \"target_bytes\": 84, \"different_words\": 18}}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\orch-shift1\\\\rec77\\\\orch1_rec77_001a8f10_v4.cpp\", \"source_sha256\": \"6928049892f3fd1310168373f4acdcdb227ca0aa5d912b468b77c3107e917a1e\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\orch-shift1\\\\rec77\\\\orch1_rec77_001a8f10_v4.verification.json\", \"proof_sha256\": \"f97bd9b97d02e136084d9024cf6534309b9ffff934c2a9523b8fc1d259dfb06d\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_orchca_recovered_001a8f10.cpp"
+  },
+  {
+    "address": "001a92d8",
+    "owner": "orch1-rec77",
+    "metadata": "{\"address\": \"001a92d8\", \"end\": \"001a9350\", \"bytes\": 120, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [\"0016e920\", \"00170e58\", \"001a9218\", \"001a9350\", \"001a9758\"], \"best_proposal\": {\"proof\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_width_all_05_0.verification.json\", \"source\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_width_all_05_0.cpp\", \"compiled_bytes\": 120, \"target_bytes\": 120, \"different_words\": 9}}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\orch-shift1\\\\rec77\\\\orch1_rec77_001a92d8_v5.cpp\", \"source_sha256\": \"cb48b25fbfeb05ad3726505a68d6aee33e0dea68385e5939786efddc708baa8e\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\orch-shift1\\\\rec77\\\\orch1_rec77_001a92d8_v5.verification.json\", \"proof_sha256\": \"98d825b5f01f4fa128f7676514fe76ce610a4cd5c465a7ca9d5ca3804f610c16\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_orchca_recovered_001a92d8.cpp"
+  }
+]

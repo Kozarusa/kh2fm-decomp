@@ -1,0 +1,151 @@
+{
+  "target": "00307f68",
+  "experiments": [
+    {
+      "proof": "fm_primary_conditiontransport_v7_00307f68_1.verification.json",
+      "sha256": "29ebaa6d24d932ea2e34cf217b530cefa558b37a6e2f3cc031a1fdb76a269095",
+      "rows": [
+        {
+          "address": "00307f68",
+          "exact_match": false,
+          "compiled_size": 40,
+          "target_size": 40
+        }
+      ]
+    },
+    {
+      "proof": "fm_primary_conditiontransport_v7_00307f68_2.verification.json",
+      "sha256": "17c0bd22cd10debd53add34693f44cf53b0f236325c2ad5d998915be89e5c730",
+      "rows": [
+        {
+          "address": "00307f68",
+          "exact_match": false,
+          "compiled_size": 44,
+          "target_size": 40
+        }
+      ]
+    },
+    {
+      "proof": "fm_primary_conditiontransport_v7_00307f68_3.verification.json",
+      "sha256": "0c377794355a89cdfdeaef653c248a9439c1d1a50278452b1c2161e67d16fb6c",
+      "rows": [
+        {
+          "address": "00307f68",
+          "exact_match": false,
+          "compiled_size": 44,
+          "target_size": 40
+        }
+      ]
+    },
+    {
+      "proof": "fm_primary_conditiontransport_v7_00307f68_4.verification.json",
+      "sha256": "1c444157327382af28f836df0fecd8eaabd3b735b0d73f552a1b8087c671c475",
+      "rows": [
+        {
+          "address": "00307f68",
+          "exact_match": false,
+          "compiled_size": 44,
+          "target_size": 40
+        }
+      ]
+    },
+    {
+      "proof": "fm_primary_conditiontransport_v7_00307f68_5.verification.json",
+      "sha256": "ac5ff6d18da849463306ce27c74cca3cf4df04e24e630aa9a33e8088857f7553",
+      "rows": [
+        {
+          "address": "00307f68",
+          "exact_match": false,
+          "compiled_size": 44,
+          "target_size": 40
+        }
+      ]
+    },
+    {
+      "proof": "fm_primary_conditiontransport_v7_00307f68_6.verification.json",
+      "sha256": "7f166a7ebbe2aa330628340dd2f9f255a71ecdcd44a2e41a11ad48ea99bd32d3",
+      "rows": [
+        {
+          "address": "00307f68",
+          "exact_match": false,
+          "compiled_size": 40,
+          "target_size": 40
+        }
+      ]
+    },
+    {
+      "proof": "fm_primary_conditiontransport_v8_00307f68_1.verification.json",
+      "sha256": "aec8293f9347717f382bab5fdddabeacc4b03413358c500bda535ca54ac2322e",
+      "rows": [
+        {
+          "address": "00307f68",
+          "exact_match": true,
+          "compiled_size": 40,
+          "target_size": 40
+        }
+      ]
+    },
+    {
+      "proof": "fm_primary_conditiontransport_v8_00307f68_2.verification.json",
+      "sha256": "bf500a61f9faf032ce52c4bc2f10ec93a2d30de7332583e34637d945e11faba9",
+      "rows": [
+        {
+          "address": "00307f68",
+          "exact_match": true,
+          "compiled_size": 40,
+          "target_size": 40
+        }
+      ]
+    },
+    {
+      "proof": "fm_primary_conditiontransport_v8_00307f68_3.verification.json",
+      "sha256": "8dfeea3defc01f1d8ccbf0ecd074b80cae8cf7c1e316b7efaf6c8e9c1e8941e0",
+      "rows": [
+        {
+          "address": "00307f68",
+          "exact_match": true,
+          "compiled_size": 40,
+          "target_size": 40
+        }
+      ]
+    },
+    {
+      "proof": "fm_primary_conditiontransport_v8_00307f68_4.verification.json",
+      "sha256": "b8aa900128c622fc1fd2d1479225bdf1f7b3c4a645f52f1c5c023029db4e7697",
+      "rows": [
+        {
+          "address": "00307f68",
+          "exact_match": false,
+          "compiled_size": 44,
+          "target_size": 40
+        }
+      ]
+    },
+    {
+      "proof": "fm_primary_conditiontransport_v8_00307f68_5.verification.json",
+      "sha256": "02c423cc655b463a557429e3fb032d32c1f25faceacbd0832608c424ced911cf",
+      "rows": [
+        {
+          "address": "00307f68",
+          "exact_match": false,
+          "compiled_size": 52,
+          "target_size": 40
+        }
+      ]
+    },
+    {
+      "proof": "fm_primary_conditiontransport_v8_00307f68_6.verification.json",
+      "sha256": "ef5938322c485e39d6177d8a3eba29fd5eb7bfa2acedde71b52aa0f21f6c16b9",
+      "rows": [
+        {
+          "address": "00307f68",
+          "exact_match": true,
+          "compiled_size": 40,
+          "target_size": 40
+        }
+      ]
+    }
+  ],
+  "selected": "fm_primary_conditiontransport_v8_00307f68_1.cpp",
+  "explanation": "An output constrained to argument register 4 forces the original move before the branch. A memory barrier after the conditional call preserves a shared epilogue and original return-address scheduling. No compiler flags or executable bytes were changed."
+}

@@ -1,0 +1,39 @@
+00105f00: compiled 140 bytes, target 128 bytes, exact=False
+Differing words: 35. First difference at instruction 0 (0-based).
+
+ORIGINAL                                                                | COMPILED
+!! 00105f00: 27bdffe0  addiu	sp,sp,-32                                  | 00105f00: 27bdffd0  addiu	sp,sp,-48
+!! 00105f04: ffb20010  sd	s2,16(sp)                                     | 00105f04: ffb30018  sd	s3,24(sp)
+!! 00105f08: ffb00000  sd	s0,0(sp)                                      | 00105f08: ffb20010  sd	s2,16(sp)
+!! 00105f0c: ffb10008  sd	s1,8(sp)                                      | 00105f0c: ffb00000  sd	s0,0(sp)
+!! 00105f10: ffbf0018  sd	ra,24(sp)                                     | 00105f10: 0080982d  move	s3,a0
+!! 00105f14: 0c0bfcff  jal	0x2ff3fc                                     | 00105f14: ffb10008  sd	s1,8(sp)
+!! 00105f18: 0080902d  move	s2,a0                                       | 00105f18: ffbf0020  sd	ra,32(sp)
+!! 00105f1c: 240f0002  li	t7,2                                          | 00105f1c: 0c0bfcff  jal	2ff3fc <func_002ff3fc>
+!! 00105f20: 144f0010  bne	v0,t7,0x105f64                               | 00105f20: 0000902d  move	s2,zero
+!! 00105f24: 0000782d  move	t7,zero                                     | 00105f24: 240f0002  li	t7,2
+!! 00105f28: 3c0f0034  lui	t7,0x34                                      | 00105f28: 144f0011  bne	v0,t7,105f70 <func_00105f00+0x70>
+!! 00105f2c: 0000802d  move	s0,zero                                     | 00105f2c: 0240102d  move	v0,s2
+!! 00105f30: 25f1cbb8  addiu	s1,t7,-13384   ; = D_0033cbb8              | 00105f30: 3c0f0034  lui	t7,0x34
+!! 00105f34: 8e250000  lw	a1,0(s1)                                      | 00105f34: 0000882d  move	s1,zero
+!! 00105f38: 0240202d  move	a0,s2                                       | 00105f38: 25f0cbb8  addiu	s0,t7,-13384   ; = D_0033cbb8
+!! 00105f3c: 0c0bfd4e  jal	0x2ff538                                     | 00105f3c: 8e050000  lw	a1,0(s0)
+!! 00105f40: 24060002  li	a2,2                                          | 00105f40: 0260202d  move	a0,s3
+!! 00105f44: 26310004  addiu	s1,s1,4                                    | 00105f44: 24060002  li	a2,2
+!! 00105f48: 0200782d  move	t7,s0                                       | 00105f48: 0220902d  move	s2,s1
+!! 00105f4c: 10400005  beqz	v0,0x105f64                                 | 00105f4c: 0c0bfd4e  jal	2ff538 <func_002ff538>
+!! 00105f50: 26100001  addiu	s0,s0,1                                    | 00105f50: 26310001  addiu	s1,s1,1
+!! 00105f54: 2a0f0013  slti	t7,s0,19                                    | 00105f54: 2a2f0013  slti	t7,s1,19
+!! 00105f58: 55e0fff7  bnezl	t7,0x105f38                                | 00105f58: 10400004  beqz	v0,105f6c <func_00105f00+0x6c>
+!! 00105f5c: 8e250000  lw	a1,0(s1)                                      | 00105f5c: 26100004  addiu	s0,s0,4
+!! 00105f60: 0000782d  move	t7,zero                                     | 00105f60: 55e0fff7  bnezl	t7,105f40 <func_00105f00+0x40>
+!! 00105f64: dfb00000  ld	s0,0(sp)                                      | 00105f64: 8e050000  lw	a1,0(s0)
+!! 00105f68: 01e0102d  move	v0,t7                                       | 00105f68: 0000902d  move	s2,zero
+!! 00105f6c: dfb10008  ld	s1,8(sp)                                      | 00105f6c: 0240102d  move	v0,s2
+!! 00105f70: dfb20010  ld	s2,16(sp)                                     | 00105f70: dfb00000  ld	s0,0(sp)
+!! 00105f74: dfbf0018  ld	ra,24(sp)                                     | 00105f74: dfb10008  ld	s1,8(sp)
+!! 00105f78: 03e00008  jr	ra                                            | 00105f78: dfb20010  ld	s2,16(sp)
+!! 00105f7c: 27bd0020  addiu	sp,sp,32                                   | 00105f7c: dfb30018  ld	s3,24(sp)
+!!                                                                      | 00105f80: dfbf0020  ld	ra,32(sp)
+!!                                                                      | 00105f84: 03e00008  jr	ra
+!!                                                                      | 00105f88: 27bd0030  addiu	sp,sp,48

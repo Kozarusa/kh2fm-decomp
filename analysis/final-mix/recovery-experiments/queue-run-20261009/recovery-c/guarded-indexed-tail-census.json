@@ -1,0 +1,18 @@
+[
+  {
+    "address": "001d86a0",
+    "state": [
+      "submitted",
+      "index-pointer-registers"
+    ],
+    "callees": [
+      "001bb4b0",
+      "001bbcb0",
+      "001d8718"
+    ],
+    "stride": 56,
+    "field_offset": 244,
+    "flag_mask": 1,
+    "original_range_sha256": "c4a206c10eab1388aecb6fb5e5413aaf9f4e34f737573508dae3f0f90f43063a"
+  }
+]

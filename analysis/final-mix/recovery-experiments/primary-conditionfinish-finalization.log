@@ -1,0 +1,66 @@
+{
+  "function_candidates_by_module": {
+    "SLPM_666.75": 11398,
+    "DBCMAN.IRX": 95,
+    "DS2O.IRX": 67,
+    "LIBSD.IRX": 72,
+    "LIBSSL.IRX": 291,
+    "MCMAN.IRX": 229,
+    "MCSERV.IRX": 76,
+    "ROM_CDVDFSV.IRX": 121,
+    "ROM_CDVDMAN.IRX": 191,
+    "ROM_EESYNC.IRX": 10,
+    "ROM_FILEIO.IRX": 123,
+    "ROM_IOMAN.IRX": 57,
+    "ROM_LOADCORE.IRX": 41,
+    "ROM_LOADFILE.IRX": 62,
+    "ROM_MODLOAD.IRX": 108,
+    "ROM_ROMDRV.IRX": 14,
+    "ROM_SIFCMD.IRX": 62,
+    "ROM_SIFMAN.IRX": 31,
+    "ROM_STDIO.IRX": 17,
+    "ROM_SYSCLIB.IRX": 25,
+    "ROM_SYSMEM.IRX": 18,
+    "ROM_THREADMAN.IRX": 162,
+    "ROM_TIMEMANI.IRX": 19,
+    "SIO2D.IRX": 39,
+    "SIO2MAN.IRX": 65,
+    "ovl_gumibattle.x": 2396,
+    "ovl_gumimenu.x": 1828,
+    "ovl_movie.x": 269,
+    "ovl_shop.x": 256,
+    "ovl_title.x": 141
+  },
+  "total_function_candidates": 18283,
+  "status_counts": {
+    "unverified_pseudocode": 18282,
+    "truncated_pseudocode": 1
+  },
+  "functions_with_warning_or_message": 430,
+  "verified_matching_functions": null,
+  "limitations": [
+    "All exports are unverified pseudocode, including completed decompiler results.",
+    "Ghidra applies IRX relocations; project addresses are not verified runtime load addresses.",
+    "Overlay mappings derive from the FM ELF and trampoline targets, with runtime confirmation pending.",
+    "VU sections are excluded from these exports."
+  ],
+  "main_cpp_build_checkpoint": {
+    "original_sha256": "d869ce4b8edd61cb978c4ff9ede595fe4d7d7b21cbb96a145275217120d8bc87",
+    "rebuilt_sha256": "d869ce4b8edd61cb978c4ff9ede595fe4d7d7b21cbb96a145275217120d8bc87",
+    "whole_executable_byte_exact": true,
+    "cpp_range_count": 5635,
+    "source_input_files_verified_against_workspace": 2138,
+    "compiler_size_status_counts": {
+      "equal_size": 5631,
+      "zero_padded": 4
+    },
+    "unmodified_compiled_symbol_matches": 5631,
+    "original_fallback_range_count": 5748,
+    "limitations": [
+      "The builder starts from the original ELF and replaces registered C++ ranges.",
+      "Fallback ranges and other untouched bytes are retained from the original, not decompiled.",
+      "Normalization pads short symbols and truncates long ones; size-adjusted matches are separated.",
+      "This verifies the upstream main executable workflow, not IOP/overlay/VU rebuilding or runtime behavior."
+    ]
+  }
+}

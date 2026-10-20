@@ -1,0 +1,23 @@
+0019bad8: compiled 76 bytes, target 64 bytes, exact=False
+Differing words: 15. First difference at instruction 4 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0019bad8: 27bdfff0  addiu	sp,sp,-16                                  | 0019bad8: 27bdfff0  addiu	sp,sp,-16
+   0019badc: ffbf0000  sd	ra,0(sp)                                      | 0019badc: ffbf0000  sd	ra,0(sp)
+   0019bae0: 8c8f07f8  lw	t7,2040(a0)                                   | 0019bae0: 8c8f07f8  lw	t7,2040(a0)
+   0019bae4: 31ef0001  andi	t7,t7,0x1                                   | 0019bae4: 31ef0001  andi	t7,t7,0x1
+!! 0019bae8: 11e00008  beqz	t7,0x19bb0c                                 | 0019bae8: 31ef00ff  andi	t7,t7,0xff
+!! 0019baec: 0000102d  move	v0,zero                                     | 0019baec: 11e0000a  beqz	t7,19bb18 <func_0019bad8+0x40>
+!! 0019baf0: 8c8f0108  lw	t7,264(a0)                                    | 0019baf0: 0000102d  move	v0,zero
+!! 0019baf4: 31ef0001  andi	t7,t7,0x1                                   | 0019baf4: 908f0108  lbu	t7,264(a0)
+!! 0019baf8: 15e00005  bnez	t7,0x19bb10                                 | 0019baf8: 39ef0001  xori	t7,t7,0x1
+!! 0019bafc: dfbf0000  ld	ra,0(sp)                                      | 0019bafc: 31ef0001  andi	t7,t7,0x1
+!! 0019bb00: 0c070336  jal	0x1c0cd8                                     | 0019bb00: 31ef00ff  andi	t7,t7,0xff
+!! 0019bb04: 00000000  nop                                              | 0019bb04: 11e00005  beqz	t7,19bb1c <func_0019bad8+0x44>
+!! 0019bb08: 2c420001  sltiu	v0,v0,1                                    | 0019bb08: dfbf0000  ld	ra,0(sp)
+!! 0019bb0c: dfbf0000  ld	ra,0(sp)                                      | 0019bb0c: 0c070336  jal	1c0cd8 <func_001c0cd8>
+!! 0019bb10: 03e00008  jr	ra                                            | 0019bb10: 00000000  nop
+!! 0019bb14: 27bd0010  addiu	sp,sp,16                                   | 0019bb14: 2c420001  sltiu	v0,v0,1
+!!                                                                      | 0019bb18: dfbf0000  ld	ra,0(sp)
+!!                                                                      | 0019bb1c: 03e00008  jr	ra
+!!                                                                      | 0019bb20: 27bd0010  addiu	sp,sp,16

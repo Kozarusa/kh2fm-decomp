@@ -1,0 +1,31 @@
+001b0728: compiled 104 bytes, target 108 bytes, exact=False
+Differing words: 13. First difference at instruction 7 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001b0728: 27bdffe0  addiu	sp,sp,-32                                  | 001b0728: 27bdffe0  addiu	sp,sp,-32
+   001b072c: 248e0020  addiu	t6,a0,32                                   | 001b072c: 248e0020  addiu	t6,a0,32
+   001b0730: ffb00000  sd	s0,0(sp)                                      | 001b0730: ffb00000  sd	s0,0(sp)
+   001b0734: ffb10008  sd	s1,8(sp)                                      | 001b0734: ffb10008  sd	s1,8(sp)
+   001b0738: ffbf0010  sd	ra,16(sp)                                     | 001b0738: ffbf0010  sd	ra,16(sp)
+   001b073c: 0080802d  move	s0,a0                                       | 001b073c: 0080802d  move	s0,a0
+   001b0740: 8c8f000c  lw	t7,12(a0)                                     | 001b0740: 8c8f000c  lw	t7,12(a0)
+!! 001b0744: 05e0000e  bltz	t7,0x1b0780                                 | 001b0744: 05e0000d  bltz	t7,1b077c <func_001b0728+0x54>
+   001b0748: 00c0882d  move	s1,a2                                       | 001b0748: 00c0882d  move	s1,a2
+   001b074c: 240f0001  li	t7,1                                          | 001b074c: 240f0001  li	t7,1
+   001b0750: 11c50003  beq	t6,a1,0x1b0760                               | 001b0750: 11c50003  beq	t6,a1,1b0760 <func_001b0728+0x38>
+   001b0754: ac8f0004  sw	t7,4(a0)                                      | 001b0754: ac8f0004  sw	t7,4(a0)
+!! 001b0758: 78a80000  lq	t0,0(a1)                                      | 001b0758: 78af0000  lq	t7,0(a1)
+!! 001b075c: 7dc80000  sq	t0,0(t6)                                      | 001b075c: 7c8f0020  sq	t7,32(a0)
+   001b0760: 46006386  mov.s	$f14,$f12                                  | 001b0760: 46006386  mov.s	$f14,$f12
+   001b0764: 3c0f0037  lui	t7,0x37                                      | 001b0764: 3c0f0037  lui	t7,0x37
+!! 001b0768: 25efd96c  addiu	t7,t7,-9876   ; = D_0036d96c               | 001b0768: c5edd96c  lwc1	$f13,-9876(t7)   ; = D_0036d96c
+   001b076c: 26040010  addiu	a0,s0,16                                   | 001b076c: 26040010  addiu	a0,s0,16
+!! 001b0770: c5ed0000  lwc1	$f13,0(t7)                                  | 001b0770: 0c06b664  jal	1ad990 <func_001ad990>
+!! 001b0774: 0c06b664  jal	0x1ad990                                     | 001b0774: 44806000  mtc1	zero,$f12
+!! 001b0778: 44806000  mtc1	zero,$f12                                   | 001b0778: ae110008  sw	s1,8(s0)
+!! 001b077c: ae110008  sw	s1,8(s0)                                      | 001b077c: dfb00000  ld	s0,0(sp)
+!! 001b0780: dfb00000  ld	s0,0(sp)                                      | 001b0780: dfb10008  ld	s1,8(sp)
+!! 001b0784: dfb10008  ld	s1,8(sp)                                      | 001b0784: dfbf0010  ld	ra,16(sp)
+!! 001b0788: dfbf0010  ld	ra,16(sp)                                     | 001b0788: 03e00008  jr	ra
+!! 001b078c: 03e00008  jr	ra                                            | 001b078c: 27bd0020  addiu	sp,sp,32
+!! 001b0790: 27bd0020  addiu	sp,sp,32                                   | 

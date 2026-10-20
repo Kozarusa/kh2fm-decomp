@@ -1,0 +1,12 @@
+#include "../common/types.h"
+extern "C" u32 func_00257770();
+extern "C" u32 func_00139d78(u32);
+extern "C" void func_0028da70(u32,s32);
+void func_00262730()
+{
+ register u64 object asm("$16");
+ asm ("" : "=r"(object));
+ object=func_00257770()+2504;
+ func_00139d78(object);
+ func_0028da70(object,242);
+}

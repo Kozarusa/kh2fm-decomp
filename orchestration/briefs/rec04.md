@@ -1,0 +1,26 @@
+# rec04: general queue recovery
+
+| Field | Value |
+| --- | --- |
+| WP | rec04 |
+| Model | sonnet |
+| Worker id | orch1-rec04 |
+| WP directory | `C:\Users\KoZa\Documents\AGENTS\Codex\analysis\final-mix\recovery-experiments\orch-shift1\rec04` |
+| WSL directory | `/mnt/c/Users/KoZa/Documents/AGENTS/Codex/analysis/final-mix/recovery-experiments/orch-shift1/rec04` |
+| Queues, in order | `general` |
+| K (targets to claim) | 6 |
+| Version budget per target | 8, and stop after 3 versions without improvement (R7) |
+| Size rule | Release targets over 128 bytes (R3) |
+| Depends on | rec03 reviewed |
+| Review | `review_wp.py` on the WP directory, then the reviewer agent |
+
+## Steps
+
+1. R0.
+2. Repeat R1 to R10 until you have claimed K targets and each one is submitted, blocked or released.
+3. R11: write the WP report and reply with it.
+
+## Notes for this WP
+
+- The general queue serves the most promising targets first (priority 1: earlier equal-size proposals within three differing words; then ranges up to 128 bytes). Many have earlier attempts: R4 tells you to start from the best one.
+- Released targets (over 128 bytes) do not count toward K.

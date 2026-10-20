@@ -1,0 +1,82 @@
+[
+  {
+    "module": "ovl_gumibattle.x",
+    "candidate_base_address": "0x1f18000",
+    "payload_sha256": "d89e29ffa5f02d033df31d6f0e467cbdb428fb01cfb17077aee311ce05dddb49",
+    "payload_size": 443896,
+    "trampoline_jumps": [
+      {
+        "offset": 20,
+        "instruction_word": "087c636a",
+        "target_address": "0x1f18da8",
+        "target_inside_payload": true
+      }
+    ],
+    "evidence": "FM ELF overlay section and matching PT_LOAD address; initial jumps resolve inside each payload",
+    "status": "static_layout_candidate_runtime_unverified"
+  },
+  {
+    "module": "ovl_title.x",
+    "candidate_base_address": "0x1f18000",
+    "payload_sha256": "27c862b1342d4c8a166fbce5a176b998c35273aa6bea7d8b3336c30000fa4212",
+    "payload_size": 96368,
+    "trampoline_jumps": [
+      {
+        "offset": 20,
+        "instruction_word": "087c64b0",
+        "target_address": "0x1f192c0",
+        "target_inside_payload": true
+      }
+    ],
+    "evidence": "FM ELF overlay section and matching PT_LOAD address; initial jumps resolve inside each payload",
+    "status": "static_layout_candidate_runtime_unverified"
+  },
+  {
+    "module": "ovl_shop.x",
+    "candidate_base_address": "0x1f18000",
+    "payload_sha256": "55559ae6ad393fe3727e6015306c1c47b49787dc1a6394c40530ce27b0a57de7",
+    "payload_size": 151632,
+    "trampoline_jumps": [
+      {
+        "offset": 20,
+        "instruction_word": "087c606e",
+        "target_address": "0x1f181b8",
+        "target_inside_payload": true
+      }
+    ],
+    "evidence": "FM ELF overlay section and matching PT_LOAD address; initial jumps resolve inside each payload",
+    "status": "static_layout_candidate_runtime_unverified"
+  },
+  {
+    "module": "ovl_movie.x",
+    "candidate_base_address": "0x1f18000",
+    "payload_sha256": "55ac8b8d99e704fd2f0017d805fcb92474ee44f49edd2156c5cc39df7612380c",
+    "payload_size": 84020,
+    "trampoline_jumps": [
+      {
+        "offset": 20,
+        "instruction_word": "087c6050",
+        "target_address": "0x1f18140",
+        "target_inside_payload": true
+      }
+    ],
+    "evidence": "FM ELF overlay section and matching PT_LOAD address; initial jumps resolve inside each payload",
+    "status": "static_layout_candidate_runtime_unverified"
+  },
+  {
+    "module": "ovl_gumimenu.x",
+    "candidate_base_address": "0x1f18000",
+    "payload_sha256": "1345947e5dade3ad94677f1a66d30a4463695297903a39d0ef928d8cdecee0a9",
+    "payload_size": 476168,
+    "trampoline_jumps": [
+      {
+        "offset": 20,
+        "instruction_word": "087c62b0",
+        "target_address": "0x1f18ac0",
+        "target_inside_payload": true
+      }
+    ],
+    "evidence": "FM ELF overlay section and matching PT_LOAD address; initial jumps resolve inside each payload",
+    "status": "static_layout_candidate_runtime_unverified"
+  }
+]

@@ -1,0 +1,9 @@
+[
+  {
+    "address": "0028f4a0",
+    "owner": "orch1-rec172",
+    "metadata": "{\"address\": \"0028f4a0\", \"end\": \"0028f4d4\", \"bytes\": 52, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [], \"best_proposal\": null}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\orch-shift1\\\\rec172\\\\orch1_rec172_0028f4a0_v1.cpp\", \"source_sha256\": \"f5b42af2e092dd132a33071e2bfd603331916f84c076ea44b313812ec5fb3c06\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\orch-shift1\\\\rec172\\\\orch1_rec172_0028f4a0_v1.verification.json\", \"proof_sha256\": \"cdd5d093373a792d7bfe6bf656cd3688afe3c88440e9692dcf2cc0c1b62edc25\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_orcheq_recovered_0028f4a0.cpp"
+  }
+]

@@ -1,0 +1,31 @@
+00262290: compiled 108 bytes, target 108 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00262290: 27bdfff0  addiu	sp,sp,-16                                  | 00262290: 27bdfff0  addiu	sp,sp,-16
+   00262294: ffbf0000  sd	ra,0(sp)                                      | 00262294: ffbf0000  sd	ra,0(sp)
+   00262298: 0c095ada  jal	0x256b68                                     | 00262298: 0c095ada  jal	256b68 <func_00256b68>
+   0026229c: 24040001  li	a0,1                                          | 0026229c: 24040001  li	a0,1
+   002622a0: 0c04e75e  jal	0x139d78                                     | 002622a0: 0c04e75e  jal	139d78 <func_00139d78>
+   002622a4: 0040202d  move	a0,v0                                       | 002622a4: 0040202d  move	a0,v0
+   002622a8: 14400012  bnez	v0,0x2622f4                                 | 002622a8: 14400012  bnez	v0,2622f4 <func_00262290+0x64>
+   002622ac: dfbf0000  ld	ra,0(sp)                                      | 002622ac: dfbf0000  ld	ra,0(sp)
+   002622b0: 3c0f0036  lui	t7,0x36                                      | 002622b0: 3c0f0036  lui	t7,0x36
+   002622b4: 8deef01c  lw	t6,-4068(t7)   ; = D_0035f01c                 | 002622b4: 8deef01c  lw	t6,-4068(t7)   ; = D_0035f01c
+   002622b8: 11c00004  beqz	t6,0x2622cc                                 | 002622b8: 11c00004  beqz	t6,2622cc <func_00262290+0x3c>
+   002622bc: 01c0202d  move	a0,t6                                       | 002622bc: 01c0202d  move	a0,t6
+   002622c0: 0c0a2b32  jal	0x28acc8                                     | 002622c0: 0c0a2b32  jal	28acc8 <func_0028acc8>
+   002622c4: 00000000  nop                                              | 002622c4: 00000000  nop
+   002622c8: 0002102b  sltu	v0,zero,v0                                  | 002622c8: 0002102b  sltu	v0,zero,v0
+   002622cc: 14400009  bnez	v0,0x2622f4                                 | 002622cc: 14400009  bnez	v0,2622f4 <func_00262290+0x64>
+   002622d0: dfbf0000  ld	ra,0(sp)                                      | 002622d0: dfbf0000  ld	ra,0(sp)
+   002622d4: 3c0f0036  lui	t7,0x36                                      | 002622d4: 3c0f0036  lui	t7,0x36
+   002622d8: 8deef04c  lw	t6,-4020(t7)   ; = D_0035f04c                 | 002622d8: 8deef04c  lw	t6,-4020(t7)   ; = D_0035f04c
+   002622dc: 11c00005  beqz	t6,0x2622f4                                 | 002622dc: 11c00005  beqz	t6,2622f4 <func_00262290+0x64>
+   002622e0: 01c0202d  move	a0,t6                                       | 002622e0: 01c0202d  move	a0,t6
+   002622e4: 0c0a2f96  jal	0x28be58                                     | 002622e4: 0c0a2f96  jal	28be58 <func_0028be58>
+   002622e8: 00000000  nop                                              | 002622e8: 00000000  nop
+   002622ec: 0002102b  sltu	v0,zero,v0                                  | 002622ec: 0002102b  sltu	v0,zero,v0
+   002622f0: dfbf0000  ld	ra,0(sp)                                      | 002622f0: dfbf0000  ld	ra,0(sp)
+   002622f4: 03e00008  jr	ra                                            | 002622f4: 03e00008  jr	ra
+   002622f8: 27bd0010  addiu	sp,sp,16                                   | 002622f8: 27bd0010  addiu	sp,sp,16

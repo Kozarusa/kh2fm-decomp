@@ -1,0 +1,205 @@
+{
+  "source_sha256": "06f07b42bdd971194492a615a191e19124def076f11bc147c5a2188aaa3bf9d1",
+  "source": "analysis/final-mix/recovery-experiments/fm_scalar_recovered_02.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "001741e0",
+      "symbol": "_Z13func_001741e0Pj",
+      "compiled_size": 44,
+      "target_size": 44,
+      "ghidra_body_size": 44,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd270000b0ff0800bfff2845070c2d8080000000058e2d2040000800bfdf0000b0dff6da06081000bd27",
+      "target_hex": "f0ffbd270000b0ff0800bfff2845070c2d8080000000058e2d2040000800bfdf0000b0dff6da06081000bd27"
+    },
+    {
+      "address": "00174290",
+      "symbol": "_Z13func_00174290Pi",
+      "compiled_size": 104,
+      "target_size": 104,
+      "ghidra_body_size": 104,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "c0ffbd273000bfff2800b1ff2000b0ff2d88800008008f8c0400f08d4a40060c2d20a0032d2800022d20a0031e42060c2d30000000002f8e0400f08dac5a070c3c0b048e400b048e2d30a003a472060c0400258e2000b0df2800b1df3000bfdf0800e0034000bd27",
+      "target_hex": "c0ffbd273000bfff2800b1ff2000b0ff2d88800008008f8c0400f08d4a40060c2d20a0032d2800022d20a0031e42060c2d30000000002f8e0400f08dac5a070c3c0b048e400b048e2d30a003a472060c0400258e2000b0df2800b1df3000bfdf0800e0034000bd27"
+    },
+    {
+      "address": "001754d0",
+      "symbol": "_Z13func_001754d0Pj",
+      "compiled_size": 48,
+      "target_size": 48,
+      "ghidra_body_size": 48,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd270000bfff96a0060c0000848c06a1060c2d20400044a1060c000000000000bfdf2d204000aee004081000bd27",
+      "target_hex": "f0ffbd270000bfff96a0060c0000848c06a1060c2d20400044a1060c000000000000bfdf2d204000aee004081000bd27"
+    },
+    {
+      "address": "00176d68",
+      "symbol": "_Z13func_00176d68yy",
+      "compiled_size": 72,
+      "target_size": 72,
+      "ghidra_body_size": 72,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "e0ffbd270000b0ff0800b1ff1000bfff2d80a0001ca8050c2d8880002d280002babf060c2d2040002d2020020000b0df0800b1df2d2840001000bfdf2d3000008c6106082000bd27",
+      "target_hex": "e0ffbd270000b0ff0800b1ff1000bfff2d80a0001ca8050c2d8880002d280002babf060c2d2040002d2020020000b0df0800b1df2d2840001000bfdf2d3000008c6106082000bd27"
+    },
+    {
+      "address": "001775f8",
+      "symbol": "_Z13func_001775f8y",
+      "compiled_size": 60,
+      "target_size": 60,
+      "ghidra_body_size": 60,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd27020005240000b0ff0800bfff3c50060c2d8080002d2000023c50060c0c0005242d2000020800bfdf0000b0df160005243c5006081000bd27",
+      "target_hex": "f0ffbd27020005240000b0ff0800bfff3c50060c2d8080002d2000023c50060c0c0005242d2000020800bfdf0000b0df160005243c5006081000bd27"
+    },
+    {
+      "address": "00177638",
+      "symbol": "_Z13func_00177638y",
+      "compiled_size": 60,
+      "target_size": 60,
+      "ghidra_body_size": 60,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd27020005240000b0ff0800bfff4250060c2d8080002d2000024250060c0c0005242d2000020800bfdf0000b0df16000524425006081000bd27",
+      "target_hex": "f0ffbd27020005240000b0ff0800bfff4250060c2d8080002d2000024250060c0c0005242d2000020800bfdf0000b0df16000524425006081000bd27"
+    },
+    {
+      "address": "00177a78",
+      "symbol": "_Z13func_00177a78i",
+      "compiled_size": 60,
+      "target_size": 60,
+      "ghidra_body_size": 60,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd270000b0ff0800bfff8ede050c2d808000050b0f920100ee25ff00ef316400ef2d0100e055050b0ea20000b0df0800bfdf0800e0031000bd27",
+      "target_hex": "f0ffbd270000b0ff0800bfff8ede050c2d808000050b0f920100ee25ff00ef316400ef2d0100e055050b0ea20000b0df0800bfdf0800e0031000bd27"
+    },
+    {
+      "address": "001781e8",
+      "symbol": "_Z13func_001781e8i",
+      "compiled_size": 56,
+      "target_size": 56,
+      "ghidra_body_size": 56,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd270000b0ff0800bfff6c03050c2d808000ca0b060c2d200000745a070c3c0b048e3c0b00ae0800bfdf0000b0df0800e0031000bd27",
+      "target_hex": "f0ffbd270000b0ff0800bfff6c03050c2d808000ca0b060c2d200000745a070c3c0b048e3c0b00ae0800bfdf0000b0df0800e0031000bd27"
+    },
+    {
+      "address": "00179f58",
+      "symbol": "_Z13func_00179f58y",
+      "compiled_size": 40,
+      "target_size": 40,
+      "ghidra_body_size": 40,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd270000b0ff0800bfffc4e7050c2d8080002d2000020800bfdf0000b0df6ae005081000bd27",
+      "target_hex": "f0ffbd270000b0ff0800bfffc4e7050c2d8080002d2000020800bfdf0000b0df6ae005081000bd27"
+    },
+    {
+      "address": "0017a1c8",
+      "symbol": "_Z13func_0017a1c8iy",
+      "compiled_size": 60,
+      "target_size": 60,
+      "ghidra_body_size": 60,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd27fdff0e240000b0ff0800bfff2d80a0000c018f8c2478ee01bed8050c0c018fac2d2800020800bfdf0000b0df2d200000ae4a04081000bd27",
+      "target_hex": "f0ffbd27fdff0e240000b0ff0800bfff2d80a0000c018f8c2478ee01bed8050c0c018fac2d2800020800bfdf0000b0df2d200000ae4a04081000bd27"
+    },
+    {
+      "address": "0017a938",
+      "symbol": "_Z13func_0017a938yy",
+      "compiled_size": 48,
+      "target_size": 48,
+      "ghidra_body_size": 48,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd272d20a0000000b0ff0800bfff0cf1050c2d80a0002d2000020800bfdf0000b0df0100052458af05081000bd27",
+      "target_hex": "f0ffbd272d20a0000000b0ff0800bfff0cf1050c2d80a0002d2000020800bfdf0000b0df0100052458af05081000bd27"
+    },
+    {
+      "address": "0017d930",
+      "symbol": "_Z13func_0017d930i",
+      "compiled_size": 52,
+      "target_size": 52,
+      "ghidra_body_size": 52,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "2d1000000900801801000e240a000d241870cd012a788e00000000000000000000000000faffe011010042240800e00300000000",
+      "target_hex": "2d1000000900801801000e240a000d241870cd012a788e00000000000000000000000000faffe011010042240800e00300000000"
+    },
+    {
+      "address": "0017dc98",
+      "symbol": "_Z13func_0017dc98y",
+      "compiled_size": 40,
+      "target_size": 40,
+      "ghidra_body_size": 40,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd270000b0ff0800bfff30f7050c2d8080002d2000020800bfdf0000b0dfbed605081000bd27",
+      "target_hex": "f0ffbd270000b0ff0800bfff30f7050c2d8080002d2000020800bfdf0000b0dfbed605081000bd27"
+    },
+    {
+      "address": "00186948",
+      "symbol": "_Z13func_00186948yi",
+      "compiled_size": 60,
+      "target_size": 60,
+      "ghidra_body_size": 60,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "e0ffbd270000b0ff0800b1ff1000bfff2d80a0002c18060c2d8880001c00058e2d2020020800b1df2d3040000000b0df1000bfdfc20607082000bd27",
+      "target_hex": "e0ffbd270000b0ff0800b1ff1000bfff2d80a0002c18060c2d8880001c00058e2d2020020800b1df2d3040000000b0df1000bfdfc20607082000bd27"
+    },
+    {
+      "address": "001891b8",
+      "symbol": "_Z13func_001891b8it",
+      "compiled_size": 68,
+      "target_size": 68,
+      "ghidra_body_size": 68,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "ff7fa5302d68000000800c2408008e94ff7fcf310600e0550100ad252478cc012578e5012578ec010800e00308008fa41800af29f5ffe015020084240800e00300000000",
+      "target_hex": "ff7fa5302d68000000800c2408008e94ff7fcf310600e0550100ad252478cc012578e5012578ec010800e00308008fa41800af29f5ffe015020084240800e00300000000"
+    },
+    {
+      "address": "0018ef68",
+      "symbol": "_Z13func_0018ef68Pjyy",
+      "compiled_size": 44,
+      "target_size": 44,
+      "ghidra_body_size": 44,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd272d78a0000000bfff2d38c0002d30e0012d4000000400858c0000bfdf0000848c06b305081000bd27",
+      "target_hex": "f0ffbd272d78a0000000bfff2d38c0002d30e0012d4000000400858c0000bfdf0000848c06b305081000bd27"
+    },
+    {
+      "address": "00192260",
+      "symbol": "_Z13func_00192260yy",
+      "compiled_size": 48,
+      "target_size": 48,
+      "ghidra_body_size": 48,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd270000b0ff0800bfff7648060c2d80a0002d2800020800bfdf0000b0df2d2040002d30000046c105081000bd27",
+      "target_hex": "f0ffbd270000b0ff0800bfff7648060c2d80a0002d2800020800bfdf0000b0df2d2040002d30000046c105081000bd27"
+    },
+    {
+      "address": "00192290",
+      "symbol": "_Z13func_00192290yy",
+      "compiled_size": 56,
+      "target_size": 56,
+      "ghidra_body_size": 56,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd270000b0ff0800bfff7648060c2d80a0002d2040003ec2050cffff05242d2000020800bfdf0000b0df2d284000de4706081000bd27",
+      "target_hex": "f0ffbd270000b0ff0800bfff7648060c2d80a0002d2040003ec2050cffff05242d2000020800bfdf0000b0df2d284000de4706081000bd27"
+    }
+  ]
+}

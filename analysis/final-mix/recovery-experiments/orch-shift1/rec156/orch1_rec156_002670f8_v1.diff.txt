@@ -1,0 +1,26 @@
+002670f8: compiled 80 bytes, target 88 bytes, exact=False
+Differing words: 19. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   002670f8: 3c0f0036  lui	t7,0x36                                      | 002670f8: 3c0f0036  lui	t7,0x36
+!! 002670fc: 2402ffff  li	v0,-1                                         | 002670fc: 0000602d  move	t4,zero
+   00267100: 8deef0e4  lw	t6,-3868(t7)   ; = D_0035f0e4                 | 00267100: 8deef0e4  lw	t6,-3868(t7)   ; = D_0035f0e4
+!! 00267104: 0000602d  move	t4,zero                                     | 00267104: 0000682d  move	t5,zero
+!! 00267108: 0000682d  move	t5,zero                                     | 00267108: 95ce001c  lhu	t6,28(t6)
+!! 0026710c: 95ce001c  lhu	t6,28(t6)                                    | 0026710c: 01ae7807  srav	t7,t6,t5
+!! 00267110: 01ae7807  srav	t7,t6,t5                                    | 00267110: 31ef0001  andi	t7,t7,0x1
+!! 00267114: 31ef0001  andi	t7,t7,0x1                                   | 00267114: 31ef00ff  andi	t7,t7,0xff
+!! 00267118: 31ef00ff  andi	t7,t7,0xff                                  | 00267118: 51e00005  beqzl	t7,267130 <func_002670f8+0x38>
+!! 0026711c: 51e00007  beqzl	t7,0x26713c                                | 0026711c: 25ad0001  addiu	t5,t5,1
+!! 00267120: 25ad0001  addiu	t5,t5,1                                    | 00267120: 0180102d  move	v0,t4
+!! 00267124: 55a40004  bnel	t5,a0,0x267138                              | 00267124: 11a40006  beq	t5,a0,267140 <func_002670f8+0x48>
+   00267128: 258c0001  addiu	t4,t4,1                                    | 00267128: 258c0001  addiu	t4,t4,1
+!! 0026712c: 03e00008  jr	ra                                            | 0026712c: 25ad0001  addiu	t5,t5,1
+!! 00267130: 0180102d  move	v0,t4                                       | 00267130: 29af000a  slti	t7,t5,10
+!! 00267134: 00000000  nop                                              | 00267134: 15e0fff6  bnez	t7,267110 <func_002670f8+0x18>
+!! 00267138: 25ad0001  addiu	t5,t5,1                                    | 00267138: 01ae7807  srav	t7,t6,t5
+!! 0026713c: 29af000a  slti	t7,t5,10                                    | 0026713c: 2402ffff  li	v0,-1
+!! 00267140: 55e0fff4  bnezl	t7,0x267114                                | 00267140: 03e00008  jr	ra
+!! 00267144: 01ae7807  srav	t7,t6,t5                                    | 00267144: 00000000  nop
+!! 00267148: 03e00008  jr	ra                                            | 
+!! 0026714c: 00000000  nop                                              | 

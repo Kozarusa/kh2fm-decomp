@@ -1,0 +1,21 @@
+001a1950: compiled 68 bytes, target 60 bytes, exact=False
+Differing words: 16. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001a1950: 27bdfff0  addiu	sp,sp,-16                                  | 001a1950: 27bdfff0  addiu	sp,sp,-16
+!! 001a1954: ffbf0000  sd	ra,0(sp)                                      | 001a1954: 30ee00ff  andi	t6,a3,0xff
+!! 001a1958: 8c8e025c  lw	t6,604(a0)                                    | 001a1958: ffbf0000  sd	ra,0(sp)
+!! 001a195c: 15c00004  bnez	t6,0x1a1970                                 | 001a195c: 8c8f025c  lw	t7,604(a0)
+!! 001a1960: 30e700ff  andi	a3,a3,0xff                                  | 001a1960: 11e00009  beqz	t7,1a1988 <func_001a1950+0x38>
+!! 001a1964: dfbf0000  ld	ra,0(sp)                                      | 001a1964: 01c0382d  move	a3,t6
+!! 001a1968: 08068644  j	0x1a1910                                       | 001a1968: 8dee0000  lw	t6,0(t7)
+!! 001a196c: 27bd0010  addiu	sp,sp,16                                   | 001a196c: 01e0202d  move	a0,t7
+!! 001a1970: 8dcf0000  lw	t7,0(t6)                                      | 001a1970: 8dcf0078  lw	t7,120(t6)
+!! 001a1974: 8de20078  lw	v0,120(t7)                                    | 001a1974: 01e0f809  jalr	t7
+!! 001a1978: 0040f809  jalr	v0                                          | 001a1978: 00000000  nop
+!! 001a197c: 01c0202d  move	a0,t6                                       | 001a197c: dfbf0000  ld	ra,0(sp)
+!! 001a1980: dfbf0000  ld	ra,0(sp)                                      | 001a1980: 03e00008  jr	ra
+!! 001a1984: 03e00008  jr	ra                                            | 001a1984: 27bd0010  addiu	sp,sp,16
+!! 001a1988: 27bd0010  addiu	sp,sp,16                                   | 001a1988: dfbf0000  ld	ra,0(sp)
+!!                                                                      | 001a198c: 08068644  j	1a1910 <func_001a1910>
+!!                                                                      | 001a1990: 27bd0010  addiu	sp,sp,16

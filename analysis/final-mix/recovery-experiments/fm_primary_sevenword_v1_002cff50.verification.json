@@ -1,0 +1,18 @@
+{
+  "source_sha256": "6e6963e302dea5d6bb57c1025028bd5776a0734c56bafe216a84a8cf9d9cf1dd",
+  "source": "analysis/final-mix/recovery-experiments/fm_primary_sevenword_v1_002cff50.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "002cff50",
+      "symbol": "_Z13func_002cff50i",
+      "compiled_size": 68,
+      "target_size": 68,
+      "ghidra_body_size": 68,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "f0ffbd270000b0ff0800bfff2d808000b43c0b0cf00a84240c0b00ae0800bfdff40a00aef80a00aefc0a00ae000b00ae040b00ae080b00ae0000b0df0800e0031000bd27",
+      "target_hex": "f0ffbd270000b0ff0800bfff2d808000b43c0b0cf00a84240c0b00aef40a00aef80a00aefc0a00ae000b00ae040b00ae080b00ae0800bfdf0000b0df0800e0031000bd27"
+    }
+  ]
+}

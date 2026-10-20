@@ -1,0 +1,28 @@
+0018a100: compiled 88 bytes, target 96 bytes, exact=False
+Differing words: 17. First difference at instruction 2 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0018a100: 8c8e0000  lw	t6,0(a0)                                      | 0018a100: 8c8e0000  lw	t6,0(a0)
+   0018a104: 240f0014  li	t7,20                                         | 0018a104: 240f0014  li	t7,20
+!! 0018a108: 248c0040  addiu	t4,a0,64                                   | 0018a108: 248d0040  addiu	t5,a0,64
+!! 0018a10c: 24cd0014  addiu	t5,a2,20                                   | 0018a10c: 24cc0014  addiu	t4,a2,20
+   0018a110: 01cf7018  mult	t6,t6,t7                                    | 0018a110: 01cf7018  mult	t6,t6,t7
+!! 0018a114: 01a6600b  movn	t4,t5,a2                                    | 0018a114: 01a6600a  movz	t4,t5,a2
+   0018a118: 008e2021  addu	a0,a0,t6                                    | 0018a118: 008e2021  addu	a0,a0,t6
+   0018a11c: 24840040  addiu	a0,a0,64                                   | 0018a11c: 24840040  addiu	a0,a0,64
+   0018a120: 0184782b  sltu	t7,t4,a0                                    | 0018a120: 0184782b  sltu	t7,t4,a0
+!! 0018a124: 11e0000b  beqz	t7,0x18a154                                 | 0018a124: 11e0000a  beqz	t7,18a150 <func_0018a100+0x50>
+!! 0018a128: 0180102d  move	v0,t4                                       | 0018a128: 0000102d  move	v0,zero
+   0018a12c: 240e0016  li	t6,22                                         | 0018a12c: 240e0016  li	t6,22
+!! 0018a130: 10ae0009  beq	a1,t6,0x18a158                               | 0018a130: 10ae0007  beq	a1,t6,18a150 <func_0018a100+0x50>
+!! 0018a134: 00000000  nop                                              | 0018a134: 0180102d  move	v0,t4
+!! 0018a138: 904f0004  lbu	t7,4(v0)                                     | 0018a138: 918f0004  lbu	t7,4(t4)
+!! 0018a13c: 11e50006  beq	t7,a1,0x18a158                               | 0018a13c: 11e50004  beq	t7,a1,18a150 <func_0018a100+0x50>
+!! 0018a140: 00000000  nop                                              | 0018a140: 258c0014  addiu	t4,t4,20
+!! 0018a144: 24420014  addiu	v0,v0,20                                   | 0018a144: 0184782b  sltu	t7,t4,a0
+!! 0018a148: 0044782b  sltu	t7,v0,a0                                    | 0018a148: 15e0fff9  bnez	t7,18a130 <func_0018a100+0x30>
+!! 0018a14c: 15e0fff8  bnez	t7,0x18a130                                 | 0018a14c: 0000102d  move	v0,zero
+!! 0018a150: 00000000  nop                                              | 0018a150: 03e00008  jr	ra
+!! 0018a154: 0000102d  move	v0,zero                                     | 0018a154: 00000000  nop
+!! 0018a158: 03e00008  jr	ra                                            | 
+!! 0018a15c: 00000000  nop                                              | 

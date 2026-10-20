@@ -1,0 +1,21 @@
+00145c68: compiled 68 bytes, target 68 bytes, exact=False
+Differing words: 2. First difference at instruction 4 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00145c68: 8c8f0014  lw	t7,20(a0)                                     | 00145c68: 8c8f0014  lw	t7,20(a0)
+   00145c6c: 19e0000d  blez	t7,0x145ca4                                 | 00145c6c: 19e0000d  blez	t7,145ca4 <func_00145c68+0x3c>
+   00145c70: 30a500ff  andi	a1,a1,0xff                                  | 00145c70: 30a500ff  andi	a1,a1,0xff
+   00145c74: 01e0682d  move	t5,t7                                       | 00145c74: 01e0682d  move	t5,t7
+!! 00145c78: 240b0001  li	t3,1                                          | 00145c78: 0000602d  move	t4,zero
+!! 00145c7c: 0000602d  move	t4,zero                                     | 00145c7c: 240b0001  li	t3,1
+   00145c80: 8c8f0008  lw	t7,8(a0)                                      | 00145c80: 8c8f0008  lw	t7,8(a0)
+   00145c84: 018f7821  addu	t7,t4,t7                                    | 00145c84: 018f7821  addu	t7,t4,t7
+   00145c88: 91ee0001  lbu	t6,1(t7)                                     | 00145c88: 91ee0001  lbu	t6,1(t7)
+   00145c8c: 15c50002  bne	t6,a1,0x145c98                               | 00145c8c: 15c50002  bne	t6,a1,145c98 <func_00145c68+0x30>
+   00145c90: 258c001c  addiu	t4,t4,28                                   | 00145c90: 258c001c  addiu	t4,t4,28
+   00145c94: a1eb0000  sb	t3,0(t7)                                      | 00145c94: a1eb0000  sb	t3,0(t7)
+   00145c98: 25adffff  addiu	t5,t5,-1                                   | 00145c98: 25adffff  addiu	t5,t5,-1
+   00145c9c: 55a0fff9  bnezl	t5,0x145c84                                | 00145c9c: 55a0fff9  bnezl	t5,145c84 <func_00145c68+0x1c>
+   00145ca0: 8c8f0008  lw	t7,8(a0)                                      | 00145ca0: 8c8f0008  lw	t7,8(a0)
+   00145ca4: 03e00008  jr	ra                                            | 00145ca4: 03e00008  jr	ra
+   00145ca8: 00000000  nop                                              | 00145ca8: 00000000  nop

@@ -1,0 +1,14 @@
+{
+  "probe_source": "analysis/final-mix/recovery-experiments/fm_primary_storeorder_v7_00281f90.cpp",
+  "probe_source_sha256": "e5be386d1e9366a2d999529d42e26d87134911024ab3c7edad8de48bebf47a65",
+  "probe_proof_sha256": "a2ecb77aad2983d7500d3d11dcf69b51cc4ed1c1743736cc1cf91609ef36cfa1",
+  "curated_source": "analysis/final-mix/recovery-experiments/fm_primary_storeorder_recovered_00281f90.cpp",
+  "curated_source_sha256": "9ace2ffd4f9ebf78ca606f7b5cb9cf243bc285fdd8526e49efbfe209aeb5830d",
+  "selected_addresses": [
+    "00281f90"
+  ],
+  "exclusion_receipt": null,
+  "limitations": [
+    "Curated source still requires a new probe, registration and full build."
+  ]
+}

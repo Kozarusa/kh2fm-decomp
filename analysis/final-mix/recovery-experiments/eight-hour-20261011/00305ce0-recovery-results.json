@@ -1,0 +1,116 @@
+{
+  "address": "00305ce0",
+  "specialty": "primary-store-epilogues",
+  "hypothesis": "Exact-size C++ and precisely described store variants all leave original ra restoration after the store rather than before it. An empty read of the return-address register did not fix scheduling. Review the original compiler ABI or return/store dependency before repeating store qualifiers.",
+  "prior_best": {
+    "address": "00305ce0",
+    "bytes": 40,
+    "different_words": 2,
+    "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\fm_primary_shortresidual_v2_00305ce0_1.cpp",
+    "source_sha256": "ec9ca0464bb1943a291dfb0395296f6eada263eb7e7812febf586a4130dc493b",
+    "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\fm_primary_shortresidual_v2_00305ce0_1.verification.json",
+    "proof_sha256": "b3499bc652a988fe4299553a7737028f9a899b25a62126894e52d5ec83f49c32",
+    "state": [
+      "ready",
+      "primary-store-epilogues"
+    ]
+  },
+  "completed_probes": 8,
+  "best_new": {
+    "source": "eight_hour_00305ce0_cpp_0.cpp",
+    "source_sha256": "ff330371df33313acef9f4a53d86c1e039211bed2bc7f10fd2882155220d4ad8",
+    "proof": "eight_hour_00305ce0_cpp_0.verification.json",
+    "proof_sha256": "1092c2e1062b3c94589e4f096d2f855e0a65622d9e7942d890e1c787eff6799d",
+    "compiled_bytes": 40,
+    "target_bytes": 40,
+    "differing_words": 2,
+    "exact": false
+  },
+  "evidence": [
+    {
+      "source": "eight_hour_00305ce0_cpp_0.cpp",
+      "source_sha256": "ff330371df33313acef9f4a53d86c1e039211bed2bc7f10fd2882155220d4ad8",
+      "proof": "eight_hour_00305ce0_cpp_0.verification.json",
+      "proof_sha256": "1092c2e1062b3c94589e4f096d2f855e0a65622d9e7942d890e1c787eff6799d",
+      "compiled_bytes": 40,
+      "target_bytes": 40,
+      "differing_words": 2,
+      "exact": false
+    },
+    {
+      "source": "eight_hour_00305ce0_cpp_1.cpp",
+      "source_sha256": "0aad43afcf8e651a6763e365a5dd0713795e627a7d9243d0d1e3c85724263a7e",
+      "proof": "eight_hour_00305ce0_cpp_1.verification.json",
+      "proof_sha256": "7379188ba05ef17551692d64e0d07bff488b5d678ca70f5937b05b75af57457d",
+      "compiled_bytes": 40,
+      "target_bytes": 40,
+      "differing_words": 2,
+      "exact": false
+    },
+    {
+      "source": "eight_hour_00305ce0_precise_asm_0.cpp",
+      "source_sha256": "01f3a9cb6c4481c17904be54770c42049830f9c9b446ec20ec35c0386bc9e43a",
+      "proof": "eight_hour_00305ce0_precise_asm_0.verification.json",
+      "proof_sha256": "d4b8b6fe7b40a4303b96504e5ccdae62616c9a17806e659fc7b05f85c4553d02",
+      "compiled_bytes": 40,
+      "target_bytes": 40,
+      "differing_words": 2,
+      "exact": false
+    },
+    {
+      "source": "eight_hour_00305ce0_precise_asm_1.cpp",
+      "source_sha256": "cbee123de439460ec5a0e7607c93a27f1a8b2293478a4de7b1bb96f151c20526",
+      "proof": "eight_hour_00305ce0_precise_asm_1.verification.json",
+      "proof_sha256": "b7d07d74f6a42c4f874d5dd29a29d93b59d1653b6c96cd1fecbead642b7ed938",
+      "compiled_bytes": 40,
+      "target_bytes": 40,
+      "differing_words": 2,
+      "exact": false
+    },
+    {
+      "source": "eight_hour_00305ce0_register_asm_0.cpp",
+      "source_sha256": "32fb40ec55644d6e2867ce6300aad218998103b5e5ba0621734be38481d01895",
+      "proof": "eight_hour_00305ce0_register_asm_0.verification.json",
+      "proof_sha256": "15355f47ee917a09771ee64a849884119dde8af643b945683377b1d5e3e8ead8",
+      "compiled_bytes": 40,
+      "target_bytes": 40,
+      "differing_words": 2,
+      "exact": false
+    },
+    {
+      "source": "eight_hour_00305ce0_register_asm_1.cpp",
+      "source_sha256": "d151e4c8ebed4a0d2a118fbc562476e036cbf1559f6efad0588ad0bdee523184",
+      "proof": "eight_hour_00305ce0_register_asm_1.verification.json",
+      "proof_sha256": "b52e522b6cbae8fea33410d7b0a80c357e8ae02246f14adf918304a52c4e312d",
+      "compiled_bytes": 40,
+      "target_bytes": 40,
+      "differing_words": 2,
+      "exact": false
+    },
+    {
+      "source": "eight_hour_00305ce0_return_dependency_0.cpp",
+      "source_sha256": "eeea89f520733490fea98638fbf04eb69a98849ee2628e5ae65a7f6bf014a1a0",
+      "proof": "eight_hour_00305ce0_return_dependency_0.verification.json",
+      "proof_sha256": "33b992268701a0e151437c149f1c46f0fecca0ea1faa44fc1a13f11c323f6f68",
+      "compiled_bytes": 44,
+      "target_bytes": 40,
+      "differing_words": 7,
+      "exact": false
+    },
+    {
+      "source": "eight_hour_00305ce0_return_dependency_1.cpp",
+      "source_sha256": "1adddf089b0d04ae15f609b141192cf874470922695b059cbf67a43c0eef4440",
+      "proof": "eight_hour_00305ce0_return_dependency_1.verification.json",
+      "proof_sha256": "12133abd12ab8b334ec2c0f4fe175b01d46ec7cfc133668f4221cae07fd9edd0",
+      "compiled_bytes": 40,
+      "target_bytes": 40,
+      "differing_words": 2,
+      "exact": false
+    }
+  ],
+  "accepted": false,
+  "limitations": [
+    "Instruction mismatch is not compiler impossibility.",
+    "No unsuccessful proposal is registered."
+  ]
+}

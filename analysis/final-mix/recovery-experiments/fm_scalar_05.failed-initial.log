@@ -1,0 +1,56 @@
+recovery-experiments/fm_scalar_05/probe.cpp: In function `u64 
+   func_001d3390(long long unsigned int)':
+recovery-experiments/fm_scalar_05/probe.cpp:184: warning: cast to pointer from 
+   integer of different size
+recovery-experiments/fm_scalar_05/probe.cpp: In function `void 
+   func_001d6da8(u16*)':
+recovery-experiments/fm_scalar_05/probe.cpp:331: warning: cast to pointer from 
+   integer of different size
+recovery-experiments/fm_scalar_05/probe.cpp:333: warning: cast to pointer from 
+   integer of different size
+recovery-experiments/fm_scalar_05/probe.cpp: In function `void 
+   func_001e0de8(long long int)':
+recovery-experiments/fm_scalar_05/probe.cpp:1183: warning: cast to pointer from 
+   integer of different size
+recovery-experiments/fm_scalar_05/probe.cpp:1184: warning: cast to pointer from 
+   integer of different size
+recovery-experiments/fm_scalar_05/probe.cpp:1198: warning: cast to pointer from 
+   integer of different size
+recovery-experiments/fm_scalar_05/probe.cpp: In function `void 
+   func_001e3898(long long unsigned int, int)':
+recovery-experiments/fm_scalar_05/probe.cpp:1307: warning: cast to pointer from 
+   integer of different size
+recovery-experiments/fm_scalar_05/probe.cpp: In function `void 
+   func_001e5fd8()':
+recovery-experiments/fm_scalar_05/probe.cpp:1373: `REG_RCNT0_MODE' undeclared 
+   (first use this function)
+recovery-experiments/fm_scalar_05/probe.cpp:1373: (Each undeclared identifier 
+   is reported only once for each function it appears in.)
+recovery-experiments/fm_scalar_05/probe.cpp:1375: `REG_RCNT0_COUNT' undeclared 
+   (first use this function)
+recovery-experiments/fm_scalar_05/probe.cpp: In function `void 
+   func_001e7470(unsigned int)':
+recovery-experiments/fm_scalar_05/probe.cpp:1419: `REG_DMAC_2_GIF_CHCR' 
+   undeclared (first use this function)
+recovery-experiments/fm_scalar_05/probe.cpp:1421: `REG_DMAC_2_GIF_QWC' 
+   undeclared (first use this function)
+recovery-experiments/fm_scalar_05/probe.cpp:1422: `REG_DMAC_2_GIF_TADR' 
+   undeclared (first use this function)
+recovery-experiments/fm_scalar_05/probe.cpp:1423: `REG_DMAC_STAT' undeclared 
+   (first use this function)
+recovery-experiments/fm_scalar_05/probe.cpp: In function `void 
+   func_001e7798(u32*, int)':
+recovery-experiments/fm_scalar_05/probe.cpp:1437: warning: invalid conversion 
+   from `int*' to `unsigned int'
+recovery-experiments/fm_scalar_05/probe.cpp: In function `void 
+   func_002092e0(int, long long unsigned int, int)':
+recovery-experiments/fm_scalar_05/probe.cpp:1688: warning: cast to pointer from 
+   integer of different size
+Traceback (most recent call last):
+  File "/mnt/c/Users/KoZa/Documents/ChatGPT/tools/kh2-audit/probe_fm_source.py", line 36, in <module>
+    run(f'/opt/ps2/gcc/bin/ee-g++ -O2 -g0 -x c++ -fno-exceptions -fno-rtti -fpermissive -ffunction-sections -c {relative}/probe.cpp -o {relative}/probe.o')
+  File "/mnt/c/Users/KoZa/Documents/ChatGPT/tools/kh2-audit/probe_fm_source.py", line 32, in run
+    subprocess.run(['docker', 'run', '--rm', '--platform', 'linux/amd64',
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['docker', 'run', '--rm', '--platform', 'linux/amd64', '-v', '/root/kh2fm-build:/work', '-w', '/work', 'kh2-local/ps2-compiler:3.2-ee-040921-objdiff', 'bash', '-lc', '/opt/ps2/gcc/bin/ee-g++ -O2 -g0 -x c++ -fno-exceptions -fno-rtti -fpermissive -ffunction-sections -c recovery-experiments/fm_scalar_05/probe.cpp -o recovery-experiments/fm_scalar_05/probe.o']' returned non-zero exit status 1.

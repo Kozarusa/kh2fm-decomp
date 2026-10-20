@@ -1,0 +1,16 @@
+0020eac0: compiled 48 bytes, target 48 bytes, exact=False
+Differing words: 10. First difference at instruction 0 (0-based).
+
+ORIGINAL                                                                | COMPILED
+!! 0020eac0: 3c0d7000  lui	t5,0x7000                                    | 0020eac0: 3c0f7000  lui	t7,0x7000
+!! 0020eac4: 3c0f0036  lui	t7,0x36                                      | 0020eac4: 3c0e0036  lui	t6,0x36
+!! 0020eac8: 3c0e0036  lui	t6,0x36                                      | 0020eac8: 35ef4000  ori	t7,t7,0x4000
+!! 0020eacc: 35ad4000  ori	t5,t5,0x4000                                 | 0020eacc: 3c0d7000  lui	t5,0x7000
+!! 0020ead0: 3c0c7000  lui	t4,0x7000                                    | 0020ead0: adcf9810  sw	t7,-26608(t6)   ; = D_00359810
+!! 0020ead4: adcd9810  sw	t5,-26608(t6)   ; = D_00359810                | 0020ead4: 3c0f0036  lui	t7,0x36
+!! 0020ead8: adec9788  sw	t4,-26744(t7)   ; = D_00359788                | 0020ead8: 3c0e0036  lui	t6,0x36
+!! 0020eadc: 3c0e0036  lui	t6,0x36                                      | 0020eadc: aded9788  sw	t5,-26744(t7)   ; = D_00359788
+!! 0020eae0: 3c0f0036  lui	t7,0x36                                      | 0020eae0: adc09808  sw	zero,-26616(t6)   ; = D_00359808
+!! 0020eae4: adc09808  sw	zero,-26616(t6)   ; = D_00359808              | 0020eae4: 3c0f0036  lui	t7,0x36
+   0020eae8: 03e00008  jr	ra                                            | 0020eae8: 03e00008  jr	ra
+   0020eaec: ade09780  sw	zero,-26752(t7)   ; = D_00359780              | 0020eaec: ade09780  sw	zero,-26752(t7)   ; = D_00359780

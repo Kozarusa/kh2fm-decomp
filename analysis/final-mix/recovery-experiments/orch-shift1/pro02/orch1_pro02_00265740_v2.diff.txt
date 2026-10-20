@@ -1,0 +1,19 @@
+00265740: compiled 60 bytes, target 60 bytes, exact=False
+Differing words: 2. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00265740: 27bdfff0  addiu	sp,sp,-16                                  | 00265740: 27bdfff0  addiu	sp,sp,-16
+!! 00265744: ffbf0008  sd	ra,8(sp)                                      | 00265744: ffb00000  sd	s0,0(sp)
+!! 00265748: ffb00000  sd	s0,0(sp)                                      | 00265748: ffbf0008  sd	ra,8(sp)
+   0026574c: 0c095ddc  jal	0x257770                                     | 0026574c: 0c095ddc  jal	257770 <func_00257770>
+   00265750: 00000000  nop                                              | 00265750: 00000000  nop
+   00265754: 0040802d  move	s0,v0                                       | 00265754: 0040802d  move	s0,v0
+   00265758: 0c04e75e  jal	0x139d78                                     | 00265758: 0c04e75e  jal	139d78 <func_00139d78>
+   0026575c: 0040202d  move	a0,v0                                       | 0026575c: 0040202d  move	a0,v0
+   00265760: 8e020184  lw	v0,388(s0)                                    | 00265760: 8e020184  lw	v0,388(s0)
+   00265764: dfbf0008  ld	ra,8(sp)                                      | 00265764: dfbf0008  ld	ra,8(sp)
+   00265768: 3842008d  xori	v0,v0,0x8d                                  | 00265768: 3842008d  xori	v0,v0,0x8d
+   0026576c: dfb00000  ld	s0,0(sp)                                      | 0026576c: dfb00000  ld	s0,0(sp)
+   00265770: 2c420001  sltiu	v0,v0,1                                    | 00265770: 2c420001  sltiu	v0,v0,1
+   00265774: 03e00008  jr	ra                                            | 00265774: 03e00008  jr	ra
+   00265778: 27bd0010  addiu	sp,sp,16                                   | 00265778: 27bd0010  addiu	sp,sp,16

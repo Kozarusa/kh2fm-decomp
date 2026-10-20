@@ -1,0 +1,14 @@
+{
+  "probe_source": "analysis/final-mix/recovery-experiments/fm_primary_packetreturn_v2_0018db38_3.cpp",
+  "probe_source_sha256": "e736ab679be4b606bfbfac6d3158f05bb3428affd06cb703059ca6adbb0ca230",
+  "probe_proof_sha256": "01426c54b6f2f5b0ef7e609e7d5e1f7f28cb4f2e5b996cdbbc10c351aa6dfe21",
+  "curated_source": "analysis/final-mix/recovery-experiments/fm_primary_packetreturn_recovered.cpp",
+  "curated_source_sha256": "494851c920a3fd09c9afcbeea6b33ddb6b7e2f02f86793f14f4cdec02dd377b8",
+  "selected_addresses": [
+    "0018db38"
+  ],
+  "exclusion_receipt": null,
+  "limitations": [
+    "Curated source still requires a new probe, registration and full build."
+  ]
+}

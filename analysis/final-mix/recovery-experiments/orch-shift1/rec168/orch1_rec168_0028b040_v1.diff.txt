@@ -1,0 +1,19 @@
+0028b040: compiled 60 bytes, target 56 bytes, exact=False
+Differing words: 14. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0028b040: 848d0016  lh	t5,22(a0)                                     | 0028b040: 848d0016  lh	t5,22(a0)
+!! 0028b044: 51a00009  beqzl	t5,0x28b06c                                | 0028b044: 15a00005  bnez	t5,28b05c <func_0028b040+0x1c>
+!! 0028b048: 848e0012  lh	t6,18(a0)                                     | 0028b048: 00000000  nop
+!! 0028b04c: 51a00001  beqzl	t5,0x28b054                                | 0028b04c: 848e0012  lh	t6,18(a0)
+!! 0028b050: 000001cd  break	0x7                                        | 0028b050: 848f0000  lh	t7,0(a0)
+!! 0028b054: 848f0012  lh	t7,18(a0)                                     | 0028b054: 03e00008  jr	ra
+!! 0028b058: 848e0000  lh	t6,0(a0)                                      | 0028b058: 01ee1021  addu	v0,t7,t6
+!! 0028b05c: 01cf7021  addu	t6,t6,t7                                    | 0028b05c: 51a00001  beqzl	t5,28b064 <func_0028b040+0x24>
+!! 0028b060: 01cd001a  div	zero,t6,t5                                   | 0028b060: 000001cd  break	0x7
+!! 0028b064: 03e00008  jr	ra                                            | 0028b064: 848f0012  lh	t7,18(a0)
+!! 0028b068: 00001010  mfhi	v0                                          | 0028b068: 848e0000  lh	t6,0(a0)
+!! 0028b06c: 848f0000  lh	t7,0(a0)                                      | 0028b06c: 01cf7021  addu	t6,t6,t7
+!! 0028b070: 03e00008  jr	ra                                            | 0028b070: 01cd001a  div	zero,t6,t5
+!! 0028b074: 01ee1021  addu	v0,t7,t6                                    | 0028b074: 03e00008  jr	ra
+!!                                                                      | 0028b078: 00001010  mfhi	v0

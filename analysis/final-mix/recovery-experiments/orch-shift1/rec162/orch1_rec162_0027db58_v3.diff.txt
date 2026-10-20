@@ -1,0 +1,35 @@
+0027db58: compiled 124 bytes, target 124 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0027db58: 27bdfff0  addiu	sp,sp,-16                                  | 0027db58: 27bdfff0  addiu	sp,sp,-16
+   0027db5c: ffb00000  sd	s0,0(sp)                                      | 0027db5c: ffb00000  sd	s0,0(sp)
+   0027db60: ffbf0008  sd	ra,8(sp)                                      | 0027db60: ffbf0008  sd	ra,8(sp)
+   0027db64: 0c059fc6  jal	0x167f18                                     | 0027db64: 0c059fc6  jal	167f18 <func_00167f18>
+   0027db68: 0000202d  move	a0,zero                                     | 0027db68: 0000202d  move	a0,zero
+   0027db6c: 0c0a1f6c  jal	0x287db0                                     | 0027db6c: 0c0a1f6c  jal	287db0 <func_00287db0>
+   0027db70: 0040802d  move	s0,v0                                       | 0027db70: 0040802d  move	s0,v0
+   0027db74: 1040000d  beqz	v0,0x27dbac                                 | 0027db74: 1040000d  beqz	v0,27dbac <func_0027db58+0x54>
+   0027db78: 3c0f0036  lui	t7,0x36                                      | 0027db78: 3c0f0036  lui	t7,0x36
+   0027db7c: 0c0a41d0  jal	0x290740                                     | 0027db7c: 0c0a41d0  jal	290740 <func_00290740>
+   0027db80: 8de4f238  lw	a0,-3528(t7)   ; = D_0035f238                 | 0027db80: 8de4f238  lw	a0,-3528(t7)   ; = D_0035f238
+   0027db84: 14400004  bnez	v0,0x27db98                                 | 0027db84: 14400004  bnez	v0,27db98 <func_0027db58+0x40>
+   0027db88: 0000782d  move	t7,zero                                     | 0027db88: 0000782d  move	t7,zero
+   0027db8c: 0c040e7e  jal	0x1039f8                                     | 0027db8c: 0c040e7e  jal	1039f8 <func_001039f8>
+   0027db90: 00000000  nop                                              | 0027db90: 00000000  nop
+   0027db94: 240f0001  li	t7,1                                          | 0027db94: 240f0001  li	t7,1
+   0027db98: dfb00000  ld	s0,0(sp)                                      | 0027db98: dfb00000  ld	s0,0(sp)
+   0027db9c: 01e0102d  move	v0,t7                                       | 0027db9c: 01e0102d  move	v0,t7
+   0027dba0: dfbf0008  ld	ra,8(sp)                                      | 0027dba0: dfbf0008  ld	ra,8(sp)
+   0027dba4: 03e00008  jr	ra                                            | 0027dba4: 03e00008  jr	ra
+   0027dba8: 27bd0010  addiu	sp,sp,16                                   | 0027dba8: 27bd0010  addiu	sp,sp,16
+   0027dbac: de0f0008  ld	t7,8(s0)                                      | 0027dbac: de0f0008  ld	t7,8(s0)
+   0027dbb0: 31ef000c  andi	t7,t7,0xc                                   | 0027dbb0: 31ef000c  andi	t7,t7,0xc
+   0027dbb4: 11e00005  beqz	t7,0x27dbcc                                 | 0027dbb4: 11e00005  beqz	t7,27dbcc <func_0027db58+0x74>
+   0027dbb8: 24040009  li	a0,9                                          | 0027dbb8: 24040009  li	a0,9
+   0027dbbc: 0c090986  jal	0x242618                                     | 0027dbbc: 0c090986  jal	242618 <func_00242618>
+   0027dbc0: 24050001  li	a1,1                                          | 0027dbc0: 24050001  li	a1,1
+   0027dbc4: 0c0a1f68  jal	0x287da0                                     | 0027dbc4: 0c0a1f68  jal	287da0 <func_00287da0>
+   0027dbc8: 00000000  nop                                              | 0027dbc8: 00000000  nop
+   0027dbcc: 1000fff2  b	0x27db98                                       | 0027dbcc: 1000fff2  b	27db98 <func_0027db58+0x40>
+   0027dbd0: 0000782d  move	t7,zero                                     | 0027dbd0: 0000782d  move	t7,zero

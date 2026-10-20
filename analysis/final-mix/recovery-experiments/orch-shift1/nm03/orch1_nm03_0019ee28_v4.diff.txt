@@ -1,0 +1,17 @@
+0019ee28: compiled 52 bytes, target 52 bytes, exact=False
+Differing words: 2. First difference at instruction 4 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0019ee28: 340fffff  li	t7,0xffff                                     | 0019ee28: 340fffff  li	t7,0xffff
+   0019ee2c: 14af0009  bne	a1,t7,0x19ee54                               | 0019ee2c: 14af0009  bne	a1,t7,19ee54 <func_0019ee28+0x2c>
+   0019ee30: 240f0001  li	t7,1                                          | 0019ee30: 240f0001  li	t7,1
+   0019ee34: 148f0007  bne	a0,t7,0x19ee54                               | 0019ee34: 148f0007  bne	a0,t7,19ee54 <func_0019ee28+0x2c>
+!! 0019ee38: 3c0e0035  lui	t6,0x35                                      | 0019ee38: 44800000  mtc1	zero,$f0
+!! 0019ee3c: 44800000  mtc1	zero,$f0                                    | 0019ee3c: 3c0e0035  lui	t6,0x35
+   0019ee40: 25cf0448  addiu	t7,t6,1096   ; = D_00350448                | 0019ee40: 25cf0448  addiu	t7,t6,1096   ; = D_00350448
+   0019ee44: e5e00020  swc1	$f0,32(t7)                                  | 0019ee44: e5e00020  swc1	$f0,32(t7)
+   0019ee48: 3c0f0035  lui	t7,0x35                                      | 0019ee48: 3c0f0035  lui	t7,0x35
+   0019ee4c: adc00448  sw	zero,1096(t6)   ; = D_00350448                | 0019ee4c: adc00448  sw	zero,1096(t6)   ; = D_00350448
+   0019ee50: e5e00464  swc1	$f0,1124(t7)   ; = D_00350464               | 0019ee50: e5e00464  swc1	$f0,1124(t7)   ; = D_00350464
+   0019ee54: 03e00008  jr	ra                                            | 0019ee54: 03e00008  jr	ra
+   0019ee58: 00000000  nop                                              | 0019ee58: 00000000  nop

@@ -1,0 +1,16 @@
+[
+  {
+    "address": "002d96d8",
+    "owner": "eight-hour-primary",
+    "metadata": "{\"address\": \"002d96d8\", \"end\": \"002d972c\", \"bytes\": 84, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [\"002d0ea8\"], \"best_proposal\": null}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002d96d8_v5_word_store_dependency_0.cpp\", \"source_sha256\": \"293866f621c97b4f7a8d23ee7be1115e65df515f4b4f38cdc92531efb1584eef\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002d96d8_v5_word_store_dependency_0.verification.json\", \"proof_sha256\": \"6285b9ea06a22d66595c6b9ba81fe611c90c0851fdcf4196f75b7e79be880365\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_queuezetaprime_recovered_002d96d8.cpp"
+  },
+  {
+    "address": "002d9730",
+    "owner": "eight-hour-primary",
+    "metadata": "{\"address\": \"002d9730\", \"end\": \"002d9784\", \"bytes\": 84, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [\"002d0ea8\"], \"best_proposal\": null}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002d9730_v5_word_store_dependency_0.cpp\", \"source_sha256\": \"3508bc2cbccf0a3018528e55bce109d52acf99724324f7d40a8cd966ddfe275c\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002d9730_v5_word_store_dependency_0.verification.json\", \"proof_sha256\": \"4fe440c9e6388921a76a848852bc57994f1f3b86f6ec47f6579bd31827e9115b\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_queuezetaprime_recovered_002d9730.cpp"
+  }
+]

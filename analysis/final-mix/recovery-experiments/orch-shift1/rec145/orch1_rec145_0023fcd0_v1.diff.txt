@@ -1,0 +1,28 @@
+0023fcd0: compiled 96 bytes, target 96 bytes, exact=False
+Differing words: 9. First difference at instruction 13 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0023fcd0: 27bdffe0  addiu	sp,sp,-32                                  | 0023fcd0: 27bdffe0  addiu	sp,sp,-32
+   0023fcd4: 3c0e0036  lui	t6,0x36                                      | 0023fcd4: 3c0e0036  lui	t6,0x36
+   0023fcd8: ffb10008  sd	s1,8(sp)                                      | 0023fcd8: ffb10008  sd	s1,8(sp)
+   0023fcdc: ffbf0010  sd	ra,16(sp)                                     | 0023fcdc: ffbf0010  sd	ra,16(sp)
+   0023fce0: ffb00000  sd	s0,0(sp)                                      | 0023fce0: ffb00000  sd	s0,0(sp)
+   0023fce4: 3c110036  lui	s1,0x36                                      | 0023fce4: 3c110036  lui	s1,0x36
+   0023fce8: 8e2febec  lw	t7,-5140(s1)   ; = D_0035ebec                 | 0023fce8: 8e2febec  lw	t7,-5140(s1)   ; = D_0035ebec
+   0023fcec: 8dd0ebf0  lw	s0,-5136(t6)   ; = D_0035ebf0                 | 0023fcec: 8dd0ebf0  lw	s0,-5136(t6)   ; = D_0035ebf0
+   0023fcf0: 000f78c0  sll	t7,t7,0x3                                    | 0023fcf0: 000f78c0  sll	t7,t7,0x3
+   0023fcf4: 020f8021  addu	s0,s0,t7                                    | 0023fcf4: 020f8021  addu	s0,s0,t7
+   0023fcf8: 8e05fff8  lw	a1,-8(s0)                                     | 0023fcf8: 8e05fff8  lw	a1,-8(s0)
+   0023fcfc: 0c0bf75a  jal	0x2fdd68                                     | 0023fcfc: 0c0bf75a  jal	2fdd68 <func_002fdd68>
+   0023fd00: 8e06fffc  lw	a2,-4(s0)                                     | 0023fd00: 8e06fffc  lw	a2,-4(s0)
+!! 0023fd04: 8e2eebec  lw	t6,-5140(s1)   ; = D_0035ebec                 | 0023fd04: 8e2febec  lw	t7,-5140(s1)   ; = D_0035ebec
+!! 0023fd08: 3c0f0036  lui	t7,0x36                                      | 0023fd08: dfbf0010  ld	ra,16(sp)
+!! 0023fd0c: 8e0dfff8  lw	t5,-8(s0)                                     | 0023fd0c: 25efffff  addiu	t7,t7,-1
+!! 0023fd10: 25ceffff  addiu	t6,t6,-1                                   | 0023fd10: ae2febec  sw	t7,-5140(s1)   ; = D_0035ebec
+!! 0023fd14: dfbf0010  ld	ra,16(sp)                                     | 0023fd14: 8e0efff8  lw	t6,-8(s0)
+!! 0023fd18: ae2eebec  sw	t6,-5140(s1)   ; = D_0035ebec                 | 0023fd18: 3c0f0036  lui	t7,0x36
+!! 0023fd1c: adedebe8  sw	t5,-5144(t7)   ; = D_0035ebe8                 | 0023fd1c: dfb10008  ld	s1,8(sp)
+!! 0023fd20: dfb00000  ld	s0,0(sp)                                      | 0023fd20: adeeebe8  sw	t6,-5144(t7)   ; = D_0035ebe8
+!! 0023fd24: dfb10008  ld	s1,8(sp)                                      | 0023fd24: dfb00000  ld	s0,0(sp)
+   0023fd28: 03e00008  jr	ra                                            | 0023fd28: 03e00008  jr	ra
+   0023fd2c: 27bd0020  addiu	sp,sp,32                                   | 0023fd2c: 27bd0020  addiu	sp,sp,32

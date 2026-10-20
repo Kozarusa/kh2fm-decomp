@@ -1,0 +1,161 @@
+[
+  {
+    "address": "00127f40",
+    "token": "903bf79cb62f4af1ae3a51b21e9cb104",
+    "expires": 1791743456.7937748,
+    "metadata": {
+      "address": "00127f40",
+      "end": "00127fb8",
+      "bytes": 120,
+      "priority": 2,
+      "pseudocode_available": true,
+      "callees": [
+        "0011ed90",
+        "00124bb8"
+      ],
+      "best_proposal": null
+    },
+    "blocker": null,
+    "attempts": 1
+  },
+  {
+    "address": "00185b00",
+    "token": "15230847cb2d4ce996b133ee1e161ad0",
+    "expires": 1791743456.9116435,
+    "metadata": {
+      "address": "00185b00",
+      "end": "00185b70",
+      "bytes": 112,
+      "priority": 2,
+      "pseudocode_available": true,
+      "callees": [
+        "0016a090",
+        "001d7cd0"
+      ],
+      "best_proposal": null
+    },
+    "blocker": null,
+    "attempts": 1
+  },
+  {
+    "address": "00185b70",
+    "token": "e1556eeee28c4ce7a6c4c40f519977a0",
+    "expires": 1791743457.0296133,
+    "metadata": {
+      "address": "00185b70",
+      "end": "00185be0",
+      "bytes": 112,
+      "priority": 2,
+      "pseudocode_available": true,
+      "callees": [
+        "0016a090",
+        "001d7cd0"
+      ],
+      "best_proposal": null
+    },
+    "blocker": null,
+    "attempts": 1
+  },
+  {
+    "address": "001ae9a0",
+    "token": "f3e43c9da8324222b7094a421591b3a4",
+    "expires": 1791743457.1471312,
+    "metadata": {
+      "address": "001ae9a0",
+      "end": "001aea00",
+      "bytes": 96,
+      "priority": 2,
+      "pseudocode_available": true,
+      "callees": [
+        "00185b00"
+      ],
+      "best_proposal": null
+    },
+    "blocker": null,
+    "attempts": 1
+  },
+  {
+    "address": "001aea00",
+    "token": "b4dfc1eb65ba4f96a6c9bccc51f59b6e",
+    "expires": 1791743457.262471,
+    "metadata": {
+      "address": "001aea00",
+      "end": "001aea60",
+      "bytes": 96,
+      "priority": 2,
+      "pseudocode_available": true,
+      "callees": [
+        "00185b00"
+      ],
+      "best_proposal": null
+    },
+    "blocker": null,
+    "attempts": 1
+  },
+  {
+    "address": "001c2c98",
+    "token": "ff39db6e13904419ac6dff71ca12cfbe",
+    "expires": 1791743457.3762302,
+    "metadata": {
+      "address": "001c2c98",
+      "end": "001c2ce4",
+      "bytes": 76,
+      "priority": 1,
+      "pseudocode_available": true,
+      "callees": [
+        "001d7cd0"
+      ],
+      "best_proposal": {
+        "proof": "analysis/final-mix/recovery-experiments/fm_worker_b_round24_001c2c98_v02.verification.json",
+        "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round24_001c2c98_v02.cpp",
+        "compiled_bytes": 76,
+        "target_bytes": 76,
+        "different_words": 2
+      }
+    },
+    "blocker": "{\"report\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\001c2c98-object-report.md\", \"sha256\": \"bd3c2e0ad77c4e56793431e0dd08c4fec47d25d63e92f330444df8fc7a1a0944\", \"hypothesis\": \"Canonical field aliasing or independent flag dependencies may order final stores while retaining early ra restore; do not repeat volatility/barrier profiles.\"}",
+    "attempts": 4
+  },
+  {
+    "address": "001c2ce8",
+    "token": "1c523d6a671647c99de44f32f5672701",
+    "expires": 1791743457.4903455,
+    "metadata": {
+      "address": "001c2ce8",
+      "end": "001c2d34",
+      "bytes": 76,
+      "priority": 1,
+      "pseudocode_available": true,
+      "callees": [
+        "001d7cd0"
+      ],
+      "best_proposal": {
+        "proof": "analysis/final-mix/recovery-experiments/fm_worker_b_round24_001c2ce8_v02.verification.json",
+        "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round24_001c2ce8_v02.cpp",
+        "compiled_bytes": 76,
+        "target_bytes": 76,
+        "different_words": 2
+      }
+    },
+    "blocker": "{\"report\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\001c2ce8-object-report.md\", \"sha256\": \"36f80c2bb84f9fb269e7805d38daf7bc2a7bd15acc613b6e90efa2f06efc20fe\", \"hypothesis\": \"Canonical field aliasing or independent flag dependencies may order final stores while retaining early ra restore; do not repeat volatility/barrier profiles.\"}",
+    "attempts": 3
+  },
+  {
+    "address": "002d49c0",
+    "token": "6252a9cedb22466698a8a9ac451591d9",
+    "expires": 1791743457.6388314,
+    "metadata": {
+      "address": "002d49c0",
+      "end": "002d4a30",
+      "bytes": 112,
+      "priority": 2,
+      "pseudocode_available": true,
+      "callees": [
+        "002d0ea8"
+      ],
+      "best_proposal": null
+    },
+    "blocker": null,
+    "attempts": 1
+  }
+]

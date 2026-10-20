@@ -1,0 +1,20 @@
+
+SLPM_666.75:     file format elf32-littlemips
+
+Disassembly of section main:
+
+0011c4b0 <main+0x1c4b0>:
+  11c4b0:	27bdfff0 	addiu	sp,sp,-16
+  11c4b4:	ffb00000 	sd	s0,0(sp)
+  11c4b8:	ffbf0008 	sd	ra,8(sp)
+  11c4bc:	0c047510 	jal	0x11d440
+  11c4c0:	0080802d 	move	s0,a0
+  11c4c4:	8e040014 	lw	a0,20(s0)
+  11c4c8:	8c8e0000 	lw	t6,0(a0)
+  11c4cc:	8dcf002c 	lw	t7,44(t6)
+  11c4d0:	01e0f809 	jalr	t7
+  11c4d4:	0200282d 	move	a1,s0
+  11c4d8:	dfb00000 	ld	s0,0(sp)
+  11c4dc:	dfbf0008 	ld	ra,8(sp)
+  11c4e0:	03e00008 	jr	ra
+  11c4e4:	27bd0010 	addiu	sp,sp,16

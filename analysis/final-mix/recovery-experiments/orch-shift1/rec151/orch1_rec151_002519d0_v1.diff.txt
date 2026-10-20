@@ -1,0 +1,17 @@
+002519d0: compiled 52 bytes, target 52 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   002519d0: 27bdfff0  addiu	sp,sp,-16                                  | 002519d0: 27bdfff0  addiu	sp,sp,-16
+   002519d4: 3c0f0036  lui	t7,0x36                                      | 002519d4: 3c0f0036  lui	t7,0x36
+   002519d8: ffbf0000  sd	ra,0(sp)                                      | 002519d8: ffbf0000  sd	ra,0(sp)
+   002519dc: 0c04e75e  jal	0x139d78                                     | 002519dc: 0c04e75e  jal	139d78 <func_00139d78>
+   002519e0: 8de4ee80  lw	a0,-4480(t7)   ; = D_0035ee80                 | 002519e0: 8de4ee80  lw	a0,-4480(t7)   ; = D_0035ee80
+   002519e4: 14400005  bnez	v0,0x2519fc                                 | 002519e4: 14400005  bnez	v0,2519fc <func_002519d0+0x2c>
+   002519e8: dfbf0000  ld	ra,0(sp)                                      | 002519e8: dfbf0000  ld	ra,0(sp)
+   002519ec: 3c0f0036  lui	t7,0x36                                      | 002519ec: 3c0f0036  lui	t7,0x36
+   002519f0: 0c0a2b32  jal	0x28acc8                                     | 002519f0: 0c0a2b32  jal	28acc8 <func_0028acc8>
+   002519f4: 8de4ee5c  lw	a0,-4516(t7)   ; = D_0035ee5c                 | 002519f4: 8de4ee5c  lw	a0,-4516(t7)   ; = D_0035ee5c
+   002519f8: dfbf0000  ld	ra,0(sp)                                      | 002519f8: dfbf0000  ld	ra,0(sp)
+   002519fc: 03e00008  jr	ra                                            | 002519fc: 03e00008  jr	ra
+   00251a00: 27bd0010  addiu	sp,sp,16                                   | 00251a00: 27bd0010  addiu	sp,sp,16

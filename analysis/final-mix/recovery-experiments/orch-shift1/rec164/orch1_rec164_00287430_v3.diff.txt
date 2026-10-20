@@ -1,0 +1,35 @@
+00287430: compiled 124 bytes, target 124 bytes, exact=False
+Differing words: 11. First difference at instruction 14 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00287430: 27bdffe0  addiu	sp,sp,-32                                  | 00287430: 27bdffe0  addiu	sp,sp,-32
+   00287434: ffb00000  sd	s0,0(sp)                                      | 00287434: ffb00000  sd	s0,0(sp)
+   00287438: ffb10008  sd	s1,8(sp)                                      | 00287438: ffb10008  sd	s1,8(sp)
+   0028743c: ffbf0010  sd	ra,16(sp)                                     | 0028743c: ffbf0010  sd	ra,16(sp)
+   00287440: 0080802d  move	s0,a0                                       | 00287440: 0080802d  move	s0,a0
+   00287444: 0c0a1668  jal	0x2859a0                                     | 00287444: 0c0a1668  jal	2859a0 <func_002859a0>
+   00287448: 00a0882d  move	s1,a1                                       | 00287448: 00a0882d  move	s1,a1
+   0028744c: 260effff  addiu	t6,s0,-1                                   | 0028744c: 260effff  addiu	t6,s0,-1
+   00287450: 3a0f0007  xori	t7,s0,0x7                                   | 00287450: 3a0f0007  xori	t7,s0,0x7
+   00287454: 01cf800a  movz	s0,t6,t7                                    | 00287454: 01cf800a  movz	s0,t6,t7
+   00287458: 244200a4  addiu	v0,v0,164                                  | 00287458: 244200a4  addiu	v0,v0,164
+   0028745c: 240f0030  li	t7,48                                         | 0028745c: 240f0030  li	t7,48
+   00287460: 2610ffff  addiu	s0,s0,-1                                   | 00287460: 2610ffff  addiu	s0,s0,-1
+   00287464: 020f8018  mult	s0,s0,t7                                    | 00287464: 020f8018  mult	s0,s0,t7
+!! 00287468: 240e0001  li	t6,1                                          | 00287468: 02118021  addu	s0,s0,s1
+!! 0028746c: 02118021  addu	s0,s0,s1                                    | 0028746c: 240f0001  li	t7,1
+!! 00287470: 00106942  srl	t5,s0,0x5                                    | 00287470: 00107142  srl	t6,s0,0x5
+!! 00287474: 000d6880  sll	t5,t5,0x2                                    | 00287474: 000e7080  sll	t6,t6,0x2
+   00287478: 3210001f  andi	s0,s0,0x1f                                  | 00287478: 3210001f  andi	s0,s0,0x1f
+!! 0028747c: 01a26821  addu	t5,t5,v0                                    | 0028747c: 01c26021  addu	t4,t6,v0
+!! 00287480: 020e7004  sllv	t6,t6,s0                                    | 00287480: 020f7804  sllv	t7,t7,s0
+!! 00287484: 8daf0000  lw	t7,0(t5)                                      | 00287484: 8d8d0000  lw	t5,0(t4)
+!! 00287488: 01ee6025  or	t4,t7,t6                                      | 00287488: 01af7024  and	t6,t5,t7
+!! 0028748c: 01ee7824  and	t7,t7,t6                                     | 0028748c: 15c00002  bnez	t6,287498 <func_00287430+0x68>
+!! 00287490: 51e00001  beqzl	t7,0x287498                                | 00287490: 01af6825  or	t5,t5,t7
+!! 00287494: adac0000  sw	t4,0(t5)                                      | 00287494: ad8d0000  sw	t5,0(t4)
+   00287498: dfb00000  ld	s0,0(sp)                                      | 00287498: dfb00000  ld	s0,0(sp)
+   0028749c: dfb10008  ld	s1,8(sp)                                      | 0028749c: dfb10008  ld	s1,8(sp)
+   002874a0: dfbf0010  ld	ra,16(sp)                                     | 002874a0: dfbf0010  ld	ra,16(sp)
+   002874a4: 03e00008  jr	ra                                            | 002874a4: 03e00008  jr	ra
+   002874a8: 27bd0020  addiu	sp,sp,32                                   | 002874a8: 27bd0020  addiu	sp,sp,32

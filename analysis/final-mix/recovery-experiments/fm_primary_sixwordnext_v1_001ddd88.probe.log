@@ -1,0 +1,8 @@
+Exact probe matches: 1/1
+Detailed proof: analysis/final-mix/recovery-experiments/fm_primary_sixwordnext_v1_001ddd88.verification.json
+recovery-experiments/fm_primary_sixwordnext_v1_001ddd88/probe.cpp: In function 
+   `void func_001ddd88(unsigned int)':
+recovery-experiments/fm_primary_sixwordnext_v1_001ddd88/probe.cpp:82: warning: invalid
+   conversion from `s32' to `void*'
+recovery-experiments/fm_primary_sixwordnext_v1_001ddd88/probe.cpp:84: warning: invalid
+   conversion from `u32' to `void*'

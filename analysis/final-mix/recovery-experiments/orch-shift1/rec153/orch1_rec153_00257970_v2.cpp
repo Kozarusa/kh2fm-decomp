@@ -1,0 +1,17 @@
+#include "../common/types.h"
+extern "C" u32 func_00139d78(...);
+extern "C" s32 D_0035f038;
+u32 func_00257970() {
+    register s32 offset asm("$16") = 0; // why: original offset lives in s0 across callee
+    s32 count = 0;
+    u32 result;
+    do {
+        s32 object = D_0035f038 + offset;
+        offset += 408;
+        result = func_00139d78(object + 0x87d0);
+        count++;
+        if (result != 0) return result;
+    } while (count < 24);
+    return result;
+}
+

@@ -1,0 +1,14 @@
+{
+  "probe_source": "analysis/final-mix/recovery-experiments/fm_primary_wrapperorder_v1_0018c8f0.cpp",
+  "probe_source_sha256": "7484995c6feec26e11d2a76b8b93ae87c8d76370d1cdd0e3aa539d691e898b12",
+  "probe_proof_sha256": "d9d9b90209b05a1052070bc035b03a897ff9105ce95febb1a57b6ffb59137e79",
+  "curated_source": "analysis/final-mix/recovery-experiments/fm_primary_wrapperorder_recovered_0018c8f0.cpp",
+  "curated_source_sha256": "7484995c6feec26e11d2a76b8b93ae87c8d76370d1cdd0e3aa539d691e898b12",
+  "selected_addresses": [
+    "0018c8f0"
+  ],
+  "exclusion_receipt": null,
+  "limitations": [
+    "Curated source still requires a new probe, registration and full build."
+  ]
+}

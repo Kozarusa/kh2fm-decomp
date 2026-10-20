@@ -1,0 +1,31 @@
+001886d0: compiled 108 bytes, target 104 bytes, exact=False
+Differing words: 10. First difference at instruction 13 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001886d0: 27bdffe0  addiu	sp,sp,-32                                  | 001886d0: 27bdffe0  addiu	sp,sp,-32
+   001886d4: ffb00000  sd	s0,0(sp)                                      | 001886d4: ffb00000  sd	s0,0(sp)
+   001886d8: ffb10008  sd	s1,8(sp)                                      | 001886d8: ffb10008  sd	s1,8(sp)
+   001886dc: ffbf0010  sd	ra,16(sp)                                     | 001886dc: ffbf0010  sd	ra,16(sp)
+   001886e0: 0080802d  move	s0,a0                                       | 001886e0: 0080802d  move	s0,a0
+   001886e4: 0000882d  move	s1,zero                                     | 001886e4: 0000882d  move	s1,zero
+   001886e8: 8c8f0088  lw	t7,136(a0)                                    | 001886e8: 8c8f0088  lw	t7,136(a0)
+   001886ec: 0c070336  jal	0x1c0cd8                                     | 001886ec: 0c070336  jal	1c0cd8 <func_001c0cd8>
+   001886f0: 8de40004  lw	a0,4(t7)                                      | 001886f0: 8de40004  lw	a0,4(t7)
+   001886f4: 14400006  bnez	v0,0x188710                                 | 001886f4: 14400006  bnez	v0,188710 <func_001886d0+0x40>
+   001886f8: 8e0f0088  lw	t7,136(s0)                                    | 001886f8: 8e0f0088  lw	t7,136(s0)
+   001886fc: 0c067024  jal	0x19c090                                     | 001886fc: 0c067024  jal	19c090 <func_0019c090>
+   00188700: 8de40004  lw	a0,4(t7)                                      | 00188700: 8de40004  lw	a0,4(t7)
+!! 00188704: 14400007  bnez	v0,0x188724                                 | 00188704: 14400008  bnez	v0,188728 <func_001886d0+0x58>
+   00188708: 0220102d  move	v0,s1                                       | 00188708: 0220102d  move	v0,s1
+   0018870c: 8e0f0088  lw	t7,136(s0)                                    | 0018870c: 8e0f0088  lw	t7,136(s0)
+   00188710: 8ded0004  lw	t5,4(t7)                                      | 00188710: 8ded0004  lw	t5,4(t7)
+   00188714: 8dae0160  lw	t6,352(t5)                                    | 00188714: 8dae0160  lw	t6,352(t5)
+!! 00188718: 31ce0200  andi	t6,t6,0x200                                 | 00188718: 000e7243  sra	t6,t6,0x9
+!! 0018871c: 2dd10001  sltiu	s1,t6,1                                    | 0018871c: 39ce0001  xori	t6,t6,0x1
+!! 00188720: 0220102d  move	v0,s1                                       | 00188720: 31d10001  andi	s1,t6,0x1
+!! 00188724: dfb00000  ld	s0,0(sp)                                      | 00188724: 0220102d  move	v0,s1
+!! 00188728: dfb10008  ld	s1,8(sp)                                      | 00188728: dfb00000  ld	s0,0(sp)
+!! 0018872c: dfbf0010  ld	ra,16(sp)                                     | 0018872c: dfb10008  ld	s1,8(sp)
+!! 00188730: 03e00008  jr	ra                                            | 00188730: dfbf0010  ld	ra,16(sp)
+!! 00188734: 27bd0020  addiu	sp,sp,32                                   | 00188734: 03e00008  jr	ra
+!!                                                                      | 00188738: 27bd0020  addiu	sp,sp,32

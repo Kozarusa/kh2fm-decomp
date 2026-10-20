@@ -1,0 +1,16 @@
+[
+  {
+    "address": "001fab48",
+    "owner": "orch1-rec126",
+    "metadata": "{\"address\": \"001fab48\", \"end\": \"001fabc8\", \"bytes\": 128, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [\"0021fe08\"], \"best_proposal\": null}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\orch-shift1\\\\rec126\\\\orch1_rec126_001fab48_v2.cpp\", \"source_sha256\": \"b0de9eb10a20b59540679d3f928cf7b46bb2973bcb1ff66f3ecb4bb65374011d\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\orch-shift1\\\\rec126\\\\orch1_rec126_001fab48_v2.verification.json\", \"proof_sha256\": \"8cb560ece158aebf4119d4b79f93e46e083548776889e5491ecb42ce8b269221\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_orchdg_recovered_001fab48.cpp"
+  },
+  {
+    "address": "001fbb20",
+    "owner": "orch1-rec125",
+    "metadata": "{\"address\": \"001fbb20\", \"end\": \"001fbb94\", \"bytes\": 116, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [\"001facf8\"], \"best_proposal\": {\"proof\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_08_0.verification.json\", \"source\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_08_0.cpp\", \"compiled_bytes\": 112, \"target_bytes\": 116, \"different_words\": 20}}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\orch-shift1\\\\rec125\\\\orch1_rec125_001fbb20_v6.cpp\", \"source_sha256\": \"93f1ad238f0608522ed6ab444c85386eb36f3a0ea866659647f314d16a93b538\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\orch-shift1\\\\rec125\\\\orch1_rec125_001fbb20_v6.verification.json\", \"proof_sha256\": \"5232f75593d759aaa9d0b3ba1f8acbc001e44e52e1b4f06c40d9cbf6ccb67ef9\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_orchdg_recovered_001fbb20.cpp"
+  }
+]

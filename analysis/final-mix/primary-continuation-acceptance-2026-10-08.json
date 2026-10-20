@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-08",
+  "baseline_exact_matches": 5481,
+  "active_exact_matches": 5494,
+  "added_complete_exact_ranges": 13,
+  "added_instruction_bytes": 664,
+  "cpp_ranges": 5498,
+  "fallback_ranges": 5885,
+  "staged_inputs": 2001,
+  "cumulative_recovery_bundles": 45,
+  "switch_receipts": 2,
+  "historical_handoffs_modified": false,
+  "checkpoints": [
+    {
+      "file": "analysis/final-mix/primary-resumeoct-checkpoint-2026-10-08.json",
+      "sha256": "285f908506914b8a59123dea46156161f39406f98fb8baf402fad2bead25d14f",
+      "active_exact_matches": 5489,
+      "added": 8
+    },
+    {
+      "file": "analysis/final-mix/primary-packetnext-checkpoint-2026-10-08.json",
+      "sha256": "0e1508aa4e30969b95c55a1e15c046b7967a0117cccec3ff9db5b3709fb32177",
+      "active_exact_matches": 5490,
+      "added": 1
+    },
+    {
+      "file": "analysis/final-mix/primary-packetorder-checkpoint-2026-10-08.json",
+      "sha256": "4994a9f071e775117f8c72a4137a8c5cc4886f1554478058c6ea077a2a65789f",
+      "active_exact_matches": 5493,
+      "added": 3
+    },
+    {
+      "file": "analysis/final-mix/primary-loadorder-checkpoint-2026-10-08.json",
+      "sha256": "38ffeb984532575512b950806e827bac3c40d326e874cd21f2f9f8f8de62b6f0",
+      "active_exact_matches": 5494,
+      "added": 1
+    }
+  ],
+  "outsourced_assignment": "analysis/final-mix/worker-coordination/worker-b/round-5/INSTRUCTIONS.md",
+  "next_primary_work": [
+    "Continue remaining primary claims after coordinating compiler access.",
+    "Resolve early/late return-address restoration in isolated 00242a28/002cff50 proposals."
+  ],
+  "limitations": [
+    "Whole-ELF equality retains original fallback bytes; source rebuild is incomplete.",
+    "Source types, function boundaries and runtime behavior remain provisional."
+  ]
+}

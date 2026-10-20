@@ -1,0 +1,15 @@
+00186ce8: compiled 40 bytes, target 44 bytes, exact=False
+Differing words: 8. First difference at instruction 2 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00186ce8: 8c8f0140  lw	t7,320(a0)                                    | 00186ce8: 8c8f0140  lw	t7,320(a0)
+   00186cec: 0000102d  move	v0,zero                                     | 00186cec: 0000102d  move	v0,zero
+!! 00186cf0: 11e00006  beqz	t7,0x186d0c                                 | 00186cf0: 11e00005  beqz	t7,186d08 <func_00186ce8+0x20>
+   00186cf4: 24840140  addiu	a0,a0,320                                  | 00186cf4: 24840140  addiu	a0,a0,320
+!! 00186cf8: 8c8e0014  lw	t6,20(a0)                                     | 00186cf8: 8c8f0014  lw	t7,20(a0)
+!! 00186cfc: 29cf000a  slti	t7,t6,10                                    | 00186cfc: 29ee000a  slti	t6,t7,10
+!! 00186d00: 29ce0028  slti	t6,t6,40                                    | 00186d00: 29ef0028  slti	t7,t7,40
+!! 00186d04: 39ef0000  xori	t7,t7,0x0                                   | 00186d04: 01ee100a  movz	v0,t7,t6
+!! 00186d08: 01cf100a  movz	v0,t6,t7                                    | 00186d08: 03e00008  jr	ra
+!! 00186d0c: 03e00008  jr	ra                                            | 00186d0c: 00000000  nop
+!! 00186d10: 00000000  nop                                              | 

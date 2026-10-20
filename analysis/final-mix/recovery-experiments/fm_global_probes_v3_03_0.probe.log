@@ -1,0 +1,48 @@
+Exact probe matches: 2/40
+Detailed proof: analysis/final-mix/recovery-experiments/fm_global_probes_v3_03_0.verification.json
+recovery-experiments/fm_global_probes_v3_03_0/probe.cpp: In function `int 
+   func_0022f4f0(int)':
+recovery-experiments/fm_global_probes_v3_03_0/probe.cpp:91: warning: invalid 
+   conversion from `u32*' to `int*'
+recovery-experiments/fm_global_probes_v3_03_0/probe.cpp: In function `u32 
+   func_00285d18(char)':
+recovery-experiments/fm_global_probes_v3_03_0/probe.cpp:397: warning: invalid 
+   conversion from `s8*' to `char*'
+recovery-experiments/fm_global_probes_v3_03_0/probe.cpp: In function `void 
+   func_0028d188(int)':
+recovery-experiments/fm_global_probes_v3_03_0/probe.cpp:456: warning: assignment
+    to `u32' from `f32'
+recovery-experiments/fm_global_probes_v3_03_0/probe.cpp:456: warning: argument 
+   to `unsigned int' from `f32'
+recovery-experiments/fm_global_probes_v3_03_0/probe.cpp: In function `u32 
+   func_00292a90(int)':
+recovery-experiments/fm_global_probes_v3_03_0/probe.cpp:474: warning: invalid 
+   conversion from `s32' to `int*'
+recovery-experiments/fm_global_probes_v3_03_0/probe.cpp: In function `void 
+   func_002be2d8(int, int, u32*)':
+recovery-experiments/fm_global_probes_v3_03_0/probe.cpp:678: warning: assignment
+    to `unsigned int' from `f32'
+recovery-experiments/fm_global_probes_v3_03_0/probe.cpp:678: warning: argument 
+   to `unsigned int' from `f32'
+recovery-experiments/fm_global_probes_v3_03_0/probe.cpp: In function `void 
+   func_002cb5d8(unsigned int, u8*)':
+recovery-experiments/fm_global_probes_v3_03_0/probe.cpp:699: warning: assignment
+    to `u32' from `f32'
+recovery-experiments/fm_global_probes_v3_03_0/probe.cpp:699: warning: argument 
+   to `unsigned int' from `f32'
+recovery-experiments/fm_global_probes_v3_03_0/probe.cpp:703: warning: assignment
+    to `u32' from `f32'
+recovery-experiments/fm_global_probes_v3_03_0/probe.cpp:703: warning: argument 
+   to `unsigned int' from `f32'
+recovery-experiments/fm_global_probes_v3_03_0/probe.cpp:707: warning: assignment
+    to `u32' from `f32'
+recovery-experiments/fm_global_probes_v3_03_0/probe.cpp:707: warning: argument 
+   to `unsigned int' from `f32'
+recovery-experiments/fm_global_probes_v3_03_0/probe.cpp:723: warning: invalid 
+   conversion from `u8*' to `int'
+recovery-experiments/fm_global_probes_v3_03_0/probe.cpp: In function `void 
+   func_002cd260(int)':
+recovery-experiments/fm_global_probes_v3_03_0/probe.cpp:737: warning: assignment
+    to `u32' from `f32'
+recovery-experiments/fm_global_probes_v3_03_0/probe.cpp:737: warning: argument 
+   to `unsigned int' from `f32'

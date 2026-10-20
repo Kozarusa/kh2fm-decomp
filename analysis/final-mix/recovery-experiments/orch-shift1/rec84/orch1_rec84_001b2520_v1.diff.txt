@@ -1,0 +1,25 @@
+001b2520: compiled 80 bytes, target 84 bytes, exact=False
+Differing words: 20. First difference at instruction 0 (0-based).
+
+ORIGINAL                                                                | COMPILED
+!! 001b2520: 8c8d0008  lw	t5,8(a0)                                      | 001b2520: 8c8f0008  lw	t7,8(a0)
+   001b2524: 8c8e0014  lw	t6,20(a0)                                     | 001b2524: 8c8e0014  lw	t6,20(a0)
+!! 001b2528: 000d7900  sll	t7,t5,0x4                                    | 001b2528: 25ea0001  addiu	t2,t7,1
+!! 001b252c: 01cf7021  addu	t6,t6,t7                                    | 001b252c: 000f7900  sll	t7,t7,0x4
+!! 001b2530: 51c50005  beql	t6,a1,0x1b2548                              | 001b2530: 01cf7021  addu	t6,t6,t7
+!! 001b2534: 8c8c0000  lw	t4,0(a0)                                      | 001b2534: 51c50004  beql	t6,a1,1b2548 <func_001b2520+0x28>
+!! 001b2538: 78a80000  lq	t0,0(a1)                                      | 001b2538: 8c8d0000  lw	t5,0(a0)
+!! 001b253c: 7dc80000  sq	t0,0(t6)                                      | 001b253c: 78af0000  lq	t7,0(a1)
+!! 001b2540: 8c8d0008  lw	t5,8(a0)                                      | 001b2540: 7dcf0000  sq	t7,0(t6)
+!! 001b2544: 8c8c0000  lw	t4,0(a0)                                      | 001b2544: 8c8d0000  lw	t5,0(a0)
+!! 001b2548: 25af0001  addiu	t7,t5,1                                    | 001b2548: 8c8f0004  lw	t7,4(a0)
+!! 001b254c: 8c8e0004  lw	t6,4(a0)                                      | 001b254c: 014d001a  div	zero,t2,t5
+!! 001b2550: 01ec001a  div	zero,t7,t4                                   | 001b2550: 014f702a  slt	t6,t2,t7
+!! 001b2554: 01ee682a  slt	t5,t7,t6                                     | 001b2554: 014e780a  movz	t7,t2,t6
+!! 001b2558: 01ed700a  movz	t6,t7,t5                                    | 001b2558: ac8f0004  sw	t7,4(a0)
+!! 001b255c: ac8e0004  sw	t6,4(a0)                                      | 001b255c: 51a00001  beqzl	t5,1b2564 <func_001b2520+0x44>
+!! 001b2560: 51800001  beqzl	t4,0x1b2568                                | 001b2560: 000001cd  break	0x7
+!! 001b2564: 000001cd  break	0x7                                        | 001b2564: 00006010  mfhi	t4
+!! 001b2568: 00005810  mfhi	t3                                          | 001b2568: 03e00008  jr	ra
+!! 001b256c: 03e00008  jr	ra                                            | 001b256c: ac8c0008  sw	t4,8(a0)
+!! 001b2570: ac8b0008  sw	t3,8(a0)                                      | 

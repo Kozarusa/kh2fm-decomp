@@ -1,0 +1,28 @@
+00167c30: compiled 92 bytes, target 96 bytes, exact=False
+Differing words: 20. First difference at instruction 4 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00167c30: 27bdfff0  addiu	sp,sp,-16                                  | 00167c30: 27bdfff0  addiu	sp,sp,-16
+   00167c34: 3c0f0035  lui	t7,0x35                                      | 00167c34: 3c0f0035  lui	t7,0x35
+   00167c38: 3c0e0035  lui	t6,0x35                                      | 00167c38: 3c0e0035  lui	t6,0x35
+   00167c3c: ffbf0000  sd	ra,0(sp)                                      | 00167c3c: ffbf0000  sd	ra,0(sp)
+!! 00167c40: 25efd6c0  addiu	t7,t7,-10560   ; = D_0034d6c0              | 00167c40: 25efd3c0  addiu	t7,t7,-11328   ; = D_0034d3c0
+!! 00167c44: 25ced3c0  addiu	t6,t6,-11328   ; = D_0034d3c0              | 00167c44: 25ced704  addiu	t6,t6,-10492   ; = D_0034d704
+!! 00167c48: 25ef0044  addiu	t7,t7,68                                   | 00167c48: 240d0001  li	t5,1
+!! 00167c4c: 240d0001  li	t5,1                                          | 00167c4c: adcf0000  sw	t7,0(t6)
+!! 00167c50: adee0000  sw	t6,0(t7)                                      | 00167c50: 25adffff  addiu	t5,t5,-1
+!! 00167c54: 25adffff  addiu	t5,t5,-1                                   | 00167c54: 00000000  nop
+!! 00167c58: 25ef0060  addiu	t7,t7,96                                   | 00167c58: 00000000  nop
+!! 00167c5c: 00000000  nop                                              | 00167c5c: 25ce0060  addiu	t6,t6,96
+!! 00167c60: 00000000  nop                                              | 00167c60: 05a1fffa  bgez	t5,167c4c <func_00167c30+0x1c>
+!! 00167c64: 05a1fffa  bgez	t5,0x167c50                                 | 00167c64: 25ef0180  addiu	t7,t7,384
+!! 00167c68: 25ce0180  addiu	t6,t6,384                                  | 00167c68: 240fffff  li	t7,-1
+!! 00167c6c: 240fffff  li	t7,-1                                         | 00167c6c: dfbf0000  ld	ra,0(sp)
+!! 00167c70: dfbf0000  ld	ra,0(sp)                                      | 00167c70: 3c0e004f  lui	t6,0x4f
+!! 00167c74: 3c0e004f  lui	t6,0x4f                                      | 00167c74: 3c0d0035  lui	t5,0x35
+!! 00167c78: 3c0d0035  lui	t5,0x35                                      | 00167c78: adcf5250  sw	t7,21072(t6)   ; = D_004f5250
+!! 00167c7c: adcf5250  sw	t7,21072(t6)   ; = D_004f5250                 | 00167c7c: 0000202d  move	a0,zero
+!! 00167c80: 0000202d  move	a0,zero                                     | 00167c80: ada0d780  sw	zero,-10368(t5)   ; = D_0034d780
+!! 00167c84: ada0d780  sw	zero,-10368(t5)   ; = D_0034d780              | 00167c84: 08059fce  j	167f38 <func_00167f38>
+!! 00167c88: 08059fce  j	0x167f38                                       | 00167c88: 27bd0010  addiu	sp,sp,16
+!! 00167c8c: 27bd0010  addiu	sp,sp,16                                   | 

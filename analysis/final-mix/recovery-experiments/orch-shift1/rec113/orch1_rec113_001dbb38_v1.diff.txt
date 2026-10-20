@@ -1,0 +1,27 @@
+001dbb38: compiled 84 bytes, target 92 bytes, exact=False
+Differing words: 15. First difference at instruction 7 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001dbb38: 27bdfff0  addiu	sp,sp,-16                                  | 001dbb38: 27bdfff0  addiu	sp,sp,-16
+   001dbb3c: ffb00000  sd	s0,0(sp)                                      | 001dbb3c: ffb00000  sd	s0,0(sp)
+   001dbb40: ffbf0008  sd	ra,8(sp)                                      | 001dbb40: ffbf0008  sd	ra,8(sp)
+   001dbb44: 0000802d  move	s0,zero                                     | 001dbb44: 0000802d  move	s0,zero
+   001dbb48: 0c06176a  jal	0x185da8                                     | 001dbb48: 0c06176a  jal	185da8 <func_00185da8>
+   001dbb4c: 0200202d  move	a0,s0                                       | 001dbb4c: 0200202d  move	a0,s0
+   001dbb50: 0040802d  move	s0,v0                                       | 001dbb50: 0040802d  move	s0,v0
+!! 001dbb54: 14400005  bnez	v0,0x1dbb6c                                 | 001dbb54: 10400009  beqz	v0,1dbb7c <func_001dbb38+0x44>
+   001dbb58: 0040202d  move	a0,v0                                       | 001dbb58: 0040202d  move	a0,v0
+!! 001dbb5c: dfb00000  ld	s0,0(sp)                                      | 001dbb5c: 0c067104  jal	19c410 <func_0019c410>
+!! 001dbb60: dfbf0008  ld	ra,8(sp)                                      | 001dbb60: 00000000  nop
+!! 001dbb64: 03e00008  jr	ra                                            | 001dbb64: 1040fff8  beqz	v0,1dbb48 <func_001dbb38+0x10>
+!! 001dbb68: 27bd0010  addiu	sp,sp,16                                   | 001dbb68: 00000000  nop
+!! 001dbb6c: 0c067104  jal	0x19c410                                     | 001dbb6c: 8e0e0000  lw	t6,0(s0)
+!! 001dbb70: 00000000  nop                                              | 001dbb70: 8dcf0020  lw	t7,32(t6)
+!! 001dbb74: 1040fff4  beqz	v0,0x1dbb48                                 | 001dbb74: 01e0f809  jalr	t7
+!! 001dbb78: 00000000  nop                                              | 001dbb78: 0200202d  move	a0,s0
+!! 001dbb7c: 8e0e0000  lw	t6,0(s0)                                      | 001dbb7c: dfb00000  ld	s0,0(sp)
+!! 001dbb80: 8dcf0020  lw	t7,32(t6)                                     | 001dbb80: dfbf0008  ld	ra,8(sp)
+!! 001dbb84: 01e0f809  jalr	t7                                          | 001dbb84: 03e00008  jr	ra
+!! 001dbb88: 0200202d  move	a0,s0                                       | 001dbb88: 27bd0010  addiu	sp,sp,16
+!! 001dbb8c: 1000fff4  b	0x1dbb60                                       | 
+!! 001dbb90: dfb00000  ld	s0,0(sp)                                      | 

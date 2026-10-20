@@ -1,0 +1,17 @@
+00171810: compiled 52 bytes, target 52 bytes, exact=False
+Differing words: 3. First difference at instruction 6 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00171810: 27bdfff0  addiu	sp,sp,-16                                  | 00171810: 27bdfff0  addiu	sp,sp,-16
+   00171814: ffbf0000  sd	ra,0(sp)                                      | 00171814: ffbf0000  sd	ra,0(sp)
+   00171818: 8c8f0000  lw	t7,0(a0)                                      | 00171818: 8c8f0000  lw	t7,0(a0)
+   0017181c: 8c860008  lw	a2,8(a0)                                      | 0017181c: 8c860008  lw	a2,8(a0)
+   00171820: 8dee0004  lw	t6,4(t7)                                      | 00171820: 8dee0004  lw	t6,4(t7)
+   00171824: 8c850004  lw	a1,4(a0)                                      | 00171824: 8c850004  lw	a1,4(a0)
+!! 00171828: 8dcd0000  lw	t5,0(t6)                                      | 00171828: 8dcf0000  lw	t7,0(t6)
+!! 0017182c: 8daf0054  lw	t7,84(t5)                                     | 0017182c: 8de20054  lw	v0,84(t7)
+!! 00171830: 01e0f809  jalr	t7                                          | 00171830: 0040f809  jalr	v0
+   00171834: 01c0202d  move	a0,t6                                       | 00171834: 01c0202d  move	a0,t6
+   00171838: dfbf0000  ld	ra,0(sp)                                      | 00171838: dfbf0000  ld	ra,0(sp)
+   0017183c: 03e00008  jr	ra                                            | 0017183c: 03e00008  jr	ra
+   00171840: 27bd0010  addiu	sp,sp,16                                   | 00171840: 27bd0010  addiu	sp,sp,16

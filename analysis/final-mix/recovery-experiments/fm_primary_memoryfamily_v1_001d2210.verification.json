@@ -1,0 +1,18 @@
+{
+  "source_sha256": "de36c67fb05272a0229eefaa83e06043557a2dcf472918d0ffb66e455f7fbdc3",
+  "source": "analysis/final-mix/recovery-experiments/fm_primary_memoryfamily_v1_001d2210.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "001d2210",
+      "symbol": "_Z13func_001d2210Pj",
+      "compiled_size": 52,
+      "target_size": 52,
+      "ghidra_body_size": 52,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd270000bfff0c008f8c0400ef310600e0110000bfdf00008f8c0800ee8d09f8c001000000000000bfdf0800e0031000bd27",
+      "target_hex": "f0ffbd270000bfff0c008f8c0400ef310600e0110000bfdf00008f8c0800ee8d09f8c001000000000000bfdf0800e0031000bd27"
+    }
+  ]
+}

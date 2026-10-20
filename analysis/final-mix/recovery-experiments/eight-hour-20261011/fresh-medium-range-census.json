@@ -1,0 +1,437 @@
+{
+  "counts_by_size": {
+    "132": 71,
+    "140": 56,
+    "152": 66,
+    "136": 85,
+    "80": 94,
+    "160": 77,
+    "56": 74,
+    "104": 78,
+    "128": 88,
+    "124": 84,
+    "108": 98,
+    "120": 83,
+    "72": 83,
+    "156": 81,
+    "148": 70,
+    "84": 87,
+    "144": 59,
+    "116": 85,
+    "96": 70,
+    "64": 102,
+    "92": 91,
+    "60": 69,
+    "68": 58,
+    "100": 64,
+    "112": 68,
+    "76": 79,
+    "88": 92
+  },
+  "selected": [
+    {
+      "address": "00105da8",
+      "bytes": 56,
+      "attempts": 0,
+      "calls": [
+        "00102818"
+      ],
+      "branch_count": 0,
+      "code": "\r\nvoid FUN_00105da8(undefined8 param_1,undefined8 param_2,undefined8 param_3,undefined8 param_4)\r\n\r\n{\r\n  FUN_00102818(DAT_0033cb84,param_1,param_2,param_3,param_4);\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "address": "0010c7f0",
+      "bytes": 56,
+      "attempts": 0,
+      "calls": [
+        "0017dbb8"
+      ],
+      "branch_count": 0,
+      "code": "\r\nvoid FUN_0010c7f0(int param_1)\r\n\r\n{\r\n  FUN_0017dbb8();\r\n  (**(code **)(**(int **)(param_1 + 0xb60) + 0x14))();\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "address": "0011c4b0",
+      "bytes": 56,
+      "attempts": 0,
+      "calls": [
+        "0011d440"
+      ],
+      "branch_count": 0,
+      "code": "\r\nvoid FUN_0011c4b0(undefined8 param_1)\r\n\r\n{\r\n  int *piVar1;\r\n  \r\n  FUN_0011d440();\r\n  piVar1 = *(int **)((int)param_1 + 0x14);\r\n  (**(code **)(*piVar1 + 0x2c))(piVar1,param_1);\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "address": "0011f238",
+      "bytes": 56,
+      "attempts": 0,
+      "calls": [],
+      "branch_count": 0,
+      "code": "\r\nundefined2 FUN_0011f238(int *param_1,int param_2)\r\n\r\n{\r\n  int iVar1;\r\n  \r\n  iVar1 = (**(code **)(*param_1 + 0x20))();\r\n  return *(undefined2 *)(param_2 * 0x40 + iVar1 + 4);\r\n}\r\n\r\n"
+    },
+    {
+      "address": "00136a18",
+      "bytes": 56,
+      "attempts": 0,
+      "calls": [
+        "00136840",
+        "001369d0",
+        "00136a40"
+      ],
+      "branch_count": 0,
+      "code": "\r\nvoid FUN_00136a18(void)\r\n\r\n{\r\n  FUN_00136840();\r\n  FUN_001369d0();\r\n  DAT_00347d28 = 1;\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "address": "001373a0",
+      "bytes": 56,
+      "attempts": 0,
+      "calls": [
+        "002ba848",
+        "00136a18"
+      ],
+      "branch_count": 0,
+      "code": "\r\nvoid FUN_001373a0(void)\r\n\r\n{\r\n  DAT_00347d55 = 0;\r\n  DAT_00347d56 = DAT_00347d54;\r\n  DAT_00347d54 = 0;\r\n  FUN_002ba848(0x3c0);\r\n  FUN_00136a18();\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "address": "00137c50",
+      "bytes": 56,
+      "attempts": 0,
+      "calls": [
+        "001391c8"
+      ],
+      "branch_count": 0,
+      "code": "\r\nvoid FUN_00137c50(int param_1)\r\n\r\n{\r\n  *(undefined4 *)(param_1 + 0x29c8) = 0;\r\n  *(undefined4 *)(param_1 + 0x29c0) = 1;\r\n  *(undefined4 *)(param_1 + 0x20) = 1;\r\n  *(undefined4 *)(param_1 + 0x30) = 0;\r\n  *(undefined4 *)(param_1 + 0x34) = 0;\r\n  *(undefined4 *)(param_1 + 0x29c4) = 0;\r\n  FUN_001391c8(param_1,0x2b5c,0);\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "address": "001394d8",
+      "bytes": 56,
+      "attempts": 0,
+      "calls": [
+        "00139768",
+        "001394c0",
+        "00102750"
+      ],
+      "branch_count": 0,
+      "code": "\r\nvoid FUN_001394d8(undefined8 param_1)\r\n\r\n{\r\n  FUN_00139768();\r\n  FUN_001394c0(param_1);\r\n  FUN_00102750(*DAT_00347f80);\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "address": "0013efe8",
+      "bytes": 56,
+      "attempts": 0,
+      "calls": [
+        "00102788"
+      ],
+      "branch_count": 0,
+      "code": "\r\nvoid FUN_0013efe8(void)\r\n\r\n{\r\n  DAT_00348700 = 0;\r\n  FUN_00102788(DAT_0032b96c,0,300000,0x13ef90);\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "address": "00149c08",
+      "bytes": 56,
+      "attempts": 0,
+      "calls": [
+        "0013a600",
+        "0013a4c8",
+        "001493b8",
+        "00149428"
+      ],
+      "branch_count": 0,
+      "code": "\r\nvoid FUN_00149c08(void)\r\n\r\n{\r\n  FUN_0013a600();\r\n  FUN_0013a4c8();\r\n  FUN_001493b8(0x348d68);\r\n  FUN_00149428(0x348d68);\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "address": "0014ad20",
+      "bytes": 56,
+      "attempts": 0,
+      "calls": [
+        "0014acf8",
+        "00102788"
+      ],
+      "branch_count": 0,
+      "code": "\r\nvoid FUN_0014ad20(void)\r\n\r\n{\r\n  FUN_0014acf8();\r\n  FUN_00102788(DAT_0032b91c,0,330000,0x14ac18);\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "address": "0014d910",
+      "bytes": 56,
+      "attempts": 0,
+      "calls": [
+        "002f25a0",
+        "002f3918"
+      ],
+      "branch_count": 0,
+      "code": "\r\nvoid FUN_0014d910(undefined8 param_1)\r\n\r\n{\r\n  FUN_002f25a0(0,0);\r\n  FUN_002f3918(DAT_00349ef8,param_1);\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "address": "0014f030",
+      "bytes": 56,
+      "attempts": 0,
+      "calls": [],
+      "branch_count": 0,
+      "code": "\r\nvoid FUN_0014f030(float param_1,float param_2,float param_3,float *param_4)\r\n\r\n{\r\n  float fVar1;\r\n  \r\n  fVar1 = DAT_0036b210;\r\n  if (param_3 != 0.0) {\r\n    fVar1 = param_3;\r\n  }\r\n  *param_4 = param_1;\r\n  param_4[2] = param_2;\r\n  param_4[1] = (param_2 - param_1) / fVar1;\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "address": "0015b4c0",
+      "bytes": 56,
+      "attempts": 0,
+      "calls": [
+        "001050c8"
+      ],
+      "branch_count": 0,
+      "code": "\r\nvoid FUN_0015b4c0(undefined8 param_1)\r\n\r\n{\r\n  undefined8 uVar1;\r\n  \r\n  uVar1 = FUN_001050c8();\r\n  (**(code **)(*(int *)uVar1 + 4))(uVar1,param_1);\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "address": "00168008",
+      "bytes": 56,
+      "attempts": 0,
+      "calls": [
+        "00167f38"
+      ],
+      "branch_count": 0,
+      "code": "\r\nvoid FUN_00168008(void)\r\n\r\n{\r\n  DAT_0034d780 = DAT_0034d780 + -1;\r\n  FUN_00167f38(*(undefined4 *)(&DAT_004f5258 + DAT_0034d780 * 4));\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "address": "001883f8",
+      "bytes": 56,
+      "attempts": 0,
+      "calls": [
+        "00188340"
+      ],
+      "branch_count": 0,
+      "code": "\r\nvoid FUN_001883f8(int param_1,undefined4 param_2)\r\n\r\n{\r\n  DAT_01c60bc8 = *(undefined4 *)(param_1 + 0x88);\r\n  DAT_01c60bcc = param_2;\r\n  FUN_00188340(param_1,3,0x1c60bc8,2);\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "address": "001b86e0",
+      "bytes": 56,
+      "attempts": 0,
+      "calls": [],
+      "branch_count": 0,
+      "code": "\r\nvoid FUN_001b86e0(int param_1)\r\n\r\n{\r\n  int *piVar1;\r\n  \r\n  piVar1 = &DAT_01d48d68 + DAT_01d48d88;\r\n  DAT_01d48d88 = DAT_01d48d88 + 1;\r\n  *piVar1 = (param_1 + -0x1d48cc8 >> 2) * -0x33333333;\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "address": "001befd8",
+      "bytes": 56,
+      "attempts": 0,
+      "calls": [
+        "001bd668",
+        "001bd5b0"
+      ],
+      "branch_count": 0,
+      "code": "\r\nvoid FUN_001befd8(undefined8 param_1,undefined4 param_2,undefined4 param_3)\r\n\r\n{\r\n  *(undefined4 *)((int)param_1 + 0xaa8) = param_2;\r\n  *(undefined4 *)((int)param_1 + 0xaac) = param_3;\r\n  FUN_001bd668();\r\n  FUN_001bd5b0(param_1,10,0);\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "address": "001ca950",
+      "bytes": 56,
+      "attempts": 0,
+      "calls": [
+        "001c6fa8"
+      ],
+      "branch_count": 0,
+      "code": "\r\nvoid FUN_001ca950(int param_1)\r\n\r\n{\r\n  undefined4 in_t1_lo;\r\n  \r\n  FUN_001c6fa8();\r\n  *(undefined4 *)(param_1 + 0x54) = in_t1_lo;\r\n  *(undefined4 *)(param_1 + 0x58) = 0;\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "address": "001db7d0",
+      "bytes": 56,
+      "attempts": 0,
+      "calls": [],
+      "branch_count": 0,
+      "code": "\r\nvoid FUN_001db7d0(undefined4 *param_1)\r\n\r\n{\r\n  *param_1 = &PTR_FUN_00352a38;\r\n  (**(code **)(*(int *)param_1[1] + 4))((int *)param_1[1],param_1[3]);\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "address": "00236148",
+      "bytes": 56,
+      "attempts": 0,
+      "calls": [],
+      "branch_count": 0,
+      "code": "\r\nvoid FUN_00236148(void)\r\n\r\n{\r\n  (*(code *)(&PTR_LAB_0035e380)[DAT_0035e370])();\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "address": "00241320",
+      "bytes": 56,
+      "attempts": 0,
+      "calls": [
+        "002fde18"
+      ],
+      "branch_count": 0,
+      "code": "\r\nvoid FUN_00241320(void)\r\n\r\n{\r\n  FUN_002fde18(DAT_0035ec98 + *(int *)(DAT_0035ec98 + 4) * 0x28 + 8,0,0x28);\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "address": "00262730",
+      "bytes": 56,
+      "attempts": 0,
+      "calls": [
+        "00257770",
+        "00139d78",
+        "0028da70"
+      ],
+      "branch_count": 0,
+      "code": "\r\nvoid FUN_00262730(void)\r\n\r\n{\r\n  int iVar1;\r\n  \r\n  iVar1 = FUN_00257770();\r\n  FUN_00139d78(iVar1 + 0x9c8);\r\n  FUN_0028da70(iVar1 + 0x9c8,0xf2);\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "address": "0027d450",
+      "bytes": 56,
+      "attempts": 0,
+      "calls": [
+        "00257770",
+        "00139d78",
+        "0028da70"
+      ],
+      "branch_count": 0,
+      "code": "\r\nvoid FUN_0027d450(void)\r\n\r\n{\r\n  undefined8 uVar1;\r\n  \r\n  uVar1 = FUN_00257770();\r\n  FUN_00139d78(uVar1);\r\n  FUN_0028da70(uVar1,0xea);\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "address": "00292a58",
+      "bytes": 56,
+      "attempts": 0,
+      "calls": [
+        "002fde18",
+        "00292998"
+      ],
+      "branch_count": 0,
+      "code": "\r\nvoid FUN_00292a58(void)\r\n\r\n{\r\n  DAT_0035f4d8 = 0;\r\n  FUN_002fde18(DAT_0035f4d4,0,DAT_0035f4bc << 4);\r\n  FUN_00292998();\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "address": "002b7f84",
+      "bytes": 56,
+      "attempts": 0,
+      "calls": [
+        "002b6708"
+      ],
+      "branch_count": 0,
+      "code": "\r\nundefined8 FUN_002b7f84(void)\r\n\r\n{\r\n  undefined8 uVar1;\r\n  \r\n  uVar1 = FUN_002b6708(1,0x31);\r\n  return uVar1;\r\n}\r\n\r\n"
+    },
+    {
+      "address": "002b823c",
+      "bytes": 56,
+      "attempts": 0,
+      "calls": [
+        "002b6708"
+      ],
+      "branch_count": 0,
+      "code": "\r\nundefined4 FUN_002b823c(void)\r\n\r\n{\r\n  FUN_002b6708(1,0x21);\r\n  return uRamffffe2dc;\r\n}\r\n\r\n"
+    },
+    {
+      "address": "002b83b4",
+      "bytes": 56,
+      "attempts": 0,
+      "calls": [
+        "002b6708"
+      ],
+      "branch_count": 0,
+      "code": "\r\nundefined8 FUN_002b83b4(void)\r\n\r\n{\r\n  undefined8 uVar1;\r\n  \r\n  uVar1 = FUN_002b6708(1,0x27);\r\n  return uVar1;\r\n}\r\n\r\n"
+    },
+    {
+      "address": "002b9968",
+      "bytes": 56,
+      "attempts": 0,
+      "calls": [
+        "002b6708"
+      ],
+      "branch_count": 0,
+      "code": "\r\nundefined8 FUN_002b9968(void)\r\n\r\n{\r\n  undefined8 uVar1;\r\n  \r\n  uVar1 = FUN_002b6708(1,0x18);\r\n  return uVar1;\r\n}\r\n\r\n"
+    },
+    {
+      "address": "002b99c8",
+      "bytes": 56,
+      "attempts": 0,
+      "calls": [
+        "002b6708"
+      ],
+      "branch_count": 0,
+      "code": "\r\nundefined8 FUN_002b99c8(void)\r\n\r\n{\r\n  undefined8 uVar1;\r\n  \r\n  uVar1 = FUN_002b6708(1,0x29);\r\n  return uVar1;\r\n}\r\n\r\n"
+    },
+    {
+      "address": "002b9a00",
+      "bytes": 56,
+      "attempts": 0,
+      "calls": [
+        "002b6708"
+      ],
+      "branch_count": 0,
+      "code": "\r\nundefined8 FUN_002b9a00(void)\r\n\r\n{\r\n  undefined8 uVar1;\r\n  \r\n  uVar1 = FUN_002b6708(1,0x2a);\r\n  return uVar1;\r\n}\r\n\r\n"
+    },
+    {
+      "address": "002bec38",
+      "bytes": 56,
+      "attempts": 0,
+      "calls": [
+        "00184540"
+      ],
+      "branch_count": 0,
+      "code": "\r\nundefined8 FUN_002bec38(undefined8 param_1,undefined8 param_2,undefined8 param_3)\r\n\r\n{\r\n  int iVar1;\r\n  \r\n  iVar1 = *(int *)((int)param_3 + 300);\r\n  FUN_00184540(*(undefined4 *)(iVar1 + 0x28),*(undefined4 *)(iVar1 + 0x2c),param_1,param_3);\r\n  return param_1;\r\n}\r\n\r\n"
+    },
+    {
+      "address": "002cb7c8",
+      "bytes": 56,
+      "attempts": 0,
+      "calls": [
+        "002cb890"
+      ],
+      "branch_count": 0,
+      "code": "\r\nundefined8 FUN_002cb7c8(undefined8 param_1,undefined8 param_2,undefined8 param_3)\r\n\r\n{\r\n  undefined4 *puVar1;\r\n  undefined4 uVar2;\r\n  undefined4 uVar3;\r\n  undefined4 uVar4;\r\n  undefined4 *puVar5;\r\n  \r\n  puVar1 = (undefined4 *)FUN_002cb890(param_2,param_3);\r\n  uVar2 = puVar1[1];\r\n  uVar3 = puVar1[2];\r\n  uVar4 = puVar1[3];\r\n  puVar5 = (undefined4 *)param_1;\r\n  *puVar5 = *puVar1;\r\n  puVar5[1] = uVar2;\r\n  puVar5[2] = uVar3;\r\n  puVar5[3] = uVar4;\r\n  return param_1;\r\n}\r\n\r\n"
+    },
+    {
+      "address": "002cba50",
+      "bytes": 56,
+      "attempts": 0,
+      "calls": [
+        "002cba88"
+      ],
+      "branch_count": 0,
+      "code": "\r\nundefined8 FUN_002cba50(undefined8 param_1,int param_2)\r\n\r\n{\r\n  FUN_002cba88(*(undefined4 *)(param_2 + 0x24),DAT_0037589c);\r\n  return param_1;\r\n}\r\n\r\n"
+    },
+    {
+      "address": "002ef5a8",
+      "bytes": 56,
+      "attempts": 0,
+      "calls": [
+        "002ef5c8",
+        "00239bf8"
+      ],
+      "branch_count": 0,
+      "code": "\r\nvoid FUN_002ef5a8(int param_1)\r\n\r\n{\r\n  *(undefined4 *)(param_1 + 0x330) = 0;\r\n  *(undefined4 *)(param_1 + 0x32c) = 0;\r\n  FUN_00239bf8(param_1 + 0x1d4);\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "address": "002eff58",
+      "bytes": 56,
+      "attempts": 0,
+      "calls": [],
+      "branch_count": 0,
+      "code": "\r\nbool FUN_002eff58(int param_1)\r\n\r\n{\r\n  return (*(float *)(param_1 + 0x110) + *(float *)(param_1 + 0x114)) * DAT_00376224 <=\r\n         *(float *)(param_1 + 0x1c);\r\n}\r\n\r\n"
+    },
+    {
+      "address": "002f1a80",
+      "bytes": 56,
+      "attempts": 0,
+      "calls": [
+        "00168388"
+      ],
+      "branch_count": 0,
+      "code": "\r\nvoid FUN_002f1a80(void)\r\n\r\n{\r\n  DAT_00363c2c = 0;\r\n  FUN_00168388(PTR_s_gumibattle_advice_bin_00363c28,0x1e2c100,0x2f1a68,0);\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "address": "00304db0",
+      "bytes": 56,
+      "attempts": 0,
+      "calls": [],
+      "branch_count": 0,
+      "code": "\r\nuint FUN_00304db0(undefined8 param_1)\r\n\r\n{\r\n  return 0x7ff00000 -\r\n         ((uint)((ulong)param_1 >> 0x20) & 0x7fffffff | ((uint)param_1 | -(uint)param_1) >> 0x1f) >>\r\n         0x1f;\r\n}\r\n\r\n"
+    },
+    {
+      "address": "0030df00",
+      "bytes": 56,
+      "attempts": 0,
+      "calls": [
+        "002fde18"
+      ],
+      "branch_count": 0,
+      "code": "\r\nundefined8 FUN_0030df00(void)\r\n\r\n{\r\n  DAT_00366180 = 0xffffffff;\r\n  FUN_002fde18(0x1e38e68,0,4);\r\n  return 0;\r\n}\r\n\r\n"
+    },
+    {
+      "address": "003206f0",
+      "bytes": 56,
+      "attempts": 0,
+      "calls": [
+        "001d48b0",
+        "00106420"
+      ],
+      "branch_count": 0,
+      "code": "\r\nvoid FUN_003206f0(undefined8 param_1)\r\n\r\n{\r\n  *(undefined4 *)param_1 = &PTR_FUN_00351228;\r\n  FUN_001d48b0((undefined4 *)param_1 + 0x270);\r\n  FUN_00106420(param_1);\r\n  return;\r\n}\r\n\r\n"
+    }
+  ]
+}

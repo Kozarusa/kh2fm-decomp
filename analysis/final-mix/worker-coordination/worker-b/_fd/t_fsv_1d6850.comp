@@ -1,0 +1,24 @@
+  1d6850:	340cffff 	li	t4,0xffff
+  1d6854:	14ac0013 	bne	a1,t4,1d68a4 
+  1d6858:	240b0001 	li	t3,1
+  1d685c:	148b0011 	bne	a0,t3,1d68a4 
+  1d6860:	3c0d0037 	lui	t5,0x37
+  1d6864:	3c0a01d6 	lui	t2,0x1d6
+  1d6868:	25ade5ec 	addiu	t5,t5,-6676
+  1d686c:	ad40ba78 	sw	zero,-17800(t2)
+  1d6870:	c5a00000 	lwc1	$f0,0(t5)
+  1d6874:	254bba78 	addiu	t3,t2,-17800
+  1d6878:	3c0f0037 	lui	t7,0x37
+  1d687c:	ad600004 	sw	zero,4(t3)
+  1d6880:	e5600008 	swc1	$f0,8(t3)
+  1d6884:	25efe5f0 	addiu	t7,t7,-6672
+  1d6888:	3c0c01d6 	lui	t4,0x1d6
+  1d688c:	c5e00000 	lwc1	$f0,0(t7)
+  1d6890:	258dba88 	addiu	t5,t4,-17784
+  1d6894:	240e0003 	li	t6,3
+  1d6898:	ad8eba88 	sw	t6,-17784(t4)
+  1d689c:	e5a00008 	swc1	$f0,8(t5)
+  1d68a0:	ada00004 	sw	zero,4(t5)
+  1d68a4:	03e00008 	jr	ra
+  1d68a8:	00000000 	nop
+  1d68ac:	00000000 	nop

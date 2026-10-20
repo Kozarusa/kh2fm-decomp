@@ -1,0 +1,34 @@
+00198690: compiled 120 bytes, target 108 bytes, exact=False
+Differing words: 30. First difference at instruction 0 (0-based).
+
+ORIGINAL                                                                | COMPILED
+!! 00198690: 27bdffd0  addiu	sp,sp,-48                                  | 00198690: 27bdffc0  addiu	sp,sp,-64
+!! 00198694: ffb20020  sd	s2,32(sp)                                     | 00198694: ffb10018  sd	s1,24(sp)
+!! 00198698: ffbf0028  sd	ra,40(sp)                                     | 00198698: ffb00010  sd	s0,16(sp)
+!! 0019869c: ffb00010  sd	s0,16(sp)                                     | 0019869c: ffb20020  sd	s2,32(sp)
+!! 001986a0: ffb10018  sd	s1,24(sp)                                     | 001986a0: 0080882d  move	s1,a0
+!! 001986a4: 0c066198  jal	0x198660                                     | 001986a4: ffb30028  sd	s3,40(sp)
+!! 001986a8: 0080902d  move	s2,a0                                       | 001986a8: 263009dc  addiu	s0,s1,2524
+!! 001986ac: 0c05b00a  jal	0x16c028                                     | 001986ac: ffbf0030  sd	ra,48(sp)
+!! 001986b0: 0240202d  move	a0,s2                                       | 001986b0: 24120001  li	s2,1
+!! 001986b4: 78480000  lq	t0,0(v0)                                      | 001986b4: 0c066198  jal	198660 <func_00198660>
+!! 001986b8: 7fa80000  sq	t0,0(sp)                                      | 001986b8: 03a0982d  move	s3,sp
+!! 001986bc: 265009dc  addiu	s0,s2,2524                                 | 001986bc: 0c05b00a  jal	16c028 <func_0016c028>
+!! 001986c0: 24110001  li	s1,1                                          | 001986c0: 0220202d  move	a0,s1
+!! 001986c4: 0200202d  move	a0,s0                                       | 001986c4: 8c4f0000  lw	t7,0(v0)
+!! 001986c8: 0c0755dc  jal	0x1d5770                                     | 001986c8: afaf0000  sw	t7,0(sp)
+!! 001986cc: 03a0282d  move	a1,sp                                       | 001986cc: 0200202d  move	a0,s0
+!! 001986d0: 2631ffff  addiu	s1,s1,-1                                   | 001986d0: 0c0755dc  jal	1d5770 <func_001d5770>
+!! 001986d4: 0621fffb  bgez	s1,0x1986c4                                 | 001986d4: 0260282d  move	a1,s3
+!! 001986d8: 2610000c  addiu	s0,s0,12                                   | 001986d8: 2652ffff  addiu	s2,s2,-1
+!! 001986dc: 0c05aa6e  jal	0x16a9b8                                     | 001986dc: 0641fffb  bgez	s2,1986cc <func_00198690+0x3c>
+!! 001986e0: 0240202d  move	a0,s2                                       | 001986e0: 2610000c  addiu	s0,s0,12
+!! 001986e4: dfb00010  ld	s0,16(sp)                                     | 001986e4: 0c05aa6e  jal	16a9b8 <func_0016a9b8>
+!! 001986e8: dfb10018  ld	s1,24(sp)                                     | 001986e8: 0220202d  move	a0,s1
+!! 001986ec: dfb20020  ld	s2,32(sp)                                     | 001986ec: dfb00010  ld	s0,16(sp)
+!! 001986f0: dfbf0028  ld	ra,40(sp)                                     | 001986f0: dfb10018  ld	s1,24(sp)
+!! 001986f4: 03e00008  jr	ra                                            | 001986f4: dfb20020  ld	s2,32(sp)
+!! 001986f8: 27bd0030  addiu	sp,sp,48                                   | 001986f8: dfb30028  ld	s3,40(sp)
+!!                                                                      | 001986fc: dfbf0030  ld	ra,48(sp)
+!!                                                                      | 00198700: 03e00008  jr	ra
+!!                                                                      | 00198704: 27bd0040  addiu	sp,sp,64

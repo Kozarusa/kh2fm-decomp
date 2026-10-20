@@ -1,0 +1,23 @@
+0023f070: compiled 76 bytes, target 76 bytes, exact=False
+Differing words: 5. First difference at instruction 4 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0023f070: 27bdffe0  addiu	sp,sp,-32                                  | 0023f070: 27bdffe0  addiu	sp,sp,-32
+   0023f074: ffb00000  sd	s0,0(sp)                                      | 0023f074: ffb00000  sd	s0,0(sp)
+   0023f078: ffb10008  sd	s1,8(sp)                                      | 0023f078: ffb10008  sd	s1,8(sp)
+   0023f07c: ffb20010  sd	s2,16(sp)                                     | 0023f07c: ffb20010  sd	s2,16(sp)
+!! 0023f080: 00a0802d  move	s0,a1                                       | 0023f080: 0080802d  move	s0,a0
+   0023f084: ffbf0018  sd	ra,24(sp)                                     | 0023f084: ffbf0018  sd	ra,24(sp)
+!! 0023f088: 0080882d  move	s1,a0                                       | 0023f088: 00a0882d  move	s1,a1
+   0023f08c: 0c04e75e  jal	0x139d78                                     | 0023f08c: 0c04e75e  jal	139d78 <func_00139d78>
+   0023f090: 00c0902d  move	s2,a2                                       | 0023f090: 00c0902d  move	s2,a2
+!! 0023f094: ae300098  sw	s0,152(s1)                                    | 0023f094: ae11008c  sw	s1,140(s0)
+!! 0023f098: 0220202d  move	a0,s1                                       | 0023f098: 0200202d  move	a0,s0
+!! 0023f09c: ae30008c  sw	s0,140(s1)                                    | 0023f09c: ae110098  sw	s1,152(s0)
+   0023f0a0: 0240282d  move	a1,s2                                       | 0023f0a0: 0240282d  move	a1,s2
+   0023f0a4: dfb20010  ld	s2,16(sp)                                     | 0023f0a4: dfb20010  ld	s2,16(sp)
+   0023f0a8: dfb00000  ld	s0,0(sp)                                      | 0023f0a8: dfb00000  ld	s0,0(sp)
+   0023f0ac: dfb10008  ld	s1,8(sp)                                      | 0023f0ac: dfb10008  ld	s1,8(sp)
+   0023f0b0: dfbf0018  ld	ra,24(sp)                                     | 0023f0b0: dfbf0018  ld	ra,24(sp)
+   0023f0b4: 0808fc32  j	0x23f0c8                                       | 0023f0b4: 0808fc32  j	23f0c8 <func_0023f0c8>
+   0023f0b8: 27bd0020  addiu	sp,sp,32                                   | 0023f0b8: 27bd0020  addiu	sp,sp,32

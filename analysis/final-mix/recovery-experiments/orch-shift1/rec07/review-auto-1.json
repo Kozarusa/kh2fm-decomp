@@ -1,0 +1,46 @@
+{
+  "wp_dir": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\orch-shift1\\rec07",
+  "start": "2026-10-12T17:52:30Z",
+  "reviewed": [
+    "00135cc8",
+    "00132ec0",
+    "00132068",
+    "00135c88",
+    "001340e8"
+  ],
+  "blocked_reports": [
+    "00135bd0-BLOCKED.md"
+  ],
+  "results": [
+    {
+      "level": "PASS",
+      "address": "00135cc8",
+      "detail": "52 bytes exact; source orch1_rec07_00135cc8_v1.cpp"
+    },
+    {
+      "level": "PASS",
+      "address": "00132ec0",
+      "detail": "116 bytes exact; source orch1_rec07_00132ec0_v2.cpp"
+    },
+    {
+      "level": "PASS",
+      "address": "00132068",
+      "detail": "60 bytes exact; source orch1_rec07_00132068_v6.cpp"
+    },
+    {
+      "level": "PASS",
+      "address": "00135c88",
+      "detail": "60 bytes exact; source orch1_rec07_00135c88_v1.cpp"
+    },
+    {
+      "level": "PASS",
+      "address": "001340e8",
+      "detail": "100 bytes exact; source orch1_rec07_001340e8_v6.cpp"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/PROGRESS.md"
+    }
+  ]
+}

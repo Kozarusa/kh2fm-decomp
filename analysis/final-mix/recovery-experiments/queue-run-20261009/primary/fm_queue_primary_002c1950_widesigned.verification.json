@@ -1,0 +1,18 @@
+{
+  "source_sha256": "8cc3095657b625145dd6c34daba2f9ac4e2ab6102a61302f3b6246f163ec9a27",
+  "source": "analysis/final-mix/recovery-experiments/queue-run-20261009/primary/fm_queue_primary_002c1950_widesigned.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "002c1950",
+      "symbol": "_Z13func_002c1950yx",
+      "compiled_size": 72,
+      "target_size": 64,
+      "ghidra_body_size": 64,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "f0ffbd27006880440000b0ff37000f3ce854ef250800bfff2d80a0003c8010000000ecc53f8010002d28000022fd050c400104262d2000020800bfdf0000b0dfe8170b081000bd27",
+      "target_hex": "f0ffbd27006880440000b0ff37000f3ce854ef250800bfff2d80a0000000ecc54001a42422fd050c2d2800002d2000020800bfdf0000b0dfe8170b081000bd27"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+00239b50: compiled 100 bytes, target 100 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00239b50: 240f0024  li	t7,36                                         | 00239b50: 240f0024  li	t7,36
+   00239b54: 8c8c00b0  lw	t4,176(a0)                                    | 00239b54: 8c8c00b0  lw	t4,176(a0)
+   00239b58: 00af2818  mult	a1,a1,t7                                    | 00239b58: 00af2818  mult	a1,a1,t7
+   00239b5c: 240d0090  li	t5,144                                        | 00239b5c: 240d0090  li	t5,144
+   00239b60: 0000102d  move	v0,zero                                     | 00239b60: 0000102d  move	v0,zero
+   00239b64: 8c8f00b4  lw	t7,180(a0)                                    | 00239b64: 8c8f00b4  lw	t7,180(a0)
+   00239b68: 01e57821  addu	t7,t7,a1                                    | 00239b68: 01e57821  addu	t7,t7,a1
+   00239b6c: 95ee0000  lhu	t6,0(t7)                                     | 00239b6c: 95ee0000  lhu	t6,0(t7)
+   00239b70: 95eb0002  lhu	t3,2(t7)                                     | 00239b70: 95eb0002  lhu	t3,2(t7)
+   00239b74: 01cd7018  mult	t6,t6,t5                                    | 00239b74: 01cd7018  mult	t6,t6,t5
+   00239b78: 1960000c  blez	t3,0x239bac                                 | 00239b78: 1960000c  blez	t3,239bac <func_00239b50+0x5c>
+   00239b7c: 018e6021  addu	t4,t4,t6                                    | 00239b7c: 018e6021  addu	t4,t4,t6
+   00239b80: 8d8e000c  lw	t6,12(t4)                                     | 00239b80: 8d8e000c  lw	t6,12(t4)
+   00239b84: 004e782a  slt	t7,v0,t6                                     | 00239b84: 004e782a  slt	t7,v0,t6
+   00239b88: 11e00005  beqz	t7,0x239ba0                                 | 00239b88: 11e00005  beqz	t7,239ba0 <func_00239b50+0x50>
+   00239b8c: 25cdffff  addiu	t5,t6,-1                                   | 00239b8c: 25cdffff  addiu	t5,t6,-1
+   00239b90: 8d8f0000  lw	t7,0(t4)                                      | 00239b90: 8d8f0000  lw	t7,0(t4)
+   00239b94: 01c0102d  move	v0,t6                                       | 00239b94: 01c0102d  move	v0,t6
+   00239b98: 31ef8000  andi	t7,t7,0x8000                                | 00239b98: 31ef8000  andi	t7,t7,0x8000
+   00239b9c: 01af100b  movn	v0,t5,t7                                    | 00239b9c: 01af100b  movn	v0,t5,t7
+   00239ba0: 256bffff  addiu	t3,t3,-1                                   | 00239ba0: 256bffff  addiu	t3,t3,-1
+   00239ba4: 1d60fff6  bgtz	t3,0x239b80                                 | 00239ba4: 1d60fff6  bgtz	t3,239b80 <func_00239b50+0x30>
+   00239ba8: 258c0090  addiu	t4,t4,144                                  | 00239ba8: 258c0090  addiu	t4,t4,144
+   00239bac: 03e00008  jr	ra                                            | 00239bac: 03e00008  jr	ra
+   00239bb0: 24420001  addiu	v0,v0,1                                    | 00239bb0: 24420001  addiu	v0,v0,1

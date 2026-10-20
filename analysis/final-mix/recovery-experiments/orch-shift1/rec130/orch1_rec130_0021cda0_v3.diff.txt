@@ -1,0 +1,15 @@
+0021cda0: compiled 44 bytes, target 44 bytes, exact=False
+Differing words: 5. First difference at instruction 2 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0021cda0: 27bdfff0  addiu	sp,sp,-16                                  | 0021cda0: 27bdfff0  addiu	sp,sp,-16
+   0021cda4: ffbf0000  sd	ra,0(sp)                                      | 0021cda4: ffbf0000  sd	ra,0(sp)
+!! 0021cda8: 54800006  bnezl	a0,0x21cdc4                                | 0021cda8: 14800006  bnez	a0,21cdc4 <func_0021cda0+0x24>
+!! 0021cdac: 3c040033  lui	a0,0x33                                      | 0021cdac: 3c0f0033  lui	t7,0x33
+!! 0021cdb0: 3c040033  lui	a0,0x33                                      | 0021cdb0: 3c0f0033  lui	t7,0x33
+!! 0021cdb4: 2484a980  addiu	a0,a0,-22144   ; = D_0032a980              | 0021cdb4: 25e4a980  addiu	a0,t7,-22144   ; = D_0032a980
+   0021cdb8: dfbf0000  ld	ra,0(sp)                                      | 0021cdb8: dfbf0000  ld	ra,0(sp)
+   0021cdbc: 08079caa  j	0x1e72a8                                       | 0021cdbc: 08079caa  j	1e72a8 <func_001e72a8>
+   0021cdc0: 27bd0010  addiu	sp,sp,16                                   | 0021cdc0: 27bd0010  addiu	sp,sp,16
+   0021cdc4: 1000fffc  b	0x21cdb8                                       | 0021cdc4: 1000fffc  b	21cdb8 <func_0021cda0+0x18>
+!! 0021cdc8: 2484b100  addiu	a0,a0,-20224                               | 0021cdc8: 25e4b100  addiu	a0,t7,-20224   ; = D_0032b100

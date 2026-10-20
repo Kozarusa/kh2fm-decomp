@@ -1,0 +1,19 @@
+00135c88: compiled 60 bytes, target 60 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00135c88: 8c8c000c  lw	t4,12(a0)                                     | 00135c88: 8c8c000c  lw	t4,12(a0)
+   00135c8c: 1980000a  blez	t4,0x135cb8                                 | 00135c8c: 1980000a  blez	t4,135cb8 <func_00135c88+0x30>
+   00135c90: 0000682d  move	t5,zero                                     | 00135c90: 0000682d  move	t5,zero
+   00135c94: 24840010  addiu	a0,a0,16                                   | 00135c94: 24840010  addiu	a0,a0,16
+   00135c98: 8c8f0000  lw	t7,0(a0)                                      | 00135c98: 8c8f0000  lw	t7,0(a0)
+   00135c9c: 01a0102d  move	v0,t5                                       | 00135c9c: 01a0102d  move	v0,t5
+   00135ca0: 25ad0001  addiu	t5,t5,1                                    | 00135ca0: 25ad0001  addiu	t5,t5,1
+   00135ca4: 24840004  addiu	a0,a0,4                                    | 00135ca4: 24840004  addiu	a0,a0,4
+   00135ca8: 11e50004  beq	t7,a1,0x135cbc                               | 00135ca8: 11e50004  beq	t7,a1,135cbc <func_00135c88+0x34>
+   00135cac: 01ac702a  slt	t6,t5,t4                                     | 00135cac: 01ac702a  slt	t6,t5,t4
+   00135cb0: 55c0fffa  bnezl	t6,0x135c9c                                | 00135cb0: 55c0fffa  bnezl	t6,135c9c <func_00135c88+0x14>
+   00135cb4: 8c8f0000  lw	t7,0(a0)                                      | 00135cb4: 8c8f0000  lw	t7,0(a0)
+   00135cb8: 2402ffff  li	v0,-1                                         | 00135cb8: 2402ffff  li	v0,-1
+   00135cbc: 03e00008  jr	ra                                            | 00135cbc: 03e00008  jr	ra
+   00135cc0: 00000000  nop                                              | 00135cc0: 00000000  nop

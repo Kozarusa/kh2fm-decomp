@@ -1,0 +1,92 @@
+[
+  {
+    "address": "00173518",
+    "bytes": 64,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_02_0.cpp",
+    "different_words": 4,
+    "materialization_changes": [
+      {
+        "offset": 20,
+        "compiled": "0x34c634b0",
+        "target": "0x240536b2"
+      }
+    ]
+  },
+  {
+    "address": "0031b070",
+    "bytes": 80,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round26_0031b070_v02.cpp",
+    "different_words": 4,
+    "materialization_changes": [
+      {
+        "offset": 16,
+        "compiled": "0x35ef8590",
+        "target": "0x25ef8590"
+      },
+      {
+        "offset": 24,
+        "compiled": "0x35ce7e60",
+        "target": "0x25ce7e60"
+      },
+      {
+        "offset": 56,
+        "compiled": "0x35ef7f98",
+        "target": "0x25ef7f98"
+      }
+    ]
+  },
+  {
+    "address": "001d5b78",
+    "bytes": 64,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round19_001d5b78_v01.cpp",
+    "different_words": 8,
+    "materialization_changes": [
+      {
+        "offset": 40,
+        "compiled": "0x350817a0",
+        "target": "0x25ce0008"
+      }
+    ]
+  },
+  {
+    "address": "0016f470",
+    "bytes": 68,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_02_0.cpp",
+    "different_words": 8,
+    "materialization_changes": [
+      {
+        "offset": 44,
+        "compiled": "0x34a5c440",
+        "target": "0x24a5c440"
+      }
+    ]
+  },
+  {
+    "address": "0015d730",
+    "bytes": 184,
+    "source": "analysis/final-mix/recovery-experiments/fm_scalar_medium_00.cpp",
+    "different_words": 8,
+    "materialization_changes": [
+      {
+        "offset": 52,
+        "compiled": "0x3484af40",
+        "target": "0x2484af40"
+      },
+      {
+        "offset": 88,
+        "compiled": "0x3484b0e0",
+        "target": "0x2484b0e0"
+      },
+      {
+        "offset": 120,
+        "compiled": "0x3484b0e0",
+        "target": "0x2484b0e0"
+      },
+      {
+        "offset": 152,
+        "compiled": "0x3484af40",
+        "target": "0x2484af40"
+      }
+    ]
+  }
+]

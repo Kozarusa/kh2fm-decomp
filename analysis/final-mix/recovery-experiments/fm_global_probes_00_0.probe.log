@@ -1,0 +1,40 @@
+Exact probe matches: 2/40
+Detailed proof: analysis/final-mix/recovery-experiments/fm_global_probes_00_0.verification.json
+recovery-experiments/fm_global_probes_00_0/probe.cpp: In function `u32 
+   func_00109450(int, int, int)':
+recovery-experiments/fm_global_probes_00_0/probe.cpp:155: warning: invalid 
+   conversion from `s32*' to `u32*'
+recovery-experiments/fm_global_probes_00_0/probe.cpp: In function `int* 
+   func_00109c30()':
+recovery-experiments/fm_global_probes_00_0/probe.cpp:194: warning: invalid 
+   conversion from `s32' to `int*'
+recovery-experiments/fm_global_probes_00_0/probe.cpp:203: warning: invalid 
+   conversion from `unsigned int' to `int*'
+recovery-experiments/fm_global_probes_00_0/probe.cpp: In function `void 
+   func_00134d10(u32*)':
+recovery-experiments/fm_global_probes_00_0/probe.cpp:297: warning: assignment 
+   to `u32' from `f32'
+recovery-experiments/fm_global_probes_00_0/probe.cpp:297: warning: argument to 
+   `unsigned int' from `f32'
+recovery-experiments/fm_global_probes_00_0/probe.cpp:298: warning: assignment 
+   to `unsigned int' from `f32'
+recovery-experiments/fm_global_probes_00_0/probe.cpp:298: warning: argument to 
+   `unsigned int' from `f32'
+recovery-experiments/fm_global_probes_00_0/probe.cpp:300: warning: assignment 
+   to `u32' from `f32'
+recovery-experiments/fm_global_probes_00_0/probe.cpp:300: warning: argument to 
+   `unsigned int' from `f32'
+recovery-experiments/fm_global_probes_00_0/probe.cpp: In function `void 
+   func_0013a820(int, long long int)':
+recovery-experiments/fm_global_probes_00_0/probe.cpp:371: warning: invalid 
+   conversion from `s32*' to `u32*'
+recovery-experiments/fm_global_probes_00_0/probe.cpp: In function `void 
+   func_001676b0(u64*, long long unsigned int)':
+recovery-experiments/fm_global_probes_00_0/probe.cpp:613: warning: assignment 
+   to `u32' from `f32'
+recovery-experiments/fm_global_probes_00_0/probe.cpp:613: warning: argument to 
+   `unsigned int' from `f32'
+recovery-experiments/fm_global_probes_00_0/probe.cpp:617: warning: assignment 
+   to `u32' from `f32'
+recovery-experiments/fm_global_probes_00_0/probe.cpp:617: warning: argument to 
+   `unsigned int' from `f32'

@@ -1,0 +1,51 @@
+#include "../common/types.h"
+
+extern "C" u32 func_00195558(void*);
+extern "C" u32 func_002fde18(...);
+extern "C" u32 func_001050d8(u32);
+extern "C" u32 func_00135e50(u32);
+extern "C" u32 func_00139d78(void);
+extern "C" u32 func_00306f30(s32);
+extern u8 D_0034f250, D_0034fa78;
+
+void func_00195750(void) {
+    func_00195558(&D_0034f250);
+    func_00195558(&D_0034fa78);
+}
+
+void func_00281f90(s32 object) {
+    *(volatile u32*)(object + 0x100c) = 0xffffffff;
+    u32* cursor = (u32*)(object + 0x1010);
+    *(volatile u32*)(object + 0x1008) = 0xffffffff;
+    s32 remaining = 4;
+    do {
+        *cursor = 0;
+        --remaining;
+        ++cursor;
+    } while (remaining >= 0);
+    func_002fde18(object + 0x1024, 0, 0x40);
+}
+
+void func_00135dc8(s32* destination) {
+    register u32 allocated asm("$16") = func_001050d8(0x110);
+    func_00135e50(allocated);
+    *(s32**)(allocated + 4) = destination;
+    // Keep the first store before the publication of the allocated object.
+    asm("" : "+r"(allocated));
+    *destination = allocated;
+}
+
+void func_0023f0c8(s32 object, u32 value) {
+    register s32 savedObject asm("$16") = object;
+    register u32 savedValue asm("$17") = value;
+    func_00139d78();
+    asm("" : : "r"(savedObject), "r"(savedValue));
+    *(u32*)(savedObject + 0x90) = savedValue;
+}
+
+u32 func_00307f68(u32 unusedFirst, u32 unusedSecond, s32 value) {
+    register s32 dispatch asm("$4") = value;
+    asm("" : "+r"(dispatch));
+    if (dispatch != 0) func_00306f30(dispatch);
+    return 1;
+}

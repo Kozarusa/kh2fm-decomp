@@ -1,0 +1,18 @@
+{
+  "source_sha256": "240d30a3d72f9b28a75d689d8fd6c3fc1e3a523ec76d2fab95f9f8990c5be2ec",
+  "source": "analysis/final-mix/recovery-experiments/fm_primary_splitstore_v3_001e6250_2.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "001e6250",
+      "symbol": "_Z13func_001e6250v",
+      "compiled_size": 48,
+      "target_size": 48,
+      "ghidra_body_size": 48,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "f0ffbd270000bfff2c98070c0000000035000f3c9046e0ad9046ed25ffff0e240400aead0000bfdf0800e0031000bd27",
+      "target_hex": "f0ffbd270000bfff2c98070c0000000035000f3c0000bfdf9046ed259046e0adffff0e240400aead0800e0031000bd27"
+    }
+  ]
+}

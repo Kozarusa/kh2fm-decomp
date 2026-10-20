@@ -1,0 +1,35 @@
+002a6290: compiled 124 bytes, target 120 bytes, exact=False
+Differing words: 27. First difference at instruction 3 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   002a6290: 27bdffe0  addiu	sp,sp,-32                                  | 002a6290: 27bdffe0  addiu	sp,sp,-32
+   002a6294: ffb20010  sd	s2,16(sp)                                     | 002a6294: ffb20010  sd	s2,16(sp)
+   002a6298: ffb00000  sd	s0,0(sp)                                      | 002a6298: ffb00000  sd	s0,0(sp)
+!! 002a629c: 3c120036  lui	s2,0x36                                      | 002a629c: ffb10008  sd	s1,8(sp)
+!! 002a62a0: ffb10008  sd	s1,8(sp)                                      | 002a62a0: 3c120036  lui	s2,0x36
+   002a62a4: ffbf0018  sd	ra,24(sp)                                     | 002a62a4: ffbf0018  sd	ra,24(sp)
+!! 002a62a8: 0000802d  move	s0,zero                                     | 002a62a8: 2652f5ec  addiu	s2,s2,-2580   ; = D_0035f5ec
+!! 002a62ac: 8e4df5ec  lw	t5,-2580(s2)   ; = D_0035f5ec                 | 002a62ac: 8e4d0000  lw	t5,0(s2)
+!! 002a62b0: 81af0000  lb	t7,0(t5)                                      | 002a62b0: 0000802d  move	s0,zero
+!! 002a62b4: 19e0000d  blez	t7,0x2a62ec                                 | 002a62b4: 81af0000  lb	t7,0(t5)
+!! 002a62b8: 0000882d  move	s1,zero                                     | 002a62b8: 19e0000d  blez	t7,2a62f0 <func_002a6290+0x60>
+!! 002a62bc: 01b07821  addu	t7,t5,s0                                    | 002a62bc: 0000882d  move	s1,zero
+!! 002a62c0: 81e40006  lb	a0,6(t7)                                      | 002a62c0: 01b07821  addu	t7,t5,s0
+!! 002a62c4: 0c0a98da  jal	0x2a6368                                     | 002a62c4: 81e40006  lb	a0,6(t7)
+!! 002a62c8: 26100001  addiu	s0,s0,1                                    | 002a62c8: 0c0a98da  jal	2a6368 <func_002a6368>
+!! 002a62cc: 0c0a5134  jal	0x2944d0                                     | 002a62cc: 26100001  addiu	s0,s0,1
+!! 002a62d0: 0040202d  move	a0,v0                                       | 002a62d0: 0c0a5134  jal	2944d0 <func_002944d0>
+!! 002a62d4: 8e4df5ec  lw	t5,-2580(s2)   ; = D_0035f5ec                 | 002a62d4: 0040202d  move	a0,v0
+!! 002a62d8: 262e0001  addiu	t6,s1,1                                    | 002a62d8: 8e4d0000  lw	t5,0(s2)
+!! 002a62dc: 81af0000  lb	t7,0(t5)                                      | 002a62dc: 262e0001  addiu	t6,s1,1
+!! 002a62e0: 020f782a  slt	t7,s0,t7                                     | 002a62e0: 81af0000  lb	t7,0(t5)
+!! 002a62e4: 15e0fff5  bnez	t7,0x2a62bc                                 | 002a62e4: 020f782a  slt	t7,s0,t7
+!! 002a62e8: 01c2880b  movn	s1,t6,v0                                    | 002a62e8: 15e0fff5  bnez	t7,2a62c0 <func_002a6290+0x30>
+!! 002a62ec: 0220102d  move	v0,s1                                       | 002a62ec: 01c2880b  movn	s1,t6,v0
+!! 002a62f0: dfb00000  ld	s0,0(sp)                                      | 002a62f0: 0220102d  move	v0,s1
+!! 002a62f4: dfb10008  ld	s1,8(sp)                                      | 002a62f4: dfb00000  ld	s0,0(sp)
+!! 002a62f8: dfb20010  ld	s2,16(sp)                                     | 002a62f8: dfb10008  ld	s1,8(sp)
+!! 002a62fc: dfbf0018  ld	ra,24(sp)                                     | 002a62fc: dfb20010  ld	s2,16(sp)
+!! 002a6300: 03e00008  jr	ra                                            | 002a6300: dfbf0018  ld	ra,24(sp)
+!! 002a6304: 27bd0020  addiu	sp,sp,32                                   | 002a6304: 03e00008  jr	ra
+!!                                                                      | 002a6308: 27bd0020  addiu	sp,sp,32

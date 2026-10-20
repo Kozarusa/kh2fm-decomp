@@ -1,0 +1,30 @@
+0023c008: compiled 104 bytes, target 104 bytes, exact=False
+Differing words: 22. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0023c008: 3c0f0036  lui	t7,0x36                                      | 0023c008: 3c0f0036  lui	t7,0x36
+!! 0023c00c: ac800058  sw	zero,88(a0)                                   | 0023c00c: ac800054  sw	zero,84(a0)
+   0023c010: 25efeb08  addiu	t7,t7,-5368   ; = D_0035eb08               | 0023c010: 25efeb08  addiu	t7,t7,-5368   ; = D_0035eb08
+!! 0023c014: ac800004  sw	zero,4(a0)                                    | 0023c014: ac800058  sw	zero,88(a0)
+   0023c018: ac8f0000  sw	t7,0(a0)                                      | 0023c018: ac8f0000  sw	t7,0(a0)
+!! 0023c01c: ac800008  sw	zero,8(a0)                                    | 0023c01c: ac800004  sw	zero,4(a0)
+!! 0023c020: ac80000c  sw	zero,12(a0)                                   | 0023c020: ac800008  sw	zero,8(a0)
+!! 0023c024: ac800010  sw	zero,16(a0)                                   | 0023c024: ac80000c  sw	zero,12(a0)
+!! 0023c028: ac800014  sw	zero,20(a0)                                   | 0023c028: ac800010  sw	zero,16(a0)
+!! 0023c02c: ac800018  sw	zero,24(a0)                                   | 0023c02c: ac800014  sw	zero,20(a0)
+!! 0023c030: ac80001c  sw	zero,28(a0)                                   | 0023c030: ac800018  sw	zero,24(a0)
+!! 0023c034: ac800020  sw	zero,32(a0)                                   | 0023c034: ac80001c  sw	zero,28(a0)
+!! 0023c038: ac800024  sw	zero,36(a0)                                   | 0023c038: ac800020  sw	zero,32(a0)
+!! 0023c03c: ac800028  sw	zero,40(a0)                                   | 0023c03c: ac800024  sw	zero,36(a0)
+!! 0023c040: ac80002c  sw	zero,44(a0)                                   | 0023c040: ac800028  sw	zero,40(a0)
+!! 0023c044: ac800030  sw	zero,48(a0)                                   | 0023c044: ac80002c  sw	zero,44(a0)
+!! 0023c048: ac800034  sw	zero,52(a0)                                   | 0023c048: ac800030  sw	zero,48(a0)
+!! 0023c04c: ac800038  sw	zero,56(a0)                                   | 0023c04c: ac800034  sw	zero,52(a0)
+!! 0023c050: ac80003c  sw	zero,60(a0)                                   | 0023c050: ac800038  sw	zero,56(a0)
+!! 0023c054: ac800040  sw	zero,64(a0)                                   | 0023c054: ac80003c  sw	zero,60(a0)
+!! 0023c058: ac800044  sw	zero,68(a0)                                   | 0023c058: ac800040  sw	zero,64(a0)
+!! 0023c05c: ac800048  sw	zero,72(a0)                                   | 0023c05c: ac800044  sw	zero,68(a0)
+!! 0023c060: ac80004c  sw	zero,76(a0)                                   | 0023c060: ac800048  sw	zero,72(a0)
+!! 0023c064: a0800050  sb	zero,80(a0)                                   | 0023c064: ac80004c  sw	zero,76(a0)
+   0023c068: 03e00008  jr	ra                                            | 0023c068: 03e00008  jr	ra
+!! 0023c06c: ac800054  sw	zero,84(a0)                                   | 0023c06c: a0800050  sb	zero,80(a0)

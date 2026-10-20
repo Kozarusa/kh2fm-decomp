@@ -1,0 +1,6 @@
+# 0010a828 blocked
+- Range: 0010a828, 92 bytes. Versions tried: 5. Best: v2 with 7 differing words (92/92 bytes).
+- First difference of the best version: !! 0010a838: 3c0f0034  lui	t7,0x34  (compiled mul.s $f1,$f13,$f1; the eb4 store's lui is hoisted to the top into t6 instead of the ebc store's)
+- Changes tried: v1 constant addresses passed through asm("" : "+r"(pointer)) so each is lui+addiu then lwc1 0(reg) (11, size now 92/92, was 84); v2 C10(a) final stores written ebc then ec0 so the output stores ec0 then ebc (7); v3 multiply moved after the parameter stores (17); v4 C10(c) volatile parameter globals (11); v5 C11(b) separate range temporary (11).
+- Why it stops here: no improvement for 3 versions.
+- Next hypothesis: from v2, only the lui 0x34 placement differs: the original gives the D_00340eb4 store its own lui t7 after the D_00340eb8 store and hoists the D_00340ebc lui into t6 at the top; try binding the eb4 base (register u32 asm("$15")) or giving the ebc store its address through an early asm-opaque pointer in $14.

@@ -1,0 +1,175 @@
+{
+  "worker_id": "worker-b",
+  "round": 12,
+  "role": "recovery worker (isolated proposals and reports only)",
+  "written": "2026-10-08",
+  "previous_rounds": "round-11 (claim: round-11/claim.json)",
+  "selection_method": "round-12/pick_targets.py: framed, integer-only, pseudocode-backed, 20-120 B, unregistered, never attempted by worker B in rounds 1-11, not in primary's live claim. Screening at claim time: 5512 registered rows, 11383 layout ranges, 11398 pseudocode records, 1133 candidates. Chosen because every one is a NO-BRANCH framed body, the class rounds 10-11 reproduce best.",
+  "original_elf_sha256": "d869ce4b8edd61cb978c4ff9ede595fe4d7d7b21cbb96a145275217120d8bc87",
+  "claimed_addresses": [
+    {
+      "address": "001668f8",
+      "size": 52,
+      "ghidra": ""
+    },
+    {
+      "address": "00166930",
+      "size": 52,
+      "ghidra": ""
+    },
+    {
+      "address": "001682b8",
+      "size": 52,
+      "ghidra": ""
+    },
+    {
+      "address": "0016c7a0",
+      "size": 52,
+      "ghidra": ""
+    },
+    {
+      "address": "001721d8",
+      "size": 52,
+      "ghidra": ""
+    },
+    {
+      "address": "001d2210",
+      "size": 52,
+      "ghidra": ""
+    },
+    {
+      "address": "0023fb90",
+      "size": 52,
+      "ghidra": ""
+    },
+    {
+      "address": "00242368",
+      "size": 52,
+      "ghidra": ""
+    },
+    {
+      "address": "00288be8",
+      "size": 52,
+      "ghidra": ""
+    },
+    {
+      "address": "0028cc08",
+      "size": 52,
+      "ghidra": ""
+    },
+    {
+      "address": "00293f78",
+      "size": 52,
+      "ghidra": ""
+    },
+    {
+      "address": "00308650",
+      "size": 52,
+      "ghidra": ""
+    }
+  ],
+  "range_verification": "pending: r12_dump_orig.py --disasm",
+  "intended_outputs": {
+    "sources": "analysis/final-mix/recovery-experiments/fm_worker_b_round12_<addr>_vNN.cpp",
+    "proofs": "analysis/final-mix/recovery-experiments/fm_worker_b_round12_<addr>_vNN.verification.json",
+    "winners": "analysis/final-mix/recovery-experiments/fm_worker_b_round12_<addr>_solved.cpp plus its own .verification.json"
+  },
+  "compiler_use": "shared read-only probe harness only",
+  "ownership": "worker B owns only files under worker-coordination/worker-b/** and analysis/final-mix/recovery-experiments/fm_worker_b_round12_*; primary owns active sources, functions.tsv, layout.tsv, stage sync, builds, manifests, receipts, Ghidra, HANDOFF.md",
+  "acceptance_baseline": "5,512 equal-size exact matches (registration row count observed when this claim was written)",
+  "round12_result": {
+    "round": 12,
+    "claimed": 12,
+    "exact": {
+      "0023fb90": {
+        "status": "EXACT",
+        "bytes": "52/52",
+        "variant": "v01",
+        "source": "recovery-experiments/fm_worker_b_round12_0023fb90_solved.cpp",
+        "source_sha256": "10b5af026051f3b3a35be414941ab4e07d6c5ab3b4598c79941b6afa98f77a82",
+        "proof": "recovery-experiments/fm_worker_b_round12_0023fb90_solved.verification.json",
+        "exact_match": true,
+        "boundary_agreement": true,
+        "mechanism": "if (param_1 != 0) { (*(code *)(*(u32 *)DAT_0036ebe0 + 4))(DAT_0036ebe0, param_1); } - the machine form is bnel zero with move a1,a0 in the delay slot"
+      },
+      "00242368": {
+        "status": "EXACT",
+        "bytes": "52/52",
+        "variant": "v01",
+        "source": "recovery-experiments/fm_worker_b_round12_00242368_solved.cpp",
+        "source_sha256": "6d9706dd63ffa764ce163c9473e65e589aec70a59998111e6adb1cb4f4db817d",
+        "proof": "recovery-experiments/fm_worker_b_round12_00242368_solved.verification.json",
+        "exact_match": true,
+        "boundary_agreement": true,
+        "mechanism": "same shape as 0023fb90"
+      },
+      "00293f78": {
+        "status": "EXACT",
+        "bytes": "52/52",
+        "variant": "v01",
+        "source": "recovery-experiments/fm_worker_b_round12_00293f78_solved.cpp",
+        "source_sha256": "92fecc6c41f1c4712ff0cff6f55c5522c6858d26abb8652d5e3b57ce866560cd",
+        "proof": "recovery-experiments/fm_worker_b_round12_00293f78_solved.verification.json",
+        "exact_match": true,
+        "boundary_agreement": true,
+        "mechanism": "same shape as 0023fb90"
+      },
+      "001721d8": {
+        "status": "EXACT",
+        "bytes": "52/52",
+        "variant": "v02",
+        "source": "recovery-experiments/fm_worker_b_round12_001721d8_solved.cpp",
+        "source_sha256": "67f6f408d3ada191bd23be8a173611e7fdf33fe38dc60ac2216a7383ee47616a",
+        "proof": "recovery-experiments/fm_worker_b_round12_001721d8_solved.verification.json",
+        "exact_match": true,
+        "boundary_agreement": true,
+        "mechanism": "four named u32 temps stop GCC folding a three-level address chain; (*(code *)(*(u32 *)iVar4 + 8))(iVar4, iVar3, iVar2); asm volatile(\"\")"
+      }
+    },
+    "summary": "4/12 byte-exact; 8 unresolved. Batch deliberately restricted to 52-byte framed bodies with no branch, which is the most reproducible shape on this compiler.",
+    "selection": "round-12/pick_targets.py - framed, integer-only, no-branch bodies, 20-120 bytes; 1133 candidates from 5512 registered rows / 11383 layout ranges / 11398 pseudocode records",
+    "unresolved": {
+      "001668f8": {
+        "best": "v02",
+        "measured": "52/52, 2 words",
+        "reason": "target uses one li t7,1 then sh zero,10(s0); sb t7,14(s0); sh zero,12(s0) - the byte store reorders"
+      },
+      "00166930": {
+        "best": "v02",
+        "measured": "52/52, 2 words",
+        "reason": "byte-identical twin of 001668f8"
+      },
+      "001682b8": {
+        "best": "v02",
+        "measured": "48/52",
+        "reason": "target returns $s0 with no store to s0; four-byte gap unresolved"
+      },
+      "0016c7a0": {
+        "best": "v07",
+        "measured": "60/52, 11 words",
+        "reason": "jalr $v0 class"
+      },
+      "00288be8": {
+        "best": "v07",
+        "measured": "60/52, 11 words",
+        "reason": "jalr $v0 class"
+      },
+      "0028cc08": {
+        "best": "v07",
+        "measured": "60/52, 11 words",
+        "reason": "jalr $v0 class"
+      },
+      "001d2210": {
+        "best": "v03",
+        "measured": "52/52",
+        "reason": "target keeps ld ra,0(sp) in the beqz delay slot; GCC emits the prologue store first"
+      },
+      "00308650": {
+        "best": "v02",
+        "measured": "52/52, 16 words",
+        "reason": "two calls with a0=5 then sw a1,0x60d8 where a1 is loaded from 0x1e87d4; call-result plumbing does not match"
+      }
+    },
+    "report": "round-12/REPORT.md"
+  }
+}

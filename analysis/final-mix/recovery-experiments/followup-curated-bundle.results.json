@@ -1,0 +1,16 @@
+[
+  {
+    "source": "analysis/final-mix/recovery-experiments/fm_constructor_recovered.cpp",
+    "exit_code": 0,
+    "log": "analysis/final-mix/recovery-experiments/fm_constructor_recovered.probe.log",
+    "functions": 2,
+    "exact": 2
+  },
+  {
+    "source": "analysis/final-mix/recovery-experiments/fm_small_retry_recovered.cpp",
+    "exit_code": 0,
+    "log": "analysis/final-mix/recovery-experiments/fm_small_retry_recovered.probe.log",
+    "functions": 3,
+    "exact": 3
+  }
+]

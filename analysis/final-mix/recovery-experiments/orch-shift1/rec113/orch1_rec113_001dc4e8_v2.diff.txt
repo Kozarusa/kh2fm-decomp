@@ -1,0 +1,26 @@
+001dc4e8: compiled 88 bytes, target 88 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001dc4e8: 27bdffe0  addiu	sp,sp,-32                                  | 001dc4e8: 27bdffe0  addiu	sp,sp,-32
+   001dc4ec: 00c0782d  move	t7,a2                                       | 001dc4ec: 00c0782d  move	t7,a2
+   001dc4f0: ffb10008  sd	s1,8(sp)                                      | 001dc4f0: ffb10008  sd	s1,8(sp)
+   001dc4f4: 24860014  addiu	a2,a0,20                                   | 001dc4f4: 24860014  addiu	a2,a0,20
+   001dc4f8: ffb00000  sd	s0,0(sp)                                      | 001dc4f8: ffb00000  sd	s0,0(sp)
+   001dc4fc: 00e0882d  move	s1,a3                                       | 001dc4fc: 00e0882d  move	s1,a3
+   001dc500: ffbf0010  sd	ra,16(sp)                                     | 001dc500: ffbf0010  sd	ra,16(sp)
+   001dc504: 24870018  addiu	a3,a0,24                                   | 001dc504: 24870018  addiu	a3,a0,24
+   001dc508: 0080802d  move	s0,a0                                       | 001dc508: 0080802d  move	s0,a0
+   001dc50c: 00a0202d  move	a0,a1                                       | 001dc50c: 00a0202d  move	a0,a1
+   001dc510: 0c077006  jal	0x1dc018                                     | 001dc510: 0c077006  jal	1dc018 <func_001dc018>
+   001dc514: 01e0282d  move	a1,t7                                       | 001dc514: 01e0282d  move	a1,t7
+   001dc518: 10400003  beqz	v0,0x1dc528                                 | 001dc518: 10400003  beqz	v0,1dc528 <func_001dc4e8+0x40>
+   001dc51c: 0000782d  move	t7,zero                                     | 001dc51c: 0000782d  move	t7,zero
+   001dc520: ae110010  sw	s1,16(s0)                                     | 001dc520: ae110010  sw	s1,16(s0)
+   001dc524: 240f0001  li	t7,1                                          | 001dc524: 240f0001  li	t7,1
+   001dc528: dfb00000  ld	s0,0(sp)                                      | 001dc528: dfb00000  ld	s0,0(sp)
+   001dc52c: 01e0102d  move	v0,t7                                       | 001dc52c: 01e0102d  move	v0,t7
+   001dc530: dfb10008  ld	s1,8(sp)                                      | 001dc530: dfb10008  ld	s1,8(sp)
+   001dc534: dfbf0010  ld	ra,16(sp)                                     | 001dc534: dfbf0010  ld	ra,16(sp)
+   001dc538: 03e00008  jr	ra                                            | 001dc538: 03e00008  jr	ra
+   001dc53c: 27bd0020  addiu	sp,sp,32                                   | 001dc53c: 27bd0020  addiu	sp,sp,32

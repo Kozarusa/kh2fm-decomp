@@ -1,0 +1,29 @@
+{
+  "source_sha256": "000fe8848cf6ecae63eb88afd5870c3f5007933c6d59085893f2a9bad362800a",
+  "source": "analysis/final-mix/recovery-experiments/fm_width_recovered_07.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "001b90c8",
+      "symbol": "_Z13func_001b90c8v",
+      "compiled_size": 40,
+      "target_size": 40,
+      "ghidra_body_size": 40,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd270000bfffb88d060c0000000032a0060c2d204000100044940000bfdfa2e306081000bd27",
+      "target_hex": "f0ffbd270000bfffb88d060c0000000032a0060c2d204000100044940000bfdfa2e306081000bd27"
+    },
+    {
+      "address": "001bdc18",
+      "symbol": "_Z13func_001bdc18j",
+      "compiled_size": 44,
+      "target_size": 44,
+      "ghidra_body_size": 44,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd270000b0ff0800bfff2d8080002c52070cc00984242d2000020800bfdf0000b0df9af506081000bd27",
+      "target_hex": "f0ffbd270000b0ff0800bfff2d8080002c52070cc00984242d2000020800bfdf0000b0df9af506081000bd27"
+    }
+  ]
+}

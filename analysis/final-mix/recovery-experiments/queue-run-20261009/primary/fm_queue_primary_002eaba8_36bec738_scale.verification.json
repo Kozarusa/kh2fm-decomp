@@ -1,0 +1,18 @@
+{
+  "source_sha256": "a7a4fafe0c9c810d1a7d8acee87ea9a454d58a3bc1b67b3f67e5e1d1dc7ae055",
+  "source": "analysis/final-mix/recovery-experiments/queue-run-20261009/primary/fm_queue_primary_002eaba8_36bec738_scale.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "002eaba8",
+      "symbol": "_Z13func_002eaba8PN2kn7FVectorEjPKh",
+      "compiled_size": 60,
+      "target_size": 64,
+      "ghidra_body_size": 64,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "36000f3cf0ffbd274034e0c51000c6242d1080000000c1d8000008440010a8485808e24b03009d100000a1fb0000a87b0000887c0800e0031000bd27",
+      "target_hex": "36000f3cf0ffbd274034e0c51000c6242d1080000000c1d8000008440010a8485808e24b0000a1fb03009d10000000000000a87b0000887c0800e0031000bd27"
+    }
+  ]
+}

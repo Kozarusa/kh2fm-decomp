@@ -1,0 +1,22 @@
+00170cd0: compiled 60 bytes, target 72 bytes, exact=False
+Differing words: 12. First difference at instruction 4 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00170cd0: 27bdfff0  addiu	sp,sp,-16                                  | 00170cd0: 27bdfff0  addiu	sp,sp,-16
+   00170cd4: ffbf0000  sd	ra,0(sp)                                      | 00170cd4: ffbf0000  sd	ra,0(sp)
+   00170cd8: 0c05a22e  jal	0x1688b8                                     | 00170cd8: 0c05a22e  jal	1688b8 <func_001688b8>
+   00170cdc: 00000000  nop                                              | 00170cdc: 00000000  nop
+!! 00170ce0: 14400006  bnez	v0,0x170cfc                                 | 00170ce0: 14400007  bnez	v0,170d00 <func_00170cd0+0x30>
+!! 00170ce4: 24020001  li	v0,1                                          | 00170ce4: dfbf0000  ld	ra,0(sp)
+   00170ce8: 0c0ae880  jal	0x2ba200                                     | 00170ce8: 0c0ae880  jal	2ba200 <func_002ba200>
+   00170cec: 00000000  nop                                              | 00170cec: 00000000  nop
+!! 00170cf0: 10400005  beqz	v0,0x170d08                                 | 00170cf0: 14400003  bnez	v0,170d00 <func_00170cd0+0x30>
+!! 00170cf4: 00000000  nop                                              | 00170cf4: dfbf0000  ld	ra,0(sp)
+!! 00170cf8: 24020001  li	v0,1                                          | 00170cf8: 0805c314  j	170c50 <func_00170c50>
+!! 00170cfc: dfbf0000  ld	ra,0(sp)                                      | 00170cfc: 27bd0010  addiu	sp,sp,16
+!! 00170d00: 03e00008  jr	ra                                            | 00170d00: 24020001  li	v0,1
+!! 00170d04: 27bd0010  addiu	sp,sp,16                                   | 00170d04: 03e00008  jr	ra
+!! 00170d08: 0c05c314  jal	0x170c50                                     | 00170d08: 27bd0010  addiu	sp,sp,16
+!! 00170d0c: 00000000  nop                                              | 
+!! 00170d10: 1000fffb  b	0x170d00                                       | 
+!! 00170d14: dfbf0000  ld	ra,0(sp)                                      | 

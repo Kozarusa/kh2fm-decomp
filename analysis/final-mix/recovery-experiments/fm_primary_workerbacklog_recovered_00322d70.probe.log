@@ -1,0 +1,8 @@
+recovery-experiments/fm_primary_workerbacklog_recovered_00322d70/probe.cpp: In 
+   function `void func_00322d70(unsigned int)':
+recovery-experiments/fm_primary_workerbacklog_recovered_00322d70/probe.cpp:10: warning: cast
+   from pointer to integer of different size
+recovery-experiments/fm_primary_workerbacklog_recovered_00322d70/probe.cpp:14: warning: cast
+   from pointer to integer of different size
+Exact probe matches: 1/1
+Detailed proof: analysis/final-mix/recovery-experiments/fm_primary_workerbacklog_recovered_00322d70.verification.json

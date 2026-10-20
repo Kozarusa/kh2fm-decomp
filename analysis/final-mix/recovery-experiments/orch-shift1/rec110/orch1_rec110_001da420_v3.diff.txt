@@ -1,0 +1,20 @@
+001da420: compiled 64 bytes, target 56 bytes, exact=False
+Differing words: 6. First difference at instruction 2 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001da420: 8c8f0000  lw	t7,0(a0)                                      | 001da420: 8c8f0000  lw	t7,0(a0)
+   001da424: 25ee001c  addiu	t6,t7,28                                   | 001da424: 25ee001c  addiu	t6,t7,28
+!! 001da428: 8dc20004  lw	v0,4(t6)                                      | 001da428: 8dcd0004  lw	t5,4(t6)
+!! 001da42c: 50400008  beqzl	v0,0x1da450                                | 001da42c: 11a00008  beqz	t5,1da450 <func_001da420+0x30>
+   001da430: 0000102d  move	v0,zero                                     | 001da430: 0000102d  move	v0,zero
+   001da434: 8dcf0000  lw	t7,0(t6)                                      | 001da434: 8dcf0000  lw	t7,0(t6)
+!! 001da438: 11e50005  beq	t7,a1,0x1da450                               | 001da438: 11e50007  beq	t7,a1,1da458 <func_001da420+0x38>
+   001da43c: 25ce0008  addiu	t6,t6,8                                    | 001da43c: 25ce0008  addiu	t6,t6,8
+   001da440: 8dcf0004  lw	t7,4(t6)                                      | 001da440: 8dcf0004  lw	t7,4(t6)
+   001da444: 15e0fffb  bnez	t7,0x1da434                                 | 001da444: 15e0fffb  bnez	t7,1da434 <func_001da420+0x14>
+!! 001da448: 01e0102d  move	v0,t7                                       | 001da448: 01e0682d  move	t5,t7
+   001da44c: 0000102d  move	v0,zero                                     | 001da44c: 0000102d  move	v0,zero
+   001da450: 03e00008  jr	ra                                            | 001da450: 03e00008  jr	ra
+   001da454: 00000000  nop                                              | 001da454: 00000000  nop
+!!                                                                      | 001da458: 03e00008  jr	ra
+!!                                                                      | 001da45c: 01a0102d  move	v0,t5

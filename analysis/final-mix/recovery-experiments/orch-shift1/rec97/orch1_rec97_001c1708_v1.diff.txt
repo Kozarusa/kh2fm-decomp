@@ -1,0 +1,22 @@
+001c1708: compiled 72 bytes, target 64 bytes, exact=False
+Differing words: 14. First difference at instruction 3 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001c1708: 27bdfff0  addiu	sp,sp,-16                                  | 001c1708: 27bdfff0  addiu	sp,sp,-16
+   001c170c: ffb00000  sd	s0,0(sp)                                      | 001c170c: ffb00000  sd	s0,0(sp)
+   001c1710: ffbf0008  sd	ra,8(sp)                                      | 001c1710: ffbf0008  sd	ra,8(sp)
+!! 001c1714: 8c84000c  lw	a0,12(a0)                                     | 001c1714: 8c90000c  lw	s0,12(a0)
+!! 001c1718: 10800008  beqz	a0,0x1c173c                                 | 001c1718: 5200000a  beqzl	s0,1c1744 <func_001c1708+0x3c>
+   001c171c: dfb00000  ld	s0,0(sp)                                      | 001c171c: dfb00000  ld	s0,0(sp)
+!! 001c1720: 10800003  beqz	a0,0x1c1730                                 | 001c1720: 0200782d  move	t7,s0
+!! 001c1724: 8c900024  lw	s0,36(a0)                                     | 001c1724: 8e100024  lw	s0,36(s0)
+!! 001c1728: 0c070624  jal	0x1c1890                                     | 001c1728: 11e00003  beqz	t7,1c1738 <func_001c1708+0x30>
+!! 001c172c: 00000000  nop                                              | 001c172c: 01e0202d  move	a0,t7
+!! 001c1730: 1600fffb  bnez	s0,0x1c1720                                 | 001c1730: 0c070624  jal	1c1890 <func_001c1890>
+!! 001c1734: 0200202d  move	a0,s0                                       | 001c1734: 00000000  nop
+!! 001c1738: dfb00000  ld	s0,0(sp)                                      | 001c1738: 1600fffa  bnez	s0,1c1724 <func_001c1708+0x1c>
+!! 001c173c: dfbf0008  ld	ra,8(sp)                                      | 001c173c: 0200782d  move	t7,s0
+!! 001c1740: 03e00008  jr	ra                                            | 001c1740: dfb00000  ld	s0,0(sp)
+!! 001c1744: 27bd0010  addiu	sp,sp,16                                   | 001c1744: dfbf0008  ld	ra,8(sp)
+!!                                                                      | 001c1748: 03e00008  jr	ra
+!!                                                                      | 001c174c: 27bd0010  addiu	sp,sp,16

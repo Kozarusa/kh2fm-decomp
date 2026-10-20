@@ -1,0 +1,23 @@
+001aaf98: compiled 76 bytes, target 76 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001aaf98: 00a73821  addu	a3,a1,a3                                    | 001aaf98: 00a73821  addu	a3,a1,a3
+   001aaf9c: 28e77000  slti	a3,a3,28672                                 | 001aaf9c: 28e77000  slti	a3,a3,28672
+   001aafa0: 14e0000d  bnez	a3,0x1aafd8                                 | 001aafa0: 14e0000d  bnez	a3,1aafd8 <func_001aaf98+0x40>
+   001aafa4: 0000102d  move	v0,zero                                     | 001aafa4: 0000102d  move	v0,zero
+   001aafa8: 340f9000  li	t7,0x9000                                     | 001aafa8: 340f9000  li	t7,0x9000
+   001aafac: 01e5782a  slt	t7,t7,a1                                     | 001aafac: 01e5782a  slt	t7,t7,a1
+   001aafb0: 55e0000a  bnezl	t7,0x1aafdc                                | 001aafb0: 55e0000a  bnezl	t7,1aafdc <func_001aaf98+0x44>
+   001aafb4: 24020001  li	v0,1                                          | 001aafb4: 24020001  li	v0,1
+   001aafb8: 28cf7300  slti	t7,a2,29440                                 | 001aafb8: 28cf7300  slti	t7,a2,29440
+   001aafbc: 55e00007  bnezl	t7,0x1aafdc                                | 001aafbc: 55e00007  bnezl	t7,1aafdc <func_001aaf98+0x44>
+   001aafc0: 24020001  li	v0,1                                          | 001aafc0: 24020001  li	v0,1
+   001aafc4: 00c87023  subu	t6,a2,t0                                    | 001aafc4: 00c87023  subu	t6,a2,t0
+   001aafc8: 340f8d00  li	t7,0x8d00                                     | 001aafc8: 340f8d00  li	t7,0x8d00
+   001aafcc: 01ee782a  slt	t7,t7,t6                                     | 001aafcc: 01ee782a  slt	t7,t7,t6
+   001aafd0: 11e00002  beqz	t7,0x1aafdc                                 | 001aafd0: 11e00002  beqz	t7,1aafdc <func_001aaf98+0x44>
+   001aafd4: 00000000  nop                                              | 001aafd4: 00000000  nop
+   001aafd8: 24020001  li	v0,1                                          | 001aafd8: 24020001  li	v0,1
+   001aafdc: 03e00008  jr	ra                                            | 001aafdc: 03e00008  jr	ra
+   001aafe0: 00000000  nop                                              | 001aafe0: 00000000  nop

@@ -1,0 +1,15 @@
+002b16d8: compiled 44 bytes, target 44 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   002b16d8: 3c0f0036  lui	t7,0x36                                      | 002b16d8: 3c0f0036  lui	t7,0x36
+   002b16dc: 0000102d  move	v0,zero                                     | 002b16dc: 0000102d  move	v0,zero
+   002b16e0: 8deef634  lw	t6,-2508(t7)   ; = D_0035f634                 | 002b16e0: 8deef634  lw	t6,-2508(t7)   ; = D_0035f634
+   002b16e4: 8dcd5afc  lw	t5,23292(t6)                                  | 002b16e4: 8dcd5afc  lw	t5,23292(t6)
+   002b16e8: 240f007e  li	t7,126                                        | 002b16e8: 240f007e  li	t7,126
+   002b16ec: 8dcc55fc  lw	t4,22012(t6)                                  | 002b16ec: 8dcc55fc  lw	t4,22012(t6)
+   002b16f0: 158f0002  bne	t4,t7,0x2b16fc                               | 002b16f0: 158f0002  bne	t4,t7,2b16fc <func_002b16d8+0x24>
+   002b16f4: 39ad0081  xori	t5,t5,0x81                                  | 002b16f4: 39ad0081  xori	t5,t5,0x81
+   002b16f8: 2da20001  sltiu	v0,t5,1                                    | 002b16f8: 2da20001  sltiu	v0,t5,1
+   002b16fc: 03e00008  jr	ra                                            | 002b16fc: 03e00008  jr	ra
+   002b1700: 00000000  nop                                              | 002b1700: 00000000  nop

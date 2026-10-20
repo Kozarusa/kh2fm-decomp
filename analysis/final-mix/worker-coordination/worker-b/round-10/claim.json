@@ -1,0 +1,219 @@
+{
+  "worker_id": "worker-b",
+  "round": 10,
+  "role": "source recovery, isolated proposals only",
+  "written": "2026-10-08",
+  "previous_rounds": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "selection_method": {
+    "picker": "worker-b/round-10/pick_targets.py",
+    "picker_change_this_round": "added load_worker_attempted(), which harvests every address from every round-N/claim.json (list-valued keys ending in 'addresses', since round claims use chosen_addresses / assigned_addresses / claimed_addresses), so rounds 9+ are excluded automatically instead of by a hand-edited ATTEMPTED set. Primary's live claim is still re-read at run time via load_primary_reserved().",
+    "screening_output": {
+      "registered_rows": 5512,
+      "layout_ranges": 11383,
+      "pseudocode_records": 11398,
+      "candidates_after_screening": 1161
+    },
+    "screening_rules": [
+      "unregistered, not in primary's live claim, not attempted by any worker-b round",
+      "size 20-120 bytes, multiple of 4",
+      "body must open with addiu sp,sp,-N (a real frame push) and contain at least one sd/ld",
+      "no COP1/CO2, no 64-bit multiply (op 0x2d), no bltz/bgez forms",
+      "integer-only leaves and small call/branch functions preferred: round 6 showed frameless sibling-call thunks are unreachable on this compiler, round 7-9 showed framed bodies reproduce well"
+    ],
+    "rationale": "Round 9 demonstrated two reusable levers (assign a dereference result back into the parameter to pin it to $a0; trailing asm volatile(\"\") to defeat sibling-call rewriting), so the round-10 batch leans on framed virtual-call thunks and small accessor pairs while avoiding the frameless thunk class."
+  },
+  "original_elf_sha256": "d869ce4b8edd61cb978c4ff9ede595fe4d7d7b21cbb96a145275217120d8bc87",
+  "verification_method": "r10_dump_orig.py re-reads the ELF, checks its sha256, checks each [address, end) range against /root/kh2fm-build/layout.tsv, and records a per-range sha256; --disasm additionally runs the pinned ee-objdump inside image kh2-local/ps2-compiler:3.2-ee-040921-objdiff. Proof of match is probe_fm_source.py against the original ELF bytes.",
+  "compiler_use": "Read-only through the shared probe harness (Public/tools/kh2-audit/probe_fm_source.py). No compiler-flag changes, no hand-rolled ee-g++ runs, no shared-stage writes.",
+  "isolation_statement": "Worker B owns only its own claim/report files and its own recovery-experiments sources. Active sources, functions.tsv, layout.tsv, stage sync, full builds, manifests, receipts, Ghidra export and HANDOFF.md remain primary's.",
+  "claimed_addresses": [
+    {
+      "address": "002b81ec",
+      "size": 40,
+      "ghidra": "undefined8 FUN_002b81ec(void) { return 0; }",
+      "note": "frame=32 leaf returning 0"
+    },
+    {
+      "address": "002b8214",
+      "size": 40,
+      "ghidra": "undefined8 FUN_002b8214(void) { return 0; }",
+      "note": "byte-sibling of 002b81ec; check whether identical"
+    },
+    {
+      "address": "003068d8",
+      "size": 40,
+      "ghidra": "undefined8 FUN_003068d8(undefined8 in_a3) { iSignalSema(in_a3); SYNC(0); EI(); return 0; }",
+      "note": "sync + ei intrinsics, same family as round-7's sync wins"
+    },
+    {
+      "address": "0030ec28",
+      "size": 40,
+      "ghidra": "bool FUN_0030ec28(void) { u64 uVar1 = sceSifGetReg(4); return (uVar1 & 0x10000) != 0; }",
+      "note": "64-bit test folded to a 32-bit branch"
+    },
+    {
+      "address": "00315418",
+      "size": 40,
+      "ghidra": "void FUN_00315418(code *param_1) { (*param_1)(); FUN_002fd160(); }",
+      "note": "indirect call then real call; trailing-asm candidate"
+    },
+    {
+      "address": "003155c0",
+      "size": 40,
+      "ghidra": "void FUN_003155c0(void) { FUN_00316d18(0x3785f8, *(undefined4 *)(PTR_00365c48 + 0xc)); FUN_00315440(); }",
+      "note": "global base deref; tests the non-carry symbol convention"
+    },
+    {
+      "address": "002f1898",
+      "size": 44,
+      "ghidra": "undefined4 FUN_002f1898(void) { int iVar1 = FUN_00168b38(DAT_01e2c0d0, 0x19, 0); return *(undefined4 *)(iVar1 + 8); }",
+      "note": "three-arg call with a literal; load through the result"
+    },
+    {
+      "address": "0018f858",
+      "size": 48,
+      "ghidra": "void FUN_0018f858(undefined4 *param_1) { undefined4 uVar1 = FUN_001a4550(*param_1, param_1[1]); *param_1 = uVar1; }",
+      "note": "store of the call result back through the parameter"
+    },
+    {
+      "address": "001b81e8",
+      "size": 48,
+      "ghidra": "undefined * FUN_001b81e8(void) { FUN_001b7f88(); DAT_003511c1 = 1; return PTR_003511b8; }",
+      "note": "call, global store, global load return"
+    },
+    {
+      "address": "001231f8",
+      "size": 48,
+      "ghidra": "void FUN_001231f8(int *param_1) { (**(code **)(*param_1 + 0x4c))(); }",
+      "note": "vtable dispatcher; tests the assign-back-to-parameter lever on the round-8/9 class"
+    },
+    {
+      "address": "0016fb00",
+      "size": 48,
+      "ghidra": "void FUN_0016fb00(undefined8 param_1) { (**(code **)*DAT_0034dc98)(DAT_0034dc98, param_1); }",
+      "note": "dispatch through a global vtable pointer"
+    },
+    {
+      "address": "001dc488",
+      "size": 48,
+      "ghidra": "void FUN_001dc488(undefined8 param_1) { (**(code **)*DAT_01d5bb00)(DAT_01d5bb00, param_1, 0); }",
+      "note": "same shape with a third literal argument"
+    }
+  ],
+  "status": "claimed; awaiting r10_dump_orig.py range verification and probe results",
+  "previous_round_exact_totals": {
+    "round_2": 4,
+    "round_3": 3,
+    "round_4": 5,
+    "round_5": 5,
+    "round_6": 2,
+    "round_7": 8,
+    "round_8": "in progress"
+  },
+  "round10_result": {
+    "summary": "4/12 exact; 8 open with measured blockers",
+    "exact": {
+      "003068d8": {
+        "address": "003068d8",
+        "variant": "v01",
+        "mechanism": "four parameters, so the forwarded object reaches $a3; `func_00305650(param_4); asm volatile(\"sync\"); asm volatile(\"ei\"); return 0;` - bare intrinsics land exactly where Ghidra shows them",
+        "source": "fm_worker_b_round10_003068d8_solved.cpp",
+        "source_sha256": "53eeba3be1cb24c5e73436be5113663eb13aece731444496d44bf32b5186ba37",
+        "proof": "fm_worker_b_round10_003068d8_solved.verification.json",
+        "exact_match": true,
+        "boundary_agreement": true
+      },
+      "0018f858": {
+        "address": "0018f858",
+        "variant": "v01",
+        "mechanism": "`u32 uVar1 = func_001a4550(*param_1, param_1[1]); *param_1 = uVar1;` - reusing the parameter as the store base gives the target's two loads off s0",
+        "source": "fm_worker_b_round10_0018f858_solved.cpp",
+        "source_sha256": "fd12e6961b3cc754c13bc5d9453a791e86d5fc8d17172b57484b6d198d3d6df6",
+        "proof": "fm_worker_b_round10_0018f858_solved.verification.json",
+        "exact_match": true,
+        "boundary_agreement": true
+      },
+      "001b81e8": {
+        "address": "001b81e8",
+        "variant": "v01",
+        "mechanism": "`func_001b7f88(); DAT_003511c1 = 1; return PTR_003511b8;` - the byte store needs a u8 global; both symbols declared at the true address 0x35...",
+        "source": "fm_worker_b_round10_001b81e8_solved.cpp",
+        "source_sha256": "efb75da5e0edd5f3ec65164b4bf2aec48e82588569f939f375bd1edcf95ade0f",
+        "proof": "fm_worker_b_round10_001b81e8_solved.verification.json",
+        "exact_match": true,
+        "boundary_agreement": true
+      },
+      "002f1898": {
+        "address": "002f1898",
+        "variant": "v02",
+        "mechanism": "same shape with the symbol re-derived from the raw word: target `lui 0x1e3` / `lw 0xc0d0` means DAT_01e3c190 = 0x1e3c0d0, not Ghidra's 0x1e2c0d0 (ee-objdump's printed displacement -16176 disagrees with the encoded 0xc0d0 = -16192)",
+        "source": "fm_worker_b_round10_002f1898_solved.cpp",
+        "source_sha256": "ac7fc34fa25c017efb85f84c3e68b5de3cce3f834f1249109cd6a8e3cc60659c",
+        "proof": "fm_worker_b_round10_002f1898_solved.verification.json",
+        "exact_match": true,
+        "boundary_agreement": true
+      }
+    },
+    "unresolved": {
+      "002b81ec": {
+        "status": "open",
+        "measured": "20/40",
+        "reason": "target uses the s8 leaf frame-pointer idiom (sd s8; move s8,sp; ...; move sp,s8; ld s8) which GCC 3.2 never emits from C - the same class blocked round-7 002b99a0 and round-8 002b6ab8; the original build evidently used -fno-omit-frame-pointer for some translation units"
+      },
+      "002b8214": {
+        "status": "open",
+        "measured": "20/40",
+        "reason": "byte-identical to 002b81ec; same s8 leaf frame-pointer idiom"
+      },
+      "0030ec28": {
+        "status": "open",
+        "measured": "40/40 with 3 differing words at best; v02 48/40",
+        "reason": "target keeps `lui v1,0x1; and v0,v0,v1; sltu v0,zero,v0` as an explicit mask test; GCC 3.2 strength-reduces the constant into a dsll/andi bit test"
+      },
+      "00315418": {
+        "status": "open",
+        "measured": "28/40",
+        "reason": "the target keeps an unreachable `jal 0x3166f0` behind a plain branch; GCC deletes provably dead calls"
+      },
+      "003155c0": {
+        "status": "open",
+        "measured": "44/40",
+        "reason": "target builds the constant with lui+ori (0x3785f8) where GCC wants addiu; v02 marking the trailing callee noreturn did not resolve it"
+      },
+      "0016fb00": {
+        "status": "open",
+        "measured": "see v02 batch",
+        "reason": "Ghidra's `(**(code**)*DAT)` hides one vtable level; corrected to `*(code *)(*(u32 *)DAT + off)` in v02"
+      },
+      "001dc488": {
+        "status": "open",
+        "measured": "see v02 batch",
+        "reason": "same two-level deref correction"
+      },
+      "001231f8": {
+        "status": "open",
+        "measured": "best effort only",
+        "reason": "arguments passed in $9/$10/$11 (t1/t2/t3), not an O32 argument register set - not expressible in C"
+      }
+    }
+  },
+  "unresolved_after_round10": [
+    "002b81ec",
+    "002b8214",
+    "0030ec28",
+    "00315418",
+    "003155c0",
+    "0016fb00",
+    "001dc488",
+    "001231f8"
+  ]
+}

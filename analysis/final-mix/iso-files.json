@@ -1,0 +1,77 @@
+[
+  {
+    "path": "SYSTEM.CNF",
+    "offset": 581632,
+    "size": 54
+  },
+  {
+    "path": "SLPM_666.75",
+    "offset": 583680,
+    "size": 2629364
+  },
+  {
+    "path": "IOPRP300.IMG",
+    "offset": 3213312,
+    "size": 278305
+  },
+  {
+    "path": "SIO2MAN.IRX",
+    "offset": 3491840,
+    "size": 6641
+  },
+  {
+    "path": "SIO2D.IRX",
+    "offset": 3500032,
+    "size": 11289
+  },
+  {
+    "path": "DBCMAN.IRX",
+    "offset": 3512320,
+    "size": 15653
+  },
+  {
+    "path": "PAD2/DS2O.IRX",
+    "offset": 3528704,
+    "size": 10973
+  },
+  {
+    "path": "MCMAN.IRX",
+    "offset": 3540992,
+    "size": 96181
+  },
+  {
+    "path": "MCSERV.IRX",
+    "offset": 3637248,
+    "size": 7385
+  },
+  {
+    "path": "LIBSD.IRX",
+    "offset": 3645440,
+    "size": 30085
+  },
+  {
+    "path": "LIBSSL.IRX",
+    "offset": 3676160,
+    "size": 91949
+  },
+  {
+    "path": "KH2.IDX",
+    "offset": 3768320,
+    "size": 82548
+  },
+  {
+    "path": "OVL.IDX",
+    "offset": 3852288,
+    "size": 276
+  },
+  {
+    "path": "OVL.IMG",
+    "offset": 3854336,
+    "size": 1371772928
+  },
+  {
+    "path": "KH2.IMG",
+    "offset": 1375627264,
+    "size": 2933575680
+  }
+]

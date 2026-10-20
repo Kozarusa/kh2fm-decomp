@@ -1,0 +1,20 @@
+001b8d60: compiled 64 bytes, target 64 bytes, exact=False
+Differing words: 1. First difference at instruction 7 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001b8d60: 3c0f0033  lui	t7,0x33                                      | 001b8d60: 3c0f0033  lui	t7,0x33
+   001b8d64: 0000602d  move	t4,zero                                     | 001b8d64: 0000602d  move	t4,zero
+   001b8d68: 25effb68  addiu	t7,t7,-1176   ; = D_0032fb68               | 001b8d68: 25effb68  addiu	t7,t7,-1176   ; = D_0032fb68
+   001b8d6c: 91e2011f  lbu	v0,287(t7)                                   | 001b8d6c: 91e2011f  lbu	v0,287(t7)
+   001b8d70: 10400009  beqz	v0,0x1b8d98                                 | 001b8d70: 10400009  beqz	v0,1b8d98 <func_001b8d60+0x38>
+   001b8d74: a1e0011f  sb	zero,287(t7)                                  | 001b8d74: a1e0011f  sb	zero,287(t7)
+   001b8d78: 01e0582d  move	t3,t7                                       | 001b8d78: 01e0582d  move	t3,t7
+!! 001b8d7c: 018b7821  addu	t7,t4,t3                                    | 001b8d7c: 016c7821  addu	t7,t3,t4
+   001b8d80: 008c6821  addu	t5,a0,t4                                    | 001b8d80: 008c6821  addu	t5,a0,t4
+   001b8d84: 91ee0020  lbu	t6,32(t7)                                    | 001b8d84: 91ee0020  lbu	t6,32(t7)
+   001b8d88: 258c0001  addiu	t4,t4,1                                    | 001b8d88: 258c0001  addiu	t4,t4,1
+   001b8d8c: 0182782a  slt	t7,t4,v0                                     | 001b8d8c: 0182782a  slt	t7,t4,v0
+   001b8d90: 15e0fffa  bnez	t7,0x1b8d7c                                 | 001b8d90: 15e0fffa  bnez	t7,1b8d7c <func_001b8d60+0x1c>
+   001b8d94: a1ae0000  sb	t6,0(t5)                                      | 001b8d94: a1ae0000  sb	t6,0(t5)
+   001b8d98: 03e00008  jr	ra                                            | 001b8d98: 03e00008  jr	ra
+   001b8d9c: 00000000  nop                                              | 001b8d9c: 00000000  nop

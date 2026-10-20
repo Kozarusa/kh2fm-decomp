@@ -1,0 +1,26 @@
+00257fa8: compiled 88 bytes, target 80 bytes, exact=False
+Differing words: 12. First difference at instruction 8 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00257fa8: 3c0f0036  lui	t7,0x36                                      | 00257fa8: 3c0f0036  lui	t7,0x36
+   00257fac: 2402ffff  li	v0,-1                                         | 00257fac: 2402ffff  li	v0,-1
+   00257fb0: 95ecef70  lhu	t4,-4240(t7)   ; = D_0035ef70                | 00257fb0: 95ecef70  lhu	t4,-4240(t7)   ; = D_0035ef70
+   00257fb4: 0000682d  move	t5,zero                                     | 00257fb4: 0000682d  move	t5,zero
+   00257fb8: 0000702d  move	t6,zero                                     | 00257fb8: 0000702d  move	t6,zero
+   00257fbc: 01cc7807  srav	t7,t4,t6                                    | 00257fbc: 01cc7807  srav	t7,t4,t6
+   00257fc0: 31ef0001  andi	t7,t7,0x1                                   | 00257fc0: 31ef0001  andi	t7,t7,0x1
+   00257fc4: 31ef00ff  andi	t7,t7,0xff                                  | 00257fc4: 31ef00ff  andi	t7,t7,0xff
+!! 00257fc8: 51e00006  beqzl	t7,0x257fe4                                | 00257fc8: 51e00008  beqzl	t7,257fec <func_00257fa8+0x44>
+   00257fcc: 25ce0001  addiu	t6,t6,1                                    | 00257fcc: 25ce0001  addiu	t6,t6,1
+!! 00257fd0: 55a40003  bnel	t5,a0,0x257fe0                              | 00257fd0: 55a40005  bnel	t5,a0,257fe8 <func_00257fa8+0x40>
+   00257fd4: 25ad0001  addiu	t5,t5,1                                    | 00257fd4: 25ad0001  addiu	t5,t5,1
+!! 00257fd8: 03e00008  jr	ra                                            | 00257fd8: 01c0102d  move	v0,t6
+!! 00257fdc: 01c0102d  move	v0,t6                                       | 00257fdc: 03e00008  jr	ra
+!! 00257fe0: 25ce0001  addiu	t6,t6,1                                    | 00257fe0: 00000000  nop
+!! 00257fe4: 29cf0008  slti	t7,t6,8                                     | 00257fe4: 00000000  nop
+!! 00257fe8: 55e0fff5  bnezl	t7,0x257fc0                                | 00257fe8: 25ce0001  addiu	t6,t6,1
+!! 00257fec: 01cc7807  srav	t7,t4,t6                                    | 00257fec: 29cf0008  slti	t7,t6,8
+!! 00257ff0: 03e00008  jr	ra                                            | 00257ff0: 55e0fff3  bnezl	t7,257fc0 <func_00257fa8+0x18>
+!! 00257ff4: 00000000  nop                                              | 00257ff4: 01cc7807  srav	t7,t4,t6
+!!                                                                      | 00257ff8: 03e00008  jr	ra
+!!                                                                      | 00257ffc: 00000000  nop

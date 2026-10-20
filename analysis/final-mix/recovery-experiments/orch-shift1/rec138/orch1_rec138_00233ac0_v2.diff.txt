@@ -1,0 +1,27 @@
+00233ac0: compiled 80 bytes, target 92 bytes, exact=False
+Differing words: 12. First difference at instruction 4 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00233ac0: 27bdfff0  addiu	sp,sp,-16                                  | 00233ac0: 27bdfff0  addiu	sp,sp,-16
+   00233ac4: 00047842  srl	t7,a0,0x1                                    | 00233ac4: 00047842  srl	t7,a0,0x1
+   00233ac8: 308e0001  andi	t6,a0,0x1                                   | 00233ac8: 308e0001  andi	t6,a0,0x1
+   00233acc: ffbf0000  sd	ra,0(sp)                                      | 00233acc: ffbf0000  sd	ra,0(sp)
+!! 00233ad0: 0480000e  bltz	a0,0x233b0c                                 | 00233ad0: 0480000b  bltz	a0,233b00 <func_00233ac0+0x40>
+   00233ad4: 01cf7025  or	t6,t6,t7                                      | 00233ad4: 01cf7025  or	t6,t6,t7
+   00233ad8: 44840000  mtc1	a0,$f0                                      | 00233ad8: 44840000  mtc1	a0,$f0
+   00233adc: 46800020  cvt.s.w	$f0,$f0                                  | 00233adc: 46800020  cvt.s.w	$f0,$f0
+   00233ae0: 3c0f0037  lui	t7,0x37                                      | 00233ae0: 3c0f0037  lui	t7,0x37
+!! 00233ae4: 25ef13b0  addiu	t7,t7,5040   ; = D_003713b0                | 00233ae4: dfbf0000  ld	ra,0(sp)
+!! 00233ae8: c5ec0000  lwc1	$f12,0(t7)                                  | 00233ae8: c5ec13b0  lwc1	$f12,5040(t7)   ; = D_003713b0
+   00233aec: 00000000  nop                                              | 00233aec: 00000000  nop
+   00233af0: 00000000  nop                                              | 00233af0: 00000000  nop
+   00233af4: 460c0303  div.s	$f12,$f0,$f12                              | 00233af4: 460c0303  div.s	$f12,$f0,$f12
+!! 00233af8: 0c0c4ef0  jal	0x313bc0                                     | 00233af8: 080c4ef0  j	313bc0 <func_00313bc0>
+!! 00233afc: 00000000  nop                                              | 00233afc: 27bd0010  addiu	sp,sp,16
+!! 00233b00: dfbf0000  ld	ra,0(sp)                                      | 00233b00: 448e0000  mtc1	t6,$f0
+!! 00233b04: 03e00008  jr	ra                                            | 00233b04: 46800020  cvt.s.w	$f0,$f0
+!! 00233b08: 27bd0010  addiu	sp,sp,16                                   | 00233b08: 1000fff5  b	233ae0 <func_00233ac0+0x20>
+!! 00233b0c: 448e0000  mtc1	t6,$f0                                      | 00233b0c: 46000000  add.s	$f0,$f0,$f0
+!! 00233b10: 46800020  cvt.s.w	$f0,$f0                                  | 
+!! 00233b14: 1000fff2  b	0x233ae0                                       | 
+!! 00233b18: 46000000  add.s	$f0,$f0,$f0                                | 

@@ -1,0 +1,26 @@
+001c9958: compiled 84 bytes, target 88 bytes, exact=False
+Differing words: 21. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001c9958: 288f0007  slti	t7,a0,7                                     | 001c9958: 288f0007  slti	t7,a0,7
+!! 001c995c: 388e0000  xori	t6,a0,0x0                                   | 001c995c: 38ae0002  xori	t6,a1,0x2
+!! 001c9960: 000e780a  movz	t7,zero,t6                                  | 001c9960: 0004780a  movz	t7,zero,a0
+!! 001c9964: 38ad0002  xori	t5,a1,0x2                                   | 001c9964: 11e0000c  beqz	t7,1c9998 <func_001c9958+0x40>
+!! 001c9968: 31ef00ff  andi	t7,t7,0xff                                  | 001c9968: 0000102d  move	v0,zero
+!! 001c996c: 11e0000b  beqz	t7,0x1c999c                                 | 001c996c: 240f0002  li	t7,2
+!! 001c9970: 0000102d  move	v0,zero                                     | 001c9970: 108f0009  beq	a0,t7,1c9998 <func_001c9958+0x40>
+!! 001c9974: 240f0002  li	t7,2                                          | 001c9974: 2dc20001  sltiu	v0,t6,1
+!! 001c9978: 108f0008  beq	a0,t7,0x1c999c                               | 001c9978: 288f0003  slti	t7,a0,3
+!! 001c997c: 2da20001  sltiu	v0,t5,1                                    | 001c997c: 15e00008  bnez	t7,1c99a0 <func_001c9958+0x48>
+!! 001c9980: 288f0003  slti	t7,a0,3                                     | 001c9980: 38af0003  xori	t7,a1,0x3
+!! 001c9984: 11e00007  beqz	t7,0x1c99a4                                 | 001c9984: 240e0003  li	t6,3
+!! 001c9988: 38ae0003  xori	t6,a1,0x3                                   | 001c9988: 0000102d  move	v0,zero
+!! 001c998c: 240f0001  li	t7,1                                          | 001c998c: 008e7026  xor	t6,a0,t6
+!! 001c9990: 2dc20001  sltiu	v0,t6,1                                    | 001c9990: 240f0001  li	t7,1
+!! 001c9994: 548f0001  bnel	a0,t7,0x1c999c                              | 001c9994: 01ee100b  movn	v0,t7,t6
+!! 001c9998: 24020001  li	v0,1                                          | 001c9998: 03e00008  jr	ra
+!! 001c999c: 03e00008  jr	ra                                            | 001c999c: 00000000  nop
+!! 001c99a0: 00000000  nop                                              | 001c99a0: 240e0001  li	t6,1
+!! 001c99a4: 0000102d  move	v0,zero                                     | 001c99a4: 1000fff9  b	1c998c <func_001c9958+0x34>
+!! 001c99a8: 1000fffa  b	0x1c9994                                       | 001c99a8: 2de20001  sltiu	v0,t7,1
+!! 001c99ac: 240f0003  li	t7,3                                          | 

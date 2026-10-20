@@ -1,0 +1,73 @@
+{
+  "worker_id": "worker-b",
+  "role": "cooperating worker, isolated initializer recovery batch",
+  "written": "2026-10-07 session (KH2FM Final Mix JP decompilation)",
+  "assignment_source": "C:\\Users\\KoZa\\Documents\\ChatGPT\\WORKER_BRIEF.md",
+  "chosen_addresses": [
+    "00104210",
+    "00161410",
+    "001995f8",
+    "001ba060",
+    "001c7ab8",
+    "001c8e00",
+    "001d6850",
+    "00241f20"
+  ],
+  "reserved_for_primary_worker": [
+    "0011d500",
+    "00315458",
+    "00315470",
+    "00315488",
+    "fm_oct7_clamp_recovered.cpp"
+  ],
+  "registration_status_at_claim": {
+    "note": "None of the eight addresses is a start row in tools/kh2-reference/layout.tsv, so each is currently original fallback bytes. Seven carry only a registry alias _Z16wtarget_<addr>jjjj; 00104210 carries no alias row. All eight are absent from every registered src/anon source.",
+    "layout_starts": 0,
+    "layout_gaps_to_next_declared_start": {
+      "00104210": "00104278 (104 bytes)",
+      "00161410": "00161488 (120 bytes)",
+      "001995f8": "00199668 (112 bytes)",
+      "001ba060": "001ba0f8 (152 bytes)",
+      "001c7ab8": "001c7b48 (144 bytes)",
+      "001c8e00": "001c8e60 (96 bytes)",
+      "001d6850": "001d68c0 (112 bytes)",
+      "00241f20": "00241f78 (88 bytes)"
+    },
+    "ghidra_body_bytes_agree_with_layout_gap": true
+  },
+  "baseline_hashes": {
+    "tools/kh2-reference/SLPM_666.75": "d869ce4b8edd61cb978c4ff9ede595fe4d7d7b21cbb96a145275217120d8bc87",
+    "tools/kh2-reference/functions.tsv": "e9136d8290d161b26988fdab13e16d1971b6e6e46ef55599ee9c764416b0597b",
+    "tools/kh2-reference/layout.tsv": "b384f0764f74b10dbe44d18778a35b8f002b9b9058bbe6258b6454609b82f2bf",
+    "analysis/final-mix/native-pseudocode/main.jsonl": "aa24f5742f14453ebe408146889dcebdb4236a7b8bf0a7cab209cad2f2ec84f6",
+    "analysis/final-mix/oct7-clamp-checkpoint-2026-10-07.json": "d38a6d39bc6897b467014bd7b854d501a5229e7f982aa6caa8584b5009e42d30",
+    "analysis/final-mix/recovery-drafts/fm_boundary_initializers.cpp": "521fe3b2fec2cab8303c0aaa2cea6d6e401e853f1a18504efd4fd245798ccd7f",
+    "analysis/final-mix/recovery-drafts/initializer-batch-verification.json": "1a50ba7bc5e31c9ff3d03fbc0d43759a67747cb00fe9fadb1f749862092ad1a9",
+    "analysis/final-mix/recovery-drafts/README.md": "f0e7bb20b69b3fd6c467e9dc406488522f3824a547b19a0f65494d2d0fc1fda2"
+  },
+  "upstream_commit": "8b5bc4790ac3fe951ffaf15b6933d186ebab7a43",
+  "checkpoint_gate": {
+    "command": "python tools/kh2-audit/verify_fm_oct7_clamp_checkpoint.py",
+    "result": "PASS: +6 exact functions, 5303 total, 1860 inputs",
+    "ran_at_claim": true
+  },
+  "intended_output_paths": [
+    "analysis/final-mix/recovery-experiments/fm_worker_b_initializers_v1.cpp",
+    "analysis/final-mix/recovery-experiments/fm_worker_b_initializers_v1.verification.json",
+    "analysis/final-mix/recovery-experiments/fm_worker_b_initializers_v1.probe.log",
+    "analysis/final-mix/worker-coordination/worker-b/disasm_r5900.py",
+    "analysis/final-mix/worker-coordination/worker-b/REPORT.md"
+  ],
+  "shared_resource_use": {
+    "wsl_stage": "/root/kh2fm-build",
+    "usage": "isolated probe_fm_source.py scratch directories named fm_worker_b_* only",
+    "not_done": [
+      "no full build",
+      "no staged input synchronization",
+      "no docker restart",
+      "no Ghidra project mutation",
+      "no edit to functions.tsv, layout.tsv, src/anon, manifests or HANDOFF.md"
+    ]
+  },
+  "coordination_note": "No worker-coordination directory existed at claim time and no channel to the primary worker is available; the advisory claim is recorded here and in REPORT.md."
+}

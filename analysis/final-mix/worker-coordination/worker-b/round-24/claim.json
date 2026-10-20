@@ -1,0 +1,252 @@
+{
+  "round": 24,
+  "worker": "B",
+  "scope": "Recover unregistered framed, no-branch ranges into byte-exact C++ proposals. Worker B owns isolated proposals and reports only.",
+  "claimed_addresses": [
+    {
+      "address": "0017a6c8",
+      "size": 76,
+      "range_verified": false,
+      "sha256": null
+    },
+    {
+      "address": "001c0ce8",
+      "size": 76,
+      "range_verified": false,
+      "sha256": null
+    },
+    {
+      "address": "001c2c98",
+      "size": 76,
+      "range_verified": false,
+      "sha256": null
+    },
+    {
+      "address": "001c2ce8",
+      "size": 76,
+      "range_verified": false,
+      "sha256": null
+    },
+    {
+      "address": "002007e0",
+      "size": 76,
+      "range_verified": false,
+      "sha256": null
+    },
+    {
+      "address": "00209e80",
+      "size": 76,
+      "range_verified": false,
+      "sha256": null
+    },
+    {
+      "address": "00224cf0",
+      "size": 76,
+      "range_verified": false,
+      "sha256": null
+    },
+    {
+      "address": "0022c4b8",
+      "size": 76,
+      "range_verified": false,
+      "sha256": null
+    },
+    {
+      "address": "00252710",
+      "size": 76,
+      "range_verified": false,
+      "sha256": null
+    },
+    {
+      "address": "002956c0",
+      "size": 76,
+      "range_verified": false,
+      "sha256": null
+    },
+    {
+      "address": "002db808",
+      "size": 76,
+      "range_verified": false,
+      "sha256": null
+    },
+    {
+      "address": "002db858",
+      "size": 76,
+      "range_verified": false,
+      "sha256": null
+    },
+    {
+      "address": "002ed2b0",
+      "size": 76,
+      "range_verified": false,
+      "sha256": null
+    },
+    {
+      "address": "002ed300",
+      "size": 76,
+      "range_verified": false,
+      "sha256": null
+    },
+    {
+      "address": "003015a8",
+      "size": 76,
+      "range_verified": false,
+      "sha256": null
+    },
+    {
+      "address": "00307f90",
+      "size": 76,
+      "range_verified": false,
+      "sha256": null
+    }
+  ],
+  "verification_method": "per-range sha256 of the ELF bytes plus start/end/size agreement against /root/kh2fm-build/layout.tsv, before any source is written",
+  "verification_evidence": "round-24/r24_range_hashes.txt, r24_orig_disasm.txt",
+  "elf": "Public/tools/kh2-reference/SLPM_666.75 sha256 d869ce4b8edd61cb978c4ff9ede595fe4d7d7b21cbb96a145275217120d8bc87",
+  "picker": "round-24/pick_targets.py - round-23's picker with the ATTEMPTED set harvested automatically from every round-N/claim.json, primary's live claim re-read at run time, and four standing exclusions (frame-pointer `sd s8` idiom; `movz`/`movn` if-conversion refusal; `lq`/`sq` quad copies; three-or-more consecutive same-base stores/loads). 756 candidates; the batch is the first 16, all 76-byte no-branch bodies.",
+  "ownership": "Worker B writes only sources under analysis/final-mix/recovery-experiments/ and reports under worker-coordination/worker-b/. Active sources, functions.tsv, layout.tsv, stage sync, full builds, manifests, receipts, Ghidra and HANDOFF.md remain primary's.",
+  "acceptance_baseline": 128,
+  "sizes": {
+    "0017a6c8": 76,
+    "001c0ce8": 76,
+    "001c2c98": 76,
+    "001c2ce8": 76,
+    "002007e0": 76,
+    "00209e80": 76,
+    "00224cf0": 76,
+    "0022c4b8": 76,
+    "00252710": 76,
+    "002956c0": 76,
+    "002db808": 76,
+    "002db858": 76,
+    "002ed2b0": 76,
+    "002ed300": 76,
+    "003015a8": 76,
+    "00307f90": 76
+  },
+  "round24_result": {
+    "summary": "5 of 16 claimed ranges recovered byte-exact. Two of the five were exact on the first probe from a recipe established in an earlier round.",
+    "exact": {
+      "001c0ce8": {
+        "status": "EXACT",
+        "variant": "v02",
+        "bytes": "76/76",
+        "source": "recovery-experiments/fm_worker_b_round24_001c0ce8_solved.cpp",
+        "source_sha256": "7ec212574630a4c2bda27dd0fe63444328f814372967e137b94ef398472f0d37",
+        "proof": "recovery-experiments/fm_worker_b_round24_001c0ce8_solved.verification.json",
+        "exact_match": true,
+        "boundary_agreement": true,
+        "mechanism": "uVar1 = puVar2[354] & 0x80; asm volatile (\"\" : \"+r\"(uVar1)); iVar1 = (0 < uVar1);",
+        "note": "register barrier stops GCC rewriting (x&0x80)!=0 into sra+andi"
+      },
+      "002db808": {
+        "status": "EXACT",
+        "variant": "v02",
+        "bytes": "76/76",
+        "source": "recovery-experiments/fm_worker_b_round24_002db808_solved.cpp",
+        "source_sha256": "e6115c36ed451885f118a341a77b1e29d8635b4206e70567634116219d489351",
+        "proof": "recovery-experiments/fm_worker_b_round24_002db808_solved.verification.json",
+        "exact_match": true,
+        "boundary_agreement": true,
+        "mechanism": "vtable setter: func_002cfeb0(p1,p2,3,p3); *(2836)=-1; *(u32*)p1=&func_00362908; func_002e7308(p1+2976);",
+        "note": "trailing asm stops the final call being tail-called"
+      },
+      "002db858": {
+        "status": "EXACT",
+        "variant": "v02",
+        "bytes": "76/76",
+        "source": "recovery-experiments/fm_worker_b_round24_002db858_solved.cpp",
+        "source_sha256": "ad9a9cb7211f9a54aca61be4482dc1967b43e335e985564814c682547789488f",
+        "proof": "recovery-experiments/fm_worker_b_round24_002db858_solved.verification.json",
+        "exact_match": true,
+        "boundary_agreement": true,
+        "mechanism": "byte-identical to 002db808",
+        "note": ""
+      },
+      "002ed2b0": {
+        "status": "EXACT",
+        "variant": "v01",
+        "bytes": "76/76",
+        "source": "recovery-experiments/fm_worker_b_round24_002ed2b0_solved.cpp",
+        "source_sha256": "190edbccac69d2afb7f8a9ade078250bfc8c32bb695b16ac734f28631390d7ec",
+        "proof": "recovery-experiments/fm_worker_b_round24_002ed2b0_solved.verification.json",
+        "exact_match": true,
+        "boundary_agreement": true,
+        "mechanism": "seven-argument dispatch func_001c23a8(p1,p2,0,1,0,128,p3) then vtable set and global store",
+        "note": "argument list read off the register shuffle"
+      },
+      "002ed300": {
+        "status": "EXACT",
+        "variant": "v01",
+        "bytes": "76/76",
+        "source": "recovery-experiments/fm_worker_b_round24_002ed300_solved.cpp",
+        "source_sha256": "54a417729c301c01e8a33508a7757fa998d5bb57a68d748d40bd7cff01b248e1",
+        "proof": "recovery-experiments/fm_worker_b_round24_002ed300_solved.verification.json",
+        "exact_match": true,
+        "boundary_agreement": true,
+        "mechanism": "byte-identical to 002ed2b0",
+        "note": ""
+      }
+    },
+    "unresolved": {
+      "0017a6c8": {
+        "best_variant": "v01",
+        "measured": "60/76",
+        "reason": "19 words; the target holds the global page in a callee-saved register across the whole body"
+      },
+      "001c2c98": {
+        "best_variant": "v02",
+        "measured": "76/76",
+        "reason": "2 words: the last two stores are transposed. v03 (memory barrier) and v04 (interleaved stores) both regress to 7"
+      },
+      "001c2ce8": {
+        "best_variant": "v02",
+        "measured": "76/76",
+        "reason": "byte-identical to 001c2c98"
+      },
+      "002007e0": {
+        "best_variant": "v02",
+        "measured": "76/76",
+        "reason": "3 words: GCC folds the two-level indirection into one register. v03 (named temp) re-enabled the tail call, v04 (named temp + register barrier) is worse"
+      },
+      "00209e80": {
+        "best_variant": "v02",
+        "measured": "76/76",
+        "reason": "byte-identical to 002007e0"
+      },
+      "00224cf0": {
+        "best_variant": "none",
+        "measured": "",
+        "reason": "not attempted: the body is a jump-table dispatch with case targets outside the claimed range"
+      },
+      "00252710": {
+        "best_variant": "v01",
+        "measured": "72/76",
+        "reason": "14 words"
+      },
+      "002956c0": {
+        "best_variant": "v02",
+        "measured": "76/76",
+        "reason": "2 words: the target shifts the callee return in $v0, GCC reuses $t7. v03 regressed to 72/76"
+      },
+      "003015a8": {
+        "best_variant": "none",
+        "measured": "",
+        "reason": "not attempted: 112-byte frame with a varargs-style call"
+      },
+      "00307f90": {
+        "best_variant": "none",
+        "measured": "",
+        "reason": "not attempted: 128-byte frame spilling four argument registers, va_list shaped"
+      }
+    },
+    "new_mechanisms": [
+      "REGISTER BARRIER ON A MASKED BOOLEAN (001c0ce8): asm volatile (\"\" : \"+r\"(uVar1)) on the result of an AND stops GCC rewriting (x & 0x80) != 0 into sra+andi. NOTE: the same barrier does NOT rescue the round-19 lhu sign-extension family - retried on 001bb9b0/001bbec0/001bbf00 and all three stayed at 68/64 or worse. The lever is specific to the boolean-and form.",
+      "ONE-WORD MISSES ARE USUALLY THE TAIL CALL (6 targets): every 72/76 result in this batch was GCC turning the final call into a sibling tail call, dropping ld ra. A trailing asm volatile (\"\") fixed all six at once - the same lever recorded in round 8."
+    ],
+    "picker_weakness": "The picker tags come from the decompiled pseudocode, not the instruction words. 0017a6c8 was tagged NO-BRANCH and is the worst result in the batch; the machine code plainly branches. Treat the tag as weak evidence.",
+    "process_notes": [
+      "Four of this round's variants regressed against their own predecessors and were recorded as such rather than quietly replaced: 001c2c98 v03/v04, 002007e0 v03/v04, 002956c0 v03."
+    ]
+  }
+}

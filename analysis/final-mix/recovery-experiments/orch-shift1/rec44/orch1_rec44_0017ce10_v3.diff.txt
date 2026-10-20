@@ -1,0 +1,32 @@
+0017ce10: compiled 96 bytes, target 112 bytes, exact=False
+Differing words: 22. First difference at instruction 5 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0017ce10: 44800000  mtc1	zero,$f0                                    | 0017ce10: 44800000  mtc1	zero,$f0
+   0017ce14: 27bdfff0  addiu	sp,sp,-16                                  | 0017ce14: 27bdfff0  addiu	sp,sp,-16
+   0017ce18: ffbf0000  sd	ra,0(sp)                                      | 0017ce18: ffbf0000  sd	ra,0(sp)
+   0017ce1c: 460c0034  c.lt.s	$f0,$f12                                  | 0017ce1c: 460c0034  c.lt.s	$f0,$f12
+   0017ce20: e7b40008  swc1	$f20,8(sp)                                  | 0017ce20: e7b40008  swc1	$f20,8(sp)
+!! 0017ce24: 4500000d  bc1f	0x17ce5c                                    | 0017ce24: 4500000b  bc1f	17ce54 <func_0017ce10+0x44>
+   0017ce28: 3c0f0037  lui	t7,0x37                                      | 0017ce28: 3c0f0037  lui	t7,0x37
+!! 0017ce2c: 25efc544  addiu	t7,t7,-15036   ; = D_0036c544              | 0017ce2c: 3c0e0037  lui	t6,0x37
+!! 0017ce30: c5f40000  lwc1	$f20,0(t7)                                  | 0017ce30: c5f4c544  lwc1	$f20,-15036(t7)   ; = D_0036c544
+!! 0017ce34: 3c0f0037  lui	t7,0x37                                      | 0017ce34: 46146300  add.s	$f12,$f12,$f20
+!! 0017ce38: 46146300  add.s	$f12,$f12,$f20                             | 0017ce38: 0c0be2c0  jal	2f8b00 <func_002f8b00>
+!! 0017ce3c: 25efc548  addiu	t7,t7,-15032   ; = D_0036c548              | 0017ce3c: c5cdc548  lwc1	$f13,-15032(t6)   ; = D_0036c548
+!! 0017ce40: 0c0be2c0  jal	0x2f8b00                                     | 0017ce40: 46140001  sub.s	$f0,$f0,$f20
+!! 0017ce44: c5ed0000  lwc1	$f13,0(t7)                                  | 0017ce44: dfbf0000  ld	ra,0(sp)
+!! 0017ce48: 46140001  sub.s	$f0,$f0,$f20                               | 0017ce48: c7b40008  lwc1	$f20,8(sp)
+!! 0017ce4c: dfbf0000  ld	ra,0(sp)                                      | 0017ce4c: 03e00008  jr	ra
+!! 0017ce50: c7b40008  lwc1	$f20,8(sp)                                  | 0017ce50: 27bd0010  addiu	sp,sp,16
+!! 0017ce54: 03e00008  jr	ra                                            | 0017ce54: 3c0e0037  lui	t6,0x37
+!! 0017ce58: 27bd0010  addiu	sp,sp,16                                   | 0017ce58: c5f4c544  lwc1	$f20,-15036(t7)   ; = D_0036c544
+!! 0017ce5c: 25efc544  addiu	t7,t7,-15036                               | 0017ce5c: 460ca301  sub.s	$f12,$f20,$f12
+!! 0017ce60: c5f40000  lwc1	$f20,0(t7)                                  | 0017ce60: 0c0be2c0  jal	2f8b00 <func_002f8b00>
+!! 0017ce64: 3c0f0037  lui	t7,0x37                                      | 0017ce64: c5cdc548  lwc1	$f13,-15032(t6)   ; = D_0036c548
+!! 0017ce68: 460ca301  sub.s	$f12,$f20,$f12                             | 0017ce68: 1000fff6  b	17ce44 <func_0017ce10+0x34>
+!! 0017ce6c: 25efc548  addiu	t7,t7,-15032   ; = D_0036c548              | 0017ce6c: 4600a001  sub.s	$f0,$f20,$f0
+!! 0017ce70: 0c0be2c0  jal	0x2f8b00                                     | 
+!! 0017ce74: c5ed0000  lwc1	$f13,0(t7)                                  | 
+!! 0017ce78: 1000fff4  b	0x17ce4c                                       | 
+!! 0017ce7c: 4600a001  sub.s	$f0,$f20,$f0                               | 

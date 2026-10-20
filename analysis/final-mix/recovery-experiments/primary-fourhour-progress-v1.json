@@ -1,0 +1,157 @@
+{
+  "baseline_exact": 5631,
+  "new_isolated_exact": [
+    "002eb9d8",
+    "00106558",
+    "001024b0",
+    "001d6538",
+    "0020f118",
+    "0020f150",
+    "0022b7f0",
+    "00100338",
+    "00101d38",
+    "0013e4b8",
+    "003155c0",
+    "00171348",
+    "00171378",
+    "00171e58",
+    "0030a2d0",
+    "0018f218",
+    "0018d808",
+    "001d2210",
+    "001ac700",
+    "001b8800",
+    "001d22a8",
+    "001c0c38",
+    "001c10f8",
+    "001d23e0",
+    "001d30c0",
+    "001d7980",
+    "002c22b8",
+    "001fab08",
+    "001fb870",
+    "002e9c58",
+    "002f10c0",
+    "0022dd40",
+    "00181a90",
+    "0014a188",
+    "002956c0",
+    "002908a8",
+    "00272a00",
+    "00272a70",
+    "0014b4b0",
+    "002c6420",
+    "0018c8f0",
+    "0011ea40",
+    "001dc488",
+    "001de948",
+    "001e0128",
+    "001e0188",
+    "001050d8",
+    "0016c7a0",
+    "0016fac8",
+    "00288be8",
+    "0028cc08",
+    "00123d40",
+    "00132f38",
+    "001367e0",
+    "0013c7d0",
+    "00137458",
+    "0013b4b0",
+    "001337f0",
+    "00133980",
+    "0013e5a8",
+    "0013f828",
+    "00140850",
+    "0014e140",
+    "0014f578",
+    "00157160",
+    "00155658",
+    "00155ee8",
+    "00155fc0",
+    "001584a0",
+    "00158548",
+    "00159ce0",
+    "00148638",
+    "0014ec40",
+    "00158b20",
+    "00158fd8",
+    "00159c58"
+  ],
+  "new_instruction_bytes": 5276,
+  "acceptance_state": "accepted; all cumulative checks passed",
+  "pending_inventory": "primary-fourhour-pending-inventory-v1.json",
+  "blockers": "primary-fourhour-blockers.md",
+  "evidence": [
+    {
+      "file": "fm_primary_addressschedule_v6_002c1950_1.verification.json",
+      "sha256": "db5282a085a4355e6fd7215152386da10e8bc6f442af7dd2bfd9d1e166cf4545"
+    },
+    {
+      "file": "fm_primary_addressschedule_v6_002c1950_2.verification.json",
+      "sha256": "51396f3b7581d5597e347f20ae8631c77de65b86b841bec77e8994e3cd0594d8"
+    },
+    {
+      "file": "fm_primary_addressschedule_v6_002c1950_3.verification.json",
+      "sha256": "01ea8f1683e5e0314f7bdfa5be95c531402996e57c5598b89c3d73f97b33bff7"
+    },
+    {
+      "file": "fm_primary_addressschedule_v6_002c1950_4.verification.json",
+      "sha256": "d419601c217de8d3b5d519e4c1c2e71242230cbecdf77fa804a7514d4eaa4949"
+    },
+    {
+      "file": "fm_primary_addressschedule_v6_002c1950_5.verification.json",
+      "sha256": "44d7f2d6675d0e1aa1ef8b20fc80353f46db1f5520b174083d10ac44daa072a7"
+    },
+    {
+      "file": "fm_primary_addressschedule_v7_002c1950_1.verification.json",
+      "sha256": "05312e4ae69014d65641a9df35df82812b4dc2d013ec62dd1866c981d9c20b4a"
+    },
+    {
+      "file": "fm_primary_addressschedule_v7_002c1950_2.verification.json",
+      "sha256": "23ecba35706662275933a25dfb7e51b7567c4cb35a243d8fcb0629559f3c49dc"
+    },
+    {
+      "file": "fm_primary_addressschedule_v7_002c1950_3.verification.json",
+      "sha256": "45a475479095d41d0915d5ced482c5bcbb9efab17dcff7493bbcde51298d1476"
+    },
+    {
+      "file": "fm_primary_addressschedule_v7_002c1950_4.verification.json",
+      "sha256": "0f51aad20522da39c23fe6a394c8015139d73a677f434e42f4d4b1c46db653af"
+    },
+    {
+      "file": "fm_primary_animationbranch_v7_002eb9d8_1.verification.json",
+      "sha256": "730fdb703ed0c6fe66737cfd48cd5ada499c548403fdfff1ef6ec55067f40bd5"
+    },
+    {
+      "file": "fm_primary_animationbranch_v7_002eb9d8_2.verification.json",
+      "sha256": "86f5c47702d79d4ee0c73b3490d0b689faa8a2b0d610ca64749b651447fef494"
+    },
+    {
+      "file": "fm_primary_animationbranch_v7_002eb9d8_3.verification.json",
+      "sha256": "31e9ccb991bbeab18ee00eccbc4bd80c2d53f10e864c8bc2fa705dc4c8f7718f"
+    },
+    {
+      "file": "fm_primary_animationbranch_v7_002eb9d8_4.verification.json",
+      "sha256": "3d5dad7222ccafabb86fa53b6ea678e908b7c272cb30970a1b3b4aee5db92686"
+    },
+    {
+      "file": "fm_primary_animationbranch_v8_002eb9d8_1.verification.json",
+      "sha256": "9607eedba7c0ac8fa42ff89c197660cba59c5c1a4a83ac997fbd0907bf5969b6"
+    },
+    {
+      "file": "fm_primary_animationbranch_v8_002eb9d8_2.verification.json",
+      "sha256": "08e4a9a1be7aaaf87b3932edceef54199ffd0ded2491a0db8a61a3505e0691a7"
+    },
+    {
+      "file": "fm_primary_animationbranch_v8_002eb9d8_3.verification.json",
+      "sha256": "e483c0f052d23cb9886ad1c1400ef3491e1bac8ddfee5b98da978f5b5d9399cf"
+    },
+    {
+      "file": "fm_primary_animationbranch_v8_002eb9d8_4.verification.json",
+      "sha256": "d15dfa69dee15bee044f0c21d1112e8402b07375bfcd6f1f4926d1d1cd1c02cb"
+    }
+  ],
+  "accepted_exact": 5707,
+  "pending_exact": []
+}

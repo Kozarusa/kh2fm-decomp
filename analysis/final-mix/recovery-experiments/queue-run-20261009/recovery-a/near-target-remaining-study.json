@@ -1,0 +1,1052 @@
+[
+  {
+    "address": "002c1950",
+    "bytes": 64,
+    "diff": 1,
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_addressschedule_v7_002c1950_2.cpp"
+  },
+  {
+    "address": "001c8a90",
+    "bytes": 28,
+    "diff": 2,
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_shortglobals_v1_001c8a90_1.cpp"
+  },
+  {
+    "address": "0028ac98",
+    "bytes": 32,
+    "diff": 2,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round3_0028ac98_v05.cpp"
+  },
+  {
+    "address": "00308cd0",
+    "bytes": 36,
+    "diff": 2,
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_shortresidual_v3_00308cd0_1.cpp"
+  },
+  {
+    "address": "00195c58",
+    "bytes": 40,
+    "diff": 2,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_04_0.cpp"
+  },
+  {
+    "address": "00305ce0",
+    "bytes": 40,
+    "diff": 2,
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_shortresidual_v2_00305ce0_1.cpp"
+  },
+  {
+    "address": "00305e20",
+    "bytes": 40,
+    "diff": 2,
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_shortglobals_v1_00305e20_1.cpp"
+  },
+  {
+    "address": "0030ec28",
+    "bytes": 40,
+    "diff": 2,
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_shortglobals_v1_0030ec28_1.cpp"
+  },
+  {
+    "address": "001e6250",
+    "bytes": 48,
+    "diff": 2,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round11_001e6250_v01.cpp"
+  },
+  {
+    "address": "001abf00",
+    "bytes": 52,
+    "diff": 2,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_width_all_05_0.cpp"
+  },
+  {
+    "address": "0028b7f8",
+    "bytes": 56,
+    "diff": 2,
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_destructors_v1_0028b7f8_1.cpp"
+  },
+  {
+    "address": "00315678",
+    "bytes": 56,
+    "diff": 2,
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_destructors_v1_00315678_1.cpp"
+  },
+  {
+    "address": "00315700",
+    "bytes": 56,
+    "diff": 2,
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_destructors_v1_00315700_1.cpp"
+  },
+  {
+    "address": "00316890",
+    "bytes": 56,
+    "diff": 2,
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_destructors_v1_00316890_1.cpp"
+  },
+  {
+    "address": "00265740",
+    "bytes": 60,
+    "diff": 2,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_width_all_10_1.cpp"
+  },
+  {
+    "address": "00265c10",
+    "bytes": 60,
+    "diff": 2,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_width_all_10_1.cpp"
+  },
+  {
+    "address": "002c1a58",
+    "bytes": 68,
+    "diff": 2,
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_mixedschedule_v1_002c1a58_2.cpp"
+  },
+  {
+    "address": "002e5f70",
+    "bytes": 68,
+    "diff": 2,
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_epiloguefamily_v1_002e5f70_3.cpp"
+  },
+  {
+    "address": "00271828",
+    "bytes": 72,
+    "diff": 2,
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_calltransport_v1_00271828.cpp"
+  },
+  {
+    "address": "001c2c98",
+    "bytes": 76,
+    "diff": 2,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round24_001c2c98_v02.cpp"
+  },
+  {
+    "address": "001c2ce8",
+    "bytes": 76,
+    "diff": 2,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round24_001c2ce8_v02.cpp"
+  },
+  {
+    "address": "002006b0",
+    "bytes": 76,
+    "diff": 2,
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_callpair_v2_002006b0_2.cpp"
+  },
+  {
+    "address": "001d4ef0",
+    "bytes": 80,
+    "diff": 2,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_width_all_07_0.cpp"
+  },
+  {
+    "address": "00158ac8",
+    "bytes": 84,
+    "diff": 2,
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_maskcopy_v2_00158ac8_2.cpp"
+  },
+  {
+    "address": "00141010",
+    "bytes": 96,
+    "diff": 2,
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_floatcall_v4_00141010_1.cpp"
+  },
+  {
+    "address": "0010f748",
+    "bytes": 104,
+    "diff": 2,
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_twowordfresh_v1_0010f748.cpp"
+  },
+  {
+    "address": "0017c0a0",
+    "bytes": 104,
+    "diff": 2,
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_structurestore_v5_0017c0a0_1.cpp"
+  },
+  {
+    "address": "001d86a0",
+    "bytes": 120,
+    "diff": 2,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_width_all_07_0.cpp"
+  },
+  {
+    "address": "002920c0",
+    "bytes": 136,
+    "diff": 2,
+    "source": "analysis/final-mix/recovery-experiments/fm_return_variants_v2_11_0.cpp"
+  },
+  {
+    "address": "00292148",
+    "bytes": 136,
+    "diff": 2,
+    "source": "analysis/final-mix/recovery-experiments/fm_return_variants_v2_11_0.cpp"
+  },
+  {
+    "address": "002921d0",
+    "bytes": 136,
+    "diff": 2,
+    "source": "analysis/final-mix/recovery-experiments/fm_return_variants_v2_11_0.cpp"
+  },
+  {
+    "address": "00292258",
+    "bytes": 136,
+    "diff": 2,
+    "source": "analysis/final-mix/recovery-experiments/fm_return_variants_v2_11_0.cpp"
+  },
+  {
+    "address": "00307f40",
+    "bytes": 40,
+    "diff": 3,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_14_0.cpp"
+  },
+  {
+    "address": "00242a28",
+    "bytes": 64,
+    "diff": 3,
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_loadorder_v2_00242a28.cpp"
+  },
+  {
+    "address": "002007e0",
+    "bytes": 76,
+    "diff": 3,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round24_002007e0_v02.cpp"
+  },
+  {
+    "address": "00209e80",
+    "bytes": 76,
+    "diff": 3,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round24_00209e80_v02.cpp"
+  },
+  {
+    "address": "001c9df8",
+    "bytes": 84,
+    "diff": 3,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_width_all_07_0.cpp"
+  },
+  {
+    "address": "001d9630",
+    "bytes": 88,
+    "diff": 3,
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_fourwordfresh_v1_001d9630.cpp"
+  },
+  {
+    "address": "001d6ec8",
+    "bytes": 96,
+    "diff": 3,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_width_all_07_0.cpp"
+  },
+  {
+    "address": "001002a0",
+    "bytes": 8,
+    "diff": 2,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round6_001002a0_v05.cpp"
+  },
+  {
+    "address": "001bbcc0",
+    "bytes": 52,
+    "diff": 3,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round13_001bbcc0_v02.cpp"
+  },
+  {
+    "address": "0030f690",
+    "bytes": 16,
+    "diff": 4,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round6_0030f690_v06.cpp"
+  },
+  {
+    "address": "0030f6a0",
+    "bytes": 16,
+    "diff": 4,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round6_0030f6a0_v06.cpp"
+  },
+  {
+    "address": "0030f6b0",
+    "bytes": 16,
+    "diff": 4,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round6_0030f6b0_v06.cpp"
+  },
+  {
+    "address": "00152598",
+    "bytes": 28,
+    "diff": 4,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round3_00152598_v01.cpp"
+  },
+  {
+    "address": "00319788",
+    "bytes": 36,
+    "diff": 4,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_15_1.cpp"
+  },
+  {
+    "address": "00174af8",
+    "bytes": 48,
+    "diff": 4,
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_sixword_v1_00174af8.cpp"
+  },
+  {
+    "address": "003160e0",
+    "bytes": 48,
+    "diff": 4,
+    "source": "analysis/final-mix/recovery-experiments/fm_scalar_10.cpp"
+  },
+  {
+    "address": "001bd3e0",
+    "bytes": 52,
+    "diff": 4,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_width_all_06_0.cpp"
+  },
+  {
+    "address": "00241fd0",
+    "bytes": 52,
+    "diff": 4,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_width_all_09_0.cpp"
+  },
+  {
+    "address": "00308650",
+    "bytes": 52,
+    "diff": 4,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round12_00308650_v02.cpp"
+  },
+  {
+    "address": "0030a690",
+    "bytes": 52,
+    "diff": 4,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round14_0030a690_v02.cpp"
+  },
+  {
+    "address": "002e2e18",
+    "bytes": 56,
+    "diff": 4,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round16_002e2e18_v01.cpp"
+  },
+  {
+    "address": "00170530",
+    "bytes": 60,
+    "diff": 4,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round16_00170530_v03.cpp"
+  },
+  {
+    "address": "00173518",
+    "bytes": 64,
+    "diff": 4,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_02_0.cpp"
+  },
+  {
+    "address": "00242980",
+    "bytes": 64,
+    "diff": 4,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_09_0.cpp"
+  },
+  {
+    "address": "001e01e8",
+    "bytes": 72,
+    "diff": 4,
+    "source": "analysis/final-mix/recovery-experiments/fm_scalar_05.cpp"
+  },
+  {
+    "address": "002ef708",
+    "bytes": 72,
+    "diff": 4,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round23_002ef708_v01.cpp"
+  },
+  {
+    "address": "0010f6f8",
+    "bytes": 76,
+    "diff": 4,
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_freshfamily_v3_0010f6f8_1.cpp"
+  },
+  {
+    "address": "002e2d88",
+    "bytes": 80,
+    "diff": 4,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round26_002e2d88_v01.cpp"
+  },
+  {
+    "address": "002e7058",
+    "bytes": 84,
+    "diff": 4,
+    "source": "analysis/final-mix/recovery-experiments/fm_return_variants_v2_13_0.cpp"
+  },
+  {
+    "address": "002e70b0",
+    "bytes": 84,
+    "diff": 4,
+    "source": "analysis/final-mix/recovery-experiments/fm_return_variants_v2_13_0.cpp"
+  },
+  {
+    "address": "002ef988",
+    "bytes": 88,
+    "diff": 4,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_width_all_14_0.cpp"
+  },
+  {
+    "address": "002efbb8",
+    "bytes": 88,
+    "diff": 4,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_width_all_14_0.cpp"
+  },
+  {
+    "address": "001d5370",
+    "bytes": 116,
+    "diff": 4,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_07_0.cpp"
+  },
+  {
+    "address": "0030a300",
+    "bytes": 12,
+    "diff": 5,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round4_0030a300_v02.cpp"
+  },
+  {
+    "address": "001003b0",
+    "bytes": 20,
+    "diff": 5,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round3_001003b0_v02.cpp"
+  },
+  {
+    "address": "002f1e00",
+    "bytes": 24,
+    "diff": 5,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round4_002f1e00_v02.cpp"
+  },
+  {
+    "address": "00173270",
+    "bytes": 40,
+    "diff": 5,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round8_00173270_v01.cpp"
+  },
+  {
+    "address": "00305e48",
+    "bytes": 40,
+    "diff": 5,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_14_0.cpp"
+  },
+  {
+    "address": "0021cda0",
+    "bytes": 44,
+    "diff": 5,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round6_0021cda0_v01.cpp"
+  },
+  {
+    "address": "0018f248",
+    "bytes": 52,
+    "diff": 5,
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_sixword_v1_0018f248.cpp"
+  },
+  {
+    "address": "00311100",
+    "bytes": 52,
+    "diff": 5,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round14_00311100_v01.cpp"
+  },
+  {
+    "address": "00311138",
+    "bytes": 52,
+    "diff": 5,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round14_00311138_v01.cpp"
+  },
+  {
+    "address": "001db850",
+    "bytes": 56,
+    "diff": 5,
+    "source": "analysis/final-mix/recovery-experiments/fm_scalar_05.cpp"
+  },
+  {
+    "address": "00304db0",
+    "bytes": 56,
+    "diff": 5,
+    "source": "analysis/final-mix/recovery-experiments/fm_scalar_09.cpp"
+  },
+  {
+    "address": "00307fe0",
+    "bytes": 56,
+    "diff": 5,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_width_all_14_1.cpp"
+  },
+  {
+    "address": "002429c0",
+    "bytes": 60,
+    "diff": 5,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round17_002429c0_v03.cpp"
+  },
+  {
+    "address": "002e98b0",
+    "bytes": 60,
+    "diff": 5,
+    "source": "analysis/final-mix/recovery-experiments/fm_global_probes_v2_04_0.cpp"
+  },
+  {
+    "address": "00174518",
+    "bytes": 64,
+    "diff": 5,
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_sixwordnext_v1_00174518.cpp"
+  },
+  {
+    "address": "001a82b0",
+    "bytes": 64,
+    "diff": 5,
+    "source": "analysis/final-mix/recovery-experiments/fm_global_probes_v3_01_1.cpp"
+  },
+  {
+    "address": "0023f070",
+    "bytes": 76,
+    "diff": 5,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_width_all_09_0.cpp"
+  },
+  {
+    "address": "0028b078",
+    "bytes": 100,
+    "diff": 5,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_width_all_10_0.cpp"
+  },
+  {
+    "address": "0016e718",
+    "bytes": 40,
+    "diff": 6,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_02_1.cpp"
+  },
+  {
+    "address": "001a1db8",
+    "bytes": 40,
+    "diff": 6,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_primary_width_00_all_narrow32.cpp"
+  },
+  {
+    "address": "00315418",
+    "bytes": 40,
+    "diff": 6,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round10_00315418_v01.cpp"
+  },
+  {
+    "address": "0019f8c0",
+    "bytes": 52,
+    "diff": 6,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_width_all_05_0.cpp"
+  },
+  {
+    "address": "00137c50",
+    "bytes": 56,
+    "diff": 6,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_00_0.cpp"
+  },
+  {
+    "address": "00262730",
+    "bytes": 56,
+    "diff": 6,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_09_0.cpp"
+  },
+  {
+    "address": "001bb4b0",
+    "bytes": 60,
+    "diff": 6,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round17_001bb4b0_v01.cpp"
+  },
+  {
+    "address": "002a0360",
+    "bytes": 60,
+    "diff": 6,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round17_002a0360_v03.cpp"
+  },
+  {
+    "address": "001bb9b0",
+    "bytes": 64,
+    "diff": 6,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round19_001bb9b0_v02.cpp"
+  },
+  {
+    "address": "001bb9f0",
+    "bytes": 64,
+    "diff": 6,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round19_001bb9f0_v02.cpp"
+  },
+  {
+    "address": "001bbec0",
+    "bytes": 64,
+    "diff": 6,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_width_all_06_0.cpp"
+  },
+  {
+    "address": "001bbf00",
+    "bytes": 64,
+    "diff": 6,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_width_all_06_0.cpp"
+  },
+  {
+    "address": "001bbf40",
+    "bytes": 64,
+    "diff": 6,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_width_all_06_0.cpp"
+  },
+  {
+    "address": "001bc010",
+    "bytes": 64,
+    "diff": 6,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_width_all_06_0.cpp"
+  },
+  {
+    "address": "001bc050",
+    "bytes": 64,
+    "diff": 6,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_width_all_06_0.cpp"
+  },
+  {
+    "address": "00262f58",
+    "bytes": 68,
+    "diff": 6,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_width_all_10_0.cpp"
+  },
+  {
+    "address": "0027bf20",
+    "bytes": 68,
+    "diff": 6,
+    "source": "analysis/final-mix/recovery-experiments/fm_global_probes_v3_03_1.cpp"
+  },
+  {
+    "address": "002dc808",
+    "bytes": 68,
+    "diff": 6,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_13_0.cpp"
+  },
+  {
+    "address": "002ef660",
+    "bytes": 80,
+    "diff": 6,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_width_all_14_0.cpp"
+  },
+  {
+    "address": "0014fba0",
+    "bytes": 84,
+    "diff": 6,
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_globalfamily_v1_0014fba0.cpp"
+  },
+  {
+    "address": "0019f8f8",
+    "bytes": 84,
+    "diff": 6,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_05_0.cpp"
+  },
+  {
+    "address": "0019f950",
+    "bytes": 84,
+    "diff": 6,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_05_0.cpp"
+  },
+  {
+    "address": "001b6ab8",
+    "bytes": 84,
+    "diff": 6,
+    "source": "analysis/final-mix/recovery-experiments/fm_return_variants_v2_06_0.cpp"
+  },
+  {
+    "address": "002d0cf0",
+    "bytes": 84,
+    "diff": 6,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_13_0.cpp"
+  },
+  {
+    "address": "001317a8",
+    "bytes": 88,
+    "diff": 6,
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_mediumfresh_v3_001317a8_3.cpp"
+  },
+  {
+    "address": "00143470",
+    "bytes": 92,
+    "diff": 6,
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_nexttransport_v1_00143470_1.cpp"
+  },
+  {
+    "address": "001ad158",
+    "bytes": 116,
+    "diff": 6,
+    "source": "analysis/final-mix/recovery-experiments/fm_width_all_06_1.cpp"
+  },
+  {
+    "address": "00308da0",
+    "bytes": 28,
+    "diff": 7,
+    "source": "analysis/final-mix/recovery-experiments/fm_fallback_helpers.cpp"
+  },
+  {
+    "address": "0030df00",
+    "bytes": 56,
+    "diff": 7,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round15_0030df00_v02.cpp"
+  },
+  {
+    "address": "0010f6b8",
+    "bytes": 60,
+    "diff": 7,
+    "source": "analysis/final-mix/recovery-experiments/fm_scalar_probes.cpp"
+  },
+  {
+    "address": "0016e200",
+    "bytes": 60,
+    "diff": 7,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round16_0016e200_v01.cpp"
+  },
+  {
+    "address": "0016e500",
+    "bytes": 60,
+    "diff": 7,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round16_0016e500_v01.cpp"
+  },
+  {
+    "address": "002424c0",
+    "bytes": 60,
+    "diff": 7,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round17_002424c0_v01.cpp"
+  },
+  {
+    "address": "001358c0",
+    "bytes": 64,
+    "diff": 7,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round18_001358c0_v01.cpp"
+  },
+  {
+    "address": "00135900",
+    "bytes": 64,
+    "diff": 7,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round18_00135900_v01.cpp"
+  },
+  {
+    "address": "001b0498",
+    "bytes": 64,
+    "diff": 7,
+    "source": "analysis/final-mix/recovery-experiments/fm_scalar_04.cpp"
+  },
+  {
+    "address": "001c5f38",
+    "bytes": 64,
+    "diff": 7,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round19_001c5f38_v01.cpp"
+  },
+  {
+    "address": "00310130",
+    "bytes": 76,
+    "diff": 7,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_width_all_15_0.cpp"
+  },
+  {
+    "address": "003102e0",
+    "bytes": 76,
+    "diff": 7,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_width_all_15_0.cpp"
+  },
+  {
+    "address": "003103f8",
+    "bytes": 76,
+    "diff": 7,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_width_all_15_0.cpp"
+  },
+  {
+    "address": "00310560",
+    "bytes": 76,
+    "diff": 7,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_width_all_15_0.cpp"
+  },
+  {
+    "address": "00310620",
+    "bytes": 76,
+    "diff": 7,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_primary_width_01_all.cpp"
+  },
+  {
+    "address": "00187b90",
+    "bytes": 84,
+    "diff": 7,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_width_all_03_0.cpp"
+  },
+  {
+    "address": "0013e610",
+    "bytes": 100,
+    "diff": 7,
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_nexttransport_v1_0013e610_1.cpp"
+  },
+  {
+    "address": "001ac2a8",
+    "bytes": 100,
+    "diff": 7,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_width_all_05_0.cpp"
+  },
+  {
+    "address": "00198690",
+    "bytes": 108,
+    "diff": 7,
+    "source": "analysis/final-mix/recovery-experiments/fm_width_all_04_1.cpp"
+  },
+  {
+    "address": "00166808",
+    "bytes": 120,
+    "diff": 7,
+    "source": "analysis/final-mix/recovery-experiments/fm_return_variants_v2_01_0.cpp"
+  },
+  {
+    "address": "00166880",
+    "bytes": 120,
+    "diff": 7,
+    "source": "analysis/final-mix/recovery-experiments/fm_return_variants_v2_01_0.cpp"
+  },
+  {
+    "address": "00166968",
+    "bytes": 120,
+    "diff": 7,
+    "source": "analysis/final-mix/recovery-experiments/fm_return_variants_v2_01_0.cpp"
+  },
+  {
+    "address": "00145580",
+    "bytes": 124,
+    "diff": 7,
+    "source": "analysis/final-mix/recovery-experiments/fm_scalar_probes.cpp"
+  },
+  {
+    "address": "002b6ab8",
+    "bytes": 36,
+    "diff": 8,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round8_002b6ab8_v01.cpp"
+  },
+  {
+    "address": "002e7b88",
+    "bytes": 36,
+    "diff": 8,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_13_0.cpp"
+  },
+  {
+    "address": "002d8d40",
+    "bytes": 40,
+    "diff": 8,
+    "source": "analysis/final-mix/recovery-experiments/fm_global_probes_v3_03_0.cpp"
+  },
+  {
+    "address": "00173e38",
+    "bytes": 44,
+    "diff": 8,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_03_1.cpp"
+  },
+  {
+    "address": "00174060",
+    "bytes": 44,
+    "diff": 8,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_03_0.cpp"
+  },
+  {
+    "address": "0018fd40",
+    "bytes": 44,
+    "diff": 8,
+    "source": "analysis/final-mix/recovery-experiments/fm_return_variants_v2_04_0.cpp"
+  },
+  {
+    "address": "0018fde0",
+    "bytes": 44,
+    "diff": 8,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_04_1.cpp"
+  },
+  {
+    "address": "002b16d8",
+    "bytes": 44,
+    "diff": 8,
+    "source": "analysis/final-mix/recovery-experiments/fm_global_probes_v3_03_0.cpp"
+  },
+  {
+    "address": "00152ab8",
+    "bytes": 48,
+    "diff": 8,
+    "source": "analysis/final-mix/recovery-experiments/fm_return_variants_v2_02_0.cpp"
+  },
+  {
+    "address": "001b5878",
+    "bytes": 48,
+    "diff": 8,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_06_1.cpp"
+  },
+  {
+    "address": "001b5af0",
+    "bytes": 48,
+    "diff": 8,
+    "source": "analysis/final-mix/recovery-experiments/fm_global_probes_v3_01_0.cpp"
+  },
+  {
+    "address": "0019d380",
+    "bytes": 52,
+    "diff": 8,
+    "source": "analysis/final-mix/recovery-experiments/fm_global_probes_v3_01_0.cpp"
+  },
+  {
+    "address": "001a74f8",
+    "bytes": 52,
+    "diff": 8,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round13_001a74f8_v02.cpp"
+  },
+  {
+    "address": "001d9688",
+    "bytes": 52,
+    "diff": 8,
+    "source": "analysis/final-mix/recovery-experiments/fm_scalar_05.cpp"
+  },
+  {
+    "address": "001e2788",
+    "bytes": 52,
+    "diff": 8,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_08_0.cpp"
+  },
+  {
+    "address": "001e27c0",
+    "bytes": 52,
+    "diff": 8,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_08_0.cpp"
+  },
+  {
+    "address": "00198700",
+    "bytes": 56,
+    "diff": 8,
+    "source": "analysis/final-mix/recovery-experiments/fm_scalar_03_pointer.cpp"
+  },
+  {
+    "address": "0027d450",
+    "bytes": 56,
+    "diff": 8,
+    "source": "analysis/final-mix/recovery-experiments/fm_width_all_10_1.cpp"
+  },
+  {
+    "address": "0029e258",
+    "bytes": 60,
+    "diff": 8,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_12_1.cpp"
+  },
+  {
+    "address": "0029e3a0",
+    "bytes": 60,
+    "diff": 8,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_11_1.cpp"
+  },
+  {
+    "address": "002e7ff8",
+    "bytes": 60,
+    "diff": 8,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_13_0.cpp"
+  },
+  {
+    "address": "001b8d60",
+    "bytes": 64,
+    "diff": 8,
+    "source": "analysis/final-mix/recovery-experiments/fm_global_probes_v3_01_0.cpp"
+  },
+  {
+    "address": "001d5b78",
+    "bytes": 64,
+    "diff": 8,
+    "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round19_001d5b78_v01.cpp"
+  },
+  {
+    "address": "00310048",
+    "bytes": 72,
+    "diff": 8,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_width_all_14_0.cpp"
+  },
+  {
+    "address": "00136968",
+    "bytes": 80,
+    "diff": 8,
+    "source": "analysis/final-mix/recovery-experiments/fm_primary_freshhelpers_v1_00136968.cpp"
+  },
+  {
+    "address": "001bd618",
+    "bytes": 80,
+    "diff": 8,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_06_0.cpp"
+  },
+  {
+    "address": "001bd8c8",
+    "bytes": 80,
+    "diff": 8,
+    "source": "analysis/final-mix/recovery-experiments/fm_width_all_06_1.cpp"
+  },
+  {
+    "address": "001708f8",
+    "bytes": 88,
+    "diff": 8,
+    "source": "analysis/final-mix/recovery-experiments/fm_scalar_01.cpp"
+  },
+  {
+    "address": "00258ce8",
+    "bytes": 88,
+    "diff": 8,
+    "source": "analysis/final-mix/recovery-experiments/fm_global_probes_v3_03_0.cpp"
+  },
+  {
+    "address": "0022efb8",
+    "bytes": 96,
+    "diff": 8,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_09_0.cpp"
+  },
+  {
+    "address": "00304de8",
+    "bytes": 96,
+    "diff": 8,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_14_0.cpp"
+  },
+  {
+    "address": "001b84b8",
+    "bytes": 100,
+    "diff": 8,
+    "source": "analysis/final-mix/recovery-experiments/fm_width_all_06_0.cpp"
+  },
+  {
+    "address": "002367c8",
+    "bytes": 100,
+    "diff": 8,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_09_1.cpp"
+  },
+  {
+    "address": "001e41e0",
+    "bytes": 104,
+    "diff": 8,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_width_all_08_1.cpp"
+  },
+  {
+    "address": "002bb3f0",
+    "bytes": 116,
+    "diff": 8,
+    "source": "analysis/final-mix/recovery-experiments/fm_width_all_12_0.cpp"
+  },
+  {
+    "address": "0027aed8",
+    "bytes": 124,
+    "diff": 8,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_width_all_10_0.cpp"
+  },
+  {
+    "address": "00176cd0",
+    "bytes": 152,
+    "diff": 4,
+    "source": "analysis/final-mix/recovery-experiments/fm_width_all_03_1.cpp"
+  },
+  {
+    "address": "00176be0",
+    "bytes": 136,
+    "diff": 6,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_width_all_03_0.cpp"
+  },
+  {
+    "address": "001bce90",
+    "bytes": 136,
+    "diff": 6,
+    "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_width_all_06_1.cpp"
+  },
+  {
+    "address": "0013e2d8",
+    "bytes": 156,
+    "diff": 7,
+    "source": "analysis/final-mix/recovery-experiments/fm_width_all_00_0.cpp"
+  },
+  {
+    "address": "001ad520",
+    "bytes": 136,
+    "diff": 8,
+    "source": "analysis/final-mix/recovery-experiments/fm_width_all_06_0.cpp"
+  },
+  {
+    "address": "00109c30",
+    "bytes": 144,
+    "diff": 8,
+    "source": "analysis/final-mix/recovery-experiments/fm_global_probes_00_0.cpp"
+  }
+]

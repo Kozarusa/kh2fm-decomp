@@ -1,0 +1,293 @@
+{
+  "round": 17,
+  "worker": "B",
+  "ownership": "isolated proposals and reports only; primary retains active sources, functions.tsv, layout.tsv, stage sync, builds, manifests, receipts, Ghidra, HANDOFF.md",
+  "selection": "round-16 picker with ATTEMPTED harvested mechanically from every round-*/claim.json (428 addresses, rounds 1-16), primary's live claim re-read at run time, and the proven-unreachable classes excluded (jalr through a loaded entry; bodies with no sd ra). Framed, no-branch, sd ra-bearing only. 5512 registered rows, 11383 layout ranges, 11398 pseudocode records, 959 candidates; the top 16 by (size, shape).",
+  "compiler_use": "probe_fm_source.py only; no shared stage writes, no flag changes, no executable byte patching",
+  "original_elf_sha256": "d869ce4b8edd61cb978c4ff9ede595fe4d7d7b21cbb96a145275217120d8bc87",
+  "claimed_addresses": [
+    {
+      "address": "001ca988",
+      "range_verified": true,
+      "size": 56,
+      "end": "001ca9c0",
+      "sha256": "1b744fd529f52eeb630b7ec23a890392505385a463c34cb8190df87a390b4dac"
+    },
+    {
+      "address": "002cb7c8",
+      "range_verified": true,
+      "size": 56,
+      "end": "002cb800",
+      "sha256": "0b9d801522c4027ac69c2c3c31da6274f43af8ff6dbbceb1be7682d4d3a34a52"
+    },
+    {
+      "address": "001b4300",
+      "range_verified": true,
+      "size": 60,
+      "end": "001b433c",
+      "sha256": "4ec99b719869cbb3cc71e2023c3a87903f11a9d1dec5b1a7fa290d1f36dd1804"
+    },
+    {
+      "address": "001bb4b0",
+      "range_verified": true,
+      "size": 60,
+      "end": "001bb4ec",
+      "sha256": "2685a7ef56f9b5366bbcef80e920f025da2ebfcd66f619d4e1b1ed8894c91a3b"
+    },
+    {
+      "address": "001c13e8",
+      "range_verified": true,
+      "size": 60,
+      "end": "001c1424",
+      "sha256": "ee68f28b84f9044900a766f88ec866001d3037ae498dbc543025729b081ea96f"
+    },
+    {
+      "address": "001d6538",
+      "range_verified": true,
+      "size": 60,
+      "end": "001d6574",
+      "sha256": "5c43027ef757c34c3c90431b9cee9f77a2ae29a1adbf8671cfb7b9de50d935a9"
+    },
+    {
+      "address": "001e6648",
+      "range_verified": true,
+      "size": 60,
+      "end": "001e6684",
+      "sha256": "b137b36535922b9f5444105d68b84a1c59ae0480dbd9be28d7de043a58eaf793"
+    },
+    {
+      "address": "001fab08",
+      "range_verified": true,
+      "size": 60,
+      "end": "001fab44",
+      "sha256": "9451824f40f1a800ef3bf0fb87555e1ec1668fdf1ee365f4ce281b4dc32c4c76"
+    },
+    {
+      "address": "001fb870",
+      "range_verified": true,
+      "size": 60,
+      "end": "001fb8ac",
+      "sha256": "9451824f40f1a800ef3bf0fb87555e1ec1668fdf1ee365f4ce281b4dc32c4c76"
+    },
+    {
+      "address": "002424c0",
+      "range_verified": true,
+      "size": 60,
+      "end": "002424fc",
+      "sha256": "7fa03ff6fdced539a8c266ac9ad97f108e3637e1ad5b9773e2e93a67bc3c520b"
+    },
+    {
+      "address": "002429c0",
+      "range_verified": true,
+      "size": 60,
+      "end": "002429fc",
+      "sha256": "3f060a19a60db9545238e57f2315efbaaab43d76615c94f8160e330e9d84d24f"
+    },
+    {
+      "address": "00265c10",
+      "range_verified": true,
+      "size": 60,
+      "end": "00265c4c",
+      "sha256": "2e947a6ea7a20fa192189fbca6d170848bb3cf0b3864ae120221e6e2ee0c19b7"
+    },
+    {
+      "address": "002a0360",
+      "range_verified": true,
+      "size": 60,
+      "end": "002a039c",
+      "sha256": "8e56b74e64ea0b09d0abd246c4d08bcb9b70276f7d0f039bd5881f73d4eb3999"
+    },
+    {
+      "address": "002d47e8",
+      "range_verified": true,
+      "size": 60,
+      "end": "002d4824",
+      "sha256": "bda925c309897881c812cdd5208ce4919315f29e9c5e51155b809ae723a2b295"
+    },
+    {
+      "address": "002d5dd0",
+      "range_verified": true,
+      "size": 60,
+      "end": "002d5e0c",
+      "sha256": "800b1d55c6098274caead142e404542c04c530ea657ee179489ddfab53e24777"
+    },
+    {
+      "address": "002db8a8",
+      "range_verified": true,
+      "size": 60,
+      "end": "002db8e4",
+      "sha256": "ce28f35b466dde6364160606785287866ba7dc41f8bb2397ff9c9d64bed49b2f"
+    }
+  ],
+  "verification_method": "per-range sha256 of the bytes read from the original ELF, compared against start/end/size in /root/kh2fm-build/layout.tsv, plus a pinned ee-objdump disassembly of each range",
+  "intake": "round-17/r17_dump_orig.py --disasm writes r17_ranges.txt, r17_range_hashes.txt, r17_orig_disasm.txt and <addr>.orig.hex",
+  "round17_result": {
+    "summary": "7/16 byte-exact recoveries from the round-17 claim, added to the 73 recovered in rounds 1-16. The most valuable finding is that register $9 is the 6th O32 argument, which unblocked a class three earlier rounds had written off as not expressible in C.",
+    "exact": {
+      "001ca988": {
+        "status": "EXACT",
+        "variant": "_solved",
+        "bytes": "56/56",
+        "source": "fm_worker_b_round17_001ca988_solved.cpp",
+        "source_sha256": "f2f170c636714d05e8915b8139b815624f6f301cf0a208ab56d3ac2efd231c69",
+        "proof": "fm_worker_b_round17_001ca988_solved.verification.json",
+        "exact_match": true,
+        "boundary_agreement": true,
+        "compiled_size": 56,
+        "target_size": 56,
+        "target_range_sha256": "1b744fd529f52eeb630b7ec23a890392505385a463c34cb8190df87a390b4dac"
+      },
+      "001b4300": {
+        "status": "EXACT",
+        "variant": "_solved",
+        "bytes": "60/60",
+        "source": "fm_worker_b_round17_001b4300_solved.cpp",
+        "source_sha256": "dd85a55bfdf8f7474867c247bd4f8985b3b3d0cb532c5f18e55950f24628152f",
+        "proof": "fm_worker_b_round17_001b4300_solved.verification.json",
+        "exact_match": true,
+        "boundary_agreement": true,
+        "compiled_size": 60,
+        "target_size": 60,
+        "target_range_sha256": "4ec99b719869cbb3cc71e2023c3a87903f11a9d1dec5b1a7fa290d1f36dd1804"
+      },
+      "001c13e8": {
+        "status": "EXACT",
+        "variant": "_solved",
+        "bytes": "60/60",
+        "source": "fm_worker_b_round17_001c13e8_solved.cpp",
+        "source_sha256": "41634b027b6d5329bf561e43268cda6c0808feecce9d36fb1128c8b704c3e22b",
+        "proof": "fm_worker_b_round17_001c13e8_solved.verification.json",
+        "exact_match": true,
+        "boundary_agreement": true,
+        "compiled_size": 60,
+        "target_size": 60,
+        "target_range_sha256": "ee68f28b84f9044900a766f88ec866001d3037ae498dbc543025729b081ea96f"
+      },
+      "001e6648": {
+        "status": "EXACT",
+        "variant": "_solved",
+        "bytes": "60/60",
+        "source": "fm_worker_b_round17_001e6648_solved.cpp",
+        "source_sha256": "2f8bc6e0ceccb31b7600dbf5e816953731d9f6410fd1b6bbc782cff9bf529a4b",
+        "proof": "fm_worker_b_round17_001e6648_solved.verification.json",
+        "exact_match": true,
+        "boundary_agreement": true,
+        "compiled_size": 60,
+        "target_size": 60,
+        "target_range_sha256": "b137b36535922b9f5444105d68b84a1c59ae0480dbd9be28d7de043a58eaf793"
+      },
+      "002d47e8": {
+        "status": "EXACT",
+        "variant": "_solved",
+        "bytes": "60/60",
+        "source": "fm_worker_b_round17_002d47e8_solved.cpp",
+        "source_sha256": "1f0798f958a9b2d186895e445f898c64af3eae9b8d249ddb0e295f5d1301f04a",
+        "proof": "fm_worker_b_round17_002d47e8_solved.verification.json",
+        "exact_match": true,
+        "boundary_agreement": true,
+        "compiled_size": 60,
+        "target_size": 60,
+        "target_range_sha256": "bda925c309897881c812cdd5208ce4919315f29e9c5e51155b809ae723a2b295"
+      },
+      "002d5dd0": {
+        "status": "EXACT",
+        "variant": "_solved",
+        "bytes": "60/60",
+        "source": "fm_worker_b_round17_002d5dd0_solved.cpp",
+        "source_sha256": "360c9ff7d60df1ed66af6598126f6dce5fb305f2467a48f5f81dd4e5eec53db5",
+        "proof": "fm_worker_b_round17_002d5dd0_solved.verification.json",
+        "exact_match": true,
+        "boundary_agreement": true,
+        "compiled_size": 60,
+        "target_size": 60,
+        "target_range_sha256": "800b1d55c6098274caead142e404542c04c530ea657ee179489ddfab53e24777"
+      },
+      "002db8a8": {
+        "status": "EXACT",
+        "variant": "_solved",
+        "bytes": "60/60",
+        "source": "fm_worker_b_round17_002db8a8_solved.cpp",
+        "source_sha256": "55c69e4e2d8a5d2edd0b68f8c0bfffbd6e39ea33eb3de1f8c77408117ac45712",
+        "proof": "fm_worker_b_round17_002db8a8_solved.verification.json",
+        "exact_match": true,
+        "boundary_agreement": true,
+        "compiled_size": 60,
+        "target_size": 60,
+        "target_range_sha256": "ce28f35b466dde6364160606785287866ba7dc41f8bb2397ff9c9d64bed49b2f"
+      }
+    },
+    "unresolved": {
+      "002cb7c8": {
+        "status": "UNRESOLVED",
+        "best_variant": "fm_worker_b_round17_002cb7c8_v02.verification.json",
+        "proof": "fm_worker_b_round17_002cb7c8_v02.verification.json",
+        "note": "see round-17/REPORT.md for the measured difference and every variant tried"
+      },
+      "001bb4b0": {
+        "status": "UNRESOLVED",
+        "best_variant": "fm_worker_b_round17_001bb4b0_v03.verification.json",
+        "proof": "fm_worker_b_round17_001bb4b0_v03.verification.json",
+        "note": "see round-17/REPORT.md for the measured difference and every variant tried"
+      },
+      "001d6538": {
+        "status": "UNRESOLVED",
+        "best_variant": "fm_worker_b_round17_001d6538_v04.verification.json",
+        "proof": "fm_worker_b_round17_001d6538_v04.verification.json",
+        "note": "see round-17/REPORT.md for the measured difference and every variant tried"
+      },
+      "001fab08": {
+        "status": "UNRESOLVED",
+        "best_variant": "fm_worker_b_round17_001fab08_v04.verification.json",
+        "proof": "fm_worker_b_round17_001fab08_v04.verification.json",
+        "note": "see round-17/REPORT.md for the measured difference and every variant tried"
+      },
+      "001fb870": {
+        "status": "UNRESOLVED",
+        "best_variant": "fm_worker_b_round17_001fb870_v04.verification.json",
+        "proof": "fm_worker_b_round17_001fb870_v04.verification.json",
+        "note": "see round-17/REPORT.md for the measured difference and every variant tried"
+      },
+      "002424c0": {
+        "status": "UNRESOLVED",
+        "best_variant": "fm_worker_b_round17_002424c0_v02.verification.json",
+        "proof": "fm_worker_b_round17_002424c0_v02.verification.json",
+        "note": "see round-17/REPORT.md for the measured difference and every variant tried"
+      },
+      "002429c0": {
+        "status": "UNRESOLVED",
+        "best_variant": "fm_worker_b_round17_002429c0_v04.verification.json",
+        "proof": "fm_worker_b_round17_002429c0_v04.verification.json",
+        "note": "see round-17/REPORT.md for the measured difference and every variant tried"
+      },
+      "00265c10": {
+        "status": "UNRESOLVED",
+        "best_variant": "fm_worker_b_round17_00265c10_v02.verification.json",
+        "proof": "fm_worker_b_round17_00265c10_v02.verification.json",
+        "note": "see round-17/REPORT.md for the measured difference and every variant tried"
+      },
+      "002a0360": {
+        "status": "UNRESOLVED",
+        "best_variant": "fm_worker_b_round17_002a0360_v03.verification.json",
+        "proof": "fm_worker_b_round17_002a0360_v03.verification.json",
+        "note": "see round-17/REPORT.md for the measured difference and every variant tried"
+      }
+    },
+    "compiler_level_findings": [
+      "SYMBOL RULE CORRECTED: the high half of a lui/lw/sw/addiu materialisation is ALWAYS truncating; the declared value V must satisfy V>>16 == hi and V&0xffff == lo16. The earlier \"addiu rounds its hi half\" rule was an artifact of declaring the Ghidra address and letting the compiler use it faithfully.",
+      "REGISTER $9 IS THE 6TH O32 ARGUMENT, not a special register. Signing a function with six parameters places a value in $9 exactly as the target does. This unblocked 00158050 (round 14) and 002ba3b8 (round 9).",
+      "A global reached by lw is declared one page ABOVE the Ghidra address; a global whose address is taken (reached by addiu) uses the true address.",
+      "The asm(\".globl X / X = ...\") block defines a LINKER symbol only; a matching extern \"C\" u32 NAME; declaration is still required or the link fails."
+    ],
+    "unresolved_after_round17": [
+      "001bb4b0",
+      "001d6538",
+      "001fab08",
+      "001fb870",
+      "002424c0",
+      "002429c0",
+      "00265c10",
+      "002a0360",
+      "002cb7c8"
+    ]
+  }
+}

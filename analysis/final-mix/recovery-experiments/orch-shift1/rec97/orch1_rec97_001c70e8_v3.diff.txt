@@ -1,0 +1,28 @@
+001c70e8: compiled 92 bytes, target 96 bytes, exact=False
+Differing words: 24. First difference at instruction 0 (0-based).
+
+ORIGINAL                                                                | COMPILED
+!! 001c70e8: 3c0f0037  lui	t7,0x37                                      | 001c70e8: 3c0a01d5  lui	t2,0x1d5
+!! 001c70ec: 3c0b01d5  lui	t3,0x1d5                                     | 001c70ec: 3c0f0037  lui	t7,0x37
+!! 001c70f0: 25efdf88  addiu	t7,t7,-8312   ; = D_0036df88               | 001c70f0: c5e0df88  lwc1	$f0,-8312(t7)   ; = D_0036df88
+!! 001c70f4: 8d6e9940  lw	t6,-26304(t3)   ; = D_01d49940                | 001c70f4: 240eff87  li	t6,-121
+!! 001c70f8: c5e10000  lwc1	$f1,0(t7)                                   | 001c70f8: 8d4d9940  lw	t5,-26304(t2)   ; = D_01d49940
+!! 001c70fc: 3c0a01d5  lui	t2,0x1d5                                     | 001c70fc: 3c0901d5  lui	t1,0x1d5
+!! 001c7100: 254c98f0  addiu	t4,t2,-26384   ; = D_01d498f0              | 001c7100: 3c0f0037  lui	t7,0x37
+!! 001c7104: 240fff87  li	t7,-121                                       | 001c7104: dd2c9940  ld	t4,-26304(t1)   ; = D_01d49940
+!! 001c7108: 258dffe0  addiu	t5,t4,-32                                  | 001c7108: 01ae6824  and	t5,t5,t6
+!! 001c710c: 01cf7024  and	t6,t6,t7                                     | 001c710c: c5e1df8c  lwc1	$f1,-8308(t7)   ; = D_0036df8c
+!! 001c7110: 35ce0030  ori	t6,t6,0x30                                   | 001c7110: 3c0b01d5  lui	t3,0x1d5
+!! 001c7114: ad6e9940  sw	t6,-26304(t3)   ; = D_01d49940                | 001c7114: 35ad0030  ori	t5,t5,0x30
+!! 001c7118: 3c0e0037  lui	t6,0x37                                      | 001c7118: 256e98f0  addiu	t6,t3,-26384   ; = D_01d498f0
+!! 001c711c: e5810008  swc1	$f1,8(t4)                                   | 001c711c: ad4d9940  sw	t5,-26304(t2)   ; = D_01d49940
+!! 001c7120: 25cedf8c  addiu	t6,t6,-8308   ; = D_0036df8c               | 001c7120: e5c00004  swc1	$f0,4(t6)
+!! 001c7124: c5c00000  lwc1	$f0,0(t6)                                   | 001c7124: 358c0001  ori	t4,t4,0x1
+!! 001c7128: ddaf0070  ld	t7,112(t5)                                    | 001c7128: 3c0f01d5  lui	t7,0x1d5
+!! 001c712c: e5a0006c  swc1	$f0,108(t5)                                 | 001c712c: fd2c9940  sd	t4,-26304(t1)   ; = D_01d49940
+!! 001c7130: 35ef0001  ori	t7,t7,0x1                                    | 001c7130: e5c1004c  swc1	$f1,76(t6)
+!! 001c7134: e54198f0  swc1	$f1,-26384(t2)   ; = D_01d498f0             | 001c7134: e56098f0  swc1	$f0,-26384(t3)   ; = D_01d498f0
+!! 001c7138: fdaf0070  sd	t7,112(t5)                                    | 001c7138: ade098fc  sw	zero,-26372(t7)   ; = D_01d498fc
+!! 001c713c: e5810004  swc1	$f1,4(t4)                                   | 001c713c: 03e00008  jr	ra
+!! 001c7140: 03e00008  jr	ra                                            | 001c7140: e5c00008  swc1	$f0,8(t6)
+!! 001c7144: ad80000c  sw	zero,12(t4)                                   | 

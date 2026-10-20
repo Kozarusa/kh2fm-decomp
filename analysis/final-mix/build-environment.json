@@ -1,0 +1,18 @@
+{
+  "windows_restart_required": false,
+  "wsl_ready": true,
+  "wsl_distribution": "Ubuntu-24.04",
+  "linux_make_installed": true,
+  "docker_installed": true,
+  "docker_desktop_version": "4.94.0",
+  "docker_engine_version": "29.8.2",
+  "docker_linux_engine_ready": true,
+  "ubuntu_docker_integration_enabled": true,
+  "compiler_image": "kh2-local/ps2-compiler:3.2-ee-040921-objdiff",
+  "compiler_image_id": "sha256:911f0033744684d7695d33a19c0ee40b11e2cd21b12206ed3e894d9b2677b79a",
+  "compiler_version": "3.2-ee-040921",
+  "linux_build_directory": "/root/kh2fm-build",
+  "native_main_rebuild_verified": true,
+  "verification_scope": "Main executable scaffold plus registered C++ ranges; retained original fallback bytes remain undecompiled",
+  "verification_file": "native-build/native-build-verification.json"
+}

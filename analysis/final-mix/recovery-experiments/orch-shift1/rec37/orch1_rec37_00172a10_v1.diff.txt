@@ -1,0 +1,20 @@
+00172a10: compiled 64 bytes, target 64 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00172a10: 27bdfff0  addiu	sp,sp,-16                                  | 00172a10: 27bdfff0  addiu	sp,sp,-16
+   00172a14: ffb00000  sd	s0,0(sp)                                      | 00172a14: ffb00000  sd	s0,0(sp)
+   00172a18: ffbf0008  sd	ra,8(sp)                                      | 00172a18: ffbf0008  sd	ra,8(sp)
+   00172a1c: 8c8f0000  lw	t7,0(a0)                                      | 00172a1c: 8c8f0000  lw	t7,0(a0)
+   00172a20: 11e00004  beqz	t7,0x172a34                                 | 00172a20: 11e00004  beqz	t7,172a34 <func_00172a10+0x24>
+   00172a24: 0080802d  move	s0,a0                                       | 00172a24: 0080802d  move	s0,a0
+   00172a28: 0c066e98  jal	0x19ba60                                     | 00172a28: 0c066e98  jal	19ba60 <func_0019ba60>
+   00172a2c: 8de40004  lw	a0,4(t7)                                      | 00172a2c: 8de40004  lw	a0,4(t7)
+   00172a30: 8e0f0000  lw	t7,0(s0)                                      | 00172a30: 8e0f0000  lw	t7,0(s0)
+   00172a34: 8e060008  lw	a2,8(s0)                                      | 00172a34: 8e060008  lw	a2,8(s0)
+   00172a38: 8e050004  lw	a1,4(s0)                                      | 00172a38: 8e050004  lw	a1,4(s0)
+   00172a3c: 8de40004  lw	a0,4(t7)                                      | 00172a3c: 8de40004  lw	a0,4(t7)
+   00172a40: dfb00000  ld	s0,0(sp)                                      | 00172a40: dfb00000  ld	s0,0(sp)
+   00172a44: dfbf0008  ld	ra,8(sp)                                      | 00172a44: dfbf0008  ld	ra,8(sp)
+   00172a48: 0805b006  j	0x16c018                                       | 00172a48: 0805b006  j	16c018 <func_0016c018>
+   00172a4c: 27bd0010  addiu	sp,sp,16                                   | 00172a4c: 27bd0010  addiu	sp,sp,16

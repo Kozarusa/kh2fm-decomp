@@ -1,0 +1,14 @@
+{
+  "probe_source": "analysis/final-mix/recovery-experiments/delegated/global-initializers/sa_init_00158fd8_v2.cpp",
+  "probe_source_sha256": "500ff2f6dcbcef4d6d3402a1455c14ebc8e4859102a9c2fab7aa01987782997d",
+  "probe_proof_sha256": "e9116eef186634dba3d8ff6744ba0addad3aa80c5bdc7c6d9658fd634163e1b6",
+  "curated_source": "analysis/final-mix/recovery-experiments/fm_primary_delegatedbatch_recovered_00158fd8.cpp",
+  "curated_source_sha256": "7b25551915832bcaa35d177462e838db616c7ddd5fe636884e922d0054cd7142",
+  "selected_addresses": [
+    "00158fd8"
+  ],
+  "exclusion_receipt": null,
+  "limitations": [
+    "Curated source still requires a new probe, registration and full build."
+  ]
+}

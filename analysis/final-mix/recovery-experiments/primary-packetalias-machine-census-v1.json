@@ -1,0 +1,28 @@
+{
+  "positive_controls": [
+    "001337f0",
+    "00133980"
+  ],
+  "original_sha256": "d869ce4b8edd61cb978c4ff9ede595fe4d7d7b21cbb96a145275217120d8bc87",
+  "hits": [
+    {
+      "address": "001337f0",
+      "bytes": 88,
+      "template": "001337f0",
+      "accepted": true,
+      "variable_words": {
+        "1": "3c0d5000",
+        "8": "240f0010"
+      }
+    },
+    {
+      "address": "00133980",
+      "bytes": 80,
+      "template": "00133980",
+      "accepted": true,
+      "variable_words": {
+        "6": "240f0050"
+      }
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "source_sha256": "ef3f990131e1ccb33656f9d7de83cd71f74683206913a2f4de2cced4808971e3",
+  "source": "analysis/final-mix/recovery-experiments/fm_copy_helpers.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "00107368",
+      "symbol": "_Z13func_00107368PhPN2kn7FVectorE",
+      "compiled_size": 28,
+      "target_size": 28,
+      "ghidra_body_size": 28,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "500084240300a41000000000000088780000a87c0800e00300000000",
+      "target_hex": "500084240300a41000000000000088780000a87c0800e00300000000"
+    },
+    {
+      "address": "00107478",
+      "symbol": "_Z13func_00107478PhPN2kn7FVectorE",
+      "compiled_size": 28,
+      "target_size": 28,
+      "ghidra_body_size": 28,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "600084240300a41000000000000088780000a87c0800e00300000000",
+      "target_hex": "600084240300a41000000000000088780000a87c0800e00300000000"
+    },
+    {
+      "address": "0011a900",
+      "symbol": "_Z13func_0011a900PN2kn7FVectorEPh",
+      "compiled_size": 20,
+      "target_size": 20,
+      "ghidra_body_size": 20,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "4000a5240000a8780000887c0800e0032d108000",
+      "target_hex": "4000a5240000a8780000887c0800e0032d108000"
+    },
+    {
+      "address": "0011a918",
+      "symbol": "_Z13func_0011a918PhPKN2kn7FVectorE",
+      "compiled_size": 28,
+      "target_size": 28,
+      "ghidra_body_size": 28,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "4000842403008510000000000000a8780000887c0800e00300000000",
+      "target_hex": "4000842403008510000000000000a8780000887c0800e00300000000"
+    },
+    {
+      "address": "0011c138",
+      "symbol": "_Z13func_0011c138PN2kn7FVectorE",
+      "compiled_size": 16,
+      "target_size": 16,
+      "ghidra_body_size": 16,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "0000807c1000807c0800e00300000000",
+      "target_hex": "0000807c1000807c0800e00300000000"
+    },
+    {
+      "address": "00134d60",
+      "symbol": "_Z13func_00134d60PN2kn7FVectorEPKS0_",
+      "compiled_size": 24,
+      "target_size": 24,
+      "ghidra_body_size": 24,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "03008510000000000000a8780000887c0800e00300000000",
+      "target_hex": "03008510000000000000a8780000887c0800e00300000000"
+    },
+    {
+      "address": "00134d78",
+      "symbol": "_Z13func_00134d78PKN2kn7FVectorEPS0_",
+      "compiled_size": 24,
+      "target_size": 24,
+      "ghidra_body_size": 24,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "0300a41000000000000088780000a87c0800e00300000000",
+      "target_hex": "0300a41000000000000088780000a87c0800e00300000000"
+    },
+    {
+      "address": "00134db0",
+      "symbol": "_Z13func_00134db0PhPN2kn7FVectorE",
+      "compiled_size": 28,
+      "target_size": 28,
+      "ghidra_body_size": 28,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "100084240300a41000000000000088780000a87c0800e00300000000",
+      "target_hex": "100084240300a41000000000000088780000a87c0800e00300000000"
+    },
+    {
+      "address": "00135670",
+      "symbol": "_Z13func_00135670PN2kn7FVectorE",
+      "compiled_size": 32,
+      "target_size": 32,
+      "ghidra_body_size": 32,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "34000f3ce07cef2503008f10000000000000e8790000887c0800e00300000000",
+      "target_hex": "34000f3ce07cef2503008f10000000000000e8790000887c0800e00300000000"
+    },
+    {
+      "address": "00136a98",
+      "symbol": "_Z13func_00136a98v",
+      "compiled_size": 28,
+      "target_size": 28,
+      "ghidra_body_size": 28,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "34000f3c34000e3c507de0ad547dc0a134000f3c0800e003557de0a1",
+      "target_hex": "34000f3c34000e3c507de0ad547dc0a134000f3c0800e003557de0a1"
+    },
+    {
+      "address": "001391a8",
+      "symbol": "_Z13func_001391a8PhPKN2kn7FVectorE",
+      "compiled_size": 28,
+      "target_size": 28,
+      "ghidra_body_size": 28,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "a001842403008510000000000000a8780000887c0800e00300000000",
+      "target_hex": "a001842403008510000000000000a8780000887c0800e00300000000"
+    },
+    {
+      "address": "00158920",
+      "symbol": "_Z13func_00158920PKN2kn7FVectorE",
+      "compiled_size": 32,
+      "target_size": 32,
+      "ghidra_body_size": 32,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "35000f3ca0a9ef2503008f1000000000000088780000e87d0800e00300000000",
+      "target_hex": "35000f3ca0a9ef2503008f1000000000000088780000e87d0800e00300000000"
+    },
+    {
+      "address": "0015cea0",
+      "symbol": "_Z13func_0015cea0PN2kn7FVectorE",
+      "compiled_size": 24,
+      "target_size": 24,
+      "ghidra_body_size": 24,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "4f000f3c0038ef250000e8790000887c0800e0032d108000",
+      "target_hex": "4f000f3c0038ef250000e8790000887c0800e0032d108000"
+    },
+    {
+      "address": "0015ceb8",
+      "symbol": "_Z13func_0015ceb8PN2kn7FVectorE",
+      "compiled_size": 24,
+      "target_size": 24,
+      "ghidra_body_size": 24,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "4f000f3cf037ef250000e8790000887c0800e0032d108000",
+      "target_hex": "4f000f3cf037ef250000e8790000887c0800e0032d108000"
+    },
+    {
+      "address": "002f3f88",
+      "symbol": "_Z13func_002f3f88PN2kn7FVectorEPKS0_",
+      "compiled_size": 12,
+      "target_size": 12,
+      "ghidra_body_size": 12,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "0000a6780800e0030000867c",
+      "target_hex": "0000a6780800e0030000867c"
+    },
+    {
+      "address": "00305dd8",
+      "symbol": "_Z13func_00305dd8jPh",
+      "compiled_size": 20,
+      "target_size": 20,
+      "ghidra_body_size": 20,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "002002244800a0fc0400a2ac0800e0032d100000",
+      "target_hex": "002002244800a0fc0400a2ac0800e0032d100000"
+    },
+    {
+      "address": "003060f0",
+      "symbol": "_Z13func_003060f0v",
+      "compiled_size": 16,
+      "target_size": 16,
+      "ghidra_body_size": 16,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "00600240010042380800e00301004230",
+      "target_hex": "00600240010042380800e00301004230"
+    },
+    {
+      "address": "0030ee00",
+      "symbol": "_Z13func_0030ee00v",
+      "compiled_size": 24,
+      "target_size": 24,
+      "ghidra_body_size": 24,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "006002400100033c24104300380000420800e0032b100200",
+      "target_hex": "006002400100033c24104300380000420800e0032b100200"
+    }
+  ]
+}

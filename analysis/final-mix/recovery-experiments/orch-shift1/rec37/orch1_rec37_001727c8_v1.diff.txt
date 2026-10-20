@@ -1,0 +1,17 @@
+001727c8: compiled 52 bytes, target 52 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001727c8: 27bdfff0  addiu	sp,sp,-16                                  | 001727c8: 27bdfff0  addiu	sp,sp,-16
+   001727cc: 0080782d  move	t7,a0                                       | 001727cc: 0080782d  move	t7,a0
+   001727d0: ffbf0000  sd	ra,0(sp)                                      | 001727d0: ffbf0000  sd	ra,0(sp)
+   001727d4: 24060001  li	a2,1                                          | 001727d4: 24060001  li	a2,1
+   001727d8: 8c8d0004  lw	t5,4(a0)                                      | 001727d8: 8c8d0004  lw	t5,4(a0)
+   001727dc: 8c8e0000  lw	t6,0(a0)                                      | 001727dc: 8c8e0000  lw	t6,0(a0)
+   001727e0: 8da50004  lw	a1,4(t5)                                      | 001727e0: 8da50004  lw	a1,4(t5)
+   001727e4: 8dc40004  lw	a0,4(t6)                                      | 001727e4: 8dc40004  lw	a0,4(t6)
+   001727e8: c5ec0008  lwc1	$f12,8(t7)                                  | 001727e8: c5ec0008  lwc1	$f12,8(t7)
+   001727ec: dfbf0000  ld	ra,0(sp)                                      | 001727ec: dfbf0000  ld	ra,0(sp)
+   001727f0: 248404a0  addiu	a0,a0,1184                                 | 001727f0: 248404a0  addiu	a0,a0,1184
+   001727f4: 0806c1e6  j	0x1b0798                                       | 001727f4: 0806c1e6  j	1b0798 <func_001b0798>
+   001727f8: 27bd0010  addiu	sp,sp,16                                   | 001727f8: 27bd0010  addiu	sp,sp,16

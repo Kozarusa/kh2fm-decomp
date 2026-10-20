@@ -1,0 +1,10 @@
+#include "../common/types.h"
+extern "C" u8 D_00370bd8[];
+extern "C" u8 D_00370bf8[];
+extern "C" u32 func_002fdfc8(...);
+
+void func_002233f0(u32 first, u32 second, u32 third) {
+    func_002fdfc8(D_00370bd8, first);
+    func_002fdfc8(D_00370bf8, second, third);
+    asm volatile("break 0"); // why: original traps with break, __builtin_trap emits teq
+}

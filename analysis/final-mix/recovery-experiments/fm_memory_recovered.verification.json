@@ -1,0 +1,106 @@
+{
+  "source_sha256": "1d13a75b4eceeb138cd9043272c4265033592d7ee671aaca9cf0a3bc1fe4ca32",
+  "source": "analysis/final-mix/recovery-experiments/fm_memory_recovered.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "001da3f8",
+      "symbol": "_Z13func_001da3f8PhP10PackedWord",
+      "compiled_size": 36,
+      "target_size": 36,
+      "ghidra_body_size": 36,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "0c008e8cfcffcf250c008facffffcb89fcffcb990300aba80000abb80800e00300000000",
+      "target_hex": "0c008e8cfcffcf250c008facffffcb89fcffcb990300aba80000abb80800e00300000000"
+    },
+    {
+      "address": "001efb18",
+      "symbol": "_Z13func_001efb18PhS_",
+      "compiled_size": 36,
+      "target_size": 36,
+      "ghidra_body_size": 36,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "0c00ae8c000080440400cf8d21208f00a0008e24a00080e40400c0e50800e0030800c0e5",
+      "target_hex": "0c00ae8c000080440400cf8d21208f00a0008e24a00080e40400c0e50800e0030800c0e5"
+    },
+    {
+      "address": "001efd38",
+      "symbol": "_Z13func_001efd38PhS_",
+      "compiled_size": 36,
+      "target_size": 36,
+      "ghidra_body_size": 36,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "0c00ae8c000080440400cf8d21208f00a0008e24a00080e40400c0e50800e0030800c0e5",
+      "target_hex": "0c00ae8c000080440400cf8d21208f00a0008e24a00080e40400c0e50800e0030800c0e5"
+    },
+    {
+      "address": "001fa928",
+      "symbol": "_Z13func_001fa928PhS_",
+      "compiled_size": 36,
+      "target_size": 36,
+      "ghidra_body_size": 36,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd270c00af8c0000bfff0000ee8d0000bfdf21208e00a0008424f07e08081000bd27",
+      "target_hex": "f0ffbd270c00af8c0000bfff0000ee8d0000bfdf21208e00a0008424f07e08081000bd27"
+    },
+    {
+      "address": "001facd0",
+      "symbol": "_Z13func_001facd0PhS_",
+      "compiled_size": 36,
+      "target_size": 36,
+      "ghidra_body_size": 36,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd270c00af8c0000bfff0000ee8d0000bfdf21208e00a00084248a7f08081000bd27",
+      "target_hex": "f0ffbd270c00af8c0000bfff0000ee8d0000bfdf21208e00a00084248a7f08081000bd27"
+    },
+    {
+      "address": "001fae80",
+      "symbol": "_Z13func_001fae80PhS_",
+      "compiled_size": 36,
+      "target_size": 36,
+      "ghidra_body_size": 36,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd270c00af8c0000bfff0000ee8d0000bfdf21208e00a00084241c8008081000bd27",
+      "target_hex": "f0ffbd270c00af8c0000bfff0000ee8d0000bfdf21208e00a00084241c8008081000bd27"
+    },
+    {
+      "address": "001fb698",
+      "symbol": "_Z13func_001fb698PhS_",
+      "compiled_size": 36,
+      "target_size": 36,
+      "ghidra_body_size": 36,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd270c00af8c0000bfff0000ee8d0000bfdf21208e00a0008424f07e08081000bd27",
+      "target_hex": "f0ffbd270c00af8c0000bfff0000ee8d0000bfdf21208e00a0008424f07e08081000bd27"
+    },
+    {
+      "address": "001fba88",
+      "symbol": "_Z13func_001fba88PhS_",
+      "compiled_size": 36,
+      "target_size": 36,
+      "ghidra_body_size": 36,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd270c00af8c0000bfff0000ee8d0000bfdf21208e00a00084248a7f08081000bd27",
+      "target_hex": "f0ffbd270c00af8c0000bfff0000ee8d0000bfdf21208e00a00084248a7f08081000bd27"
+    },
+    {
+      "address": "001fbc78",
+      "symbol": "_Z13func_001fbc78PhS_",
+      "compiled_size": 36,
+      "target_size": 36,
+      "ghidra_body_size": 36,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd270c00af8c0000bfff0000ee8d0000bfdf21208e00a00084241c8008081000bd27",
+      "target_hex": "f0ffbd270c00af8c0000bfff0000ee8d0000bfdf21208e00a00084241c8008081000bd27"
+    }
+  ]
+}

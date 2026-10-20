@@ -1,0 +1,15 @@
+#include "../common/types.h"
+extern "C" u8* D_0035f610;
+s32 func_002aacd8(s32 value) {
+    if (value < 0) {
+        u32 index = 0;
+        u32* pointer = (u32*)(D_0035f610 + 148);
+        s32 result;
+        do {
+            result = (pointer[index >> 5] & (1u << (index & 31))) != 0;
+            ++index;
+        } while (!result && index < 192);
+        return result;
+    }
+    return (*(u32*)(D_0035f610 + ((u32)value >> 5) * 4 + 148) & (1u << ((u32)value & 31))) != 0;
+}

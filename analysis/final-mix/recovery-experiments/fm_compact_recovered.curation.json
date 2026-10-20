@@ -1,0 +1,26 @@
+{
+  "probe_source": "analysis/final-mix/recovery-experiments/fm_compact_wrappers.cpp",
+  "probe_source_sha256": "5b0062b764c67be8c2c833f2d97b52b55f956a130e527f821ecb47ebded99a18",
+  "probe_proof_sha256": "87a77962b893b8bc9db68c32786e6727994032f994ae3446c41233f1f9a8ad48",
+  "curated_source": "analysis/final-mix/recovery-experiments/fm_compact_recovered.cpp",
+  "curated_source_sha256": "f32671bd90c103fe845af2a8426cd01d4b9167ea2509b9a1a89fa48af99ae890",
+  "selected_addresses": [
+    "00102ed8",
+    "001056e8",
+    "001065a8",
+    "001072d0",
+    "00107300",
+    "0010abc8",
+    "0010c828",
+    "00119c88",
+    "0011a430",
+    "0011c798",
+    "0011c7c8",
+    "0011c7f8",
+    "0011f3b8",
+    "00123d10"
+  ],
+  "limitations": [
+    "Curated source still requires a new probe, registration and full build."
+  ]
+}

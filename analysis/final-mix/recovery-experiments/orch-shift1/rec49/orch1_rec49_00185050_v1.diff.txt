@@ -1,0 +1,24 @@
+00185050: compiled 80 bytes, target 80 bytes, exact=False
+Differing words: 14. First difference at instruction 3 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00185050: 27bdfff0  addiu	sp,sp,-16                                  | 00185050: 27bdfff0  addiu	sp,sp,-16
+   00185054: 00a0302d  move	a2,a1                                       | 00185054: 00a0302d  move	a2,a1
+   00185058: ffb00000  sd	s0,0(sp)                                      | 00185058: ffb00000  sd	s0,0(sp)
+!! 0018505c: ffbf0008  sd	ra,8(sp)                                      | 0018505c: 0080282d  move	a1,a0
+!! 00185060: 8c8f0508  lw	t7,1288(a0)                                   | 00185060: ffbf0008  sd	ra,8(sp)
+!! 00185064: 15e00008  bnez	t7,0x185088                                 | 00185064: 0080802d  move	s0,a0
+!! 00185068: 0080802d  move	s0,a0                                       | 00185068: 8c8f0508  lw	t7,1288(a0)
+!! 0018506c: 0c0b3476  jal	0x2cd1d8                                     | 0018506c: 15e00008  bnez	t7,185090 <func_00185050+0x40>
+!! 00185070: 00000000  nop                                              | 00185070: 01e0202d  move	a0,t7
+!! 00185074: ae020508  sw	v0,1288(s0)                                   | 00185074: 0c0b3476  jal	2cd1d8 <func_002cd1d8>
+!! 00185078: dfbf0008  ld	ra,8(sp)                                      | 00185078: 00000000  nop
+!! 0018507c: dfb00000  ld	s0,0(sp)                                      | 0018507c: ae020508  sw	v0,1288(s0)
+!! 00185080: 03e00008  jr	ra                                            | 00185080: dfbf0008  ld	ra,8(sp)
+!! 00185084: 27bd0010  addiu	sp,sp,16                                   | 00185084: dfb00000  ld	s0,0(sp)
+!! 00185088: 0200282d  move	a1,s0                                       | 00185088: 03e00008  jr	ra
+!! 0018508c: dfbf0008  ld	ra,8(sp)                                      | 0018508c: 27bd0010  addiu	sp,sp,16
+   00185090: dfb00000  ld	s0,0(sp)                                      | 00185090: dfb00000  ld	s0,0(sp)
+!! 00185094: 01e0202d  move	a0,t7                                       | 00185094: dfbf0008  ld	ra,8(sp)
+   00185098: 080b34a4  j	0x2cd290                                       | 00185098: 080b34a4  j	2cd290 <func_002cd290>
+   0018509c: 27bd0010  addiu	sp,sp,16                                   | 0018509c: 27bd0010  addiu	sp,sp,16

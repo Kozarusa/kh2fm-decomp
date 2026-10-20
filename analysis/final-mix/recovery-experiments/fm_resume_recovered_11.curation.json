@@ -1,0 +1,17 @@
+{
+  "probe_source": "analysis/final-mix/recovery-experiments/fm_return_variants_v2_11_1.cpp",
+  "probe_source_sha256": "bcac19be8d27842bba6e1ad7483b4418347480c20b2a4a478b8568f625e097ae",
+  "probe_proof_sha256": "ed583dc4b2bd5424842ac8554421b63b9fd6d72068e15ca9d195c1b71706cc7c",
+  "curated_source": "analysis/final-mix/recovery-experiments/fm_resume_recovered_11.cpp",
+  "curated_source_sha256": "7e368e7f57704d370e45e35515fcf76afbeac770ddaea4652fd932646a236234",
+  "selected_addresses": [
+    "0029e0d0"
+  ],
+  "exclusion_receipt": {
+    "file": "analysis/final-mix/recovery-experiments/resume-curated-11-exclusions.json",
+    "sha256": "975ec171f752021f95f63fdd4ea9866539f8f15b896c16134bae99b4f65279a2"
+  },
+  "limitations": [
+    "Curated source still requires a new probe, registration and full build."
+  ]
+}

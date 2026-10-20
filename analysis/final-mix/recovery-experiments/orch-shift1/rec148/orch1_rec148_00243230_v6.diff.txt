@@ -1,0 +1,30 @@
+00243230: compiled 104 bytes, target 104 bytes, exact=False
+Differing words: 4. First difference at instruction 17 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00243230: 27bdffe0  addiu	sp,sp,-32                                  | 00243230: 27bdffe0  addiu	sp,sp,-32
+   00243234: ffb00000  sd	s0,0(sp)                                      | 00243234: ffb00000  sd	s0,0(sp)
+   00243238: ffb10008  sd	s1,8(sp)                                      | 00243238: ffb10008  sd	s1,8(sp)
+   0024323c: 0080802d  move	s0,a0                                       | 0024323c: 0080802d  move	s0,a0
+   00243240: ffbf0010  sd	ra,16(sp)                                     | 00243240: ffbf0010  sd	ra,16(sp)
+   00243244: 00a0882d  move	s1,a1                                       | 00243244: 00a0882d  move	s1,a1
+   00243248: 0c04163a  jal	0x1058e8                                     | 00243248: 0c04163a  jal	1058e8 <func_001058e8>
+   0024324c: 001080c0  sll	s0,s0,0x3                                    | 0024324c: 001080c0  sll	s0,s0,0x3
+   00243250: 02118021  addu	s0,s0,s1                                    | 00243250: 02118021  addu	s0,s0,s1
+   00243254: 00106942  srl	t5,s0,0x5                                    | 00243254: 00106942  srl	t5,s0,0x5
+   00243258: 244249d8  addiu	v0,v0,18904                                | 00243258: 244249d8  addiu	v0,v0,18904
+   0024325c: 000d6880  sll	t5,t5,0x2                                    | 0024325c: 000d6880  sll	t5,t5,0x2
+   00243260: 3210001f  andi	s0,s0,0x1f                                  | 00243260: 3210001f  andi	s0,s0,0x1f
+   00243264: 01a26821  addu	t5,t5,v0                                    | 00243264: 01a26821  addu	t5,t5,v0
+   00243268: 240e0001  li	t6,1                                          | 00243268: 240e0001  li	t6,1
+   0024326c: 8daf0000  lw	t7,0(t5)                                      | 0024326c: 8daf0000  lw	t7,0(t5)
+   00243270: 020e7004  sllv	t6,t6,s0                                    | 00243270: 020e7004  sllv	t6,t6,s0
+!! 00243274: 01ee6025  or	t4,t7,t6                                      | 00243274: 01ee6024  and	t4,t7,t6
+!! 00243278: 01ee7824  and	t7,t7,t6                                     | 00243278: 15800002  bnez	t4,243284 <func_00243230+0x54>
+!! 0024327c: 51e00001  beqzl	t7,0x243284                                | 0024327c: 01ee7825  or	t7,t7,t6
+!! 00243280: adac0000  sw	t4,0(t5)                                      | 00243280: adaf0000  sw	t7,0(t5)
+   00243284: dfb00000  ld	s0,0(sp)                                      | 00243284: dfb00000  ld	s0,0(sp)
+   00243288: dfb10008  ld	s1,8(sp)                                      | 00243288: dfb10008  ld	s1,8(sp)
+   0024328c: dfbf0010  ld	ra,16(sp)                                     | 0024328c: dfbf0010  ld	ra,16(sp)
+   00243290: 03e00008  jr	ra                                            | 00243290: 03e00008  jr	ra
+   00243294: 27bd0020  addiu	sp,sp,32                                   | 00243294: 27bd0020  addiu	sp,sp,32

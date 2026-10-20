@@ -1,0 +1,9 @@
+src/anon/fm_global_recovered_06.cpp: In function `void func_001c2b70()':
+src/anon/fm_global_recovered_06.cpp:134: warning: invalid conversion from `s32*
+   ' to `u32*'
+src/anon/fm_global_recovered_03.cpp: In function `u32 func_00314dd8(int, long 
+   long unsigned int)':
+src/anon/fm_global_recovered_03.cpp:47: warning: invalid conversion from `
+   unsigned int' to `void*'
+Built /root/kh2fm-build/kh2.elf
+MATCHED!

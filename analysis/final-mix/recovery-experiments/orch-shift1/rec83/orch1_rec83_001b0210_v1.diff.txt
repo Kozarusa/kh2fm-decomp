@@ -1,0 +1,19 @@
+001b0210: compiled 60 bytes, target 60 bytes, exact=False
+Differing words: 2. First difference at instruction 11 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001b0210: 8c8f0008  lw	t7,8(a0)                                      | 001b0210: 8c8f0008  lw	t7,8(a0)
+   001b0214: 05e30005  bgezl	t7,0x1b022c                                | 001b0214: 05e30005  bgezl	t7,1b022c <func_001b0210+0x1c>
+   001b0218: 8c8f000c  lw	t7,12(a0)                                     | 001b0218: 8c8f000c  lw	t7,12(a0)
+   001b021c: 8c8f0010  lw	t7,16(a0)                                     | 001b021c: 8c8f0010  lw	t7,16(a0)
+   001b0220: 51e00006  beqzl	t7,0x1b023c                                | 001b0220: 51e00006  beqzl	t7,1b023c <func_001b0210+0x2c>
+   001b0224: ac870018  sw	a3,24(a0)                                     | 001b0224: ac870018  sw	a3,24(a0)
+   001b0228: 8c8f000c  lw	t7,12(a0)                                     | 001b0228: 8c8f000c  lw	t7,12(a0)
+   001b022c: 00cf782a  slt	t7,a2,t7                                     | 001b022c: 00cf782a  slt	t7,a2,t7
+   001b0230: 15e00004  bnez	t7,0x1b0244                                 | 001b0230: 15e00004  bnez	t7,1b0244 <func_001b0210+0x34>
+   001b0234: 00000000  nop                                              | 001b0234: 00000000  nop
+   001b0238: ac870018  sw	a3,24(a0)                                     | 001b0238: ac870018  sw	a3,24(a0)
+!! 001b023c: ac850008  sw	a1,8(a0)                                      | 001b023c: ac86000c  sw	a2,12(a0)
+!! 001b0240: ac86000c  sw	a2,12(a0)                                     | 001b0240: ac850008  sw	a1,8(a0)
+   001b0244: 03e00008  jr	ra                                            | 001b0244: 03e00008  jr	ra
+   001b0248: 00000000  nop                                              | 001b0248: 00000000  nop

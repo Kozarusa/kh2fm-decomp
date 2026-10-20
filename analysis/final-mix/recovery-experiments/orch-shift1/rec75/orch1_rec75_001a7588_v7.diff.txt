@@ -1,0 +1,24 @@
+001a7588: compiled 76 bytes, target 80 bytes, exact=False
+Differing words: 15. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001a7588: 27bdffd0  addiu	sp,sp,-48                                  | 001a7588: 27bdffd0  addiu	sp,sp,-48
+!! 001a758c: 00a0782d  move	t7,a1                                       | 001a758c: 0080782d  move	t7,a0
+   001a7590: ffb00020  sd	s0,32(sp)                                     | 001a7590: ffb00020  sd	s0,32(sp)
+!! 001a7594: 0080282d  move	a1,a0                                       | 001a7594: 03a0202d  move	a0,sp
+   001a7598: ffbf0028  sd	ra,40(sp)                                     | 001a7598: ffbf0028  sd	ra,40(sp)
+!! 001a759c: 03a0202d  move	a0,sp                                       | 001a759c: 00c0802d  move	s0,a2
+!! 001a75a0: 00c0802d  move	s0,a2                                       | 001a75a0: 00a0302d  move	a2,a1
+   001a75a4: 0c074d78  jal	0x1d35e0                                     | 001a75a4: 0c074d78  jal	1d35e0 <func_001d35e0>
+!! 001a75a8: 01e0302d  move	a2,t7                                       | 001a75a8: 01e0282d  move	a1,t7
+!! 001a75ac: 10400006  beqz	v0,0x1a75c8                                 | 001a75ac: 10400005  beqz	v0,1a75c4 <func_001a7588+0x3c>
+   001a75b0: 8fa20014  lw	v0,20(sp)                                     | 001a75b0: 8fa20014  lw	v0,20(sp)
+!! 001a75b4: 521d0005  beql	s0,sp,0x1a75cc                              | 001a75b4: 121d0003  beq	s0,sp,1a75c4 <func_001a7588+0x3c>
+!! 001a75b8: dfb00020  ld	s0,32(sp)                                     | 001a75b8: 7baf0000  lq	t7,0(sp)
+!! 001a75bc: 7ba80000  lq	t0,0(sp)                                      | 001a75bc: 8fa20014  lw	v0,20(sp)
+!! 001a75c0: 7e080000  sq	t0,0(s0)                                      | 001a75c0: 7e0f0000  sq	t7,0(s0)
+!! 001a75c4: 8fa20014  lw	v0,20(sp)                                     | 001a75c4: dfb00020  ld	s0,32(sp)
+!! 001a75c8: dfb00020  ld	s0,32(sp)                                     | 001a75c8: dfbf0028  ld	ra,40(sp)
+!! 001a75cc: dfbf0028  ld	ra,40(sp)                                     | 001a75cc: 03e00008  jr	ra
+!! 001a75d0: 03e00008  jr	ra                                            | 001a75d0: 27bd0030  addiu	sp,sp,48
+!! 001a75d4: 27bd0030  addiu	sp,sp,48                                   | 

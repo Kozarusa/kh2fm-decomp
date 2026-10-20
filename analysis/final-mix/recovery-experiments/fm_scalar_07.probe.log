@@ -1,0 +1,22 @@
+Exact probe matches: 17/100
+Detailed proof: analysis/final-mix/recovery-experiments/fm_scalar_07.verification.json
+recovery-experiments/fm_scalar_07/probe.cpp: In function `void 
+   func_00272a00()':
+recovery-experiments/fm_scalar_07/probe.cpp:259: warning: cast to pointer from 
+   integer of different size
+recovery-experiments/fm_scalar_07/probe.cpp: In function `void 
+   func_00272a70()':
+recovery-experiments/fm_scalar_07/probe.cpp:283: warning: cast to pointer from 
+   integer of different size
+recovery-experiments/fm_scalar_07/probe.cpp: In function `void 
+   func_0028afd0(long long unsigned int, short int)':
+recovery-experiments/fm_scalar_07/probe.cpp:635: warning: cast to pointer from 
+   integer of different size
+recovery-experiments/fm_scalar_07/probe.cpp: In function `u64 
+   func_00294208(char)':
+recovery-experiments/fm_scalar_07/probe.cpp:984: warning: cast to pointer from 
+   integer of different size
+recovery-experiments/fm_scalar_07/probe.cpp: In function `bool 
+   func_002a8920()':
+recovery-experiments/fm_scalar_07/probe.cpp:1250: warning: cast to pointer from 
+   integer of different size

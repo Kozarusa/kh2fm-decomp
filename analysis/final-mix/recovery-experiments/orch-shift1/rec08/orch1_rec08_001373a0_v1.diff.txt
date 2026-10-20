@@ -1,0 +1,18 @@
+001373a0: compiled 56 bytes, target 56 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001373a0: 3c0f0034  lui	t7,0x34                                      | 001373a0: 3c0f0034  lui	t7,0x34
+   001373a4: 3c0e0034  lui	t6,0x34                                      | 001373a4: 3c0e0034  lui	t6,0x34
+   001373a8: a1e07d55  sb	zero,32085(t7)   ; = D_00347d55               | 001373a8: a1e07d55  sb	zero,32085(t7)   ; = D_00347d55
+   001373ac: 27bdfff0  addiu	sp,sp,-16                                  | 001373ac: 27bdfff0  addiu	sp,sp,-16
+   001373b0: 91cd7d54  lbu	t5,32084(t6)   ; = D_00347d54                | 001373b0: 91cd7d54  lbu	t5,32084(t6)   ; = D_00347d54
+   001373b4: 240403c0  li	a0,960                                        | 001373b4: 240403c0  li	a0,960
+   001373b8: 3c0f0034  lui	t7,0x34                                      | 001373b8: 3c0f0034  lui	t7,0x34
+   001373bc: ffbf0000  sd	ra,0(sp)                                      | 001373bc: ffbf0000  sd	ra,0(sp)
+   001373c0: a1ed7d56  sb	t5,32086(t7)   ; = D_00347d56                 | 001373c0: a1ed7d56  sb	t5,32086(t7)   ; = D_00347d56
+   001373c4: 0c0aea12  jal	0x2ba848                                     | 001373c4: 0c0aea12  jal	2ba848 <func_002ba848>
+   001373c8: a1c07d54  sb	zero,32084(t6)   ; = D_00347d54               | 001373c8: a1c07d54  sb	zero,32084(t6)   ; = D_00347d54
+   001373cc: dfbf0000  ld	ra,0(sp)                                      | 001373cc: dfbf0000  ld	ra,0(sp)
+   001373d0: 0804da86  j	0x136a18                                       | 001373d0: 0804da86  j	136a18 <func_00136a18>
+   001373d4: 27bd0010  addiu	sp,sp,16                                   | 001373d4: 27bd0010  addiu	sp,sp,16

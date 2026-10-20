@@ -1,0 +1,28 @@
+00173f08: compiled 96 bytes, target 96 bytes, exact=False
+Differing words: 13. First difference at instruction 4 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00173f08: 27bdffe0  addiu	sp,sp,-32                                  | 00173f08: 27bdffe0  addiu	sp,sp,-32
+   00173f0c: ffb00000  sd	s0,0(sp)                                      | 00173f0c: ffb00000  sd	s0,0(sp)
+   00173f10: ffb10008  sd	s1,8(sp)                                      | 00173f10: ffb10008  sd	s1,8(sp)
+   00173f14: ffbf0010  sd	ra,16(sp)                                     | 00173f14: ffbf0010  sd	ra,16(sp)
+!! 00173f18: 0080882d  move	s1,a0                                       | 00173f18: 0080802d  move	s0,a0
+   00173f1c: 8c8f0000  lw	t7,0(a0)                                      | 00173f1c: 8c8f0000  lw	t7,0(a0)
+   00173f20: 0c05b00a  jal	0x16c028                                     | 00173f20: 0c05b00a  jal	16c028 <func_0016c028>
+   00173f24: 8de40004  lw	a0,4(t7)                                      | 00173f24: 8de40004  lw	a0,4(t7)
+!! 00173f28: 3c0f01c6  lui	t7,0x1c6                                     | 00173f28: 3c0e01c6  lui	t6,0x1c6
+!! 00173f2c: 25f0f480  addiu	s0,t7,-2944   ; = D_01c5f480               | 00173f2c: 25d1f480  addiu	s1,t6,-2944   ; = D_01c5f480
+!! 00173f30: 50500004  beql	v0,s0,0x173f44                              | 00173f30: 50510004  beql	v0,s1,173f44 <func_00173f08+0x3c>
+!! 00173f34: 8e2f0000  lw	t7,0(s1)                                      | 00173f34: 8e0f0000  lw	t7,0(s0)
+!! 00173f38: 78480000  lq	t0,0(v0)                                      | 00173f38: 784f0000  lq	t7,0(v0)
+!! 00173f3c: 7e080000  sq	t0,0(s0)                                      | 00173f3c: 7dcff480  sq	t7,-2944(t6)   ; = D_01c5f480
+!! 00173f40: 8e2f0000  lw	t7,0(s1)                                      | 00173f40: 8e0f0000  lw	t7,0(s0)
+   00173f44: 0c0612a4  jal	0x184a90                                     | 00173f44: 0c0612a4  jal	184a90 <func_00184a90>
+   00173f48: 8de40004  lw	a0,4(t7)                                      | 00173f48: 8de40004  lw	a0,4(t7)
+!! 00173f4c: e6000004  swc1	$f0,4(s0)                                   | 00173f4c: ae110000  sw	s1,0(s0)
+!! 00173f50: dfbf0010  ld	ra,16(sp)                                     | 00173f50: e6200004  swc1	$f0,4(s1)
+!! 00173f54: ae300000  sw	s0,0(s1)                                      | 00173f54: dfb00000  ld	s0,0(sp)
+!! 00173f58: dfb00000  ld	s0,0(sp)                                      | 00173f58: dfb10008  ld	s1,8(sp)
+!! 00173f5c: dfb10008  ld	s1,8(sp)                                      | 00173f5c: dfbf0010  ld	ra,16(sp)
+   00173f60: 03e00008  jr	ra                                            | 00173f60: 03e00008  jr	ra
+   00173f64: 27bd0020  addiu	sp,sp,32                                   | 00173f64: 27bd0020  addiu	sp,sp,32

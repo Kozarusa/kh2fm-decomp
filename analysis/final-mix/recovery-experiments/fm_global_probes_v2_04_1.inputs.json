@@ -1,0 +1,187 @@
+{
+  "source_sha256": "d4d923d9bc26e38083267abdb56dbadc0e41a08622bedeaf63593ea5c969f369",
+  "main_export_sha256": "aa24f5742f14453ebe408146889dcebdb4236a7b8bf0a7cab209cad2f2ec84f6",
+  "narrow_widths": true,
+  "rows": [
+    {
+      "address": "0027ae20",
+      "size": 88,
+      "declarations": {
+        "0035f230": "u32*"
+      },
+      "original_range_sha256": "dc374f4592734f1b29aba8a0c06b3028af287829e16d956c0ad723e9e710a5e8",
+      "export_sha256": "3a48fc9155acd1c9d4d2b364b714f257350ce54d808fdb8a138e705f4ebc1668"
+    },
+    {
+      "address": "0027ae78",
+      "size": 92,
+      "declarations": {
+        "0035f230": "u32*"
+      },
+      "original_range_sha256": "5ba99e3d4e6b53aa8846aad152c7a4267acb7d6eb10fb6fe7fc979bc8b85c5aa",
+      "export_sha256": "59e3e8d33347451ae19f2030129d213cafdc37a6175d97d27f5c5ba4c27b5502"
+    },
+    {
+      "address": "002e1878",
+      "size": 64,
+      "declarations": {
+        "00362d88": "f32",
+        "00375ef8": "f32",
+        "00362d8c": "f32",
+        "00362d80": "f32",
+        "00362d84": "f32"
+      },
+      "original_range_sha256": "01c9909b5e1cabcb980ce945ad568ecf0087448d981ab48e1f5096c5f6e782ad",
+      "export_sha256": "b178c779d60c0daefc477999d39347fa73a8d3b3ecc4ed59498c584d1a8ae641"
+    },
+    {
+      "address": "002e2e50",
+      "size": 64,
+      "declarations": {
+        "00362e74": "f32",
+        "00362e70": "f32",
+        "00362e78": "f32",
+        "00375f50": "f32",
+        "00362e7c": "f32"
+      },
+      "original_range_sha256": "0c8bcf391f4ec66a6217173f07f69a1b541b3dba447c7f69f611221fe5e1f05f",
+      "export_sha256": "f9291746f2fb516b79b36fdbf2789139283fcb6d7079cc59794d1ad553e5b9ec"
+    },
+    {
+      "address": "002e3f78",
+      "size": 36,
+      "declarations": {
+        "00375f78": "f32"
+      },
+      "original_range_sha256": "6b518978d443976c04885f35322c6b14af388e2b3037c389a73cabea5a262edf",
+      "export_sha256": "18e41ac4236c27cd091ef8627c921f6d6dd6b745796b1997030c14bda5fdae12"
+    },
+    {
+      "address": "002e4a08",
+      "size": 36,
+      "declarations": {
+        "00375fb8": "f32",
+        "00375fbc": "f32"
+      },
+      "original_range_sha256": "ae2862eb865d2c6cd277c470d06137087bac2d01371be1f3bcac7fa03cb16f20",
+      "export_sha256": "72d506e39e5d563db7e1f7186e8d140e4ba8ca2fbfb25f67f964cf8a543bb775"
+    },
+    {
+      "address": "002e98b0",
+      "size": 60,
+      "declarations": {
+        "01e2bfa0": "s32",
+        "01e2bfa4": "s32"
+      },
+      "original_range_sha256": "cc57211004115836f158296df4c5d8dbd118068c85ca155b6e35b9a45aedf6c5",
+      "export_sha256": "04feaa15f7cd8432ffc888f99d5e91431570bea01394aae5627740e6abbfd020"
+    },
+    {
+      "address": "002eac70",
+      "size": 36,
+      "declarations": {
+        "00363448": "f32",
+        "00363440": "f32",
+        "00363450": "f32",
+        "0036344c": "f32"
+      },
+      "original_range_sha256": "a41e5c28dc38b27cd8dbbb0fa518c52d50b44fbe41d277bcd6102031123ddece",
+      "export_sha256": "00e5f4e4f412c9a2ed062dd31030840e035736182e5dec4c60f3316f1e69596d"
+    },
+    {
+      "address": "002ead48",
+      "size": 44,
+      "declarations": {
+        "00363448": "f32",
+        "003760d4": "f32"
+      },
+      "original_range_sha256": "4086a30d8b0e5746a68a21ba01ee0a54dd3acd868a300ce93945dea9ab291793",
+      "export_sha256": "f78736b0bd9eb4662dcc61a27408a2c09bd61e98b62aad7cae987fc62d195222"
+    },
+    {
+      "address": "002eaee8",
+      "size": 44,
+      "declarations": {
+        "003760dc": "f32",
+        "003634f0": "f32"
+      },
+      "original_range_sha256": "53b409fdbfd3fe13651f390004039251c3925d1641997b1ab618462d86a08aea",
+      "export_sha256": "20875fa45460f5586b260b4d0b75e6870a748f9f0f3de3429ccc978ca5e74485"
+    },
+    {
+      "address": "002eccd0",
+      "size": 132,
+      "declarations": {
+        "01e2c048": "f32",
+        "00376184": "f32",
+        "00376180": "f32",
+        "01e2c044": "f32",
+        "01e2c040": "f32"
+      },
+      "original_range_sha256": "56f7429539d562ff318ea562cc5b8687c765582957cc91aaf7e18a790325c1ff",
+      "export_sha256": "2d26f4477952de20f15e051f01d06ed2ca8ea00030e16e8a63e57a113ba9ba32"
+    },
+    {
+      "address": "003086b8",
+      "size": 120,
+      "declarations": {
+        "01e357e4": "s32",
+        "01e357ec": "s32"
+      },
+      "original_range_sha256": "9b1044967732ccbe70697392fc740c6b73c42aa1c4585a0d2791cfc01604442b",
+      "export_sha256": "cddc29d035dedbd14bc15c258810e7f73fa9f351f7af04b8096666d99ca27f91"
+    },
+    {
+      "address": "00308730",
+      "size": 76,
+      "declarations": {
+        "01e357e4": "s32",
+        "01e357ec": "s32"
+      },
+      "original_range_sha256": "26011720bbd3cad4edd4f0b7dcde31cd46a045fd57b1cd9316615f3d7c0b2578",
+      "export_sha256": "c25ebc75bf33995d81f9a3413e561daf5adb90d69bfb2e463d11807d688001b4"
+    },
+    {
+      "address": "0030fc28",
+      "size": 56,
+      "declarations": {
+        "00367130": "s32"
+      },
+      "original_range_sha256": "e7e2b86283245c302bc8d8f5b2df139befe4c6f18e11b8c8e469f0ad14e3b757",
+      "export_sha256": "7b8c63fca66b97ccc061d7b31ef8f2d999de6560f675287a869fa9fa2e7dd57c"
+    },
+    {
+      "address": "0030ffd8",
+      "size": 112,
+      "declarations": {
+        "00367128": "s32",
+        "00367124": "s32",
+        "0036712c": "u32*"
+      },
+      "original_range_sha256": "9cac1c778916004ccec745deaa189e46ab1e039ea4304bd77266bb41c3b1cae1",
+      "export_sha256": "678045e18c667d3828b5e673372a7fd4effaa2207c9a9fc58f78cee69398a5ad"
+    },
+    {
+      "address": "00310180",
+      "size": 80,
+      "declarations": {
+        "00367120": "s32",
+        "00367128": "s32"
+      },
+      "original_range_sha256": "53ff4b1fe63e1cfc2165fc28a616eddd202e43e43f2456b18412846797b0b0b0",
+      "export_sha256": "584c2471d1a82be3ac13cf6b58e5d155593e22bc3f762816fa01efcf58c101eb"
+    },
+    {
+      "address": "0031e268",
+      "size": 76,
+      "declarations": {
+        "0036c238": "f32"
+      },
+      "original_range_sha256": "a26c8dbef27b512242e8f91e885d1dd060d82dc87b944cbca6d82bc52f6bad57",
+      "export_sha256": "da83084b23f691c009ba0c6a3d1559cc8fd86d66a32af8ddeff4f0e1aeeae589"
+    }
+  ],
+  "limitations": [
+    "Linear address/type inference proposes declarations; it does not prove dataflow or types."
+  ]
+}

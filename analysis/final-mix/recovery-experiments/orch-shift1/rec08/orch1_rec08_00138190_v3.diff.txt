@@ -1,0 +1,35 @@
+00138190: compiled 124 bytes, target 124 bytes, exact=False
+Differing words: 24. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00138190: 3c0f0034  lui	t7,0x34                                      | 00138190: 3c0f0034  lui	t7,0x34
+!! 00138194: 8de97d64  lw	t1,32100(t7)   ; = D_00347d64                 | 00138194: 8de87d64  lw	t0,32100(t7)   ; = D_00347d64
+!! 00138198: 8d2a0030  lw	t2,48(t1)                                     | 00138198: 25070030  addiu	a3,t0,48
+!! 0013819c: 25280030  addiu	t0,t1,48                                   | 0013819c: 8d090030  lw	t1,48(t0)
+!! 001381a0: 8d0e0004  lw	t6,4(t0)                                      | 001381a0: 8cef0004  lw	t7,4(a3)
+!! 001381a4: 254b0001  addiu	t3,t2,1                                    | 001381a4: 252b0001  addiu	t3,t1,1
+!! 001381a8: 254f0008  addiu	t7,t2,8                                    | 001381a8: 252d0008  addiu	t5,t1,8
+!! 001381ac: 296d0000  slti	t5,t3,0                                     | 001381ac: 012f7823  subu	t7,t1,t7
+!! 001381b0: 014e7023  subu	t6,t2,t6                                    | 001381b0: 296a0000  slti	t2,t3,0
+!! 001381b4: 25cc0008  addiu	t4,t6,8                                    | 001381b4: 25ee0008  addiu	t6,t7,8
+!! 001381b8: 016d780a  movz	t7,t3,t5                                    | 001381b8: 016a680a  movz	t5,t3,t2
+!! 001381bc: 000f78c3  sra	t7,t7,0x3                                    | 001381bc: 29cc0000  slti	t4,t6,0
+!! 001381c0: 25ce000f  addiu	t6,t6,15                                   | 001381c0: 25ef000f  addiu	t7,t7,15
+!! 001381c4: 298d0000  slti	t5,t4,0                                     | 001381c4: 01cc780a  movz	t7,t6,t4
+!! 001381c8: 000f78c0  sll	t7,t7,0x3                                    | 001381c8: 000d68c3  sra	t5,t5,0x3
+!! 001381cc: 018d700a  movz	t6,t4,t5                                    | 001381cc: 000f78c3  sra	t7,t7,0x3
+!! 001381d0: 016f5823  subu	t3,t3,t7                                    | 001381d0: 000d68c0  sll	t5,t5,0x3
+!! 001381d4: 000e70c3  sra	t6,t6,0x3                                    | 001381d4: 000f78c0  sll	t7,t7,0x3
+!! 001381d8: 000e78c0  sll	t7,t6,0x3                                    | 001381d8: 01cf7023  subu	t6,t6,t7
+!! 001381dc: 018f7023  subu	t6,t4,t7                                    | 001381dc: 29ce0007  slti	t6,t6,7
+!! 001381e0: 29ce0007  slti	t6,t6,7                                     | 001381e0: 11c00008  beqz	t6,138204 <func_00138190+0x74>
+!! 001381e4: 11c00007  beqz	t6,0x138204                                 | 001381e4: 016d6823  subu	t5,t3,t5
+   001381e8: 240f0530  li	t7,1328                                       | 001381e8: 240f0530  li	t7,1328
+!! 001381ec: ad2b0030  sw	t3,48(t1)                                     | 001381ec: ad0d0030  sw	t5,48(t0)
+!! 001381f0: 014f7818  mult	t7,t2,t7                                    | 001381f0: 012f7818  mult	t7,t1,t7
+!! 001381f4: 010f7821  addu	t7,t0,t7                                    | 001381f4: 00ef7821  addu	t7,a3,t7
+   001381f8: 25ef0010  addiu	t7,t7,16                                   | 001381f8: 25ef0010  addiu	t7,t7,16
+   001381fc: ade50524  sw	a1,1316(t7)                                   | 001381fc: ade50524  sw	a1,1316(t7)
+   00138200: ade40520  sw	a0,1312(t7)                                   | 00138200: ade40520  sw	a0,1312(t7)
+   00138204: 03e00008  jr	ra                                            | 00138204: 03e00008  jr	ra
+   00138208: 00000000  nop                                              | 00138208: 00000000  nop

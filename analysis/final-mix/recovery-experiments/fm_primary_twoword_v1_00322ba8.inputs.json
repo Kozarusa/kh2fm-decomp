@@ -1,0 +1,13 @@
+{
+  "address": "00322ba8",
+  "source_sha256": "9d655805e0f5cef73005d6db2510bd9626d5d4977c2c417ba7200b729a1018ea",
+  "prior_source": "analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_15_1.cpp",
+  "prior_source_sha256": "5e5299b2161e2e4ae00d3edaabd029e9874a8a9a7f4e0d7a89ef1a1c0c647477",
+  "prior_proof": "analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_15_1.verification.json",
+  "prior_proof_sha256": "49252ef431f0091f5abdcccc129cf72351288fd90f10105465c06725a962410e",
+  "original_range_sha256": "9ecd9b834f12e2aecca2d0b6baa2bb735cb046913317053f907e11d6e1d85e46",
+  "target_size": 52,
+  "limitations": [
+    "Original instruction transport proposal; source types remain provisional."
+  ]
+}

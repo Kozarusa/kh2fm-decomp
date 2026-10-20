@@ -1,0 +1,17 @@
+001682b8: compiled 52 bytes, target 52 bytes, exact=False
+Differing words: 6. First difference at instruction 0 (0-based).
+
+ORIGINAL                                                                | COMPILED
+!! 001682b8: 27bdfff0  addiu	sp,sp,-16                                  | 001682b8: 27bdffe0  addiu	sp,sp,-32
+!! 001682bc: ffbf0008  sd	ra,8(sp)                                      | 001682bc: 7fb00000  sq	s0,0(sp)
+!! 001682c0: ffb00000  sd	s0,0(sp)                                      | 001682c0: ffbf0010  sd	ra,16(sp)
+   001682c4: 0c06b7c0  jal	0x1adf00                                     | 001682c4: 0c06b7c0  jal	1adf00 <func_001adf00>
+   001682c8: 00000000  nop                                              | 001682c8: 00000000  nop
+   001682cc: 0040802d  move	s0,v0                                       | 001682cc: 0040802d  move	s0,v0
+   001682d0: 0c0c1628  jal	0x3058a0                                     | 001682d0: 0c0c1628  jal	3058a0 <func_003058a0>
+   001682d4: 0000202d  move	a0,zero                                     | 001682d4: 0000202d  move	a0,zero
+   001682d8: 0200102d  move	v0,s0                                       | 001682d8: 0200102d  move	v0,s0
+!! 001682dc: dfbf0008  ld	ra,8(sp)                                      | 001682dc: dfbf0010  ld	ra,16(sp)
+!! 001682e0: dfb00000  ld	s0,0(sp)                                      | 001682e0: 7bb00000  lq	s0,0(sp)
+   001682e4: 03e00008  jr	ra                                            | 001682e4: 03e00008  jr	ra
+!! 001682e8: 27bd0010  addiu	sp,sp,16                                   | 001682e8: 27bd0020  addiu	sp,sp,32

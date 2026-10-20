@@ -1,0 +1,2 @@
+#include "../common/types.h"
+s32* func_00114438(u32 object,s32 value) { u32 root=*(u32*)(object+8); if(root) { u32 relative=*(u32*)(root+0xa4); s32 index=0; s32 count=*(s32*)(root+0xa0); if(count>0) { u32 base=root+relative; do { register s32* item asm("$13"); u32 offset=index*0x80; asm("addu %0,%1,%2" : "=r"(item) : "r"(base),"r"(offset)); ++index; if(*item==value) return item; } while(index<count); } } return 0; }

@@ -1,0 +1,15 @@
+00174060: compiled 44 bytes, target 44 bytes, exact=False
+Differing words: 4. First difference at instruction 3 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00174060: 27bdfff0  addiu	sp,sp,-16                                  | 00174060: 27bdfff0  addiu	sp,sp,-16
+   00174064: ffbf0000  sd	ra,0(sp)                                      | 00174064: ffbf0000  sd	ra,0(sp)
+   00174068: 8c8f0000  lw	t7,0(a0)                                      | 00174068: 8c8f0000  lw	t7,0(a0)
+!! 0017406c: 8c86000c  lw	a2,12(a0)                                     | 0017406c: c48c0004  lwc1	$f12,4(a0)
+!! 00174070: 8dee0004  lw	t6,4(t7)                                      | 00174070: 8c850008  lw	a1,8(a0)
+!! 00174074: c48c0004  lwc1	$f12,4(a0)                                  | 00174074: 8dee0004  lw	t6,4(t7)
+!! 00174078: 8c850008  lw	a1,8(a0)                                      | 00174078: 8c86000c  lw	a2,12(a0)
+   0017407c: dfbf0000  ld	ra,0(sp)                                      | 0017407c: dfbf0000  ld	ra,0(sp)
+   00174080: 01c0202d  move	a0,t6                                       | 00174080: 01c0202d  move	a0,t6
+   00174084: 0806651a  j	0x199468                                       | 00174084: 0806651a  j	199468 <func_00199468>
+   00174088: 27bd0010  addiu	sp,sp,16                                   | 00174088: 27bd0010  addiu	sp,sp,16

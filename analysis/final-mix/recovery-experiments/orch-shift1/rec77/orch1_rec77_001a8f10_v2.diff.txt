@@ -1,0 +1,25 @@
+001a8f10: compiled 68 bytes, target 84 bytes, exact=False
+Differing words: 13. First difference at instruction 4 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001a8f10: 24020001  li	v0,1                                          | 001a8f10: 24020001  li	v0,1
+   001a8f14: 240f0002  li	t7,2                                          | 001a8f14: 240f0002  li	t7,2
+   001a8f18: 108f0006  beq	a0,t7,0x1a8f34                               | 001a8f18: 108f0006  beq	a0,t7,1a8f34 <func_001a8f10+0x24>
+   001a8f1c: 288e0003  slti	t6,a0,3                                     | 001a8f1c: 288e0003  slti	t6,a0,3
+!! 001a8f20: 11c00008  beqz	t6,0x1a8f44                                 | 001a8f20: 11c00006  beqz	t6,1a8f3c <func_001a8f10+0x2c>
+!! 001a8f24: 240f0001  li	t7,1                                          | 001a8f24: 0000102d  move	v0,zero
+!! 001a8f28: 108f0004  beq	a0,t7,0x1a8f3c                               | 001a8f28: 240f0001  li	t7,1
+!! 001a8f2c: 00000000  nop                                              | 001a8f2c: 548f0001  bnel	a0,t7,1a8f34 <func_001a8f10+0x24>
+   001a8f30: 24020003  li	v0,3                                          | 001a8f30: 24020003  li	v0,3
+   001a8f34: 03e00008  jr	ra                                            | 001a8f34: 03e00008  jr	ra
+   001a8f38: 00000000  nop                                              | 001a8f38: 00000000  nop
+!! 001a8f3c: 03e00008  jr	ra                                            | 001a8f3c: 240f0003  li	t7,3
+!! 001a8f40: 0000102d  move	v0,zero                                     | 001a8f40: 108ffffc  beq	a0,t7,1a8f34 <func_001a8f10+0x24>
+!! 001a8f44: 240f0003  li	t7,3                                          | 001a8f44: 24020002  li	v0,2
+!! 001a8f48: 108ffffa  beq	a0,t7,0x1a8f34                               | 001a8f48: 0000102d  move	v0,zero
+!! 001a8f4c: 24020002  li	v0,2                                          | 001a8f4c: 1000fff7  b	1a8f2c <func_001a8f10+0x1c>
+   001a8f50: 240f000e  li	t7,14                                         | 001a8f50: 240f000e  li	t7,14
+!! 001a8f54: 548ffff7  bnel	a0,t7,0x1a8f34                              | 
+!! 001a8f58: 24020003  li	v0,3                                          | 
+!! 001a8f5c: 1000fff7  b	0x1a8f3c                                       | 
+!! 001a8f60: 00000000  nop                                              | 

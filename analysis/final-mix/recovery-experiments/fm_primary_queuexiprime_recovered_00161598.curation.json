@@ -1,0 +1,14 @@
+{
+  "probe_source": "analysis/final-mix/recovery-experiments/eight-hour-20261011/eight_hour_00161598_common_argument_lifetime_v2_0.cpp",
+  "probe_source_sha256": "66f36cd646add7464a7aa2af376ed102315a12d3fc82517813fa9019171ac608",
+  "probe_proof_sha256": "842396d0ed7700487019a9569b3f9c3dd6f62c3beed0176a116ac4ae1a3f0da7",
+  "curated_source": "analysis/final-mix/recovery-experiments/fm_primary_queuexiprime_recovered_00161598.cpp",
+  "curated_source_sha256": "e87bd172ab980a5a95a3b088a4d21ebdb2ddf8331b29c70b4b8ea463a7c7d2a5",
+  "selected_addresses": [
+    "00161598"
+  ],
+  "exclusion_receipt": null,
+  "limitations": [
+    "Curated source still requires a new probe, registration and full build."
+  ]
+}

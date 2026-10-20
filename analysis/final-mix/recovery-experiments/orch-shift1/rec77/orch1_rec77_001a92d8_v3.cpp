@@ -1,0 +1,22 @@
+#include "../common/types.h"
+
+extern "C" u32 func_0016e920(u32);
+extern "C" u32 func_00170e58(void);
+extern "C" u32 func_001a9218(void*);
+extern "C" u32 func_001a9350(...);
+extern "C" bool func_001a9758(...);
+
+void func_001a92d8(u32* object, u32 id, u64 data) {
+    func_001a9350();
+    if (data == 0) {
+        data = func_0016e920(id);
+    }
+    if (!func_001a9758(id, data)) {
+        func_00170e58();
+        object[1] = id;
+    } else {
+        object[1] = id;
+    }
+    object[2] = data;
+    func_001a9218(object);
+}

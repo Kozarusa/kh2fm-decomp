@@ -1,0 +1,30 @@
+001144e8: compiled 104 bytes, target 104 bytes, exact=False
+Differing words: 2. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001144e8: 27bdfff0  addiu	sp,sp,-16                                  | 001144e8: 27bdfff0  addiu	sp,sp,-16
+!! 001144ec: ffa50000  sd	a1,0(sp)                                      | 001144ec: 8c8f0010  lw	t7,16(a0)
+!! 001144f0: 8c8f0010  lw	t7,16(a0)                                     | 001144f0: ffa50000  sd	a1,0(sp)
+   001144f4: 11e00014  beqz	t7,0x114548                                 | 001144f4: 11e00014  beqz	t7,114548 <func_001144e8+0x60>
+   001144f8: 0000102d  move	v0,zero                                     | 001144f8: 0000102d  move	v0,zero
+   001144fc: 8c84000c  lw	a0,12(a0)                                     | 001144fc: 8c84000c  lw	a0,12(a0)
+   00114500: 18800011  blez	a0,0x114548                                 | 00114500: 18800011  blez	a0,114548 <func_001144e8+0x60>
+   00114504: 0000682d  move	t5,zero                                     | 00114504: 0000682d  move	t5,zero
+   00114508: 8fac0000  lw	t4,0(sp)                                      | 00114508: 8fac0000  lw	t4,0(sp)
+   0011450c: 01e0102d  move	v0,t7                                       | 0011450c: 01e0102d  move	v0,t7
+   00114510: 8fab0004  lw	t3,4(sp)                                      | 00114510: 8fab0004  lw	t3,4(sp)
+   00114514: 8c4e0004  lw	t6,4(v0)                                      | 00114514: 8c4e0004  lw	t6,4(v0)
+   00114518: 55cc0007  bnel	t6,t4,0x114538                              | 00114518: 55cc0007  bnel	t6,t4,114538 <func_001144e8+0x50>
+   0011451c: 25ad0001  addiu	t5,t5,1                                    | 0011451c: 25ad0001  addiu	t5,t5,1
+   00114520: 8c4f0008  lw	t7,8(v0)                                      | 00114520: 8c4f0008  lw	t7,8(v0)
+   00114524: 11eb0008  beq	t7,t3,0x114548                               | 00114524: 11eb0008  beq	t7,t3,114548 <func_001144e8+0x60>
+   00114528: 00000000  nop                                              | 00114528: 00000000  nop
+   0011452c: 11c00006  beqz	t6,0x114548                                 | 0011452c: 11c00006  beqz	t6,114548 <func_001144e8+0x60>
+   00114530: 00000000  nop                                              | 00114530: 00000000  nop
+   00114534: 25ad0001  addiu	t5,t5,1                                    | 00114534: 25ad0001  addiu	t5,t5,1
+   00114538: 01a4782a  slt	t7,t5,a0                                     | 00114538: 01a4782a  slt	t7,t5,a0
+   0011453c: 15e0fff5  bnez	t7,0x114514                                 | 0011453c: 15e0fff5  bnez	t7,114514 <func_001144e8+0x2c>
+   00114540: 24420024  addiu	v0,v0,36                                   | 00114540: 24420024  addiu	v0,v0,36
+   00114544: 0000102d  move	v0,zero                                     | 00114544: 0000102d  move	v0,zero
+   00114548: 03e00008  jr	ra                                            | 00114548: 03e00008  jr	ra
+   0011454c: 27bd0010  addiu	sp,sp,16                                   | 0011454c: 27bd0010  addiu	sp,sp,16

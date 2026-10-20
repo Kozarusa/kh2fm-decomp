@@ -1,0 +1,23 @@
+00161548: compiled 76 bytes, target 76 bytes, exact=False
+Differing words: 12. First difference at instruction 3 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00161548: 27bdfff0  addiu	sp,sp,-16                                  | 00161548: 27bdfff0  addiu	sp,sp,-16
+   0016154c: ffbf0000  sd	ra,0(sp)                                      | 0016154c: ffbf0000  sd	ra,0(sp)
+   00161550: 04a00005  bltz	a1,0x161568                                 | 00161550: 04a00005  bltz	a1,161568 <func_00161548+0x20>
+!! 00161554: 0000102d  move	v0,zero                                     | 00161554: 0000782d  move	t7,zero
+   00161558: 8c8f0040  lw	t7,64(a0)                                     | 00161558: 8c8f0040  lw	t7,64(a0)
+!! 0016155c: 15e00005  bnez	t7,0x161574                                 | 0016155c: 15e00006  bnez	t7,161578 <func_00161548+0x30>
+   00161560: 01e0202d  move	a0,t7                                       | 00161560: 01e0202d  move	a0,t7
+!! 00161564: 0000102d  move	v0,zero                                     | 00161564: 0000782d  move	t7,zero
+   00161568: dfbf0000  ld	ra,0(sp)                                      | 00161568: dfbf0000  ld	ra,0(sp)
+!! 0016156c: 03e00008  jr	ra                                            | 0016156c: 01e0102d  move	v0,t7
+!! 00161570: 27bd0010  addiu	sp,sp,16                                   | 00161570: 03e00008  jr	ra
+!! 00161574: 00a0302d  move	a2,a1                                       | 00161574: 27bd0010  addiu	sp,sp,16
+!! 00161578: 0c05a2ce  jal	0x168b38                                     | 00161578: 00a0302d  move	a2,a1
+!! 0016157c: 24050009  li	a1,9                                          | 0016157c: 0c05a2ce  jal	168b38 <func_00168b38>
+!! 00161580: 0040782d  move	t7,v0                                       | 00161580: 24050009  li	a1,9
+!! 00161584: 11e0fff8  beqz	t7,0x161568                                 | 00161584: 1040fff8  beqz	v0,161568 <func_00161548+0x20>
+!! 00161588: 0000102d  move	v0,zero                                     | 00161588: 0000782d  move	t7,zero
+   0016158c: 1000fff6  b	0x161568                                       | 0016158c: 1000fff6  b	161568 <func_00161548+0x20>
+!! 00161590: 8de20008  lw	v0,8(t7)                                      | 00161590: 8c4f0008  lw	t7,8(v0)

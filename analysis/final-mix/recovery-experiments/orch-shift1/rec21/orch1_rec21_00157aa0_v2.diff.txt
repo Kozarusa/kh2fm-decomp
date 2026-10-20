@@ -1,0 +1,20 @@
+00157aa0: compiled 64 bytes, target 60 bytes, exact=False
+Differing words: 10. First difference at instruction 5 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00157aa0: 27bdfff0  addiu	sp,sp,-16                                  | 00157aa0: 27bdfff0  addiu	sp,sp,-16
+   00157aa4: ffb00000  sd	s0,0(sp)                                      | 00157aa4: ffb00000  sd	s0,0(sp)
+   00157aa8: ffbf0008  sd	ra,8(sp)                                      | 00157aa8: ffbf0008  sd	ra,8(sp)
+   00157aac: 0080802d  move	s0,a0                                       | 00157aac: 0080802d  move	s0,a0
+   00157ab0: 8c8f0034  lw	t7,52(a0)                                     | 00157ab0: 8c8f0034  lw	t7,52(a0)
+!! 00157ab4: 0c068778  jal	0x1a1de0                                     | 00157ab4: 26102710  addiu	s0,s0,10000
+!! 00157ab8: 8de4048c  lw	a0,1164(t7)                                   | 00157ab8: 0c068778  jal	1a1de0 <func_001a1de0>
+!! 00157abc: 26042710  addiu	a0,s0,10000                                | 00157abc: 8de4048c  lw	a0,1164(t7)
+!! 00157ac0: 10400002  beqz	v0,0x157acc                                 | 00157ac0: 0200202d  move	a0,s0
+!! 00157ac4: 24050075  li	a1,117                                        | 00157ac4: dfbf0008  ld	ra,8(sp)
+!! 00157ac8: 2405006f  li	a1,111                                        | 00157ac8: 240f006f  li	t7,111
+   00157acc: dfb00000  ld	s0,0(sp)                                      | 00157acc: dfb00000  ld	s0,0(sp)
+!! 00157ad0: dfbf0008  ld	ra,8(sp)                                      | 00157ad0: 24050075  li	a1,117
+!! 00157ad4: 0804e304  j	0x138c10                                       | 00157ad4: 01e2280b  movn	a1,t7,v0
+!! 00157ad8: 27bd0010  addiu	sp,sp,16                                   | 00157ad8: 0804e304  j	138c10 <func_00138c10>
+!!                                                                      | 00157adc: 27bd0010  addiu	sp,sp,16

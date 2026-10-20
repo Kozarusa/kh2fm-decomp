@@ -1,0 +1,34 @@
+001b2308: compiled 120 bytes, target 120 bytes, exact=False
+Differing words: 20. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001b2308: 27bdfff0  addiu	sp,sp,-16                                  | 001b2308: 27bdfff0  addiu	sp,sp,-16
+!! 001b230c: ac800004  sw	zero,4(a0)                                    | 001b230c: 3c0f0037  lui	t7,0x37
+   001b2310: ffb00000  sd	s0,0(sp)                                      | 001b2310: ffb00000  sd	s0,0(sp)
+!! 001b2314: 3c0f0037  lui	t7,0x37                                      | 001b2314: ffbf0008  sd	ra,8(sp)
+!! 001b2318: ffbf0008  sd	ra,8(sp)                                      | 001b2318: 0080802d  move	s0,a0
+!! 001b231c: 25efd9c8  addiu	t7,t7,-9784   ; = D_0036d9c8               | 001b231c: c5e0d9c8  lwc1	$f0,-9784(t7)   ; = D_0036d9c8
+!! 001b2320: 0080802d  move	s0,a0                                       | 001b2320: 00052100  sll	a0,a1,0x4
+!! 001b2324: c5e00000  lwc1	$f0,0(t7)                                   | 001b2324: ae000004  sw	zero,4(s0)
+!! 001b2328: ae050000  sw	a1,0(s0)                                      | 001b2328: 0080202d  move	a0,a0
+!! 001b232c: e4800010  swc1	$f0,16(a0)                                  | 001b232c: e6000010  swc1	$f0,16(s0)
+!! 001b2330: ae000008  sw	zero,8(s0)                                    | 001b2330: ae050000  sw	a1,0(s0)
+!! 001b2334: ae00000c  sw	zero,12(s0)                                   | 001b2334: ae000008  sw	zero,8(s0)
+   001b2338: 0c041436  jal	0x1050d8                                     | 001b2338: 0c041436  jal	1050d8 <func_001050d8>
+!! 001b233c: 00052100  sll	a0,a1,0x4                                    | 001b233c: ae00000c  sw	zero,12(s0)
+!! 001b2340: ae020014  sw	v0,20(s0)                                     | 001b2340: 3c0e01d5  lui	t6,0x1d5
+!! 001b2344: 3c0d01d5  lui	t5,0x1d5                                     | 001b2344: ae020014  sw	v0,20(s0)
+!! 001b2348: 25ae8c80  addiu	t6,t5,-29568   ; = D_01d48c80              | 001b2348: 8dcf8c84  lw	t7,-29564(t6)   ; = D_01d48c84
+!! 001b234c: 8dcf0004  lw	t7,4(t6)                                      | 001b234c: 55e00009  bnezl	t7,1b2374 <func_001b2308+0x6c>
+!! 001b2350: 55e00008  bnezl	t7,0x1b2374                                | 001b2350: adf00018  sw	s0,24(t7)
+!! 001b2354: adf00018  sw	s0,24(t7)                                     | 001b2354: 3c0f01d5  lui	t7,0x1d5
+!! 001b2358: add00004  sw	s0,4(t6)                                      | 001b2358: add08c84  sw	s0,-29564(t6)   ; = D_01d48c84
+!! 001b235c: adb08c80  sw	s0,-29568(t5)   ; = D_01d48c80                | 001b235c: adf08c80  sw	s0,-29568(t7)   ; = D_01d48c80
+   001b2360: ae000018  sw	zero,24(s0)                                   | 001b2360: ae000018  sw	zero,24(s0)
+   001b2364: dfb00000  ld	s0,0(sp)                                      | 001b2364: dfb00000  ld	s0,0(sp)
+   001b2368: dfbf0008  ld	ra,8(sp)                                      | 001b2368: dfbf0008  ld	ra,8(sp)
+   001b236c: 03e00008  jr	ra                                            | 001b236c: 03e00008  jr	ra
+   001b2370: 27bd0010  addiu	sp,sp,16                                   | 001b2370: 27bd0010  addiu	sp,sp,16
+   001b2374: ae000018  sw	zero,24(s0)                                   | 001b2374: ae000018  sw	zero,24(s0)
+   001b2378: 1000fffa  b	0x1b2364                                       | 001b2378: 1000fffa  b	1b2364 <func_001b2308+0x5c>
+!! 001b237c: add00004  sw	s0,4(t6)                                      | 001b237c: add08c84  sw	s0,-29564(t6)   ; = D_01d48c84

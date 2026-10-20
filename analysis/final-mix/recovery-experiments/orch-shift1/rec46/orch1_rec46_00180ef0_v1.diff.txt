@@ -1,0 +1,18 @@
+00180ef0: compiled 52 bytes, target 56 bytes, exact=False
+Differing words: 13. First difference at instruction 0 (0-based).
+
+ORIGINAL                                                                | COMPILED
+!! 00180ef0: 0000682d  move	t5,zero                                     | 00180ef0: 0000702d  move	t6,zero
+!! 00180ef4: 3c0c0200  lui	t4,0x200                                     | 00180ef4: 3c0d0200  lui	t5,0x200
+!! 00180ef8: 55a00002  bnezl	t5,0x180f04                                | 00180ef8: 55c00002  bnezl	t6,180f04 <func_00180ef0+0x14>
+!! 00180efc: 8dae002c  lw	t6,44(t5)                                     | 00180efc: 8dce002c  lw	t6,44(t6)
+   00180f00: 8c8e018c  lw	t6,396(a0)                                    | 00180f00: 8c8e018c  lw	t6,396(a0)
+!! 00180f04: 15c00004  bnez	t6,0x180f18                                 | 00180f04: 51c00005  beqzl	t6,180f1c <func_00180ef0+0x2c>
+!! 00180f08: 01c0682d  move	t5,t6                                       | 00180f08: ac800190  sw	zero,400(a0)
+!! 00180f0c: ac80018c  sw	zero,396(a0)                                  | 00180f0c: 8dcf0008  lw	t7,8(t6)
+!! 00180f10: 03e00008  jr	ra                                            | 00180f10: 01ed7825  or	t7,t7,t5
+!! 00180f14: ac800190  sw	zero,400(a0)                                  | 00180f14: 1000fff8  b	180ef8 <func_00180ef0+0x8>
+!! 00180f18: 8dcf0008  lw	t7,8(t6)                                      | 00180f18: adcf0008  sw	t7,8(t6)
+!! 00180f1c: 01ec7825  or	t7,t7,t4                                      | 00180f1c: 03e00008  jr	ra
+!! 00180f20: 1000fff5  b	0x180ef8                                       | 00180f20: ac80018c  sw	zero,396(a0)
+!! 00180f24: adcf0008  sw	t7,8(t6)                                      | 

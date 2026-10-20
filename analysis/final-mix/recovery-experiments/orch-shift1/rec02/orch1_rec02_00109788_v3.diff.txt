@@ -1,0 +1,28 @@
+00109788: compiled 96 bytes, target 96 bytes, exact=False
+Differing words: 6. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00109788: 27bdffe0  addiu	sp,sp,-32                                  | 00109788: 27bdffe0  addiu	sp,sp,-32
+!! 0010978c: ffb00000  sd	s0,0(sp)                                      | 0010978c: ffb10008  sd	s1,8(sp)
+!! 00109790: ffb10008  sd	s1,8(sp)                                      | 00109790: ffb00000  sd	s0,0(sp)
+!! 00109794: 0080802d  move	s0,a0                                       | 00109794: 0080882d  move	s1,a0
+   00109798: ffbf0010  sd	ra,16(sp)                                     | 00109798: ffbf0010  sd	ra,16(sp)
+   0010979c: 00a0202d  move	a0,a1                                       | 0010979c: 00a0202d  move	a0,a1
+   001097a0: 0c042538  jal	0x1094e0                                     | 001097a0: 0c042538  jal	1094e0 <func_001094e0>
+!! 001097a4: 00a0882d  move	s1,a1                                       | 001097a4: 00a0802d  move	s0,a1
+!! 001097a8: 0200202d  move	a0,s0                                       | 001097a8: 0220202d  move	a0,s1
+!! 001097ac: 0220282d  move	a1,s1                                       | 001097ac: 0200282d  move	a1,s0
+   001097b0: 0000302d  move	a2,zero                                     | 001097b0: 0000302d  move	a2,zero
+   001097b4: 0000382d  move	a3,zero                                     | 001097b4: 0000382d  move	a3,zero
+   001097b8: 14400009  bnez	v0,0x1097e0                                 | 001097b8: 14400009  bnez	v0,1097e0 <func_00109788+0x58>
+   001097bc: 0000402d  move	t0,zero                                     | 001097bc: 0000402d  move	t0,zero
+   001097c0: 0c04cf18  jal	0x133c60                                     | 001097c0: 0c04cf18  jal	133c60 <func_00133c60>
+   001097c4: 00000000  nop                                              | 001097c4: 00000000  nop
+   001097c8: 24020001  li	v0,1                                          | 001097c8: 24020001  li	v0,1
+   001097cc: dfb00000  ld	s0,0(sp)                                      | 001097cc: dfb00000  ld	s0,0(sp)
+   001097d0: dfb10008  ld	s1,8(sp)                                      | 001097d0: dfb10008  ld	s1,8(sp)
+   001097d4: dfbf0010  ld	ra,16(sp)                                     | 001097d4: dfbf0010  ld	ra,16(sp)
+   001097d8: 03e00008  jr	ra                                            | 001097d8: 03e00008  jr	ra
+   001097dc: 27bd0020  addiu	sp,sp,32                                   | 001097dc: 27bd0020  addiu	sp,sp,32
+   001097e0: 1000fffa  b	0x1097cc                                       | 001097e0: 1000fffa  b	1097cc <func_00109788+0x44>
+   001097e4: 0000102d  move	v0,zero                                     | 001097e4: 0000102d  move	v0,zero

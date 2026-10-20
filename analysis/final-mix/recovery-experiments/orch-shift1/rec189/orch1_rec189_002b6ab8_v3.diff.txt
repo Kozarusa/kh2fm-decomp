@@ -1,0 +1,13 @@
+002b6ab8: compiled 28 bytes, target 36 bytes, exact=False
+Differing words: 6. First difference at instruction 3 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   002b6ab8: 27bdfff0  addiu	sp,sp,-16                                  | 002b6ab8: 27bdfff0  addiu	sp,sp,-16
+   002b6abc: ffbe0000  sd	s8,0(sp)                                      | 002b6abc: ffbe0000  sd	s8,0(sp)
+   002b6ac0: 03a0f02d  move	s8,sp                                       | 002b6ac0: 03a0f02d  move	s8,sp
+!! 002b6ac4: 0000782d  move	t7,zero                                     | 002b6ac4: dfbe0000  ld	s8,0(sp)
+!! 002b6ac8: 01e0102d  move	v0,t7                                       | 002b6ac8: 0000102d  move	v0,zero
+!! 002b6acc: 03c0e82d  move	sp,s8                                       | 002b6acc: 03e00008  jr	ra
+!! 002b6ad0: dfbe0000  ld	s8,0(sp)                                      | 002b6ad0: 27bd0010  addiu	sp,sp,16
+!! 002b6ad4: 03e00008  jr	ra                                            | 
+!! 002b6ad8: 27bd0010  addiu	sp,sp,16                                   | 

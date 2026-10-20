@@ -1,0 +1,56 @@
+recovery-experiments/fm_global_probes_04_0/probe.cpp: In function `void 
+   func_002e3f78(u32*)':
+recovery-experiments/fm_global_probes_04_0/probe.cpp:133: warning: assignment 
+   to `u32' from `f32'
+recovery-experiments/fm_global_probes_04_0/probe.cpp:133: warning: argument to 
+   `unsigned int' from `f32'
+recovery-experiments/fm_global_probes_04_0/probe.cpp: In function `void 
+   func_002e4a08(u32*)':
+recovery-experiments/fm_global_probes_04_0/probe.cpp:144: warning: assignment 
+   to `unsigned int' from `f32'
+recovery-experiments/fm_global_probes_04_0/probe.cpp:144: warning: argument to 
+   `unsigned int' from `f32'
+recovery-experiments/fm_global_probes_04_0/probe.cpp:145: warning: assignment 
+   to `unsigned int' from `f32'
+recovery-experiments/fm_global_probes_04_0/probe.cpp:145: warning: argument to 
+   `unsigned int' from `f32'
+recovery-experiments/fm_global_probes_04_0/probe.cpp: In function `u32 
+   func_002f5c70()':
+recovery-experiments/fm_global_probes_04_0/probe.cpp:208: `ram0x00363d28' 
+   undeclared (first use this function)
+recovery-experiments/fm_global_probes_04_0/probe.cpp:208: (Each undeclared 
+   identifier is reported only once for each function it appears in.)
+recovery-experiments/fm_global_probes_04_0/probe.cpp:209: warning: invalid 
+   conversion from `s32*' to `u32*'
+recovery-experiments/fm_global_probes_04_0/probe.cpp: In function `u32 
+   func_0030ffd8()':
+recovery-experiments/fm_global_probes_04_0/probe.cpp:286: warning: invalid 
+   conversion from `s32' to `u32*'
+recovery-experiments/fm_global_probes_04_0/probe.cpp:287: ISO C++ forbids 
+   comparison between pointer and integer
+recovery-experiments/fm_global_probes_04_0/probe.cpp:292: invalid types `s32[
+   int]' for array subscript
+recovery-experiments/fm_global_probes_04_0/probe.cpp:293: invalid types `s32[
+   int]' for array subscript
+recovery-experiments/fm_global_probes_04_0/probe.cpp:295: invalid type argument 
+   of `unary *'
+recovery-experiments/fm_global_probes_04_0/probe.cpp: In function `u32 
+   func_00310180(long long int, long long int)':
+recovery-experiments/fm_global_probes_04_0/probe.cpp:309: warning: cast to 
+   pointer from integer of different size
+recovery-experiments/fm_global_probes_04_0/probe.cpp:312: warning: cast to 
+   pointer from integer of different size
+recovery-experiments/fm_global_probes_04_0/probe.cpp: In function `void 
+   func_0031e268(int)':
+recovery-experiments/fm_global_probes_04_0/probe.cpp:324: warning: assignment 
+   to `u32' from `f32'
+recovery-experiments/fm_global_probes_04_0/probe.cpp:324: warning: argument to 
+   `unsigned int' from `f32'
+Traceback (most recent call last):
+  File "/mnt/c/Users/KoZa/Documents/ChatGPT/tools/kh2-audit/probe_fm_source.py", line 36, in <module>
+    run(f'/opt/ps2/gcc/bin/ee-g++ -O2 -g0 -x c++ -fno-exceptions -fno-rtti -fpermissive -ffunction-sections -c {relative}/probe.cpp -o {relative}/probe.o')
+  File "/mnt/c/Users/KoZa/Documents/ChatGPT/tools/kh2-audit/probe_fm_source.py", line 32, in run
+    subprocess.run(['docker', 'run', '--rm', '--platform', 'linux/amd64',
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['docker', 'run', '--rm', '--platform', 'linux/amd64', '-v', '/root/kh2fm-build:/work', '-w', '/work', 'kh2-local/ps2-compiler:3.2-ee-040921-objdiff', 'bash', '-lc', '/opt/ps2/gcc/bin/ee-g++ -O2 -g0 -x c++ -fno-exceptions -fno-rtti -fpermissive -ffunction-sections -c recovery-experiments/fm_global_probes_04_0/probe.cpp -o recovery-experiments/fm_global_probes_04_0/probe.o']' returned non-zero exit status 1.

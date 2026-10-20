@@ -1,0 +1,96 @@
+{
+  "active_records_sha256": "b59bc1191513f4b1d0c5f4adde76d6356819fc9e3c4b02fe065ed5082aaaf9a7",
+  "selected_addresses": [
+    "001387f8",
+    "0016f6a0",
+    "00172bd8",
+    "00172c08",
+    "0017f4e0",
+    "001805a8",
+    "00181570",
+    "00185e78",
+    "0018f3a8",
+    "001abd30",
+    "001abd90",
+    "001bd668",
+    "001bdf38",
+    "001befa8",
+    "001d5960",
+    "001e00b0",
+    "0023fa90",
+    "00253410",
+    "0028da70",
+    "00299260",
+    "002a03a0",
+    "002a65a0",
+    "002bc188",
+    "002bf978",
+    "002db7d0"
+  ],
+  "groups": [
+    {
+      "source": "analysis/final-mix/recovery-experiments/fm_primary_width_00_all.cpp",
+      "proof_sha256": "7e48346c685640d38f5d807fe261f79b434edc1b5e67c389cce55d7379b765f1",
+      "selected_addresses": [
+        "001387f8",
+        "0016f6a0",
+        "00172bd8",
+        "00172c08",
+        "0017f4e0",
+        "001805a8",
+        "00181570",
+        "00185e78",
+        "0018f3a8",
+        "001abd30",
+        "001abd90",
+        "001bd668",
+        "001bdf38",
+        "001befa8"
+      ],
+      "excluded_addresses": [],
+      "exclusions": "analysis/final-mix/recovery-experiments/primary-width-00-exclusions.json",
+      "curated_source": "analysis/final-mix/recovery-experiments/fm_primary_width_recovered_00.cpp"
+    },
+    {
+      "source": "analysis/final-mix/recovery-experiments/fm_primary_width_00_parameters.cpp",
+      "selected_addresses": [],
+      "excluded_addresses": [
+        "001387f8",
+        "0017f4e0",
+        "001bd668",
+        "001bdf38",
+        "001befa8"
+      ]
+    },
+    {
+      "source": "analysis/final-mix/recovery-experiments/fm_primary_width_01_all.cpp",
+      "proof_sha256": "c54e26b5b9d6a9e61e9e63b7df6aa19dc4f0c8faf82c741345bc79730b50dc33",
+      "selected_addresses": [
+        "001d5960",
+        "001e00b0",
+        "0023fa90",
+        "00253410",
+        "0028da70",
+        "00299260",
+        "002a03a0",
+        "002a65a0",
+        "002bc188",
+        "002bf978",
+        "002db7d0"
+      ],
+      "excluded_addresses": [],
+      "exclusions": "analysis/final-mix/recovery-experiments/primary-width-02-exclusions.json",
+      "curated_source": "analysis/final-mix/recovery-experiments/fm_primary_width_recovered_02.cpp"
+    },
+    {
+      "source": "analysis/final-mix/recovery-experiments/fm_primary_width_01_parameters.cpp",
+      "selected_addresses": [],
+      "excluded_addresses": [
+        "002db7d0"
+      ]
+    }
+  ],
+  "limitations": [
+    "Curated sources require independent probes and full native acceptance."
+  ]
+}

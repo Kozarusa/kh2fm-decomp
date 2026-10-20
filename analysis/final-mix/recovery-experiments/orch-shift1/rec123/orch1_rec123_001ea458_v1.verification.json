@@ -1,0 +1,18 @@
+{
+  "source_sha256": "18e7de82ebe451b71acd1866357dd1b308976a67cfb8ca44dde9bbdd6517f65b",
+  "source": "analysis/final-mix/recovery-experiments/orch-shift1/rec123/orch1_rec123_001ea458_v1.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "001ea458",
+      "symbol": "_Z13func_001ea458jP4Slott",
+      "compiled_size": 128,
+      "target_size": 128,
+      "ghidra_body_size": 128,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "e0ffbd27ffff0f240000b0ff0800b1ff1000b2ff2d80a0001800bfffffffd1302d9080000c00ae8c0f00cf1100690e00da010f3c2d100000e0e6ee8d8000cf8d2d20c0012178ed010400e0112d28e001a69e070c00000000040052ac10000f8e21784f00a000f1a50000b0df0800b1df1000b2df1800bfdf0800e0032000bd27",
+      "target_hex": "e0ffbd27ffff0f240000b0ff0800b1ff1000b2ff2d80a0001800bfffffffd1302d9080000c00ae8c0f00cf1100690e00da010f3c2d100000e0e6ee8d8000cf8d2d20c0012178ed010400e0112d28e001a69e070c00000000040052ac10000f8e21784f00a000f1a50000b0df0800b1df1000b2df1800bfdf0800e0032000bd27"
+    }
+  ]
+}

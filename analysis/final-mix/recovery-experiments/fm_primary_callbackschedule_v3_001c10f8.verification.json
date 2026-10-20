@@ -1,0 +1,18 @@
+{
+  "source_sha256": "2af821a9240e12a21582df80b4d5c8dae9f1cbab24f718236a92527f16e149d2",
+  "source": "analysis/final-mix/recovery-experiments/fm_primary_callbackschedule_v3_001c10f8.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "001c10f8",
+      "symbol": "_Z13func_001c10f8j",
+      "compiled_size": 52,
+      "target_size": 52,
+      "ghidra_body_size": 52,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd27d5010f3c0000bfff3200083c0895e58d98080825400007240400a68c92f40b0c0800a5240000bfdf0800e0031000bd27",
+      "target_hex": "f0ffbd27d5010f3c0000bfff3200083c0895e58d98080825400007240400a68c92f40b0c0800a5240000bfdf0800e0031000bd27"
+    }
+  ]
+}

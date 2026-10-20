@@ -1,0 +1,23 @@
+002924d0: compiled 64 bytes, target 76 bytes, exact=False
+Differing words: 14. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   002924d0: 27bdfff0  addiu	sp,sp,-16                                  | 002924d0: 27bdfff0  addiu	sp,sp,-16
+!! 002924d4: ffb00000  sd	s0,0(sp)                                      | 002924d4: 24822b3c  addiu	v0,a0,11068
+!! 002924d8: ffbf0008  sd	ra,8(sp)                                      | 002924d8: ffb00000  sd	s0,0(sp)
+!! 002924dc: 0080802d  move	s0,a0                                       | 002924dc: 00a0202d  move	a0,a1
+!! 002924e0: 00a0202d  move	a0,a1                                       | 002924e0: ffbf0008  sd	ra,8(sp)
+!! 002924e4: 10a0000b  beqz	a1,0x292514                                 | 002924e4: 10a00005  beqz	a1,2924fc <func_002924d0+0x2c>
+!! 002924e8: 26022b3c  addiu	v0,s0,11068                                | 002924e8: 0040802d  move	s0,v0
+   002924ec: 0c06a032  jal	0x1a80c8                                     | 002924ec: 0c06a032  jal	1a80c8 <func_001a80c8>
+   002924f0: 00000000  nop                                              | 002924f0: 00000000  nop
+   002924f4: 0c06a064  jal	0x1a8190                                     | 002924f4: 0c06a064  jal	1a8190 <func_001a8190>
+   002924f8: 0040202d  move	a0,v0                                       | 002924f8: 0040202d  move	a0,v0
+!! 002924fc: 26042b3c  addiu	a0,s0,11068                                | 002924fc: 0202100a  movz	v0,s0,v0
+!! 00292500: dfb00000  ld	s0,0(sp)                                      | 00292500: dfbf0008  ld	ra,8(sp)
+!! 00292504: 0082100a  movz	v0,a0,v0                                    | 00292504: dfb00000  ld	s0,0(sp)
+!! 00292508: dfbf0008  ld	ra,8(sp)                                      | 00292508: 03e00008  jr	ra
+!! 0029250c: 03e00008  jr	ra                                            | 0029250c: 27bd0010  addiu	sp,sp,16
+!! 00292510: 27bd0010  addiu	sp,sp,16                                   | 
+!! 00292514: 1000fffa  b	0x292500                                       | 
+!! 00292518: 0040202d  move	a0,v0                                       | 

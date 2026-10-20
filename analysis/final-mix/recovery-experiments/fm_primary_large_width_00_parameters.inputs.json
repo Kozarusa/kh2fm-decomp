@@ -1,0 +1,28 @@
+{
+  "prior_source": "analysis/final-mix/recovery-experiments/fm_primary_large_00.cpp",
+  "prior_source_sha256": "d29c2901602a7047614ccc1ebaca3dd2a4748cb57602704cdcf7da76cfcb9541",
+  "prior_proof_sha256": "97729d67c6fc7cdd5b1b3aebe5c51ff1495f2565b45fe22d344bb0cce1d882d8",
+  "source_sha256": "7a90893573a026cb7682b030ae76888aac620e0496a566ddd399e19e0bbdc179",
+  "profile": "parameters",
+  "addresses": [
+    "00120a20",
+    "00132850",
+    "0014bb30",
+    "00154558",
+    "00154f30",
+    "00156130",
+    "001565c0",
+    "00156e48",
+    "00157c88",
+    "001620a8",
+    "001ab890",
+    "002298a8",
+    "0022c1f8",
+    "0023bc58",
+    "002b4070",
+    "00303ff8"
+  ],
+  "limitations": [
+    "Width changes are isolated proposals, not established types; complete original bytes decide acceptance."
+  ]
+}

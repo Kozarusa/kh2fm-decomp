@@ -1,0 +1,26 @@
+[
+  {
+    "address": "0014dca8",
+    "bytes": 96,
+    "source": "Codex\\analysis\\final-mix\\recovery-experiments\\queue-run-20261009\\recovery-c\\recovery_c_0014dca8_3a5a5827_v1.cpp",
+    "source_sha256": "674f4712f08daa15a1afd1e53fa33cddc3aefbb33671dd50a0ff0095709e7551",
+    "proof": "Codex\\analysis\\final-mix\\recovery-experiments\\queue-run-20261009\\recovery-c\\recovery_c_0014dca8_3a5a5827_v1.verification.json",
+    "proof_sha256": "e7e57822bb46bf56c1087706ba05ce414e8014e315a6ae796f50bb5c9f09de4f"
+  },
+  {
+    "address": "00143348",
+    "bytes": 76,
+    "source": "Codex\\analysis\\final-mix\\recovery-experiments\\queue-run-20261009\\recovery-c\\recovery_c_00143348_322f54ce_v13.cpp",
+    "source_sha256": "7babf0910bd2968a293408399d22f61e91fdd79289a3f3014a9e9716edfebcaf",
+    "proof": "Codex\\analysis\\final-mix\\recovery-experiments\\queue-run-20261009\\recovery-c\\recovery_c_00143348_322f54ce_v13.verification.json",
+    "proof_sha256": "4d8d92b19c77dcbefea81e9400ab8d4da69027be680b03938a725317bc4d51d8"
+  },
+  {
+    "address": "0019da20",
+    "bytes": 72,
+    "source": "Codex\\analysis\\final-mix\\recovery-experiments\\queue-run-20261009\\recovery-c\\recovery_c_0019da20_ef594fc9_v3.cpp",
+    "source_sha256": "e6dd8088ff8df0433dd2dc1bda00d34f41acacad4fe2b08a0e027ad8d99d6781",
+    "proof": "Codex\\analysis\\final-mix\\recovery-experiments\\queue-run-20261009\\recovery-c\\recovery_c_0019da20_ef594fc9_v3.verification.json",
+    "proof_sha256": "e61cd081a5107a9f6a826fff8058c220f8a035983f5afa6ecb5340ae54f5b58b"
+  }
+]

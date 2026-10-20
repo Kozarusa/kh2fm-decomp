@@ -1,0 +1,5 @@
+# Next batch preparation
+
+001abf00 has a complete 52-byte prior proposal. Only constant-one setup and zero-result setup exchange positions. The original forms p+4 in register 14 before saving register 31, then materializes one in register 15, then zero in register 2, then loads *p. Proposed experiment: constrain the constant-one lifetime before result initialization, with typed helper declaration and optional fixed pointer/constant registers. Preserve complete branch and call delay slots.
+
+001c2c98 has a complete 76-byte prior proposal. The final vtable-address store and flags store exchange positions. All earlier instructions, including the early register-31 restore, match. Proposed experiment: memory barrier between the final stores, or volatile visibility of the flags store. A barrier after all stores would wrongly delay the already-correct return-address restore. Prior proofs and live layout were inspected. Both leases were released without probes at primary's second integration pause.

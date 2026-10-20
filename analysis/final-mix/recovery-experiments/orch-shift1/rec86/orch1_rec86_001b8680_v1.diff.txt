@@ -1,0 +1,27 @@
+001b8680: compiled 92 bytes, target 92 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001b8680: 27bdfff0  addiu	sp,sp,-16                                  | 001b8680: 27bdfff0  addiu	sp,sp,-16
+   001b8684: 3c0d01d5  lui	t5,0x1d5                                     | 001b8684: 3c0d01d5  lui	t5,0x1d5
+   001b8688: ffbf0008  sd	ra,8(sp)                                      | 001b8688: ffbf0008  sd	ra,8(sp)
+   001b868c: 25ad8cc8  addiu	t5,t5,-29496   ; = D_01d48cc8              | 001b868c: 25ad8cc8  addiu	t5,t5,-29496   ; = D_01d48cc8
+   001b8690: ffb00000  sd	s0,0(sp)                                      | 001b8690: ffb00000  sd	s0,0(sp)
+   001b8694: 00a0302d  move	a2,a1                                       | 001b8694: 00a0302d  move	a2,a1
+   001b8698: 0080282d  move	a1,a0                                       | 001b8698: 0080282d  move	a1,a0
+   001b869c: 8dae00c0  lw	t6,192(t5)                                    | 001b869c: 8dae00c0  lw	t6,192(t5)
+   001b86a0: 25ceffff  addiu	t6,t6,-1                                   | 001b86a0: 25ceffff  addiu	t6,t6,-1
+   001b86a4: 000e7880  sll	t7,t6,0x2                                    | 001b86a4: 000e7880  sll	t7,t6,0x2
+   001b86a8: adae00c0  sw	t6,192(t5)                                    | 001b86a8: adae00c0  sw	t6,192(t5)
+   001b86ac: 01ed7821  addu	t7,t7,t5                                    | 001b86ac: 01ed7821  addu	t7,t7,t5
+   001b86b0: 8df000a0  lw	s0,160(t7)                                    | 001b86b0: 8df000a0  lw	s0,160(t7)
+   001b86b4: 240e0014  li	t6,20                                         | 001b86b4: 240e0014  li	t6,20
+   001b86b8: 020e8018  mult	s0,s0,t6                                    | 001b86b8: 020e8018  mult	s0,s0,t6
+   001b86bc: 020d8021  addu	s0,s0,t5                                    | 001b86bc: 020d8021  addu	s0,s0,t5
+   001b86c0: 0c06e114  jal	0x1b8450                                     | 001b86c0: 0c06e114  jal	1b8450 <func_001b8450>
+   001b86c4: 0200202d  move	a0,s0                                       | 001b86c4: 0200202d  move	a0,s0
+   001b86c8: 0200102d  move	v0,s0                                       | 001b86c8: 0200102d  move	v0,s0
+   001b86cc: dfbf0008  ld	ra,8(sp)                                      | 001b86cc: dfbf0008  ld	ra,8(sp)
+   001b86d0: dfb00000  ld	s0,0(sp)                                      | 001b86d0: dfb00000  ld	s0,0(sp)
+   001b86d4: 03e00008  jr	ra                                            | 001b86d4: 03e00008  jr	ra
+   001b86d8: 27bd0010  addiu	sp,sp,16                                   | 001b86d8: 27bd0010  addiu	sp,sp,16

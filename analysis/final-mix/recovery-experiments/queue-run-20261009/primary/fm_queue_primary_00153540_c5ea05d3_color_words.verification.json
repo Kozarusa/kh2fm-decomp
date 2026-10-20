@@ -1,0 +1,18 @@
+{
+  "source_sha256": "fd334a5ab0f4621a8a9941aa653cecc4b2e8bb145a3ec499ba0da58b6e5c09c1",
+  "source": "analysis/final-mix/recovery-experiments/queue-run-20261009/primary/fm_queue_primary_00153540_c5ea05d3_color_words.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "00153540",
+      "symbol": "_Z13func_00153540P10FloatColorjjjj",
+      "compiled_size": 112,
+      "target_size": 112,
+      "ghidra_body_size": 112,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "ff00a530ff00c630ff00e73000008544ff000831000886440010874437000f3c0018884450b2ef252000804660088046a0108046e0188046000080e4040081e4080082e40c0083e40000e0c5000081d8000008440010a848bc03624abf03004a5c08e04b000081f80800e00300000000",
+      "target_hex": "ff00a530ff00c63000008544ff00e730ff000831000886442000804637000f3c0010874450b2ef250018884460088046a0108046e0188046000080e4040081e4080082e40c0083e40000e0c5000081d8000008440010a848bc03624abf03004a5c08e04b000081f80800e00300000000"
+    }
+  ]
+}

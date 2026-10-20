@@ -1,0 +1,18 @@
+00241320: compiled 56 bytes, target 56 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00241320: 27bdfff0  addiu	sp,sp,-16                                  | 00241320: 27bdfff0  addiu	sp,sp,-16
+   00241324: 3c0f0036  lui	t7,0x36                                      | 00241324: 3c0f0036  lui	t7,0x36
+   00241328: ffbf0000  sd	ra,0(sp)                                      | 00241328: ffbf0000  sd	ra,0(sp)
+   0024132c: 240e0028  li	t6,40                                         | 0024132c: 240e0028  li	t6,40
+   00241330: 0000282d  move	a1,zero                                     | 00241330: 0000282d  move	a1,zero
+   00241334: 24060028  li	a2,40                                         | 00241334: 24060028  li	a2,40
+   00241338: 8de4ec98  lw	a0,-4968(t7)   ; = D_0035ec98                 | 00241338: 8de4ec98  lw	a0,-4968(t7)   ; = D_0035ec98
+   0024133c: dfbf0000  ld	ra,0(sp)                                      | 0024133c: dfbf0000  ld	ra,0(sp)
+   00241340: 8c8f0004  lw	t7,4(a0)                                      | 00241340: 8c8f0004  lw	t7,4(a0)
+   00241344: 01ee7818  mult	t7,t7,t6                                    | 00241344: 01ee7818  mult	t7,t7,t6
+   00241348: 008f2021  addu	a0,a0,t7                                    | 00241348: 008f2021  addu	a0,a0,t7
+   0024134c: 24840008  addiu	a0,a0,8                                    | 0024134c: 24840008  addiu	a0,a0,8
+   00241350: 080bf786  j	0x2fde18                                       | 00241350: 080bf786  j	2fde18 <func_002fde18>
+   00241354: 27bd0010  addiu	sp,sp,16                                   | 00241354: 27bd0010  addiu	sp,sp,16

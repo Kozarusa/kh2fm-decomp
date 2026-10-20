@@ -1,0 +1,34 @@
+recovery-experiments/fm_primary_resume_01/probe.cpp: In function `void 
+   func_00288d80(long long unsigned int, long long unsigned int, long long 
+   unsigned int, long long unsigned int, long long unsigned int, long long 
+   unsigned int, long long unsigned int, long long unsigned int)':
+recovery-experiments/fm_primary_resume_01/probe.cpp:367: warning: cast to 
+   pointer from integer of different size
+recovery-experiments/fm_primary_resume_01/probe.cpp:368: warning: cast to 
+   pointer from integer of different size
+recovery-experiments/fm_primary_resume_01/probe.cpp: In function `void 
+   func_002f3918(long long unsigned int, long long unsigned int)':
+recovery-experiments/fm_primary_resume_01/probe.cpp:904: warning: cast to 
+   pointer from integer of different size
+recovery-experiments/fm_primary_resume_01/probe.cpp: In function `void 
+   func_002f3980(long long unsigned int, long long unsigned int, unsigned 
+   int)':
+recovery-experiments/fm_primary_resume_01/probe.cpp:921: warning: cast to 
+   pointer from integer of different size
+recovery-experiments/fm_primary_resume_01/probe.cpp: In function `void 
+   func_002f39f8(long long unsigned int, long long unsigned int, unsigned 
+   int)':
+recovery-experiments/fm_primary_resume_01/probe.cpp:938: warning: cast to 
+   pointer from integer of different size
+recovery-experiments/fm_primary_resume_01/probe.cpp: In function `void 
+   func_002f3ab8(long long unsigned int, long long unsigned int, unsigned 
+   int)':
+recovery-experiments/fm_primary_resume_01/probe.cpp:964: warning: cast to 
+   pointer from integer of different size
+recovery-experiments/fm_primary_resume_01/probe.cpp: In function `void 
+   func_002f3b38(long long unsigned int, long long unsigned int, unsigned 
+   int)':
+recovery-experiments/fm_primary_resume_01/probe.cpp:981: warning: cast to 
+   pointer from integer of different size
+Exact probe matches: 7/56
+Detailed proof: analysis/final-mix/recovery-experiments/fm_primary_resume_01.verification.json

@@ -1,0 +1,19 @@
+001702e0: compiled 56 bytes, target 60 bytes, exact=False
+Differing words: 11. First difference at instruction 0 (0-based).
+
+ORIGINAL                                                                | COMPILED
+!! 001702e0: 0000702d  move	t6,zero                                     | 001702e0: 0000782d  move	t7,zero
+   001702e4: 3c0d0035  lui	t5,0x35                                      | 001702e4: 3c0d0035  lui	t5,0x35
+!! 001702e8: 55c00002  bnezl	t6,0x1702f4                                | 001702e8: 11e00002  beqz	t7,1702f4 <func_001702e0+0x14>
+!! 001702ec: 8dc2003c  lw	v0,60(t6)                                     | 001702ec: 8daedca0  lw	t6,-9056(t5)   ; = D_0034dca0
+!! 001702f0: 8da2dca0  lw	v0,-9056(t5)   ; = D_0034dca0                 | 001702f0: 8dee003c  lw	t6,60(t7)
+!! 001702f4: 14400004  bnez	v0,0x170308                                 | 001702f4: 55c00004  bnezl	t6,170308 <func_001702e0+0x28>
+!! 001702f8: 0040702d  move	t6,v0                                       | 001702f8: 8dcf0030  lw	t7,48(t6)
+   001702fc: 0000102d  move	v0,zero                                     | 001702fc: 0000102d  move	v0,zero
+   00170300: 03e00008  jr	ra                                            | 00170300: 03e00008  jr	ra
+   00170304: 00000000  nop                                              | 00170304: 00000000  nop
+!! 00170308: 8c4f0030  lw	t7,48(v0)                                     | 00170308: 11e4fffd  beq	t7,a0,170300 <func_001702e0+0x20>
+!! 0017030c: 11e4fffc  beq	t7,a0,0x170300                               | 0017030c: 01c0102d  move	v0,t6
+!! 00170310: 00000000  nop                                              | 00170310: 1000fff5  b	1702e8 <func_001702e0+0x8>
+!! 00170314: 1000fff4  b	0x1702e8                                       | 00170314: 01c0782d  move	t7,t6
+!! 00170318: 00000000  nop                                              | 

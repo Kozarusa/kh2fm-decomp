@@ -1,0 +1,120 @@
+{
+  "worker_id": "worker-b",
+  "round": 3,
+  "role": "cooperating worker, second isolated recovery batch (small call-free leaf functions)",
+  "written": "after worker-b round-2 closed at 4/6 exact",
+  "assignment_source": "worker-b round-2 brief: after the round-2 batch, claim further unclaimed unregistered targets and continue",
+  "chosen_addresses": [
+    "002f8870",
+    "00152598",
+    "002d5c20",
+    "00308da0",
+    "0028af90",
+    "0028ac98",
+    "001c8a90",
+    "00100338"
+  ],
+  "target_selection": "Small (20-32 byte) leaf functions that are unregistered (absent from analysis/final-mix/native-build/compiler-range-verification.json) but carry verified Ghidra pseudocode in analysis/final-mix/native-pseudocode/main.jsonl. 5,930 such unclaimed candidates exist; this batch takes the eight smallest call-free ones so the remaining budget is spent on ranges that are actually reachable.",
+  "reserved_by_others": {
+    "primary": [
+      "00132850", "00154558", "001565c0", "0016a158", "0017c0a0", "0018db38",
+      "0019e6e8", "001c9df8", "001d6ec8", "00281f90", "002bcbf0", "002c1950",
+      "002db610", "002eb778", "002eb9d8", "002ec9d0", "00303c48", "00307f68"
+    ],
+    "worker_b_round_2": [
+      "002bc2e8", "0017ee68", "00310620", "00180c88", "002f3bb8", "0019c0f8"
+    ],
+    "worker_b_deferred": ["00104210", "001c7ab8", "001d6850", "00241f20"]
+  },
+  "evidence": {
+    "targets_file": "analysis/final-mix/worker-coordination/worker-b/round-3/batch1.targets.json",
+    "disassembly": "analysis/final-mix/worker-coordination/worker-b/round-3/r3_orig_disasm.txt",
+    "dump_helper": "analysis/final-mix/worker-coordination/worker-b/round-3/r3_dump_orig.py",
+    "original_elf_sha256": "d869ce4b8edd61cb978c4ff9ede595fe4d7d7b21cbb96a145275217120d8bc87",
+    "note": "All eight original_range_sha256 values were recomputed from tools/kh2-reference/SLPM_666.75 and matched."
+  },
+  "shared_resource_use": {
+    "wsl_stage": "/root/kh2fm-build",
+    "usage": "isolated probe_fm_source.py scratch directories named fm_worker_b_round3_* only",
+    "not_done": [
+      "no full build",
+      "no staged input synchronisation",
+      "no docker restart",
+      "no Ghidra project mutation",
+      "no edit to functions.tsv, layout.tsv, src/anon, manifests or HANDOFF.md"
+    ]
+  },
+  "coordination_note": "No competing claim file exists in analysis/final-mix/worker-coordination/. The primary retains shared registration, stage synchronisation, manifests and Ghidra maintenance.",
+  "round3_result": {
+    "closed": "after ~60 isolated probes named fm_worker_b_round3_* / fm_worker_b_round2_*",
+    "exact": [
+      {
+        "address": "0028af90",
+        "size": 20,
+        "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round3_0028af90_solved.cpp",
+        "proof": "analysis/final-mix/recovery-experiments/fm_worker_b_round3_0028af90_solved.verification.json",
+        "source_sha256": "fa6c7659b4eebc0bbbe394374825e2b1581ea817305c5f122f54659e2d08d079",
+        "mechanism": "hold the value in a u32 so the u16 truncation happens at the sh, not before the bgez"
+      },
+      {
+        "address": "002d5c20",
+        "size": 28,
+        "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round3_002d5c20_solved.cpp",
+        "proof": "analysis/final-mix/recovery-experiments/fm_worker_b_round3_002d5c20_solved.verification.json",
+        "source_sha256": "bdc41fa90292fe766490c05875ba36e3594527964d37724f906d5cec1c8bb675",
+        "mechanism": "bind 0.0f to a float local to force mtc1 zero,$f0 + swc1, and write the four stores in ascending source order 0,1,2,3"
+      },
+      {
+        "address": "002f8870",
+        "size": 24,
+        "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round3_002f8870_solved.cpp",
+        "proof": "analysis/final-mix/recovery-experiments/fm_worker_b_round3_002f8870_solved.verification.json",
+        "source_sha256": "7cf4e8f14f2a5899971a0d9ece26e02c21e45acac75308c05c15cf2376bf1b2a",
+        "mechanism": "__builtin_memcpy out, mask, __builtin_memcpy back into the same parameter so the load, and and store all reuse one register"
+      }
+    ],
+    "unresolved": [
+      {
+        "address": "0028ac98",
+        "size": 32,
+        "distance": "2 words",
+        "blocker": "register choice only: sll t6 vs sll v0 for the live-across-branch shift temp",
+        "best_source": "analysis/final-mix/recovery-experiments/fm_worker_b_round3_0028ac98_v05.cpp"
+      },
+      {
+        "address": "00152598",
+        "size": 28,
+        "distance": "4 words",
+        "blocker": "same class: target holds the computed address in t7 across the branch, compiled uses v0 / clobbers a1",
+        "best_source": "analysis/final-mix/recovery-experiments/fm_worker_b_round3_00152598_v01.cpp"
+      },
+      {
+        "address": "00308da0",
+        "size": 28,
+        "distance": "6 words",
+        "blocker": "mask constant expansion: pinned ee-g++ 3.2 li_imm always prefers single-instruction addiu, target uses lui+ori",
+        "best_source": "analysis/final-mix/recovery-experiments/fm_worker_b_round3_00308da0_v01.cpp"
+      },
+      {
+        "address": "001c8a90",
+        "size": 28,
+        "distance": "3 word positions",
+        "blocker": "absolute-symbol address materialisation: lui 0x1d4 emitted where target has lui 0x1d5, plus lui/sw pair ordering",
+        "best_source": "analysis/final-mix/recovery-experiments/fm_worker_b_round3_001c8a90_v03.cpp"
+      },
+      {
+        "address": "00100338",
+        "size": 20,
+        "distance": "1 word (jr ra vs j callee)",
+        "blocker": "frame with no body; the frame is produced by the call and the pinned -fno-exceptions build cannot reproduce the original cleanup stub",
+        "best_source": "analysis/final-mix/recovery-experiments/fm_worker_b_round3_00100338_v02.cpp",
+        "same_shape_also_at": ["001003b0", "00101d38"]
+      }
+    ],
+    "also_closed": [
+      "002f3bb8 (round 2) - basic-block placement, no new attempt",
+      "00310620 (round 2) - outgoing-argument-area hypothesis refuted by fm_worker_b_round2_00310620_v01..v06; all still frame 32"
+    ],
+    "report": "analysis/final-mix/worker-coordination/worker-b/round-3/REPORT.md"
+  }
+}

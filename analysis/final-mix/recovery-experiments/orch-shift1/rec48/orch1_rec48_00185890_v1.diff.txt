@@ -1,0 +1,35 @@
+00185890: compiled 116 bytes, target 124 bytes, exact=False
+Differing words: 21. First difference at instruction 4 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00185890: 27bdffe0  addiu	sp,sp,-32                                  | 00185890: 27bdffe0  addiu	sp,sp,-32
+   00185894: ffb00000  sd	s0,0(sp)                                      | 00185894: ffb00000  sd	s0,0(sp)
+   00185898: ffb10008  sd	s1,8(sp)                                      | 00185898: ffb10008  sd	s1,8(sp)
+   0018589c: ffbf0010  sd	ra,16(sp)                                     | 0018589c: ffbf0010  sd	ra,16(sp)
+!! 001858a0: 10800009  beqz	a0,0x1858c8                                 | 001858a0: 10800013  beqz	a0,1858f0 <func_00185890+0x60>
+   001858a4: 0000102d  move	v0,zero                                     | 001858a4: 0000102d  move	v0,zero
+!! 001858a8: 10a00007  beqz	a1,0x1858c8                                 | 001858a8: 10a00011  beqz	a1,1858f0 <func_00185890+0x60>
+   001858ac: 3c1101c6  lui	s1,0x1c6                                     | 001858ac: 3c1101c6  lui	s1,0x1c6
+   001858b0: 00048080  sll	s0,a0,0x2                                    | 001858b0: 00048080  sll	s0,a0,0x2
+   001858b4: 8e2f0888  lw	t7,2184(s1)   ; = D_01c60888                  | 001858b4: 8e2f0888  lw	t7,2184(s1)   ; = D_01c60888
+   001858b8: 020f7821  addu	t7,s0,t7                                    | 001858b8: 020f7821  addu	t7,s0,t7
+   001858bc: 8dee0000  lw	t6,0(t7)                                      | 001858bc: 8dee0000  lw	t6,0(t7)
+!! 001858c0: 15c00006  bnez	t6,0x1858dc                                 | 001858c0: 51c0000c  beqzl	t6,1858f4 <func_00185890+0x64>
+!! 001858c4: 00000000  nop                                              | 001858c4: dfb00000  ld	s0,0(sp)
+!! 001858c8: dfb00000  ld	s0,0(sp)                                      | 001858c8: 0c06a032  jal	1a80c8 <func_001a80c8>
+!! 001858cc: dfb10008  ld	s1,8(sp)                                      | 001858cc: 00a0202d  move	a0,a1
+!! 001858d0: dfbf0010  ld	ra,16(sp)                                     | 001858d0: 8e2c0888  lw	t4,2184(s1)   ; = D_01c60888
+!! 001858d4: 03e00008  jr	ra                                            | 001858d4: 944f0004  lhu	t7,4(v0)
+!! 001858d8: 27bd0020  addiu	sp,sp,32                                   | 001858d8: 020c7021  addu	t6,s0,t4
+!! 001858dc: 0c06a032  jal	0x1a80c8                                     | 001858dc: 8dcd0000  lw	t5,0(t6)
+!! 001858e0: 00a0202d  move	a0,a1                                       | 001858e0: 01ed7821  addu	t7,t7,t5
+!! 001858e4: 8e2c0888  lw	t4,2184(s1)                                   | 001858e4: 000f7880  sll	t7,t7,0x2
+!! 001858e8: 944d0004  lhu	t5,4(v0)                                     | 001858e8: 01ec7821  addu	t7,t7,t4
+!! 001858ec: 020c7021  addu	t6,s0,t4                                    | 001858ec: 8de20000  lw	v0,0(t7)
+!! 001858f0: 8dcf0000  lw	t7,0(t6)                                      | 001858f0: dfb00000  ld	s0,0(sp)
+!! 001858f4: 000d6880  sll	t5,t5,0x2                                    | 001858f4: dfb10008  ld	s1,8(sp)
+!! 001858f8: 000f7880  sll	t7,t7,0x2                                    | 001858f8: dfbf0010  ld	ra,16(sp)
+!! 001858fc: 018f6021  addu	t4,t4,t7                                    | 001858fc: 03e00008  jr	ra
+!! 00185900: 01ac6821  addu	t5,t5,t4                                    | 00185900: 27bd0020  addiu	sp,sp,32
+!! 00185904: 1000fff0  b	0x1858c8                                       | 
+!! 00185908: 8da20000  lw	v0,0(t5)                                      | 

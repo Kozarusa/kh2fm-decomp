@@ -1,0 +1,20 @@
+0018c528: compiled 60 bytes, target 64 bytes, exact=False
+Differing words: 7. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0018c528: 2c8f000e  sltiu	t7,a0,14                                   | 0018c528: 2c8f000e  sltiu	t7,a0,14
+!! 0018c52c: 11e0000c  beqz	t7,0x18c560                                 | 0018c52c: 11e0000b  beqz	t7,18c55c <func_0018c528+0x34>
+   0018c530: 0000102d  move	v0,zero                                     | 0018c530: 0000102d  move	v0,zero
+!! 0018c534: 3c0e0037  lui	t6,0x37                                      | 0018c534: 3c0e0000  lui	t6,0x0
+   0018c538: 00047880  sll	t7,a0,0x2                                    | 0018c538: 00047880  sll	t7,a0,0x2
+!! 0018c53c: 25cecbe4  addiu	t6,t6,-13340   ; = D_0036cbe4              | 0018c53c: 25ce0000  addiu	t6,t6,0   ; = D_00000000
+   0018c540: 01ee7821  addu	t7,t7,t6                                    | 0018c540: 01ee7821  addu	t7,t7,t6
+   0018c544: 8ded0000  lw	t5,0(t7)                                      | 0018c544: 8ded0000  lw	t5,0(t7)
+   0018c548: 01a00008  jr	t5                                            | 0018c548: 01a00008  jr	t5
+   0018c54c: 00000000  nop                                              | 0018c54c: 00000000  nop
+   0018c550: 03e00008  jr	ra                                            | 0018c550: 03e00008  jr	ra
+   0018c554: 2402011f  li	v0,287                                        | 0018c554: 2402011f  li	v0,287
+!! 0018c558: 03e00008  jr	ra                                            | 0018c558: 0000102d  move	v0,zero
+!! 0018c55c: 0000102d  move	v0,zero                                     | 0018c55c: 03e00008  jr	ra
+!! 0018c560: 03e00008  jr	ra                                            | 0018c560: 00000000  nop
+!! 0018c564: 00000000  nop                                              | 

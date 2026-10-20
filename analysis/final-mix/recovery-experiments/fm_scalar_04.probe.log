@@ -1,0 +1,11 @@
+Exact probe matches: 29/99
+Detailed proof: analysis/final-mix/recovery-experiments/fm_scalar_04.verification.json
+recovery-experiments/fm_scalar_04/probe.cpp: In function `bool 
+   func_001b84b8(long long unsigned int, unsigned int)':
+recovery-experiments/fm_scalar_04/probe.cpp:682: warning: cast to pointer from 
+   integer of different size
+recovery-experiments/fm_scalar_04/probe.cpp: In function `void 
+   func_001bc6a8(u16*, long long unsigned int, long long unsigned int, long 
+   long unsigned int, unsigned char)':
+recovery-experiments/fm_scalar_04/probe.cpp:904: warning: cast to pointer from 
+   integer of different size

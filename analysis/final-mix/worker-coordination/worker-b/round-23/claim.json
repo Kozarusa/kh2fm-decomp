@@ -1,0 +1,269 @@
+{
+  "round": 23,
+  "worker": "worker-b",
+  "ownership": "isolated recovery batch; worker B writes only its own claim/report/status files and isolated candidate sources under analysis/final-mix/recovery-experiments. Primary owns active sources, functions.tsv, layout.tsv, stage sync, full builds, manifests, receipts, Ghidra and HANDOFF.md.",
+  "selection": {
+    "picker": "round-23/pick_targets.py (derived from round-22's)",
+    "screening": "framed bodies (addiu sp,-N plus a stack word), integer-only, 20-120 B, registered but never claimed by worker B or primary",
+    "attempts_considered": "297 addresses harvested mechanically from every round-1..22 claim.json",
+    "new_exclusions": [
+      "frame-pointer-s8 (round 20: 19 members, unreachable from C)",
+      "movz-movn (round 21: GCC 3.2 will not if-convert a predicate)",
+      "lq-sq-quad (quad struct copy lands in a different temp)",
+      "store-run-reorder (round 22, NEW: three or more consecutive stores to the same base register. GCC 3.2 emits them in reverse offset order and ignores volatile. This removed ~150 candidates that would each have cost several variants)"
+    ],
+    "preference": "no-branch bodies first",
+    "duplicate_screening": "byte-identical families detected from the r23_dump_orig.py range hashes BEFORE writing sources"
+  },
+  "compiler_use": "No change to the shared stage, compiler flags or the reference executable. All compilation goes through Public/tools/kh2-audit/probe_fm_source.py on isolated candidate sources only.",
+  "original_elf_sha256": "d869ce4b8edd61cb978c4ff9ede595fe4d7d7b21cbb96a145275217120d8bc87",
+  "claimed_addresses": [
+    {
+      "address": "001003b0",
+      "size": 20
+    },
+    {
+      "address": "00101d38",
+      "size": 20
+    },
+    {
+      "address": "00271828",
+      "size": 72
+    },
+    {
+      "address": "002925c0",
+      "size": 72
+    },
+    {
+      "address": "00295228",
+      "size": 72
+    },
+    {
+      "address": "002be770",
+      "size": 72
+    },
+    {
+      "address": "002be7b8",
+      "size": 72
+    },
+    {
+      "address": "002ef708",
+      "size": 72
+    },
+    {
+      "address": "002f1808",
+      "size": 72
+    },
+    {
+      "address": "002f3a70",
+      "size": 72
+    },
+    {
+      "address": "00308018",
+      "size": 72
+    },
+    {
+      "address": "00310048",
+      "size": 72
+    },
+    {
+      "address": "0031cd90",
+      "size": 72
+    },
+    {
+      "address": "00322d70",
+      "size": 72
+    },
+    {
+      "address": "00325aa0",
+      "size": 72
+    },
+    {
+      "address": "001145b0",
+      "size": 76
+    },
+    {
+      "address": "00138140",
+      "size": 76
+    },
+    {
+      "address": "00143348",
+      "size": 76
+    },
+    {
+      "address": "0014a138",
+      "size": 76
+    },
+    {
+      "address": "00158450",
+      "size": 76
+    },
+    {
+      "address": "001584f8",
+      "size": 76
+    },
+    {
+      "address": "00160ac0",
+      "size": 76
+    }
+  ],
+  "verification_method": "r22_dump_orig.py re-reads the original ELF, checks the whole-file sha256, verifies each range sha256 and its start/size against /root/kh2fm-build/layout.tsv, and disassembles with the pinned ee-objdump in kh2-local/ps2-compiler:3.2-ee-040921-objdiff.",
+  "intake": "pending - r23_dump_orig.py",
+  "round23_result": {
+    "summary": "4 of 22 claimed ranges recovered byte-exact. Round 23 concentrated on a byte-regular vtable-setter family, which the round-17 recipe reproduces exactly once the symbol page bias is applied correctly.",
+    "exact": {
+      "002f1808": {
+        "status": "EXACT",
+        "variant": "v01",
+        "bytes": "72/72",
+        "source": "fm_worker_b_round23_002f1808_solved.cpp",
+        "source_sha256": "d477a8f88593d42d2b4eaf637c223e02e3570043e48cc1f4a2f8028bc4a048be",
+        "proof": "recovery-experiments/fm_worker_b_round23_002f1808_solved.verification.json",
+        "exact_match": true,
+        "boundary_agreement": true,
+        "mechanism": "uVar1=func_001708f8(DAT_00363c20,-1); DAT_01e3c0d0=uVar1; uVar1=func_00168b38(uVar1,2,0); DAT_00363c24=*(u32*)((u8*)uVar1+8);",
+        "note": "0x363c20/0x1e3c0d0/0x363c24"
+      },
+      "0031cd90": {
+        "status": "EXACT",
+        "variant": "v03",
+        "bytes": "72/72",
+        "source": "fm_worker_b_round23_0031cd90_solved.cpp",
+        "source_sha256": "26b63c5ffd7172ff2a3c97a6cdc0af45a4f43df36ff4ebe51eaf418e3a4c3754",
+        "proof": "recovery-experiments/fm_worker_b_round23_0031cd90_solved.verification.json",
+        "exact_match": true,
+        "boundary_agreement": true,
+        "mechanism": "vtable setter: *(u32*)param_1=&func_0035eb98; func_0023c098(param_1+48); func_002369f0(param_1+24); asm volatile(\"\":::\"memory\"); *(u32*)param_1=&func_00347f98;",
+        "note": "page-biased symbol 0x35eb98 for target lui 0x36/addiu -5224"
+      },
+      "00322d70": {
+        "status": "EXACT",
+        "variant": "v03",
+        "bytes": "72/72",
+        "source": "fm_worker_b_round23_00322d70_solved.cpp",
+        "source_sha256": "876a71d1c0bb9979ffb825c634fcdf433615178d5526c157febec31132f5698a",
+        "proof": "recovery-experiments/fm_worker_b_round23_00322d70_solved.verification.json",
+        "exact_match": true,
+        "boundary_agreement": true,
+        "mechanism": "byte-identical to 0031cd90",
+        "note": "page-biased symbol 0x35eb98"
+      },
+      "00325aa0": {
+        "status": "EXACT",
+        "variant": "v02",
+        "bytes": "72/72",
+        "source": "fm_worker_b_round23_00325aa0_solved.cpp",
+        "source_sha256": "1b266e10de324ab71075a515335f229f8b0856f1ac959566b861b9bd33a803e3",
+        "proof": "recovery-experiments/fm_worker_b_round23_00325aa0_solved.verification.json",
+        "exact_match": true,
+        "boundary_agreement": true,
+        "mechanism": "vtable setter with offsets +64/+40 and symbols 0x363880/0x3637e0",
+        "note": "both low halves < 0x8000 so no page bias needed"
+      }
+    },
+    "unresolved": {
+      "001003b0": {
+        "best_variant": "v01/v02",
+        "measured": "8/20",
+        "reason": "empty body: GCC elides the frame entirely for a function with no work; the inline-asm fallback is rejected by this assembler (`illegal operands sd $ra,0($sp)`)"
+      },
+      "00101d38": {
+        "best_variant": "v01/v02",
+        "measured": "8/20",
+        "reason": "byte-identical to 001003b0"
+      },
+      "00271828": {
+        "best_variant": "v01/v03",
+        "measured": "72/72",
+        "reason": "2 words: GCC strength-reduces the table index, swapping the sll/addu pair against the lw. v02 (address split) and v03 (<<2 form) both leave the same two words differing"
+      },
+      "002925c0": {
+        "best_variant": "v01",
+        "measured": "80/72",
+        "reason": "14 words; the callee argument count is wrong (5 guessed), the body is already too long"
+      },
+      "00295228": {
+        "best_variant": "v01",
+        "measured": "80/72",
+        "reason": "9 words; the frame is 32 not 16 and GCC widens further"
+      },
+      "002be770": {
+        "best_variant": "v01/v02/v03",
+        "measured": "68-76/72",
+        "reason": "one word short: the target needs `lui t6,0x4000`; a plain 0x4000 literal becomes addiu and the symbol form (u32)(long)&func_00400000 grows the body instead"
+      },
+      "002be7b8": {
+        "best_variant": "v01/v02/v03",
+        "measured": "68-76/72",
+        "reason": "byte-identical to 002be770"
+      },
+      "002ef708": {
+        "best_variant": "v01/v02/v03",
+        "measured": "72/72",
+        "reason": "4 words: the target materialises the two byte-store addresses in two separate registers (t7 and t6, each with its own lui); GCC reuses one. volatile, a memory barrier and named volatile pointers all leave it unchanged"
+      },
+      "002f3a70": {
+        "best_variant": "none",
+        "measured": "",
+        "reason": "no source written this round"
+      },
+      "00308018": {
+        "best_variant": "none",
+        "measured": "",
+        "reason": "no source written this round; frame is 144 bytes and arguments arrive shuffled"
+      },
+      "00310048": {
+        "best_variant": "none",
+        "measured": "",
+        "reason": "no source written this round"
+      },
+      "001145b0": {
+        "best_variant": "none",
+        "measured": "",
+        "reason": "no source written this round"
+      },
+      "00138140": {
+        "best_variant": "none",
+        "measured": "",
+        "reason": "no source written this round"
+      },
+      "00143348": {
+        "best_variant": "none",
+        "measured": "",
+        "reason": "no source written this round"
+      },
+      "0014a138": {
+        "best_variant": "none",
+        "measured": "",
+        "reason": "no source written this round"
+      },
+      "00158450": {
+        "best_variant": "none",
+        "measured": "",
+        "reason": "no source written this round"
+      },
+      "001584f8": {
+        "best_variant": "none",
+        "measured": "",
+        "reason": "no source written this round"
+      },
+      "00160ac0": {
+        "best_variant": "none",
+        "measured": "",
+        "reason": "no source written this round"
+      }
+    },
+    "compiler_level_findings": [
+      "EMPTY-BODY FRAME (2 members): a function whose body is empty gets no frame at all from GCC 3.2; the target still allocates and saves/restores ra. Not reachable in C, and the inline-asm fallback is rejected by this assembler.",
+      "EPILOGUE RESTORE PLACEMENT (3 members, SOLVED this round): the target restores ra between the second lui and the second addiu; GCC emits it after the store. A `asm volatile (\"\" ::: \"memory\")` immediately before the final store pins it in the right slot."
+    ],
+    "corrected_finding": {
+      "title": "The page-bias rule is TWO-CASE, not superseded",
+      "detail": "Earlier rounds recorded that the round-15 page bias was an artifact and that the rule is simply truncating (hi == V >> 16). That over-generalised. The high half depends on HOW the symbol is reached: reached by lw/sw it truncates (hi == V >> 16), which is what round 16 001d6538 measured; used as an ADDRESS materialised with lui+addiu the assembler %hi is conservative and rounds (hi == (V + 0x8000) >> 16), which is what round 15 measured. 0031cd90 proved it: symbol 0x36eb98 has low half 0xeb98 >= 0x8000 so the assembler emitted lui 0x37; declaring 0x35eb98 yields the target lui 0x36 + addiu -5224. 00325aa0 needed no adjustment because both its low halves are below 0x8000."
+    },
+    "process_notes": [
+      "Three of this round's misses were my own errors, not compiler behaviour: param_1[0x162] on a u32 parameter (compile error), a v02 \"fix\" that regressed v01, and the single truncating page rule above.",
+      "00271828 sits 2 words from exact across three differently-shaped attempts and is recorded rather than chased further."
+    ]
+  }
+}

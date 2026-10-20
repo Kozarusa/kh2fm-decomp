@@ -1,0 +1,71 @@
+{
+  "rows": [
+    {
+      "address": "002d96d8",
+      "bytes": 84,
+      "attempts": 0,
+      "helper": "002d0ea8",
+      "vtable": "003625e0",
+      "words": [
+        "27bdfff0",
+        "ffb00000",
+        "ffbf0008",
+        "0c0b43aa",
+        "0080802d",
+        "3c0f0036",
+        "ae000c98",
+        "240e0001",
+        "ae000bf0",
+        "25ef25e0",
+        "a20e0c04",
+        "ae0f0000",
+        "ae000bf4",
+        "a20e0bfc",
+        "ae000c00",
+        "ae000c90",
+        "ae000c94",
+        "dfbf0008",
+        "dfb00000",
+        "03e00008",
+        "27bd0010"
+      ],
+      "target_sha256": "79be14757256d728eb47d63f61969eb20b9f1a4ce329840fb15fd28943cd2f26"
+    },
+    {
+      "address": "002d9730",
+      "bytes": 84,
+      "attempts": 0,
+      "helper": "002d0ea8",
+      "vtable": "003625e0",
+      "words": [
+        "27bdfff0",
+        "ffb00000",
+        "ffbf0008",
+        "0c0b43aa",
+        "0080802d",
+        "3c0f0036",
+        "ae000c98",
+        "240e0001",
+        "ae000bf0",
+        "25ef25e0",
+        "a20e0c04",
+        "ae0f0000",
+        "ae000bf4",
+        "a20e0bfc",
+        "ae000c00",
+        "ae000c90",
+        "ae000c94",
+        "dfbf0008",
+        "dfb00000",
+        "03e00008",
+        "27bd0010"
+      ],
+      "target_sha256": "79be14757256d728eb47d63f61969eb20b9f1a4ce329840fb15fd28943cd2f26"
+    }
+  ],
+  "exports": {
+    "002d0ea8": "\r\nvoid FUN_002d0ea8(undefined8 param_1,undefined8 param_2,undefined8 param_3,undefined8 param_4)\r\n\r\n{\r\n  FUN_00177dc8(param_1,param_2,0xb,param_3,param_4);\r\n  DAT_00362050 = (undefined4 *)param_1;\r\n  *DAT_00362050 = &PTR_FUN_00362060;\r\n  FUN_00182f28(param_1);\r\n  return;\r\n}\r\n\r\n",
+    "002d96d8": "\r\nvoid FUN_002d96d8(undefined4 *param_1)\r\n\r\n{\r\n  FUN_002d0ea8();\r\n  param_1[0x326] = 0;\r\n  param_1[0x2fc] = 0;\r\n  *(undefined1 *)(param_1 + 0x301) = 1;\r\n  *param_1 = &PTR_DAT_003625e0;\r\n  param_1[0x2fd] = 0;\r\n  *(undefined1 *)(param_1 + 0x2ff) = 1;\r\n  param_1[0x300] = 0;\r\n  param_1[0x324] = 0;\r\n  param_1[0x325] = 0;\r\n  return;\r\n}\r\n\r\n",
+    "002d9730": "\r\nvoid FUN_002d9730(undefined4 *param_1)\r\n\r\n{\r\n  FUN_002d0ea8();\r\n  param_1[0x326] = 0;\r\n  param_1[0x2fc] = 0;\r\n  *(undefined1 *)(param_1 + 0x301) = 1;\r\n  *param_1 = &PTR_DAT_003625e0;\r\n  param_1[0x2fd] = 0;\r\n  *(undefined1 *)(param_1 + 0x2ff) = 1;\r\n  param_1[0x300] = 0;\r\n  param_1[0x324] = 0;\r\n  param_1[0x325] = 0;\r\n  return;\r\n}\r\n\r\n"
+  }
+}

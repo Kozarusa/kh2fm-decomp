@@ -1,0 +1,15 @@
+{
+  "probe_source": "analysis/final-mix/recovery-experiments/fm_constructor_retry_00.cpp",
+  "probe_source_sha256": "1fb25e8d04e20b2b1d931b81828164c46226e68017f158987f74b9516753304d",
+  "probe_proof_sha256": "88b1023befa7dc600316cad909e9202903e81eac35dd434f397a918a20ad7e4e",
+  "curated_source": "analysis/final-mix/recovery-experiments/fm_constructor_recovered.cpp",
+  "curated_source_sha256": "5cb89b2ce47772ab9584a163786baf4a710b4975d708eb1ffca83d718ee5770b",
+  "selected_addresses": [
+    "001060b8",
+    "001060e0"
+  ],
+  "exclusion_receipt": null,
+  "limitations": [
+    "Curated source still requires a new probe, registration and full build."
+  ]
+}

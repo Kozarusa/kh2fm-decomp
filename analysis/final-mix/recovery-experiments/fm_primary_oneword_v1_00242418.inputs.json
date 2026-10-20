@@ -1,0 +1,19 @@
+{
+  "address": "00242418",
+  "source_sha256": "0f723d11587e70626cbc569a8a175d9ca6e42c0f43886f31a4d47ae303f5a65d",
+  "prior_source": "analysis/final-mix/recovery-experiments/fm_global_probes_v3_03_0.cpp",
+  "prior_source_sha256": "d9fadee8852b17d0a13167c9ae0fec19c5e92ee91ef08a9124e5dd1438fb84d1",
+  "prior_proof": "analysis/final-mix/recovery-experiments/fm_global_probes_v3_03_0.verification.json",
+  "prior_proof_sha256": "defc7549027a3b8ac7e4afdde250730dfeab8c04c23a746e511ea29659bdaaa4",
+  "changes": [
+    [
+      "D_0035ecc4 >> 0x18",
+      "(u32)D_0035ecc4 >> 0x18"
+    ]
+  ],
+  "target_size": 92,
+  "original_range_sha256": "e04e6bcc3f52c24a24663c835f8930bb57697aa062893c781c9febd0c638e479",
+  "limitations": [
+    "Instruction transport proposal; source types and callee semantics remain provisional."
+  ]
+}

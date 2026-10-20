@@ -1,0 +1,31 @@
+001c7148: compiled 104 bytes, target 108 bytes, exact=False
+Differing words: 25. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001c7148: 27bdfff0  addiu	sp,sp,-16                                  | 001c7148: 27bdfff0  addiu	sp,sp,-16
+!! 001c714c: 3c0f01d5  lui	t7,0x1d5                                     | 001c714c: 3c0e01d5  lui	t6,0x1d5
+!! 001c7150: ffbf0000  sd	ra,0(sp)                                      | 001c7150: 25cd98d0  addiu	t5,t6,-26416   ; = D_01d498d0
+!! 001c7154: 25ee98d0  addiu	t6,t7,-26416   ; = D_01d498d0              | 001c7154: ffbf0000  sd	ra,0(sp)
+!! 001c7158: 508e0004  beql	a0,t6,0x1c716c                              | 001c7158: 0080602d  move	t4,a0
+!! 001c715c: 8c8f004c  lw	t7,76(a0)                                     | 001c715c: 248b0030  addiu	t3,a0,48
+!! 001c7160: 78880000  lq	t0,0(a0)                                      | 001c7160: 01a0202d  move	a0,t5
+!! 001c7164: 7dc80000  sq	t0,0(t6)                                      | 001c7164: 118d0003  beq	t4,t5,1c7174 <func_001c7148+0x2c>
+!! 001c7168: 8c8f004c  lw	t7,76(a0)                                     | 001c7168: 25aa0010  addiu	t2,t5,16
+!! 001c716c: 3c0c0037  lui	t4,0x37                                      | 001c716c: 798f0000  lq	t7,0(t4)
+!! 001c7170: c5c10004  lwc1	$f1,4(t6)                                   | 001c7170: 7dcf98d0  sq	t7,-26416(t6)   ; = D_01d498d0
+!! 001c7174: 258cdf90  addiu	t4,t4,-8304   ; = D_0036df90               | 001c7174: 8d8e004c  lw	t6,76(t4)
+!! 001c7178: c5e00004  lwc1	$f0,4(t7)                                   | 001c7178: 3c0f0037  lui	t7,0x37
+!! 001c717c: 24840030  addiu	a0,a0,48                                   | 001c717c: c5a10004  lwc1	$f1,4(t5)
+!! 001c7180: c5820000  lwc1	$f2,0(t4)                                   | 001c7180: c5c00004  lwc1	$f0,4(t6)
+!! 001c7184: 25cd0010  addiu	t5,t6,16                                   | 001c7184: c5e2df90  lwc1	$f2,-8304(t7)   ; = D_0036df90
+   001c7188: 46000840  add.s	$f1,$f1,$f0                                | 001c7188: 46000840  add.s	$f1,$f1,$f0
+!! 001c718c: e5c2000c  swc1	$f2,12(t6)                                  | 001c718c: e5a2000c  swc1	$f2,12(t5)
+!! 001c7190: 108d0003  beq	a0,t5,0x1c71a0                               | 001c7190: 116a0003  beq	t3,t2,1c71a0 <func_001c7148+0x58>
+!! 001c7194: e5c10004  swc1	$f1,4(t6)                                   | 001c7194: e5a10004  swc1	$f1,4(t5)
+!! 001c7198: 78880000  lq	t0,0(a0)                                      | 001c7198: 798f0030  lq	t7,48(t4)
+!! 001c719c: 7da80000  sq	t0,0(t5)                                      | 001c719c: 7daf0010  sq	t7,16(t5)
+!! 001c71a0: e5c2001c  swc1	$f2,28(t6)                                  | 001c71a0: e5a2001c  swc1	$f2,28(t5)
+!! 001c71a4: 01c0202d  move	a0,t6                                       | 001c71a4: dfbf0000  ld	ra,0(sp)
+!! 001c71a8: dfbf0000  ld	ra,0(sp)                                      | 001c71a8: 08050e4a  j	143928 <func_00143928>
+!! 001c71ac: 08050e4a  j	0x143928                                       | 001c71ac: 27bd0010  addiu	sp,sp,16
+!! 001c71b0: 27bd0010  addiu	sp,sp,16                                   | 

@@ -1,0 +1,31 @@
+0029dda8: compiled 108 bytes, target 108 bytes, exact=False
+Differing words: 4. First difference at instruction 5 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0029dda8: 27bdfff0  addiu	sp,sp,-16                                  | 0029dda8: 27bdfff0  addiu	sp,sp,-16
+   0029ddac: ffbf0008  sd	ra,8(sp)                                      | 0029ddac: ffbf0008  sd	ra,8(sp)
+   0029ddb0: ffb00000  sd	s0,0(sp)                                      | 0029ddb0: ffb00000  sd	s0,0(sp)
+   0029ddb4: 0c09d98e  jal	0x276638                                     | 0029ddb4: 0c09d98e  jal	276638 <func_00276638>
+   0029ddb8: 2404000f  li	a0,15                                         | 0029ddb8: 2404000f  li	a0,15
+!! 0029ddbc: 3c0f0036  lui	t7,0x36                                      | 0029ddbc: 3c0e0036  lui	t6,0x36
+   0029ddc0: 00021040  sll	v0,v0,0x1                                    | 0029ddc0: 00021040  sll	v0,v0,0x1
+!! 0029ddc4: 8deef5ac  lw	t6,-2644(t7)   ; = D_0035f5ac                 | 0029ddc4: 8dcff5ac  lw	t7,-2644(t6)   ; = D_0035f5ac
+!! 0029ddc8: 004e1021  addu	v0,v0,t6                                    | 0029ddc8: 01e27821  addu	t7,t7,v0
+   0029ddcc: 0c0a769a  jal	0x29da68                                     | 0029ddcc: 0c0a769a  jal	29da68 <func_0029da68>
+!! 0029ddd0: 84440008  lh	a0,8(v0)                                      | 0029ddd0: 85e40008  lh	a0,8(t7)
+   0029ddd4: 80500001  lb	s0,1(v0)                                      | 0029ddd4: 80500001  lb	s0,1(v0)
+   0029ddd8: 0c0a4aa4  jal	0x292a90                                     | 0029ddd8: 0c0a4aa4  jal	292a90 <func_00292a90>
+   0029dddc: 0200202d  move	a0,s0                                       | 0029dddc: 0200202d  move	a0,s0
+   0029dde0: 14400008  bnez	v0,0x29de04                                 | 0029dde0: 14400008  bnez	v0,29de04 <func_0029dda8+0x5c>
+   0029dde4: 0200202d  move	a0,s0                                       | 0029dde4: 0200202d  move	a0,s0
+   0029dde8: 0c0a4abc  jal	0x292af0                                     | 0029dde8: 0c0a4abc  jal	292af0 <func_00292af0>
+   0029ddec: 00000000  nop                                              | 0029ddec: 00000000  nop
+   0029ddf0: 14400005  bnez	v0,0x29de08                                 | 0029ddf0: 14400005  bnez	v0,29de08 <func_0029dda8+0x60>
+   0029ddf4: dfb00000  ld	s0,0(sp)                                      | 0029ddf4: dfb00000  ld	s0,0(sp)
+   0029ddf8: dfbf0008  ld	ra,8(sp)                                      | 0029ddf8: dfbf0008  ld	ra,8(sp)
+   0029ddfc: 080a7758  j	0x29dd60                                       | 0029ddfc: 080a7758  j	29dd60 <func_0029dd60>
+   0029de00: 27bd0010  addiu	sp,sp,16                                   | 0029de00: 27bd0010  addiu	sp,sp,16
+   0029de04: dfb00000  ld	s0,0(sp)                                      | 0029de04: dfb00000  ld	s0,0(sp)
+   0029de08: dfbf0008  ld	ra,8(sp)                                      | 0029de08: dfbf0008  ld	ra,8(sp)
+   0029de0c: 03e00008  jr	ra                                            | 0029de0c: 03e00008  jr	ra
+   0029de10: 27bd0010  addiu	sp,sp,16                                   | 0029de10: 27bd0010  addiu	sp,sp,16

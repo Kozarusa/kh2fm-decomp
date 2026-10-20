@@ -1,0 +1,164 @@
+{
+  "source_sha256": "243bd8a5af5a43f8a2fa7a80e406f6c77d643a3f9b150c83e0eb570f4e1bb494",
+  "prior_source": "analysis/final-mix/recovery-experiments/fm_width_parameters_12_1.cpp",
+  "prior_source_sha256": "cb3820b9af5d0e5de2055cca98c7e157e5752a4a950c6a6ddcddfda2ffc184cf",
+  "prior_proof_sha256": "461e185388ff104f27a50d0103b386cf9f1f2f69c78ddcc58122e5dc92dbe57d",
+  "main_export_sha256": "aa24f5742f14453ebe408146889dcebdb4236a7b8bf0a7cab209cad2f2ec84f6",
+  "changes": [
+    {
+      "callee": "00294480",
+      "proposed_arguments": [
+        "void*"
+      ]
+    },
+    {
+      "callee": "002b7440",
+      "proposed_arguments": [
+        "s32",
+        "s32",
+        "s32"
+      ]
+    },
+    {
+      "callee": "002b79cc",
+      "proposed_arguments": [
+        "s32",
+        "s32",
+        "s32"
+      ]
+    },
+    {
+      "callee": "002b9404",
+      "proposed_arguments": [
+        "s32",
+        "s32",
+        "void*",
+        "void*"
+      ]
+    },
+    {
+      "callee": "002b986c",
+      "proposed_arguments": [
+        "u32",
+        "u32"
+      ]
+    },
+    {
+      "callee": "002bc0f0",
+      "proposed_arguments": []
+    },
+    {
+      "callee": "002bc988",
+      "proposed_arguments": [
+        "s32"
+      ]
+    },
+    {
+      "callee": "001a80c8",
+      "proposed_arguments": [
+        "u64"
+      ]
+    },
+    {
+      "callee": "002766d0",
+      "proposed_arguments": []
+    },
+    {
+      "callee": "00294000",
+      "proposed_arguments": [
+        "u64"
+      ]
+    },
+    {
+      "callee": "002b6e24",
+      "proposed_arguments": [
+        "s32",
+        "void*",
+        "u32"
+      ]
+    },
+    {
+      "callee": "002baa78",
+      "proposed_arguments": []
+    },
+    {
+      "callee": "002bb100",
+      "proposed_arguments": [
+        "s32",
+        "s32",
+        "u8"
+      ]
+    },
+    {
+      "callee": "002bb5a8",
+      "proposed_arguments": [
+        "s64",
+        "s64"
+      ]
+    },
+    {
+      "callee": "002bc9a8",
+      "proposed_arguments": [
+        "void*",
+        "s32",
+        "s32"
+      ]
+    },
+    {
+      "callee": "002bce10",
+      "proposed_arguments": [
+        "void*",
+        "s32"
+      ]
+    },
+    {
+      "callee": "002bcfe8",
+      "proposed_arguments": [
+        "s32"
+      ]
+    },
+    {
+      "callee": "002bd078",
+      "proposed_arguments": [
+        "s32"
+      ]
+    },
+    {
+      "callee": "002bd100",
+      "proposed_arguments": [
+        "s32"
+      ]
+    },
+    {
+      "callee": "00324718",
+      "proposed_arguments": [
+        "void*",
+        "s32"
+      ]
+    },
+    {
+      "callee": "001a8190",
+      "proposed_arguments": [
+        "s32"
+      ]
+    },
+    {
+      "callee": "002b6adc",
+      "proposed_arguments": [
+        "u32",
+        "u32"
+      ]
+    },
+    {
+      "callee": "002b6f28",
+      "proposed_arguments": [
+        "u32",
+        "u32",
+        "u32"
+      ]
+    }
+  ],
+  "limitations": [
+    "Argument types are proposals. Complete compiler equality and full-build gates are mandatory."
+  ]
+}

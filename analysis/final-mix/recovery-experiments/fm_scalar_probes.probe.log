@@ -1,0 +1,18 @@
+Exact probe matches: 17/100
+Detailed proof: analysis/final-mix/recovery-experiments/fm_scalar_probes.verification.json
+recovery-experiments/fm_scalar_probes/probe.cpp: In function `void 
+   func_00109690(long long unsigned int)':
+recovery-experiments/fm_scalar_probes/probe.cpp:249: warning: cast to pointer 
+   from integer of different size
+recovery-experiments/fm_scalar_probes/probe.cpp: In function `void 
+   func_0013f608(int)':
+recovery-experiments/fm_scalar_probes/probe.cpp:1073: warning: assignment to `
+   u32' from `f32'
+recovery-experiments/fm_scalar_probes/probe.cpp:1073: warning: argument to `
+   unsigned int' from `f32'
+recovery-experiments/fm_scalar_probes/probe.cpp: In function `void 
+   func_00146680(long long int, long long int)':
+recovery-experiments/fm_scalar_probes/probe.cpp:1447: warning: cast to pointer 
+   from integer of different size
+recovery-experiments/fm_scalar_probes/probe.cpp:1448: warning: cast to pointer 
+   from integer of different size

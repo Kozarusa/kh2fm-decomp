@@ -1,0 +1,17 @@
+001bba88: compiled 48 bytes, target 52 bytes, exact=False
+Differing words: 8. First difference at instruction 4 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001bba88: 27bdfff0  addiu	sp,sp,-16                                  | 001bba88: 27bdfff0  addiu	sp,sp,-16
+   001bba8c: ffbf0000  sd	ra,0(sp)                                      | 001bba8c: ffbf0000  sd	ra,0(sp)
+   001bba90: 0c06ed28  jal	0x1bb4a0                                     | 001bba90: 0c06ed28  jal	1bb4a0 <func_001bb4a0>
+   001bba94: 00000000  nop                                              | 001bba94: 00000000  nop
+!! 001bba98: 10400006  beqz	v0,0x1bbab4                                 | 001bba98: 10400005  beqz	v0,1bbab0 <func_001bba88+0x28>
+!! 001bba9c: 3c0f01d5  lui	t7,0x1d5                                     | 001bba9c: dfbf0000  ld	ra,0(sp)
+!! 001bbaa0: 0c06ee8c  jal	0x1bba30                                     | 001bbaa0: 3c0f01d5  lui	t7,0x1d5
+   001bbaa4: 8de49320  lw	a0,-27872(t7)   ; = D_01d49320                | 001bbaa4: 8de49320  lw	a0,-27872(t7)   ; = D_01d49320
+!! 001bbaa8: dfbf0000  ld	ra,0(sp)                                      | 001bbaa8: 0806ee8c  j	1bba30 <func_001bba30>
+!! 001bbaac: 03e00008  jr	ra                                            | 001bbaac: 27bd0010  addiu	sp,sp,16
+!! 001bbab0: 27bd0010  addiu	sp,sp,16                                   | 001bbab0: 03e00008  jr	ra
+!! 001bbab4: 1000fffc  b	0x1bbaa8                                       | 001bbab4: 27bd0010  addiu	sp,sp,16
+!! 001bbab8: 0000102d  move	v0,zero                                     | 

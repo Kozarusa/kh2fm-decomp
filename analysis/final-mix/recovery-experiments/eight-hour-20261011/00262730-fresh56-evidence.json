@@ -1,0 +1,96 @@
+{
+  "address": "00262730",
+  "accepted": false,
+  "proofs": [
+    {
+      "source": "eight_hour_00262730_fresh_three_calls_0.cpp",
+      "source_sha256": "8766740cfd5b1821ae311756fb68c40e97efb682def17e77bee5ae6482137896",
+      "proof": "eight_hour_00262730_fresh_three_calls_0.verification.json",
+      "proof_sha256": "29df65fe33cfb41891a201a9357fb1cbd7e00d33c0f5bdd91a795f8c4e0796a2",
+      "compiled_bytes": 52,
+      "target_bytes": 56,
+      "differing_words": 11
+    },
+    {
+      "source": "eight_hour_00262730_fresh_three_calls_1.cpp",
+      "source_sha256": "70c63883ee7fce3072858514453c8bfea3e0390eddf736e57b3e21b84cc4590c",
+      "proof": "eight_hour_00262730_fresh_three_calls_1.verification.json",
+      "proof_sha256": "7b0e82711dbbad190450f14e35da7cf8b0ce713820a804d784d41b9524fbc97e",
+      "compiled_bytes": 52,
+      "target_bytes": 56,
+      "differing_words": 11
+    },
+    {
+      "source": "eight_hour_00262730_v2_prologue_lifetime_0.cpp",
+      "source_sha256": "82f0c64c268fcfd03e5cf1b1b9905516041ffe2d948f10005f0812189154440f",
+      "proof": "eight_hour_00262730_v2_prologue_lifetime_0.verification.json",
+      "proof_sha256": "983793637e5c4090cb65002ca9e2f724c59bd360bfc063a5bc3a409c2e31717b",
+      "compiled_bytes": 56,
+      "target_bytes": 56,
+      "differing_words": 6
+    },
+    {
+      "source": "eight_hour_00262730_v2_prologue_lifetime_1.cpp",
+      "source_sha256": "b77f8dc44fdfe0b055cd5882bdf015c870b2fa9f9c98e23f13254b0063cbed73",
+      "proof": "eight_hour_00262730_v2_prologue_lifetime_1.verification.json",
+      "proof_sha256": "2df5b44e4cc8cc38a7690e425b1a7c65caf48abaf50e884b89b31a8b4ea0737b",
+      "compiled_bytes": 56,
+      "target_bytes": 56,
+      "differing_words": 4
+    },
+    {
+      "source": "eight_hour_00262730_v2_prologue_lifetime_2.cpp",
+      "source_sha256": "d8381a723119db28643d4be46ba61de5be2f6574950e9703f249a26d52a5dc84",
+      "proof": "eight_hour_00262730_v2_prologue_lifetime_2.verification.json",
+      "proof_sha256": "50b25befe1c9d6ff65a78030f6d20a7101d59e0d4e6b38885f3ce9555d2e4073",
+      "compiled_bytes": 60,
+      "target_bytes": 56,
+      "differing_words": 11
+    },
+    {
+      "source": "eight_hour_00262730_v2_prologue_lifetime_3.cpp",
+      "source_sha256": "c8f2cb8ed9ade36443fa88806853da67be7b70cd35279bfd2e622ee314c3337d",
+      "proof": "eight_hour_00262730_v2_prologue_lifetime_3.verification.json",
+      "proof_sha256": "7553c2ac750f1914d6e06300a429ad0071485ca017a60dab54715bd517dda2f1",
+      "compiled_bytes": 56,
+      "target_bytes": 56,
+      "differing_words": 6
+    },
+    {
+      "source": "eight_hour_00262730_v3_pre_call_register_definition_0.cpp",
+      "source_sha256": "4e555549681d4378fc7ddbf41df6ba1a901d143342e073f6b51a50af1388df48",
+      "proof": "eight_hour_00262730_v3_pre_call_register_definition_0.verification.json",
+      "proof_sha256": "a3925a3cd0c576a9705e72aa46161397ce92cb8c3bf3241bba0ed182f3c2be6d",
+      "compiled_bytes": 52,
+      "target_bytes": 56,
+      "differing_words": 11
+    },
+    {
+      "source": "eight_hour_00262730_v3_pre_call_register_definition_1.cpp",
+      "source_sha256": "27526fd832d3170cb289da2b5b9735051af9ff8587d1c878950c44f7005f7612",
+      "proof": "eight_hour_00262730_v3_pre_call_register_definition_1.verification.json",
+      "proof_sha256": "be2ce02c7ebcff41c7a69a3c0e5fa24ad05ff28dae5398c817f6fc0039b5826a",
+      "compiled_bytes": 56,
+      "target_bytes": 56,
+      "differing_words": 2
+    },
+    {
+      "source": "eight_hour_00262730_v3_pre_call_register_definition_2.cpp",
+      "source_sha256": "2836519502a1fbc1db5297f64a090c5340f04d4f966f6cb21bb8805ab65ed9b9",
+      "proof": "eight_hour_00262730_v3_pre_call_register_definition_2.verification.json",
+      "proof_sha256": "669f9a77fc08c5332f071cd063426eb5f49a58250f11e50fbbbd69ff00e93825",
+      "compiled_bytes": 68,
+      "target_bytes": 56,
+      "differing_words": 15
+    },
+    {
+      "source": "eight_hour_00262730_v3_pre_call_register_definition_3.cpp",
+      "source_sha256": "b73e220c7c0c7f91f5749215bbb4110c37599036d9fbd39a771ea3857bf8a478",
+      "proof": "eight_hour_00262730_v3_pre_call_register_definition_3.verification.json",
+      "proof_sha256": "56296a0de1400c3d1426ebfe104671858c5cd46d129011f43adfe9075c911ba2",
+      "compiled_bytes": 72,
+      "target_bytes": 56,
+      "differing_words": 15
+    }
+  ]
+}

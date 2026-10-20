@@ -1,0 +1,14 @@
+{
+  "probe_source": "analysis/final-mix/recovery-experiments/fm_worker_b_round2_0017ee68_solved.cpp",
+  "probe_source_sha256": "10b8f287d1cac3cd46aeb65aee32d768328fc2ecbc6475bdb93389f00f412f09",
+  "probe_proof_sha256": "78bf48327bd9a7c344953ad772460bc5ff6046cdf383ef3f5d46b05db5e96a42",
+  "curated_source": "analysis/final-mix/recovery-experiments/fm_primary_workertwo_recovered_0017ee68.cpp",
+  "curated_source_sha256": "10b8f287d1cac3cd46aeb65aee32d768328fc2ecbc6475bdb93389f00f412f09",
+  "selected_addresses": [
+    "0017ee68"
+  ],
+  "exclusion_receipt": null,
+  "limitations": [
+    "Curated source still requires a new probe, registration and full build."
+  ]
+}

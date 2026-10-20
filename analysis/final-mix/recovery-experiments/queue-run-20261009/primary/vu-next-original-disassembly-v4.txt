@@ -1,0 +1,220 @@
+
+SLPM_666.75:     file format elf32-littlemips
+
+Disassembly of section main:
+
+0016adc8 <main+0x6adc8>:
+  16adc8:	27bdfff0 	addiu	sp,sp,-16
+  16adcc:	3c0e0020 	lui	t6,0x20
+  16add0:	ffb00000 	sd	s0,0(sp)
+  16add4:	ffbf0008 	sd	ra,8(sp)
+  16add8:	0080802d 	move	s0,a0
+  16addc:	8c8f0108 	lw	t7,264(a0)
+  16ade0:	01ee7825 	or	t7,t7,t6
+  16ade4:	0c05ab38 	jal	0x16ace0
+  16ade8:	ac8f0108 	sw	t7,264(a0)
+  16adec:	8e0f0588 	lw	t7,1416(s0)
+  16adf0:	31ef0002 	andi	t7,t7,0x2
+  16adf4:	11e00003 	beqz	t7,0x16ae04
+  16adf8:	26100ad0 	addiu	s0,s0,2768
+  16adfc:	4be0006c 	vsub.wxyz	vf1,vf0,vf0
+  16ae00:	fa010000 	sqc2	vf1,0(s0)
+  16ae04:	dfb00000 	ld	s0,0(sp)
+  16ae08:	dfbf0008 	ld	ra,8(sp)
+  16ae0c:	03e00008 	jr	ra
+  16ae10:	27bd0010 	addiu	sp,sp,16
+
+
+SLPM_666.75:     file format elf32-littlemips
+
+Disassembly of section main:
+
+00162b18 <main+0x62b18>:
+  162b18:	d8810000 	lqc2	vf1,0(a0)
+  162b1c:	d8a20000 	lqc2	vf2,0(a1)
+  162b20:	4bc2086a 	vmul.xyz	vf1,vf1,vf2
+  162b24:	4b010841 	vaddy.x	vf1,vf1,vf1y
+  162b28:	4b010842 	vaddz.x	vf1,vf1,vf1z
+  162b2c:	48280800 	qmfc2	t0,vf1
+  162b30:	44880800 	mtc1	t0,$f1
+  162b34:	c4a0000c 	lwc1	$f0,12(a1)
+  162b38:	46000840 	add.s	$f1,$f1,$f0
+  162b3c:	e4c10000 	swc1	$f1,0(a2)
+  162b40:	c4800010 	lwc1	$f0,16(a0)
+  162b44:	46010034 	c.lt.s	$f0,$f1
+  162b48:	45010005 	bc1t	0x162b60
+  162b4c:	0000102d 	move	v0,zero
+  162b50:	44800000 	mtc1	zero,$f0
+  162b54:	46000834 	c.lt.s	$f1,$f0
+  162b58:	45020001 	bc1fl	0x162b60
+  162b5c:	24020001 	li	v0,1
+  162b60:	03e00008 	jr	ra
+  162b64:	00000000 	nop
+
+
+SLPM_666.75:     file format elf32-littlemips
+
+Disassembly of section main:
+
+00163268 <main+0x63268>:
+  163268:	27bdfff0 	addiu	sp,sp,-16
+  16326c:	d8810000 	lqc2	vf1,0(a0)
+  163270:	d8a20000 	lqc2	vf2,0(a1)
+  163274:	4be2086c 	vsub.wxyz	vf1,vf1,vf2
+  163278:	fba10000 	sqc2	vf1,0(sp)
+  16327c:	dba10000 	lqc2	vf1,0(sp)
+  163280:	4bc1086a 	vmul.xyz	vf1,vf1,vf1
+  163284:	4b010841 	vaddy.x	vf1,vf1,vf1y
+  163288:	4b010842 	vaddz.x	vf1,vf1,vf1z
+  16328c:	4a0103bd 	vsqrt	Q,vf1x
+  163290:	4a0003bf 	vwaitq
+  163294:	4848b000 	cfc2.ni	t0,$22
+  163298:	44880800 	mtc1	t0,$f1
+  16329c:	e4c10000 	swc1	$f1,0(a2)
+  1632a0:	c4800010 	lwc1	$f0,16(a0)
+  1632a4:	46000836 	c.le.s	$f1,$f0
+  1632a8:	45010002 	bc1t	0x1632b4
+  1632ac:	24020001 	li	v0,1
+  1632b0:	0000102d 	move	v0,zero
+  1632b4:	03e00008 	jr	ra
+  1632b8:	27bd0010 	addiu	sp,sp,16
+
+
+SLPM_666.75:     file format elf32-littlemips
+
+Disassembly of section main:
+
+00167658 <main+0x67658>:
+  167658:	dc8e0000 	ld	t6,0(a0)
+  16765c:	248b0020 	addiu	t3,a0,32
+  167660:	dc8d0008 	ld	t5,8(a0)
+  167664:	dc8c0010 	ld	t4,16(a0)
+  167668:	01c57024 	and	t6,t6,a1
+  16766c:	dc8f0018 	ld	t7,24(a0)
+  167670:	01a56824 	and	t5,t5,a1
+  167674:	01856024 	and	t4,t4,a1
+  167678:	fc8e0000 	sd	t6,0(a0)
+  16767c:	01e57824 	and	t7,t7,a1
+  167680:	fc8d0008 	sd	t5,8(a0)
+  167684:	fc8c0010 	sd	t4,16(a0)
+  167688:	fc8f0018 	sd	t7,24(a0)
+  16768c:	ac800040 	sw	zero,64(a0)
+  167690:	4be0006c 	vsub.wxyz	vf1,vf0,vf0
+  167694:	f9610000 	sqc2	vf1,0(t3)
+  167698:	24840030 	addiu	a0,a0,48
+  16769c:	4be0006c 	vsub.wxyz	vf1,vf0,vf0
+  1676a0:	f8810000 	sqc2	vf1,0(a0)
+  1676a4:	03e00008 	jr	ra
+  1676a8:	00000000 	nop
+
+
+SLPM_666.75:     file format elf32-littlemips
+
+Disassembly of section main:
+
+00183768 <main+0x83768>:
+  183768:	248f0010 	addiu	t7,a0,16
+  18376c:	11e50003 	beq	t7,a1,0x18377c
+  183770:	00000000 	nop
+  183774:	78a80000 	lq	t0,0(a1)
+  183778:	7de80000 	sq	t0,0(t7)
+  18377c:	d9e10000 	lqc2	vf1,0(t7)
+  183780:	4bc108aa 	vmul.xyz	vf2,vf1,vf1
+  183784:	4b021081 	vaddy.x	vf2,vf2,vf2y
+  183788:	4b021082 	vaddz.x	vf2,vf2,vf2z
+  18378c:	4a0203bd 	vsqrt	Q,vf2x
+  183790:	4a0003bf 	vwaitq
+  183794:	4848b000 	cfc2.ni	t0,$22
+  183798:	4b0000a0 	vaddq.x	vf2,vf0,Q
+  18379c:	44880000 	mtc1	t0,$f0
+  1837a0:	4a0002ff 	vnop
+  1837a4:	4a6203bc 	vdiv	Q,vf0w,vf2x
+  1837a8:	4a0003bf 	vwaitq
+  1837ac:	4bc0085c 	vmulq.xyz	vf1,vf1,Q
+  1837b0:	f9e10000 	sqc2	vf1,0(t7)
+  1837b4:	03e00008 	jr	ra
+  1837b8:	e48c001c 	swc1	$f12,28(a0)
+
+
+SLPM_666.75:     file format elf32-littlemips
+
+Disassembly of section main:
+
+001846a0 <main+0x846a0>:
+  1846a0:	248f0880 	addiu	t7,a0,2176
+  1846a4:	11e50003 	beq	t7,a1,0x1846b4
+  1846a8:	00000000 	nop
+  1846ac:	78a80000 	lq	t0,0(a1)
+  1846b0:	7de80000 	sq	t0,0(t7)
+  1846b4:	d9e10000 	lqc2	vf1,0(t7)
+  1846b8:	4bc108aa 	vmul.xyz	vf2,vf1,vf1
+  1846bc:	4b021081 	vaddy.x	vf2,vf2,vf2y
+  1846c0:	4b021082 	vaddz.x	vf2,vf2,vf2z
+  1846c4:	4a0203bd 	vsqrt	Q,vf2x
+  1846c8:	4a0003bf 	vwaitq
+  1846cc:	4848b000 	cfc2.ni	t0,$22
+  1846d0:	4b0000a0 	vaddq.x	vf2,vf0,Q
+  1846d4:	44880000 	mtc1	t0,$f0
+  1846d8:	4a0002ff 	vnop
+  1846dc:	4a6203bc 	vdiv	Q,vf0w,vf2x
+  1846e0:	4a0003bf 	vwaitq
+  1846e4:	4bc0085c 	vmulq.xyz	vf1,vf1,Q
+  1846e8:	f9e10000 	sqc2	vf1,0(t7)
+  1846ec:	03e00008 	jr	ra
+  1846f0:	e48c088c 	swc1	$f12,2188(a0)
+
+
+SLPM_666.75:     file format elf32-littlemips
+
+Disassembly of section main:
+
+0019fb70 <main+0x9fb70>:
+  19fb70:	27bdfff0 	addiu	sp,sp,-16
+  19fb74:	24af0020 	addiu	t7,a1,32
+  19fb78:	79e80000 	lq	t0,0(t7)
+  19fb7c:	7fa80000 	sq	t0,0(sp)
+  19fb80:	afa00004 	sw	zero,4(sp)
+  19fb84:	dba10000 	lqc2	vf1,0(sp)
+  19fb88:	4bc1086a 	vmul.xyz	vf1,vf1,vf1
+  19fb8c:	4b010841 	vaddy.x	vf1,vf1,vf1y
+  19fb90:	4b010842 	vaddz.x	vf1,vf1,vf1z
+  19fb94:	4a0103bd 	vsqrt	Q,vf1x
+  19fb98:	4a0003bf 	vwaitq
+  19fb9c:	4848b000 	cfc2.ni	t0,$22
+  19fba0:	44880800 	mtc1	t0,$f1
+  19fba4:	3c0f0035 	lui	t7,0x35
+  19fba8:	8dee2130 	lw	t6,8496(t7)
+  19fbac:	c5c0001c 	lwc1	$f0,28(t6)
+  19fbb0:	46000842 	mul.s	$f1,$f1,$f0
+  19fbb4:	aca000f8 	sw	zero,248(a1)
+  19fbb8:	e4a100f4 	swc1	$f1,244(a1)
+  19fbbc:	03e00008 	jr	ra
+  19fbc0:	27bd0010 	addiu	sp,sp,16
+
+
+SLPM_666.75:     file format elf32-littlemips
+
+Disassembly of section main:
+
+001b08e8 <main+0xb08e8>:
+  1b08e8:	24840020 	addiu	a0,a0,32
+  1b08ec:	10850003 	beq	a0,a1,0x1b08fc
+  1b08f0:	00000000 	nop
+  1b08f4:	78a80000 	lq	t0,0(a1)
+  1b08f8:	7c880000 	sq	t0,0(a0)
+  1b08fc:	d8810000 	lqc2	vf1,0(a0)
+  1b0900:	4bc108aa 	vmul.xyz	vf2,vf1,vf1
+  1b0904:	4b021081 	vaddy.x	vf2,vf2,vf2y
+  1b0908:	4b021082 	vaddz.x	vf2,vf2,vf2z
+  1b090c:	4a0203bd 	vsqrt	Q,vf2x
+  1b0910:	4a0003bf 	vwaitq
+  1b0914:	4848b000 	cfc2.ni	t0,$22
+  1b0918:	4b0000a0 	vaddq.x	vf2,vf0,Q
+  1b091c:	44880000 	mtc1	t0,$f0
+  1b0920:	4a0002ff 	vnop
+  1b0924:	4a6203bc 	vdiv	Q,vf0w,vf2x
+  1b0928:	4a0003bf 	vwaitq
+  1b092c:	4bc0085c 	vmulq.xyz	vf1,vf1,Q
+  1b0930:	f8810000 	sqc2	vf1,0(a0)
+  1b0934:	03e00008 	jr	ra
+  1b0938:	00000000 	nop

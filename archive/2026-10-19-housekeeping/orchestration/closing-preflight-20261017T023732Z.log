@@ -1,0 +1,7 @@
+ok    docker: server 29.8.2
+ok    stage-elf: d869ce4b8edd61cb978c4ff9ede595fe4d7d7b21cbb96a145275217120d8bc87
+ok    compiler: state=idle phase=orchei-accepted
+ok    queue: paused=false leases=0 submitted=0
+ok    build-record: phase=orchei exact=6743 fallback=4636
+ok    gate: Primary orchei checkpoint PASS: +6 exact functions, 6743 total, 3248 inputs.
+PREFLIGHT: PASS phase=orchei exact=6743 cpp=6747 fallback=4636 inputs=3248 queue_paused=false leases=0 (gate run)

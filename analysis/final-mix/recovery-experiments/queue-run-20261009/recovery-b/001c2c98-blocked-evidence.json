@@ -1,0 +1,180 @@
+[
+  {
+    "proof": "recovery_b_001c2c98_44eeb3f3_v1_flagvolatile.verification.json",
+    "proof_sha256": "bc9ce4c1ac21171019a7b2c60ba0fc5ec5cdbce7f4256f52be290b52151950e6",
+    "source_sha256": "5b2b6b9a9d99b87bbea28909065887c10a28bb191aea453c43f97a35e4d0e65e",
+    "original_range_sha256": "c60a6d9e31b12aa6adf8abc89df9f7713edad346295103c4945d4e90896aa4b1",
+    "compiled_size": 76,
+    "differing_offsets": [
+      56,
+      60
+    ]
+  },
+  {
+    "proof": "recovery_b_001c2c98_44eeb3f3_v1_precisestore.verification.json",
+    "proof_sha256": "fa2efa9ce32f202192dae290c11667fd43877ada1aa15f5631bc4196bac5b40f",
+    "source_sha256": "acd983aeedbc083f2b2a4bcef7a0c6d0d87ff9559e3a4f0e5e7284811a388650",
+    "original_range_sha256": "c60a6d9e31b12aa6adf8abc89df9f7713edad346295103c4945d4e90896aa4b1",
+    "compiled_size": 76,
+    "differing_offsets": [
+      20,
+      24,
+      32,
+      36,
+      40,
+      44,
+      48,
+      52
+    ]
+  },
+  {
+    "proof": "recovery_b_001c2c98_44eeb3f3_v1_storebarrier.verification.json",
+    "proof_sha256": "fcde2ac65aae100206cb72660d1e0d07d91df52023447a2e1661a3165313d150",
+    "source_sha256": "c35515102dd512ed77315a4451ab8340eacc9a9603b0d9efbdc7b58f42252e48",
+    "original_range_sha256": "c60a6d9e31b12aa6adf8abc89df9f7713edad346295103c4945d4e90896aa4b1",
+    "compiled_size": 76,
+    "differing_offsets": [
+      20,
+      24,
+      28,
+      32,
+      36,
+      40,
+      44,
+      48,
+      52,
+      56,
+      60
+    ]
+  },
+  {
+    "proof": "recovery_b_001c2c98_44eeb3f3_v1_vtablevolatile.verification.json",
+    "proof_sha256": "76f47b5eb83a355b4cb2557daa8258882d4df2b876b6e666ca6979db92d5987c",
+    "source_sha256": "8d5c0fa23a4bddfe2fcd16922c38358ae84620c71e272e24ff3456037f3fddad",
+    "original_range_sha256": "c60a6d9e31b12aa6adf8abc89df9f7713edad346295103c4945d4e90896aa4b1",
+    "compiled_size": 76,
+    "differing_offsets": [
+      56,
+      60
+    ]
+  },
+  {
+    "proof": "recovery_b_001c2c98_44eeb3f3_v2_allstorevolatile.verification.json",
+    "proof_sha256": "1343f81fea7fd279aa68ef19cb2ba8ecc329eec07cf55fd84fe16e14285e7737",
+    "source_sha256": "e43cd3475e106132525ac7388abec128c80a99b4f6b655396a2f11cc7c3da509",
+    "original_range_sha256": "c60a6d9e31b12aa6adf8abc89df9f7713edad346295103c4945d4e90896aa4b1",
+    "compiled_size": 76,
+    "differing_offsets": [
+      20,
+      24,
+      28,
+      32,
+      40,
+      44,
+      48,
+      60
+    ]
+  },
+  {
+    "proof": "recovery_b_001c2c98_44eeb3f3_v2_bothvolatile.verification.json",
+    "proof_sha256": "49de36d73eff65ea6e934d87e83e6cf9a4e4239e128e5af0c98ccc8cbb1391b8",
+    "source_sha256": "e2aebd6b4c44d12e3f137edb729be8a131b52c3e6ea0da31d86ac1ef722d243c",
+    "original_range_sha256": "c60a6d9e31b12aa6adf8abc89df9f7713edad346295103c4945d4e90896aa4b1",
+    "compiled_size": 76,
+    "differing_offsets": [
+      20,
+      24,
+      28,
+      32,
+      36,
+      40,
+      44,
+      48,
+      52,
+      56,
+      60
+    ]
+  },
+  {
+    "proof": "recovery_b_001c2c98_44eeb3f3_v2_flaginput.verification.json",
+    "proof_sha256": "5c4afd9903d10ddb4cfe2719ddcf1ebe0504d996b8f5058aa9c2ca645753f496",
+    "source_sha256": "e1a428344dafc1b0b45458dfb4a44db31dd36abebbd3e4a81c10615a1d4a2664",
+    "original_range_sha256": "c60a6d9e31b12aa6adf8abc89df9f7713edad346295103c4945d4e90896aa4b1",
+    "compiled_size": 76,
+    "differing_offsets": [
+      20,
+      28,
+      32,
+      36,
+      40,
+      44,
+      48,
+      52,
+      56,
+      60
+    ]
+  },
+  {
+    "proof": "recovery_b_001c2c98_44eeb3f3_v2_vtableasm.verification.json",
+    "proof_sha256": "25511f2e6e2d2c5e77ecbb1ff8d7f6757e591304037bbe1249d22adf575fd3c2",
+    "source_sha256": "43e38391146ef5f4403ee5e41ce9853db2cd755bd460eca95ea360e40064a25c",
+    "original_range_sha256": "c60a6d9e31b12aa6adf8abc89df9f7713edad346295103c4945d4e90896aa4b1",
+    "compiled_size": 76,
+    "differing_offsets": [
+      20,
+      28,
+      32,
+      36,
+      40,
+      44,
+      48,
+      52,
+      56,
+      60
+    ]
+  },
+  {
+    "proof": "recovery_b_001c2c98_44eeb3f3_v3_fixedboth.verification.json",
+    "proof_sha256": "19053a48035ba3cccbae6b0dbd439aa28463557af59e5d58a248e8cf12a5895e",
+    "source_sha256": "32b669f9f564b051276f03374160148ffe7b0f61482df026988c42e49414ec09",
+    "original_range_sha256": "c60a6d9e31b12aa6adf8abc89df9f7713edad346295103c4945d4e90896aa4b1",
+    "compiled_size": 76,
+    "differing_offsets": [
+      20,
+      28,
+      32,
+      40,
+      48
+    ]
+  },
+  {
+    "proof": "recovery_b_001c2c98_44eeb3f3_v3_fixedcombined.verification.json",
+    "proof_sha256": "5cb736060c5e038df161ce04df062aa597d3b1bf2ceae4174a166ed473fe0cf7",
+    "source_sha256": "c98b82548f13e86f90bc2d468df1a9268533df130fea68aaa3f4d94334c5b82d",
+    "original_range_sha256": "c60a6d9e31b12aa6adf8abc89df9f7713edad346295103c4945d4e90896aa4b1",
+    "compiled_size": 76,
+    "differing_offsets": [
+      36,
+      48,
+      52,
+      56,
+      60,
+      64
+    ]
+  },
+  {
+    "proof": "recovery_b_001c2c98_44eeb3f3_v3_fixedflags.verification.json",
+    "proof_sha256": "09208a59f45ac22c6f314ebf85b1f8572a078e931c41f21f818a0659f5b96cec",
+    "source_sha256": "9636c3baa3785f57890b801dbfd161f515a7ab29e3d3614a65348e410224ffb5",
+    "original_range_sha256": "c60a6d9e31b12aa6adf8abc89df9f7713edad346295103c4945d4e90896aa4b1",
+    "compiled_size": 76,
+    "differing_offsets": [
+      20,
+      24,
+      32,
+      40,
+      44,
+      48
+    ]
+  }
+]

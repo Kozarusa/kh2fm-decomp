@@ -1,0 +1,9 @@
+# 001b27f0 blocked
+- Range: 001b27f0, 112 bytes. Versions tried: 4. Best: v1 with 12 differing words (112/112 bytes).
+- First difference of the best version: !! 001b27fc: 03a0202d move a0,sp | 001b27fc: 27a60020 addiu a2,sp,32.
+- Changes tried: v1 used the rec85 v3 Frame and the approved lq/sq primitive from accepted 001b2780 (12 words); C11a/b v2 explicitly computed packet and result pointer temporaries in original order (12); C11c v3 bound the initialized packet pointer to numeric register $4 (12); C11d v4 added a separately commented empty read/write guard after that binding (12).
+- Why it stops here: no improvement for 3 consecutive versions after v1; strict R7 stop, despite the 12-version maximum.
+- Next hypothesis: an empty guard that consumes both initialized argument pointers together may constrain the a0/a2 address-materialization order; later work must also constrain the quad destination address and final store scheduling without other instruction-emitting assembly.
+- Earlier evidence: all four rec85 source files and proofs were read completely and independently recounted as 12,12,12,12 differing words, earliest best rec85 v1. Their plain Quad copies failed. The target itself stores 0x104 before 0x100; the rec85 sources already express that order, so the old suggested source swap was not applied.
+- Current count sequence: 12,12,12,12; best versions/streaks: v1/0, v1/1, v1/2, v1/3. Every proof has equal 112-byte sizes. No exact match was submitted.
+- Assembly review: only the approved lq/sq pair emits instructions. The initialized numeric binding and empty guard each have their own why comment. No unassigned bindings, other emitted instructions, delegation, overwritten versions, or writes outside this WP directory were used.

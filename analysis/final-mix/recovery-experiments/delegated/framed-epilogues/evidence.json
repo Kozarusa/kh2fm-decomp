@@ -1,0 +1,117 @@
+[
+  {
+    "source": "sa_frame_0014dc48_precisemem.cpp",
+    "source_sha256": "24988f1162a9809e14c95663cf0575968e07d6aeae24f67d608a236d5876b5c5",
+    "target_sha256": "7515b5ea19e10983163c14e70941148b058bdb24ebd8d0c297273bd95c6e794a",
+    "compiled_size": 96,
+    "target_size": 96,
+    "exact_match": false,
+    "differences": [
+      {
+        "offset": 72,
+        "compiled_le": "0000b0df",
+        "target_le": "0800b1df"
+      },
+      {
+        "offset": 76,
+        "compiled_le": "0800b1df",
+        "target_le": "0000b0df"
+      }
+    ]
+  },
+  {
+    "source": "sa_frame_0014dc48_splitmem.cpp",
+    "source_sha256": "860e746c93714e500d82608465b2c90405f8cfcc328239d349cdecb10102f67a",
+    "target_sha256": "7515b5ea19e10983163c14e70941148b058bdb24ebd8d0c297273bd95c6e794a",
+    "compiled_size": 96,
+    "target_size": 96,
+    "exact_match": false,
+    "differences": [
+      {
+        "offset": 72,
+        "compiled_le": "0000b0df",
+        "target_le": "0800b1df"
+      },
+      {
+        "offset": 76,
+        "compiled_le": "0800b1df",
+        "target_le": "0000b0df"
+      }
+    ]
+  },
+  {
+    "source": "sa_frame_0014dca8_precisemem.cpp",
+    "source_sha256": "71569521785774bf6e5cf74cfbe09437f090e29454350aabd27413501d10bd7a",
+    "target_sha256": "7515b5ea19e10983163c14e70941148b058bdb24ebd8d0c297273bd95c6e794a",
+    "compiled_size": 96,
+    "target_size": 96,
+    "exact_match": false,
+    "differences": [
+      {
+        "offset": 72,
+        "compiled_le": "0000b0df",
+        "target_le": "0800b1df"
+      },
+      {
+        "offset": 76,
+        "compiled_le": "0800b1df",
+        "target_le": "0000b0df"
+      }
+    ]
+  },
+  {
+    "source": "sa_frame_002e5f70_precisemem.cpp",
+    "source_sha256": "687c45b82387fc4b1c80efdc3092820bdb6ae38e21370bbcdf29a45f602e3ea7",
+    "target_sha256": "84046268991410c02697d668334bc94fa81e3066bac9ce7a9a742c280c69a4fa",
+    "compiled_size": 68,
+    "target_size": 68,
+    "exact_match": false,
+    "differences": [
+      {
+        "offset": 52,
+        "compiled_le": "0000b0df",
+        "target_le": "0800bfdf"
+      },
+      {
+        "offset": 56,
+        "compiled_le": "0800bfdf",
+        "target_le": "0000b0df"
+      }
+    ]
+  },
+  {
+    "source": "sa_frame_002e5f70_volatileall.cpp",
+    "source_sha256": "d8f58d435f4a2b30dc6c96b85355f9465ee6f609fd3afebb2ce6c8cd4e3375a0",
+    "target_sha256": "84046268991410c02697d668334bc94fa81e3066bac9ce7a9a742c280c69a4fa",
+    "compiled_size": 68,
+    "target_size": 68,
+    "exact_match": false,
+    "differences": [
+      {
+        "offset": 36,
+        "compiled_le": "0800bfdf",
+        "target_le": "200200ae"
+      },
+      {
+        "offset": 40,
+        "compiled_le": "200200ae",
+        "target_le": "240200ae"
+      },
+      {
+        "offset": 44,
+        "compiled_le": "240200ae",
+        "target_le": "280200ae"
+      },
+      {
+        "offset": 48,
+        "compiled_le": "280200ae",
+        "target_le": "2c0200ae"
+      },
+      {
+        "offset": 52,
+        "compiled_le": "2c0200ae",
+        "target_le": "0800bfdf"
+      }
+    ]
+  }
+]

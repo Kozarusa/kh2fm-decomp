@@ -1,0 +1,35 @@
+001397d8: compiled 116 bytes, target 124 bytes, exact=False
+Differing words: 22. First difference at instruction 8 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001397d8: 27bdffe0  addiu	sp,sp,-32                                  | 001397d8: 27bdffe0  addiu	sp,sp,-32
+   001397dc: ffb00000  sd	s0,0(sp)                                      | 001397dc: ffb00000  sd	s0,0(sp)
+   001397e0: ffb10008  sd	s1,8(sp)                                      | 001397e0: ffb10008  sd	s1,8(sp)
+   001397e4: ffb20010  sd	s2,16(sp)                                     | 001397e4: ffb20010  sd	s2,16(sp)
+   001397e8: 0000802d  move	s0,zero                                     | 001397e8: 0000802d  move	s0,zero
+   001397ec: ffbf0018  sd	ra,24(sp)                                     | 001397ec: ffbf0018  sd	ra,24(sp)
+   001397f0: 0080882d  move	s1,a0                                       | 001397f0: 0080882d  move	s1,a0
+   001397f4: 3c120034  lui	s2,0x34                                      | 001397f4: 3c120034  lui	s2,0x34
+!! 001397f8: 16000014  bnez	s0,0x13984c                                 | 001397f8: 56000003  bnezl	s0,139808 <func_001397d8+0x30>
+!! 001397fc: 8e447f80  lw	a0,32640(s2)   ; = D_00347f80                 | 001397fc: 8e040004  lw	a0,4(s0)
+!! 00139800: 8c840004  lw	a0,4(a0)                                      | 00139800: 8e4f7f80  lw	t7,32640(s2)   ; = D_00347f80
+!! 00139804: 14800008  bnez	a0,0x139828                                 | 00139804: 8de40004  lw	a0,4(t7)
+!! 00139808: 0080802d  move	s0,a0                                       | 00139808: 1080000a  beqz	a0,139834 <func_001397d8+0x5c>
+!! 0013980c: dfb00000  ld	s0,0(sp)                                      | 0013980c: 0080802d  move	s0,a0
+!! 00139810: dfb10008  ld	s1,8(sp)                                      | 00139810: 8c8f0010  lw	t7,16(a0)
+!! 00139814: dfb20010  ld	s2,16(sp)                                     | 00139814: 15f1fff8  bne	t7,s1,1397f8 <func_001397d8+0x20>
+!! 00139818: dfbf0018  ld	ra,24(sp)                                     | 00139818: 00000000  nop
+!! 0013981c: 03e00008  jr	ra                                            | 0013981c: 8c8e0000  lw	t6,0(a0)
+!! 00139820: 27bd0020  addiu	sp,sp,32                                   | 00139820: 8dcf0014  lw	t7,20(t6)
+!! 00139824: 00000000  nop                                              | 00139824: 01e0f809  jalr	t7
+!! 00139828: 8c8f0010  lw	t7,16(a0)                                     | 00139828: 00000000  nop
+!! 0013982c: 15f1fff2  bne	t7,s1,0x1397f8                               | 0013982c: 1000fff2  b	1397f8 <func_001397d8+0x20>
+   00139830: 00000000  nop                                              | 00139830: 00000000  nop
+!! 00139834: 8c8e0000  lw	t6,0(a0)                                      | 00139834: dfb00000  ld	s0,0(sp)
+!! 00139838: 8dcf0014  lw	t7,20(t6)                                     | 00139838: dfb10008  ld	s1,8(sp)
+!! 0013983c: 01e0f809  jalr	t7                                          | 0013983c: dfb20010  ld	s2,16(sp)
+!! 00139840: 00000000  nop                                              | 00139840: dfbf0018  ld	ra,24(sp)
+!! 00139844: 1000ffec  b	0x1397f8                                       | 00139844: 03e00008  jr	ra
+!! 00139848: 00000000  nop                                              | 00139848: 27bd0020  addiu	sp,sp,32
+!! 0013984c: 1000ffed  b	0x139804                                       | 
+!! 00139850: 8e040004  lw	a0,4(s0)                                      | 

@@ -1,0 +1,14 @@
+{
+  "probe_source": "analysis/final-mix/recovery-experiments/fm_primary_threewordnext_v1_002db610.cpp",
+  "probe_source_sha256": "5687fc23dc706b8e6ddac53498b0984151c5a1ce1285bef7fb6d5c25b500ba48",
+  "probe_proof_sha256": "428f0f4684b71222114829c60c37dfd1f44ef80f36a96bfe4cb54e5aceccb33e",
+  "curated_source": "analysis/final-mix/recovery-experiments/fm_primary_threewordnext_recovered_002db610.cpp",
+  "curated_source_sha256": "5687fc23dc706b8e6ddac53498b0984151c5a1ce1285bef7fb6d5c25b500ba48",
+  "selected_addresses": [
+    "002db610"
+  ],
+  "exclusion_receipt": null,
+  "limitations": [
+    "Curated source still requires a new probe, registration and full build."
+  ]
+}

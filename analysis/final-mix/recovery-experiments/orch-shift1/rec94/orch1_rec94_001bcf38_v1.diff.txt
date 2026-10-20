@@ -1,0 +1,22 @@
+001bcf38: compiled 68 bytes, target 72 bytes, exact=False
+Differing words: 14. First difference at instruction 2 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001bcf38: 8c840000  lw	a0,0(a0)                                      | 001bcf38: 8c840000  lw	a0,0(a0)
+   001bcf3c: 240f000a  li	t7,10                                         | 001bcf3c: 240f000a  li	t7,10
+!! 001bcf40: 108f0007  beq	a0,t7,0x1bcf60                               | 001bcf40: 108f0005  beq	a0,t7,1bcf58 <func_001bcf38+0x20>
+   001bcf44: 288e000b  slti	t6,a0,11                                    | 001bcf44: 288e000b  slti	t6,a0,11
+!! 001bcf48: 11c00007  beqz	t6,0x1bcf68                                 | 001bcf48: 11c00006  beqz	t6,1bcf64 <func_001bcf38+0x2c>
+   001bcf4c: 240f0005  li	t7,5                                          | 001bcf4c: 240f0005  li	t7,5
+!! 001bcf50: 108f0003  beq	a0,t7,0x1bcf60                               | 001bcf50: 148f0002  bne	a0,t7,1bcf5c <func_001bcf38+0x24>
+!! 001bcf54: 00000000  nop                                              | 001bcf54: 0000102d  move	v0,zero
+!! 001bcf58: 03e00008  jr	ra                                            | 001bcf58: 24020001  li	v0,1
+!! 001bcf5c: 0000102d  move	v0,zero                                     | 001bcf5c: 03e00008  jr	ra
+!! 001bcf60: 03e00008  jr	ra                                            | 001bcf60: 00000000  nop
+!! 001bcf64: 24020001  li	v0,1                                          | 001bcf64: 248ffff3  addiu	t7,a0,-13
+!! 001bcf68: 248ffff3  addiu	t7,a0,-13                                  | 001bcf68: 2def0006  sltiu	t7,t7,6
+!! 001bcf6c: 2def0006  sltiu	t7,t7,6                                    | 001bcf6c: 11e0fffb  beqz	t7,1bcf5c <func_001bcf38+0x24>
+!! 001bcf70: 11e0fff9  beqz	t7,0x1bcf58                                 | 001bcf70: 0000102d  move	v0,zero
+!! 001bcf74: 00000000  nop                                              | 001bcf74: 03e00008  jr	ra
+!! 001bcf78: 1000fff9  b	0x1bcf60                                       | 001bcf78: 24020001  li	v0,1
+!! 001bcf7c: 00000000  nop                                              | 

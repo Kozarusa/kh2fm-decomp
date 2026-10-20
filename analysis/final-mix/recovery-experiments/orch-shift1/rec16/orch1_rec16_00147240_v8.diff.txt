@@ -1,0 +1,34 @@
+00147240: compiled 120 bytes, target 120 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00147240: 27bdffe0  addiu	sp,sp,-32                                  | 00147240: 27bdffe0  addiu	sp,sp,-32
+   00147244: e7b40018  swc1	$f20,24(sp)                                 | 00147244: e7b40018  swc1	$f20,24(sp)
+   00147248: ffb00000  sd	s0,0(sp)                                      | 00147248: ffb00000  sd	s0,0(sp)
+   0014724c: 46006506  mov.s	$f20,$f12                                  | 0014724c: 46006506  mov.s	$f20,$f12
+   00147250: ffb10008  sd	s1,8(sp)                                      | 00147250: ffb10008  sd	s1,8(sp)
+   00147254: ffbf0010  sd	ra,16(sp)                                     | 00147254: ffbf0010  sd	ra,16(sp)
+   00147258: 00a0802d  move	s0,a1                                       | 00147258: 00a0802d  move	s0,a1
+   0014725c: 0c08a0de  jal	0x228378                                     | 0014725c: 0c08a0de  jal	228378 <func_00228378>
+   00147260: 0080882d  move	s1,a0                                       | 00147260: 0080882d  move	s1,a0
+   00147264: 1440000d  bnez	v0,0x14729c                                 | 00147264: 1440000d  bnez	v0,14729c <func_00147240+0x5c>
+   00147268: 0000702d  move	t6,zero                                     | 00147268: 0000702d  move	t6,zero
+   0014726c: 922f0778  lbu	t7,1912(s1)                                  | 0014726c: 922f0778  lbu	t7,1912(s1)
+   00147270: 51e0000b  beqzl	t7,0x1472a0                                | 00147270: 51e0000b  beqzl	t7,1472a0 <func_00147240+0x60>
+   00147274: dfb00000  ld	s0,0(sp)                                      | 00147274: dfb00000  ld	s0,0(sp)
+   00147278: 8e0f00f8  lw	t7,248(s0)                                    | 00147278: 8e0f00f8  lw	t7,248(s0)
+   0014727c: 31ef0001  andi	t7,t7,0x1                                   | 0014727c: 31ef0001  andi	t7,t7,0x1
+   00147280: 11e00007  beqz	t7,0x1472a0                                 | 00147280: 11e00007  beqz	t7,1472a0 <func_00147240+0x60>
+   00147284: dfb00000  ld	s0,0(sp)                                      | 00147284: dfb00000  ld	s0,0(sp)
+   00147288: c6200774  lwc1	$f0,1908(s1)                                | 00147288: c6200774  lwc1	$f0,1908(s1)
+   0014728c: 4600a034  c.lt.s	$f20,$f0                                  | 0014728c: 4600a034  c.lt.s	$f20,$f0
+   00147290: 45010003  bc1t	0x1472a0                                    | 00147290: 45010003  bc1t	1472a0 <func_00147240+0x60>
+   00147294: 240e0001  li	t6,1                                          | 00147294: 240e0001  li	t6,1
+   00147298: 0000702d  move	t6,zero                                     | 00147298: 0000702d  move	t6,zero
+   0014729c: dfb00000  ld	s0,0(sp)                                      | 0014729c: dfb00000  ld	s0,0(sp)
+   001472a0: 01c0102d  move	v0,t6                                       | 001472a0: 01c0102d  move	v0,t6
+   001472a4: dfb10008  ld	s1,8(sp)                                      | 001472a4: dfb10008  ld	s1,8(sp)
+   001472a8: dfbf0010  ld	ra,16(sp)                                     | 001472a8: dfbf0010  ld	ra,16(sp)
+   001472ac: c7b40018  lwc1	$f20,24(sp)                                 | 001472ac: c7b40018  lwc1	$f20,24(sp)
+   001472b0: 03e00008  jr	ra                                            | 001472b0: 03e00008  jr	ra
+   001472b4: 27bd0020  addiu	sp,sp,32                                   | 001472b4: 27bd0020  addiu	sp,sp,32

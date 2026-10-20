@@ -1,0 +1,21 @@
+0027bf20: compiled 68 bytes, target 68 bytes, exact=False
+Differing words: 6. First difference at instruction 4 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0027bf20: 3c0f0036  lui	t7,0x36                                      | 0027bf20: 3c0f0036  lui	t7,0x36
+   0027bf24: 000420c0  sll	a0,a0,0x3                                    | 0027bf24: 000420c0  sll	a0,a0,0x3
+   0027bf28: 8deef230  lw	t6,-3536(t7)   ; = D_0035f230                 | 0027bf28: 8deef230  lw	t6,-3536(t7)   ; = D_0035f230
+   0027bf2c: 24020001  li	v0,1                                          | 0027bf2c: 24020001  li	v0,1
+!! 0027bf30: 85cc0002  lh	t4,2(t6)                                      | 0027bf30: 85cc0004  lh	t4,4(t6)
+   0027bf34: 008e2021  addu	a0,a0,t6                                    | 0027bf34: 008e2021  addu	a0,a0,t6
+!! 0027bf38: 85cd0004  lh	t5,4(t6)                                      | 0027bf38: 85cd0002  lh	t5,2(t6)
+   0027bf3c: 808b000e  lb	t3,14(a0)                                     | 0027bf3c: 808b000e  lb	t3,14(a0)
+!! 0027bf40: 018d6023  subu	t4,t4,t5                                    | 0027bf40: 01ac6823  subu	t5,t5,t4
+!! 0027bf44: 298f0000  slti	t7,t4,0                                     | 0027bf44: 29af0000  slti	t7,t5,0
+   0027bf48: 15600004  bnez	t3,0x27bf5c                                 | 0027bf48: 15600004  bnez	t3,27bf5c <func_0027bf20+0x3c>
+!! 0027bf4c: 000f600b  movn	t4,zero,t7                                  | 0027bf4c: 000f680b  movn	t5,zero,t7
+   0027bf50: 808f0011  lb	t7,17(a0)                                     | 0027bf50: 808f0011  lb	t7,17(a0)
+!! 0027bf54: 018f782a  slt	t7,t4,t7                                     | 0027bf54: 01af782a  slt	t7,t5,t7
+   0027bf58: 39e20001  xori	v0,t7,0x1                                   | 0027bf58: 39e20001  xori	v0,t7,0x1
+   0027bf5c: 03e00008  jr	ra                                            | 0027bf5c: 03e00008  jr	ra
+   0027bf60: 00000000  nop                                              | 0027bf60: 00000000  nop

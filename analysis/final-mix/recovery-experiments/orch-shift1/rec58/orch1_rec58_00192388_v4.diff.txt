@@ -1,0 +1,20 @@
+00192388: compiled 52 bytes, target 64 bytes, exact=False
+Differing words: 14. First difference at instruction 2 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00192388: 908e0000  lbu	t6,0(a0)                                     | 00192388: 908e0000  lbu	t6,0(a0)
+   0019238c: 2dcf0020  sltiu	t7,t6,32                                   | 0019238c: 2dcf0020  sltiu	t7,t6,32
+!! 00192390: 15e00005  bnez	t7,0x1923a8                                 | 00192390: 11e00007  beqz	t7,1923b0 <func_00192388+0x28>
+!! 00192394: 00000000  nop                                              | 00192394: 24020001  li	v0,1
+!! 00192398: 24840001  addiu	a0,a0,1                                    | 00192398: 11c00006  beqz	t6,1923b4 <func_00192388+0x2c>
+!! 0019239c: 0080102d  move	v0,a0                                       | 0019239c: 0000102d  move	v0,zero
+!! 001923a0: 03e00008  jr	ra                                            | 001923a0: 3c0f0037  lui	t7,0x37
+!! 001923a4: 00000000  nop                                              | 001923a4: 25efcea0  addiu	t7,t7,-12640   ; = D_0036cea0
+!! 001923a8: 11c0fffd  beqz	t6,0x1923a0                                 | 001923a8: 01cf7821  addu	t7,t6,t7
+!! 001923ac: 0000102d  move	v0,zero                                     | 001923ac: 91e20000  lbu	v0,0(t7)
+!! 001923b0: 3c0f0037  lui	t7,0x37                                      | 001923b0: 00821021  addu	v0,a0,v0
+!! 001923b4: 25efcea0  addiu	t7,t7,-12640   ; = D_0036cea0              | 001923b4: 03e00008  jr	ra
+!! 001923b8: 01cf7821  addu	t7,t6,t7                                    | 001923b8: 00000000  nop
+!! 001923bc: 91ee0000  lbu	t6,0(t7)                                     | 
+!! 001923c0: 1000fff6  b	0x19239c                                       | 
+!! 001923c4: 008e2021  addu	a0,a0,t6                                    | 

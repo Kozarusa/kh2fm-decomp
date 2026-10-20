@@ -1,0 +1,23 @@
+001997c0: compiled 72 bytes, target 76 bytes, exact=False
+Differing words: 9. First difference at instruction 7 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001997c0: 27bdfff0  addiu	sp,sp,-16                                  | 001997c0: 27bdfff0  addiu	sp,sp,-16
+   001997c4: ffbf0000  sd	ra,0(sp)                                      | 001997c4: ffbf0000  sd	ra,0(sp)
+   001997c8: 0c05ba48  jal	0x16e920                                     | 001997c8: 0c05ba48  jal	16e920 <func_0016e920>
+   001997cc: 8c840000  lw	a0,0(a0)                                      | 001997cc: 8c840000  lw	a0,0(a0)
+   001997d0: 904e0004  lbu	t6,4(v0)                                     | 001997d0: 904e0004  lbu	t6,4(v0)
+   001997d4: 240f000d  li	t7,13                                         | 001997d4: 240f000d  li	t7,13
+   001997d8: 24020001  li	v0,1                                          | 001997d8: 24020001  li	v0,1
+!! 001997dc: 11cf0008  beq	t6,t7,0x199800                               | 001997dc: 11cf0007  beq	t6,t7,1997fc <func_001997c0+0x3c>
+   001997e0: 29cd000e  slti	t5,t6,14                                    | 001997e0: 29cd000e  slti	t5,t6,14
+   001997e4: 15a00004  bnez	t5,0x1997f8                                 | 001997e4: 15a00004  bnez	t5,1997f8 <func_001997c0+0x38>
+!! 001997e8: 240f0004  li	t7,4                                          | 001997e8: 39cf0004  xori	t7,t6,0x4
+   001997ec: 240f0015  li	t7,21                                         | 001997ec: 240f0015  li	t7,21
+!! 001997f0: 11cf0003  beq	t6,t7,0x199800                               | 001997f0: 11cf0002  beq	t6,t7,1997fc <func_001997c0+0x3c>
+!! 001997f4: 240f0017  li	t7,23                                         | 001997f4: 39cf0017  xori	t7,t6,0x17
+!! 001997f8: 55cf0001  bnel	t6,t7,0x199800                              | 001997f8: 2de20001  sltiu	v0,t7,1
+!! 001997fc: 0000102d  move	v0,zero                                     | 001997fc: dfbf0000  ld	ra,0(sp)
+!! 00199800: dfbf0000  ld	ra,0(sp)                                      | 00199800: 03e00008  jr	ra
+!! 00199804: 03e00008  jr	ra                                            | 00199804: 27bd0010  addiu	sp,sp,16
+!! 00199808: 27bd0010  addiu	sp,sp,16                                   | 

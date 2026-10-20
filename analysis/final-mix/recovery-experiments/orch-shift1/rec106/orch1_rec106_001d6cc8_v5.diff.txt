@@ -1,0 +1,20 @@
+001d6cc8: compiled 64 bytes, target 56 bytes, exact=False
+Differing words: 16. First difference at instruction 0 (0-based).
+
+ORIGINAL                                                                | COMPILED
+!! 001d6cc8: 14800004  bnez	a0,0x1d6cdc                                 | 001d6cc8: 14800005  bnez	a0,1d6ce0 <func_001d6cc8+0x18>
+!! 001d6ccc: 3c0f01d6  lui	t7,0x1d6                                     | 001d6ccc: 248d0040  addiu	t5,a0,64
+!! 001d6cd0: 8deeba98  lw	t6,-17768(t7)   ; = D_01d5ba98                | 001d6cd0: 3c0f01d6  lui	t7,0x1d6
+!! 001d6cd4: 03e00008  jr	ra                                            | 001d6cd4: 8de2ba98  lw	v0,-17768(t7)   ; = D_01d5ba98
+!! 001d6cd8: 25c20008  addiu	v0,t6,8                                    | 001d6cd8: 03e00008  jr	ra
+!! 001d6cdc: 24820040  addiu	v0,a0,64                                   | 001d6cdc: 24420008  addiu	v0,v0,8
+!! 001d6ce0: 8deeba98  lw	t6,-17768(t7)   ; = D_01d5ba98                | 001d6ce0: 3c0e01d6  lui	t6,0x1d6
+!! 001d6ce4: 8dcd0004  lw	t5,4(t6)                                      | 001d6ce4: 8dc2ba98  lw	v0,-17768(t6)   ; = D_01d5ba98
+!! 001d6ce8: 000d6980  sll	t5,t5,0x6                                    | 001d6ce8: 8c4f0004  lw	t7,4(v0)
+!! 001d6cec: 01cd7021  addu	t6,t6,t5                                    | 001d6cec: 000f7980  sll	t7,t7,0x6
+!! 001d6cf0: 25ce0008  addiu	t6,t6,8                                    | 001d6cf0: 004f7821  addu	t7,v0,t7
+!! 001d6cf4: 004e702b  sltu	t6,v0,t6                                    | 001d6cf4: 25ef0008  addiu	t7,t7,8
+!! 001d6cf8: 03e00008  jr	ra                                            | 001d6cf8: 0000102d  move	v0,zero
+!! 001d6cfc: 000e100a  movz	v0,zero,t6                                  | 001d6cfc: 01af782b  sltu	t7,t5,t7
+!!                                                                      | 001d6d00: 03e00008  jr	ra
+!!                                                                      | 001d6d04: 01af100b  movn	v0,t5,t7

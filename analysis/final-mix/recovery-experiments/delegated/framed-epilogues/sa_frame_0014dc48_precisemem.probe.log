@@ -1,0 +1,7 @@
+recovery-experiments/sa_frame_0014dc48_precisemem/probe.cpp: In function `void 
+   func_0014dc48(unsigned int, short unsigned int, unsigned int, short unsigned 
+   int, short unsigned int, short unsigned int, unsigned int)':
+recovery-experiments/sa_frame_0014dc48_precisemem/probe.cpp:109: warning: invalid
+   conversion from `u32' to `void*'
+Exact probe matches: 0/1
+Detailed proof: analysis/final-mix/recovery-experiments/delegated/framed-epilogues/sa_frame_0014dc48_precisemem.verification.json

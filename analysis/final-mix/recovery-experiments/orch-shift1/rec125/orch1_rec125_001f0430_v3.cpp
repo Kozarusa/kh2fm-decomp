@@ -1,0 +1,15 @@
+#include "../common/types.h"
+
+void func_001f0430(u8* source, f32* dest) {
+    f32 zero = 0.0f;
+    asm("" : "+f"(zero)); // why: keeps zero in a float register so stores are swc1
+    dest[1] = *(f32*)(source + 8);
+    f32 second = *(f32*)(source + 20);
+    *(u8**)dest = source;
+    dest[4] = second;
+    asm volatile("" ::: "memory"); // why: keeps store order
+    dest[2] = zero;
+    dest[6] = zero;
+    dest[5] = zero;
+    dest[3] = zero;
+}

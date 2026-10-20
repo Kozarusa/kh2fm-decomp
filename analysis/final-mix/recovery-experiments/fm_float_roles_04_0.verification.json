@@ -1,0 +1,51 @@
+{
+  "source_sha256": "18ce39a32859f1a6c7c7d26ba363d205659913747aeb6428adc5c7969bb4dc10",
+  "source": "analysis/final-mix/recovery-experiments/fm_float_roles_04_0.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "002e3f78",
+      "symbol": "_Z13func_002e3f78Pj",
+      "compiled_size": 28,
+      "target_size": 36,
+      "ghidra_body_size": 36,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "37000f3c040080ac785fe0c5000080ac0c0080e40800e003080080ac",
+      "target_hex": "37000f3c00008044785fef250000e1c5000080e40c0081e4080080e40800e003040080e4"
+    },
+    {
+      "address": "002e4a08",
+      "symbol": "_Z13func_002e4a08Pj",
+      "compiled_size": 28,
+      "target_size": 36,
+      "ghidra_body_size": 36,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "37000f3cb85fe0c5000080e437000f3cbc5fe0c50800e003040080e4",
+      "target_hex": "37000f3cb85fef250000e0c537000f3c000080e4bc5fef250000e1c50800e003040081e4"
+    },
+    {
+      "address": "002eac70",
+      "symbol": "_Z13func_002eac70ffff",
+      "compiled_size": 36,
+      "target_size": 36,
+      "ghidra_body_size": 36,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "36000f3c36000e3c4034ece54834cde536000f3c36000e3c4c34eee50800e0035034cfe5",
+      "target_hex": "36000f3c36000e3c4034ece54834cde536000f3c36000e3c4c34eee50800e0035034cfe5"
+    },
+    {
+      "address": "0031e268",
+      "symbol": "_Z13func_0031e268i",
+      "compiled_size": 72,
+      "target_size": 76,
+      "ghidra_body_size": 76,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "37000f3c0400842438c2e0c507000e24ffff0d2480ff0f24fcff80acffffce2500008fa001008fa002008fa003008fa0040080e4080080acf7ffcd15100084240800e00300000000",
+      "target_hex": "37000f3c0400842438c2ef2507000e240000e0c5ffff0d2480000f24fcff80acffffce2500008fa001008fa002008fa003008fa0040080e4080080acf7ffcd15100084240800e00300000000"
+    }
+  ]
+}

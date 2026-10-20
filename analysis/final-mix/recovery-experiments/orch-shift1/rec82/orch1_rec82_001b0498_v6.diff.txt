@@ -1,0 +1,23 @@
+001b0498: compiled 76 bytes, target 64 bytes, exact=False
+Differing words: 9. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001b0498: 8c8e0000  lw	t6,0(a0)                                      | 001b0498: 8c8e0000  lw	t6,0(a0)
+!! 001b049c: 11c0000c  beqz	t6,0x1b04d0                                 | 001b049c: 11c0000d  beqz	t6,1b04d4 <func_001b0498+0x3c>
+   001b04a0: 0000102d  move	v0,zero                                     | 001b04a0: 0000102d  move	v0,zero
+   001b04a4: 908f0008  lbu	t7,8(a0)                                     | 001b04a4: 908f0008  lbu	t7,8(a0)
+   001b04a8: 39ef0001  xori	t7,t7,0x1                                   | 001b04a8: 39ef0001  xori	t7,t7,0x1
+   001b04ac: 31ef0001  andi	t7,t7,0x1                                   | 001b04ac: 31ef0001  andi	t7,t7,0x1
+   001b04b0: 31ef00ff  andi	t7,t7,0xff                                  | 001b04b0: 31ef00ff  andi	t7,t7,0xff
+!! 001b04b4: 55e00006  bnezl	t7,0x1b04d0                                | 001b04b4: 15e00009  bnez	t7,1b04dc <func_001b0498+0x44>
+!! 001b04b8: 24020001  li	v0,1                                          | 001b04b8: 00000000  nop
+   001b04bc: 8dcf0160  lw	t7,352(t6)                                    | 001b04bc: 8dcf0160  lw	t7,352(t6)
+   001b04c0: 3c0e0400  lui	t6,0x400                                     | 001b04c0: 3c0e0400  lui	t6,0x400
+   001b04c4: 01ee7824  and	t7,t7,t6                                     | 001b04c4: 01ee7824  and	t7,t7,t6
+!! 001b04c8: 55e00001  bnezl	t7,0x1b04d0                                | 001b04c8: 15e00002  bnez	t7,1b04d4 <func_001b0498+0x3c>
+   001b04cc: 24020001  li	v0,1                                          | 001b04cc: 24020001  li	v0,1
+!! 001b04d0: 03e00008  jr	ra                                            | 001b04d0: 0000102d  move	v0,zero
+!! 001b04d4: 00000000  nop                                              | 001b04d4: 03e00008  jr	ra
+!!                                                                      | 001b04d8: 00000000  nop
+!!                                                                      | 001b04dc: 03e00008  jr	ra
+!!                                                                      | 001b04e0: 24020001  li	v0,1

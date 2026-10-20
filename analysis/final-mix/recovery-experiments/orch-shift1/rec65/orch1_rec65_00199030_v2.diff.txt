@@ -1,0 +1,30 @@
+00199030: compiled 96 bytes, target 104 bytes, exact=False
+Differing words: 25. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00199030: 27bdfff0  addiu	sp,sp,-16                                  | 00199030: 27bdfff0  addiu	sp,sp,-16
+!! 00199034: 0080302d  move	a2,a0                                       | 00199034: ffb00000  sd	s0,0(sp)
+!! 00199038: ffb00000  sd	s0,0(sp)                                      | 00199038: ffbf0008  sd	ra,8(sp)
+!! 0019903c: ffbf0008  sd	ra,8(sp)                                      | 0019903c: 908f0030  lbu	t7,48(a0)
+!! 00199040: 908f0030  lbu	t7,48(a0)                                    | 00199040: 15e00011  bnez	t7,199088 <func_00199030+0x58>
+!! 00199044: 15e00008  bnez	t7,0x199068                                 | 00199044: 0080302d  move	a2,a0
+!! 00199048: 24020001  li	v0,1                                          | 00199048: 8c8f0010  lw	t7,16(a0)
+!! 0019904c: 8c8f0010  lw	t7,16(a0)                                     | 0019904c: 15e0000b  bnez	t7,19907c <func_00199030+0x4c>
+!! 00199050: 11e00009  beqz	t7,0x199078                                 | 00199050: 01e0202d  move	a0,t7
+!! 00199054: 01e0202d  move	a0,t7                                       | 00199054: 24d00034  addiu	s0,a2,52
+!! 00199058: 8cc50014  lw	a1,20(a2)                                     | 00199058: 0000282d  move	a1,zero
+!! 0019905c: 0c065e4c  jal	0x197930                                     | 0019905c: 0c067c1c  jal	19f070 <func_0019f070>
+!! 00199060: 24c60034  addiu	a2,a2,52                                   | 00199060: 0200202d  move	a0,s0
+!! 00199064: 24020001  li	v0,1                                          | 00199064: 0c067c18  jal	19f060 <func_0019f060>
+!! 00199068: dfb00000  ld	s0,0(sp)                                      | 00199068: 0200202d  move	a0,s0
+!! 0019906c: dfbf0008  ld	ra,8(sp)                                      | 0019906c: dfb00000  ld	s0,0(sp)
+!! 00199070: 03e00008  jr	ra                                            | 00199070: dfbf0008  ld	ra,8(sp)
+!! 00199074: 27bd0010  addiu	sp,sp,16                                   | 00199074: 03e00008  jr	ra
+!! 00199078: 24d00034  addiu	s0,a2,52                                   | 00199078: 27bd0010  addiu	sp,sp,16
+!! 0019907c: 0000282d  move	a1,zero                                     | 0019907c: 8cc50014  lw	a1,20(a2)
+!! 00199080: 0c067c1c  jal	0x19f070                                     | 00199080: 0c065e4c  jal	197930 <func_00197930>
+!! 00199084: 0200202d  move	a0,s0                                       | 00199084: 24c60034  addiu	a2,a2,52
+!! 00199088: 0c067c18  jal	0x19f060                                     | 00199088: 1000fff8  b	19906c <func_00199030+0x3c>
+!! 0019908c: 0200202d  move	a0,s0                                       | 0019908c: 24020001  li	v0,1
+!! 00199090: 1000fff6  b	0x19906c                                       | 
+!! 00199094: dfb00000  ld	s0,0(sp)                                      | 

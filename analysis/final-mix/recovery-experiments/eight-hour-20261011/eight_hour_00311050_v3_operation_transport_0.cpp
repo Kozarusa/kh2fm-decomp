@@ -1,0 +1,11 @@
+#include "../common/types.h"
+extern "C" void func_00305a50(s32,s32*);
+void func_00311050(u32 value,s8 flag)
+{
+ s32 payload[2];
+ payload[0]=value;
+ payload[1]=flag;
+ register s32 operation asm("$4");
+ asm("li %0,3" : "=r"(operation));
+ func_00305a50(operation,payload);
+}

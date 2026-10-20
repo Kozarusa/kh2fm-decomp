@@ -1,0 +1,10 @@
+{
+  "source_sha256": "8b51f2db62b0d3b223eb305bee57970d01aa026baf3f4441fb1d47595196670e",
+  "prior_source": "analysis/final-mix/recovery-experiments/fm_return_variants_v2_02_0.cpp",
+  "prior_source_sha256": "9738db46134fb835a626e61bd8fcccfecb0e23f3b4fed40ac845439127fe8273",
+  "prior_proof_sha256": "a47152188a8914e92348046960423843c643d6e0fb1b1fd852c3308ee98464a3",
+  "profile": "parameters",
+  "limitations": [
+    "Width changes are proposals; full original-range compiler equality is required."
+  ]
+}

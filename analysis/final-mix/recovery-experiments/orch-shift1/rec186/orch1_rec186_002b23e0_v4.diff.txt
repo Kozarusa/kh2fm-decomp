@@ -1,0 +1,22 @@
+002b23e0: compiled 72 bytes, target 72 bytes, exact=False
+Differing words: 4. First difference at instruction 11 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   002b23e0: 27bdfff0  addiu	sp,sp,-16                                  | 002b23e0: 27bdfff0  addiu	sp,sp,-16
+   002b23e4: 0080102d  move	v0,a0                                       | 002b23e4: 0080102d  move	v0,a0
+   002b23e8: ffbf0000  sd	ra,0(sp)                                      | 002b23e8: ffbf0000  sd	ra,0(sp)
+   002b23ec: 04410003  bgez	v0,0x2b23fc                                 | 002b23ec: 04410003  bgez	v0,2b23fc <func_002b23e0+0x1c>
+   002b23f0: 2404001c  li	a0,28                                         | 002b23f0: 2404001c  li	a0,28
+   002b23f4: 0c09d982  jal	0x276608                                     | 002b23f4: 0c09d982  jal	276608 <func_00276608>
+   002b23f8: 00000000  nop                                              | 002b23f8: 00000000  nop
+   002b23fc: 0c0ac8ce  jal	0x2b2338                                     | 002b23fc: 0c0ac8ce  jal	2b2338 <func_002b2338>
+   002b2400: 0040202d  move	a0,v0                                       | 002b2400: 0040202d  move	a0,v0
+   002b2404: 0040682d  move	t5,v0                                       | 002b2404: 0040682d  move	t5,v0
+   002b2408: dfbf0000  ld	ra,0(sp)                                      | 002b2408: dfbf0000  ld	ra,0(sp)
+!! 002b240c: 240e0024  li	t6,36                                         | 002b240c: 240f0024  li	t7,36
+!! 002b2410: 3c0f0036  lui	t7,0x36                                      | 002b2410: 3c0e0036  lui	t6,0x36
+!! 002b2414: 01ae6818  mult	t5,t5,t6                                    | 002b2414: 01af6818  mult	t5,t5,t7
+!! 002b2418: 8de2f630  lw	v0,-2512(t7)   ; = D_0035f630                 | 002b2418: 8dc2f630  lw	v0,-2512(t6)   ; = D_0035f630
+   002b241c: 004d1021  addu	v0,v0,t5                                    | 002b241c: 004d1021  addu	v0,v0,t5
+   002b2420: 03e00008  jr	ra                                            | 002b2420: 03e00008  jr	ra
+   002b2424: 27bd0010  addiu	sp,sp,16                                   | 002b2424: 27bd0010  addiu	sp,sp,16

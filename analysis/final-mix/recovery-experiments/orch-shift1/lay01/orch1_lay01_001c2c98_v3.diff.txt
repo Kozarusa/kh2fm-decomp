@@ -1,0 +1,23 @@
+001c2c98: compiled 76 bytes, target 76 bytes, exact=False
+Differing words: 11. First difference at instruction 5 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001c2c98: 27bdfff0  addiu	sp,sp,-16                                  | 001c2c98: 27bdfff0  addiu	sp,sp,-16
+   001c2c9c: ffb00000  sd	s0,0(sp)                                      | 001c2c9c: ffb00000  sd	s0,0(sp)
+   001c2ca0: ffbf0008  sd	ra,8(sp)                                      | 001c2ca0: ffbf0008  sd	ra,8(sp)
+   001c2ca4: 0c075f34  jal	0x1d7cd0                                     | 001c2ca4: 0c075f34  jal	1d7cd0 <func_001d7cd0>
+   001c2ca8: 0080802d  move	s0,a0                                       | 001c2ca8: 0080802d  move	s0,a0
+!! 001c2cac: 8e0d0588  lw	t5,1416(s0)                                   | 001c2cac: 8e0c0588  lw	t4,1416(s0)
+!! 001c2cb0: 3c0f0020  lui	t7,0x20                                      | 001c2cb0: 3c0e0020  lui	t6,0x20
+!! 001c2cb4: 8e0e0abc  lw	t6,2748(s0)                                   | 001c2cb4: 8e0d0abc  lw	t5,2748(s0)
+!! 001c2cb8: 01af6825  or	t5,t5,t7                                      | 001c2cb8: 3c0f0035  lui	t7,0x35
+!! 001c2cbc: dfbf0008  ld	ra,8(sp)                                      | 001c2cbc: 018e6025  or	t4,t4,t6
+!! 001c2cc0: 3c0f0035  lui	t7,0x35                                      | 001c2cc0: dfbf0008  ld	ra,8(sp)
+!! 001c2cc4: ae0d0588  sw	t5,1416(s0)                                   | 001c2cc4: ae0c0588  sw	t4,1416(s0)
+!! 001c2cc8: 35ce0004  ori	t6,t6,0x4                                    | 001c2cc8: 25ef1468  addiu	t7,t7,5224   ; = D_00351468
+!! 001c2ccc: 25ef1468  addiu	t7,t7,5224   ; = D_00351468                | 001c2ccc: ae0f0000  sw	t7,0(s0)
+!! 001c2cd0: ae0f0000  sw	t7,0(s0)                                      | 001c2cd0: 35ad0004  ori	t5,t5,0x4
+!! 001c2cd4: ae0e0abc  sw	t6,2748(s0)                                   | 001c2cd4: ae0d0abc  sw	t5,2748(s0)
+   001c2cd8: dfb00000  ld	s0,0(sp)                                      | 001c2cd8: dfb00000  ld	s0,0(sp)
+   001c2cdc: 03e00008  jr	ra                                            | 001c2cdc: 03e00008  jr	ra
+   001c2ce0: 27bd0010  addiu	sp,sp,16                                   | 001c2ce0: 27bd0010  addiu	sp,sp,16

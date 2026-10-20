@@ -1,0 +1,35 @@
+001fb928: compiled 124 bytes, target 124 bytes, exact=False
+Differing words: 24. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001fb928: 27bdffe0  addiu	sp,sp,-32                                  | 001fb928: 27bdffe0  addiu	sp,sp,-32
+!! 001fb92c: ffb00000  sd	s0,0(sp)                                      | 001fb92c: 8cce000c  lw	t6,12(a2)
+!! 001fb930: ffb10008  sd	s1,8(sp)                                      | 001fb930: ffb00000  sd	s0,0(sp)
+!! 001fb934: ffb20010  sd	s2,16(sp)                                     | 001fb934: ffb10008  sd	s1,8(sp)
+!! 001fb938: 0080802d  move	s0,a0                                       | 001fb938: ffb20010  sd	s2,16(sp)
+!! 001fb93c: ffbf0018  sd	ra,24(sp)                                     | 001fb93c: 0080802d  move	s0,a0
+!! 001fb940: 00a0882d  move	s1,a1                                       | 001fb940: ffbf0018  sd	ra,24(sp)
+!! 001fb944: 8cce000c  lw	t6,12(a2)                                     | 001fb944: 00a0882d  move	s1,a1
+   001fb948: 8dcf0000  lw	t7,0(t6)                                      | 001fb948: 8dcf0000  lw	t7,0(t6)
+!! 001fb94c: 008f7821  addu	t7,a0,t7                                    | 001fb94c: 0c07ead2  jal	1fab48 <func_001fab48>
+!! 001fb950: 0c07ead2  jal	0x1fab48                                     | 001fb950: 008f9021  addu	s2,a0,t7
+!! 001fb954: 25f200a0  addiu	s2,t7,160                                  | 001fb954: 8e0e000c  lw	t6,12(s0)
+!! 001fb958: 8e0e000c  lw	t6,12(s0)                                     | 001fb958: 8e2f0000  lw	t7,0(s1)
+!! 001fb95c: 8e2f0000  lw	t7,0(s1)                                      | 001fb95c: 15ee000b  bne	t7,t6,1fb98c <func_001fb928+0x64>
+!! 001fb960: 15ee000b  bne	t7,t6,0x1fb990                               | 001fb960: 265200a0  addiu	s2,s2,160
+!! 001fb964: dfb00000  ld	s0,0(sp)                                      | 001fb964: 962e0012  lhu	t6,18(s1)
+!! 001fb968: c620000c  lwc1	$f0,12(s1)                                  | 001fb968: 962f0010  lhu	t7,16(s1)
+!! 001fb96c: e6400020  swc1	$f0,32(s2)                                  | 001fb96c: 448e0000  mtc1	t6,$f0
+!! 001fb970: 962f0010  lhu	t7,16(s1)                                    | 001fb970: 448f1000  mtc1	t7,$f2
+!! 001fb974: 448f0000  mtc1	t7,$f0                                      | 001fb974: 46800020  cvt.s.w	$f0,$f0
+!! 001fb978: 46800020  cvt.s.w	$f0,$f0                                  | 001fb978: 468010a0  cvt.s.w	$f2,$f2
+!! 001fb97c: e6400028  swc1	$f0,40(s2)                                  | 001fb97c: c621000c  lwc1	$f1,12(s1)
+!! 001fb980: 962f0012  lhu	t7,18(s1)                                    | 001fb980: e640002c  swc1	$f0,44(s2)
+!! 001fb984: 448f0000  mtc1	t7,$f0                                      | 001fb984: e6410020  swc1	$f1,32(s2)
+!! 001fb988: 46800020  cvt.s.w	$f0,$f0                                  | 001fb988: e6420028  swc1	$f2,40(s2)
+!! 001fb98c: e640002c  swc1	$f0,44(s2)                                  | 001fb98c: dfb00000  ld	s0,0(sp)
+   001fb990: dfb10008  ld	s1,8(sp)                                      | 001fb990: dfb10008  ld	s1,8(sp)
+   001fb994: dfb20010  ld	s2,16(sp)                                     | 001fb994: dfb20010  ld	s2,16(sp)
+   001fb998: dfbf0018  ld	ra,24(sp)                                     | 001fb998: dfbf0018  ld	ra,24(sp)
+   001fb99c: 03e00008  jr	ra                                            | 001fb99c: 03e00008  jr	ra
+   001fb9a0: 27bd0020  addiu	sp,sp,32                                   | 001fb9a0: 27bd0020  addiu	sp,sp,32

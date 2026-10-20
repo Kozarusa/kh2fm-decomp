@@ -1,0 +1,27 @@
+001735b0: compiled 88 bytes, target 92 bytes, exact=False
+Differing words: 11. First difference at instruction 12 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001735b0: 27bdffe0  addiu	sp,sp,-32                                  | 001735b0: 27bdffe0  addiu	sp,sp,-32
+   001735b4: 24060002  li	a2,2                                          | 001735b4: 24060002  li	a2,2
+   001735b8: ffb00010  sd	s0,16(sp)                                     | 001735b8: ffb00010  sd	s0,16(sp)
+   001735bc: ffbf0018  sd	ra,24(sp)                                     | 001735bc: ffbf0018  sd	ra,24(sp)
+   001735c0: 0080802d  move	s0,a0                                       | 001735c0: 0080802d  move	s0,a0
+   001735c4: 8c850000  lw	a1,0(a0)                                      | 001735c4: 8c850000  lw	a1,0(a0)
+   001735c8: c60c0004  lwc1	$f12,4(s0)                                  | 001735c8: c60c0004  lwc1	$f12,4(s0)
+   001735cc: c60d0008  lwc1	$f13,8(s0)                                  | 001735cc: c60d0008  lwc1	$f13,8(s0)
+   001735d0: 03a0202d  move	a0,sp                                       | 001735d0: 03a0202d  move	a0,sp
+   001735d4: c60e000c  lwc1	$f14,12(s0)                                 | 001735d4: c60e000c  lwc1	$f14,12(s0)
+   001735d8: 0c069e30  jal	0x1a78c0                                     | 001735d8: 0c069e30  jal	1a78c0 <func_001a78c0>
+   001735dc: c60f0010  lwc1	$f15,16(s0)                                 | 001735dc: c60f0010  lwc1	$f15,16(s0)
+!! 001735e0: 3c0f01c6  lui	t7,0x1c6                                     | 001735e0: 3c0d01c6  lui	t5,0x1c6
+!! 001735e4: 25eff480  addiu	t7,t7,-2944   ; = D_01c5f480               | 001735e4: 25aef480  addiu	t6,t5,-2944   ; = D_01c5f480
+!! 001735e8: 53af0004  beql	sp,t7,0x1735fc                              | 001735e8: 13ae0002  beq	sp,t6,1735f4 <func_001735b0+0x44>
+!! 001735ec: ae0f0000  sw	t7,0(s0)                                      | 001735ec: 7baf0000  lq	t7,0(sp)
+!! 001735f0: 7ba80000  lq	t0,0(sp)                                      | 001735f0: 7daff480  sq	t7,-2944(t5)   ; = D_01c5f480
+!! 001735f4: 7de80000  sq	t0,0(t7)                                      | 001735f4: ae0e0000  sw	t6,0(s0)
+!! 001735f8: ae0f0000  sw	t7,0(s0)                                      | 001735f8: dfbf0018  ld	ra,24(sp)
+!! 001735fc: dfbf0018  ld	ra,24(sp)                                     | 001735fc: dfb00010  ld	s0,16(sp)
+!! 00173600: dfb00010  ld	s0,16(sp)                                     | 00173600: 03e00008  jr	ra
+!! 00173604: 03e00008  jr	ra                                            | 00173604: 27bd0020  addiu	sp,sp,32
+!! 00173608: 27bd0020  addiu	sp,sp,32                                   | 

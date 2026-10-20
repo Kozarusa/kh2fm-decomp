@@ -1,0 +1,68 @@
+##### 002f8870 002f8888
+  2f8870:	440e6000 	mfc1	t6,$f12
+  2f8874:	3c0f7fff 	lui	t7,0x7fff
+  2f8878:	35efffff 	ori	t7,t7,0xffff
+  2f887c:	01cf7024 	and	t6,t6,t7
+  2f8880:	03e00008 	jr	ra
+  2f8884:	448e0000 	mtc1	t6,$f0
+##### 00152598 001525b4
+  152598:	000578c0 	sll	t7,a1,0x3
+  15259c:	14c00003 	bnez	a2,0x1525ac
+  1525a0:	01e77821 	addu	t7,t7,a3
+  1525a4:	03e00008 	jr	ra
+  1525a8:	8de20000 	lw	v0,0(t7)
+  1525ac:	03e00008 	jr	ra
+  1525b0:	8de20004 	lw	v0,4(t7)
+##### 002d5c20 002d5c3c
+  2d5c20:	44800000 	mtc1	zero,$f0
+  2d5c24:	0080102d 	move	v0,a0
+  2d5c28:	e480000c 	swc1	$f0,12(a0)
+  2d5c2c:	e4800000 	swc1	$f0,0(a0)
+  2d5c30:	e4800004 	swc1	$f0,4(a0)
+  2d5c34:	03e00008 	jr	ra
+  2d5c38:	e4800008 	swc1	$f0,8(a0)
+##### 00308da0 00308dbc
+  308da0:	8c830010 	lw	v1,16(a0)
+  308da4:	3c02ffff 	lui	v0,0xffff
+  308da8:	3442fffe 	ori	v0,v0,0xfffe
+  308dac:	ac800018 	sw	zero,24(a0)
+  308db0:	00621824 	and	v1,v1,v0
+  308db4:	03e00008 	jr	ra
+  308db8:	ac830010 	sw	v1,16(a0)
+##### 0028af90 0028afa4
+  28af90:	04a10002 	bgez	a1,0x28af9c
+  28af94:	00a0782d 	move	t7,a1
+  28af98:	948f0004 	lhu	t7,4(a0)
+  28af9c:	03e00008 	jr	ra
+  28afa0:	a48f0016 	sh	t7,22(a0)
+##### 0028ac98 0028acb8
+  28ac98:	848f0000 	lh	t7,0(a0)
+  28ac9c:	14af0004 	bne	a1,t7,0x28acb0
+  28aca0:	000570c0 	sll	t6,a1,0x3
+  28aca4:	8c8f0030 	lw	t7,48(a0)
+  28aca8:	03e00008 	jr	ra
+  28acac:	01ee1021 	addu	v0,t7,t6
+  28acb0:	1000fffd 	b	0x28aca8
+  28acb4:	8c8f002c 	lw	t7,44(a0)
+##### 001c8a90 001c8aac
+  1c8a90:	3c0f01d5 	lui	t7,0x1d5
+  1c8a94:	ade09960 	sw	zero,-26272(t7)
+  1c8a98:	25ee9960 	addiu	t6,t7,-26272
+  1c8a9c:	3c0f01d5 	lui	t7,0x1d5
+  1c8aa0:	adc00004 	sw	zero,4(t6)
+  1c8aa4:	03e00008 	jr	ra
+  1c8aa8:	ade09968 	sw	zero,-26264(t7)
+##### 00100338 0010034c
+  100338:	27bdfff0 	addiu	sp,sp,-16
+  10033c:	ffbf0000 	sd	ra,0(sp)
+  100340:	dfbf0000 	ld	ra,0(sp)
+  100344:	03e00008 	jr	ra
+  100348:	27bd0010 	addiu	sp,sp,16
+/opt/ps2/gcc/bin/ee-objdump: /work/tools/kh2-reference/SLPM_666.75: no symbols
+/opt/ps2/gcc/bin/ee-objdump: /work/tools/kh2-reference/SLPM_666.75: no symbols
+/opt/ps2/gcc/bin/ee-objdump: /work/tools/kh2-reference/SLPM_666.75: no symbols
+/opt/ps2/gcc/bin/ee-objdump: /work/tools/kh2-reference/SLPM_666.75: no symbols
+/opt/ps2/gcc/bin/ee-objdump: /work/tools/kh2-reference/SLPM_666.75: no symbols
+/opt/ps2/gcc/bin/ee-objdump: /work/tools/kh2-reference/SLPM_666.75: no symbols
+/opt/ps2/gcc/bin/ee-objdump: /work/tools/kh2-reference/SLPM_666.75: no symbols
+/opt/ps2/gcc/bin/ee-objdump: /work/tools/kh2-reference/SLPM_666.75: no symbols

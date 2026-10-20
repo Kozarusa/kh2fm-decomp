@@ -1,0 +1,32 @@
+001d8f38: compiled 112 bytes, target 108 bytes, exact=False
+Differing words: 9. First difference at instruction 6 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001d8f38: 27bdfff0  addiu	sp,sp,-16                                  | 001d8f38: 27bdfff0  addiu	sp,sp,-16
+   001d8f3c: ffb00000  sd	s0,0(sp)                                      | 001d8f3c: ffb00000  sd	s0,0(sp)
+   001d8f40: ffbf0008  sd	ra,8(sp)                                      | 001d8f40: ffbf0008  sd	ra,8(sp)
+   001d8f44: 0c06ed28  jal	0x1bb4a0                                     | 001d8f44: 0c06ed28  jal	1bb4a0 <func_001bb4a0>
+   001d8f48: 0080802d  move	s0,a0                                       | 001d8f48: 0080802d  move	s0,a0
+   001d8f4c: 10400011  beqz	v0,0x1d8f94                                 | 001d8f4c: 10400011  beqz	v0,1d8f94 <func_001d8f38+0x5c>
+!! 001d8f50: 0000102d  move	v0,zero                                     | 001d8f50: 0000202d  move	a0,zero
+   001d8f54: 0c06ef2c  jal	0x1bbcb0                                     | 001d8f54: 0c06ef2c  jal	1bbcb0 <func_001bbcb0>
+   001d8f58: 00000000  nop                                              | 001d8f58: 00000000  nop
+   001d8f5c: 240f0034  li	t7,52                                         | 001d8f5c: 240f0034  li	t7,52
+   001d8f60: 020f8018  mult	s0,s0,t7                                    | 001d8f60: 020f8018  mult	s0,s0,t7
+!! 001d8f64: 00501021  addu	v0,v0,s0                                    | 001d8f64: 02021021  addu	v0,s0,v0
+   001d8f68: 8c4f019c  lw	t7,412(v0)                                    | 001d8f68: 8c4f019c  lw	t7,412(v0)
+   001d8f6c: 31ef0001  andi	t7,t7,0x1                                   | 001d8f6c: 31ef0001  andi	t7,t7,0x1
+   001d8f70: 31ef00ff  andi	t7,t7,0xff                                  | 001d8f70: 31ef00ff  andi	t7,t7,0xff
+   001d8f74: 11e00007  beqz	t7,0x1d8f94                                 | 001d8f74: 11e00007  beqz	t7,1d8f94 <func_001d8f38+0x5c>
+!! 001d8f78: 0000102d  move	v0,zero                                     | 001d8f78: 0000202d  move	a0,zero
+   001d8f7c: 0c06ef2c  jal	0x1bbcb0                                     | 001d8f7c: 0c06ef2c  jal	1bbcb0 <func_001bbcb0>
+   001d8f80: 00000000  nop                                              | 001d8f80: 00000000  nop
+!! 001d8f84: 00501021  addu	v0,v0,s0                                    | 001d8f84: 02021021  addu	v0,s0,v0
+   001d8f88: 8c4f019c  lw	t7,412(v0)                                    | 001d8f88: 8c4f019c  lw	t7,412(v0)
+   001d8f8c: 31ef0008  andi	t7,t7,0x8                                   | 001d8f8c: 31ef0008  andi	t7,t7,0x8
+!! 001d8f90: 000f102b  sltu	v0,zero,t7                                  | 001d8f90: 000f202b  sltu	a0,zero,t7
+   001d8f94: dfb00000  ld	s0,0(sp)                                      | 001d8f94: dfb00000  ld	s0,0(sp)
+!! 001d8f98: dfbf0008  ld	ra,8(sp)                                      | 001d8f98: 0080102d  move	v0,a0
+!! 001d8f9c: 03e00008  jr	ra                                            | 001d8f9c: dfbf0008  ld	ra,8(sp)
+!! 001d8fa0: 27bd0010  addiu	sp,sp,16                                   | 001d8fa0: 03e00008  jr	ra
+!!                                                                      | 001d8fa4: 27bd0010  addiu	sp,sp,16

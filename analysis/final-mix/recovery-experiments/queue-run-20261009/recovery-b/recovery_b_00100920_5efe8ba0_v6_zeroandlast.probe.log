@@ -1,0 +1,40 @@
+recovery-experiments/recovery_b_00100920_5efe8ba0_v6_zeroandlast/probe.cpp: In 
+   function `u32 func_00100920(unsigned char, unsigned int)':
+recovery-experiments/recovery_b_00100920_5efe8ba0_v6_zeroandlast/probe.cpp:3: warning: jump
+   to label `done'
+recovery-experiments/recovery_b_00100920_5efe8ba0_v6_zeroandlast/probe.cpp:3: warning: 
+    from here
+recovery-experiments/recovery_b_00100920_5efe8ba0_v6_zeroandlast/probe.cpp:3:   
+   crosses initialization of `s32 last'
+recovery-experiments/recovery_b_00100920_5efe8ba0_v6_zeroandlast/probe.cpp:3: warning: jump
+   to label `done'
+recovery-experiments/recovery_b_00100920_5efe8ba0_v6_zeroandlast/probe.cpp:3: warning: 
+    from here
+recovery-experiments/recovery_b_00100920_5efe8ba0_v6_zeroandlast/probe.cpp:3:   
+   crosses initialization of `s32 last'
+recovery-experiments/recovery_b_00100920_5efe8ba0_v6_zeroandlast/probe.cpp:3: warning: jump
+   to label `load8'
+recovery-experiments/recovery_b_00100920_5efe8ba0_v6_zeroandlast/probe.cpp:3: warning: 
+    from here
+recovery-experiments/recovery_b_00100920_5efe8ba0_v6_zeroandlast/probe.cpp:3:   
+   crosses initialization of `s32 last'
+recovery-experiments/recovery_b_00100920_5efe8ba0_v6_zeroandlast/probe.cpp:3: warning: jump
+   to label `load4'
+recovery-experiments/recovery_b_00100920_5efe8ba0_v6_zeroandlast/probe.cpp:3: warning: 
+    from here
+recovery-experiments/recovery_b_00100920_5efe8ba0_v6_zeroandlast/probe.cpp:3:   
+   crosses initialization of `s32 last'
+recovery-experiments/recovery_b_00100920_5efe8ba0_v6_zeroandlast/probe.cpp:3: warning: jump
+   to label `bad'
+recovery-experiments/recovery_b_00100920_5efe8ba0_v6_zeroandlast/probe.cpp:3: warning: 
+    from here
+recovery-experiments/recovery_b_00100920_5efe8ba0_v6_zeroandlast/probe.cpp:3:   
+   crosses initialization of `s32 last'
+Traceback (most recent call last):
+  File "/mnt/c/Users/KoZa/Documents/AGENTS/Public/tools/kh2-audit/probe_fm_source.py", line 36, in <module>
+    run(f'/opt/ps2/gcc/bin/ee-g++ -O2 -g0 -x c++ -fno-exceptions -fno-rtti -fpermissive -ffunction-sections -c {relative}/probe.cpp -o {relative}/probe.o')
+  File "/mnt/c/Users/KoZa/Documents/AGENTS/Public/tools/kh2-audit/probe_fm_source.py", line 32, in run
+    subprocess.run(['docker', 'run', '--rm', '--platform', 'linux/amd64',
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['docker', 'run', '--rm', '--platform', 'linux/amd64', '-v', '/root/kh2fm-build:/work', '-w', '/work', 'kh2-local/ps2-compiler:3.2-ee-040921-objdiff', 'bash', '-lc', '/opt/ps2/gcc/bin/ee-g++ -O2 -g0 -x c++ -fno-exceptions -fno-rtti -fpermissive -ffunction-sections -c recovery-experiments/recovery_b_00100920_5efe8ba0_v6_zeroandlast/probe.cpp -o recovery-experiments/recovery_b_00100920_5efe8ba0_v6_zeroandlast/probe.o']' returned non-zero exit status 1.

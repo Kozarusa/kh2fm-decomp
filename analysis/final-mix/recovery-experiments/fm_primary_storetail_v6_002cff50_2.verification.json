@@ -1,0 +1,18 @@
+{
+  "source_sha256": "62b0d2cd4aa2eef9f825d1d08d2e7e235b09467e925cd99d7a4b7e08d51a1752",
+  "source": "analysis/final-mix/recovery-experiments/fm_primary_storetail_v6_002cff50_2.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "002cff50",
+      "symbol": "_Z13func_002cff50i",
+      "compiled_size": 68,
+      "target_size": 68,
+      "ghidra_body_size": 68,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "f0ffbd270000b0ff0800bfff2d808000b43c0b0cf00a84240c0b00aef40a00aef80a00aefc0a00ae000b00ae040b00ae0800bfdf080b00ae0000b0df0800e0031000bd27",
+      "target_hex": "f0ffbd270000b0ff0800bfff2d808000b43c0b0cf00a84240c0b00aef40a00aef80a00aefc0a00ae000b00ae040b00ae080b00ae0800bfdf0000b0df0800e0031000bd27"
+    }
+  ]
+}

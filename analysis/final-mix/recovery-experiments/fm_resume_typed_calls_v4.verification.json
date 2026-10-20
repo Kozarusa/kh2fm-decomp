@@ -1,0 +1,172 @@
+{
+  "source_sha256": "67b5cb89805645fd41c3ad6c14984c6d888112a5d895c0fc0f70ce5828de9d02",
+  "source": "analysis/final-mix/recovery-experiments/fm_resume_typed_calls_v4.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "0014aa58",
+      "symbol": "_Z13func_0014aa58Phyh",
+      "compiled_size": 36,
+      "target_size": 36,
+      "ghidra_body_size": 36,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd27ff00c6300000bfff03000f24fc008facf40086a00000bfdf682a05081000bd27",
+      "target_hex": "f0ffbd27ff00c6300000bfff03000f24fc008facf40086a00000bfdf682a05081000bd27"
+    },
+    {
+      "address": "00172830",
+      "symbol": "_Z13func_00172830Pj",
+      "compiled_size": 36,
+      "target_size": 36,
+      "ghidra_body_size": 36,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd270000bfff00008f8c04008cc40000bfdf0400e48da0048424c0c106081000bd27",
+      "target_hex": "f0ffbd270000bfff00008f8c04008cc40000bfdf0400e48da0048424c0c106081000bd27"
+    },
+    {
+      "address": "00175108",
+      "symbol": "_Z13func_00175108Pj",
+      "compiled_size": 36,
+      "target_size": 36,
+      "ghidra_body_size": 36,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd270000bfff00008f8c0800868c0400858c0000bfdf2d20e0010e8906081000bd27",
+      "target_hex": "f0ffbd270000bfff00008f8c0800868c0400858c0000bfdf2d20e0010e8906081000bd27"
+    },
+    {
+      "address": "00175328",
+      "symbol": "_Z13func_00175328Pj",
+      "compiled_size": 36,
+      "target_size": 36,
+      "ghidra_body_size": 36,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd270000bfff00008f8c0800868c0400858c0000bfdf2d20e001209606081000bd27",
+      "target_hex": "f0ffbd270000bfff00008f8c0800868c0400858c0000bfdf2d20e001209606081000bd27"
+    },
+    {
+      "address": "00175480",
+      "symbol": "_Z13func_00175480Pj",
+      "compiled_size": 36,
+      "target_size": 36,
+      "ghidra_body_size": 36,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd272d7880000000bfff08008dc40400ecc50000848c0000bfdf8a4f05081000bd27",
+      "target_hex": "f0ffbd272d7880000000bfff08008dc40400ecc50000848c0000bfdf8a4f05081000bd27"
+    },
+    {
+      "address": "0018fb70",
+      "symbol": "_Z13func_0018fb70Pj",
+      "compiled_size": 36,
+      "target_size": 36,
+      "ghidra_body_size": 36,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd270000bfff00008f8c0800868c0400858c0000bfdf2d20e001689206081000bd27",
+      "target_hex": "f0ffbd270000bfff00008f8c0800868c0400858c0000bfdf2d20e001689206081000bd27"
+    },
+    {
+      "address": "0019c8a8",
+      "symbol": "_Z13func_0019c8a8v",
+      "compiled_size": 36,
+      "target_size": 36,
+      "ghidra_body_size": 36,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd270000bfff1ca8050c000000002672060c2d2040000000bfdf0800e0031000bd27",
+      "target_hex": "f0ffbd270000bfff1ca8050c000000002672060c2d2040000000bfdf0800e0031000bd27"
+    },
+    {
+      "address": "001a8548",
+      "symbol": "_Z13func_001a8548v",
+      "compiled_size": 36,
+      "target_size": 36,
+      "ghidra_body_size": 36,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd270000bfff2ca1060c000000000800458c0000448c0000bfdf64e004081000bd27",
+      "target_hex": "f0ffbd270000bfff2ca1060c000000000800458c0000448c0000bfdf64e004081000bd27"
+    },
+    {
+      "address": "001d4528",
+      "symbol": "_Z13func_001d4528Ph",
+      "compiled_size": 36,
+      "target_size": 36,
+      "ghidra_body_size": 36,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd270000bfff010085907e8d060c2a0084940000bfdf2a1002000800e0031000bd27",
+      "target_hex": "f0ffbd270000bfff010085907e8d060c2a0084940000bfdf2a1002000800e0031000bd27"
+    },
+    {
+      "address": "00256ef0",
+      "symbol": "_Z13func_00256ef0v",
+      "compiled_size": 36,
+      "target_size": 36,
+      "ghidra_body_size": 36,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd270000bfffdc5d090c000000005ee7040c7c0b44240000bfdf0800e0031000bd27",
+      "target_hex": "f0ffbd270000bfffdc5d090c000000005ee7040c7c0b44240000bfdf0800e0031000bd27"
+    },
+    {
+      "address": "00263188",
+      "symbol": "_Z13func_00263188v",
+      "compiled_size": 36,
+      "target_size": 36,
+      "ghidra_body_size": 36,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd270000bfffdc5d090c000000000000bfdf980144242c0105249c360a081000bd27",
+      "target_hex": "f0ffbd270000bfffdc5d090c000000000000bfdf980144242c0105249c360a081000bd27"
+    },
+    {
+      "address": "00263688",
+      "symbol": "_Z13func_00263688v",
+      "compiled_size": 36,
+      "target_size": 36,
+      "ghidra_body_size": 36,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd270000bfffb48c090c00000000228e060c000044940000bfdf0800e0031000bd27",
+      "target_hex": "f0ffbd270000bfffb48c090c00000000228e060c000044940000bfdf0800e0031000bd27"
+    },
+    {
+      "address": "00299238",
+      "symbol": "_Z13func_00299238v",
+      "compiled_size": 36,
+      "target_size": 36,
+      "ghidra_body_size": 36,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd270000bfffb4d9090c000000000000bfdf9843442403000524b2360a081000bd27",
+      "target_hex": "f0ffbd270000bfffb4d9090c000000000000bfdf9843442403000524b2360a081000bd27"
+    },
+    {
+      "address": "0029df98",
+      "symbol": "_Z13func_0029df98v",
+      "compiled_size": 36,
+      "target_size": 36,
+      "ghidra_body_size": 36,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd270000bfffb4d9090c000000000000bfdf9843442403000524b2360a081000bd27",
+      "target_hex": "f0ffbd270000bfffb4d9090c000000000000bfdf9843442403000524b2360a081000bd27"
+    },
+    {
+      "address": "0029e050",
+      "symbol": "_Z13func_0029e050v",
+      "compiled_size": 36,
+      "target_size": 36,
+      "ghidra_body_size": 36,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd270000bfffb4d9090c000000000000bfdf6048442406000524b2360a081000bd27",
+      "target_hex": "f0ffbd270000bfffb4d9090c000000000000bfdf6048442406000524b2360a081000bd27"
+    }
+  ]
+}

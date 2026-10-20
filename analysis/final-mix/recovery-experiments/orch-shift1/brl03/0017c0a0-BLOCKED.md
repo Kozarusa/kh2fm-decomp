@@ -1,0 +1,6 @@
+# 0017c0a0 blocked
+- Range: 0017c0a0, 104 bytes. Versions tried: 4. Best: v1 (also v3) with 2 differing words (104/104 bytes).
+- First difference of the best version: !! 0017c0ac: 03a0202d  move	a0,sp  (compiled addiu a2,sp,32; the a0 and a2 argument setups are swapped)
+- Changes tried: v1 copy of lay01 v1 (asm lq/sq copy, a0 binding with asm "+r" tie) (2); v2 blocker hypothesis, natural struct-return passed by value as a nested call func_0017c4c8(object, func_0017c030(...)) (15, 108 bytes, saves s1, extra lands at sp+0); v3 v1 without the asm "+r" tie on the a0 binding (2, no change); v4 v1 with the a0 tie as asm volatile (6: a0 now before a2, but the volatile barrier also pulls sd s0/move s0,a1 above the andi and moves addiu a2 into the jal delay slot).
+- Why it stops here: no improvement for 3 versions.
+- Next hypothesis: from v4, compute the masked byte (byteValue & 0xff) into a variable before the volatile a0 tie so andi a3 stays first, or bind &extra to $6 with its own tie after the a0 tie so the a2 setup is ordered after move a0 without a full barrier.

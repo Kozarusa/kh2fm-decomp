@@ -1,0 +1,25 @@
+001a8258: compiled 84 bytes, target 84 bytes, exact=False
+Differing words: 15. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001a8258: 3c0f01c7  lui	t7,0x1c7                                     | 001a8258: 3c0f01c7  lui	t7,0x1c7
+!! 001a825c: 0000682d  move	t5,zero                                     | 001a825c: 0000602d  move	t4,zero
+!! 001a8260: 8deecb98  lw	t6,-13416(t7)   ; = D_01c6cb98                | 001a8260: 8dedcb98  lw	t5,-13416(t7)   ; = D_01c6cb98
+!! 001a8264: 95cf0002  lhu	t7,2(t6)                                     | 001a8264: 95af0002  lhu	t7,2(t5)
+   001a8268: 11e0000d  beqz	t7,0x1a82a0                                 | 001a8268: 11e0000d  beqz	t7,1a82a0 <func_001a8258+0x48>
+!! 001a826c: 25ce0004  addiu	t6,t6,4                                    | 001a826c: 25ae0004  addiu	t6,t5,4
+!! 001a8270: 01e0602d  move	t4,t7                                       | 001a8270: 240b0001  li	t3,1
+!! 001a8274: 240b0001  li	t3,1                                          | 001a8274: 91cf0004  lbu	t7,4(t6)
+!! 001a8278: 91cf0004  lbu	t7,4(t6)                                     | 001a8278: 55eb0005  bnel	t7,t3,1a8290 <func_001a8258+0x38>
+!! 001a827c: 55eb0005  bnel	t7,t3,0x1a8294                              | 001a827c: 95af0002  lhu	t7,2(t5)
+!! 001a8280: 25ad0001  addiu	t5,t5,1                                    | 001a8280: 95cf0000  lhu	t7,0(t6)
+!! 001a8284: 95cf0000  lhu	t7,0(t6)                                     | 001a8284: 11e40007  beq	t7,a0,1a82a4 <func_001a8258+0x4c>
+!! 001a8288: 11e40006  beq	t7,a0,0x1a82a4                               | 001a8288: 01c0102d  move	v0,t6
+!! 001a828c: 01c0102d  move	v0,t6                                       | 001a828c: 95af0002  lhu	t7,2(t5)
+!! 001a8290: 25ad0001  addiu	t5,t5,1                                    | 001a8290: 258c0001  addiu	t4,t4,1
+!! 001a8294: 01ac782a  slt	t7,t5,t4                                     | 001a8294: 018f782a  slt	t7,t4,t7
+!! 001a8298: 15e0fff7  bnez	t7,0x1a8278                                 | 001a8298: 15e0fff6  bnez	t7,1a8274 <func_001a8258+0x1c>
+   001a829c: 25ce000c  addiu	t6,t6,12                                   | 001a829c: 25ce000c  addiu	t6,t6,12
+   001a82a0: 0000102d  move	v0,zero                                     | 001a82a0: 0000102d  move	v0,zero
+   001a82a4: 03e00008  jr	ra                                            | 001a82a4: 03e00008  jr	ra
+   001a82a8: 00000000  nop                                              | 001a82a8: 00000000  nop

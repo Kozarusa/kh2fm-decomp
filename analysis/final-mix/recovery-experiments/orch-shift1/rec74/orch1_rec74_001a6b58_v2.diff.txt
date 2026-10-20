@@ -1,0 +1,31 @@
+001a6b58: compiled 108 bytes, target 108 bytes, exact=False
+Differing words: 15. First difference at instruction 7 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001a6b58: 27bdfff0  addiu	sp,sp,-16                                  | 001a6b58: 27bdfff0  addiu	sp,sp,-16
+   001a6b5c: 00c0382d  move	a3,a2                                       | 001a6b5c: 00c0382d  move	a3,a2
+   001a6b60: ffb00000  sd	s0,0(sp)                                      | 001a6b60: ffb00000  sd	s0,0(sp)
+   001a6b64: 24060004  li	a2,4                                          | 001a6b64: 24060004  li	a2,4
+   001a6b68: ffbf0008  sd	ra,8(sp)                                      | 001a6b68: ffbf0008  sd	ra,8(sp)
+   001a6b6c: 0c06cedc  jal	0x1b3b70                                     | 001a6b6c: 0c06cedc  jal	1b3b70 <func_001b3b70>
+   001a6b70: 0080802d  move	s0,a0                                       | 001a6b70: 0080802d  move	s0,a0
+!! 001a6b74: 8e0d0600  lw	t5,1536(s0)                                   | 001a6b74: 8e0e0600  lw	t6,1536(s0)
+   001a6b78: 240fff87  li	t7,-121                                       | 001a6b78: 240fff87  li	t7,-121
+!! 001a6b7c: 8e0c0588  lw	t4,1416(s0)                                   | 001a6b7c: 8e0d0588  lw	t5,1416(s0)
+!! 001a6b80: 01af6824  and	t5,t5,t7                                     | 001a6b80: 01cf7024  and	t6,t6,t7
+!! 001a6b84: 8e0e0abc  lw	t6,2748(s0)                                   | 001a6b84: 8e0c0abc  lw	t4,2748(s0)
+!! 001a6b88: 3c0f0035  lui	t7,0x35                                      | 001a6b88: 240f0003  li	t7,3
+   001a6b8c: dfbf0008  ld	ra,8(sp)                                      | 001a6b8c: dfbf0008  ld	ra,8(sp)
+!! 001a6b90: 25ef0910  addiu	t7,t7,2320   ; = D_00350910                | 001a6b90: ae0f03b0  sw	t7,944(s0)
+!! 001a6b94: 358c0100  ori	t4,t4,0x100                                  | 001a6b94: 35ce0008  ori	t6,t6,0x8
+!! 001a6b98: ae0f0000  sw	t7,0(s0)                                      | 001a6b98: 35ad0100  ori	t5,t5,0x100
+!! 001a6b9c: 35ce0004  ori	t6,t6,0x4                                    | 001a6b9c: ae0e0600  sw	t6,1536(s0)
+!! 001a6ba0: 35ad0008  ori	t5,t5,0x8                                    | 001a6ba0: 3c0f0035  lui	t7,0x35
+!! 001a6ba4: ae0e0abc  sw	t6,2748(s0)                                   | 001a6ba4: ae0d0588  sw	t5,1416(s0)
+!! 001a6ba8: 240f0003  li	t7,3                                          | 001a6ba8: 358c0004  ori	t4,t4,0x4
+!! 001a6bac: ae0c0588  sw	t4,1416(s0)                                   | 001a6bac: 25ef0910  addiu	t7,t7,2320   ; = D_00350910
+!! 001a6bb0: ae0f03b0  sw	t7,944(s0)                                    | 001a6bb0: ae0f0000  sw	t7,0(s0)
+!! 001a6bb4: ae0d0600  sw	t5,1536(s0)                                   | 001a6bb4: ae0c0abc  sw	t4,2748(s0)
+   001a6bb8: dfb00000  ld	s0,0(sp)                                      | 001a6bb8: dfb00000  ld	s0,0(sp)
+   001a6bbc: 03e00008  jr	ra                                            | 001a6bbc: 03e00008  jr	ra
+   001a6bc0: 27bd0010  addiu	sp,sp,16                                   | 001a6bc0: 27bd0010  addiu	sp,sp,16

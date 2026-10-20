@@ -1,0 +1,26 @@
+002594b8: compiled 80 bytes, target 88 bytes, exact=False
+Differing words: 21. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   002594b8: 3c0e0037  lui	t6,0x37                                      | 002594b8: 3c0e0037  lui	t6,0x37
+!! 002594bc: 2402ffff  li	v0,-1                                         | 002594bc: 85cf2be0  lh	t7,11232(t6)   ; = D_00372be0
+!! 002594c0: 85cf2be0  lh	t7,11232(t6)   ; = D_00372be0                 | 002594c0: 05e0000f  bltz	t7,259500 <func_002594b8+0x48>
+!! 002594c4: 05e00010  bltz	t7,0x259508                                 | 002594c4: 0000602d  move	t4,zero
+!! 002594c8: 0000602d  move	t4,zero                                     | 002594c8: 25cb2be0  addiu	t3,t6,11232   ; = D_00372be0
+!! 002594cc: 25cb2be0  addiu	t3,t6,11232   ; = D_00372be0               | 002594cc: 0000682d  move	t5,zero
+!! 002594d0: 0000682d  move	t5,zero                                     | 002594d0: 01ab1021  addu	v0,t5,t3
+!! 002594d4: 01ab7021  addu	t6,t5,t3                                    | 002594d4: 844f0000  lh	t7,0(v0)
+!! 002594d8: 85cf0000  lh	t7,0(t6)                                      | 002594d8: 55e40003  bnel	t7,a0,2594e8 <func_002594b8+0x30>
+!! 002594dc: 55e40004  bnel	t7,a0,0x2594f0                              | 002594dc: 258c0001  addiu	t4,t4,1
+!! 002594e0: 258c0001  addiu	t4,t4,1                                    | 002594e0: 03e00008  jr	ra
+!! 002594e4: 03e00008  jr	ra                                            | 002594e4: 94420002  lhu	v0,2(v0)
+!! 002594e8: 95c20002  lhu	v0,2(t6)                                     | 002594e8: 000c7880  sll	t7,t4,0x2
+!! 002594ec: 00000000  nop                                              | 002594ec: 01e0682d  move	t5,t7
+!! 002594f0: 000c7880  sll	t7,t4,0x2                                    | 002594f0: 01eb7021  addu	t6,t7,t3
+!! 002594f4: 01e0682d  move	t5,t7                                       | 002594f4: 85cf0000  lh	t7,0(t6)
+!! 002594f8: 01eb7021  addu	t6,t7,t3                                    | 002594f8: 05e3fff6  bgezl	t7,2594d4 <func_002594b8+0x1c>
+!! 002594fc: 85cf0000  lh	t7,0(t6)                                      | 002594fc: 01ab1021  addu	v0,t5,t3
+!! 00259500: 05e1fff5  bgez	t7,0x2594d8                                 | 00259500: 03e00008  jr	ra
+!! 00259504: 01ab7021  addu	t6,t5,t3                                    | 00259504: 2402ffff  li	v0,-1
+!! 00259508: 03e00008  jr	ra                                            | 
+!! 0025950c: 00000000  nop                                              | 

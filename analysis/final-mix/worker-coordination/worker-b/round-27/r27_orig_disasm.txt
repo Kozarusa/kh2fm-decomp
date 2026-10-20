@@ -1,0 +1,126 @@
+##### 001145b0 001145fc
+  1145b0:	27bdfff0 	addiu	sp,sp,-16
+  1145b4:	3c0f0034 	lui	t7,0x34
+  1145b8:	ffbf0000 	sd	ra,0(sp)
+  1145bc:	25ec5d30 	addiu	t4,t7,23856
+  1145c0:	0000682d 	move	t5,zero
+  1145c4:	858f0000 	lh	t7,0(t4)
+  1145c8:	01a0102d 	move	v0,t5
+  1145cc:	25ad0001 	addiu	t5,t5,1
+  1145d0:	258c0002 	addiu	t4,t4,2
+  1145d4:	11e40006 	beq	t7,a0,0x1145f0
+  1145d8:	29ae0007 	slti	t6,t5,7
+  1145dc:	55c0fffa 	bnezl	t6,0x1145c8
+  1145e0:	858f0000 	lh	t7,0(t4)
+  1145e4:	0c0451ce 	jal	0x114738
+  1145e8:	00000000 	nop
+  1145ec:	24420007 	addiu	v0,v0,7
+  1145f0:	dfbf0000 	ld	ra,0(sp)
+  1145f4:	03e00008 	jr	ra
+  1145f8:	27bd0010 	addiu	sp,sp,16
+##### 00143348 00143394
+  143348:	27bdffe0 	addiu	sp,sp,-32
+  14334c:	3c0f0035 	lui	t7,0x35
+  143350:	ffb00010 	sd	s0,16(sp)
+  143354:	0000282d 	move	a1,zero
+  143358:	ffbf0018 	sd	ra,24(sp)
+  14335c:	0000382d 	move	a3,zero
+  143360:	afa00000 	sw	zero,0(sp)
+  143364:	0080802d 	move	s0,a0
+  143368:	0200302d 	move	a2,s0
+  14336c:	03a0402d 	move	t0,sp
+  143370:	0c051c14 	jal	0x147050
+  143374:	8de48800 	lw	a0,-30720(t7)
+  143378:	97af0000 	lhu	t7,0(sp)
+  14337c:	dfbf0018 	ld	ra,24(sp)
+  143380:	a6020118 	sh	v0,280(s0)
+  143384:	a60f011a 	sh	t7,282(s0)
+  143388:	dfb00010 	ld	s0,16(sp)
+  14338c:	03e00008 	jr	ra
+  143390:	27bd0020 	addiu	sp,sp,32
+##### 0014a138 0014a184
+  14a138:	27bdfff0 	addiu	sp,sp,-16
+  14a13c:	3c0f0033 	lui	t7,0x33
+  14a140:	ffb00000 	sd	s0,0(sp)
+  14a144:	3c060004 	lui	a2,0x4
+  14a148:	ffbf0008 	sd	ra,8(sp)
+  14a14c:	3c070015 	lui	a3,0x15
+  14a150:	0080802d 	move	s0,a0
+  14a154:	24e7a0a0 	addiu	a3,a3,-24416
+  14a158:	8de4b96c 	lw	a0,-18068(t7)
+  14a15c:	0000282d 	move	a1,zero
+  14a160:	34c693e0 	ori	a2,a2,0x93e0
+  14a164:	0c040a06 	jal	0x102818
+  14a168:	24081000 	li	t0,4096
+  14a16c:	321000ff 	andi	s0,s0,0xff
+  14a170:	a0500004 	sb	s0,4(v0)
+  14a174:	dfbf0008 	ld	ra,8(sp)
+  14a178:	dfb00000 	ld	s0,0(sp)
+  14a17c:	03e00008 	jr	ra
+  14a180:	27bd0010 	addiu	sp,sp,16
+##### 00158450 0015849c
+  158450:	27bdfff0 	addiu	sp,sp,-16
+  158454:	ffb00000 	sd	s0,0(sp)
+  158458:	ffbf0008 	sd	ra,8(sp)
+  15845c:	0c090b56 	jal	0x242d58
+  158460:	0080802d 	move	s0,a0
+  158464:	3c0f0035 	lui	t7,0x35
+  158468:	dfbf0008 	ld	ra,8(sp)
+  15846c:	000270c0 	sll	t6,v0,0x3
+  158470:	25efa970 	addiu	t7,t7,-22160
+  158474:	01cf7021 	addu	t6,t6,t7
+  158478:	de020000 	ld	v0,0(s0)
+  15847c:	ddcd0000 	ld	t5,0(t6)
+  158480:	dfb00000 	ld	s0,0(sp)
+  158484:	004d1024 	and	v0,v0,t5
+  158488:	0002102b 	sltu	v0,zero,v0
+  15848c:	0002103c 	dsll32	v0,v0,0x0
+  158490:	0002103f 	dsra32	v0,v0,0x0
+  158494:	03e00008 	jr	ra
+  158498:	27bd0010 	addiu	sp,sp,16
+##### 001584f8 00158544
+  1584f8:	27bdfff0 	addiu	sp,sp,-16
+  1584fc:	ffb00000 	sd	s0,0(sp)
+  158500:	ffbf0008 	sd	ra,8(sp)
+  158504:	0c090b3a 	jal	0x242ce8
+  158508:	0080802d 	move	s0,a0
+  15850c:	3c0f0035 	lui	t7,0x35
+  158510:	dfbf0008 	ld	ra,8(sp)
+  158514:	000270c0 	sll	t6,v0,0x3
+  158518:	25efa970 	addiu	t7,t7,-22160
+  15851c:	01cf7021 	addu	t6,t6,t7
+  158520:	de020000 	ld	v0,0(s0)
+  158524:	ddcd0010 	ld	t5,16(t6)
+  158528:	dfb00000 	ld	s0,0(sp)
+  15852c:	004d1024 	and	v0,v0,t5
+  158530:	0002102b 	sltu	v0,zero,v0
+  158534:	0002103c 	dsll32	v0,v0,0x0
+  158538:	0002103f 	dsra32	v0,v0,0x0
+  15853c:	03e00008 	jr	ra
+  158540:	27bd0010 	addiu	sp,sp,16
+##### 00160ac0 00160b0c
+  160ac0:	27bdfff0 	addiu	sp,sp,-16
+  160ac4:	3c0f004f 	lui	t7,0x4f
+  160ac8:	ffb00000 	sd	s0,0(sp)
+  160acc:	00a0302d 	move	a2,a1
+  160ad0:	ffbf0008 	sd	ra,8(sp)
+  160ad4:	3c070016 	lui	a3,0x16
+  160ad8:	0080802d 	move	s0,a0
+  160adc:	24e709e0 	addiu	a3,a3,2528
+  160ae0:	8de43b30 	lw	a0,15152(t7)
+  160ae4:	0c0409e2 	jal	0x102788
+  160ae8:	0000282d 	move	a1,zero
+  160aec:	ac500004 	sw	s0,4(v0)
+  160af0:	3c0f0016 	lui	t7,0x16
+  160af4:	25ef0a90 	addiu	t7,t7,2704
+  160af8:	dfbf0008 	ld	ra,8(sp)
+  160afc:	ac4f0030 	sw	t7,48(v0)
+  160b00:	dfb00000 	ld	s0,0(sp)
+  160b04:	03e00008 	jr	ra
+  160b08:	27bd0010 	addiu	sp,sp,16
+/opt/ps2/gcc/bin/ee-objdump: /work/tools/kh2-reference/SLPM_666.75: no symbols
+/opt/ps2/gcc/bin/ee-objdump: /work/tools/kh2-reference/SLPM_666.75: no symbols
+/opt/ps2/gcc/bin/ee-objdump: /work/tools/kh2-reference/SLPM_666.75: no symbols
+/opt/ps2/gcc/bin/ee-objdump: /work/tools/kh2-reference/SLPM_666.75: no symbols
+/opt/ps2/gcc/bin/ee-objdump: /work/tools/kh2-reference/SLPM_666.75: no symbols
+/opt/ps2/gcc/bin/ee-objdump: /work/tools/kh2-reference/SLPM_666.75: no symbols

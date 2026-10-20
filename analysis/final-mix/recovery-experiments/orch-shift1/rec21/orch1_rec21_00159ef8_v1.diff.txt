@@ -1,0 +1,26 @@
+00159ef8: compiled 88 bytes, target 88 bytes, exact=False
+Differing words: 19. First difference at instruction 0 (0-based).
+
+ORIGINAL                                                                | COMPILED
+!! 00159ef8: 27bdfff0  addiu	sp,sp,-16                                  | 00159ef8: 27bdffe0  addiu	sp,sp,-32
+!! 00159efc: 0080782d  move	t7,a0                                       | 00159efc: ffb10008  sd	s1,8(sp)
+   00159f00: ffb00000  sd	s0,0(sp)                                      | 00159f00: ffb00000  sd	s0,0(sp)
+!! 00159f04: ffbf0008  sd	ra,8(sp)                                      | 00159f04: ffbf0010  sd	ra,16(sp)
+!! 00159f08: 25f00080  addiu	s0,t7,128                                  | 00159f08: 0080882d  move	s1,a0
+!! 00159f0c: 0c05b00a  jal	0x16c028                                     | 00159f0c: 26300080  addiu	s0,s1,128
+!! 00159f10: 8c840044  lw	a0,68(a0)                                     | 00159f10: 0c05b00a  jal	16c028 <func_0016c028>
+!! 00159f14: 3c0f0035  lui	t7,0x35                                      | 00159f14: 8c840044  lw	a0,68(a0)
+!! 00159f18: 25efaa50  addiu	t7,t7,-21936   ; = D_0034aa50              | 00159f18: 3c0d0035  lui	t5,0x35
+!! 00159f1c: 520f0004  beql	s0,t7,0x159f30                              | 00159f1c: 25aeaa50  addiu	t6,t5,-21936   ; = D_0034aa50
+!! 00159f20: 25ef0010  addiu	t7,t7,16                                   | 00159f20: 120e0003  beq	s0,t6,159f30 <func_00159ef8+0x38>
+!! 00159f24: 7a080000  lq	t0,0(s0)                                      | 00159f24: 25cc0010  addiu	t4,t6,16
+!! 00159f28: 7de80000  sq	t0,0(t7)                                      | 00159f28: 7a2f0080  lq	t7,128(s1)
+!! 00159f2c: 25ef0010  addiu	t7,t7,16                                   | 00159f2c: 7dafaa50  sq	t7,-21936(t5)   ; = D_0034aa50
+!! 00159f30: 104f0004  beq	v0,t7,0x159f44                               | 00159f30: 104c0003  beq	v0,t4,159f40 <func_00159ef8+0x48>
+   00159f34: dfb00000  ld	s0,0(sp)                                      | 00159f34: dfb00000  ld	s0,0(sp)
+!! 00159f38: 78480000  lq	t0,0(v0)                                      | 00159f38: 784f0000  lq	t7,0(v0)
+!! 00159f3c: 7de80000  sq	t0,0(t7)                                      | 00159f3c: 7dcf0010  sq	t7,16(t6)
+!! 00159f40: dfb00000  ld	s0,0(sp)                                      | 00159f40: dfb10008  ld	s1,8(sp)
+!! 00159f44: dfbf0008  ld	ra,8(sp)                                      | 00159f44: dfbf0010  ld	ra,16(sp)
+   00159f48: 03e00008  jr	ra                                            | 00159f48: 03e00008  jr	ra
+!! 00159f4c: 27bd0010  addiu	sp,sp,16                                   | 00159f4c: 27bd0020  addiu	sp,sp,32

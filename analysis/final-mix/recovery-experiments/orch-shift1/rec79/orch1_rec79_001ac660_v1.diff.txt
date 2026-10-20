@@ -1,0 +1,20 @@
+001ac660: compiled 64 bytes, target 64 bytes, exact=False
+Differing words: 2. First difference at instruction 7 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001ac660: 27bdfff0  addiu	sp,sp,-16                                  | 001ac660: 27bdfff0  addiu	sp,sp,-16
+   001ac664: 3c0f0035  lui	t7,0x35                                      | 001ac664: 3c0f0035  lui	t7,0x35
+   001ac668: ffb00000  sd	s0,0(sp)                                      | 001ac668: ffb00000  sd	s0,0(sp)
+   001ac66c: 25ef0c50  addiu	t7,t7,3152   ; = D_00350c50                | 001ac66c: 25ef0c50  addiu	t7,t7,3152   ; = D_00350c50
+   001ac670: ac8f0000  sw	t7,0(a0)                                      | 001ac670: ac8f0000  sw	t7,0(a0)
+   001ac674: 0080802d  move	s0,a0                                       | 001ac674: 0080802d  move	s0,a0
+   001ac678: ffbf0008  sd	ra,8(sp)                                      | 001ac678: ffbf0008  sd	ra,8(sp)
+!! 001ac67c: 3c0401c7  lui	a0,0x1c7                                     | 001ac67c: 3c0401c6  lui	a0,0x1c6
+   001ac680: 0200282d  move	a1,s0                                       | 001ac680: 0200282d  move	a1,s0
+   001ac684: 0c0c7f80  jal	0x31fe00                                     | 001ac684: 0c0c7f80  jal	31fe00 <func_0031fe00>
+!! 001ac688: 2484ced0  addiu	a0,a0,-12592   ; = D_01c6ced0              | 001ac688: 3484ced0  ori	a0,a0,0xced0
+   001ac68c: 0200202d  move	a0,s0                                       | 001ac68c: 0200202d  move	a0,s0
+   001ac690: dfbf0008  ld	ra,8(sp)                                      | 001ac690: dfbf0008  ld	ra,8(sp)
+   001ac694: dfb00000  ld	s0,0(sp)                                      | 001ac694: dfb00000  ld	s0,0(sp)
+   001ac698: 08041444  j	0x105110                                       | 001ac698: 08041444  j	105110 <func_00105110>
+   001ac69c: 27bd0010  addiu	sp,sp,16                                   | 001ac69c: 27bd0010  addiu	sp,sp,16

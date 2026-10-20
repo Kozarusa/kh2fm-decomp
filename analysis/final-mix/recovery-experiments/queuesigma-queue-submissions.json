@@ -1,0 +1,9 @@
+[
+  {
+    "address": "0023e700",
+    "owner": "eight-hour-primary",
+    "metadata": "{\"address\": \"0023e700\", \"end\": \"0023e738\", \"bytes\": 56, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [\"001064a8\"], \"best_proposal\": null}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_0023e700_random_scale_1_0.cpp\", \"source_sha256\": \"1633021cb785056aad614f862a8ba03d5f185ab37170a855f7e245ec6fdeeb59\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_0023e700_random_scale_1_0.verification.json\", \"proof_sha256\": \"42dbc8ca072f524eb16b638570cc5ef0dc2b9ac1507ce0853905b2c7a5922963\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_queuesigma_recovered_0023e700.cpp"
+  }
+]

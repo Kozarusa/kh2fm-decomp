@@ -1,0 +1,18 @@
+{
+  "source_sha256": "73221dfcdb2365e6b76d991ad8f78f1e72861959dff749fb0bb967256102ddf1",
+  "source": "analysis/final-mix/recovery-experiments/eight-hour-20261011/eight_hour_001a8450_field_scratch_lifetime_v6_2.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "001a8450",
+      "symbol": "_Z13func_001a8450Ph",
+      "compiled_size": 68,
+      "target_size": 68,
+      "ghidra_body_size": 68,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "0e0080102d1000000a008f9442710f0080500e001f00eb310800e01133000e3c01000f24dcdece2504786f012170ca010000cc8d24608f012b100c000800e00300000000",
+      "target_hex": "0e0080102d1000000a008f9442710f001f00eb310900e01180600e0033000e3c01000f24dcdece2504786f0121708e010000cd8d2468af012b100d000800e00300000000"
+    }
+  ]
+}

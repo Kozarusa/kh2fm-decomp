@@ -1,0 +1,19 @@
+0010f6b8: compiled 56 bytes, target 60 bytes, exact=False
+Differing words: 12. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0010f6b8: 8c8e048c  lw	t6,1164(a0)                                   | 0010f6b8: 8c8e048c  lw	t6,1164(a0)
+!! 0010f6bc: 11c0000b  beqz	t6,0x10f6ec                                 | 0010f6bc: 11c0000a  beqz	t6,10f6e8 <func_0010f6b8+0x30>
+   0010f6c0: 0000102d  move	v0,zero                                     | 0010f6c0: 0000102d  move	v0,zero
+   0010f6c4: c5c00004  lwc1	$f0,4(t6)                                   | 0010f6c4: c5c00004  lwc1	$f0,4(t6)
+!! 0010f6c8: 46800020  cvt.s.w	$f0,$f0                                  | 0010f6c8: 24020001  li	v0,1
+!! 0010f6cc: 8dce0000  lw	t6,0(t6)                                      | 0010f6cc: 46800020  cvt.s.w	$f0,$f0
+!! 0010f6d0: 460c0002  mul.s	$f0,$f0,$f12                               | 0010f6d0: 8dce0000  lw	t6,0(t6)
+!! 0010f6d4: 46000064  cvt.w.s	$f1,$f0                                  | 0010f6d4: 460c0002  mul.s	$f0,$f0,$f12
+!! 0010f6d8: 440f0800  mfc1	t7,$f1                                      | 0010f6d8: 46000064  cvt.w.s	$f1,$f0
+!! 0010f6dc: 01cf702a  slt	t6,t6,t7                                     | 0010f6dc: 440f0800  mfc1	t7,$f1
+!! 0010f6e0: 15c00002  bnez	t6,0x10f6ec                                 | 0010f6e0: 01cf702a  slt	t6,t6,t7
+!! 0010f6e4: 24020001  li	v0,1                                          | 0010f6e4: 000e100a  movz	v0,zero,t6
+!! 0010f6e8: 0000102d  move	v0,zero                                     | 0010f6e8: 03e00008  jr	ra
+!! 0010f6ec: 03e00008  jr	ra                                            | 0010f6ec: 00000000  nop
+!! 0010f6f0: 00000000  nop                                              | 

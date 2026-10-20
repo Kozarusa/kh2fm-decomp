@@ -1,0 +1,33 @@
+00224f38: compiled 116 bytes, target 104 bytes, exact=False
+Differing words: 28. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00224f38: 27bdffe0  addiu	sp,sp,-32                                  | 00224f38: 27bdffe0  addiu	sp,sp,-32
+!! 00224f3c: ffb10008  sd	s1,8(sp)                                      | 00224f3c: 3c0f0023  lui	t7,0x23
+!! 00224f40: ffb20010  sd	s2,16(sp)                                     | 00224f40: ffb10008  sd	s1,8(sp)
+!! 00224f44: ffb00000  sd	s0,0(sp)                                      | 00224f44: 25efb108  addiu	t7,t7,-20216   ; = D_0022b108
+!! 00224f48: 00a0882d  move	s1,a1                                       | 00224f48: ffb20010  sd	s2,16(sp)
+!! 00224f4c: 00c0902d  move	s2,a2                                       | 00224f4c: 000f783c  dsll32	t7,t7,0x0
+!! 00224f50: ffbf0018  sd	ra,24(sp)                                     | 00224f50: ffb00000  sd	s0,0(sp)
+!! 00224f54: 0080282d  move	a1,a0                                       | 00224f54: 00a0882d  move	s1,a1
+!! 00224f58: 3c060023  lui	a2,0x23                                      | 00224f58: ffbf0018  sd	ra,24(sp)
+!! 00224f5c: 00e0802d  move	s0,a3                                       | 00224f5c: 0080282d  move	a1,a0
+!! 00224f60: 24c6b108  addiu	a2,a2,-20216   ; = D_0022b108              | 00224f60: 00c0902d  move	s2,a2
+!! 00224f64: 0c040b06  jal	0x102c18                                     | 00224f64: 000f783e  dsrl32	t7,t7,0x0
+!! 00224f68: 24040001  li	a0,1                                          | 00224f68: 00e0802d  move	s0,a3
+!! 00224f6c: ae220000  sw	v0,0(s1)                                      | 00224f6c: 01e0302d  move	a2,t7
+!! 00224f70: 3c0f0022  lui	t7,0x22                                      | 00224f70: 0c040b06  jal	102c18 <func_00102c18>
+!! 00224f74: 25ef4f08  addiu	t7,t7,20232   ; = D_00224f08               | 00224f74: 24040001  li	a0,1
+!! 00224f78: 0200202d  move	a0,s0                                       | 00224f78: ae220000  sw	v0,0(s1)
+!! 00224f7c: 0c08a8da  jal	0x22a368                                     | 00224f7c: 3c0f0022  lui	t7,0x22
+!! 00224f80: ac4f0030  sw	t7,48(v0)                                     | 00224f80: 25ef4f08  addiu	t7,t7,20232   ; = D_00224f08
+!! 00224f84: ae420000  sw	v0,0(s2)                                      | 00224f84: 0200202d  move	a0,s0
+!! 00224f88: dfb00000  ld	s0,0(sp)                                      | 00224f88: 0c08a8da  jal	22a368 <func_0022a368>
+!! 00224f8c: dfb10008  ld	s1,8(sp)                                      | 00224f8c: ac4f0030  sw	t7,48(v0)
+!! 00224f90: dfb20010  ld	s2,16(sp)                                     | 00224f90: ae420000  sw	v0,0(s2)
+!! 00224f94: dfbf0018  ld	ra,24(sp)                                     | 00224f94: dfb00000  ld	s0,0(sp)
+!! 00224f98: 03e00008  jr	ra                                            | 00224f98: dfb10008  ld	s1,8(sp)
+!! 00224f9c: 27bd0020  addiu	sp,sp,32                                   | 00224f9c: dfb20010  ld	s2,16(sp)
+!!                                                                      | 00224fa0: dfbf0018  ld	ra,24(sp)
+!!                                                                      | 00224fa4: 03e00008  jr	ra
+!!                                                                      | 00224fa8: 27bd0020  addiu	sp,sp,32

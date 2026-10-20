@@ -1,0 +1,27 @@
+0019ae60: compiled 84 bytes, target 92 bytes, exact=False
+Differing words: 20. First difference at instruction 3 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0019ae60: 27bdfff0  addiu	sp,sp,-16                                  | 0019ae60: 27bdfff0  addiu	sp,sp,-16
+   0019ae64: ffbf0000  sd	ra,0(sp)                                      | 0019ae64: ffbf0000  sd	ra,0(sp)
+   0019ae68: 908f0020  lbu	t7,32(a0)                                    | 0019ae68: 908f0020  lbu	t7,32(a0)
+!! 0019ae6c: 25ed0001  addiu	t5,t7,1                                    | 0019ae6c: 25ee0001  addiu	t6,t7,1
+!! 0019ae70: 31ef00ff  andi	t7,t7,0xff                                  | 0019ae70: 2def00c8  sltiu	t7,t7,200
+!! 0019ae74: 2def00c8  sltiu	t7,t7,200                                  | 0019ae74: 11e0000c  beqz	t7,19aea8 <func_0019ae60+0x48>
+!! 0019ae78: 51e0000e  beqzl	t7,0x19aeb4                                | 0019ae78: 31ce00ff  andi	t6,t6,0xff
+!! 0019ae7c: dfbf0000  ld	ra,0(sp)                                      | 0019ae7c: a08e0020  sb	t6,32(a0)
+!! 0019ae80: a08d0020  sb	t5,32(a0)                                     | 0019ae80: 8c8d0008  lw	t5,8(a0)
+!! 0019ae84: 8c8c0008  lw	t4,8(a0)                                      | 0019ae84: 91af0023  lbu	t7,35(t5)
+!! 0019ae88: 918e0023  lbu	t6,35(t4)                                    | 0019ae88: 11e00007  beqz	t7,19aea8 <func_0019ae60+0x48>
+!! 0019ae8c: 11c00008  beqz	t6,0x19aeb0                                 | 0019ae8c: 01cf702b  sltu	t6,t6,t7
+!! 0019ae90: 31af00ff  andi	t7,t5,0xff                                  | 0019ae90: 15c00006  bnez	t6,19aeac <func_0019ae60+0x4c>
+!! 0019ae94: 01ee782b  sltu	t7,t7,t6                                    | 0019ae94: dfbf0000  ld	ra,0(sp)
+!! 0019ae98: 15e00006  bnez	t7,0x19aeb4                                 | 0019ae98: 91a50024  lbu	a1,36(t5)
+!! 0019ae9c: dfbf0000  ld	ra,0(sp)                                      | 0019ae9c: 08066bb0  j	19aec0 <func_0019aec0>
+!! 0019aea0: 91850024  lbu	a1,36(t4)                                    | 0019aea0: 27bd0010  addiu	sp,sp,16
+!! 0019aea4: 08066bb0  j	0x19aec0                                       | 0019aea4: 00000000  nop
+!! 0019aea8: 27bd0010  addiu	sp,sp,16                                   | 0019aea8: dfbf0000  ld	ra,0(sp)
+!! 0019aeac: 00000000  nop                                              | 0019aeac: 03e00008  jr	ra
+!! 0019aeb0: dfbf0000  ld	ra,0(sp)                                      | 0019aeb0: 27bd0010  addiu	sp,sp,16
+!! 0019aeb4: 03e00008  jr	ra                                            | 
+!! 0019aeb8: 27bd0010  addiu	sp,sp,16                                   | 

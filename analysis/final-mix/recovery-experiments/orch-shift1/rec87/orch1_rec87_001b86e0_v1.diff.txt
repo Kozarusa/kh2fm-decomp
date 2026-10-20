@@ -1,0 +1,18 @@
+001b86e0: compiled 56 bytes, target 56 bytes, exact=False
+Differing words: 5. First difference at instruction 5 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001b86e0: 3c0c01d5  lui	t4,0x1d5                                     | 001b86e0: 3c0c01d5  lui	t4,0x1d5
+   001b86e4: 3c0dcccc  lui	t5,0xcccc                                    | 001b86e4: 3c0dcccc  lui	t5,0xcccc
+   001b86e8: 258c8cc8  addiu	t4,t4,-29496   ; = D_01d48cc8              | 001b86e8: 258c8cc8  addiu	t4,t4,-29496   ; = D_01d48cc8
+   001b86ec: 35adcccd  ori	t5,t5,0xcccd                                 | 001b86ec: 35adcccd  ori	t5,t5,0xcccd
+   001b86f0: 008c2023  subu	a0,a0,t4                                    | 001b86f0: 008c2023  subu	a0,a0,t4
+!! 001b86f4: 8d8f00c0  lw	t7,192(t4)                                    | 001b86f4: 8d8e00c0  lw	t6,192(t4)
+   001b86f8: 00042083  sra	a0,a0,0x2                                    | 001b86f8: 00042083  sra	a0,a0,0x2
+   001b86fc: 008d2018  mult	a0,a0,t5                                    | 001b86fc: 008d2018  mult	a0,a0,t5
+!! 001b8700: 000f7080  sll	t6,t7,0x2                                    | 001b8700: 25cf0001  addiu	t7,t6,1
+!! 001b8704: 25ef0001  addiu	t7,t7,1                                    | 001b8704: ad8f00c0  sw	t7,192(t4)
+!! 001b8708: 01cc7021  addu	t6,t6,t4                                    | 001b8708: 000e7080  sll	t6,t6,0x2
+!! 001b870c: ad8f00c0  sw	t7,192(t4)                                    | 001b870c: 01cc7021  addu	t6,t6,t4
+   001b8710: 03e00008  jr	ra                                            | 001b8710: 03e00008  jr	ra
+   001b8714: adc400a0  sw	a0,160(t6)                                    | 001b8714: adc400a0  sw	a0,160(t6)

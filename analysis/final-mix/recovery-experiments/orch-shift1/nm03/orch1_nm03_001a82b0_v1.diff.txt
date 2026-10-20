@@ -1,0 +1,20 @@
+001a82b0: compiled 60 bytes, target 64 bytes, exact=False
+Differing words: 15. First difference at instruction 0 (0-based).
+
+ORIGINAL                                                                | COMPILED
+!! 001a82b0: 14800005  bnez	a0,0x1a82c8                                 | 001a82b0: 3c0f01c7  lui	t7,0x1c7
+!! 001a82b4: 3c0e01c7  lui	t6,0x1c7                                     | 001a82b4: 14800004  bnez	a0,1a82c8 <func_001a82b0+0x18>
+!! 001a82b8: 3c0f01c7  lui	t7,0x1c7                                     | 001a82b8: 2482000c  addiu	v0,a0,12
+!! 001a82bc: 8deecb98  lw	t6,-13416(t7)   ; = D_01c6cb98                | 001a82bc: 8defcb98  lw	t7,-13416(t7)   ; = D_01c6cb98
+   001a82c0: 03e00008  jr	ra                                            | 001a82c0: 03e00008  jr	ra
+!! 001a82c4: 25c20004  addiu	v0,t6,4                                    | 001a82c4: 25e20004  addiu	v0,t7,4
+!! 001a82c8: 240d000c  li	t5,12                                         | 001a82c8: 8defcb98  lw	t7,-13416(t7)
+!! 001a82cc: 8dcfcb98  lw	t7,-13416(t6)                                 | 001a82cc: 240d000c  li	t5,12
+!! 001a82d0: 2482000c  addiu	v0,a0,12                                   | 001a82d0: 95ee0002  lhu	t6,2(t7)
+!! 001a82d4: 95ee0002  lhu	t6,2(t7)                                     | 001a82d4: 01cd7018  mult	t6,t6,t5
+!! 001a82d8: 01cd7018  mult	t6,t6,t5                                    | 001a82d8: 01ee7821  addu	t7,t7,t6
+!! 001a82dc: 01ee7821  addu	t7,t7,t6                                    | 001a82dc: 25ef0004  addiu	t7,t7,4
+!! 001a82e0: 25ef0004  addiu	t7,t7,4                                    | 001a82e0: 004f782b  sltu	t7,v0,t7
+!! 001a82e4: 004f782b  sltu	t7,v0,t7                                    | 001a82e4: 03e00008  jr	ra
+!! 001a82e8: 03e00008  jr	ra                                            | 001a82e8: 000f100a  movz	v0,zero,t7
+!! 001a82ec: 000f100a  movz	v0,zero,t7                                  | 

@@ -1,0 +1,28 @@
+00172a80: compiled 96 bytes, target 96 bytes, exact=False
+Differing words: 1. First difference at instruction 8 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00172a80: 27bdfff0  addiu	sp,sp,-16                                  | 00172a80: 27bdfff0  addiu	sp,sp,-16
+   00172a84: ffb00000  sd	s0,0(sp)                                      | 00172a84: ffb00000  sd	s0,0(sp)
+   00172a88: ffbf0008  sd	ra,8(sp)                                      | 00172a88: ffbf0008  sd	ra,8(sp)
+   00172a8c: 8c8f0000  lw	t7,0(a0)                                      | 00172a8c: 8c8f0000  lw	t7,0(a0)
+   00172a90: 8dee0004  lw	t6,4(t7)                                      | 00172a90: 8dee0004  lw	t6,4(t7)
+   00172a94: 8dd00818  lw	s0,2072(t6)                                   | 00172a94: 8dd00818  lw	s0,2072(t6)
+   00172a98: 5200000e  beqzl	s0,0x172ad4                                | 00172a98: 5200000e  beqzl	s0,172ad4 <func_00172a80+0x54>
+   00172a9c: dfb00000  ld	s0,0(sp)                                      | 00172a9c: dfb00000  ld	s0,0(sp)
+!! 00172aa0: 8e0f0004  lw	t7,4(s0)                                      | 00172aa0: 920f0004  lbu	t7,4(s0)
+   00172aa4: 31ef0001  andi	t7,t7,0x1                                   | 00172aa4: 31ef0001  andi	t7,t7,0x1
+   00172aa8: 31ef00ff  andi	t7,t7,0xff                                  | 00172aa8: 31ef00ff  andi	t7,t7,0xff
+   00172aac: 55e00009  bnezl	t7,0x172ad4                                | 00172aac: 55e00009  bnezl	t7,172ad4 <func_00172a80+0x54>
+   00172ab0: dfb00000  ld	s0,0(sp)                                      | 00172ab0: dfb00000  ld	s0,0(sp)
+   00172ab4: 0c066b98  jal	0x19ae60                                     | 00172ab4: 0c066b98  jal	19ae60 <func_0019ae60>
+   00172ab8: 0200202d  move	a0,s0                                       | 00172ab8: 0200202d  move	a0,s0
+   00172abc: 0200202d  move	a0,s0                                       | 00172abc: 0200202d  move	a0,s0
+   00172ac0: dfbf0008  ld	ra,8(sp)                                      | 00172ac0: dfbf0008  ld	ra,8(sp)
+   00172ac4: dfb00000  ld	s0,0(sp)                                      | 00172ac4: dfb00000  ld	s0,0(sp)
+   00172ac8: 0000282d  move	a1,zero                                     | 00172ac8: 0000282d  move	a1,zero
+   00172acc: 08066868  j	0x19a1a0                                       | 00172acc: 08066868  j	19a1a0 <func_0019a1a0>
+   00172ad0: 27bd0010  addiu	sp,sp,16                                   | 00172ad0: 27bd0010  addiu	sp,sp,16
+   00172ad4: dfbf0008  ld	ra,8(sp)                                      | 00172ad4: dfbf0008  ld	ra,8(sp)
+   00172ad8: 03e00008  jr	ra                                            | 00172ad8: 03e00008  jr	ra
+   00172adc: 27bd0010  addiu	sp,sp,16                                   | 00172adc: 27bd0010  addiu	sp,sp,16

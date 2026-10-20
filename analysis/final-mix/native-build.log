@@ -1,0 +1,14 @@
+cc1plus: src/anon/auto80_199_queue.cpp: Value too large for defined data type
+cc1plus: src/anon/tiny_wrappers_more.cpp: Value too large for defined data type
+cc1plus: src/anon/auto200_999.cpp: Value too large for defined data type
+make: *** [Makefile:106: out/build/src/anon/auto80_199_queue.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Makefile:106: out/build/src/anon/auto200_999.o] Error 1
+make: *** [Makefile:106: out/build/src/anon/tiny_wrappers_more.o] Error 1
+cc1plus: cc1plus: src/anon/auto200_999_queue.cpp: Value too large for defined data typesrc/anon/tiny.cpp: Value too large for defined data type
+
+make: *** [Makefile:107: out/build/src/anon/auto200_999_queue.o] Error 1
+make: *** [Makefile:107: out/build/src/anon/tiny.o] Error 1
+cc1plus: src/anon/tiny_auto80_queue.cpp: Value too large for defined data type
+make: *** [Makefile:107: out/build/src/anon/tiny_auto80_queue.o] Error 1
+make: *** [Makefile:89: /mnt/c/Users/KoZa/Documents/ChatGPT/tools/kh2-reference/kh2.elf] Error 2

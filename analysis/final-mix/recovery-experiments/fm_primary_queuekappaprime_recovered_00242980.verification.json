@@ -1,0 +1,18 @@
+{
+  "source_sha256": "f3dd2132665ce7887d630dd676f7a7efdeea2bece0373c6e2c40c30661d16915",
+  "source": "analysis/final-mix/recovery-experiments/fm_primary_queuekappaprime_recovered_00242980.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "00242980",
+      "symbol": "_Z13func_00242980P12WordHalfCellS0_",
+      "compiled_size": 64,
+      "target_size": 64,
+      "ghidra_body_size": 64,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "e0ffbd270000b0ff0800b1ff1000bfff2d8080003a16040c2d88a000a0414f841000bfdf00000faea2414e840000b0df00002eae0800b1df0800e0032000bd27",
+      "target_hex": "e0ffbd270000b0ff0800b1ff1000bfff2d8080003a16040c2d88a000a0414f841000bfdf00000faea2414e840000b0df00002eae0800b1df0800e0032000bd27"
+    }
+  ]
+}

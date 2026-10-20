@@ -1,0 +1,6 @@
+# 001c2c98 blocked
+- Range: 001c2c98, 76 bytes. Versions tried: 4. Best: v1 with 2 differing words (76/76 bytes) (copy of lay01 v4).
+- First difference of the best version: !! 001c2cc8: 35ce0004  ori	t6,t6,0x4  (compiled addiu t7,t7,5224)
+- Changes tried: v1 copy of orch1_lay01_001c2c98_v4 (2, only ori/addiu swapped); v2 blocker hypothesis, "+r"(mode) added to the table tie (4: ori/addiu exact, but lui 0x35 rises above the or and 0x200000 moves to t4); v3 v2 plus register u32 bit asm("$15") = 0x200000 (4: lui 0x35 now after the or, but the or result lands in t7 and the flags store moves up); v4 v3 plus asm "+r"(flags) after the or (11, extra move). The blocker's second idea (separate mode tie before the table address) was tried on the identical twin 001c2ce8 as brl03 v6: 7 words.
+- Why it stops here: no improvement for 3 versions.
+- Next hypothesis: from v1, move the mode |= 4 statement after the table address is formed (source order breaks the scheduler tie between ori and addiu), or from v3 drop the flags $13 binding so the or result is allocated t5 freely.

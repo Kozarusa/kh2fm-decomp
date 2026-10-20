@@ -1,0 +1,36 @@
+001b1928: compiled 128 bytes, target 128 bytes, exact=False
+Differing words: 5. First difference at instruction 20 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001b1928: 27bdfff0  addiu	sp,sp,-16                                  | 001b1928: 27bdfff0  addiu	sp,sp,-16
+   001b192c: 3c0c01d4  lui	t4,0x1d4                                     | 001b192c: 3c0c01d4  lui	t4,0x1d4
+   001b1930: ffb00000  sd	s0,0(sp)                                      | 001b1930: ffb00000  sd	s0,0(sp)
+   001b1934: 258c4108  addiu	t4,t4,16648   ; = D_01d44108               | 001b1934: 258c4108  addiu	t4,t4,16648   ; = D_01d44108
+   001b1938: ffbf0008  sd	ra,8(sp)                                      | 001b1938: ffbf0008  sd	ra,8(sp)
+   001b193c: 240d0028  li	t5,40                                         | 001b193c: 240d0028  li	t5,40
+   001b1940: 0080282d  move	a1,a0                                       | 001b1940: 0080282d  move	a1,a0
+   001b1944: 8d8e02c0  lw	t6,704(t4)                                    | 001b1944: 8d8e02c0  lw	t6,704(t4)
+   001b1948: 25ceffff  addiu	t6,t6,-1                                   | 001b1948: 25ceffff  addiu	t6,t6,-1
+   001b194c: 000e7880  sll	t7,t6,0x2                                    | 001b194c: 000e7880  sll	t7,t6,0x2
+   001b1950: ad8e02c0  sw	t6,704(t4)                                    | 001b1950: ad8e02c0  sw	t6,704(t4)
+   001b1954: 01ec7821  addu	t7,t7,t4                                    | 001b1954: 01ec7821  addu	t7,t7,t4
+   001b1958: 8dee0280  lw	t6,640(t7)                                    | 001b1958: 8dee0280  lw	t6,640(t7)
+   001b195c: 01cd7018  mult	t6,t6,t5                                    | 001b195c: 01cd7018  mult	t6,t6,t5
+   001b1960: 01cc8021  addu	s0,t6,t4                                    | 001b1960: 01cc8021  addu	s0,t6,t4
+   001b1964: 0c06c68c  jal	0x1b1a30                                     | 001b1964: 0c06c68c  jal	1b1a30 <func_001b1a30>
+   001b1968: 0200202d  move	a0,s0                                       | 001b1968: 0200202d  move	a0,s0
+   001b196c: 3c0d01d4  lui	t5,0x1d4                                     | 001b196c: 3c0d01d4  lui	t5,0x1d4
+   001b1970: 25ae4100  addiu	t6,t5,16640   ; = D_01d44100               | 001b1970: 25ae4100  addiu	t6,t5,16640   ; = D_01d44100
+   001b1974: 8dcf0004  lw	t7,4(t6)                                      | 001b1974: 8dcf0004  lw	t7,4(t6)
+!! 001b1978: 55e00009  bnezl	t7,0x1b19a0                                | 001b1978: 51e00009  beqzl	t7,1b19a0 <func_001b1928+0x78>
+!! 001b197c: adf00004  sw	s0,4(t7)                                      | 001b197c: add00004  sw	s0,4(t6)
+!! 001b1980: add00004  sw	s0,4(t6)                                      | 001b1980: adf00004  sw	s0,4(t7)
+!! 001b1984: adb04100  sw	s0,16640(t5)   ; = D_01d44100                 | 001b1984: add00004  sw	s0,4(t6)
+   001b1988: ae000004  sw	zero,4(s0)                                    | 001b1988: ae000004  sw	zero,4(s0)
+   001b198c: 0200102d  move	v0,s0                                       | 001b198c: 0200102d  move	v0,s0
+   001b1990: dfbf0008  ld	ra,8(sp)                                      | 001b1990: dfbf0008  ld	ra,8(sp)
+   001b1994: dfb00000  ld	s0,0(sp)                                      | 001b1994: dfb00000  ld	s0,0(sp)
+   001b1998: 03e00008  jr	ra                                            | 001b1998: 03e00008  jr	ra
+   001b199c: 27bd0010  addiu	sp,sp,16                                   | 001b199c: 27bd0010  addiu	sp,sp,16
+   001b19a0: 1000fff9  b	0x1b1988                                       | 001b19a0: 1000fff9  b	1b1988 <func_001b1928+0x60>
+!! 001b19a4: add00004  sw	s0,4(t6)                                      | 001b19a4: adb04100  sw	s0,16640(t5)   ; = D_01d44100

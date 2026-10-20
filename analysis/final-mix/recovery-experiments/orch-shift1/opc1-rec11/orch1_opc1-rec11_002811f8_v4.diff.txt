@@ -1,0 +1,21 @@
+002811f8: compiled 68 bytes, target 60 bytes, exact=False
+Differing words: 13. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   002811f8: 8c8e0000  lw	t6,0(a0)                                      | 002811f8: 8c8e0000  lw	t6,0(a0)
+!! 002811fc: 19c00009  blez	t6,0x281224                                 | 002811fc: 19c0000a  blez	t6,281228 <func_002811f8+0x30>
+!! 00281200: 0000682d  move	t5,zero                                     | 00281200: 01ae782a  slt	t7,t5,t6
+!! 00281204: 24840004  addiu	a0,a0,4                                    | 00281204: 0000682d  move	t5,zero
+!! 00281208: 848f0000  lh	t7,0(a0)                                      | 00281208: 24840004  addiu	a0,a0,4
+!! 0028120c: 11e50005  beq	t7,a1,0x281224                               | 0028120c: 848f0000  lh	t7,0(a0)
+!! 00281210: 24840014  addiu	a0,a0,20                                   | 00281210: 11e50008  beq	t7,a1,281234 <func_002811f8+0x3c>
+!! 00281214: 25ad0001  addiu	t5,t5,1                                    | 00281214: 24840014  addiu	a0,a0,20
+!! 00281218: 01ae782a  slt	t7,t5,t6                                     | 00281218: 25ad0001  addiu	t5,t5,1
+!! 0028121c: 55e0fffb  bnezl	t7,0x28120c                                | 0028121c: 01ae782a  slt	t7,t5,t6
+!! 00281220: 848f0000  lh	t7,0(a0)                                      | 00281220: 55e0fffb  bnezl	t7,281210 <func_002811f8+0x18>
+!! 00281224: 01ae782a  slt	t7,t5,t6                                     | 00281224: 848f0000  lh	t7,0(a0)
+   00281228: 2402ffff  li	v0,-1                                         | 00281228: 2402ffff  li	v0,-1
+   0028122c: 03e00008  jr	ra                                            | 0028122c: 03e00008  jr	ra
+   00281230: 01af100b  movn	v0,t5,t7                                    | 00281230: 01af100b  movn	v0,t5,t7
+!!                                                                      | 00281234: 1000fffc  b	281228 <func_002811f8+0x30>
+!!                                                                      | 00281238: 01ae782a  slt	t7,t5,t6

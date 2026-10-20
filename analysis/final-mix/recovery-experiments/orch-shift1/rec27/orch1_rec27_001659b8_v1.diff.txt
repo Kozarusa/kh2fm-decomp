@@ -1,0 +1,26 @@
+001659b8: compiled 88 bytes, target 88 bytes, exact=False
+Differing words: 5. First difference at instruction 10 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001659b8: 27bdfff0  addiu	sp,sp,-16                                  | 001659b8: 27bdfff0  addiu	sp,sp,-16
+   001659bc: 3c0f0035  lui	t7,0x35                                      | 001659bc: 3c0f0035  lui	t7,0x35
+   001659c0: ffbf0008  sd	ra,8(sp)                                      | 001659c0: ffbf0008  sd	ra,8(sp)
+   001659c4: 00a0302d  move	a2,a1                                       | 001659c4: 00a0302d  move	a2,a1
+   001659c8: ffb00000  sd	s0,0(sp)                                      | 001659c8: ffb00000  sd	s0,0(sp)
+   001659cc: 0080282d  move	a1,a0                                       | 001659cc: 0080282d  move	a1,a0
+   001659d0: 8df0c7a0  lw	s0,-14432(t7)   ; = D_0034c7a0                | 001659d0: 8df0c7a0  lw	s0,-14432(t7)   ; = D_0034c7a0
+   001659d4: 8e0f0500  lw	t7,1280(s0)                                   | 001659d4: 8e0f0500  lw	t7,1280(s0)
+   001659d8: 25efffff  addiu	t7,t7,-1                                   | 001659d8: 25efffff  addiu	t7,t7,-1
+   001659dc: ae0f0500  sw	t7,1280(s0)                                   | 001659dc: ae0f0500  sw	t7,1280(s0)
+!! 001659e0: 000f7080  sll	t6,t7,0x2                                    | 001659e0: 000f7880  sll	t7,t7,0x2
+!! 001659e4: 01d07021  addu	t6,t6,s0                                    | 001659e4: 01f07821  addu	t7,t7,s0
+!! 001659e8: 8dcf0400  lw	t7,1024(t6)                                   | 001659e8: 8dee0400  lw	t6,1024(t7)
+!! 001659ec: 000f7900  sll	t7,t7,0x4                                    | 001659ec: 000e7100  sll	t6,t6,0x4
+!! 001659f0: 020f8021  addu	s0,s0,t7                                    | 001659f0: 020e8021  addu	s0,s0,t6
+   001659f4: 0c0595b4  jal	0x1656d0                                     | 001659f4: 0c0595b4  jal	1656d0 <func_001656d0>
+   001659f8: 0200202d  move	a0,s0                                       | 001659f8: 0200202d  move	a0,s0
+   001659fc: 0200102d  move	v0,s0                                       | 001659fc: 0200102d  move	v0,s0
+   00165a00: dfbf0008  ld	ra,8(sp)                                      | 00165a00: dfbf0008  ld	ra,8(sp)
+   00165a04: dfb00000  ld	s0,0(sp)                                      | 00165a04: dfb00000  ld	s0,0(sp)
+   00165a08: 03e00008  jr	ra                                            | 00165a08: 03e00008  jr	ra
+   00165a0c: 27bd0010  addiu	sp,sp,16                                   | 00165a0c: 27bd0010  addiu	sp,sp,16

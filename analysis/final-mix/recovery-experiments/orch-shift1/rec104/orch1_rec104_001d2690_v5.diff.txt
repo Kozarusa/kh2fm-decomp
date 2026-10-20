@@ -1,0 +1,36 @@
+001d2690: compiled 128 bytes, target 128 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001d2690: 27bdffe0  addiu	sp,sp,-32                                  | 001d2690: 27bdffe0  addiu	sp,sp,-32
+   001d2694: 240e0003  li	t6,3                                          | 001d2694: 240e0003  li	t6,3
+   001d2698: ffbf0010  sd	ra,16(sp)                                     | 001d2698: ffbf0010  sd	ra,16(sp)
+   001d269c: 0080682d  move	t5,a0                                       | 001d269c: 0080682d  move	t5,a0
+   001d26a0: ffb10008  sd	s1,8(sp)                                      | 001d26a0: ffb10008  sd	s1,8(sp)
+   001d26a4: e7b40018  swc1	$f20,24(sp)                                 | 001d26a4: e7b40018  swc1	$f20,24(sp)
+   001d26a8: ffb00000  sd	s0,0(sp)                                      | 001d26a8: ffb00000  sd	s0,0(sp)
+   001d26ac: 46006506  mov.s	$f20,$f12                                  | 001d26ac: 46006506  mov.s	$f20,$f12
+   001d26b0: 8c900000  lw	s0,0(a0)                                      | 001d26b0: 8c900000  lw	s0,0(a0)
+   001d26b4: 51c00001  beqzl	t6,0x1d26bc                                | 001d26b4: 51c00001  beqzl	t6,1d26bc <func_001d2690+0x2c>
+   001d26b8: 000001cd  break	0x7                                        | 001d26b8: 000001cd  break	0x7
+   001d26bc: 260f0001  addiu	t7,s0,1                                    | 001d26bc: 260f0001  addiu	t7,s0,1
+   001d26c0: 01ee001a  div	zero,t7,t6                                   | 001d26c0: 01ee001a  div	zero,t7,t6
+   001d26c4: 001080c0  sll	s0,s0,0x3                                    | 001d26c4: 001080c0  sll	s0,s0,0x3
+   001d26c8: 00908021  addu	s0,a0,s0                                    | 001d26c8: 00908021  addu	s0,a0,s0
+   001d26cc: 00a0202d  move	a0,a1                                       | 001d26cc: 00a0202d  move	a0,a1
+   001d26d0: 26110008  addiu	s1,s0,8                                    | 001d26d0: 26110008  addiu	s1,s0,8
+   001d26d4: 00006010  mfhi	t4                                          | 001d26d4: 00006010  mfhi	t4
+   001d26d8: 0c064812  jal	0x192048                                     | 001d26d8: 0c064812  jal	192048 <func_00192048>
+   001d26dc: adac0000  sw	t4,0(t5)                                      | 001d26dc: adac0000  sw	t4,0(t5)
+   001d26e0: 3c0f0037  lui	t7,0x37                                      | 001d26e0: 3c0f0037  lui	t7,0x37
+   001d26e4: ae020008  sw	v0,8(s0)                                      | 001d26e4: ae020008  sw	v0,8(s0)
+   001d26e8: 25efe3c0  addiu	t7,t7,-7232   ; = D_0036e3c0               | 001d26e8: 25efe3c0  addiu	t7,t7,-7232   ; = D_0036e3c0
+   001d26ec: dfbf0010  ld	ra,16(sp)                                     | 001d26ec: dfbf0010  ld	ra,16(sp)
+   001d26f0: c5e00000  lwc1	$f0,0(t7)                                   | 001d26f0: c5e00000  lwc1	$f0,0(t7)
+   001d26f4: dfb00000  ld	s0,0(sp)                                      | 001d26f4: dfb00000  ld	s0,0(sp)
+   001d26f8: 4600a502  mul.s	$f20,$f20,$f0                              | 001d26f8: 4600a502  mul.s	$f20,$f20,$f0
+   001d26fc: e6340004  swc1	$f20,4(s1)                                  | 001d26fc: e6340004  swc1	$f20,4(s1)
+   001d2700: dfb10008  ld	s1,8(sp)                                      | 001d2700: dfb10008  ld	s1,8(sp)
+   001d2704: c7b40018  lwc1	$f20,24(sp)                                 | 001d2704: c7b40018  lwc1	$f20,24(sp)
+   001d2708: 03e00008  jr	ra                                            | 001d2708: 03e00008  jr	ra
+   001d270c: 27bd0020  addiu	sp,sp,32                                   | 001d270c: 27bd0020  addiu	sp,sp,32

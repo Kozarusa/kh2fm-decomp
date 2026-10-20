@@ -1,0 +1,26 @@
+001e0de8: compiled 88 bytes, target 84 bytes, exact=False
+Differing words: 17. First difference at instruction 5 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001e0de8: 27bdfff0  addiu	sp,sp,-16                                  | 001e0de8: 27bdfff0  addiu	sp,sp,-16
+   001e0dec: ffb00000  sd	s0,0(sp)                                      | 001e0dec: ffb00000  sd	s0,0(sp)
+   001e0df0: ffbf0008  sd	ra,8(sp)                                      | 001e0df0: ffbf0008  sd	ra,8(sp)
+   001e0df4: 0c078332  jal	0x1e0cc8                                     | 001e0df4: 0c078332  jal	1e0cc8 <func_001e0cc8>
+   001e0df8: 0080802d  move	s0,a0                                       | 001e0df8: 0080802d  move	s0,a0
+!! 001e0dfc: 52020004  beql	s0,v0,0x1e0e10                              | 001e0dfc: 5602000d  bnel	s0,v0,1e0e34 <func_001e0de8+0x4c>
+!! 001e0e00: ae00000c  sw	zero,12(s0)                                   | 001e0e00: 784f0000  lq	t7,0(v0)
+!! 001e0e04: 78480000  lq	t0,0(v0)                                      | 001e0e04: ae00000c  sw	zero,12(s0)
+!! 001e0e08: 7e080000  sq	t0,0(s0)                                      | 001e0e08: 0c07833a  jal	1e0ce8 <func_001e0ce8>
+!! 001e0e0c: ae00000c  sw	zero,12(s0)                                   | 001e0e0c: 0200202d  move	a0,s0
+!! 001e0e10: 0200202d  move	a0,s0                                       | 001e0e10: 260f0010  addiu	t7,s0,16
+!! 001e0e14: 0c07833a  jal	0x1e0ce8                                     | 001e0e14: 51e20004  beql	t7,v0,1e0e28 <func_001e0de8+0x40>
+!! 001e0e18: 26100010  addiu	s0,s0,16                                   | 001e0e18: dfb00000  ld	s0,0(sp)
+!! 001e0e1c: 52020004  beql	s0,v0,0x1e0e30                              | 001e0e1c: 784f0000  lq	t7,0(v0)
+!! 001e0e20: dfb00000  ld	s0,0(sp)                                      | 001e0e20: 7e0f0010  sq	t7,16(s0)
+!! 001e0e24: 78480000  lq	t0,0(v0)                                      | 001e0e24: dfb00000  ld	s0,0(sp)
+!! 001e0e28: 7e080000  sq	t0,0(s0)                                      | 001e0e28: dfbf0008  ld	ra,8(sp)
+!! 001e0e2c: dfb00000  ld	s0,0(sp)                                      | 001e0e2c: 03e00008  jr	ra
+!! 001e0e30: dfbf0008  ld	ra,8(sp)                                      | 001e0e30: 27bd0010  addiu	sp,sp,16
+!! 001e0e34: 03e00008  jr	ra                                            | 001e0e34: ae00000c  sw	zero,12(s0)
+!! 001e0e38: 27bd0010  addiu	sp,sp,16                                   | 001e0e38: 1000fff3  b	1e0e08 <func_001e0de8+0x20>
+!!                                                                      | 001e0e3c: 7e0f0000  sq	t7,0(s0)

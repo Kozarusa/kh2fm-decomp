@@ -1,0 +1,18 @@
+{
+  "source_sha256": "3d45a084bb6b45a76230b6a18d1296a5e66270633a677e0189095e2a7583651b",
+  "source": "analysis/final-mix/recovery-experiments/delegated/global-copy/sa_copy_ac8_clobber13.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "00158ac8",
+      "symbol": "_Z13func_00158ac8j",
+      "compiled_size": 84,
+      "target_size": 84,
+      "ghidra_body_size": 84,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "35000c3c90008e24c0a98f250400cf5135000c3c0000c8790000e87d35000c3c70008e24d0a98f250400cf51480080c40000c8790000e87d480080c435000f3ce0a9e0e5500081c435000f3c0800e003e4a9e1e5",
+      "target_hex": "35000f3c90008e24c0a9ef250400cf5135000f3c0000c8790000e87d35000f3c70008e24d0a9ef250400cf51480080c40000c8790000e87d480080c435000f3ce0a9e0e5500081c435000f3c0800e003e4a9e1e5"
+    }
+  ]
+}

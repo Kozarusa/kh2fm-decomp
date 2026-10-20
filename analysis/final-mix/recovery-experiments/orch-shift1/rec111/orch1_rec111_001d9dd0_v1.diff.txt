@@ -1,0 +1,27 @@
+001d9dd0: compiled 88 bytes, target 92 bytes, exact=False
+Differing words: 19. First difference at instruction 3 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001d9dd0: 3c0f01d6  lui	t7,0x1d6                                     | 001d9dd0: 3c0f01d6  lui	t7,0x1d6
+   001d9dd4: 0000682d  move	t5,zero                                     | 001d9dd4: 0000682d  move	t5,zero
+   001d9dd8: 8deebaa8  lw	t6,-17752(t7)   ; = D_01d5baa8                | 001d9dd8: 8deebaa8  lw	t6,-17752(t7)   ; = D_01d5baa8
+!! 001d9ddc: 8dcf0004  lw	t7,4(t6)                                      | 001d9ddc: 8dcc0004  lw	t4,4(t6)
+!! 001d9de0: 19e0000f  blez	t7,0x1d9e20                                 | 001d9de0: 1980000e  blez	t4,1d9e1c <func_001d9dd0+0x4c>
+   001d9de4: 25ce0008  addiu	t6,t6,8                                    | 001d9de4: 25ce0008  addiu	t6,t6,8
+!! 001d9de8: 01e0602d  move	t4,t7                                       | 001d9de8: 91cf0004  lbu	t7,4(t6)
+!! 001d9dec: 91cf0004  lbu	t7,4(t6)                                     | 001d9dec: 55e40008  bnel	t7,a0,1d9e10 <func_001d9dd0+0x40>
+!! 001d9df0: 55e40008  bnel	t7,a0,0x1d9e14                              | 001d9df0: 25ad0001  addiu	t5,t5,1
+!! 001d9df4: 25ad0001  addiu	t5,t5,1                                    | 001d9df4: 91cf0005  lbu	t7,5(t6)
+!! 001d9df8: 91cf0005  lbu	t7,5(t6)                                     | 001d9df8: 55e50005  bnel	t7,a1,1d9e10 <func_001d9dd0+0x40>
+!! 001d9dfc: 55e50005  bnel	t7,a1,0x1d9e14                              | 001d9dfc: 25ad0001  addiu	t5,t5,1
+!! 001d9e00: 25ad0001  addiu	t5,t5,1                                    | 001d9e00: 91cf0006  lbu	t7,6(t6)
+!! 001d9e04: 91cf0006  lbu	t7,6(t6)                                     | 001d9e04: 11e60006  beq	t7,a2,1d9e20 <func_001d9dd0+0x50>
+!! 001d9e08: 11e60006  beq	t7,a2,0x1d9e24                               | 001d9e08: 01c0102d  move	v0,t6
+!! 001d9e0c: 01c0102d  move	v0,t6                                       | 001d9e0c: 25ad0001  addiu	t5,t5,1
+!! 001d9e10: 25ad0001  addiu	t5,t5,1                                    | 001d9e10: 01ac782a  slt	t7,t5,t4
+!! 001d9e14: 01ac782a  slt	t7,t5,t4                                     | 001d9e14: 15e0fff4  bnez	t7,1d9de8 <func_001d9dd0+0x18>
+!! 001d9e18: 15e0fff4  bnez	t7,0x1d9dec                                 | 001d9e18: 25ce000a  addiu	t6,t6,10
+!! 001d9e1c: 25ce000a  addiu	t6,t6,10                                   | 001d9e1c: 0000102d  move	v0,zero
+!! 001d9e20: 0000102d  move	v0,zero                                     | 001d9e20: 03e00008  jr	ra
+!! 001d9e24: 03e00008  jr	ra                                            | 001d9e24: 00000000  nop
+!! 001d9e28: 00000000  nop                                              | 

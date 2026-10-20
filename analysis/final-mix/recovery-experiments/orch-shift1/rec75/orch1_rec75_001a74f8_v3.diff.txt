@@ -1,0 +1,17 @@
+001a74f8: compiled 52 bytes, target 52 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001a74f8: 27bdfff0  addiu	sp,sp,-16                                  | 001a74f8: 27bdfff0  addiu	sp,sp,-16
+   001a74fc: ffbf0000  sd	ra,0(sp)                                      | 001a74fc: ffbf0000  sd	ra,0(sp)
+   001a7500: 0c06e3a2  jal	0x1b8e88                                     | 001a7500: 0c06e3a2  jal	1b8e88 <func_001b8e88>
+   001a7504: 00000000  nop                                              | 001a7504: 00000000  nop
+   001a7508: 3c0e01c7  lui	t6,0x1c7                                     | 001a7508: 3c0e01c7  lui	t6,0x1c7
+   001a750c: 0040282d  move	a1,v0                                       | 001a750c: 0040282d  move	a1,v0
+   001a7510: 8dcfcb78  lw	t7,-13448(t6)   ; = D_01c6cb78                | 001a7510: 8dcfcb78  lw	t7,-13448(t6)   ; = D_01c6cb78
+   001a7514: ade009b0  sw	zero,2480(t7)                                 | 001a7514: ade009b0  sw	zero,2480(t7)
+   001a7518: 0c067086  jal	0x19c218                                     | 001a7518: 0c067086  jal	19c218 <func_0019c218>
+   001a751c: 8dc4cb78  lw	a0,-13448(t6)   ; = D_01c6cb78                | 001a751c: 8dc4cb78  lw	a0,-13448(t6)   ; = D_01c6cb78
+   001a7520: dfbf0000  ld	ra,0(sp)                                      | 001a7520: dfbf0000  ld	ra,0(sp)
+   001a7524: 03e00008  jr	ra                                            | 001a7524: 03e00008  jr	ra
+   001a7528: 27bd0010  addiu	sp,sp,16                                   | 001a7528: 27bd0010  addiu	sp,sp,16

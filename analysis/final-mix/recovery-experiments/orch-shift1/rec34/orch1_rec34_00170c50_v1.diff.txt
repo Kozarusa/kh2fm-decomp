@@ -1,0 +1,35 @@
+00170c50: compiled 104 bytes, target 124 bytes, exact=False
+Differing words: 24. First difference at instruction 4 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00170c50: 27bdfff0  addiu	sp,sp,-16                                  | 00170c50: 27bdfff0  addiu	sp,sp,-16
+   00170c54: ffbf0000  sd	ra,0(sp)                                      | 00170c54: ffbf0000  sd	ra,0(sp)
+   00170c58: 0c05c30e  jal	0x170c38                                     | 00170c58: 0c05c30e  jal	170c38 <func_00170c38>
+   00170c5c: 00000000  nop                                              | 00170c5c: 00000000  nop
+!! 00170c60: 1440000a  bnez	v0,0x170c8c                                 | 00170c60: 14400012  bnez	v0,170cac <func_00170c50+0x5c>
+!! 00170c64: 240e0001  li	t6,1                                          | 00170c64: 24020001  li	v0,1
+   00170c68: 0000682d  move	t5,zero                                     | 00170c68: 0000682d  move	t5,zero
+   00170c6c: 3c0c0035  lui	t4,0x35                                      | 00170c6c: 3c0c0035  lui	t4,0x35
+   00170c70: 240b0003  li	t3,3                                          | 00170c70: 240b0003  li	t3,3
+!! 00170c74: 55a00002  bnezl	t5,0x170c80                                | 00170c74: 11a00002  beqz	t5,170c80 <func_00170c50+0x30>
+!! 00170c78: 8dae003c  lw	t6,60(t5)                                     | 00170c78: 8d8edca0  lw	t6,-9056(t4)   ; = D_0034dca0
+!! 00170c7c: 8d8edca0  lw	t6,-9056(t4)   ; = D_0034dca0                 | 00170c7c: 8dae003c  lw	t6,60(t5)
+!! 00170c80: 15c00006  bnez	t6,0x170c9c                                 | 00170c80: 11c0000a  beqz	t6,170cac <func_00170c50+0x5c>
+!! 00170c84: 01c0682d  move	t5,t6                                       | 00170c84: 0000102d  move	v0,zero
+!! 00170c88: 0000702d  move	t6,zero                                     | 00170c88: 8dcf0028  lw	t7,40(t6)
+!! 00170c8c: dfbf0000  ld	ra,0(sp)                                      | 00170c8c: 29ef2710  slti	t7,t7,10000
+!! 00170c90: 01c0102d  move	v0,t6                                       | 00170c90: 11e0fff8  beqz	t7,170c74 <func_00170c50+0x24>
+!! 00170c94: 03e00008  jr	ra                                            | 00170c94: 01c0682d  move	t5,t6
+!! 00170c98: 27bd0010  addiu	sp,sp,16                                   | 00170c98: 91cf0001  lbu	t7,1(t6)
+!! 00170c9c: 8dcf0028  lw	t7,40(t6)                                     | 00170c9c: 11e0fff5  beqz	t7,170c74 <func_00170c50+0x24>
+!! 00170ca0: 29ef2710  slti	t7,t7,10000                                 | 00170ca0: 00000000  nop
+!! 00170ca4: 39ef0001  xori	t7,t7,0x1                                   | 00170ca4: 11ebfff3  beq	t7,t3,170c74 <func_00170c50+0x24>
+!! 00170ca8: 15e0fff2  bnez	t7,0x170c74                                 | 00170ca8: 24020001  li	v0,1
+!! 00170cac: 00000000  nop                                              | 00170cac: dfbf0000  ld	ra,0(sp)
+!! 00170cb0: 91cf0001  lbu	t7,1(t6)                                     | 00170cb0: 03e00008  jr	ra
+!! 00170cb4: 11e0ffef  beqz	t7,0x170c74                                 | 00170cb4: 27bd0010  addiu	sp,sp,16
+!! 00170cb8: 00000000  nop                                              | 
+!! 00170cbc: 15ebfff3  bne	t7,t3,0x170c8c                               | 
+!! 00170cc0: 240e0001  li	t6,1                                          | 
+!! 00170cc4: 1000ffeb  b	0x170c74                                       | 
+!! 00170cc8: 00000000  nop                                              | 

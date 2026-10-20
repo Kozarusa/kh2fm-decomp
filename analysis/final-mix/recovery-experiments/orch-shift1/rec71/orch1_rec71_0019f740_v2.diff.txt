@@ -1,0 +1,24 @@
+0019f740: compiled 80 bytes, target 80 bytes, exact=False
+Differing words: 2. First difference at instruction 0 (0-based).
+
+ORIGINAL                                                                | COMPILED
+!! 0019f740: 240dffff  li	t5,-1                                         | 0019f740: 248e0060  addiu	t6,a0,96
+!! 0019f744: 248e0060  addiu	t6,a0,96                                   | 0019f744: 240dffff  li	t5,-1
+   0019f748: 8c8f0000  lw	t7,0(a0)                                      | 0019f748: 8c8f0000  lw	t7,0(a0)
+   0019f74c: 55e5000a  bnel	t7,a1,0x19f778                              | 0019f74c: 55e5000a  bnel	t7,a1,19f778 <func_0019f740+0x38>
+   0019f750: 2484000c  addiu	a0,a0,12                                   | 0019f750: 2484000c  addiu	a0,a0,12
+   0019f754: 8c8f0004  lw	t7,4(a0)                                      | 0019f754: 8c8f0004  lw	t7,4(a0)
+   0019f758: 51ed0004  beql	t7,t5,0x19f76c                              | 0019f758: 51ed0004  beql	t7,t5,19f76c <func_0019f740+0x2c>
+   0019f75c: 908f0008  lbu	t7,8(a0)                                     | 0019f75c: 908f0008  lbu	t7,8(a0)
+   0019f760: 55e60005  bnel	t7,a2,0x19f778                              | 0019f760: 55e60005  bnel	t7,a2,19f778 <func_0019f740+0x38>
+   0019f764: 2484000c  addiu	a0,a0,12                                   | 0019f764: 2484000c  addiu	a0,a0,12
+   0019f768: 908f0008  lbu	t7,8(a0)                                     | 0019f768: 908f0008  lbu	t7,8(a0)
+   0019f76c: 11e00006  beqz	t7,0x19f788                                 | 0019f76c: 11e00006  beqz	t7,19f788 <func_0019f740+0x48>
+   0019f770: 24020001  li	v0,1                                          | 0019f770: 24020001  li	v0,1
+   0019f774: 2484000c  addiu	a0,a0,12                                   | 0019f774: 2484000c  addiu	a0,a0,12
+   0019f778: 008e782a  slt	t7,a0,t6                                     | 0019f778: 008e782a  slt	t7,a0,t6
+   0019f77c: 55e0fff3  bnezl	t7,0x19f74c                                | 0019f77c: 55e0fff3  bnezl	t7,19f74c <func_0019f740+0xc>
+   0019f780: 8c8f0000  lw	t7,0(a0)                                      | 0019f780: 8c8f0000  lw	t7,0(a0)
+   0019f784: 0000102d  move	v0,zero                                     | 0019f784: 0000102d  move	v0,zero
+   0019f788: 03e00008  jr	ra                                            | 0019f788: 03e00008  jr	ra
+   0019f78c: 00000000  nop                                              | 0019f78c: 00000000  nop

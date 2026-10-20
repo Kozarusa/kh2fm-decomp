@@ -1,0 +1,17 @@
+{
+  "probe_source": "analysis/final-mix/recovery-experiments/fm_float_memory_retry_v2.cpp",
+  "probe_source_sha256": "4465ccf5632d43d3b070cd7d628abeb626303b74db138d55ef3e04aba339d52a",
+  "probe_proof_sha256": "77b08ccb18f5ddc7551eb22ea563eeb3441694315890d4d33583bad9c5d82780",
+  "curated_source": "analysis/final-mix/recovery-experiments/fm_float_memory_recovered.cpp",
+  "curated_source_sha256": "4465ccf5632d43d3b070cd7d628abeb626303b74db138d55ef3e04aba339d52a",
+  "selected_addresses": [
+    "00134d10",
+    "001957e8",
+    "0028d188",
+    "002cd260"
+  ],
+  "exclusion_receipt": null,
+  "limitations": [
+    "Curated source still requires a new probe, registration and full build."
+  ]
+}

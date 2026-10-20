@@ -1,0 +1,19 @@
+00232e60: compiled 60 bytes, target 60 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00232e60: 3c0f0036  lui	t7,0x36                                      | 00232e60: 3c0f0036  lui	t7,0x36
+   00232e64: 0000682d  move	t5,zero                                     | 00232e64: 0000682d  move	t5,zero
+   00232e68: 8deedcf8  lw	t6,-8968(t7)   ; = D_0035dcf8                 | 00232e68: 8deedcf8  lw	t6,-8968(t7)   ; = D_0035dcf8
+   00232e6c: 240cffff  li	t4,-1                                         | 00232e6c: 240cffff  li	t4,-1
+   00232e70: 8dcf0000  lw	t7,0(t6)                                      | 00232e70: 8dcf0000  lw	t7,0(t6)
+   00232e74: 01c0102d  move	v0,t6                                       | 00232e74: 01c0102d  move	v0,t6
+   00232e78: 11ec0006  beq	t7,t4,0x232e94                               | 00232e78: 11ec0006  beq	t7,t4,232e94 <func_00232e60+0x34>
+   00232e7c: 25ce0040  addiu	t6,t6,64                                   | 00232e7c: 25ce0040  addiu	t6,t6,64
+   00232e80: 25ad0001  addiu	t5,t5,1                                    | 00232e80: 25ad0001  addiu	t5,t5,1
+   00232e84: 29af0040  slti	t7,t5,64                                    | 00232e84: 29af0040  slti	t7,t5,64
+   00232e88: 55e0fffa  bnezl	t7,0x232e74                                | 00232e88: 55e0fffa  bnezl	t7,232e74 <func_00232e60+0x14>
+   00232e8c: 8dcf0000  lw	t7,0(t6)                                      | 00232e8c: 8dcf0000  lw	t7,0(t6)
+   00232e90: 0000102d  move	v0,zero                                     | 00232e90: 0000102d  move	v0,zero
+   00232e94: 03e00008  jr	ra                                            | 00232e94: 03e00008  jr	ra
+   00232e98: 00000000  nop                                              | 00232e98: 00000000  nop

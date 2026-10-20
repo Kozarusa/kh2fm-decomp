@@ -1,0 +1,6 @@
+Exact probe matches: 0/7
+Detailed proof: analysis/final-mix/recovery-experiments/fm_oct7_extended_02_narrow.verification.json
+recovery-experiments/fm_oct7_extended_02_narrow/probe.cpp: In function `u32 
+   func_00304200(unsigned int, unsigned int, unsigned int)':
+recovery-experiments/fm_oct7_extended_02_narrow/probe.cpp:55: warning: invalid 
+   conversion from `u32*' to `unsigned int'

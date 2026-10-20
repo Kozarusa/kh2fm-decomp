@@ -1,0 +1,36 @@
+00143ae0: compiled 128 bytes, target 128 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00143ae0: 27bdffd0  addiu	sp,sp,-48                                  | 00143ae0: 27bdffd0  addiu	sp,sp,-48
+   00143ae4: 0000402d  move	t0,zero                                     | 00143ae4: 0000402d  move	t0,zero
+   00143ae8: ffb00000  sd	s0,0(sp)                                      | 00143ae8: ffb00000  sd	s0,0(sp)
+   00143aec: ffb40020  sd	s4,32(sp)                                     | 00143aec: ffb40020  sd	s4,32(sp)
+   00143af0: ffb10008  sd	s1,8(sp)                                      | 00143af0: ffb10008  sd	s1,8(sp)
+   00143af4: 3c100035  lui	s0,0x35                                      | 00143af4: 3c100035  lui	s0,0x35
+   00143af8: ffb20010  sd	s2,16(sp)                                     | 00143af8: ffb20010  sd	s2,16(sp)
+   00143afc: 0080a02d  move	s4,a0                                       | 00143afc: 0080a02d  move	s4,a0
+   00143b00: ffb30018  sd	s3,24(sp)                                     | 00143b00: ffb30018  sd	s3,24(sp)
+   00143b04: 00a0882d  move	s1,a1                                       | 00143b04: 00a0882d  move	s1,a1
+   00143b08: ffbf0028  sd	ra,40(sp)                                     | 00143b08: ffbf0028  sd	ra,40(sp)
+   00143b0c: 00c0902d  move	s2,a2                                       | 00143b0c: 00c0902d  move	s2,a2
+   00143b10: 00e0982d  move	s3,a3                                       | 00143b10: 00e0982d  move	s3,a3
+   00143b14: 8e048804  lw	a0,-30716(s0)   ; = D_00348804                | 00143b14: 8e048804  lw	a0,-30716(s0)   ; = D_00348804
+   00143b18: 0000282d  move	a1,zero                                     | 00143b18: 0000282d  move	a1,zero
+   00143b1c: 0000302d  move	a2,zero                                     | 00143b1c: 0000302d  move	a2,zero
+   00143b20: 0c050706  jal	0x141c18                                     | 00143b20: 0c050706  jal	141c18 <func_00141c18>
+   00143b24: 0000382d  move	a3,zero                                     | 00143b24: 0000382d  move	a3,zero
+   00143b28: 8e048804  lw	a0,-30716(s0)   ; = D_00348804                | 00143b28: 8e048804  lw	a0,-30716(s0)   ; = D_00348804
+   00143b2c: 0280282d  move	a1,s4                                       | 00143b2c: 0280282d  move	a1,s4
+   00143b30: 0220302d  move	a2,s1                                       | 00143b30: 0220302d  move	a2,s1
+   00143b34: 0240382d  move	a3,s2                                       | 00143b34: 0240382d  move	a3,s2
+   00143b38: 0c0507fc  jal	0x141ff0                                     | 00143b38: 0c0507fc  jal	141ff0 <func_00141ff0>
+   00143b3c: 0260402d  move	t0,s3                                       | 00143b3c: 0260402d  move	t0,s3
+   00143b40: dfb00000  ld	s0,0(sp)                                      | 00143b40: dfb00000  ld	s0,0(sp)
+   00143b44: dfb10008  ld	s1,8(sp)                                      | 00143b44: dfb10008  ld	s1,8(sp)
+   00143b48: dfb20010  ld	s2,16(sp)                                     | 00143b48: dfb20010  ld	s2,16(sp)
+   00143b4c: dfb30018  ld	s3,24(sp)                                     | 00143b4c: dfb30018  ld	s3,24(sp)
+   00143b50: dfb40020  ld	s4,32(sp)                                     | 00143b50: dfb40020  ld	s4,32(sp)
+   00143b54: dfbf0028  ld	ra,40(sp)                                     | 00143b54: dfbf0028  ld	ra,40(sp)
+   00143b58: 03e00008  jr	ra                                            | 00143b58: 03e00008  jr	ra
+   00143b5c: 27bd0030  addiu	sp,sp,48                                   | 00143b5c: 27bd0030  addiu	sp,sp,48

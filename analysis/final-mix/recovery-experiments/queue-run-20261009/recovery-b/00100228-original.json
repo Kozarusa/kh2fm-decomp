@@ -1,0 +1,127 @@
+{
+  "address": "00100228",
+  "body_bytes": 116,
+  "original_elf_sha256": "d869ce4b8edd61cb978c4ff9ede595fe4d7d7b21cbb96a145275217120d8bc87",
+  "original_range_sha256": "4e3a4658021f3c91fad7a5388922b4d8d0643f93569223efc3339be9ddf25af4",
+  "target_hex": "0f0044300600801000000000000040a001004224000000008a00040800000000ffff043cf0ff84342420640007004410000000000000407c10004224000000000000000095000408000000000700431000000000000040a00100422400000000000000009d000408000000000800e00300000000",
+  "instruction_words": [
+    {
+      "address": "00100228",
+      "word": "3044000f"
+    },
+    {
+      "address": "0010022c",
+      "word": "10800006"
+    },
+    {
+      "address": "00100230",
+      "word": "00000000"
+    },
+    {
+      "address": "00100234",
+      "word": "a0400000"
+    },
+    {
+      "address": "00100238",
+      "word": "24420001"
+    },
+    {
+      "address": "0010023c",
+      "word": "00000000"
+    },
+    {
+      "address": "00100240",
+      "word": "0804008a"
+    },
+    {
+      "address": "00100244",
+      "word": "00000000"
+    },
+    {
+      "address": "00100248",
+      "word": "3c04ffff"
+    },
+    {
+      "address": "0010024c",
+      "word": "3484fff0"
+    },
+    {
+      "address": "00100250",
+      "word": "00642024"
+    },
+    {
+      "address": "00100254",
+      "word": "10440007"
+    },
+    {
+      "address": "00100258",
+      "word": "00000000"
+    },
+    {
+      "address": "0010025c",
+      "word": "7c400000"
+    },
+    {
+      "address": "00100260",
+      "word": "24420010"
+    },
+    {
+      "address": "00100264",
+      "word": "00000000"
+    },
+    {
+      "address": "00100268",
+      "word": "00000000"
+    },
+    {
+      "address": "0010026c",
+      "word": "08040095"
+    },
+    {
+      "address": "00100270",
+      "word": "00000000"
+    },
+    {
+      "address": "00100274",
+      "word": "10430007"
+    },
+    {
+      "address": "00100278",
+      "word": "00000000"
+    },
+    {
+      "address": "0010027c",
+      "word": "a0400000"
+    },
+    {
+      "address": "00100280",
+      "word": "24420001"
+    },
+    {
+      "address": "00100284",
+      "word": "00000000"
+    },
+    {
+      "address": "00100288",
+      "word": "00000000"
+    },
+    {
+      "address": "0010028c",
+      "word": "0804009d"
+    },
+    {
+      "address": "00100290",
+      "word": "00000000"
+    },
+    {
+      "address": "00100294",
+      "word": "03e00008"
+    },
+    {
+      "address": "00100298",
+      "word": "00000000"
+    }
+  ],
+  "abi": "Incoming cursor v0 and exclusive end v1; outgoing cursor advanced to end; uses a0; no stack frame.",
+  "pinned_disassembler": "/opt/ps2/gcc/bin/ee-objdump -d -z --start-address=0x100228 --stop-address=0x10029c SLPM_666.75"
+}

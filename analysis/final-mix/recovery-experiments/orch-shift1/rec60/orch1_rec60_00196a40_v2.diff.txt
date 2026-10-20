@@ -1,0 +1,28 @@
+00196a40: compiled 92 bytes, target 96 bytes, exact=False
+Differing words: 20. First difference at instruction 2 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00196a40: 27bdfff0  addiu	sp,sp,-16                                  | 00196a40: 27bdfff0  addiu	sp,sp,-16
+   00196a44: 3c0f0035  lui	t7,0x35                                      | 00196a44: 3c0f0035  lui	t7,0x35
+!! 00196a48: 25ef0338  addiu	t7,t7,824   ; = D_00350338                 | 00196a48: ffbf0000  sd	ra,0(sp)
+!! 00196a4c: ffbf0000  sd	ra,0(sp)                                      | 00196a4c: 240e0007  li	t6,7
+!! 00196a50: 240e0007  li	t6,7                                          | 00196a50: 25ef033c  addiu	t7,t7,828   ; = D_0035033c
+!! 00196a54: 25ef0004  addiu	t7,t7,4                                    | 00196a54: ade00000  sw	zero,0(t7)
+!! 00196a58: ade00000  sw	zero,0(t7)                                    | 00196a58: 25ceffff  addiu	t6,t6,-1
+!! 00196a5c: 25ceffff  addiu	t6,t6,-1                                   | 00196a5c: 00000000  nop
+   00196a60: 00000000  nop                                              | 00196a60: 00000000  nop
+   00196a64: 00000000  nop                                              | 00196a64: 00000000  nop
+!! 00196a68: 00000000  nop                                              | 00196a68: 05c1fffa  bgez	t6,196a54 <func_00196a40+0x14>
+!! 00196a6c: 05c1fffa  bgez	t6,0x196a58                                 | 00196a6c: 25ef0008  addiu	t7,t7,8
+!! 00196a70: 25ef0008  addiu	t7,t7,8                                    | 00196a70: 3c060019  lui	a2,0x19
+!! 00196a74: 3c060019  lui	a2,0x19                                      | 00196a74: 24040001  li	a0,1
+!! 00196a78: 24040001  li	a0,1                                          | 00196a78: 240536b2  li	a1,14002
+!! 00196a7c: 240536b2  li	a1,14002                                      | 00196a7c: 0c040b06  jal	102c18 <func_00102c18>
+!! 00196a80: 0c040b06  jal	0x102c18                                     | 00196a80: 24c66888  addiu	a2,a2,26760   ; = D_00196888
+!! 00196a84: 24c66888  addiu	a2,a2,26760   ; = D_00196888               | 00196a84: 3c0f0019  lui	t7,0x19
+!! 00196a88: 3c0f0019  lui	t7,0x19                                      | 00196a88: dfbf0000  ld	ra,0(sp)
+!! 00196a8c: dfbf0000  ld	ra,0(sp)                                      | 00196a8c: 25ef6a08  addiu	t7,t7,27144   ; = D_00196a08
+!! 00196a90: 25ef6a08  addiu	t7,t7,27144   ; = D_00196a08               | 00196a90: ac4f0030  sw	t7,48(v0)
+!! 00196a94: ac4f0030  sw	t7,48(v0)                                     | 00196a94: 03e00008  jr	ra
+!! 00196a98: 03e00008  jr	ra                                            | 00196a98: 27bd0010  addiu	sp,sp,16
+!! 00196a9c: 27bd0010  addiu	sp,sp,16                                   | 

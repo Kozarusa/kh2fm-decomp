@@ -1,0 +1,30 @@
+001675b0: compiled 92 bytes, target 104 bytes, exact=False
+Differing words: 23. First difference at instruction 3 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001675b0: 27bdfff0  addiu	sp,sp,-16                                  | 001675b0: 27bdfff0  addiu	sp,sp,-16
+   001675b4: 3c0f0037  lui	t7,0x37                                      | 001675b4: 3c0f0037  lui	t7,0x37
+   001675b8: ffbf0000  sd	ra,0(sp)                                      | 001675b8: ffbf0000  sd	ra,0(sp)
+!! 001675bc: 25efb610  addiu	t7,t7,-18928   ; = D_0036b610              | 001675bc: 3c0e0037  lui	t6,0x37
+!! 001675c0: c5ec0000  lwc1	$f12,0(t7)                                  | 001675c0: c5ecb610  lwc1	$f12,-18928(t7)   ; = D_0036b610
+!! 001675c4: 3c0f0037  lui	t7,0x37                                      | 001675c4: c5cdb614  lwc1	$f13,-18924(t6)   ; = D_0036b614
+!! 001675c8: 25efb614  addiu	t7,t7,-18924   ; = D_0036b614              | 001675c8: 3c0f0037  lui	t7,0x37
+!! 001675cc: c5ed0000  lwc1	$f13,0(t7)                                  | 001675cc: 0c059d8e  jal	167638 <func_00167638>
+!! 001675d0: 3c0f0037  lui	t7,0x37                                      | 001675d0: c5eeb618  lwc1	$f14,-18920(t7)   ; = D_0036b618
+!! 001675d4: 25efb618  addiu	t7,t7,-18920   ; = D_0036b618              | 001675d4: 0c059ee6  jal	167b98 <func_00167b98>
+!! 001675d8: 0c059d8e  jal	0x167638                                     | 001675d8: 00000000  nop
+!! 001675dc: c5ee0000  lwc1	$f14,0(t7)                                  | 001675dc: 0c059f0c  jal	167c30 <func_00167c30>
+!! 001675e0: 0c059ee6  jal	0x167b98                                     | 001675e0: 00000000  nop
+!! 001675e4: 00000000  nop                                              | 001675e4: 3c0f0033  lui	t7,0x33
+!! 001675e8: 0c059f0c  jal	0x167c30                                     | 001675e8: dfbf0000  ld	ra,0(sp)
+!! 001675ec: 00000000  nop                                              | 001675ec: 8de4b91c  lw	a0,-18148(t7)   ; = D_0032b91c
+!! 001675f0: 3c0f0033  lui	t7,0x33                                      | 001675f0: 3c060001  lui	a2,0x1
+!! 001675f4: dfbf0000  ld	ra,0(sp)                                      | 001675f4: 3c070016  lui	a3,0x16
+!! 001675f8: 8de4b91c  lw	a0,-18148(t7)   ; = D_0032b91c                | 001675f8: 0000282d  move	a1,zero
+!! 001675fc: 3c060001  lui	a2,0x1                                       | 001675fc: 24e77618  addiu	a3,a3,30232   ; = D_00167618
+!! 00167600: 3c070016  lui	a3,0x16                                      | 00167600: 34c6adb0  ori	a2,a2,0xadb0
+!! 00167604: 0000282d  move	a1,zero                                     | 00167604: 080409e2  j	102788 <func_00102788>
+!! 00167608: 24e77618  addiu	a3,a3,30232   ; = D_00167618               | 00167608: 27bd0010  addiu	sp,sp,16
+!! 0016760c: 34c6adb0  ori	a2,a2,0xadb0                                 | 
+!! 00167610: 080409e2  j	0x102788                                       | 
+!! 00167614: 27bd0010  addiu	sp,sp,16                                   | 

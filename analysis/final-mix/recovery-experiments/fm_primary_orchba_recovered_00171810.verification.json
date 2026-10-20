@@ -1,0 +1,18 @@
+{
+  "source_sha256": "2803d45395d8e9aeebce0d29d3a8f828334ca7b074d1be74e5aa5a72cdaa4e5b",
+  "source": "analysis/final-mix/recovery-experiments/fm_primary_orchba_recovered_00171810.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "00171810",
+      "symbol": "_Z13func_00171810Pi",
+      "compiled_size": 52,
+      "target_size": 52,
+      "ghidra_body_size": 52,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd270000bfff00008f8c0800868c0400ee8d0400858c0000cd8d5400af8d09f8e0012d20c0010000bfdf0800e0031000bd27",
+      "target_hex": "f0ffbd270000bfff00008f8c0800868c0400ee8d0400858c0000cd8d5400af8d09f8e0012d20c0010000bfdf0800e0031000bd27"
+    }
+  ]
+}

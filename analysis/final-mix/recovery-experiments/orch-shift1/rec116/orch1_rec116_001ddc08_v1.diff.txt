@@ -1,0 +1,19 @@
+001ddc08: compiled 60 bytes, target 60 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001ddc08: 3c0f0035  lui	t7,0x35                                      | 001ddc08: 3c0f0035  lui	t7,0x35
+   001ddc0c: 8dee2ae0  lw	t6,10976(t7)   ; = D_00352ae0                 | 001ddc0c: 8dee2ae0  lw	t6,10976(t7)   ; = D_00352ae0
+   001ddc10: 11c0000a  beqz	t6,0x1ddc3c                                 | 001ddc10: 11c0000a  beqz	t6,1ddc3c <func_001ddc08+0x34>
+   001ddc14: 00000000  nop                                              | 001ddc14: 00000000  nop
+   001ddc18: 3c0d0400  lui	t5,0x400                                     | 001ddc18: 3c0d0400  lui	t5,0x400
+   001ddc1c: 8dcf0008  lw	t7,8(t6)                                      | 001ddc1c: 8dcf0008  lw	t7,8(t6)
+   001ddc20: 01ed7825  or	t7,t7,t5                                      | 001ddc20: 01ed7825  or	t7,t7,t5
+   001ddc24: adcf0008  sw	t7,8(t6)                                      | 001ddc24: adcf0008  sw	t7,8(t6)
+   001ddc28: 8dce0028  lw	t6,40(t6)                                     | 001ddc28: 8dce0028  lw	t6,40(t6)
+   001ddc2c: 00000000  nop                                              | 001ddc2c: 00000000  nop
+   001ddc30: 00000000  nop                                              | 001ddc30: 00000000  nop
+   001ddc34: 55c0fffa  bnezl	t6,0x1ddc20                                | 001ddc34: 55c0fffa  bnezl	t6,1ddc20 <func_001ddc08+0x18>
+   001ddc38: 8dcf0008  lw	t7,8(t6)                                      | 001ddc38: 8dcf0008  lw	t7,8(t6)
+   001ddc3c: 03e00008  jr	ra                                            | 001ddc3c: 03e00008  jr	ra
+   001ddc40: 00000000  nop                                              | 001ddc40: 00000000  nop

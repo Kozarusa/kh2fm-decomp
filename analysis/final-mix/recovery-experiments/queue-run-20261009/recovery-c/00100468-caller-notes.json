@@ -1,0 +1,10 @@
+[
+  {
+    "address": "001004c0",
+    "code_context": "      puVar1 = puVar2 + 4;\r\n      break;\r\n    default:\r\n                    /* WARNING: Subroutine does not return */\r\n      FUN_002fd160();\r\n    case 9:\r\n      puVar1 = (ushort *)FUN_00100468(param_3,apuStack_38);\r\n      break;\r\n    case 10:\r\n      puVar1 = puVar2 + 1;\r\n      apuStack_38[0] = (undefined4 *)(int)(short)*puVar2;\r\n    }\r\n    if (apuStack_38[0] != (undefined4 *)0x0) {\r\n      if ((param_1 & 0x70) != 0x10) {\r\n        puVar2 = param_2;\r\n      }\r\n      apuStack_38[0] = (undefined4 *)((int)apuStack_38[0] + (int)puVa"
+  },
+  {
+    "address": "001009a0",
+    "code_context": "[16];\r\n  \r\n  bVar2 = 0;\r\n  if (*(char *)(param_1 + 9) == 'z') {\r\n    iVar3 = FUN_002ff3fc(param_1 + 9);\r\n    uVar5 = FUN_00100430(param_1 + 9 + iVar3 + 1,auStack_50);\r\n    iVar3 = FUN_00100468(uVar5,auStack_48);\r\n    pbVar4 = (byte *)FUN_00100430(iVar3 + 1,auStack_50);\r\n    for (pcVar6 = (char *)(param_1 + 10); cVar1 = *pcVar6, cVar1 != 'R'; pcVar6 = pcVar6 + 1) {\r\n      if (cVar1 == 'P') {\r\n        pbVar4 = (byte *)FUN_001004c0(*pbVar4 & 0x7f,0,pbVar4 + 1,auStack_40);\r\n      }\r\n      else {\r\n        pbVar4 = pbVar4 + 1;\r\n  "
+  }
+]

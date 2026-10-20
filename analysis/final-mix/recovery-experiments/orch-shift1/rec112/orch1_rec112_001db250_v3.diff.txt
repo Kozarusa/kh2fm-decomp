@@ -1,0 +1,21 @@
+001db250: compiled 64 bytes, target 68 bytes, exact=False
+Differing words: 16. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001db250: 27bdffe0  addiu	sp,sp,-32                                  | 001db250: 27bdffe0  addiu	sp,sp,-32
+!! 001db254: ffbf0010  sd	ra,16(sp)                                     | 001db254: 3c0f0037  lui	t7,0x37
+!! 001db258: 8c8f006c  lw	t7,108(a0)                                    | 001db258: ffbf0010  sd	ra,16(sp)
+!! 001db25c: c5e00020  lwc1	$f0,32(t7)                                  | 001db25c: 8c8e006c  lw	t6,108(a0)
+!! 001db260: 03a0202d  move	a0,sp                                       | 001db260: c5ece7a0  lwc1	$f12,-6240(t7)   ; = D_0036e7a0
+!! 001db264: 3c0f0037  lui	t7,0x37                                      | 001db264: c5c00020  lwc1	$f0,32(t6)
+!! 001db268: 25efe7a0  addiu	t7,t7,-6240   ; = D_0036e7a0               | 001db268: 03a0202d  move	a0,sp
+!! 001db26c: c5ec0000  lwc1	$f12,0(t7)                                  | 001db26c: 0c05f43a  jal	17d0e8 <func_0017d0e8>
+!! 001db270: 0c05f43a  jal	0x17d0e8                                     | 001db270: 46006301  sub.s	$f12,$f12,$f0
+!! 001db274: 46006301  sub.s	$f12,$f12,$f0                              | 001db274: 3c0f0035  lui	t7,0x35
+!! 001db278: 3c0f0035  lui	t7,0x35                                      | 001db278: 03a0282d  move	a1,sp
+!! 001db27c: 03a0282d  move	a1,sp                                       | 001db27c: 0c0671de  jal	19c778 <func_0019c778>
+!! 001db280: 0c0671de  jal	0x19c778                                     | 001db280: 8de4e948  lw	a0,-5816(t7)   ; = D_0034e948
+!! 001db284: 8de4e948  lw	a0,-5816(t7)   ; = D_0034e948                 | 001db284: dfbf0010  ld	ra,16(sp)
+!! 001db288: dfbf0010  ld	ra,16(sp)                                     | 001db288: 03e00008  jr	ra
+!! 001db28c: 03e00008  jr	ra                                            | 001db28c: 27bd0020  addiu	sp,sp,32
+!! 001db290: 27bd0020  addiu	sp,sp,32                                   | 

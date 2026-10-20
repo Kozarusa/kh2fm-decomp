@@ -1,0 +1,14 @@
+{
+  "probe_source": "analysis/final-mix/recovery-experiments/eight-hour-20261011/eight_hour_001ae9a0_v7_global_dependency_0.cpp",
+  "probe_source_sha256": "a134cad04d05eb56b7ff527d1aad97c35993ee8ba4d52b3297e0cf947f8a0702",
+  "probe_proof_sha256": "8b3ea3fc5ce89d2970f79db54d4eb101866cd0ecf410b16d202b1dc2c6861396",
+  "curated_source": "analysis/final-mix/recovery-experiments/fm_primary_queuedeltaprime_recovered_001ae9a0.cpp",
+  "curated_source_sha256": "bb9e826f928d31c8ca1e14aaef7090160d78242a31c2ec16189b194588364fcf",
+  "selected_addresses": [
+    "001ae9a0"
+  ],
+  "exclusion_receipt": null,
+  "limitations": [
+    "Curated source still requires a new probe, registration and full build."
+  ]
+}

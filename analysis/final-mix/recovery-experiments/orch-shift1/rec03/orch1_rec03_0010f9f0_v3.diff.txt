@@ -1,0 +1,17 @@
+0010f9f0: compiled 52 bytes, target 52 bytes, exact=False
+Differing words: 4. First difference at instruction 0 (0-based).
+
+ORIGINAL                                                                | COMPILED
+!! 0010f9f0: 248f0c00  addiu	t7,a0,3072                                 | 0010f9f0: 248e0c00  addiu	t6,a0,3072
+!! 0010f9f4: 11e50003  beq	t7,a1,0x10fa04                               | 0010f9f4: 11c50003  beq	t6,a1,10fa04 <func_0010f9f0+0x14>
+   0010f9f8: 30c600ff  andi	a2,a2,0xff                                  | 0010f9f8: 30c600ff  andi	a2,a2,0xff
+!! 0010f9fc: 78a80000  lq	t0,0(a1)                                      | 0010f9fc: 78af0000  lq	t7,0(a1)
+!! 0010fa00: 7de80000  sq	t0,0(t7)                                      | 0010fa00: 7dcf0000  sq	t7,0(t6)
+   0010fa04: 10c00004  beqz	a2,0x10fa18                                 | 0010fa04: 10c00004  beqz	a2,10fa18 <func_0010f9f0+0x28>
+   0010fa08: 8c8f0b7c  lw	t7,2940(a0)                                   | 0010fa08: 8c8f0b7c  lw	t7,2940(a0)
+   0010fa0c: 35ef0080  ori	t7,t7,0x80                                   | 0010fa0c: 35ef0080  ori	t7,t7,0x80
+   0010fa10: 03e00008  jr	ra                                            | 0010fa10: 03e00008  jr	ra
+   0010fa14: ac8f0b7c  sw	t7,2940(a0)                                   | 0010fa14: ac8f0b7c  sw	t7,2940(a0)
+   0010fa18: 240eff7f  li	t6,-129                                       | 0010fa18: 240eff7f  li	t6,-129
+   0010fa1c: 1000fffc  b	0x10fa10                                       | 0010fa1c: 1000fffc  b	10fa10 <func_0010f9f0+0x20>
+   0010fa20: 01ee7824  and	t7,t7,t6                                     | 0010fa20: 01ee7824  and	t7,t7,t6

@@ -1,0 +1,21 @@
+00284ea8: compiled 68 bytes, target 68 bytes, exact=False
+Differing words: 2. First difference at instruction 9 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00284ea8: 27bdfff0  addiu	sp,sp,-16                                  | 00284ea8: 27bdfff0  addiu	sp,sp,-16
+   00284eac: ffbf0008  sd	ra,8(sp)                                      | 00284eac: ffbf0008  sd	ra,8(sp)
+   00284eb0: ffb00000  sd	s0,0(sp)                                      | 00284eb0: ffb00000  sd	s0,0(sp)
+   00284eb4: 0c0af5f6  jal	0x2bd7d8                                     | 00284eb4: 0c0af5f6  jal	2bd7d8 <func_002bd7d8>
+   00284eb8: 3c100036  lui	s0,0x36                                      | 00284eb8: 3c100036  lui	s0,0x36
+   00284ebc: 0c040d60  jal	0x103580                                     | 00284ebc: 0c040d60  jal	103580 <func_00103580>
+   00284ec0: 00000000  nop                                              | 00284ec0: 00000000  nop
+   00284ec4: 8c4e0000  lw	t6,0(v0)                                      | 00284ec4: 8c4e0000  lw	t6,0(v0)
+   00284ec8: 0040202d  move	a0,v0                                       | 00284ec8: 0040202d  move	a0,v0
+!! 00284ecc: 8dcf0004  lw	t7,4(t6)                                      | 00284ecc: 8dc20004  lw	v0,4(t6)
+!! 00284ed0: 01e0f809  jalr	t7                                          | 00284ed0: 0040f809  jalr	v0
+   00284ed4: 8e05f2c0  lw	a1,-3392(s0)   ; = D_0035f2c0                 | 00284ed4: 8e05f2c0  lw	a1,-3392(s0)   ; = D_0035f2c0
+   00284ed8: ae00f2c0  sw	zero,-3392(s0)   ; = D_0035f2c0               | 00284ed8: ae00f2c0  sw	zero,-3392(s0)   ; = D_0035f2c0
+   00284edc: dfbf0008  ld	ra,8(sp)                                      | 00284edc: dfbf0008  ld	ra,8(sp)
+   00284ee0: dfb00000  ld	s0,0(sp)                                      | 00284ee0: dfb00000  ld	s0,0(sp)
+   00284ee4: 03e00008  jr	ra                                            | 00284ee4: 03e00008  jr	ra
+   00284ee8: 27bd0010  addiu	sp,sp,16                                   | 00284ee8: 27bd0010  addiu	sp,sp,16

@@ -1,0 +1,10 @@
+Exact probe matches: 3/8
+Detailed proof: analysis/final-mix/recovery-experiments/fm_scalar_02_pointer.verification.json
+recovery-experiments/fm_scalar_02_pointer/probe.cpp: In function `void 
+   func_00185da8(u8*)':
+recovery-experiments/fm_scalar_02_pointer/probe.cpp:206: warning: invalid 
+   conversion from `u64' to `u8*'
+recovery-experiments/fm_scalar_02_pointer/probe.cpp: In function `void 
+   func_00186078(u8*)':
+recovery-experiments/fm_scalar_02_pointer/probe.cpp:218: warning: invalid 
+   conversion from `u64' to `u8*'

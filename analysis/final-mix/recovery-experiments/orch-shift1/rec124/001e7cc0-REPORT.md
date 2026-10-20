@@ -1,0 +1,5 @@
+# 001e7cc0 submitted
+- Range: 001e7cc0, 96 bytes. Source: orch1_rec124_001e7cc0_v1.cpp (exact). Versions tried: 1.
+- Changes that mattered: none, first version exact.
+- Emitted assembly or register bindings: none
+- Provisional: names and types are inferred from instructions only.

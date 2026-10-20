@@ -1,0 +1,26 @@
+00258a30: compiled 88 bytes, target 88 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00258a30: 27bdfff0  addiu	sp,sp,-16                                  | 00258a30: 27bdfff0  addiu	sp,sp,-16
+   00258a34: 3c0f0036  lui	t7,0x36                                      | 00258a34: 3c0f0036  lui	t7,0x36
+   00258a38: ffbf0000  sd	ra,0(sp)                                      | 00258a38: ffbf0000  sd	ra,0(sp)
+   00258a3c: 0000102d  move	v0,zero                                     | 00258a3c: 0000102d  move	v0,zero
+   00258a40: 8deef07c  lw	t6,-3972(t7)   ; = D_0035f07c                 | 00258a40: 8deef07c  lw	t6,-3972(t7)   ; = D_0035f07c
+   00258a44: 11c00004  beqz	t6,0x258a58                                 | 00258a44: 11c00004  beqz	t6,258a58 <func_00258a30+0x28>
+   00258a48: 01c0202d  move	a0,t6                                       | 00258a48: 01c0202d  move	a0,t6
+   00258a4c: 0c04e75e  jal	0x139d78                                     | 00258a4c: 0c04e75e  jal	139d78 <func_00139d78>
+   00258a50: 00000000  nop                                              | 00258a50: 00000000  nop
+   00258a54: 0002102b  sltu	v0,zero,v0                                  | 00258a54: 0002102b  sltu	v0,zero,v0
+   00258a58: 14400009  bnez	v0,0x258a80                                 | 00258a58: 14400009  bnez	v0,258a80 <func_00258a30+0x50>
+   00258a5c: dfbf0000  ld	ra,0(sp)                                      | 00258a5c: dfbf0000  ld	ra,0(sp)
+   00258a60: 3c0f0036  lui	t7,0x36                                      | 00258a60: 3c0f0036  lui	t7,0x36
+   00258a64: 8deef078  lw	t6,-3976(t7)   ; = D_0035f078                 | 00258a64: 8deef078  lw	t6,-3976(t7)   ; = D_0035f078
+   00258a68: 11c00005  beqz	t6,0x258a80                                 | 00258a68: 11c00005  beqz	t6,258a80 <func_00258a30+0x50>
+   00258a6c: 01c0202d  move	a0,t6                                       | 00258a6c: 01c0202d  move	a0,t6
+   00258a70: 0c04e75e  jal	0x139d78                                     | 00258a70: 0c04e75e  jal	139d78 <func_00139d78>
+   00258a74: 00000000  nop                                              | 00258a74: 00000000  nop
+   00258a78: 0002102b  sltu	v0,zero,v0                                  | 00258a78: 0002102b  sltu	v0,zero,v0
+   00258a7c: dfbf0000  ld	ra,0(sp)                                      | 00258a7c: dfbf0000  ld	ra,0(sp)
+   00258a80: 03e00008  jr	ra                                            | 00258a80: 03e00008  jr	ra
+   00258a84: 27bd0010  addiu	sp,sp,16                                   | 00258a84: 27bd0010  addiu	sp,sp,16

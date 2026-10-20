@@ -1,0 +1,124 @@
+[
+  {
+    "module": "SLPM_666.75",
+    "address": "00101d68",
+    "name": "FUN_00101d68",
+    "body_bytes": 320,
+    "signature": "undefined FUN_00101d68(void)",
+    "status": "unverified_pseudocode",
+    "callees": [
+      "00101d50",
+      "00102080",
+      "00102508",
+      "001029e8",
+      "00102bd8",
+      "00102e18",
+      "00102e40",
+      "00103480",
+      "00104080",
+      "00104560",
+      "00105748",
+      "00105a10",
+      "00105b58",
+      "00105d50",
+      "00106490",
+      "0011b3e0",
+      "001385f8",
+      "00138620",
+      "001674c8",
+      "00168f18",
+      "0016f970",
+      "0016fa58",
+      "001dcd50",
+      "00226978",
+      "00233580",
+      "0023d260",
+      "002cb530",
+      "002f3610",
+      "002f49c0"
+    ],
+    "code": "\r\n/* WARNING: Removing unreachable block (ram,0x00101e8c) */\r\n\r\nvoid FUN_00101d68(void)\r\n\r\n{\r\n  FUN_00105a10();\r\n  DAT_0032b91c = FUN_00102508(0x37aa40,0x10000);\r\n  FUN_0016f970();\r\n  FUN_002f3610(1);\r\n  FUN_002f49c0();\r\n  FUN_00106490(0x875b2f);\r\n  FUN_001674c8();\r\n  FUN_001385f8();\r\n  FUN_0016fa58();\r\n  FUN_00105b58();\r\n  FUN_00102e40();\r\n  FUN_00168f18();\r\n  FUN_00101d50();\r\n  FUN_00138620();\r\n  FUN_001dcd50();\r\n  FUN_00226978();\r\n  FUN_00233580();\r\n  FUN_0011b3e0();\r\n  FUN_00102e18();\r\n  FUN_00102bd8();\r\n  FUN_00103480();\r\n  FUN_00105d50();\r\n  FUN_0023d260();\r\n  FUN_00104080();\r\n  FUN_00104560();\r\n  FUN_002cb530();\r\n  FUN_00105748(0x32bb30);\r\n  FUN_00102080(0x32b9a0);\r\n  do {\r\n    FUN_001029e8(DAT_0032b91c);\r\n    DAT_0032b920 = (DAT_0032b920 + 1) % 1000;\r\n  } while( true );\r\n}\r\n\r\n",
+    "decompiler_message": ""
+  },
+  {
+    "module": "SLPM_666.75",
+    "address": "001385c0",
+    "name": "FUN_001385c0",
+    "body_bytes": 52,
+    "signature": "undefined FUN_001385c0(void)",
+    "status": "unverified_pseudocode",
+    "callees": [
+      "00102c48"
+    ],
+    "code": "\r\nvoid FUN_001385c0(void)\r\n\r\n{\r\n  DAT_00347e08 = 0;\r\n  FUN_00102c48(1,310000,0x1384d0,0x1000);\r\n  return;\r\n}\r\n\r\n",
+    "decompiler_message": ""
+  },
+  {
+    "module": "SLPM_666.75",
+    "address": "001a6dd8",
+    "name": "FUN_001a6dd8",
+    "body_bytes": 176,
+    "signature": "undefined FUN_001a6dd8(void)",
+    "status": "unverified_pseudocode",
+    "callees": [
+      "00102c48",
+      "001b8680"
+    ],
+    "code": "\r\nvoid FUN_001a6dd8(undefined4 *param_1,undefined4 param_2,undefined4 *param_3,undefined8 param_4,\r\n                 undefined8 param_5)\r\n\r\n{\r\n  undefined4 uVar1;\r\n  int iVar2;\r\n  \r\n  if (param_1[1] == 0) {\r\n    uVar1 = FUN_001b8680(*param_1,param_5);\r\n    param_1[1] = uVar1;\r\n  }\r\n  DAT_01c6cb7c = *param_3;\r\n  DAT_01c6cb80 = param_3[1];\r\n  DAT_01c6cb84 = param_3[2];\r\n  DAT_01c6cb88 = param_3[3];\r\n  DAT_01c6cb8c = param_3[4];\r\n  DAT_01c6cb78 = param_2;\r\n  iVar2 = FUN_00102c48(1,15000,param_4,0x1000);\r\n  *(undefined4 **)(iVar2 + 4) = param_1;\r\n  return;\r\n}\r\n\r\n",
+    "decompiler_message": ""
+  },
+  {
+    "module": "SLPM_666.75",
+    "address": "00226dc8",
+    "name": "FUN_00226dc8",
+    "body_bytes": 148,
+    "signature": "undefined FUN_00226dc8(void)",
+    "status": "unverified_pseudocode",
+    "callees": [
+      "00102c48",
+      "00226ce8",
+      "00226d88",
+      "002282d8",
+      "00228378",
+      "00232988",
+      "0023d230",
+      "002bc518"
+    ],
+    "code": "\r\nvoid FUN_00226dc8(void)\r\n\r\n{\r\n  long lVar1;\r\n  undefined8 uVar2;\r\n  \r\n  if (DAT_0035db10 == 4) {\r\n    return;\r\n  }\r\n  DAT_0035db10 = 4;\r\n  FUN_00226d88();\r\n  FUN_00232988();\r\n  FUN_002bc518();\r\n  lVar1 = FUN_00228378();\r\n  if (lVar1 != 0) {\r\n    FUN_0023d230();\r\n    uVar2 = FUN_002282d8();\r\n    FUN_00102c48(1,uVar2,0x226ce8,0x1000);\r\n    return;\r\n  }\r\n  DAT_0035de27 = 1;\r\n  FUN_00226ce8(0);\r\n  return;\r\n}\r\n\r\n",
+    "decompiler_message": ""
+  },
+  {
+    "module": "SLPM_666.75",
+    "address": "002be340",
+    "name": "FUN_002be340",
+    "body_bytes": 104,
+    "signature": "undefined FUN_002be340(void)",
+    "status": "unverified_pseudocode",
+    "callees": [
+      "00102c18",
+      "00102c48",
+      "001050d8",
+      "002bd998"
+    ],
+    "code": "\r\nvoid FUN_002be340(undefined8 param_1)\r\n\r\n{\r\n  undefined8 uVar1;\r\n  int iVar2;\r\n  \r\n  uVar1 = FUN_001050d8(0x6c);\r\n  FUN_002bd998(uVar1,param_1);\r\n  iVar2 = FUN_00102c48(1,15000,0x2be3a8,0x2000);\r\n  *(code **)(iVar2 + 0x30) = FUN_002be3c8;\r\n  FUN_00102c18(1,61000,0x2be428);\r\n  return;\r\n}\r\n\r\n",
+    "decompiler_message": ""
+  },
+  {
+    "module": "SLPM_666.75",
+    "address": "002bf9d8",
+    "name": "FUN_002bf9d8",
+    "body_bytes": 188,
+    "signature": "undefined FUN_002bf9d8(void)",
+    "status": "unverified_pseudocode",
+    "callees": [
+      "00102c48",
+      "001050d8",
+      "001398d0",
+      "00197760",
+      "00197c90",
+      "001c1130"
+    ],
+    "code": "\r\nvoid FUN_002bf9d8(int param_1)\r\n\r\n{\r\n  int iVar1;\r\n  \r\n  iVar1 = FUN_00102c48(1,15000,0x2bfd90,0x4000);\r\n  *(undefined1 **)(iVar1 + 0x30) = &LAB_002bfdb0;\r\n  DAT_00361a50 = (int *)FUN_001050d8(8);\r\n  *DAT_00361a50 = iVar1;\r\n  DAT_00361a50[1] = param_1;\r\n  FUN_001c1130(0xc);\r\n  *(uint *)(*(int *)(DAT_0034e948 + 0xb40) + 0x2c) =\r\n       *(uint *)(*(int *)(DAT_0034e948 + 0xb40) + 0x2c) | 1;\r\n  FUN_00197760();\r\n  FUN_00197c90();\r\n  FUN_001398d0(0xc9);\r\n  return;\r\n}\r\n\r\n",
+    "decompiler_message": ""
+  }
+]

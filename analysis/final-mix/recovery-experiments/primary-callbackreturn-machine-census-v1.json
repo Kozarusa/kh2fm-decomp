@@ -1,0 +1,116 @@
+{
+  "positive_control": "001050d8",
+  "original_sha256": "d869ce4b8edd61cb978c4ff9ede595fe4d7d7b21cbb96a145275217120d8bc87",
+  "hits": [
+    {
+      "address": "00102ea0",
+      "layout": {
+        "addr": "00102ea0",
+        "end": "00102ed4",
+        "size": "52",
+        "name": "FUN_00102ea0"
+      },
+      "global_address": "0032b9cc"
+    },
+    {
+      "address": "001050d8",
+      "layout": {
+        "addr": "001050d8",
+        "end": "0010510c",
+        "size": "52",
+        "name": "FUN_001050d8"
+      },
+      "global_address": "0032bb1c"
+    },
+    {
+      "address": "0016c7a0",
+      "layout": {
+        "addr": "0016c7a0",
+        "end": "0016c7d4",
+        "size": "52",
+        "name": "FUN_0016c7a0"
+      },
+      "global_address": "004f6288"
+    },
+    {
+      "address": "0016fac8",
+      "layout": {
+        "addr": "0016fac8",
+        "end": "0016fafc",
+        "size": "52",
+        "name": "FUN_0016fac8"
+      },
+      "global_address": "0034dc98"
+    },
+    {
+      "address": "0023ee30",
+      "layout": {
+        "addr": "0023ee30",
+        "end": "0023ee64",
+        "size": "52",
+        "name": "FUN_0023ee30"
+      },
+      "global_address": "0035eb88"
+    },
+    {
+      "address": "0023fb58",
+      "layout": {
+        "addr": "0023fb58",
+        "end": "0023fb8c",
+        "size": "52",
+        "name": "FUN_0023fb58"
+      },
+      "global_address": "0035ebe0"
+    },
+    {
+      "address": "0023fdf0",
+      "layout": {
+        "addr": "0023fdf0",
+        "end": "0023fe24",
+        "size": "52",
+        "name": "FUN_0023fdf0"
+      },
+      "global_address": "0035ec84"
+    },
+    {
+      "address": "00242330",
+      "layout": {
+        "addr": "00242330",
+        "end": "00242364",
+        "size": "52",
+        "name": "FUN_00242330"
+      },
+      "global_address": "0035ecbc"
+    },
+    {
+      "address": "00288be8",
+      "layout": {
+        "addr": "00288be8",
+        "end": "00288c1c",
+        "size": "52",
+        "name": "FUN_00288be8"
+      },
+      "global_address": "0035f34c"
+    },
+    {
+      "address": "0028cc08",
+      "layout": {
+        "addr": "0028cc08",
+        "end": "0028cc3c",
+        "size": "52",
+        "name": "FUN_0028cc08"
+      },
+      "global_address": "0035f3f8"
+    },
+    {
+      "address": "00293f40",
+      "layout": {
+        "addr": "00293f40",
+        "end": "00293f74",
+        "size": "52",
+        "name": "FUN_00293f40"
+      },
+      "global_address": "0035f570"
+    }
+  ]
+}

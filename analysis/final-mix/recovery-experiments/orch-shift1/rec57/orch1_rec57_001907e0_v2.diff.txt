@@ -1,0 +1,27 @@
+001907e0: compiled 92 bytes, target 92 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001907e0: 3c0d01c6  lui	t5,0x1c6                                     | 001907e0: 3c0d01c6  lui	t5,0x1c6
+   001907e4: 25ad0d50  addiu	t5,t5,3408   ; = D_01c60d50                | 001907e4: 25ad0d50  addiu	t5,t5,3408   ; = D_01c60d50
+   001907e8: 8daf0c00  lw	t7,3072(t5)                                   | 001907e8: 8daf0c00  lw	t7,3072(t5)
+   001907ec: 25efffff  addiu	t7,t7,-1                                   | 001907ec: 25efffff  addiu	t7,t7,-1
+   001907f0: adaf0c00  sw	t7,3072(t5)                                   | 001907f0: adaf0c00  sw	t7,3072(t5)
+   001907f4: 000f7080  sll	t6,t7,0x2                                    | 001907f4: 000f7080  sll	t6,t7,0x2
+   001907f8: 01cd7021  addu	t6,t6,t5                                    | 001907f8: 01cd7021  addu	t6,t6,t5
+   001907fc: 8dcf0a00  lw	t7,2560(t6)                                   | 001907fc: 8dcf0a00  lw	t7,2560(t6)
+   00190800: 8c8c0000  lw	t4,0(a0)                                      | 00190800: 8c8c0000  lw	t4,0(a0)
+   00190804: 240e0014  li	t6,20                                         | 00190804: 240e0014  li	t6,20
+   00190808: 01ee7818  mult	t7,t7,t6                                    | 00190808: 01ee7818  mult	t7,t7,t6
+   0019080c: 01ed7821  addu	t7,t7,t5                                    | 0019080c: 01ed7821  addu	t7,t7,t5
+   00190810: adec0000  sw	t4,0(t7)                                      | 00190810: adec0000  sw	t4,0(t7)
+   00190814: 01e0102d  move	v0,t7                                       | 00190814: 01e0102d  move	v0,t7
+   00190818: 8c8e0004  lw	t6,4(a0)                                      | 00190818: 8c8e0004  lw	t6,4(a0)
+   0019081c: adee0004  sw	t6,4(t7)                                      | 0019081c: adee0004  sw	t6,4(t7)
+   00190820: 8c8d0008  lw	t5,8(a0)                                      | 00190820: 8c8d0008  lw	t5,8(a0)
+   00190824: aded0008  sw	t5,8(t7)                                      | 00190824: aded0008  sw	t5,8(t7)
+   00190828: 8c8e000c  lw	t6,12(a0)                                     | 00190828: 8c8e000c  lw	t6,12(a0)
+   0019082c: adee000c  sw	t6,12(t7)                                     | 0019082c: adee000c  sw	t6,12(t7)
+   00190830: 8c8d0010  lw	t5,16(a0)                                     | 00190830: 8c8d0010  lw	t5,16(a0)
+   00190834: 03e00008  jr	ra                                            | 00190834: 03e00008  jr	ra
+   00190838: aded0010  sw	t5,16(t7)                                     | 00190838: aded0010  sw	t5,16(t7)

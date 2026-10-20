@@ -1,0 +1,31 @@
+0017c0a0: compiled 108 bytes, target 104 bytes, exact=False
+Differing words: 15. First difference at instruction 2 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0017c0a0: 27bdffc0  addiu	sp,sp,-64                                  | 0017c0a0: 27bdffc0  addiu	sp,sp,-64
+   0017c0a4: 30c700ff  andi	a3,a2,0xff                                  | 0017c0a4: 30c700ff  andi	a3,a2,0xff
+!! 0017c0a8: ffb00030  sd	s0,48(sp)                                     | 0017c0a8: ffb10028  sd	s1,40(sp)
+!! 0017c0ac: 03a0202d  move	a0,sp                                       | 0017c0ac: 03a0302d  move	a2,sp
+!! 0017c0b0: ffbf0038  sd	ra,56(sp)                                     | 0017c0b0: ffb00020  sd	s0,32(sp)
+!! 0017c0b4: 27a60020  addiu	a2,sp,32                                   | 0017c0b4: ffbf0030  sd	ra,48(sp)
+!! 0017c0b8: 0c05f00c  jal	0x17c030                                     | 0017c0b8: 27b10010  addiu	s1,sp,16
+   0017c0bc: 00a0802d  move	s0,a1                                       | 0017c0bc: 00a0802d  move	s0,a1
+!! 0017c0c0: 27a50010  addiu	a1,sp,16                                   | 0017c0c0: 0c05f00c  jal	17c030 <func_0017c030>
+!! 0017c0c4: 7ba80000  lq	t0,0(sp)                                      | 0017c0c4: 0220202d  move	a0,s1
+!! 0017c0c8: 7ca80000  sq	t0,0(a1)                                      | 0017c0c8: 0200202d  move	a0,s0
+   0017c0cc: 0c05f132  jal	0x17c4c8                                     | 0017c0cc: 0c05f132  jal	17c4c8 <func_0017c4c8>
+!! 0017c0d0: 0200202d  move	a0,s0                                       | 0017c0d0: 0220282d  move	a1,s1
+   0017c0d4: 44806000  mtc1	zero,$f12                                   | 0017c0d4: 44806000  mtc1	zero,$f12
+   0017c0d8: 26040140  addiu	a0,s0,320                                  | 0017c0d8: 26040140  addiu	a0,s0,320
+!! 0017c0dc: 8fa50020  lw	a1,32(sp)                                     | 0017c0dc: 8fa50000  lw	a1,0(sp)
+   0017c0e0: 0c05fd22  jal	0x17f488                                     | 0017c0e0: 0c05fd22  jal	17f488 <func_0017f488>
+   0017c0e4: 46006346  mov.s	$f13,$f12                                  | 0017c0e4: 46006346  mov.s	$f13,$f12
+   0017c0e8: 240f0005  li	t7,5                                          | 0017c0e8: 240f0005  li	t7,5
+!! 0017c0ec: dfbf0038  ld	ra,56(sp)                                     | 0017c0ec: dfb10028  ld	s1,40(sp)
+   0017c0f0: 240e0004  li	t6,4                                          | 0017c0f0: 240e0004  li	t6,4
+   0017c0f4: ae0f0104  sw	t7,260(s0)                                    | 0017c0f4: ae0f0104  sw	t7,260(s0)
+   0017c0f8: ae0e0100  sw	t6,256(s0)                                    | 0017c0f8: ae0e0100  sw	t6,256(s0)
+!! 0017c0fc: dfb00030  ld	s0,48(sp)                                     | 0017c0fc: dfbf0030  ld	ra,48(sp)
+!! 0017c100: 03e00008  jr	ra                                            | 0017c100: dfb00020  ld	s0,32(sp)
+!! 0017c104: 27bd0040  addiu	sp,sp,64                                   | 0017c104: 03e00008  jr	ra
+!!                                                                      | 0017c108: 27bd0040  addiu	sp,sp,64

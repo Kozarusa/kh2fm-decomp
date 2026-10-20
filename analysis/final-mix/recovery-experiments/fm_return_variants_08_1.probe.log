@@ -1,0 +1,45 @@
+recovery-experiments/fm_return_variants_08_1/probe.cpp: In function `s64 
+   func_001db9a8(long long unsigned int, long long unsigned int, long long 
+   unsigned int)':
+recovery-experiments/fm_return_variants_08_1/probe.cpp:123: void value not 
+   ignored as it ought to be
+recovery-experiments/fm_return_variants_08_1/probe.cpp: In function `void 
+   func_001e0de8(long long int)':
+recovery-experiments/fm_return_variants_08_1/probe.cpp:330: warning: cast to 
+   pointer from integer of different size
+recovery-experiments/fm_return_variants_08_1/probe.cpp:331: warning: cast to 
+   pointer from integer of different size
+recovery-experiments/fm_return_variants_08_1/probe.cpp: In function `void 
+   func_001e3c18(int)':
+recovery-experiments/fm_return_variants_08_1/probe.cpp:464: void value not 
+   ignored as it ought to be
+recovery-experiments/fm_return_variants_08_1/probe.cpp: In function `void 
+   func_001e41e0(int)':
+recovery-experiments/fm_return_variants_08_1/probe.cpp:476: void value not 
+   ignored as it ought to be
+recovery-experiments/fm_return_variants_08_1/probe.cpp: In function `void 
+   func_002092e0(int, long long unsigned int, int)':
+recovery-experiments/fm_return_variants_08_1/probe.cpp:640: warning: cast to 
+   pointer from integer of different size
+recovery-experiments/fm_return_variants_08_1/probe.cpp: In function `void 
+   func_00223608(long long unsigned int, u32*)':
+recovery-experiments/fm_return_variants_08_1/probe.cpp:674: void value not 
+   ignored as it ought to be
+recovery-experiments/fm_return_variants_08_1/probe.cpp:675: void value not 
+   ignored as it ought to be
+recovery-experiments/fm_return_variants_08_1/probe.cpp:676: void value not 
+   ignored as it ought to be
+recovery-experiments/fm_return_variants_08_1/probe.cpp:677: void value not 
+   ignored as it ought to be
+recovery-experiments/fm_return_variants_08_1/probe.cpp: In function `void 
+   func_0022cf18(long long unsigned int)':
+recovery-experiments/fm_return_variants_08_1/probe.cpp:792: void value not 
+   ignored as it ought to be
+Traceback (most recent call last):
+  File "/mnt/c/Users/KoZa/Documents/ChatGPT/tools/kh2-audit/probe_fm_source.py", line 36, in <module>
+    run(f'/opt/ps2/gcc/bin/ee-g++ -O2 -g0 -x c++ -fno-exceptions -fno-rtti -fpermissive -ffunction-sections -c {relative}/probe.cpp -o {relative}/probe.o')
+  File "/mnt/c/Users/KoZa/Documents/ChatGPT/tools/kh2-audit/probe_fm_source.py", line 32, in run
+    subprocess.run(['docker', 'run', '--rm', '--platform', 'linux/amd64',
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['docker', 'run', '--rm', '--platform', 'linux/amd64', '-v', '/root/kh2fm-build:/work', '-w', '/work', 'kh2-local/ps2-compiler:3.2-ee-040921-objdiff', 'bash', '-lc', '/opt/ps2/gcc/bin/ee-g++ -O2 -g0 -x c++ -fno-exceptions -fno-rtti -fpermissive -ffunction-sections -c recovery-experiments/fm_return_variants_08_1/probe.cpp -o recovery-experiments/fm_return_variants_08_1/probe.o']' returned non-zero exit status 1.

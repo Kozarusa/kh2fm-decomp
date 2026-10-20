@@ -1,0 +1,23 @@
+{
+  "leases": [
+    {
+      "address": "0023f870",
+      "token": "98b5a4e4f0c94ec9b1e0782dd546a118",
+      "expires": 1791734957.5234659,
+      "metadata": {
+        "address": "0023f870",
+        "end": "0023f8a4",
+        "bytes": 52,
+        "priority": 2,
+        "pseudocode_available": true,
+        "callees": [
+          "00106420",
+          "0023f8c8"
+        ],
+        "best_proposal": null
+      },
+      "blocker": null,
+      "attempts": 1
+    }
+  ]
+}

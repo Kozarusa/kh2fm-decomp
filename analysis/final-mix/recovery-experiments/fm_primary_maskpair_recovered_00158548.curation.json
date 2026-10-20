@@ -1,0 +1,14 @@
+{
+  "probe_source": "analysis/final-mix/recovery-experiments/fm_primary_maskrecord_v3_00158548.cpp",
+  "probe_source_sha256": "41269a83a42225cc0e5ff749246f991433409de2d5c8ff86c15a7b7c71c4324b",
+  "probe_proof_sha256": "37189dba1ea677de1499807522e4a6fb7b6d25c7a6e4c2ab184c704cd7453b63",
+  "curated_source": "analysis/final-mix/recovery-experiments/fm_primary_maskpair_recovered_00158548.cpp",
+  "curated_source_sha256": "a2d5786e80232853b73004f011c3db8dd3c92b5dbaafbe23444dd7671e449e94",
+  "selected_addresses": [
+    "00158548"
+  ],
+  "exclusion_receipt": null,
+  "limitations": [
+    "Curated source still requires a new probe, registration and full build."
+  ]
+}

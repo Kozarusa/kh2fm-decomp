@@ -1,0 +1,15 @@
+00174728: compiled 44 bytes, target 44 bytes, exact=False
+Differing words: 2. First difference at instruction 2 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00174728: 27bdfff0  addiu	sp,sp,-16                                  | 00174728: 27bdfff0  addiu	sp,sp,-16
+   0017472c: ffbf0000  sd	ra,0(sp)                                      | 0017472c: ffbf0000  sd	ra,0(sp)
+!! 00174730: c48e000c  lwc1	$f14,12(a0)                                 | 00174730: 8c8f0000  lw	t7,0(a0)
+!! 00174734: 8c8f0000  lw	t7,0(a0)                                      | 00174734: c48e000c  lwc1	$f14,12(a0)
+   00174738: c48c0004  lwc1	$f12,4(a0)                                  | 00174738: c48c0004  lwc1	$f12,4(a0)
+   0017473c: c48d0008  lwc1	$f13,8(a0)                                  | 0017473c: c48d0008  lwc1	$f13,8(a0)
+   00174740: dfbf0000  ld	ra,0(sp)                                      | 00174740: dfbf0000  ld	ra,0(sp)
+   00174744: 8de40004  lw	a0,4(t7)                                      | 00174744: 8de40004  lw	a0,4(t7)
+   00174748: 248408c8  addiu	a0,a0,2248                                 | 00174748: 248408c8  addiu	a0,a0,2248
+   0017474c: 0806b664  j	0x1ad990                                       | 0017474c: 0806b664  j	1ad990 <func_001ad990>
+   00174750: 27bd0010  addiu	sp,sp,16                                   | 00174750: 27bd0010  addiu	sp,sp,16

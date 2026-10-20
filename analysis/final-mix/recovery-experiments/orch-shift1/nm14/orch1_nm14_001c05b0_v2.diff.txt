@@ -1,0 +1,30 @@
+001c05b0: compiled 104 bytes, target 100 bytes, exact=False
+Differing words: 9. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001c05b0: 340fffff  li	t7,0xffff                                     | 001c05b0: 340fffff  li	t7,0xffff
+!! 001c05b4: 14af0015  bne	a1,t7,0x1c060c                               | 001c05b4: 14af0016  bne	a1,t7,1c0610 <func_001c05b0+0x60>
+   001c05b8: 240f0001  li	t7,1                                          | 001c05b8: 240f0001  li	t7,1
+   001c05bc: 548f000c  bnel	a0,t7,0x1c05f0                              | 001c05bc: 548f000c  bnel	a0,t7,1c05f0 <func_001c05b0+0x40>
+   001c05c0: 340fffff  li	t7,0xffff                                     | 001c05c0: 340fffff  li	t7,0xffff
+   001c05c4: 3c0f01d5  lui	t7,0x1d5                                     | 001c05c4: 3c0f01d5  lui	t7,0x1d5
+   001c05c8: 240e0007  li	t6,7                                          | 001c05c8: 240e0007  li	t6,7
+   001c05cc: 25ef9328  addiu	t7,t7,-27864   ; = D_01d49328              | 001c05cc: 25ef9328  addiu	t7,t7,-27864   ; = D_01d49328
+   001c05d0: ade00000  sw	zero,0(t7)                                    | 001c05d0: ade00000  sw	zero,0(t7)
+   001c05d4: 25ceffff  addiu	t6,t6,-1                                   | 001c05d4: 25ceffff  addiu	t6,t6,-1
+   001c05d8: 00000000  nop                                              | 001c05d8: 00000000  nop
+   001c05dc: 00000000  nop                                              | 001c05dc: 00000000  nop
+   001c05e0: 00000000  nop                                              | 001c05e0: 00000000  nop
+   001c05e4: 05c1fffa  bgez	t6,0x1c05d0                                 | 001c05e4: 05c1fffa  bgez	t6,1c05d0 <func_001c05b0+0x20>
+   001c05e8: 25ef0004  addiu	t7,t7,4                                    | 001c05e8: 25ef0004  addiu	t7,t7,4
+   001c05ec: 340fffff  li	t7,0xffff                                     | 001c05ec: 340fffff  li	t7,0xffff
+!! 001c05f0: 14af0006  bne	a1,t7,0x1c060c                               | 001c05f0: 14af0007  bne	a1,t7,1c0610 <func_001c05b0+0x60>
+   001c05f4: 240f0001  li	t7,1                                          | 001c05f4: 240f0001  li	t7,1
+!! 001c05f8: 148f0004  bne	a0,t7,0x1c060c                               | 001c05f8: 148f0005  bne	a0,t7,1c0610 <func_001c05b0+0x60>
+   001c05fc: 3c0f01d5  lui	t7,0x1d5                                     | 001c05fc: 3c0f01d5  lui	t7,0x1d5
+!! 001c0600: 25ee9350  addiu	t6,t7,-27824   ; = D_01d49350              | 001c0600: 25ef9350  addiu	t7,t7,-27824   ; = D_01d49350
+!! 001c0604: ade09350  sw	zero,-27824(t7)   ; = D_01d49350              | 001c0604: ade00004  sw	zero,4(t7)
+!! 001c0608: adc00004  sw	zero,4(t6)                                    | 001c0608: 3c0e01d5  lui	t6,0x1d5
+!! 001c060c: 03e00008  jr	ra                                            | 001c060c: adc09350  sw	zero,-27824(t6)   ; = D_01d49350
+!! 001c0610: 00000000  nop                                              | 001c0610: 03e00008  jr	ra
+!!                                                                      | 001c0614: 00000000  nop

@@ -1,0 +1,20 @@
+00226e60: compiled 64 bytes, target 64 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00226e60: 27bdfff0  addiu	sp,sp,-16                                  | 00226e60: 27bdfff0  addiu	sp,sp,-16
+   00226e64: ffb00000  sd	s0,0(sp)                                      | 00226e64: ffb00000  sd	s0,0(sp)
+   00226e68: ffbf0008  sd	ra,8(sp)                                      | 00226e68: ffbf0008  sd	ra,8(sp)
+   00226e6c: 0c065e48  jal	0x197920                                     | 00226e6c: 0c065e48  jal	197920 <func_00197920>
+   00226e70: 309000ff  andi	s0,a0,0xff                                  | 00226e70: 309000ff  andi	s0,a0,0xff
+   00226e74: 50400007  beqzl	v0,0x226e94                                | 00226e74: 50400007  beqzl	v0,226e94 <func_00226e60+0x34>
+   00226e78: dfb00000  ld	s0,0(sp)                                      | 00226e78: dfb00000  ld	s0,0(sp)
+   00226e7c: 3c0f0036  lui	t7,0x36                                      | 00226e7c: 3c0f0036  lui	t7,0x36
+   00226e80: dfbf0008  ld	ra,8(sp)                                      | 00226e80: dfbf0008  ld	ra,8(sp)
+   00226e84: a1f0de0c  sb	s0,-8692(t7)   ; = D_0035de0c                 | 00226e84: a1f0de0c  sb	s0,-8692(t7)   ; = D_0035de0c
+   00226e88: dfb00000  ld	s0,0(sp)                                      | 00226e88: dfb00000  ld	s0,0(sp)
+   00226e8c: 08089b72  j	0x226dc8                                       | 00226e8c: 08089b72  j	226dc8 <func_00226dc8>
+   00226e90: 27bd0010  addiu	sp,sp,16                                   | 00226e90: 27bd0010  addiu	sp,sp,16
+   00226e94: dfbf0008  ld	ra,8(sp)                                      | 00226e94: dfbf0008  ld	ra,8(sp)
+   00226e98: 03e00008  jr	ra                                            | 00226e98: 03e00008  jr	ra
+   00226e9c: 27bd0010  addiu	sp,sp,16                                   | 00226e9c: 27bd0010  addiu	sp,sp,16

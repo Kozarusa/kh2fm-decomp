@@ -1,0 +1,20 @@
+0020ebd8: compiled 64 bytes, target 64 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0020ebd8: 3c0b0036  lui	t3,0x36                                      | 0020ebd8: 3c0b0036  lui	t3,0x36
+   0020ebdc: 8d6c9780  lw	t4,-26752(t3)   ; = D_00359780                | 0020ebdc: 8d6c9780  lw	t4,-26752(t3)   ; = D_00359780
+   0020ebe0: 1980000b  blez	t4,0x20ec10                                 | 0020ebe0: 1980000b  blez	t4,20ec10 <func_0020ebd8+0x38>
+   0020ebe4: 000c7080  sll	t6,t4,0x2                                    | 0020ebe4: 000c7080  sll	t6,t4,0x2
+   0020ebe8: 3c0f0036  lui	t7,0x36                                      | 0020ebe8: 3c0f0036  lui	t7,0x36
+   0020ebec: 25ef9788  addiu	t7,t7,-26744   ; = D_00359788              | 0020ebec: 25ef9788  addiu	t7,t7,-26744   ; = D_00359788
+   0020ebf0: 01cf7821  addu	t7,t6,t7                                    | 0020ebf0: 01cf7821  addu	t7,t6,t7
+   0020ebf4: 8dedfffc  lw	t5,-4(t7)                                     | 0020ebf4: 8dedfffc  lw	t5,-4(t7)
+   0020ebf8: 8dee0000  lw	t6,0(t7)                                      | 0020ebf8: 8dee0000  lw	t6,0(t7)
+   0020ebfc: 01cd7023  subu	t6,t6,t5                                    | 0020ebfc: 01cd7023  subu	t6,t6,t5
+   0020ec00: 15c40003  bne	t6,a0,0x20ec10                               | 0020ec00: 15c40003  bne	t6,a0,20ec10 <func_0020ebd8+0x38>
+   0020ec04: 258fffff  addiu	t7,t4,-1                                   | 0020ec04: 258fffff  addiu	t7,t4,-1
+   0020ec08: 03e00008  jr	ra                                            | 0020ec08: 03e00008  jr	ra
+   0020ec0c: ad6f9780  sw	t7,-26752(t3)   ; = D_00359780                | 0020ec0c: ad6f9780  sw	t7,-26752(t3)   ; = D_00359780
+   0020ec10: 03e00008  jr	ra                                            | 0020ec10: 03e00008  jr	ra
+   0020ec14: ac000000  sw	zero,0(zero)                                  | 0020ec14: ac000000  sw	zero,0(zero)

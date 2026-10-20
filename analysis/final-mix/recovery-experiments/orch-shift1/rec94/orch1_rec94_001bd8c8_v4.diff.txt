@@ -1,0 +1,24 @@
+001bd8c8: compiled 80 bytes, target 80 bytes, exact=False
+Differing words: 8. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001bd8c8: 27bdfff0  addiu	sp,sp,-16                                  | 001bd8c8: 27bdfff0  addiu	sp,sp,-16
+!! 001bd8cc: ffbf0008  sd	ra,8(sp)                                      | 001bd8cc: ffb00000  sd	s0,0(sp)
+!! 001bd8d0: ffb00000  sd	s0,0(sp)                                      | 001bd8d0: ffbf0008  sd	ra,8(sp)
+!! 001bd8d4: 8c8e08c0  lw	t6,2240(a0)                                   | 001bd8d4: 0080802d  move	s0,a0
+!! 001bd8d8: 0080802d  move	s0,a0                                       | 001bd8d8: 8c8e08c0  lw	t6,2240(a0)
+   001bd8dc: 8dcd0000  lw	t5,0(t6)                                      | 001bd8dc: 8dcd0000  lw	t5,0(t6)
+   001bd8e0: 8daf006c  lw	t7,108(t5)                                    | 001bd8e0: 8daf006c  lw	t7,108(t5)
+   001bd8e4: 240e000c  li	t6,12                                         | 001bd8e4: 240e000c  li	t6,12
+   001bd8e8: 01ee7818  mult	t7,t7,t6                                    | 001bd8e8: 01ee7818  mult	t7,t7,t6
+!! 001bd8ec: 01af6821  addu	t5,t5,t7                                    | 001bd8ec: 01ed7821  addu	t7,t7,t5
+   001bd8f0: 0c06e3a2  jal	0x1b8e88                                     | 001bd8f0: 0c06e3a2  jal	1b8e88 <func_001b8e88>
+!! 001bd8f4: 95a4000e  lhu	a0,14(t5)                                    | 001bd8f4: 95e4000e  lhu	a0,14(t7)
+!! 001bd8f8: 0200202d  move	a0,s0                                       | 001bd8f8: 0040282d  move	a1,v0
+!! 001bd8fc: 0040282d  move	a1,v0                                       | 001bd8fc: 0200202d  move	a0,s0
+   001bd900: 0c06f646  jal	0x1bd918                                     | 001bd900: 0c06f646  jal	1bd918 <func_001bd918>
+   001bd904: 0000302d  move	a2,zero                                     | 001bd904: 0000302d  move	a2,zero
+   001bd908: dfb00000  ld	s0,0(sp)                                      | 001bd908: dfb00000  ld	s0,0(sp)
+   001bd90c: dfbf0008  ld	ra,8(sp)                                      | 001bd90c: dfbf0008  ld	ra,8(sp)
+   001bd910: 03e00008  jr	ra                                            | 001bd910: 03e00008  jr	ra
+   001bd914: 27bd0010  addiu	sp,sp,16                                   | 001bd914: 27bd0010  addiu	sp,sp,16

@@ -1,0 +1,26 @@
+00191938: compiled 88 bytes, target 88 bytes, exact=False
+Differing words: 1. First difference at instruction 11 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00191938: 27bdfff0  addiu	sp,sp,-16                                  | 00191938: 27bdfff0  addiu	sp,sp,-16
+   0019193c: ffb00000  sd	s0,0(sp)                                      | 0019193c: ffb00000  sd	s0,0(sp)
+   00191940: ffbf0008  sd	ra,8(sp)                                      | 00191940: ffbf0008  sd	ra,8(sp)
+   00191944: 0080802d  move	s0,a0                                       | 00191944: 0080802d  move	s0,a0
+   00191948: 1200000d  beqz	s0,0x191980                                 | 00191948: 1200000d  beqz	s0,191980 <func_00191938+0x48>
+   0019194c: 24040006  li	a0,6                                          | 0019194c: 24040006  li	a0,6
+   00191950: 06000005  bltz	s0,0x191968                                 | 00191950: 06000005  bltz	s0,191968 <func_00191938+0x30>
+   00191954: 2a0f0003  slti	t7,s0,3                                     | 00191954: 2a0f0003  slti	t7,s0,3
+   00191958: 11e00004  beqz	t7,0x19196c                                 | 00191958: 11e00004  beqz	t7,19196c <func_00191938+0x34>
+   0019195c: 3c0f01c6  lui	t7,0x1c6                                     | 0019195c: 3c0f01c6  lui	t7,0x1c6
+   00191960: 0c07044c  jal	0x1c1130                                     | 00191960: 0c07044c  jal	1c1130 <func_001c1130>
+!! 00191964: 24040006  li	a0,6                                          | 00191964: 00000000  nop
+   00191968: 3c0f01c6  lui	t7,0x1c6                                     | 00191968: 3c0f01c6  lui	t7,0x1c6
+   0019196c: dfbf0008  ld	ra,8(sp)                                      | 0019196c: dfbf0008  ld	ra,8(sp)
+   00191970: adf01958  sw	s0,6488(t7)   ; = D_01c61958                  | 00191970: adf01958  sw	s0,6488(t7)   ; = D_01c61958
+   00191974: dfb00000  ld	s0,0(sp)                                      | 00191974: dfb00000  ld	s0,0(sp)
+   00191978: 03e00008  jr	ra                                            | 00191978: 03e00008  jr	ra
+   0019197c: 27bd0010  addiu	sp,sp,16                                   | 0019197c: 27bd0010  addiu	sp,sp,16
+   00191980: 0c07046a  jal	0x1c11a8                                     | 00191980: 0c07046a  jal	1c11a8 <func_001c11a8>
+   00191984: 00000000  nop                                              | 00191984: 00000000  nop
+   00191988: 1000fff8  b	0x19196c                                       | 00191988: 1000fff8  b	19196c <func_00191938+0x34>
+   0019198c: 3c0f01c6  lui	t7,0x1c6                                     | 0019198c: 3c0f01c6  lui	t7,0x1c6

@@ -1,0 +1,25 @@
+0018d738: compiled 84 bytes, target 84 bytes, exact=False
+Differing words: 5. First difference at instruction 8 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0018d738: 27bdfff0  addiu	sp,sp,-16                                  | 0018d738: 27bdfff0  addiu	sp,sp,-16
+   0018d73c: ffbf0000  sd	ra,0(sp)                                      | 0018d73c: ffbf0000  sd	ra,0(sp)
+   0018d740: 0c06ffe2  jal	0x1bff88                                     | 0018d740: 0c06ffe2  jal	1bff88 <func_001bff88>
+   0018d744: 00000000  nop                                              | 0018d744: 00000000  nop
+   0018d748: 0c070adc  jal	0x1c2b70                                     | 0018d748: 0c070adc  jal	1c2b70 <func_001c2b70>
+   0018d74c: 00000000  nop                                              | 0018d74c: 00000000  nop
+   0018d750: 3c0f01c6  lui	t7,0x1c6                                     | 0018d750: 3c0f01c6  lui	t7,0x1c6
+   0018d754: 3c060019  lui	a2,0x19                                      | 0018d754: 3c060019  lui	a2,0x19
+!! 0018d758: 25ee0cd8  addiu	t6,t7,3288   ; = D_01c60cd8                | 0018d758: ade00cd8  sw	zero,3288(t7)   ; = D_01c60cd8
+!! 0018d75c: ade00cd8  sw	zero,3288(t7)   ; = D_01c60cd8                | 0018d75c: 25ee0cd8  addiu	t6,t7,3288   ; = D_01c60cd8
+!! 0018d760: adc00004  sw	zero,4(t6)                                    | 0018d760: 24c6d620  addiu	a2,a2,-10720   ; = D_0018d620
+!! 0018d764: 24c6d620  addiu	a2,a2,-10720   ; = D_0018d620              | 0018d764: 24040001  li	a0,1
+!! 0018d768: 24040001  li	a0,1                                          | 0018d768: adc00004  sw	zero,4(t6)
+   0018d76c: 0c040b06  jal	0x102c18                                     | 0018d76c: 0c040b06  jal	102c18 <func_00102c18>
+   0018d770: 24055208  li	a1,21000                                      | 0018d770: 24055208  li	a1,21000
+   0018d774: 240e0001  li	t6,1                                          | 0018d774: 240e0001  li	t6,1
+   0018d778: dfbf0000  ld	ra,0(sp)                                      | 0018d778: dfbf0000  ld	ra,0(sp)
+   0018d77c: 3c0f01c6  lui	t7,0x1c6                                     | 0018d77c: 3c0f01c6  lui	t7,0x1c6
+   0018d780: a1ee0ce0  sb	t6,3296(t7)   ; = D_01c60ce0                  | 0018d780: a1ee0ce0  sb	t6,3296(t7)   ; = D_01c60ce0
+   0018d784: 03e00008  jr	ra                                            | 0018d784: 03e00008  jr	ra
+   0018d788: 27bd0010  addiu	sp,sp,16                                   | 0018d788: 27bd0010  addiu	sp,sp,16

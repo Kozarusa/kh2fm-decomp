@@ -1,0 +1,17 @@
+001a8510: compiled 52 bytes, target 52 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001a8510: 3c0d01c7  lui	t5,0x1c7                                     | 001a8510: 3c0d01c7  lui	t5,0x1c7
+   001a8514: 25accba0  addiu	t4,t5,-13408   ; = D_01c6cba0              | 001a8514: 25accba0  addiu	t4,t5,-13408   ; = D_01c6cba0
+   001a8518: 8dafcba0  lw	t7,-13408(t5)   ; = D_01c6cba0                | 001a8518: 8dafcba0  lw	t7,-13408(t5)   ; = D_01c6cba0
+   001a851c: 8d8e0004  lw	t6,4(t4)                                      | 001a851c: 8d8e0004  lw	t6,4(t4)
+   001a8520: 01ee7823  subu	t7,t7,t6                                    | 001a8520: 01ee7823  subu	t7,t7,t6
+   001a8524: 25ed0008  addiu	t5,t7,8                                    | 001a8524: 25ed0008  addiu	t5,t7,8
+   001a8528: 29ae0000  slti	t6,t5,0                                     | 001a8528: 29ae0000  slti	t6,t5,0
+   001a852c: 25ef000f  addiu	t7,t7,15                                   | 001a852c: 25ef000f  addiu	t7,t7,15
+   001a8530: 01ae780a  movz	t7,t5,t6                                    | 001a8530: 01ae780a  movz	t7,t5,t6
+   001a8534: 000f10c3  sra	v0,t7,0x3                                    | 001a8534: 000f10c3  sra	v0,t7,0x3
+   001a8538: 000270c0  sll	t6,v0,0x3                                    | 001a8538: 000270c0  sll	t6,v0,0x3
+   001a853c: 03e00008  jr	ra                                            | 001a853c: 03e00008  jr	ra
+   001a8540: 01ae1023  subu	v0,t5,t6                                    | 001a8540: 01ae1023  subu	v0,t5,t6

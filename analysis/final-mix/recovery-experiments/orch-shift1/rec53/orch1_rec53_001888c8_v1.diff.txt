@@ -1,0 +1,36 @@
+001888c8: compiled 128 bytes, target 128 bytes, exact=False
+Differing words: 12. First difference at instruction 3 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001888c8: 240f0064  li	t7,100                                        | 001888c8: 240f0064  li	t7,100
+   001888cc: a0800009  sb	zero,9(a0)                                    | 001888cc: a0800009  sb	zero,9(a0)
+   001888d0: 240e0001  li	t6,1                                          | 001888d0: 240e0001  li	t6,1
+!! 001888d4: a08f0007  sb	t7,7(a0)                                      | 001888d4: a08f0006  sb	t7,6(a0)
+   001888d8: 27bdfff0  addiu	sp,sp,-16                                  | 001888d8: 27bdfff0  addiu	sp,sp,-16
+!! 001888dc: a08e0011  sb	t6,17(a0)                                     | 001888dc: a08e0010  sb	t6,16(a0)
+   001888e0: ffbf0000  sd	ra,0(sp)                                      | 001888e0: ffbf0000  sd	ra,0(sp)
+   001888e4: 248d0054  addiu	t5,a0,84                                   | 001888e4: 248d0054  addiu	t5,a0,84
+!! 001888e8: a08f0004  sb	t7,4(a0)                                      | 001888e8: a08f0007  sb	t7,7(a0)
+   001888ec: 240c004f  li	t4,79                                         | 001888ec: 240c004f  li	t4,79
+!! 001888f0: a08f0005  sb	t7,5(a0)                                      | 001888f0: a08e0011  sb	t6,17(a0)
+   001888f4: 240bffff  li	t3,-1                                         | 001888f4: 240bffff  li	t3,-1
+!! 001888f8: a08f0006  sb	t7,6(a0)                                      | 001888f8: a08f0004  sb	t7,4(a0)
+!! 001888fc: a080000a  sb	zero,10(a0)                                   | 001888fc: a08f0005  sb	t7,5(a0)
+!! 00188900: a080000b  sb	zero,11(a0)                                   | 00188900: a080000a  sb	zero,10(a0)
+!! 00188904: a080000c  sb	zero,12(a0)                                   | 00188904: a080000b  sb	zero,11(a0)
+!! 00188908: a080000d  sb	zero,13(a0)                                   | 00188908: a080000c  sb	zero,12(a0)
+!! 0018890c: a080000e  sb	zero,14(a0)                                   | 0018890c: a080000d  sb	zero,13(a0)
+!! 00188910: a08e000f  sb	t6,15(a0)                                     | 00188910: a080000e  sb	zero,14(a0)
+!! 00188914: a08e0010  sb	t6,16(a0)                                     | 00188914: a08e000f  sb	t6,15(a0)
+   00188918: a0800012  sb	zero,18(a0)                                   | 00188918: a0800012  sb	zero,18(a0)
+   0018891c: a5a00000  sh	zero,0(t5)                                    | 0018891c: a5a00000  sh	zero,0(t5)
+   00188920: 258cffff  addiu	t4,t4,-1                                   | 00188920: 258cffff  addiu	t4,t4,-1
+   00188924: 00000000  nop                                              | 00188924: 00000000  nop
+   00188928: 00000000  nop                                              | 00188928: 00000000  nop
+   0018892c: 00000000  nop                                              | 0018892c: 00000000  nop
+   00188930: 158bfffa  bne	t4,t3,0x18891c                               | 00188930: 158bfffa  bne	t4,t3,18891c <func_001888c8+0x54>
+   00188934: 25ad0002  addiu	t5,t5,2                                    | 00188934: 25ad0002  addiu	t5,t5,2
+   00188938: dfbf0000  ld	ra,0(sp)                                      | 00188938: dfbf0000  ld	ra,0(sp)
+   0018893c: 248400f4  addiu	a0,a0,244                                  | 0018893c: 248400f4  addiu	a0,a0,244
+   00188940: 08045160  j	0x114580                                       | 00188940: 08045160  j	114580 <func_00114580>
+   00188944: 27bd0010  addiu	sp,sp,16                                   | 00188944: 27bd0010  addiu	sp,sp,16

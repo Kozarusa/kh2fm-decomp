@@ -1,0 +1,31 @@
+0024eb50: compiled 108 bytes, target 108 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0024eb50: 27bdffe0  addiu	sp,sp,-32                                  | 0024eb50: 27bdffe0  addiu	sp,sp,-32
+   0024eb54: 3c0f0036  lui	t7,0x36                                      | 0024eb54: 3c0f0036  lui	t7,0x36
+   0024eb58: ffb00000  sd	s0,0(sp)                                      | 0024eb58: ffb00000  sd	s0,0(sp)
+   0024eb5c: ffb10008  sd	s1,8(sp)                                      | 0024eb5c: ffb10008  sd	s1,8(sp)
+   0024eb60: ffbf0010  sd	ra,16(sp)                                     | 0024eb60: ffbf0010  sd	ra,16(sp)
+   0024eb64: 25f0ee18  addiu	s0,t7,-4584   ; = D_0035ee18               | 0024eb64: 25f0ee18  addiu	s0,t7,-4584   ; = D_0035ee18
+   0024eb68: 24110004  li	s1,4                                          | 0024eb68: 24110004  li	s1,4
+   0024eb6c: 8e0f0000  lw	t7,0(s0)                                      | 0024eb6c: 8e0f0000  lw	t7,0(s0)
+   0024eb70: 11e0000a  beqz	t7,0x24eb9c                                 | 0024eb70: 11e0000a  beqz	t7,24eb9c <func_0024eb50+0x4c>
+   0024eb74: 01e0202d  move	a0,t7                                       | 0024eb74: 01e0202d  move	a0,t7
+   0024eb78: 0c04e75e  jal	0x139d78                                     | 0024eb78: 0c04e75e  jal	139d78 <func_00139d78>
+   0024eb7c: 00000000  nop                                              | 0024eb7c: 00000000  nop
+   0024eb80: 50400006  beqzl	v0,0x24eb9c                                | 0024eb80: 50400006  beqzl	v0,24eb9c <func_0024eb50+0x4c>
+   0024eb84: ae000000  sw	zero,0(s0)                                    | 0024eb84: ae000000  sw	zero,0(s0)
+   0024eb88: 8e0f0000  lw	t7,0(s0)                                      | 0024eb88: 8e0f0000  lw	t7,0(s0)
+   0024eb8c: 8dee0000  lw	t6,0(t7)                                      | 0024eb8c: 8dee0000  lw	t6,0(t7)
+   0024eb90: 8dcd0014  lw	t5,20(t6)                                     | 0024eb90: 8dcd0014  lw	t5,20(t6)
+   0024eb94: 01a0f809  jalr	t5                                          | 0024eb94: 01a0f809  jalr	t5
+   0024eb98: 01e0202d  move	a0,t7                                       | 0024eb98: 01e0202d  move	a0,t7
+   0024eb9c: 2631ffff  addiu	s1,s1,-1                                   | 0024eb9c: 2631ffff  addiu	s1,s1,-1
+   0024eba0: 0621fff2  bgez	s1,0x24eb6c                                 | 0024eba0: 0621fff2  bgez	s1,24eb6c <func_0024eb50+0x1c>
+   0024eba4: 26100004  addiu	s0,s0,4                                    | 0024eba4: 26100004  addiu	s0,s0,4
+   0024eba8: dfb00000  ld	s0,0(sp)                                      | 0024eba8: dfb00000  ld	s0,0(sp)
+   0024ebac: dfb10008  ld	s1,8(sp)                                      | 0024ebac: dfb10008  ld	s1,8(sp)
+   0024ebb0: dfbf0010  ld	ra,16(sp)                                     | 0024ebb0: dfbf0010  ld	ra,16(sp)
+   0024ebb4: 03e00008  jr	ra                                            | 0024ebb4: 03e00008  jr	ra
+   0024ebb8: 27bd0020  addiu	sp,sp,32                                   | 0024ebb8: 27bd0020  addiu	sp,sp,32

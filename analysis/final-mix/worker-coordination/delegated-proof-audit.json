@@ -1,0 +1,715 @@
+{
+  "created_utc": "2026-10-09T10:50:06.931800+00:00",
+  "disjoint_targets": 15,
+  "assignments": [
+    {
+      "name": "lookup-search",
+      "addresses": [
+        "00114438",
+        "00114490",
+        "00124c48"
+      ],
+      "report_exists": true,
+      "report_sha256": "352a4a38da29d8004c6fce332dcd19a9d1a5c304520717cb33853c8beddf9507",
+      "proofs": [
+        {
+          "address": "00124c48",
+          "exact": false,
+          "compiled_size": 112,
+          "target_size": 92,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\lookup-search\\sa_lookup_sentinel_v0_00124c48.cpp",
+          "source_sha256": "a02b9f36ce747d9cb90532e52464845c6cd636700fe6f28f32a90e29cde66fce",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\lookup-search\\sa_lookup_sentinel_v0_00124c48.verification.json",
+          "proof_sha256": "dba2433385c37e96df2260e8f701dc4041af8c457a0b9a621a14be4fe61cafb6"
+        },
+        {
+          "address": "00124c48",
+          "exact": false,
+          "compiled_size": 112,
+          "target_size": 92,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\lookup-search\\sa_lookup_sentinel_v1_00124c48.cpp",
+          "source_sha256": "190d2da54fb54a849f44e532fa859dc25e95a20f6d3ddde0d9e3e82cd9cae033",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\lookup-search\\sa_lookup_sentinel_v1_00124c48.verification.json",
+          "proof_sha256": "61a09586b3ca68f74af3ff15358d15ba8c36fda0c172293e564673f6aeaf8b7e"
+        },
+        {
+          "address": "00124c48",
+          "exact": false,
+          "compiled_size": 112,
+          "target_size": 92,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\lookup-search\\sa_lookup_sentinel_v2_00124c48.cpp",
+          "source_sha256": "9813f06852f24f2dd5dfd0f713245f6a81c8168770ab1c65f5634126c0106fea",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\lookup-search\\sa_lookup_sentinel_v2_00124c48.verification.json",
+          "proof_sha256": "f28057fb1d8b84039b749ccd4acbda5cbfbc2e97467464acb109241f4f1c8725"
+        },
+        {
+          "address": "00124c48",
+          "exact": false,
+          "compiled_size": 112,
+          "target_size": 92,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\lookup-search\\sa_lookup_sentinel_v3_00124c48.cpp",
+          "source_sha256": "63bcab106759e5b15f1b06257cc21ba4293a36c126339567c3f47fdbc6162961",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\lookup-search\\sa_lookup_sentinel_v3_00124c48.verification.json",
+          "proof_sha256": "182f5f0409aeef338f013b1534b1a2e1bb472809cb38fc41983ed445d50e64fa"
+        },
+        {
+          "address": "00114438",
+          "exact": false,
+          "compiled_size": 88,
+          "target_size": 88,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\lookup-search\\sa_lookup_table_v0_00114438.cpp",
+          "source_sha256": "1c1bcc289bc5dc879b3c8163b4978cc1c62a9047e712efe7296afcea0ff076ba",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\lookup-search\\sa_lookup_table_v0_00114438.verification.json",
+          "proof_sha256": "d279b9c73d4aa349e99ce9363b4491ec2f52659a48b621aa5c7f97386635f507"
+        },
+        {
+          "address": "00114490",
+          "exact": false,
+          "compiled_size": 88,
+          "target_size": 88,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\lookup-search\\sa_lookup_table_v0_00114490.cpp",
+          "source_sha256": "258467b24d25087dcacdfbb583526060411d37b5898d2f29a20b267c9196cf10",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\lookup-search\\sa_lookup_table_v0_00114490.verification.json",
+          "proof_sha256": "a97fbe07666ba7e98022b2bbcc9efd14a8220b5dd27b559d728c367b4b7513c1"
+        },
+        {
+          "address": "00114438",
+          "exact": false,
+          "compiled_size": 88,
+          "target_size": 88,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\lookup-search\\sa_lookup_table_v1_00114438.cpp",
+          "source_sha256": "ba567ceb2e7d47abed37d8f13cf92acde1a8b6e01939f69933b6b87b6a5fda04",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\lookup-search\\sa_lookup_table_v1_00114438.verification.json",
+          "proof_sha256": "d80292fd48bd6ea7dc694f800e0f6e4b25b2035271e4d94c67e3cfc729eec3b7"
+        },
+        {
+          "address": "00114490",
+          "exact": false,
+          "compiled_size": 88,
+          "target_size": 88,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\lookup-search\\sa_lookup_table_v1_00114490.cpp",
+          "source_sha256": "2a0066d4dff91fecb73ec2f31ac87411a15862b0284c38cdc6a8fc3f2fe8bf5f",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\lookup-search\\sa_lookup_table_v1_00114490.verification.json",
+          "proof_sha256": "8ea5b72ae035e24c7d475d01b711e772fcc8be123234fe10bc26721478c06582"
+        },
+        {
+          "address": "00114438",
+          "exact": false,
+          "compiled_size": 92,
+          "target_size": 88,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\lookup-search\\sa_lookup_table_v2_00114438.cpp",
+          "source_sha256": "b8f0826e37cb817a96a8146c8f2a32858d01449741678eafda50806f75f23e96",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\lookup-search\\sa_lookup_table_v2_00114438.verification.json",
+          "proof_sha256": "ab5e31223cf6000a8d44719029d2af7c793dfed3b684c96f56e803172494eee8"
+        },
+        {
+          "address": "00114490",
+          "exact": false,
+          "compiled_size": 92,
+          "target_size": 88,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\lookup-search\\sa_lookup_table_v2_00114490.cpp",
+          "source_sha256": "ece60ec5149e7c82f4185476b4845d4d875dfb9a1fd0367a7a52a123065d175e",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\lookup-search\\sa_lookup_table_v2_00114490.verification.json",
+          "proof_sha256": "0861d12e5e3719f8ce8ac102ff3a88267c0943b01449b57e105e1ee372e92513"
+        },
+        {
+          "address": "00114438",
+          "exact": false,
+          "compiled_size": 88,
+          "target_size": 88,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\lookup-search\\sa_lookup_table_v3_00114438.cpp",
+          "source_sha256": "71f6f992ab983766bbf055041c93ec8db8e5d94ae01fec120333f96c3e625fb0",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\lookup-search\\sa_lookup_table_v3_00114438.verification.json",
+          "proof_sha256": "40ed52160e62cd92b98b899da13958643637ad73ad8a4a7bd6219d3f0a3003c5"
+        },
+        {
+          "address": "00114490",
+          "exact": false,
+          "compiled_size": 88,
+          "target_size": 88,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\lookup-search\\sa_lookup_table_v3_00114490.cpp",
+          "source_sha256": "d0dfd728c8f96a4fad1b003cc2d27db107bacc4c54a2655b32c60cd02a939abc",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\lookup-search\\sa_lookup_table_v3_00114490.verification.json",
+          "proof_sha256": "0c40f42ab681e3deec10a08d0eb7f0bdab01f81b3988139d23a27cb90a2d28ec"
+        },
+        {
+          "address": "00114438",
+          "exact": false,
+          "compiled_size": 88,
+          "target_size": 88,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\lookup-search\\sa_lookup_table_v4_00114438.cpp",
+          "source_sha256": "de9f8a9eb1e9fe46b52bb0bca551b3f0c4ba359f5f6768e8a90222db94f456de",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\lookup-search\\sa_lookup_table_v4_00114438.verification.json",
+          "proof_sha256": "605724fa161f9308d8cc954eaf8ba7d4ffef7665d125135046de0a67de4bdf7e"
+        },
+        {
+          "address": "00114490",
+          "exact": false,
+          "compiled_size": 88,
+          "target_size": 88,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\lookup-search\\sa_lookup_table_v4_00114490.cpp",
+          "source_sha256": "beab7f5dd7508e07b9b0d9a67b3f27624129b1fca5c094c4e3eee7008e72c4e9",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\lookup-search\\sa_lookup_table_v4_00114490.verification.json",
+          "proof_sha256": "575c3a71a8c42836d68194ac7b43c549a7db18c152002c2f65920bbc2a0cd892"
+        },
+        {
+          "address": "00114438",
+          "exact": false,
+          "compiled_size": 88,
+          "target_size": 88,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\lookup-search\\sa_lookup_table_v5_00114438.cpp",
+          "source_sha256": "e47c1d75df2f3498625ad45b7eff57dca632e7df435abb9446ae51fdceaf54d7",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\lookup-search\\sa_lookup_table_v5_00114438.verification.json",
+          "proof_sha256": "62d4782890e9f9d8c0ffda0af87d1ebefed080cf82a522ac1a9e4ec109eb0102"
+        },
+        {
+          "address": "00114490",
+          "exact": false,
+          "compiled_size": 88,
+          "target_size": 88,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\lookup-search\\sa_lookup_table_v5_00114490.cpp",
+          "source_sha256": "5fdc1d74d97f29a0645e62e3e4688e3faa72fbea232c36d4016b060e140ffcce",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\lookup-search\\sa_lookup_table_v5_00114490.verification.json",
+          "proof_sha256": "fb38a80af58c2e49bab2fa9c48947359e3bdafe2a56f196c3146763cb12b7cb4"
+        }
+      ]
+    },
+    {
+      "name": "global-copy",
+      "addresses": [
+        "00158ac8",
+        "00158b20"
+      ],
+      "report_exists": true,
+      "report_sha256": "1df934073647cc95947a56eb6d0c231c9882ed15415cc8ed8885df1ec48f3f4a",
+      "proofs": [
+        {
+          "address": "00158ac8",
+          "exact": false,
+          "compiled_size": 84,
+          "target_size": 84,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\global-copy\\sa_copy_ac8_clobber13.cpp",
+          "source_sha256": "3d45a084bb6b45a76230b6a18d1296a5e66270633a677e0189095e2a7583651b",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\global-copy\\sa_copy_ac8_clobber13.verification.json",
+          "proof_sha256": "c7d0d7c69b10de8dd1ab9b2f4fff4737ffe015847bf11a6a123135298cd08794"
+        },
+        {
+          "address": "00158ac8",
+          "exact": false,
+          "compiled_size": 84,
+          "target_size": 84,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\global-copy\\sa_copy_ac8_high.cpp",
+          "source_sha256": "759f75e5ee6d5db7d209341c1c30d5ed7bd9c6bbd43a934b15e3f170b9ee0c53",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\global-copy\\sa_copy_ac8_high.verification.json",
+          "proof_sha256": "dfcd1adb21eddf30a3e326289358e6bc251db02b80d4bdc32a394d5ae084b121"
+        },
+        {
+          "address": "00158ac8",
+          "exact": false,
+          "compiled_size": 84,
+          "target_size": 84,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\global-copy\\sa_copy_ac8_symbolic.cpp",
+          "source_sha256": "e29a134cb29aa62a831caff438077f0c574c75279ada62f2113e0d46b696c7ef",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\global-copy\\sa_copy_ac8_symbolic.verification.json",
+          "proof_sha256": "4006232cc5e3107828146e90fc0674534b3ef3cddd88260eb8f1b3f93e63dd19"
+        },
+        {
+          "address": "00158b20",
+          "exact": true,
+          "compiled_size": 84,
+          "target_size": 84,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\global-copy\\sa_copy_b20_float.cpp",
+          "source_sha256": "d358fdcd07a7be42bac781e1229ee9c4cf2f3c93db55bb6818fe1e016bc8b016",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\global-copy\\sa_copy_b20_float.verification.json",
+          "proof_sha256": "2575a6f80ae260273945d8870843d8352e8710f7f9fee90d4f5789e1bd42286f"
+        },
+        {
+          "address": "00158b20",
+          "exact": false,
+          "compiled_size": 84,
+          "target_size": 84,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\global-copy\\sa_copy_b20_memory.cpp",
+          "source_sha256": "5140f4c376e92b484d8fe1e6ffa7246d2ce6139fddd894b1694bbc9dc6876c9d",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\global-copy\\sa_copy_b20_memory.verification.json",
+          "proof_sha256": "26d2a79a5eb2f6a27a6004ab01c8c556b7d458c327079c120cd4ab97bb4cf97a"
+        },
+        {
+          "address": "00158b20",
+          "exact": false,
+          "compiled_size": 84,
+          "target_size": 84,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\global-copy\\sa_copy_b20_order.cpp",
+          "source_sha256": "33bd29fc85672b55454132753051435f26ad4f5a9452b64c700b1c9cab718474",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\global-copy\\sa_copy_b20_order.verification.json",
+          "proof_sha256": "3f5193e277cd9b76dec96f334d27e3ce2512b46d1053fe52204e7e32909f6534"
+        },
+        {
+          "address": "00158b20",
+          "exact": false,
+          "compiled_size": 88,
+          "target_size": 84,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\global-copy\\sa_copy_b20_symbolic.cpp",
+          "source_sha256": "4a91934615c7fd77c2ec29628afe0e55e26a5f1557f0f6aa1f7b78fec207aba1",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\global-copy\\sa_copy_b20_symbolic.verification.json",
+          "proof_sha256": "104820ea8b2d0b09911c7b2471d1d68e270dd38db054b0c0a47304f016206233"
+        }
+      ]
+    },
+    {
+      "name": "float-predicates",
+      "addresses": [
+        "0010f6f8",
+        "00148638"
+      ],
+      "report_exists": true,
+      "report_sha256": "c38f1a1555bfa940e62af0987cdd2db1c199752562ba97d985f01660e45f0e45",
+      "proofs": [
+        {
+          "address": "0010f6f8",
+          "exact": false,
+          "compiled_size": 84,
+          "target_size": 76,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\float-predicates\\sa_float_bound_0.cpp",
+          "source_sha256": "136da36379789546084f845351dd0c594f61b6de61aecb51e480199b8fa48275",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\float-predicates\\sa_float_bound_0.verification.json",
+          "proof_sha256": "ea522a5df22d712b15655798b82cb44ec85d19a87cb01e8d71bd98c9544a5bca"
+        },
+        {
+          "address": "0010f6f8",
+          "exact": false,
+          "compiled_size": 72,
+          "target_size": 76,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\float-predicates\\sa_float_bound_1.cpp",
+          "source_sha256": "7f334e49ba79842fa388b0c12b1cd5a7b3e998cb991abf58ec5aa0cfdf4d0f0b",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\float-predicates\\sa_float_bound_1.verification.json",
+          "proof_sha256": "0bf0bde5f0585d4585a4babea67423cdcf1ebf65e904e0f3258a3b8d70406534"
+        },
+        {
+          "address": "0010f6f8",
+          "exact": false,
+          "compiled_size": 72,
+          "target_size": 76,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\float-predicates\\sa_float_bound_2.cpp",
+          "source_sha256": "0b5213007238183fdc6facf172fa7e0824804647ad5695e94f52988954711b46",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\float-predicates\\sa_float_bound_2.verification.json",
+          "proof_sha256": "b12e902d4c3c3741645d1cac65775951fdcf0d07094b316da17823b0344fb891"
+        },
+        {
+          "address": "0010f6f8",
+          "exact": false,
+          "compiled_size": 72,
+          "target_size": 76,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\float-predicates\\sa_float_bound_3.cpp",
+          "source_sha256": "a4d27d1efa0267f50f4cd18b21ceac675804682d63e8191a834d4a771f8f57c4",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\float-predicates\\sa_float_bound_3.verification.json",
+          "proof_sha256": "7d0e7eb6012c8b023c45842e9fa2a3da0d67d1eeab2e3836a332df8c19a3a4f5"
+        },
+        {
+          "address": "0010f6f8",
+          "exact": false,
+          "compiled_size": 80,
+          "target_size": 76,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\float-predicates\\sa_float_bound_4.cpp",
+          "source_sha256": "3852c50dcbbc54a0fafbc982d521d1d2973b61ebc71d8782ac10c4428ef9855c",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\float-predicates\\sa_float_bound_4.verification.json",
+          "proof_sha256": "7d5bedda291e760ded2f215503dce8784f7ef94b51d0fe0e43fb4bbe2e6b5248"
+        },
+        {
+          "address": "0010f6f8",
+          "exact": false,
+          "compiled_size": 80,
+          "target_size": 76,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\float-predicates\\sa_float_bound_5.cpp",
+          "source_sha256": "dc2959c3bebf9a4c3a0eaf4aba6e4891140c7d3ca84a7f3421dd353caf2407c5",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\float-predicates\\sa_float_bound_5.verification.json",
+          "proof_sha256": "9b0352af615c45b06b64c5482601b2dc889908dea283dbbfafc863ba198d174a"
+        },
+        {
+          "address": "0010f6f8",
+          "exact": false,
+          "compiled_size": 72,
+          "target_size": 76,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\float-predicates\\sa_float_bound_6.cpp",
+          "source_sha256": "9046414f5af3fb6723248ad4afa35cd110046e92639965e61cdc0f29cae263e4",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\float-predicates\\sa_float_bound_6.verification.json",
+          "proof_sha256": "8ad6fbfff97337629584edeea37ea6b43d443200e0350a7544471e8e423232c2"
+        },
+        {
+          "address": "0010f6f8",
+          "exact": false,
+          "compiled_size": 80,
+          "target_size": 76,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\float-predicates\\sa_float_bound_7.cpp",
+          "source_sha256": "c4a3126d16b88da7d98153ebe83afe82ae37715a7d2c657acf6ed1610443687f",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\float-predicates\\sa_float_bound_7.verification.json",
+          "proof_sha256": "1d036327f64f318421293000d6cb183130d4bf9ada52af264698a4838f7f5f37"
+        },
+        {
+          "address": "0010f6f8",
+          "exact": false,
+          "compiled_size": 80,
+          "target_size": 76,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\float-predicates\\sa_float_bound_8.cpp",
+          "source_sha256": "ec9a268d64b388d49bfb1744946c4c44a41f12c2a7654fa2b8027e00a1bd3cdb",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\float-predicates\\sa_float_bound_8.verification.json",
+          "proof_sha256": "24c0f98dd2140d56dc4db258f83ba009f37c00b345e640e43675e9d2a70f199f"
+        },
+        {
+          "address": "0010f6f8",
+          "exact": false,
+          "compiled_size": 80,
+          "target_size": 76,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\float-predicates\\sa_float_bound_9.cpp",
+          "source_sha256": "a08b728dd289ac34b3ce8e5d8dc2cb3af4ceb55d290261f613d68bfac79d6ae0",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\float-predicates\\sa_float_bound_9.verification.json",
+          "proof_sha256": "a40d725fb6caeb18a68c1f5729df7a106175dc99d92b949bf373b83edf4d3bed"
+        },
+        {
+          "address": "00148638",
+          "exact": false,
+          "compiled_size": 96,
+          "target_size": 84,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\float-predicates\\sa_float_flag_0.cpp",
+          "source_sha256": "aa6d4806efaeaa4809dea29dd7dac8c0095a989c7ffafdc274f1a7d5ff9c926c",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\float-predicates\\sa_float_flag_0.verification.json",
+          "proof_sha256": "e28ff116340a2ce8235d07552de86b763a389f527fbb81c3980208a320aa36dc"
+        },
+        {
+          "address": "00148638",
+          "exact": false,
+          "compiled_size": 96,
+          "target_size": 84,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\float-predicates\\sa_float_flag_1.cpp",
+          "source_sha256": "7846f9c8c337cf2e54fbe9035436f5e43b28b11ddb0636174b231f383b412ffa",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\float-predicates\\sa_float_flag_1.verification.json",
+          "proof_sha256": "da1f734688f14151adf058f5b7c3915c286ac1f014c39c0569c29a1707fee75a"
+        },
+        {
+          "address": "00148638",
+          "exact": false,
+          "compiled_size": 92,
+          "target_size": 84,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\float-predicates\\sa_float_flag_2.cpp",
+          "source_sha256": "1ce46a6f6b53e6db7eb6219e5daaad30552c10c22ef4b392ea692a58396a2cf0",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\float-predicates\\sa_float_flag_2.verification.json",
+          "proof_sha256": "2d7112a13b611345f9beaef440b70950c373dac775722df36871bc930937e2d7"
+        },
+        {
+          "address": "00148638",
+          "exact": false,
+          "compiled_size": 92,
+          "target_size": 84,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\float-predicates\\sa_float_flag_3.cpp",
+          "source_sha256": "47e0d46b5dff9b33c08b68034ebfa5d90e35b44f6cdb6530a960d6be85b00775",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\float-predicates\\sa_float_flag_3.verification.json",
+          "proof_sha256": "4333d2da15a2c7dddbb4e2802e7fef2c1369eda50dce24f1d98a28896220cd3d"
+        },
+        {
+          "address": "00148638",
+          "exact": false,
+          "compiled_size": 88,
+          "target_size": 84,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\float-predicates\\sa_float_flag_4.cpp",
+          "source_sha256": "e6fb393fbcad80a28d75b1b5e227de57d4b6ef2fee69c705ac32dfbfc6f4a675",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\float-predicates\\sa_float_flag_4.verification.json",
+          "proof_sha256": "2ff7bcb2968c6bc504dd880ba6b6be144e6ad6abfb248e88567aa3588dd9657e"
+        },
+        {
+          "address": "00148638",
+          "exact": false,
+          "compiled_size": 84,
+          "target_size": 84,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\float-predicates\\sa_float_flag_5.cpp",
+          "source_sha256": "02a25002857e84cf75063596fa4e2bcb7cedd995966b5487102038cdaa6c6894",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\float-predicates\\sa_float_flag_5.verification.json",
+          "proof_sha256": "7052776ee38822586e8deee32474be9f0280ffddb624b403f11298a67e104e1f"
+        },
+        {
+          "address": "00148638",
+          "exact": false,
+          "compiled_size": 88,
+          "target_size": 84,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\float-predicates\\sa_float_flag_6.cpp",
+          "source_sha256": "9ae2df125a6c7b5211ecec78d29d1d7924c7fefcdb283adb480fd62b424a58cd",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\float-predicates\\sa_float_flag_6.verification.json",
+          "proof_sha256": "b0f25a755643b4cd0271d97c792c252405beb12c7cd385e4dda272fbaae49c1c"
+        },
+        {
+          "address": "00148638",
+          "exact": false,
+          "compiled_size": 88,
+          "target_size": 84,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\float-predicates\\sa_float_flag_7.cpp",
+          "source_sha256": "d408203ec09c3407d9839d94a57b8b97e05492a190b4361073ad3ef6b2849bc6",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\float-predicates\\sa_float_flag_7.verification.json",
+          "proof_sha256": "d5096a7d8d88e3a279eb347f68f5ac7171caf64be31fb1a6fbb3dffb8b7020a5"
+        },
+        {
+          "address": "00148638",
+          "exact": true,
+          "compiled_size": 84,
+          "target_size": 84,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\float-predicates\\sa_float_flag_8.cpp",
+          "source_sha256": "4186e22334868fad634159110475a35e7991ff33075b87deb162b6fd8f9d9c9f",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\float-predicates\\sa_float_flag_8.verification.json",
+          "proof_sha256": "0f4fb868bbfac7f0aa36750c5ae7d640a52013e5e0fa1a7248b7517428e61285"
+        },
+        {
+          "address": "00148638",
+          "exact": true,
+          "compiled_size": 84,
+          "target_size": 84,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\float-predicates\\sa_float_flag_9.cpp",
+          "source_sha256": "1453356dd7baa1970d806e4606e74174925dea0852345336752db2e2c394b77e",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\float-predicates\\sa_float_flag_9.verification.json",
+          "proof_sha256": "12870c3a34b6e35201dd2936086071aeea91af39883342c341d61c7e74c46d4e"
+        }
+      ]
+    },
+    {
+      "name": "global-initializers",
+      "addresses": [
+        "0014ec40",
+        "00158fd8",
+        "00159c58"
+      ],
+      "report_exists": true,
+      "report_sha256": "a7348d198783a2fdfbedd4787300e5f17971d501ad7e3129f5d9bbd5aa94fcb0",
+      "proofs": [
+        {
+          "address": "0014ec40",
+          "exact": false,
+          "compiled_size": 76,
+          "target_size": 84,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\global-initializers\\sa_init_0014ec40_v1.cpp",
+          "source_sha256": "276022eb4ed44f187d1b25f107b1a78419ccc54cd529e49a2f41f15a96d5dbad",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\global-initializers\\sa_init_0014ec40_v1.verification.json",
+          "proof_sha256": "22ec49dadf725b028712a21b17441fe2517f26ad96915cf4c250015bb583c35b"
+        },
+        {
+          "address": "0014ec40",
+          "exact": false,
+          "compiled_size": 76,
+          "target_size": 84,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\global-initializers\\sa_init_0014ec40_v2.cpp",
+          "source_sha256": "6ea2810d5ec9d5f2ef0c52aa625504c597d926f04a5c7f4e6a1b600f42ac4633",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\global-initializers\\sa_init_0014ec40_v2.verification.json",
+          "proof_sha256": "581f133f0acc0b08b9e1214cbc06d24e468b6e378666019219c2bd6a0ab6f016"
+        },
+        {
+          "address": "0014ec40",
+          "exact": false,
+          "compiled_size": 76,
+          "target_size": 84,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\global-initializers\\sa_init_0014ec40_v3.cpp",
+          "source_sha256": "23159f1bdf2a6dabd9f97e462858718e6c75a9008d174af96e599fcf946a6432",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\global-initializers\\sa_init_0014ec40_v3.verification.json",
+          "proof_sha256": "c8340d1e9cbb40ac0454f2835fb32802735150bcbdcda55f70ab31e4eb03b9d7"
+        },
+        {
+          "address": "0014ec40",
+          "exact": false,
+          "compiled_size": 84,
+          "target_size": 84,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\global-initializers\\sa_init_0014ec40_v4.cpp",
+          "source_sha256": "6c535f4d0d8cc2f9cb48b0bce5e57a3db722ef9643f48fbca35b11cc1a94d0ad",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\global-initializers\\sa_init_0014ec40_v4.verification.json",
+          "proof_sha256": "303b71d274c289dc4dc4b6749af3f6e62da8ec35ac5887a4e6c070485de1205a"
+        },
+        {
+          "address": "0014ec40",
+          "exact": false,
+          "compiled_size": 84,
+          "target_size": 84,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\global-initializers\\sa_init_0014ec40_v5.cpp",
+          "source_sha256": "2f744df530a02f8fdec06c11f1a0db2fb41a8de6bc3883571153af3b5936d24a",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\global-initializers\\sa_init_0014ec40_v5.verification.json",
+          "proof_sha256": "5618ee669474e4523296de4d52b70ffe903efc27030e38f06c6d4ec3c97c3534"
+        },
+        {
+          "address": "0014ec40",
+          "exact": false,
+          "compiled_size": 84,
+          "target_size": 84,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\global-initializers\\sa_init_0014ec40_v6.cpp",
+          "source_sha256": "5fa8482b5edd92381b2a4f746600370af43e10acb3a52ea698d07486ff3409db",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\global-initializers\\sa_init_0014ec40_v6.verification.json",
+          "proof_sha256": "6ef43ab6b8b99a452dad28f71b06c43de9fe131e8b8130310feed5d4114488b4"
+        },
+        {
+          "address": "0014ec40",
+          "exact": false,
+          "compiled_size": 84,
+          "target_size": 84,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\global-initializers\\sa_init_0014ec40_v7.cpp",
+          "source_sha256": "c0910209e79a75484738f9f584049553e7b1f54bf3bafb93ddf0444d09c1de2b",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\global-initializers\\sa_init_0014ec40_v7.verification.json",
+          "proof_sha256": "1d9e517db7775ea27e3b45ca073a2a077dbdd60273bf1c3e782d57f420f8df6e"
+        },
+        {
+          "address": "0014ec40",
+          "exact": true,
+          "compiled_size": 84,
+          "target_size": 84,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\global-initializers\\sa_init_0014ec40_v8.cpp",
+          "source_sha256": "af9d818c91733cabb1e7731b918bdf136cf681a757bd2b1c55e321fbf90fb4f6",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\global-initializers\\sa_init_0014ec40_v8.verification.json",
+          "proof_sha256": "d86266021c5368041c956950e8f2b663139efabcbe406e6e4d776748facb3042"
+        },
+        {
+          "address": "00158fd8",
+          "exact": false,
+          "compiled_size": 76,
+          "target_size": 84,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\global-initializers\\sa_init_00158fd8_v1.cpp",
+          "source_sha256": "0c74399a803ceda9c1b06ff169fd83d0341c6988239d05dd5d25b20ac89aa72b",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\global-initializers\\sa_init_00158fd8_v1.verification.json",
+          "proof_sha256": "5c1ddc9b4e9ebad8b5d2aae13a5e98702b5c72c625bfec872b89a4e17f5cbc91"
+        },
+        {
+          "address": "00158fd8",
+          "exact": true,
+          "compiled_size": 84,
+          "target_size": 84,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\global-initializers\\sa_init_00158fd8_v2.cpp",
+          "source_sha256": "500ff2f6dcbcef4d6d3402a1455c14ebc8e4859102a9c2fab7aa01987782997d",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\global-initializers\\sa_init_00158fd8_v2.verification.json",
+          "proof_sha256": "e9116eef186634dba3d8ff6744ba0addad3aa80c5bdc7c6d9658fd634163e1b6"
+        },
+        {
+          "address": "00159c58",
+          "exact": false,
+          "compiled_size": 88,
+          "target_size": 104,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\global-initializers\\sa_init_00159c58_v1.cpp",
+          "source_sha256": "dd26bfffdd471a5e3993270877e5362e9fc9415a4fe3676aec4e908a88ac820f",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\global-initializers\\sa_init_00159c58_v1.verification.json",
+          "proof_sha256": "003c814892b39c3a26d42783a3cc27227cc05a4f166909d08d85a4b6891f4eb6"
+        },
+        {
+          "address": "00159c58",
+          "exact": true,
+          "compiled_size": 104,
+          "target_size": 104,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\global-initializers\\sa_init_00159c58_v2.cpp",
+          "source_sha256": "305f9bfc1a84945f4fdd3e5990ffe0fd0e63b470e85947744129dc2d80500a72",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\global-initializers\\sa_init_00159c58_v2.verification.json",
+          "proof_sha256": "6534b392d2fdfd51c2ea9d2e881fad156dbb28fdb42daa431ffdd4055a40875c"
+        }
+      ]
+    },
+    {
+      "name": "framed-epilogues",
+      "addresses": [
+        "0014dc48",
+        "0014dca8",
+        "002e5f70"
+      ],
+      "report_exists": true,
+      "report_sha256": "fe5aecf2a4dab209fcfee78360794958f37b6e4ea5eafd4073d8589818761e10",
+      "proofs": [
+        {
+          "address": "0014dc48",
+          "exact": false,
+          "compiled_size": 96,
+          "target_size": 96,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\framed-epilogues\\sa_frame_0014dc48_precisemem.cpp",
+          "source_sha256": "24988f1162a9809e14c95663cf0575968e07d6aeae24f67d608a236d5876b5c5",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\framed-epilogues\\sa_frame_0014dc48_precisemem.verification.json",
+          "proof_sha256": "1300b76fd9d3d33e9758507b6830b84531a6e8392c15038fc937d5ab6aee5e72"
+        },
+        {
+          "address": "0014dc48",
+          "exact": false,
+          "compiled_size": 96,
+          "target_size": 96,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\framed-epilogues\\sa_frame_0014dc48_splitmem.cpp",
+          "source_sha256": "860e746c93714e500d82608465b2c90405f8cfcc328239d349cdecb10102f67a",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\framed-epilogues\\sa_frame_0014dc48_splitmem.verification.json",
+          "proof_sha256": "b3c78175c889488df0da2f68bccafd52023a9dd5e082ec7fbdf003c432063b6c"
+        },
+        {
+          "address": "0014dca8",
+          "exact": false,
+          "compiled_size": 96,
+          "target_size": 96,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\framed-epilogues\\sa_frame_0014dca8_precisemem.cpp",
+          "source_sha256": "71569521785774bf6e5cf74cfbe09437f090e29454350aabd27413501d10bd7a",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\framed-epilogues\\sa_frame_0014dca8_precisemem.verification.json",
+          "proof_sha256": "0929204870f02e894fbb0c3ea2d73b8665a4b47caa6d82164df8b4a8e50e56ff"
+        },
+        {
+          "address": "002e5f70",
+          "exact": false,
+          "compiled_size": 68,
+          "target_size": 68,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\framed-epilogues\\sa_frame_002e5f70_precisemem.cpp",
+          "source_sha256": "687c45b82387fc4b1c80efdc3092820bdb6ae38e21370bbcdf29a45f602e3ea7",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\framed-epilogues\\sa_frame_002e5f70_precisemem.verification.json",
+          "proof_sha256": "4498500132019c8f1539ac4767b2a79012d58c175956e9cbf0efc8e396e29e7d"
+        },
+        {
+          "address": "002e5f70",
+          "exact": false,
+          "compiled_size": 68,
+          "target_size": 68,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\framed-epilogues\\sa_frame_002e5f70_volatileall.cpp",
+          "source_sha256": "d8f58d435f4a2b30dc6c96b85355f9465ee6f609fd3afebb2ce6c8cd4e3375a0",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\framed-epilogues\\sa_frame_002e5f70_volatileall.verification.json",
+          "proof_sha256": "bc5a051f11b9fcc71aea234814484b655f58bcac950a7b61e67c3239802a9483"
+        }
+      ]
+    },
+    {
+      "name": "framed-transport",
+      "addresses": [
+        "00143470",
+        "0013e610"
+      ],
+      "report_exists": true,
+      "report_sha256": "9b6930bb229854ebe83bf6a7385b158ccee8f49703910121bee96b10237e50c3",
+      "proofs": [
+        {
+          "address": "0013e610",
+          "exact": false,
+          "compiled_size": 100,
+          "target_size": 100,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\framed-transport\\sa_transport_0013e610_address.cpp",
+          "source_sha256": "4344501b4c5f7a463144c6f618d4162e57b19d8dd6ecccbfa4a95f74ae78173c",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\framed-transport\\sa_transport_0013e610_address.verification.json",
+          "proof_sha256": "6ebee5a141e25221edc57a42383c894e532f8f6305c48ec236bb8d156e88fcb3"
+        },
+        {
+          "address": "0013e610",
+          "exact": false,
+          "compiled_size": 100,
+          "target_size": 100,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\framed-transport\\sa_transport_0013e610_lookup.cpp",
+          "source_sha256": "f17136f31a795be5cd909837c9aae7ce2eafaf4749aca3e9069de2ebc0a41629",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\framed-transport\\sa_transport_0013e610_lookup.verification.json",
+          "proof_sha256": "c4b07c3a332f1b884ccf1ba3be232f5edee9b953d0beea619ceff1fea9878231"
+        },
+        {
+          "address": "00143470",
+          "exact": false,
+          "compiled_size": 76,
+          "target_size": 92,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\framed-transport\\sa_transport_00143470_argument.cpp",
+          "source_sha256": "c8f542a5cf4d56b66821e8ca3fb79dd580154548fb7428266f34ea45c425f1fc",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\framed-transport\\sa_transport_00143470_argument.verification.json",
+          "proof_sha256": "ab504e4337e5546ff3cc1a373681f14efb13cbaf768fb810588cc3aa1e0c3c5a"
+        },
+        {
+          "address": "00143470",
+          "exact": false,
+          "compiled_size": 96,
+          "target_size": 92,
+          "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\framed-transport\\sa_transport_00143470_sixth.cpp",
+          "source_sha256": "cc43306089d60cdb76d4d518cc5caa58aed94b8d725f863fd48fde5064a95ac0",
+          "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\delegated\\framed-transport\\sa_transport_00143470_sixth.verification.json",
+          "proof_sha256": "98b97d8445769710756b754dbc8936bab8bc64048f94f4dc13d74d8340db4869"
+        }
+      ]
+    }
+  ]
+}

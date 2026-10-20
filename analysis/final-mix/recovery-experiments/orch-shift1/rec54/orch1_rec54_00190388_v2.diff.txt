@@ -1,0 +1,22 @@
+00190388: compiled 60 bytes, target 72 bytes, exact=False
+Differing words: 16. First difference at instruction 0 (0-based).
+
+ORIGINAL                                                                | COMPILED
+!! 00190388: 27bdffc0  addiu	sp,sp,-64                                  | 00190388: 27bdffd0  addiu	sp,sp,-48
+!! 0019038c: ffb10028  sd	s1,40(sp)                                     | 0019038c: ffb00020  sd	s0,32(sp)
+!! 00190390: ffb00020  sd	s0,32(sp)                                     | 00190390: ffbf0028  sd	ra,40(sp)
+!! 00190394: 0080882d  move	s1,a0                                       | 00190394: 0080802d  move	s0,a0
+!! 00190398: ffbf0030  sd	ra,48(sp)                                     | 00190398: afa0000c  sw	zero,12(sp)
+   0019039c: 00a0202d  move	a0,a1                                       | 0019039c: 00a0202d  move	a0,a1
+!! 001903a0: afa0000c  sw	zero,12(sp)                                   | 001903a0: 0c0640aa  jal	1902a8 <func_001902a8>
+   001903a4: 03a0282d  move	a1,sp                                       | 001903a4: 03a0282d  move	a1,sp
+!! 001903a8: 0c0640aa  jal	0x1902a8                                     | 001903a8: 7baf0010  lq	t7,16(sp)
+!! 001903ac: 27b00010  addiu	s0,sp,16                                   | 001903ac: 0200102d  move	v0,s0
+!! 001903b0: 7a080000  lq	t0,0(s0)                                      | 001903b0: dfbf0028  ld	ra,40(sp)
+!! 001903b4: 7e280000  sq	t0,0(s1)                                      | 001903b4: 7e0f0000  sq	t7,0(s0)
+!! 001903b8: 0220102d  move	v0,s1                                       | 001903b8: dfb00020  ld	s0,32(sp)
+!! 001903bc: dfb00020  ld	s0,32(sp)                                     | 001903bc: 03e00008  jr	ra
+!! 001903c0: dfb10028  ld	s1,40(sp)                                     | 001903c0: 27bd0030  addiu	sp,sp,48
+!! 001903c4: dfbf0030  ld	ra,48(sp)                                     | 
+!! 001903c8: 03e00008  jr	ra                                            | 
+!! 001903cc: 27bd0040  addiu	sp,sp,64                                   | 

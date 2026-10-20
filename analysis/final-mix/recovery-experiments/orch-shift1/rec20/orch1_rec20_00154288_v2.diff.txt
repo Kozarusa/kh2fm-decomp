@@ -1,0 +1,19 @@
+00154288: compiled 48 bytes, target 60 bytes, exact=False
+Differing words: 12. First difference at instruction 2 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00154288: 0000102d  move	v0,zero                                     | 00154288: 0000102d  move	v0,zero
+   0015428c: 240f0001  li	t7,1                                          | 0015428c: 240f0001  li	t7,1
+!! 00154290: 10af0006  beq	a1,t7,0x1542ac                               | 00154290: 10af0007  beq	a1,t7,1542b0 <func_00154288+0x28>
+   00154294: 28ae0002  slti	t6,a1,2                                     | 00154294: 28ae0002  slti	t6,a1,2
+!! 00154298: 51c00006  beqzl	t6,0x1542b4                                | 00154298: 15c00005  bnez	t6,1542b0 <func_00154288+0x28>
+!! 0015429c: 240f0002  li	t7,2                                          | 0015429c: 24020003  li	v0,3
+!! 001542a0: 10a00002  beqz	a1,0x1542ac                                 | 001542a0: 38ae0002  xori	t6,a1,0x2
+!! 001542a4: 24020003  li	v0,3                                          | 001542a4: 24020002  li	v0,2
+!! 001542a8: 24020003  li	v0,3                                          | 001542a8: 240f0003  li	t7,3
+!! 001542ac: 03e00008  jr	ra                                            | 001542ac: 01ee100b  movn	v0,t7,t6
+!! 001542b0: 00000000  nop                                              | 001542b0: 03e00008  jr	ra
+!! 001542b4: 10affffd  beq	a1,t7,0x1542ac                               | 001542b4: 00000000  nop
+!! 001542b8: 24020002  li	v0,2                                          | 
+!! 001542bc: 03e00008  jr	ra                                            | 
+!! 001542c0: 24020003  li	v0,3                                          | 

@@ -1,0 +1,27 @@
+00171c60: compiled 92 bytes, target 92 bytes, exact=False
+Differing words: 9. First difference at instruction 4 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00171c60: 27bdfff0  addiu	sp,sp,-16                                  | 00171c60: 27bdfff0  addiu	sp,sp,-16
+   00171c64: ffb00000  sd	s0,0(sp)                                      | 00171c64: ffb00000  sd	s0,0(sp)
+   00171c68: ffbf0008  sd	ra,8(sp)                                      | 00171c68: ffbf0008  sd	ra,8(sp)
+   00171c6c: 0080802d  move	s0,a0                                       | 00171c6c: 0080802d  move	s0,a0
+!! 00171c70: 8c8f0004  lw	t7,4(a0)                                      | 00171c70: 8c8e0004  lw	t6,4(a0)
+!! 00171c74: 8c8e0000  lw	t6,0(a0)                                      | 00171c74: 8c8f0000  lw	t7,0(a0)
+!! 00171c78: 8de50004  lw	a1,4(t7)                                      | 00171c78: 8dc50004  lw	a1,4(t6)
+!! 00171c7c: 8dc40004  lw	a0,4(t6)                                      | 00171c7c: 8de40004  lw	a0,4(t7)
+   00171c80: 8e060008  lw	a2,8(s0)                                      | 00171c80: 8e060008  lw	a2,8(s0)
+   00171c84: 0c07034e  jal	0x1c0d38                                     | 00171c84: 0c07034e  jal	1c0d38 <func_001c0d38>
+   00171c88: 8e07000c  lw	a3,12(s0)                                     | 00171c88: 8e07000c  lw	a3,12(s0)
+!! 00171c8c: 8e0c0010  lw	t4,16(s0)                                     | 00171c8c: 8e0b0010  lw	t3,16(s0)
+!! 00171c90: 11800006  beqz	t4,0x171cac                                 | 00171c90: 11600006  beqz	t3,171cac <func_00171c60+0x4c>
+   00171c94: 3c0f0035  lui	t7,0x35                                      | 00171c94: 3c0f0035  lui	t7,0x35
+   00171c98: 8e0e0014  lw	t6,20(s0)                                     | 00171c98: 8e0e0014  lw	t6,20(s0)
+   00171c9c: 8dedd8a0  lw	t5,-10080(t7)   ; = D_0034d8a0                | 00171c9c: 8dedd8a0  lw	t5,-10080(t7)   ; = D_0034d8a0
+!! 00171ca0: ac4e0014  sw	t6,20(v0)                                     | 00171ca0: ac4b0010  sw	t3,16(v0)
+!! 00171ca4: ac4d000c  sw	t5,12(v0)                                     | 00171ca4: ac4e0014  sw	t6,20(v0)
+!! 00171ca8: ac4c0010  sw	t4,16(v0)                                     | 00171ca8: ac4d000c  sw	t5,12(v0)
+   00171cac: dfb00000  ld	s0,0(sp)                                      | 00171cac: dfb00000  ld	s0,0(sp)
+   00171cb0: dfbf0008  ld	ra,8(sp)                                      | 00171cb0: dfbf0008  ld	ra,8(sp)
+   00171cb4: 03e00008  jr	ra                                            | 00171cb4: 03e00008  jr	ra
+   00171cb8: 27bd0010  addiu	sp,sp,16                                   | 00171cb8: 27bd0010  addiu	sp,sp,16

@@ -1,0 +1,26 @@
+00239e60: compiled 88 bytes, target 88 bytes, exact=False
+Differing words: 2. First difference at instruction 4 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00239e60: 3c0f0037  lui	t7,0x37                                      | 00239e60: 3c0f0037  lui	t7,0x37
+   00239e64: e48c0134  swc1	$f12,308(a0)                                | 00239e64: e48c0134  swc1	$f12,308(a0)
+   00239e68: 25ef14bc  addiu	t7,t7,5308   ; = D_003714bc                | 00239e68: 25ef14bc  addiu	t7,t7,5308   ; = D_003714bc
+   00239e6c: e48d0138  swc1	$f13,312(a0)                                | 00239e6c: e48d0138  swc1	$f13,312(a0)
+!! 00239e70: c5e00000  lwc1	$f0,0(t7)                                   | 00239e70: 0000682d  move	t5,zero
+!! 00239e74: 0000682d  move	t5,zero                                     | 00239e74: c5e00000  lwc1	$f0,0(t7)
+   00239e78: 46006032  c.eq.s	$f12,$f0                                  | 00239e78: 46006032  c.eq.s	$f12,$f0
+   00239e7c: 45000006  bc1f	0x239e98                                    | 00239e7c: 45000006  bc1f	239e98 <func_00239e60+0x38>
+   00239e80: e48e013c  swc1	$f14,316(a0)                                | 00239e80: e48e013c  swc1	$f14,316(a0)
+   00239e84: 46006832  c.eq.s	$f13,$f0                                  | 00239e84: 46006832  c.eq.s	$f13,$f0
+   00239e88: 45000003  bc1f	0x239e98                                    | 00239e88: 45000003  bc1f	239e98 <func_00239e60+0x38>
+   00239e8c: 46007032  c.eq.s	$f14,$f0                                  | 00239e8c: 46007032  c.eq.s	$f14,$f0
+   00239e90: 45030003  bc1tl	0x239ea0                                   | 00239e90: 45030003  bc1tl	239ea0 <func_00239e60+0x40>
+   00239e94: 8c8f00b8  lw	t7,184(a0)                                    | 00239e94: 8c8f00b8  lw	t7,184(a0)
+   00239e98: 240d0001  li	t5,1                                          | 00239e98: 240d0001  li	t5,1
+   00239e9c: 8c8f00b8  lw	t7,184(a0)                                    | 00239e9c: 8c8f00b8  lw	t7,184(a0)
+   00239ea0: 240efffd  li	t6,-3                                         | 00239ea0: 240efffd  li	t6,-3
+   00239ea4: 000d6840  sll	t5,t5,0x1                                    | 00239ea4: 000d6840  sll	t5,t5,0x1
+   00239ea8: 01ee7824  and	t7,t7,t6                                     | 00239ea8: 01ee7824  and	t7,t7,t6
+   00239eac: 01ed7825  or	t7,t7,t5                                      | 00239eac: 01ed7825  or	t7,t7,t5
+   00239eb0: 03e00008  jr	ra                                            | 00239eb0: 03e00008  jr	ra
+   00239eb4: ac8f00b8  sw	t7,184(a0)                                    | 00239eb4: ac8f00b8  sw	t7,184(a0)

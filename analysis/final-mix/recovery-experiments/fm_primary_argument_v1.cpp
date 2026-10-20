@@ -1,0 +1,69 @@
+#include "../common/types.h"
+extern "C" u32 func_0017c4c8(u64, void*);
+extern "C" void func_002eb6f8(f32, u64, u64);
+extern "C" void func_002368e8(f32, s32);
+extern "C" void func_002367c8(s32);
+extern "C" void func_00139d78(void);
+extern "C" void func_0028e438(u64, s32, s32, u64);
+extern "C" void func_001581f8(void);
+extern "C" u64 func_00154ee8(u64);
+extern "C" void func_00138c10(s32, u64);
+extern "C" s32 func_001d7980(s32);
+struct __attribute__((aligned(16))) FmArgumentQuad { u32 words[4]; };
+
+void func_002ec9d0(u64 object, const FmArgumentQuad* source, u64 value) {
+    FmArgumentQuad copy;
+    asm volatile("lq $8,0(%1); sq $8,0($sp)"
+                 : "=m"(copy) : "r"(source) : "$8", "memory");
+    func_0017c4c8(object, &copy);
+    *(u8*)((s32)object + 0x514) = 8;
+    func_002eb6f8(0.0f, object, value);
+    *(s32*)((s32)object + 0x104) = (s32)value + 2;
+    *(s32*)((s32)object + 0x100) = (s32)value + 1;
+}
+
+void func_00236bb8(f32 value, s32 object) {
+    s32 index = 0;
+    if (*(s32*)(object + 0x10) > 0) {
+        s32 offset = 0;
+        do {
+            ++index;
+            func_002368e8(value, *(s32*)(object + 0x14) + offset);
+            func_002367c8(*(s32*)(object + 0x14) + offset);
+            offset += 0x1a0;
+        } while (index < *(s32*)(object + 0x10));
+    }
+}
+
+void func_0028e560(u64 object, const s16* source, s32 count, u64 value) {
+    func_00139d78();
+    s32 index = 0;
+    if (count > 0) do {
+        func_0028e438(object, index, *source, value);
+        ++source;
+        ++index;
+    } while (index < count);
+}
+
+void func_00155528(u64 object) {
+    func_001581f8();
+    register s32 destination asm("$17") = (s32)object + 0x394;
+    asm("" : "+r"(destination));
+    u64 result = func_00154ee8(object);
+    func_00138c10(destination, result);
+}
+
+void func_001d7b10(u16* object) {
+    *object = 0;
+    s32* cursor = (s32*)(object + 2);
+    s32 remaining = 3;
+    do {
+        s32 value = *cursor;
+        cursor += 2;
+        if (value != 0) {
+            value = func_001d7980(value);
+            *object |= *(u16*)(value + 2);
+        }
+        --remaining;
+    } while (remaining >= 0);
+}

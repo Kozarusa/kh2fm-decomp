@@ -1,0 +1,19 @@
+00165968: compiled 56 bytes, target 80 bytes, exact=False
+Differing words: 14. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00165968: 27bdfff0  addiu	sp,sp,-16                                  | 00165968: 27bdfff0  addiu	sp,sp,-16
+!! 0016596c: 3c0f0035  lui	t7,0x35                                      | 0016596c: ffb00000  sd	s0,0(sp)
+!! 00165970: ffbf0000  sd	ra,0(sp)                                      | 00165970: ffbf0008  sd	ra,8(sp)
+!! 00165974: 8de4c7a0  lw	a0,-14432(t7)   ; = D_0034c7a0                | 00165974: 3c100035  lui	s0,0x35
+!! 00165978: 1080000c  beqz	a0,0x1659ac                                 | 00165978: 8e0fc7a0  lw	t7,-14432(s0)   ; = D_0034c7a0
+!! 0016597c: 248f0400  addiu	t7,a0,1024                                 | 0016597c: 51e00005  beqzl	t7,165994 <func_00165968+0x2c>
+!! 00165994: 148ffffa  bne	a0,t7,0x165980                               | 00165980: dfb00000  ld	s0,0(sp)
+!! 00165998: 25effff0  addiu	t7,t7,-16                                  | 00165984: 0c041908  jal	106420 <func_00106420>
+!! 0016599c: 0c041908  jal	0x106420                                     | 00165988: 00000000  nop
+!! 001659a0: 00000000  nop                                              | 0016598c: ae00c7a0  sw	zero,-14432(s0)
+!! 001659a4: 3c0f0035  lui	t7,0x35                                      | 00165990: dfb00000  ld	s0,0(sp)
+!! 001659a8: ade0c7a0  sw	zero,-14432(t7)   ; = D_0034c7a0              | 00165994: dfbf0008  ld	ra,8(sp)
+!! 001659ac: dfbf0000  ld	ra,0(sp)                                      | 00165998: 03e00008  jr	ra
+!! 001659b0: 03e00008  jr	ra                                            | 0016599c: 27bd0010  addiu	sp,sp,16
+!! 001659b4: 27bd0010  addiu	sp,sp,16                                   | 

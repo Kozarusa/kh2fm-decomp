@@ -1,0 +1,20 @@
+0013efe8: compiled 64 bytes, target 56 bytes, exact=False
+Differing words: 12. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0013efe8: 27bdfff0  addiu	sp,sp,-16                                  | 0013efe8: 27bdfff0  addiu	sp,sp,-16
+!! 0013efec: 3c0f0035  lui	t7,0x35                                      | 0013efec: 3c0f0033  lui	t7,0x33
+   0013eff0: ffbf0000  sd	ra,0(sp)                                      | 0013eff0: ffbf0000  sd	ra,0(sp)
+!! 0013eff4: 3c0e0033  lui	t6,0x33                                      | 0013eff4: 3c070014  lui	a3,0x14
+!! 0013eff8: a1e08700  sb	zero,-30976(t7)   ; = D_00348700              | 0013eff8: 24e7ef90  addiu	a3,a3,-4208   ; = D_0013ef90
+   0013effc: 3c060004  lui	a2,0x4                                       | 0013effc: 3c060004  lui	a2,0x4
+!! 0013f000: 8dc4b96c  lw	a0,-18068(t6)   ; = D_0032b96c                | 0013f000: 9de4b96c  lwu	a0,-18068(t7)   ; = D_0032b96c
+!! 0013f004: 3c070014  lui	a3,0x14                                      | 0013f004: 0007383c  dsll32	a3,a3,0x0
+   0013f008: dfbf0000  ld	ra,0(sp)                                      | 0013f008: dfbf0000  ld	ra,0(sp)
+!! 0013f00c: 24e7ef90  addiu	a3,a3,-4208   ; = D_0013ef90               | 0013f00c: 0007383e  dsrl32	a3,a3,0x0
+!! 0013f010: 0000282d  move	a1,zero                                     | 0013f010: 3c0f0035  lui	t7,0x35
+!! 0013f014: 34c693e0  ori	a2,a2,0x93e0                                 | 0013f014: 0000282d  move	a1,zero
+!! 0013f018: 080409e2  j	0x102788                                       | 0013f018: a1e08700  sb	zero,-30976(t7)   ; = D_00348700
+!! 0013f01c: 27bd0010  addiu	sp,sp,16                                   | 0013f01c: 34c693e0  ori	a2,a2,0x93e0
+!!                                                                      | 0013f020: 080409e2  j	102788 <func_00102788>
+!!                                                                      | 0013f024: 27bd0010  addiu	sp,sp,16

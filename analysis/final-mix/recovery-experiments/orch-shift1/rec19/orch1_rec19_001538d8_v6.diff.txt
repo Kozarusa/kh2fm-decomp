@@ -1,0 +1,31 @@
+001538d8: compiled 108 bytes, target 108 bytes, exact=False
+Differing words: 4. First difference at instruction 8 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001538d8: 3c0e0035  lui	t6,0x35                                      | 001538d8: 3c0e0035  lui	t6,0x35
+   001538dc: 8dcfa790  lw	t7,-22640(t6)   ; = D_0034a790                | 001538dc: 8dcfa790  lw	t7,-22640(t6)   ; = D_0034a790
+   001538e0: 11e00016  beqz	t7,0x15393c                                 | 001538e0: 11e00016  beqz	t7,15393c <func_001538d8+0x64>
+   001538e4: 308400ff  andi	a0,a0,0xff                                  | 001538e4: 308400ff  andi	a0,a0,0xff
+   001538e8: 3c0f0035  lui	t7,0x35                                      | 001538e8: 3c0f0035  lui	t7,0x35
+   001538ec: 8deba77c  lw	t3,-22660(t7)   ; = D_0034a77c                | 001538ec: 8deba77c  lw	t3,-22660(t7)   ; = D_0034a77c
+   001538f0: 19600012  blez	t3,0x15393c                                 | 001538f0: 19600012  blez	t3,15393c <func_001538d8+0x64>
+   001538f4: 0000602d  move	t4,zero                                     | 001538f4: 0000602d  move	t4,zero
+!! 001538f8: 01c0402d  move	t0,t6                                       | 001538f8: 0000682d  move	t5,zero
+!! 001538fc: 3c0a0035  lui	t2,0x35                                      | 001538fc: 01c0402d  move	t0,t6
+!! 00153900: 24090001  li	t1,1                                          | 00153900: 3c0a0035  lui	t2,0x35
+!! 00153904: 0000682d  move	t5,zero                                     | 00153904: 24090001  li	t1,1
+   00153908: 8d4fa778  lw	t7,-22664(t2)   ; = D_0034a778                | 00153908: 8d4fa778  lw	t7,-22664(t2)   ; = D_0034a778
+   0015390c: 01af7821  addu	t7,t5,t7                                    | 0015390c: 01af7821  addu	t7,t5,t7
+   00153910: 8dee0000  lw	t6,0(t7)                                      | 00153910: 8dee0000  lw	t6,0(t7)
+   00153914: 15c40005  bne	t6,a0,0x15392c                               | 00153914: 15c40005  bne	t6,a0,15392c <func_001538d8+0x54>
+   00153918: 25ad0018  addiu	t5,t5,24                                   | 00153918: 25ad0018  addiu	t5,t5,24
+   0015391c: 8d0ea790  lw	t6,-22640(t0)                                 | 0015391c: 8d0ea790  lw	t6,-22640(t0)
+   00153920: 000c7980  sll	t7,t4,0x6                                    | 00153920: 000c7980  sll	t7,t4,0x6
+   00153924: 01ee7821  addu	t7,t7,t6                                    | 00153924: 01ee7821  addu	t7,t7,t6
+   00153928: a1e90030  sb	t1,48(t7)                                     | 00153928: a1e90030  sb	t1,48(t7)
+   0015392c: 258c0001  addiu	t4,t4,1                                    | 0015392c: 258c0001  addiu	t4,t4,1
+   00153930: 018b782a  slt	t7,t4,t3                                     | 00153930: 018b782a  slt	t7,t4,t3
+   00153934: 15e0fff5  bnez	t7,0x15390c                                 | 00153934: 15e0fff5  bnez	t7,15390c <func_001538d8+0x34>
+   00153938: 8d4fa778  lw	t7,-22664(t2)   ; = D_0034a778                | 00153938: 8d4fa778  lw	t7,-22664(t2)   ; = D_0034a778
+   0015393c: 03e00008  jr	ra                                            | 0015393c: 03e00008  jr	ra
+   00153940: 00000000  nop                                              | 00153940: 00000000  nop

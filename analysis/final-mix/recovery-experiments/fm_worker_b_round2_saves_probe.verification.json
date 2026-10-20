@@ -1,0 +1,76 @@
+{
+  "source_sha256": "ee89149e5dc2c87c6d4554f8b48ca9c0022baa9a996da06e438b62a8df36991c",
+  "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round2_saves_probe.cpp",
+  "range_override": {
+    "file": "analysis/final-mix/worker-coordination/worker-b/round-2/r2_grid_override.json",
+    "sha256": "4b9b65377297051a79df1c540a793b7a4c7005a5922cc06401105c7e9ef45adf"
+  },
+  "rows": [
+    {
+      "address": "00309988",
+      "symbol": "_Z13func_00309988j",
+      "compiled_size": 44,
+      "target_size": 64,
+      "ghidra_body_size": 88,
+      "boundary_agreement": false,
+      "exact_match": false,
+      "compiled_hex": "f0ffbd270000b0ff0800bfff0100902468410c0c2d2000022d1000020800bfdf0000b0df0800e0031000bd27",
+      "target_hex": "d0ffbd270000b0ff1000b1ff2000bfff6c3b0c0c2d8080000c00118e030020563c00238e04000010040000ae01000224040002ae0c0003ae803b0c0c00000000"
+    },
+    {
+      "address": "003099c8",
+      "symbol": "_Z13func_003099c8j",
+      "compiled_size": 60,
+      "target_size": 64,
+      "ghidra_body_size": null,
+      "boundary_agreement": false,
+      "exact_match": false,
+      "compiled_hex": "e0ffbd270000b0ff0800b1ff1000bfff010090240200912468410c0c2d200002218011022d1000020800b1df0000b0df1000bfdf0800e0032000bd27",
+      "target_hex": "2d1020022000bfdf1000b1df0000b0df0800e0033000bd2780ffbd276000b4ff4000b2ff2da000003000b1ff7000bfff2d8880005000b3ff2000b0ff0400228e"
+    },
+    {
+      "address": "00309a08",
+      "symbol": "_Z13func_00309a08j",
+      "compiled_size": 76,
+      "target_size": 64,
+      "ghidra_body_size": null,
+      "boundary_agreement": false,
+      "exact_match": false,
+      "compiled_hex": "e0ffbd270000b0ff0800b1ff1000b2ff02009024010091241800bfff030092242d20200268410c0c21883002218832020000b0df2d1020021000b2df0800b1df1800bfdf0800e0032000bd27",
+      "target_hex": "2400248e0800258e09f840000c00268e2d904000010040562c00348e0c00258e0300a01800000000a0220c0c0800248e0300801a2d204002a0220c0c2d288002"
+    },
+    {
+      "address": "00309a48",
+      "symbol": "_Z13func_00309a48j",
+      "compiled_size": 92,
+      "target_size": 64,
+      "ghidra_body_size": null,
+      "boundary_agreement": false,
+      "exact_match": false,
+      "compiled_hex": "d0ffbd270000b0ff0800b1ff1000b2ff030090241800b3ff01009124020092242000bfff040093242d2020022180120268410c0c21883302218830021000b2df2d1020020000b0df0800b1df1800b3df2000bfdf0800e0033000bd27",
+      "target_hex": "6c3b0c0c000000003400258e0400a23006004010022c0500e301043c7c230c0c00728424050000102d804000e301043c70230c0c007284242d804000803b0c0c"
+    },
+    {
+      "address": "00309a88",
+      "symbol": "_Z13func_00309a88j",
+      "compiled_size": 108,
+      "target_size": 64,
+      "ghidra_body_size": null,
+      "boundary_agreement": false,
+      "exact_match": false,
+      "compiled_hex": "d0ffbd270000b0ff0800b1ff1000b2ff010090241800b3ff030091242000b4ff04009224020093242800bfff050094242d2000022188330269410c0c21801402218011021800b3df218012020800b1df2d1000021000b2df0000b0df2000b4df2800bfdf0800e0033000bd27",
+      "target_hex": "000000000080033c1c00248e0a006334200003ae1c0004ae3000228e0e004050180000ae000000000080043c2800288e080084342d280002400006242d384002"
+    },
+    {
+      "address": "00309ac8",
+      "symbol": "_Z13func_00309ac8j",
+      "compiled_size": 124,
+      "target_size": 64,
+      "ghidra_body_size": null,
+      "boundary_agreement": false,
+      "exact_match": false,
+      "compiled_hex": "c0ffbd270000b0ff0800b1ff1000b2ff040090241800b3ff050091242000b4ff010092242800b5ff03009324020094243000bfff060095242d204002218013022190550221a0910269410c0c21905002219054020000b0df2d1040020800b1df1000b2df1800b3df2000b4df2800b5df3000bfdf0800e0034000bd27",
+      "target_hex": "2e220c0c2d488002f7ff40107000bfdf2c0000106000b4df2d9800000700801a100000ae2800228e010013240000b2af0400a2af0800b4af0c00a0af00291300"
+    }
+  ]
+}

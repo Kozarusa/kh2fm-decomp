@@ -1,0 +1,34 @@
+0022cea0: compiled 108 bytes, target 120 bytes, exact=False
+Differing words: 30. First difference at instruction 0 (0-based).
+
+ORIGINAL                                                                | COMPILED
+!! 0022cea0: 27bdffe0  addiu	sp,sp,-32                                  | 0022cea0: 27bdfff0  addiu	sp,sp,-16
+!! 0022cea4: ffb10008  sd	s1,8(sp)                                      | 0022cea4: ffb00000  sd	s0,0(sp)
+!! 0022cea8: ffb00000  sd	s0,0(sp)                                      | 0022cea8: ffbf0008  sd	ra,8(sp)
+!! 0022ceac: ffbf0010  sd	ra,16(sp)                                     | 0022ceac: 0080802d  move	s0,a0
+!! 0022ceb0: 0080882d  move	s1,a0                                       | 0022ceb0: 0c08a0bc  jal	2282f0 <func_002282f0>
+!! 0022ceb4: 0c08a0bc  jal	0x2282f0                                     | 0022ceb4: 84840004  lh	a0,4(a0)
+!! 0022ceb8: 84840004  lh	a0,4(a0)                                      | 0022ceb8: 54400011  bnezl	v0,22cf00 <func_0022cea0+0x60>
+!! 0022cebc: 14400012  bnez	v0,0x22cf08                                 | 0022cebc: dfb00000  ld	s0,0(sp)
+!! 0022cec0: dfb00000  ld	s0,0(sp)                                      | 0022cec0: 920f0006  lbu	t7,6(s0)
+!! 0022cec4: 922f0006  lbu	t7,6(s1)                                     | 0022cec4: 11e00005  beqz	t7,22cedc <func_0022cea0+0x3c>
+!! 0022cec8: 55e0000c  bnezl	t7,0x22cefc                                | 0022cec8: 26040008  addiu	a0,s0,8
+!! 0022cecc: dfb10008  ld	s1,8(sp)                                      | 0022cecc: dfb00000  ld	s0,0(sp)
+!! 0022ced0: 92300007  lbu	s0,7(s1)                                     | 0022ced0: dfbf0008  ld	ra,8(sp)
+!! 0022ced4: 0c089f2a  jal	0x227ca8                                     | 0022ced4: 08059c86  j	167218 <func_00167218>
+!! 0022ced8: 26240008  addiu	a0,s1,8                                    | 0022ced8: 27bd0010  addiu	sp,sp,16
+!! 0022cedc: 2e100001  sltiu	s0,s0,1                                    | 0022cedc: 0c089f2a  jal	227ca8 <func_00227ca8>
+!! 0022cee0: 0200282d  move	a1,s0                                       | 0022cee0: 92100007  lbu	s0,7(s0)
+!! 0022cee4: dfb10008  ld	s1,8(sp)                                      | 0022cee4: 2e100001  sltiu	s0,s0,1
+!! 0022cee8: dfb00000  ld	s0,0(sp)                                      | 0022cee8: 0200282d  move	a1,s0
+!! 0022ceec: 0040202d  move	a0,v0                                       | 0022ceec: dfbf0008  ld	ra,8(sp)
+!! 0022cef0: dfbf0010  ld	ra,16(sp)                                     | 0022cef0: dfb00000  ld	s0,0(sp)
+!! 0022cef4: 08059c7a  j	0x1671e8                                       | 0022cef4: 0040202d  move	a0,v0
+!! 0022cef8: 27bd0020  addiu	sp,sp,32                                   | 0022cef8: 08059c7a  j	1671e8 <func_001671e8>
+!! 0022cefc: dfbf0010  ld	ra,16(sp)                                     | 0022cefc: 27bd0010  addiu	sp,sp,16
+!! 0022cf00: 08059c86  j	0x167218                                       | 0022cf00: dfbf0008  ld	ra,8(sp)
+!! 0022cf04: 27bd0020  addiu	sp,sp,32                                   | 0022cf04: 03e00008  jr	ra
+!! 0022cf08: dfb10008  ld	s1,8(sp)                                      | 0022cf08: 27bd0010  addiu	sp,sp,16
+!! 0022cf0c: dfbf0010  ld	ra,16(sp)                                     | 
+!! 0022cf10: 03e00008  jr	ra                                            | 
+!! 0022cf14: 27bd0020  addiu	sp,sp,32                                   | 

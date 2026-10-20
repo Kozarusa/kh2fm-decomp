@@ -1,0 +1,32 @@
+002930d8: compiled 112 bytes, target 108 bytes, exact=False
+Differing words: 23. First difference at instruction 0 (0-based).
+
+ORIGINAL                                                                | COMPILED
+!! 002930d8: 3c0b0036  lui	t3,0x36                                      | 002930d8: 3c0d0036  lui	t5,0x36
+!! 002930dc: 856ef4e0  lh	t6,-2848(t3)   ; = D_0035f4e0                 | 002930dc: 85aef4e0  lh	t6,-2848(t5)   ; = D_0035f4e0
+!! 002930e0: 11c00016  beqz	t6,0x29313c                                 | 002930e0: 11c00017  beqz	t6,293140 <func_002930d8+0x68>
+   002930e4: 29cf0002  slti	t7,t6,2                                     | 002930e4: 29cf0002  slti	t7,t6,2
+!! 002930e8: 55e00011  bnezl	t7,0x293130                                | 002930e8: 55e00012  bnezl	t7,293134 <func_002930d8+0x5c>
+   002930ec: 3c0e0036  lui	t6,0x36                                      | 002930ec: 3c0e0036  lui	t6,0x36
+   002930f0: 240c0001  li	t4,1                                          | 002930f0: 240c0001  li	t4,1
+   002930f4: 018e782a  slt	t7,t4,t6                                     | 002930f4: 018e782a  slt	t7,t4,t6
+!! 002930f8: 11e0000d  beqz	t7,0x293130                                 | 002930f8: 11e0000e  beqz	t7,293134 <func_002930d8+0x5c>
+   002930fc: 3c0e0036  lui	t6,0x36                                      | 002930fc: 3c0e0036  lui	t6,0x36
+!! 00293100: 3c0a0036  lui	t2,0x36                                      | 00293100: 01a0502d  move	t2,t5
+!! 00293104: 8d4ef4dc  lw	t6,-2852(t2)   ; = D_0035f4dc                 | 00293104: 3c0b0036  lui	t3,0x36
+!! 00293108: 000c7880  sll	t7,t4,0x2                                    | 00293108: 8d6ff4dc  lw	t7,-2852(t3)   ; = D_0035f4dc
+!! 0029310c: 258c0001  addiu	t4,t4,1                                    | 0029310c: 000c6880  sll	t5,t4,0x2
+!! 00293110: 01cf7021  addu	t6,t6,t7                                    | 00293110: 258c0001  addiu	t4,t4,1
+!! 00293114: 8dcd0000  lw	t5,0(t6)                                      | 00293114: 01ed7821  addu	t7,t7,t5
+!! 00293118: adcdfffc  sw	t5,-4(t6)                                     | 00293118: 8dee0000  lw	t6,0(t7)
+!! 0029311c: 856ff4e0  lh	t7,-2848(t3)   ; = D_0035f4e0                 | 0029311c: adeefffc  sw	t6,-4(t7)
+!! 00293120: 018f782a  slt	t7,t4,t7                                     | 00293120: 854ff4e0  lh	t7,-2848(t2)
+!! 00293124: 15e0fff8  bnez	t7,0x293108                                 | 00293124: 018f782a  slt	t7,t4,t7
+!! 00293128: 8d4ef4dc  lw	t6,-2852(t2)   ; = D_0035f4dc                 | 00293128: 15e0fff8  bnez	t7,29310c <func_002930d8+0x34>
+!! 0029312c: 3c0e0036  lui	t6,0x36                                      | 0029312c: 8d6ff4dc  lw	t7,-2852(t3)   ; = D_0035f4dc
+!! 00293130: 95cff4e0  lhu	t7,-2848(t6)   ; = D_0035f4e0                | 00293130: 3c0e0036  lui	t6,0x36
+!! 00293134: 25efffff  addiu	t7,t7,-1                                   | 00293134: 95cff4e0  lhu	t7,-2848(t6)   ; = D_0035f4e0
+!! 00293138: a5cff4e0  sh	t7,-2848(t6)   ; = D_0035f4e0                 | 00293138: 25efffff  addiu	t7,t7,-1
+!! 0029313c: 03e00008  jr	ra                                            | 0029313c: a5cff4e0  sh	t7,-2848(t6)   ; = D_0035f4e0
+!! 00293140: 00000000  nop                                              | 00293140: 03e00008  jr	ra
+!!                                                                      | 00293144: 00000000  nop

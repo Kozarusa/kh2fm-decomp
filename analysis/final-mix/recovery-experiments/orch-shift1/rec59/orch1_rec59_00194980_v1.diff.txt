@@ -1,0 +1,24 @@
+00194980: compiled 68 bytes, target 80 bytes, exact=False
+Differing words: 18. First difference at instruction 2 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00194980: 27bdfff0  addiu	sp,sp,-16                                  | 00194980: 27bdfff0  addiu	sp,sp,-16
+   00194984: 2404ffff  li	a0,-1                                         | 00194984: 2404ffff  li	a0,-1
+!! 00194988: ffb00000  sd	s0,0(sp)                                      | 00194988: ffbf0000  sd	ra,0(sp)
+!! 0019498c: 2405ffff  li	a1,-1                                         | 0019498c: 0c0651f0  jal	1947c0 <func_001947c0>
+!! 00194990: ffbf0008  sd	ra,8(sp)                                      | 00194990: 2405ffff  li	a1,-1
+!! 00194994: 0c0651f0  jal	0x1947c0                                     | 00194994: 944f0032  lhu	t7,50(v0)
+!! 00194998: 0000802d  move	s0,zero                                     | 00194998: 0000702d  move	t6,zero
+!! 0019499c: 944f0032  lhu	t7,50(v0)                                    | 0019499c: 11e00004  beqz	t7,1949b0 <func_00194980+0x30>
+!! 001949a0: 11e00005  beqz	t7,0x1949b8                                 | 001949a0: 01e0202d  move	a0,t7
+!! 001949a4: 01e0202d  move	a0,t7                                       | 001949a4: 0c068d5c  jal	1a3570 <func_001a3570>
+!! 001949a8: 0c068d5c  jal	0x1a3570                                     | 001949a8: 00000000  nop
+!! 001949ac: 00000000  nop                                              | 001949ac: 0002702a  slt	t6,zero,v0
+!! 001949b0: 5c400001  bgtzl	v0,0x1949b8                                | 001949b0: 3c0f01c6  lui	t7,0x1c6
+!! 001949b4: 24100001  li	s0,1                                          | 001949b4: dfbf0000  ld	ra,0(sp)
+!! 001949b8: 3c0f01c6  lui	t7,0x1c6                                     | 001949b8: a1ee1af4  sb	t6,6900(t7)   ; = D_01c61af4
+!! 001949bc: dfbf0008  ld	ra,8(sp)                                      | 001949bc: 03e00008  jr	ra
+!! 001949c0: a1f01af4  sb	s0,6900(t7)   ; = D_01c61af4                  | 001949c0: 27bd0010  addiu	sp,sp,16
+!! 001949c4: dfb00000  ld	s0,0(sp)                                      | 
+!! 001949c8: 03e00008  jr	ra                                            | 
+!! 001949cc: 27bd0010  addiu	sp,sp,16                                   | 

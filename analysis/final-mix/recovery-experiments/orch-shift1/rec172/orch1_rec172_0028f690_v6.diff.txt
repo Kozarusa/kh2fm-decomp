@@ -1,0 +1,27 @@
+0028f690: compiled 92 bytes, target 92 bytes, exact=False
+Differing words: 8. First difference at instruction 6 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0028f690: 240f0374  li	t7,884                                        | 0028f690: 240f0374  li	t7,884
+   0028f694: 3c0e0036  lui	t6,0x36                                      | 0028f694: 3c0e0036  lui	t6,0x36
+   0028f698: 008f2018  mult	a0,a0,t7                                    | 0028f698: 008f2018  mult	a0,a0,t7
+   0028f69c: 8dcdf480  lw	t5,-2944(t6)   ; = D_0035f480                 | 0028f69c: 8dcdf480  lw	t5,-2944(t6)   ; = D_0035f480
+   0028f6a0: 0000102d  move	v0,zero                                     | 0028f6a0: 0000102d  move	v0,zero
+   0028f6a4: 240e0002  li	t6,2                                          | 0028f6a4: 240e0002  li	t6,2
+!! 0028f6a8: 3c0f0036  lui	t7,0x36                                      | 0028f6a8: 008d2021  addu	a0,a0,t5
+!! 0028f6ac: 01a46821  addu	t5,t5,a0                                    | 0028f6ac: 3c0f0036  lui	t7,0x36
+!! 0028f6b0: 25ecf468  addiu	t4,t7,-2968   ; = D_0035f468               | 0028f6b0: 25ebf468  addiu	t3,t7,-2968   ; = D_0035f468
+!! 0028f6b4: 8dad0184  lw	t5,388(t5)                                    | 0028f6b4: 8c8c0184  lw	t4,388(a0)
+!! 0028f6b8: 0180582d  move	t3,t4                                       | 0028f6b8: 0160682d  move	t5,t3
+!! 0028f6bc: 858f0000  lh	t7,0(t4)                                      | 0028f6bc: 85af0000  lh	t7,0(t5)
+   0028f6c0: 25ceffff  addiu	t6,t6,-1                                   | 0028f6c0: 25ceffff  addiu	t6,t6,-1
+!! 0028f6c4: 01af7826  xor	t7,t5,t7                                     | 0028f6c4: 018f7826  xor	t7,t4,t7
+!! 0028f6c8: 258c0002  addiu	t4,t4,2                                    | 0028f6c8: 25ad0002  addiu	t5,t5,2
+   0028f6cc: 00000000  nop                                              | 0028f6cc: 00000000  nop
+   0028f6d0: 05c1fffa  bgez	t6,0x28f6bc                                 | 0028f6d0: 05c1fffa  bgez	t6,28f6bc <func_0028f690+0x2c>
+   0028f6d4: 016f100a  movz	v0,t3,t7                                    | 0028f6d4: 016f100a  movz	v0,t3,t7
+   0028f6d8: 14400002  bnez	v0,0x28f6e4                                 | 0028f6d8: 14400002  bnez	v0,28f6e4 <func_0028f690+0x54>
+   0028f6dc: 3c0f0036  lui	t7,0x36                                      | 0028f6dc: 3c0f0036  lui	t7,0x36
+   0028f6e0: 25e2f470  addiu	v0,t7,-2960   ; = D_0035f470               | 0028f6e0: 25e2f470  addiu	v0,t7,-2960   ; = D_0035f470
+   0028f6e4: 03e00008  jr	ra                                            | 0028f6e4: 03e00008  jr	ra
+   0028f6e8: 00000000  nop                                              | 0028f6e8: 00000000  nop

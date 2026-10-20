@@ -1,0 +1,27 @@
+00159308: compiled 92 bytes, target 92 bytes, exact=False
+Differing words: 9. First difference at instruction 9 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00159308: 27bdfff0  addiu	sp,sp,-16                                  | 00159308: 27bdfff0  addiu	sp,sp,-16
+   0015930c: dc8f0008  ld	t7,8(a0)                                      | 0015930c: dc8f0008  ld	t7,8(a0)
+   00159310: 3c0e0040  lui	t6,0x40                                      | 00159310: 3c0e0040  lui	t6,0x40
+   00159314: ffbf0000  sd	ra,0(sp)                                      | 00159314: ffbf0000  sd	ra,0(sp)
+   00159318: 01ee7824  and	t7,t7,t6                                     | 00159318: 01ee7824  and	t7,t7,t6
+   0015931c: 11e0000f  beqz	t7,0x15935c                                 | 0015931c: 11e0000f  beqz	t7,15935c <func_00159308+0x54>
+   00159320: dfbf0000  ld	ra,0(sp)                                      | 00159320: dfbf0000  ld	ra,0(sp)
+   00159324: 0c058826  jal	0x162098                                     | 00159324: 0c058826  jal	162098 <func_00162098>
+   00159328: 00000000  nop                                              | 00159328: 00000000  nop
+!! 0015932c: 1440000a  bnez	v0,0x159358                                 | 0015932c: 3c0f0037  lui	t7,0x37
+!! 00159330: 3c0e0035  lui	t6,0x35                                      | 00159330: 3c0d0035  lui	t5,0x35
+!! 00159334: 8dcfaa08  lw	t7,-22008(t6)   ; = D_0034aa08                | 00159334: 14400008  bnez	v0,159358 <func_00159308+0x50>
+!! 00159338: 3c0d0037  lui	t5,0x37                                      | 00159338: 25eeb334  addiu	t6,t7,-19660   ; = D_0036b334
+!! 0015933c: 25adb334  addiu	t5,t5,-19660   ; = D_0036b334              | 0015933c: 8dafaa08  lw	t7,-22008(t5)   ; = D_0034aa08
+!! 00159340: dfbf0000  ld	ra,0(sp)                                      | 00159340: 39ef0001  xori	t7,t7,0x1
+!! 00159344: 39ef0001  xori	t7,t7,0x1                                   | 00159344: c5cc0000  lwc1	$f12,0(t6)
+!! 00159348: c5ac0000  lwc1	$f12,0(t5)                                  | 00159348: adafaa08  sw	t7,-22008(t5)   ; = D_0034aa08
+!! 0015934c: adcfaa08  sw	t7,-22008(t6)   ; = D_0034aa08                | 0015934c: dfbf0000  ld	ra,0(sp)
+   00159350: 08058816  j	0x162058                                       | 00159350: 08058816  j	162058 <func_00162058>
+   00159354: 27bd0010  addiu	sp,sp,16                                   | 00159354: 27bd0010  addiu	sp,sp,16
+   00159358: dfbf0000  ld	ra,0(sp)                                      | 00159358: dfbf0000  ld	ra,0(sp)
+   0015935c: 03e00008  jr	ra                                            | 0015935c: 03e00008  jr	ra
+   00159360: 27bd0010  addiu	sp,sp,16                                   | 00159360: 27bd0010  addiu	sp,sp,16

@@ -1,0 +1,6 @@
+# 001722e8 blocked
+- Range: 001722e8, 124 bytes. Versions tried: 7. Best: v4 with 9 differing words (124/124 bytes).
+- First difference of the best version: !! 001722f0: ffb10018  sd	s1,24(sp)  (compiled: move a1,sp hoisted before the prologue stores; original keeps move a1,sp in the jal delay slot, loads t6=0(a0), t7=4(a0), s1=4(t6), then lq t0 / sq t0 via t7; compiled loads 4(a0) first, 0(a0) second, lq t7).
+- Changes tried: v1 base (Quad TI local, call order matched), 13 words; v2/v3 swap of source order of the two loads and of the two final stores, no effect (13, scheduler ignores source order); v4 reversed source order of the two final stores (target->first then second) fixed the tail, 9; v5 aligned(16) f32x4 struct instead of TI Quad, 9 (same); v6 unaligned f32x4 struct, 33 (worse, word copies); v7 volatile Quad read (C9), 9 (same).
+- Why it stops here: no improvement for 3 versions.
+- Next hypothesis: obtain lq into t0 and delay-slot move a1,sp by forcing the copy through register binding (C11c, register Quad copy asm("$8")) or by taking the local's address late (array Quad copy[1]); the scheduler hoists move a1,sp ahead of the prologue stores.

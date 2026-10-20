@@ -1,0 +1,46 @@
+{
+  "positive_control": "001dc488",
+  "original_sha256": "d869ce4b8edd61cb978c4ff9ede595fe4d7d7b21cbb96a145275217120d8bc87",
+  "hits": [
+    {
+      "address": "001dc488",
+      "layout": {
+        "addr": "001dc488",
+        "end": "001dc4b8",
+        "size": "48",
+        "name": "FUN_001dc488"
+      },
+      "global_address": "01d5bb00"
+    },
+    {
+      "address": "001de948",
+      "layout": {
+        "addr": "001de948",
+        "end": "001de978",
+        "size": "48",
+        "name": "FUN_001de948"
+      },
+      "global_address": "01d9e340"
+    },
+    {
+      "address": "001e0128",
+      "layout": {
+        "addr": "001e0128",
+        "end": "001e0158",
+        "size": "48",
+        "name": "FUN_001e0128"
+      },
+      "global_address": "01d9e340"
+    },
+    {
+      "address": "001e0188",
+      "layout": {
+        "addr": "001e0188",
+        "end": "001e01b8",
+        "size": "48",
+        "name": "FUN_001e0188"
+      },
+      "global_address": "01d9e340"
+    }
+  ]
+}

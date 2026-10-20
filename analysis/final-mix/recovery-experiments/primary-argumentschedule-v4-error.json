@@ -1,0 +1,5 @@
+{
+  "source": "fm_primary_argumentschedule_v4_002ec9d0_2.cpp",
+  "status": "invalid experiment; not compiler evidence",
+  "reason": "Generator replaced the new value initializer with a self-initialization; preserved as failed input."
+}

@@ -1,0 +1,26 @@
+001d6d00: compiled 88 bytes, target 88 bytes, exact=False
+Differing words: 15. First difference at instruction 7 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001d6d00: 27bdfff0  addiu	sp,sp,-16                                  | 001d6d00: 27bdfff0  addiu	sp,sp,-16
+   001d6d04: 0000102d  move	v0,zero                                     | 001d6d04: 0000102d  move	v0,zero
+   001d6d08: ffb00000  sd	s0,0(sp)                                      | 001d6d08: ffb00000  sd	s0,0(sp)
+   001d6d0c: ffbf0008  sd	ra,8(sp)                                      | 001d6d0c: ffbf0008  sd	ra,8(sp)
+   001d6d10: 0080802d  move	s0,a0                                       | 001d6d10: 0080802d  move	s0,a0
+   001d6d14: 0c075b32  jal	0x1d6cc8                                     | 001d6d14: 0c075b32  jal	1d6cc8 <func_001d6cc8>
+   001d6d18: 0040202d  move	a0,v0                                       | 001d6d18: 0040202d  move	a0,v0
+!! 001d6d1c: 54400006  bnezl	v0,0x1d6d38                                | 001d6d1c: 10400009  beqz	v0,1d6d44 <func_001d6d00+0x44>
+!! 001d6d20: 944f0000  lhu	t7,0(v0)                                     | 001d6d20: 0000202d  move	a0,zero
+!! 001d6d24: 0000102d  move	v0,zero                                     | 001d6d24: 944f0000  lhu	t7,0(v0)
+!! 001d6d28: dfb00000  ld	s0,0(sp)                                      | 001d6d28: 15f0fffa  bne	t7,s0,1d6d14 <func_001d6d00+0x14>
+!! 001d6d2c: dfbf0008  ld	ra,8(sp)                                      | 001d6d2c: 3c0e01d6  lui	t6,0x1d6
+!! 001d6d30: 03e00008  jr	ra                                            | 001d6d30: 8dcfba98  lw	t7,-17768(t6)   ; = D_01d5ba98
+!! 001d6d34: 27bd0010  addiu	sp,sp,16                                   | 001d6d34: 004f7823  subu	t7,v0,t7
+!! 001d6d38: 15f0fff6  bne	t7,s0,0x1d6d14                               | 001d6d38: 25effff8  addiu	t7,t7,-8
+!! 001d6d3c: 3c0e01d6  lui	t6,0x1d6                                     | 001d6d3c: 000f7983  sra	t7,t7,0x6
+!! 001d6d40: 8dcfba98  lw	t7,-17768(t6)   ; = D_01d5ba98                | 001d6d40: 25e40001  addiu	a0,t7,1
+!! 001d6d44: 004f7823  subu	t7,v0,t7                                    | 001d6d44: dfb00000  ld	s0,0(sp)
+!! 001d6d48: 25effff8  addiu	t7,t7,-8                                   | 001d6d48: 0080102d  move	v0,a0
+!! 001d6d4c: 000f7983  sra	t7,t7,0x6                                    | 001d6d4c: dfbf0008  ld	ra,8(sp)
+!! 001d6d50: 1000fff5  b	0x1d6d28                                       | 001d6d50: 03e00008  jr	ra
+!! 001d6d54: 25e20001  addiu	v0,t7,1                                    | 001d6d54: 27bd0010  addiu	sp,sp,16

@@ -1,0 +1,35 @@
+0021f060: compiled 124 bytes, target 120 bytes, exact=False
+Differing words: 26. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0021f060: 27bdfff0  addiu	sp,sp,-16                                  | 0021f060: 27bdfff0  addiu	sp,sp,-16
+!! 0021f064: 24850010  addiu	a1,a0,16                                   | 0021f064: 0080702d  move	t6,a0
+   0021f068: ffb00000  sd	s0,0(sp)                                      | 0021f068: ffb00000  sd	s0,0(sp)
+!! 0021f06c: 0000302d  move	a2,zero                                     | 0021f06c: 24850010  addiu	a1,a0,16
+   0021f070: ffbf0008  sd	ra,8(sp)                                      | 0021f070: ffbf0008  sd	ra,8(sp)
+!! 0021f074: 3c1001da  lui	s0,0x1da                                     | 0021f074: 0000302d  move	a2,zero
+!! 0021f078: 8c8b0000  lw	t3,0(a0)                                      | 0021f078: 3c1001da  lui	s0,0x1da
+!! 0021f07c: 8c8e0004  lw	t6,4(a0)                                      | 0021f07c: 8c8c0004  lw	t4,4(a0)
+!! 0021f080: 8d6c0000  lw	t4,0(t3)                                      | 0021f080: 948f0012  lhu	t7,18(a0)
+!! 0021f084: 91cf0002  lbu	t7,2(t6)                                     | 0021f084: 918d0002  lbu	t5,2(t4)
+!! 0021f088: ac800018  sw	zero,24(a0)                                   | 0021f088: 8c8b0000  lw	t3,0(a0)
+!! 0021f08c: 000f78c0  sll	t7,t7,0x3                                    | 0021f08c: 35ef0030  ori	t7,t7,0x30
+!! 0021f090: a0800028  sb	zero,40(a0)                                   | 0021f090: a48f0012  sh	t7,18(a0)
+!! 0021f094: 018f6021  addu	t4,t4,t7                                    | 0021f094: 000d68c0  sll	t5,t5,0x3
+!! 0021f098: 948e0012  lhu	t6,18(a0)                                    | 0021f098: 8d6c0000  lw	t4,0(t3)
+   0021f09c: 240f0012  li	t7,18                                         | 0021f09c: 240f0012  li	t7,18
+!! 0021f0a0: 8e0deaa4  lw	t5,-5468(s0)   ; = D_01d9eaa4                 | 0021f0a0: ac800018  sw	zero,24(a0)
+!! 0021f0a4: 35ce0030  ori	t6,t6,0x30                                   | 0021f0a4: a0800028  sb	zero,40(a0)
+!! 0021f0a8: ac8d0024  sw	t5,36(a0)                                     | 0021f0a8: 018d6021  addu	t4,t4,t5
+!! 0021f0ac: a48e0012  sh	t6,18(a0)                                     | 0021f0ac: a48f001c  sh	t7,28(a0)
+!! 0021f0b0: a48f001c  sh	t7,28(a0)                                     | 0021f0b0: 8e0feaa4  lw	t7,-5468(s0)   ; = D_01d9eaa4
+!! 0021f0b4: 858f0010  lh	t7,16(t4)                                     | 0021f0b4: 858d0010  lh	t5,16(t4)
+   0021f0b8: 8d640000  lw	a0,0(t3)                                      | 0021f0b8: 8d640000  lw	a0,0(t3)
+!! 0021f0bc: 0c087412  jal	0x21d048                                     | 0021f0bc: adcf0024  sw	t7,36(t6)
+!! 0021f0c0: 008f2021  addu	a0,a0,t7                                    | 0021f0c0: 0c087412  jal	21d048 <func_0021d048>
+!! 0021f0c4: ae02eaa4  sw	v0,-5468(s0)   ; = D_01d9eaa4                 | 0021f0c4: 008d2021  addu	a0,a0,t5
+!! 0021f0c8: dfbf0008  ld	ra,8(sp)                                      | 0021f0c8: ae02eaa4  sw	v0,-5468(s0)   ; = D_01d9eaa4
+!! 0021f0cc: dfb00000  ld	s0,0(sp)                                      | 0021f0cc: dfbf0008  ld	ra,8(sp)
+!! 0021f0d0: 03e00008  jr	ra                                            | 0021f0d0: dfb00000  ld	s0,0(sp)
+!! 0021f0d4: 27bd0010  addiu	sp,sp,16                                   | 0021f0d4: 03e00008  jr	ra
+!!                                                                      | 0021f0d8: 27bd0010  addiu	sp,sp,16

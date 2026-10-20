@@ -1,0 +1,22 @@
+00252618: compiled 72 bytes, target 72 bytes, exact=False
+Differing words: 2. First difference at instruction 13 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00252618: 27bdfff0  addiu	sp,sp,-16                                  | 00252618: 27bdfff0  addiu	sp,sp,-16
+   0025261c: 3c0f0036  lui	t7,0x36                                      | 0025261c: 3c0f0036  lui	t7,0x36
+   00252620: ffbf0000  sd	ra,0(sp)                                      | 00252620: ffbf0000  sd	ra,0(sp)
+   00252624: 0c0a247a  jal	0x2891e8                                     | 00252624: 0c0a247a  jal	2891e8 <func_002891e8>
+   00252628: 8de4ee58  lw	a0,-4520(t7)   ; = D_0035ee58                 | 00252628: 8de4ee58  lw	a0,-4520(t7)   ; = D_0035ee58
+   0025262c: 0c094844  jal	0x252110                                     | 0025262c: 0c094844  jal	252110 <func_00252110>
+   00252630: 0040202d  move	a0,v0                                       | 00252630: 0040202d  move	a0,v0
+   00252634: 240f0006  li	t7,6                                          | 00252634: 240f0006  li	t7,6
+   00252638: dfbf0000  ld	ra,0(sp)                                      | 00252638: dfbf0000  ld	ra,0(sp)
+   0025263c: 004f1018  mult	v0,v0,t7                                    | 0025263c: 004f1018  mult	v0,v0,t7
+   00252640: 3c0e0036  lui	t6,0x36                                      | 00252640: 3c0e0036  lui	t6,0x36
+   00252644: 8dc4ee7c  lw	a0,-4484(t6)   ; = D_0035ee7c                 | 00252644: 8dc4ee7c  lw	a0,-4484(t6)   ; = D_0035ee7c
+   00252648: 3c0f0037  lui	t7,0x37                                      | 00252648: 3c0f0037  lui	t7,0x37
+!! 0025264c: 25ef2650  addiu	t7,t7,9808   ; = D_00372650                | 0025264c: 25ef2652  addiu	t7,t7,9810   ; = D_00372652
+   00252650: 004f1021  addu	v0,v0,t7                                    | 00252650: 004f1021  addu	v0,v0,t7
+!! 00252654: 84450002  lh	a1,2(v0)                                      | 00252654: 84450000  lh	a1,0(v0)
+   00252658: 080a36b2  j	0x28dac8                                       | 00252658: 080a36b2  j	28dac8 <func_0028dac8>
+   0025265c: 27bd0010  addiu	sp,sp,16                                   | 0025265c: 27bd0010  addiu	sp,sp,16

@@ -1,0 +1,18 @@
+{
+  "source_sha256": "fcc65fdac8cb8567f536452b326ba10eae62bc2ad8fdd8a7b807b659f238e87b",
+  "source": "analysis/final-mix/worker-coordination/worker-b/variants10/c_ptr_021_pin15_1d6850.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "001d6850",
+      "symbol": "_Z13func_001d6850jj",
+      "compiled_size": 144,
+      "target_size": 112,
+      "ghidra_body_size": 112,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "ffff0f342000af1401000f240e008f14ffff0f34d5010c3c37000f3cece5ef2578ba8c35d5010d3c000080add5010e3c0000e0c580baad357cbace350000c0ad0000a0e5ffff0f340f00af1401000f240d008f14d5010d3c37000f3c88baad35f0e5ef2503000e24d5010c3cd5010b3c0000aead0000e0c58cba8c3590ba6b35000080ad000060e50800e00300000000",
+      "target_hex": "ffff0f341800af1401000f240a008f14ffff0f3437000d3cd6010f3cece5ad2578bae0ad0000a0c578baee250400c0ad0800c0e5ffff0f340b00af1401000f2409008f14d6010e3c03000f2488bacfad88bacd250400a0ad37000f3cf0e5ef250000e0c50800a0e50800e00300000000"
+    }
+  ]
+}

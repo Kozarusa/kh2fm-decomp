@@ -1,0 +1,36 @@
+001611a8: compiled 124 bytes, target 128 bytes, exact=False
+Differing words: 16. First difference at instruction 15 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001611a8: 27bdffd0  addiu	sp,sp,-48                                  | 001611a8: 27bdffd0  addiu	sp,sp,-48
+   001611ac: ffb00000  sd	s0,0(sp)                                      | 001611ac: ffb00000  sd	s0,0(sp)
+   001611b0: ffb10008  sd	s1,8(sp)                                      | 001611b0: ffb10008  sd	s1,8(sp)
+   001611b4: ffb20010  sd	s2,16(sp)                                     | 001611b4: ffb20010  sd	s2,16(sp)
+   001611b8: 0000802d  move	s0,zero                                     | 001611b8: 0000802d  move	s0,zero
+   001611bc: ffb30018  sd	s3,24(sp)                                     | 001611bc: ffb30018  sd	s3,24(sp)
+   001611c0: 30d100ff  andi	s1,a2,0xff                                  | 001611c0: 30d100ff  andi	s1,a2,0xff
+   001611c4: ffb40020  sd	s4,32(sp)                                     | 001611c4: ffb40020  sd	s4,32(sp)
+   001611c8: 30b200ff  andi	s2,a1,0xff                                  | 001611c8: 30b200ff  andi	s2,a1,0xff
+   001611cc: ffbf0028  sd	ra,40(sp)                                     | 001611cc: ffbf0028  sd	ra,40(sp)
+   001611d0: 309300ff  andi	s3,a0,0xff                                  | 001611d0: 309300ff  andi	s3,a0,0xff
+   001611d4: 3c14004f  lui	s4,0x4f                                      | 001611d4: 3c14004f  lui	s4,0x4f
+   001611d8: 56000002  bnezl	s0,0x1611e4                                | 001611d8: 56000002  bnezl	s0,1611e4 <func_001611a8+0x3c>
+   001611dc: 8e040080  lw	a0,128(s0)                                    | 001611dc: 8e040080  lw	a0,128(s0)
+   001611e0: 8e843b38  lw	a0,15160(s4)   ; = D_004f3b38                 | 001611e0: 8e843b38  lw	a0,15160(s4)   ; = D_004f3b38
+!! 001611e4: 1480000a  bnez	a0,0x161210                                 | 001611e4: 10800007  beqz	a0,161204 <func_001611a8+0x5c>
+   001611e8: 0080802d  move	s0,a0                                       | 001611e8: 0080802d  move	s0,a0
+!! 001611ec: dfb00000  ld	s0,0(sp)                                      | 001611ec: 0260282d  move	a1,s3
+!! 001611f0: dfb10008  ld	s1,8(sp)                                      | 001611f0: 0240302d  move	a2,s2
+!! 001611f4: dfb20010  ld	s2,16(sp)                                     | 001611f4: 0c058122  jal	160488 <func_00160488>
+!! 001611f8: dfb30018  ld	s3,24(sp)                                     | 001611f8: 0220382d  move	a3,s1
+!! 001611fc: dfb40020  ld	s4,32(sp)                                     | 001611fc: 1000fff6  b	1611d8 <func_001611a8+0x30>
+!! 00161200: dfbf0028  ld	ra,40(sp)                                     | 00161200: 00000000  nop
+!! 00161204: 03e00008  jr	ra                                            | 00161204: dfb00000  ld	s0,0(sp)
+!! 00161208: 27bd0030  addiu	sp,sp,48                                   | 00161208: dfb10008  ld	s1,8(sp)
+!! 0016120c: 00000000  nop                                              | 0016120c: dfb20010  ld	s2,16(sp)
+!! 00161210: 0260282d  move	a1,s3                                       | 00161210: dfb30018  ld	s3,24(sp)
+!! 00161214: 0240302d  move	a2,s2                                       | 00161214: dfb40020  ld	s4,32(sp)
+!! 00161218: 0c058122  jal	0x160488                                     | 00161218: dfbf0028  ld	ra,40(sp)
+!! 0016121c: 0220382d  move	a3,s1                                       | 0016121c: 03e00008  jr	ra
+!! 00161220: 1000ffed  b	0x1611d8                                       | 00161220: 27bd0030  addiu	sp,sp,48
+!! 00161224: 00000000  nop                                              | 

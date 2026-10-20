@@ -1,0 +1,25 @@
+001a1658: compiled 84 bytes, target 84 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001a1658: 27bdfff0  addiu	sp,sp,-16                                  | 001a1658: 27bdfff0  addiu	sp,sp,-16
+   001a165c: 0080702d  move	t6,a0                                       | 001a165c: 0080702d  move	t6,a0
+   001a1660: ffbf0000  sd	ra,0(sp)                                      | 001a1660: ffbf0000  sd	ra,0(sp)
+   001a1664: 240f0001  li	t7,1                                          | 001a1664: 240f0001  li	t7,1
+   001a1668: 108f000d  beq	a0,t7,0x1a16a0                               | 001a1668: 108f000d  beq	a0,t7,1a16a0 <func_001a1658+0x48>
+   001a166c: 288d0002  slti	t5,a0,2                                     | 001a166c: 288d0002  slti	t5,a0,2
+   001a1670: 11a00009  beqz	t5,0x1a1698                                 | 001a1670: 11a00009  beqz	t5,1a1698 <func_001a1658+0x40>
+   001a1674: 240f000e  li	t7,14                                         | 001a1674: 240f000e  li	t7,14
+   001a1678: 10800004  beqz	a0,0x1a168c                                 | 001a1678: 10800004  beqz	a0,1a168c <func_001a1658+0x34>
+   001a167c: dfbf0000  ld	ra,0(sp)                                      | 001a167c: dfbf0000  ld	ra,0(sp)
+   001a1680: 01c0202d  move	a0,t6                                       | 001a1680: 01c0202d  move	a0,t6
+   001a1684: 08068550  j	0x1a1540                                       | 001a1684: 08068550  j	1a1540 <func_001a1540>
+   001a1688: 27bd0010  addiu	sp,sp,16                                   | 001a1688: 27bd0010  addiu	sp,sp,16
+   001a168c: 0000102d  move	v0,zero                                     | 001a168c: 0000102d  move	v0,zero
+   001a1690: 03e00008  jr	ra                                            | 001a1690: 03e00008  jr	ra
+   001a1694: 27bd0010  addiu	sp,sp,16                                   | 001a1694: 27bd0010  addiu	sp,sp,16
+   001a1698: 148ffff9  bne	a0,t7,0x1a1680                               | 001a1698: 148ffff9  bne	a0,t7,1a1680 <func_001a1658+0x28>
+   001a169c: dfbf0000  ld	ra,0(sp)                                      | 001a169c: dfbf0000  ld	ra,0(sp)
+   001a16a0: dfbf0000  ld	ra,0(sp)                                      | 001a16a0: dfbf0000  ld	ra,0(sp)
+   001a16a4: 08068574  j	0x1a15d0                                       | 001a16a4: 08068574  j	1a15d0 <func_001a15d0>
+   001a16a8: 27bd0010  addiu	sp,sp,16                                   | 001a16a8: 27bd0010  addiu	sp,sp,16

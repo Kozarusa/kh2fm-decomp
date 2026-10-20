@@ -1,0 +1,31 @@
+001e0230: compiled 108 bytes, target 108 bytes, exact=False
+Differing words: 16. First difference at instruction 10 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001e0230: 27bdffd0  addiu	sp,sp,-48                                  | 001e0230: 27bdffd0  addiu	sp,sp,-48
+   001e0234: ffb00000  sd	s0,0(sp)                                      | 001e0234: ffb00000  sd	s0,0(sp)
+   001e0238: ffb10008  sd	s1,8(sp)                                      | 001e0238: ffb10008  sd	s1,8(sp)
+   001e023c: ffb20010  sd	s2,16(sp)                                     | 001e023c: ffb20010  sd	s2,16(sp)
+   001e0240: 0000802d  move	s0,zero                                     | 001e0240: 0000802d  move	s0,zero
+   001e0244: ffb30018  sd	s3,24(sp)                                     | 001e0244: ffb30018  sd	s3,24(sp)
+   001e0248: 00a0882d  move	s1,a1                                       | 001e0248: 00a0882d  move	s1,a1
+   001e024c: ffbf0020  sd	ra,32(sp)                                     | 001e024c: ffbf0020  sd	ra,32(sp)
+   001e0250: 0080902d  move	s2,a0                                       | 001e0250: 0080902d  move	s2,a0
+   001e0254: 3c1301da  lui	s3,0x1da                                     | 001e0254: 3c1301da  lui	s3,0x1da
+!! 001e0258: 56000002  bnezl	s0,0x1e0264                                | 001e0258: 12000002  beqz	s0,1e0264 <func_001e0230+0x34>
+!! 001e025c: 8e040014  lw	a0,20(s0)                                     | 001e025c: 8e64e348  lw	a0,-7352(s3)   ; = D_01d9e348
+!! 001e0260: 8e64e348  lw	a0,-7352(s3)   ; = D_01d9e348                 | 001e0260: 8e040014  lw	a0,20(s0)
+!! 001e0264: 14800008  bnez	a0,0x1e0288                                 | 001e0264: 10800006  beqz	a0,1e0280 <func_001e0230+0x50>
+   001e0268: 0080802d  move	s0,a0                                       | 001e0268: 0080802d  move	s0,a0
+!! 001e026c: dfb00000  ld	s0,0(sp)                                      | 001e026c: 0240282d  move	a1,s2
+!! 001e0270: dfb10008  ld	s1,8(sp)                                      | 001e0270: 0c07807a  jal	1e01e8 <func_001e01e8>
+!! 001e0274: dfb20010  ld	s2,16(sp)                                     | 001e0274: 0220302d  move	a2,s1
+!! 001e0278: dfb30018  ld	s3,24(sp)                                     | 001e0278: 1000fff7  b	1e0258 <func_001e0230+0x28>
+!! 001e027c: dfbf0020  ld	ra,32(sp)                                     | 001e027c: 00000000  nop
+!! 001e0280: 03e00008  jr	ra                                            | 001e0280: dfb00000  ld	s0,0(sp)
+!! 001e0284: 27bd0030  addiu	sp,sp,48                                   | 001e0284: dfb10008  ld	s1,8(sp)
+!! 001e0288: 0240282d  move	a1,s2                                       | 001e0288: dfb20010  ld	s2,16(sp)
+!! 001e028c: 0c07807a  jal	0x1e01e8                                     | 001e028c: dfb30018  ld	s3,24(sp)
+!! 001e0290: 0220302d  move	a2,s1                                       | 001e0290: dfbf0020  ld	ra,32(sp)
+!! 001e0294: 1000fff0  b	0x1e0258                                       | 001e0294: 03e00008  jr	ra
+!! 001e0298: 00000000  nop                                              | 001e0298: 27bd0030  addiu	sp,sp,48

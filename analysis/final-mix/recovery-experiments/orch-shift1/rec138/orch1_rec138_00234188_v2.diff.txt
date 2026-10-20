@@ -1,0 +1,28 @@
+00234188: compiled 96 bytes, target 96 bytes, exact=False
+Differing words: 16. First difference at instruction 0 (0-based).
+
+ORIGINAL                                                                | COMPILED
+!! 00234188: 3c0a0036  lui	t2,0x36                                      | 00234188: 3c0b0036  lui	t3,0x36
+!! 0023418c: 3c030036  lui	v1,0x36                                      | 0023418c: 3c0a0036  lui	t2,0x36
+!! 00234190: 8d4ee360  lw	t6,-7328(t2)   ; = D_0035e360                 | 00234190: 8d6de360  lw	t5,-7328(t3)   ; = D_0035e360
+   00234194: 3c0f01db  lui	t7,0x1db                                     | 00234194: 3c0f01db  lui	t7,0x1db
+!! 00234198: 8c6be368  lw	t3,-7320(v1)   ; = D_0035e368                 | 00234198: 25efdc00  addiu	t7,t7,-9216   ; = D_01dadc00
+!! 0023419c: 25efdc00  addiu	t7,t7,-9216   ; = D_01dadc00               | 0023419c: 8d4ce368  lw	t4,-7320(t2)   ; = D_0035e368
+!! 002341a0: 25cd0001  addiu	t5,t6,1                                    | 002341a0: 000d7140  sll	t6,t5,0x5
+!! 002341a4: 000e7140  sll	t6,t6,0x5                                    | 002341a4: 01cf7021  addu	t6,t6,t7
+!! 002341a8: 31ad003f  andi	t5,t5,0x3f                                  | 002341a8: 25ad0001  addiu	t5,t5,1
+!! 002341ac: 01cf7021  addu	t6,t6,t7                                    | 002341ac: adc9001c  sw	t1,28(t6)
+!! 002341b0: 256c0001  addiu	t4,t3,1                                    | 002341b0: 31ad003f  andi	t5,t5,0x3f
+!! 002341b4: adc9001c  sw	t1,28(t6)                                     | 002341b4: 258f0001  addiu	t7,t4,1
+!! 002341b8: 240f0003  li	t7,3                                          | 002341b8: 0180102d  move	v0,t4
+!! 002341bc: 0160102d  move	v0,t3                                       | 002341bc: ad6de360  sw	t5,-7328(t3)   ; = D_0035e360
+!! 002341c0: ad4de360  sw	t5,-7328(t2)   ; = D_0035e360                 | 002341c0: ad4fe368  sw	t7,-7320(t2)   ; = D_0035e368
+!! 002341c4: ac6ce368  sw	t4,-7320(v1)   ; = D_0035e368                 | 002341c4: 240f0003  li	t7,3
+   002341c8: adcf0000  sw	t7,0(t6)                                      | 002341c8: adcf0000  sw	t7,0(t6)
+   002341cc: adc40008  sw	a0,8(t6)                                      | 002341cc: adc40008  sw	a0,8(t6)
+   002341d0: adc5000c  sw	a1,12(t6)                                     | 002341d0: adc5000c  sw	a1,12(t6)
+   002341d4: adc60010  sw	a2,16(t6)                                     | 002341d4: adc60010  sw	a2,16(t6)
+   002341d8: adc70014  sw	a3,20(t6)                                     | 002341d8: adc70014  sw	a3,20(t6)
+   002341dc: adc80018  sw	t0,24(t6)                                     | 002341dc: adc80018  sw	t0,24(t6)
+   002341e0: 03e00008  jr	ra                                            | 002341e0: 03e00008  jr	ra
+!! 002341e4: adcb0004  sw	t3,4(t6)                                      | 002341e4: adcc0004  sw	t4,4(t6)

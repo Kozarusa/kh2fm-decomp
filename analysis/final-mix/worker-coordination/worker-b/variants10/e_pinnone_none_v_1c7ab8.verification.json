@@ -1,0 +1,18 @@
+{
+  "source_sha256": "0d4a259226dcdc12ffb90e258cceade925dfb17e8e4b14a7a139328e534cdd91",
+  "source": "analysis/final-mix/worker-coordination/worker-b/variants10/e_pinnone_none_v_1c7ab8.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "001c7ab8",
+      "symbol": "_Z13func_001c7ab8jj",
+      "compiled_size": 148,
+      "target_size": 144,
+      "ghidra_body_size": 144,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "e0ffbd27ffff0f341700af141000bfff01000f2408008f14ffff0f34d5010f3c37000e3cc098e1c5d4dfc0c50000a1e70000a0e7ffff0f340b00af14ffff0f3401000f2408008f14ffff0f34d5010f3c37000e3cc498e1c5d8dfc0c50000a1e70000a0e7ffff0f340800af141000bfdf01000f2405008f1400000000d501043c786e0c0cd09884241000bfdf0800e0032000bd27",
+      "target_hex": "f0ffbd27ffff0f340000bfff1500af140000000001000f2407008f14ffff0f3437000f3cd4dfef250000e0c5d5010f3cc098e0e5ffff0f340a00af14ffff0f3401000f2407008f14ffff0f3437000f3cd8dfef250000e0c5d5010f3cc498e0e5ffff0f340800af140000bfdf01000f2405008f1400000000d501043c786e0c0cd09884240000bfdf0800e0031000bd27"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+00152ab8: compiled 52 bytes, target 48 bytes, exact=False
+Differing words: 8. First difference at instruction 2 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00152ab8: 27bdfff0  addiu	sp,sp,-16                                  | 00152ab8: 27bdfff0  addiu	sp,sp,-16
+   00152abc: ac8801b8  sw	t0,440(a0)                                    | 00152abc: ac8801b8  sw	t0,440(a0)
+!! 00152ac0: ffbf0000  sd	ra,0(sp)                                      | 00152ac0: ac8a01c0  sw	t2,448(a0)
+   00152ac4: 0080782d  move	t7,a0                                       | 00152ac4: 0080782d  move	t7,a0
+!! 00152ac8: ac8a01c0  sw	t2,448(a0)                                    | 00152ac8: ffbf0000  sd	ra,0(sp)
+   00152acc: 0160402d  move	t0,t3                                       | 00152acc: 0160402d  move	t0,t3
+!! 00152ad0: ac8901bc  sw	t1,444(a0)                                    | 00152ad0: ade901bc  sw	t1,444(t7)
+!! 00152ad4: 2405006c  li	a1,108                                        | 00152ad4: 0080202d  move	a0,a0
+   00152ad8: ade601b4  sw	a2,436(t7)                                    | 00152ad8: ade601b4  sw	a2,436(t7)
+!! 00152adc: dfbf0000  ld	ra,0(sp)                                      | 00152adc: 2405006c  li	a1,108
+!! 00152ae0: 08054942  j	0x152508                                       | 00152ae0: dfbf0000  ld	ra,0(sp)
+!! 00152ae4: 27bd0010  addiu	sp,sp,16                                   | 00152ae4: 08054942  j	152508 <func_00152508>
+!!                                                                      | 00152ae8: 27bd0010  addiu	sp,sp,16

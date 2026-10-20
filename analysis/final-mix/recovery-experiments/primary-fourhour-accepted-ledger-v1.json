@@ -1,0 +1,116 @@
+{
+  "baseline_exact": 5631,
+  "latest_accepted_exact": 5661,
+  "accepted_addresses": [
+    "002eb9d8",
+    "00106558",
+    "001024b0",
+    "001d6538",
+    "0020f118",
+    "0020f150",
+    "0022b7f0",
+    "00100338",
+    "00101d38",
+    "0013e4b8",
+    "003155c0",
+    "00171348",
+    "00171378",
+    "00171e58",
+    "0030a2d0",
+    "0018f218",
+    "0018d808",
+    "001d2210",
+    "001ac700",
+    "001b8800",
+    "001d22a8",
+    "001c0c38",
+    "001c10f8",
+    "001d23e0",
+    "001d30c0",
+    "001d7980",
+    "002c22b8",
+    "001fab08",
+    "001fb870",
+    "002e9c58"
+  ],
+  "instruction_bytes": 1628,
+  "checkpoints": [
+    {
+      "file": "analysis/final-mix/primary-addressalias-checkpoint-2026-10-08.json",
+      "sha256": "ad91366b6ac6655a37e934dbd13a1ba927e601dfae6018d07cea40256b9d8d0a",
+      "exact": 5635
+    },
+    {
+      "file": "analysis/final-mix/primary-allocatorfinish-checkpoint-2026-10-08.json",
+      "sha256": "56f4fb25bca2ccc5fedd91264ad8bdd1750d9a529470a905e4979d88a963668b",
+      "exact": 5634
+    },
+    {
+      "file": "analysis/final-mix/primary-animationfinish-checkpoint-2026-10-08.json",
+      "sha256": "8e94a0258f1c61a40b1349e5055dd9f88c267570533f2fe54e522b4d8bf0ef5f",
+      "exact": 5632
+    },
+    {
+      "file": "analysis/final-mix/primary-callbackfamily-checkpoint-2026-10-08.json",
+      "sha256": "3b4f4f895395246bc70613063ce42dd4c3f56a5926346bcf2a15e08e226e6655",
+      "exact": 5658
+    },
+    {
+      "file": "analysis/final-mix/primary-conditionfinish-checkpoint-2026-10-08.json",
+      "sha256": "392d05b5507aeb1621ca5a1544a75a3ec03e1f05584c92c23fd0c602d0d4b50f",
+      "exact": 5631
+    },
+    {
+      "file": "analysis/final-mix/primary-conditionresult-checkpoint-2026-10-08.json",
+      "sha256": "d434204cfff1521a40fcb2cdca2d06791fc4f7f15cad63575d74a43acff31ee7",
+      "exact": 5661
+    },
+    {
+      "file": "analysis/final-mix/primary-floatdenominator-checkpoint-2026-10-08.json",
+      "sha256": "f977cae0298a170f5e4d0fdf6f66e46556e432a53785fbf91999fadd44fe0ca3",
+      "exact": 5633
+    },
+    {
+      "file": "analysis/final-mix/primary-framealias-checkpoint-2026-10-08.json",
+      "sha256": "d0202c1e9799aa4f05a9143bf2582d25dbf6b6f2d1017f554e358fdc5cd0c833",
+      "exact": 5640
+    },
+    {
+      "file": "analysis/final-mix/primary-globalcall-checkpoint-2026-10-08.json",
+      "sha256": "c67b2810ae22616457d50402310586d38686f51bfb79773940dac292c4f3ebbf",
+      "exact": 5637
+    },
+    {
+      "file": "analysis/final-mix/primary-memoryfamily-checkpoint-2026-10-08.json",
+      "sha256": "7558652fc1eddf9bc35b92db8cd2e67661d3af7204350987aa23981af0570388",
+      "exact": 5649
+    },
+    {
+      "file": "analysis/final-mix/primary-nearhelper-checkpoint-2026-10-08.json",
+      "sha256": "106a124b4183e0fc8359b00fcb079e218b66ae54bdc27080df63f9ef57cef53a",
+      "exact": 5641
+    },
+    {
+      "file": "analysis/final-mix/primary-offsetpair-checkpoint-2026-10-08.json",
+      "sha256": "73b8f075fb5162bc21c23e48bb7657f395ae12444b4bedcbb74b6a41eae43a7f",
+      "exact": 5660
+    },
+    {
+      "file": "analysis/final-mix/primary-tailcallload-checkpoint-2026-10-08.json",
+      "sha256": "8053363460915df63ff9f57fcfc707ffcb9f8d9e0347f2fb80bb535943190212",
+      "exact": 5650
+    },
+    {
+      "file": "analysis/final-mix/primary-virtualaddress-checkpoint-2026-10-08.json",
+      "sha256": "199f8b6733a91acd2145592a0c478295dcf19ef6a81885591fc403554462db2c",
+      "exact": 5643
+    },
+    {
+      "file": "analysis/final-mix/primary-virtualsiblings-checkpoint-2026-10-08.json",
+      "sha256": "6ad4c0716c9021526fddbc2b0943c1535c87ac7fdf28d823e4cdeaf4d7441a00",
+      "exact": 5646
+    }
+  ],
+  "in_flight_phase": "mixedtransport",
+  "in_flight_exec_session": 27059
+}

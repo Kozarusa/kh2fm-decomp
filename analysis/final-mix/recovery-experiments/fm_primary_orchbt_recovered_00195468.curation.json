@@ -1,0 +1,14 @@
+{
+  "probe_source": "analysis/final-mix/recovery-experiments/orch-shift1/nm01/orch1_nm01_00195468_v1.cpp",
+  "probe_source_sha256": "85fe1349a7a51b792e18fed747871de939aaf1ec76979636f89f393552d9a2cf",
+  "probe_proof_sha256": "944019a6c8e1ee4d194ebd7f7aff353f9e4085f3a1a3c681abd141b0fae176b6",
+  "curated_source": "analysis/final-mix/recovery-experiments/fm_primary_orchbt_recovered_00195468.cpp",
+  "curated_source_sha256": "9e13623dec9cb9f35947298c8b8475d2e87c0049cf082cb40b30536471ccae87",
+  "selected_addresses": [
+    "00195468"
+  ],
+  "exclusion_receipt": null,
+  "limitations": [
+    "Curated source still requires a new probe, registration and full build."
+  ]
+}

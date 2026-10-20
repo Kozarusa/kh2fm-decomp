@@ -1,0 +1,14 @@
+{
+  "probe_source": "analysis/final-mix/recovery-experiments/queue-run-20261009/recovery-c/recovery_c_001045b8_691fe6b7_v0.cpp",
+  "probe_source_sha256": "7e517ad6f456fbe357b9e37d90286e230514c8357fdac7daacebb5a79d2f5a73",
+  "probe_proof_sha256": "48d9b3041800644a732ebafca33306da37ffdd1948585b22f757919c893f5c38",
+  "curated_source": "analysis/final-mix/recovery-experiments/fm_primary_queuetheta_recovered_001045b8.cpp",
+  "curated_source_sha256": "9609daa4e0c06884503e9431a8976850217867f952b072b0da22c99fc86ae5a1",
+  "selected_addresses": [
+    "001045b8"
+  ],
+  "exclusion_receipt": null,
+  "limitations": [
+    "Curated source still requires a new probe, registration and full build."
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "source_sha256": "aefa0f51714a072740b1dcf73d9b42d95a53fd13116b35c66848e80915ce0e6f",
+  "source": "analysis/final-mix/recovery-experiments/fm_primary_orchak_recovered_0014cc40.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "0014cc40",
+      "symbol": "_Z13func_0014cc40yyyyi",
+      "compiled_size": 116,
+      "target_size": 116,
+      "ghidra_body_size": 116,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "d0ffbd270000b0ff0800b1ff1000b2ff2d8000011800b3ff2d8880002000b4ff2d90a0002800bfff2d98c0002da0e0003a16040c80801000442442242800bfdf218002022d2820020800048e2d3040022d3860020800b1df2d4080020000b0df1000b2df1800b3df2000b4dfa03205083000bd27",
+      "target_hex": "d0ffbd270000b0ff0800b1ff1000b2ff2d8000011800b3ff2d8880002000b4ff2d90a0002800bfff2d98c0002da0e0003a16040c80801000442442242800bfdf218002022d2820020800048e2d3040022d3860020800b1df2d4080020000b0df1000b2df1800b3df2000b4dfa03205083000bd27"
+    }
+  ]
+}

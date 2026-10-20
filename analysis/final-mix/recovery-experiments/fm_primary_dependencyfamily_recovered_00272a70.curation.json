@@ -1,0 +1,14 @@
+{
+  "probe_source": "analysis/final-mix/recovery-experiments/fm_primary_dependencyfamily_v1_00272a70.cpp",
+  "probe_source_sha256": "127c7a912f12b9efe4c9432cfb5b655de4a1dc092965accbdbd87e6488e323a1",
+  "probe_proof_sha256": "f848e5a05dddadea16e2f0f76aab90be70a5b10bf093105e865a1596759b9ed0",
+  "curated_source": "analysis/final-mix/recovery-experiments/fm_primary_dependencyfamily_recovered_00272a70.cpp",
+  "curated_source_sha256": "127c7a912f12b9efe4c9432cfb5b655de4a1dc092965accbdbd87e6488e323a1",
+  "selected_addresses": [
+    "00272a70"
+  ],
+  "exclusion_receipt": null,
+  "limitations": [
+    "Curated source still requires a new probe, registration and full build."
+  ]
+}

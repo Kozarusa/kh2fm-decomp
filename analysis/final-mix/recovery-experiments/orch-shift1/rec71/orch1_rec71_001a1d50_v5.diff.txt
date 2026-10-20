@@ -1,0 +1,30 @@
+001a1d50: compiled 104 bytes, target 104 bytes, exact=False
+Differing words: 3. First difference at instruction 13 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001a1d50: 44800000  mtc1	zero,$f0                                    | 001a1d50: 44800000  mtc1	zero,$f0
+   001a1d54: 27bdfff0  addiu	sp,sp,-16                                  | 001a1d54: 27bdfff0  addiu	sp,sp,-16
+   001a1d58: c48101c0  lwc1	$f1,448(a0)                                 | 001a1d58: c48101c0  lwc1	$f1,448(a0)
+   001a1d5c: ffbf0000  sd	ra,0(sp)                                      | 001a1d5c: ffbf0000  sd	ra,0(sp)
+   001a1d60: 46010034  c.lt.s	$f0,$f1                                   | 001a1d60: 46010034  c.lt.s	$f0,$f1
+   001a1d64: 45000011  bc1f	0x1a1dac                                    | 001a1d64: 45000011  bc1f	1a1dac <func_001a1d50+0x5c>
+   001a1d68: 46000086  mov.s	$f2,$f0                                    | 001a1d68: 46000086  mov.s	$f2,$f0
+   001a1d6c: c48001bc  lwc1	$f0,444(a0)                                 | 001a1d6c: c48001bc  lwc1	$f0,444(a0)
+   001a1d70: 460c0000  add.s	$f0,$f0,$f12                               | 001a1d70: 460c0000  add.s	$f0,$f0,$f12
+   001a1d74: 46020034  c.lt.s	$f0,$f2                                   | 001a1d74: 46020034  c.lt.s	$f0,$f2
+   001a1d78: 45030006  bc1tl	0x1a1d94                                   | 001a1d78: 45030006  bc1tl	1a1d94 <func_001a1d50+0x44>
+   001a1d7c: 44800000  mtc1	zero,$f0                                    | 001a1d7c: 44800000  mtc1	zero,$f0
+   001a1d80: 46000834  c.lt.s	$f1,$f0                                   | 001a1d80: 46000834  c.lt.s	$f1,$f0
+!! 001a1d84: 45010002  bc1t	0x1a1d90                                    | 001a1d84: 45000002  bc1f	1a1d90 <func_001a1d50+0x40>
+!! 001a1d88: 46000886  mov.s	$f2,$f1                                    | 001a1d88: 46000086  mov.s	$f2,$f0
+!! 001a1d8c: 46000086  mov.s	$f2,$f0                                    | 001a1d8c: 46000886  mov.s	$f2,$f1
+   001a1d90: 44800000  mtc1	zero,$f0                                    | 001a1d90: 44800000  mtc1	zero,$f0
+   001a1d94: 46001032  c.eq.s	$f2,$f0                                   | 001a1d94: 46001032  c.eq.s	$f2,$f0
+   001a1d98: 45000004  bc1f	0x1a1dac                                    | 001a1d98: 45000004  bc1f	1a1dac <func_001a1d50+0x5c>
+   001a1d9c: e48201bc  swc1	$f2,444(a0)                                 | 001a1d9c: e48201bc  swc1	$f2,444(a0)
+   001a1da0: dfbf0000  ld	ra,0(sp)                                      | 001a1da0: dfbf0000  ld	ra,0(sp)
+   001a1da4: 0806876e  j	0x1a1db8                                       | 001a1da4: 0806876e  j	1a1db8 <func_001a1db8>
+   001a1da8: 27bd0010  addiu	sp,sp,16                                   | 001a1da8: 27bd0010  addiu	sp,sp,16
+   001a1dac: dfbf0000  ld	ra,0(sp)                                      | 001a1dac: dfbf0000  ld	ra,0(sp)
+   001a1db0: 03e00008  jr	ra                                            | 001a1db0: 03e00008  jr	ra
+   001a1db4: 27bd0010  addiu	sp,sp,16                                   | 001a1db4: 27bd0010  addiu	sp,sp,16

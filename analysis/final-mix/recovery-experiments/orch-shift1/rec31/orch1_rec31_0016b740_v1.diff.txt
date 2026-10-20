@@ -1,0 +1,31 @@
+0016b740: compiled 108 bytes, target 96 bytes, exact=False
+Differing words: 23. First difference at instruction 4 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0016b740: 27bdfff0  addiu	sp,sp,-16                                  | 0016b740: 27bdfff0  addiu	sp,sp,-16
+   0016b744: 240f0236  li	t7,566                                        | 0016b744: 240f0236  li	t7,566
+   0016b748: ffb00000  sd	s0,0(sp)                                      | 0016b748: ffb00000  sd	s0,0(sp)
+   0016b74c: ffbf0008  sd	ra,8(sp)                                      | 0016b74c: ffbf0008  sd	ra,8(sp)
+!! 0016b750: 148f0006  bne	a0,t7,0x16b76c                               | 0016b750: 548f0008  bnel	a0,t7,16b774 <func_0016b740+0x34>
+!! 0016b754: 3c0f0035  lui	t7,0x35                                      | 0016b754: 0004203c  dsll32	a0,a0,0x0
+!! 0016b758: 8de2e948  lw	v0,-5816(t7)   ; = D_0034e948                 | 0016b758: 3c0f0035  lui	t7,0x35
+!! 0016b75c: dfb00000  ld	s0,0(sp)                                      | 0016b75c: 8defe948  lw	t7,-5816(t7)   ; = D_0034e948
+!! 0016b760: dfbf0008  ld	ra,8(sp)                                      | 0016b760: dfb00000  ld	s0,0(sp)
+!! 0016b764: 03e00008  jr	ra                                            | 0016b764: 01e0102d  move	v0,t7
+!! 0016b768: 27bd0010  addiu	sp,sp,16                                   | 0016b768: dfbf0008  ld	ra,8(sp)
+!! 0016b76c: 0c05ba48  jal	0x16e920                                     | 0016b76c: 03e00008  jr	ra
+!! 0016b770: 00000000  nop                                              | 0016b770: 27bd0010  addiu	sp,sp,16
+!! 0016b774: 0040802d  move	s0,v0                                       | 0016b774: 0c05ba48  jal	16e920 <func_0016e920>
+!! 0016b778: 0000102d  move	v0,zero                                     | 0016b778: 0004203f  dsra32	a0,a0,0x0
+!! 0016b77c: 0c06e6f2  jal	0x1b9bc8                                     | 0016b77c: 0002803c  dsll32	s0,v0,0x0
+!! 0016b780: 0040202d  move	a0,v0                                       | 0016b780: 0010803f  dsra32	s0,s0,0x0
+!! 0016b784: 5040fff6  beqzl	v0,0x16b760                                | 0016b784: 0000102d  move	v0,zero
+!! 0016b788: dfb00000  ld	s0,0(sp)                                      | 0016b788: 0c06e6f2  jal	1b9bc8 <func_001b9bc8>
+!! 0016b78c: 8c4f0008  lw	t7,8(v0)                                      | 0016b78c: 0040202d  move	a0,v0
+!! 0016b790: 51f0fff3  beql	t7,s0,0x16b760                              | 0016b790: 1040fff3  beqz	v0,16b760 <func_0016b740+0x20>
+!! 0016b794: dfb00000  ld	s0,0(sp)                                      | 0016b794: 0000782d  move	t7,zero
+!! 0016b798: 1000fff8  b	0x16b77c                                       | 0016b798: 8c4f0008  lw	t7,8(v0)
+!! 0016b79c: 00000000  nop                                              | 0016b79c: 15f0fffa  bne	t7,s0,16b788 <func_0016b740+0x48>
+!!                                                                      | 0016b7a0: 0040782d  move	t7,v0
+!!                                                                      | 0016b7a4: 1000ffef  b	16b764 <func_0016b740+0x24>
+!!                                                                      | 0016b7a8: dfb00000  ld	s0,0(sp)

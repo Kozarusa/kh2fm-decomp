@@ -1,0 +1,35 @@
+001a3958: compiled 124 bytes, target 112 bytes, exact=False
+Differing words: 26. First difference at instruction 3 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001a3958: 27bdffe0  addiu	sp,sp,-32                                  | 001a3958: 27bdffe0  addiu	sp,sp,-32
+   001a395c: ffb00000  sd	s0,0(sp)                                      | 001a395c: ffb00000  sd	s0,0(sp)
+   001a3960: ffb10008  sd	s1,8(sp)                                      | 001a3960: ffb10008  sd	s1,8(sp)
+!! 001a3964: ffbf0010  sd	ra,16(sp)                                     | 001a3964: ffb20010  sd	s2,16(sp)
+   001a3968: 0000802d  move	s0,zero                                     | 001a3968: 0000802d  move	s0,zero
+!! 001a396c: 0080882d  move	s1,a0                                       | 001a396c: ffbf0018  sd	ra,24(sp)
+!! 001a3970: 0c06a044  jal	0x1a8110                                     | 001a3970: 0080882d  move	s1,a0
+!! 001a3974: 0200202d  move	a0,s0                                       | 001a3974: 0000902d  move	s2,zero
+!! 001a3978: 14400007  bnez	v0,0x1a3998                                 | 001a3978: 0c06a044  jal	1a8110 <func_001a8110>
+!! 001a397c: 0040802d  move	s0,v0                                       | 001a397c: 0200202d  move	a0,s0
+!! 001a3980: 0000102d  move	v0,zero                                     | 001a3980: 14400008  bnez	v0,1a39a4 <func_001a3958+0x4c>
+!! 001a3984: dfb00000  ld	s0,0(sp)                                      | 001a3984: 0040802d  move	s0,v0
+!! 001a3988: dfb10008  ld	s1,8(sp)                                      | 001a3988: 0240102d  move	v0,s2
+!! 001a398c: dfbf0010  ld	ra,16(sp)                                     | 001a398c: dfb00000  ld	s0,0(sp)
+!! 001a3990: 03e00008  jr	ra                                            | 001a3990: dfb10008  ld	s1,8(sp)
+!! 001a3994: 27bd0020  addiu	sp,sp,32                                   | 001a3994: dfb20010  ld	s2,16(sp)
+!! 001a3998: 920f0002  lbu	t7,2(s0)                                     | 001a3998: dfbf0018  ld	ra,24(sp)
+!! 001a399c: 15f1fff4  bne	t7,s1,0x1a3970                               | 001a399c: 03e00008  jr	ra
+!! 001a39a0: 00000000  nop                                              | 001a39a0: 27bd0020  addiu	sp,sp,32
+!! 001a39a4: 0c068d5c  jal	0x1a3570                                     | 001a39a4: 920f0002  lbu	t7,2(s0)
+!! 001a39a8: 96040000  lhu	a0,0(s0)                                     | 001a39a8: 15f1fff3  bne	t7,s1,1a3978 <func_001a3958+0x20>
+!! 001a39ac: 1840fff0  blez	v0,0x1a3970                                 | 001a39ac: 00000000  nop
+!! 001a39b0: 00000000  nop                                              | 001a39b0: 0c068d5c  jal	1a3570 <func_001a3570>
+   001a39b4: 96040000  lhu	a0,0(s0)                                     | 001a39b4: 96040000  lhu	a0,0(s0)
+!! 001a39b8: 0c068d38  jal	0x1a34e0                                     | 001a39b8: 1840ffef  blez	v0,1a3978 <func_001a3958+0x20>
+!! 001a39bc: 24050001  li	a1,1                                          | 001a39bc: 00000000  nop
+!! 001a39c0: 1000fff0  b	0x1a3984                                       | 001a39c0: 96040000  lhu	a0,0(s0)
+!! 001a39c4: 96020000  lhu	v0,0(s0)                                     | 001a39c4: 0c068d38  jal	1a34e0 <func_001a34e0>
+!!                                                                      | 001a39c8: 24050001  li	a1,1
+!!                                                                      | 001a39cc: 1000ffee  b	1a3988 <func_001a3958+0x30>
+!!                                                                      | 001a39d0: 96120000  lhu	s2,0(s0)

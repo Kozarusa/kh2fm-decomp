@@ -1,0 +1,21 @@
+001d3f38: compiled 56 bytes, target 68 bytes, exact=False
+Differing words: 12. First difference at instruction 2 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001d3f38: 948e0028  lhu	t6,40(a0)                                    | 001d3f38: 948e0028  lhu	t6,40(a0)
+   001d3f3c: 240f0158  li	t7,344                                        | 001d3f3c: 240f0158  li	t7,344
+!! 001d3f40: 11cf0007  beq	t6,t7,0x1d3f60                               | 001d3f40: 11cf0006  beq	t6,t7,1d3f5c <func_001d3f38+0x24>
+   001d3f44: 29cd0159  slti	t5,t6,345                                   | 001d3f44: 29cd0159  slti	t5,t6,345
+   001d3f48: 11a00007  beqz	t5,0x1d3f68                                 | 001d3f48: 11a00007  beqz	t5,1d3f68 <func_001d3f38+0x30>
+!! 001d3f4c: 240f011a  li	t7,282                                        | 001d3f4c: 24020001  li	v0,1
+!! 001d3f50: 11cf0003  beq	t6,t7,0x1d3f60                               | 001d3f50: 240f011a  li	t7,282
+!! 001d3f54: 00000000  nop                                              | 001d3f54: 15cf0002  bne	t6,t7,1d3f60 <func_001d3f38+0x28>
+!! 001d3f58: 03e00008  jr	ra                                            | 001d3f58: 00000000  nop
+!! 001d3f5c: 24020001  li	v0,1                                          | 001d3f5c: 0000102d  move	v0,zero
+   001d3f60: 03e00008  jr	ra                                            | 001d3f60: 03e00008  jr	ra
+!! 001d3f64: 0000102d  move	v0,zero                                     | 001d3f64: 00000000  nop
+!! 001d3f68: 240f01e4  li	t7,484                                        | 001d3f68: 1000fffa  b	1d3f54 <func_001d3f38+0x1c>
+!! 001d3f6c: 15cffffa  bne	t6,t7,0x1d3f58                               | 001d3f6c: 240f01e4  li	t7,484
+!! 001d3f70: 00000000  nop                                              | 
+!! 001d3f74: 1000fffa  b	0x1d3f60                                       | 
+!! 001d3f78: 00000000  nop                                              | 

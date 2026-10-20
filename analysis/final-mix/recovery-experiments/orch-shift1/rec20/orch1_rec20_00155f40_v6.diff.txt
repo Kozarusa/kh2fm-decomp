@@ -1,0 +1,35 @@
+00155f40: compiled 100 bytes, target 124 bytes, exact=False
+Differing words: 24. First difference at instruction 2 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00155f40: 27bdfff0  addiu	sp,sp,-16                                  | 00155f40: 27bdfff0  addiu	sp,sp,-16
+   00155f44: ffbf0000  sd	ra,0(sp)                                      | 00155f44: ffbf0000  sd	ra,0(sp)
+!! 00155f48: 8c8c0034  lw	t4,52(a0)                                     | 00155f48: 8c840034  lw	a0,52(a0)
+!! 00155f4c: 1180000d  beqz	t4,0x155f84                                 | 00155f4c: 10800011  beqz	a0,155f94 <func_00155f40+0x54>
+!! 00155f50: 240f0017  li	t7,23                                         | 00155f50: 240e0017  li	t6,23
+!! 00155f54: 8d8f048c  lw	t7,1164(t4)                                   | 00155f54: 8c84048c  lw	a0,1164(a0)
+!! 00155f58: 91ef01af  lbu	t7,431(t7)                                   | 00155f58: 908e01af  lbu	t6,431(a0)
+!! 00155f5c: 2dee0005  sltiu	t6,t7,5                                    | 00155f5c: 2dcf0005  sltiu	t7,t6,5
+!! 00155f60: 11c0000c  beqz	t6,0x155f94                                 | 00155f60: 11e00007  beqz	t7,155f80 <func_00155f40+0x40>
+!! 00155f64: 3c0e0037  lui	t6,0x37                                      | 00155f64: 000e7880  sll	t7,t6,0x2
+!! 00155f68: 000f7880  sll	t7,t7,0x2                                    | 00155f68: 3c0e0037  lui	t6,0x37
+   00155f6c: 25ceb2d8  addiu	t6,t6,-19752   ; = D_0036b2d8              | 00155f6c: 25ceb2d8  addiu	t6,t6,-19752   ; = D_0036b2d8
+   00155f70: 01ee7821  addu	t7,t7,t6                                    | 00155f70: 01ee7821  addu	t7,t7,t6
+   00155f74: 8ded0000  lw	t5,0(t7)                                      | 00155f74: 8ded0000  lw	t5,0(t7)
+   00155f78: 01a00008  jr	t5                                            | 00155f78: 01a00008  jr	t5
+   00155f7c: 00000000  nop                                              | 00155f7c: 00000000  nop
+!! 00155f80: 240f0013  li	t7,19                                         | 00155f80: 0c068778  jal	1a1de0 <func_001a1de0>
+!! 00155f84: dfbf0000  ld	ra,0(sp)                                      | 00155f84: 00000000  nop
+!! 00155f88: 01e0102d  move	v0,t7                                       | 00155f88: 240e001a  li	t6,26
+!! 00155f8c: 03e00008  jr	ra                                            | 00155f8c: 240f0017  li	t7,23
+!! 00155f90: 27bd0010  addiu	sp,sp,16                                   | 00155f90: 01e2700a  movz	t6,t7,v0
+!! 00155f94: 0c068778  jal	0x1a1de0                                     | 00155f94: dfbf0000  ld	ra,0(sp)
+!! 00155f98: 8d84048c  lw	a0,1164(t4)                                   | 00155f98: 01c0102d  move	v0,t6
+!! 00155f9c: 1440fff9  bnez	v0,0x155f84                                 | 00155f9c: 03e00008  jr	ra
+!! 00155fa0: 240f001a  li	t7,26                                         | 00155fa0: 27bd0010  addiu	sp,sp,16
+!! 00155fa4: 1000fff7  b	0x155f84                                       | 
+!! 00155fa8: 240f0017  li	t7,23                                         | 
+!! 00155fac: 1000fff5  b	0x155f84                                       | 
+!! 00155fb0: 240f0033  li	t7,51                                         | 
+!! 00155fb4: 1000fff3  b	0x155f84                                       | 
+!! 00155fb8: 240f008d  li	t7,141                                        | 

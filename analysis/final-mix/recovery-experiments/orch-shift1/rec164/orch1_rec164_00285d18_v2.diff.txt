@@ -1,0 +1,24 @@
+00285d18: compiled 80 bytes, target 60 bytes, exact=False
+Differing words: 19. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00285d18: 3c0e0037  lui	t6,0x37                                      | 00285d18: 3c0e0037  lui	t6,0x37
+!! 00285d1c: 81cf43c0  lb	t7,17344(t6)   ; = D_003743c0                 | 00285d1c: 91cf43c0  lbu	t7,17344(t6)   ; = D_003743c0
+!! 00285d20: 05e0000a  bltz	t7,0x285d4c                                 | 00285d20: 000f7e00  sll	t7,t7,0x18
+!! 00285d24: 0000102d  move	v0,zero                                     | 00285d24: 000f7e03  sra	t7,t7,0x18
+!! 00285d28: 25ce43c0  addiu	t6,t6,17344   ; = D_003743c0               | 00285d28: 05e0000c  bltz	t7,285d5c <func_00285d18+0x44>
+!! 00285d2c: 81cf0000  lb	t7,0(t6)                                      | 00285d2c: 25ce43c0  addiu	t6,t6,17344   ; = D_003743c0
+!! 00285d30: 15e40003  bne	t7,a0,0x285d40                               | 00285d30: 91cf0000  lbu	t7,0(t6)
+!! 00285d34: 25ce0001  addiu	t6,t6,1                                    | 00285d34: 24020001  li	v0,1
+!! 00285d38: 03e00008  jr	ra                                            | 00285d38: 000f7e00  sll	t7,t7,0x18
+!! 00285d3c: 24020001  li	v0,1                                          | 00285d3c: 000f7e03  sra	t7,t7,0x18
+!! 00285d40: 81cf0000  lb	t7,0(t6)                                      | 00285d40: 11e40007  beq	t7,a0,285d60 <func_00285d18+0x48>
+!! 00285d44: 05e1fff9  bgez	t7,0x285d2c                                 | 00285d44: 25ce0001  addiu	t6,t6,1
+!! 00285d48: 00000000  nop                                              | 00285d48: 91cf0000  lbu	t7,0(t6)
+!! 00285d4c: 03e00008  jr	ra                                            | 00285d4c: 000f7e00  sll	t7,t7,0x18
+!! 00285d50: 00000000  nop                                              | 00285d50: 000f7e03  sra	t7,t7,0x18
+!!                                                                      | 00285d54: 05e1fff6  bgez	t7,285d30 <func_00285d18+0x18>
+!!                                                                      | 00285d58: 00000000  nop
+!!                                                                      | 00285d5c: 0000102d  move	v0,zero
+!!                                                                      | 00285d60: 03e00008  jr	ra
+!!                                                                      | 00285d64: 00000000  nop

@@ -1,0 +1,34 @@
+00127f40: compiled 120 bytes, target 120 bytes, exact=False
+Differing words: 16. First difference at instruction 5 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00127f40: 27bdfff0  addiu	sp,sp,-16                                  | 00127f40: 27bdfff0  addiu	sp,sp,-16
+   00127f44: ffb00000  sd	s0,0(sp)                                      | 00127f44: ffb00000  sd	s0,0(sp)
+   00127f48: ffbf0008  sd	ra,8(sp)                                      | 00127f48: ffbf0008  sd	ra,8(sp)
+   00127f4c: 0c0492ee  jal	0x124bb8                                     | 00127f4c: 0c0492ee  jal	124bb8 <func_00124bb8>
+   00127f50: 0080802d  move	s0,a0                                       | 00127f50: 0080802d  move	s0,a0
+!! 00127f54: 3c0f0034  lui	t7,0x34                                      | 00127f54: 8e040004  lw	a0,4(s0)
+!! 00127f58: 8e040004  lw	a0,4(s0)                                      | 00127f58: 3c0f0034  lui	t7,0x34
+   00127f5c: 25ef7bb0  addiu	t7,t7,31664   ; = D_00347bb0               | 00127f5c: 25ef7bb0  addiu	t7,t7,31664   ; = D_00347bb0
+   00127f60: dfbf0008  ld	ra,8(sp)                                      | 00127f60: dfbf0008  ld	ra,8(sp)
+!! 00127f64: ae0f0000  sw	t7,0(s0)                                      | 00127f64: 948e0012  lhu	t6,18(a0)
+   00127f68: 3c0d003b  lui	t5,0x3b                                      | 00127f68: 3c0d003b  lui	t5,0x3b
+!! 00127f6c: 25ad99f0  addiu	t5,t5,-26128   ; = D_003a99f0              | 00127f6c: 948c0010  lhu	t4,16(a0)
+!! 00127f70: 948f0010  lhu	t7,16(a0)                                    | 00127f70: 25ad99f0  addiu	t5,t5,-26128   ; = D_003a99f0
+!! 00127f74: 94850012  lhu	a1,18(a0)                                    | 00127f74: ae0f0000  sw	t7,0(s0)
+!! 00127f78: ae0d0008  sw	t5,8(s0)                                      | 00127f78: 01cc7023  subu	t6,t6,t4
+!! 00127f7c: 00af2823  subu	a1,a1,t7                                    | 00127f7c: ae0d0008  sw	t5,8(s0)
+!! 00127f80: 00057180  sll	t6,a1,0x6                                    | 00127f80: 000e7180  sll	t6,t6,0x6
+   00127f84: 948f0012  lhu	t7,18(a0)                                    | 00127f84: 948f0012  lhu	t7,18(a0)
+   00127f88: 000f7980  sll	t7,t7,0x6                                    | 00127f88: 000f7980  sll	t7,t7,0x6
+   00127f8c: 01ed7821  addu	t7,t7,t5                                    | 00127f8c: 01ed7821  addu	t7,t7,t5
+!! 00127f90: 01ee6021  addu	t4,t7,t6                                    | 00127f90: ae0f000c  sw	t7,12(s0)
+!! 00127f94: ae0f000c  sw	t7,12(s0)                                     | 00127f94: 01ee7821  addu	t7,t7,t6
+!! 00127f98: 018e7021  addu	t6,t4,t6                                    | 00127f98: ae0f0010  sw	t7,16(s0)
+!! 00127f9c: ae0c0010  sw	t4,16(s0)                                     | 00127f9c: 01ee7821  addu	t7,t7,t6
+!! 00127fa0: ae0e0014  sw	t6,20(s0)                                     | 00127fa0: ae0f0014  sw	t7,20(s0)
+!! 00127fa4: 8c8f0018  lw	t7,24(a0)                                     | 00127fa4: 8c8e0018  lw	t6,24(a0)
+   00127fa8: dfb00000  ld	s0,0(sp)                                      | 00127fa8: dfb00000  ld	s0,0(sp)
+!! 00127fac: 008f2021  addu	a0,a0,t7                                    | 00127fac: 008e2021  addu	a0,a0,t6
+   00127fb0: 08047b64  j	0x11ed90                                       | 00127fb0: 08047b64  j	11ed90 <func_0011ed90>
+   00127fb4: 27bd0010  addiu	sp,sp,16                                   | 00127fb4: 27bd0010  addiu	sp,sp,16

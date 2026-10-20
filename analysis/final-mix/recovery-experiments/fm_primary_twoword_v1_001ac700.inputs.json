@@ -1,0 +1,13 @@
+{
+  "address": "001ac700",
+  "source_sha256": "632f16f82bdf5892d2c1b159e61fb374293fbbe46ba432ebbd9c6d87e37a9eea",
+  "prior_source": "analysis/final-mix/recovery-experiments/fm_scalar_03.cpp",
+  "prior_source_sha256": "05bd735dd67fab30396b27b36e66954ddfee4058923016dca126ea79dfa18bdc",
+  "prior_proof": "analysis/final-mix/recovery-experiments/fm_scalar_03.verification.json",
+  "prior_proof_sha256": "1ddcc13389e9742f711b670a2c1b2b8651021b41d809213a3322e8bef29cd3b0",
+  "original_range_sha256": "c0100e23d4e5126dff97073fad5426b620e5360a5077fe24d9feb1853f5170bb",
+  "target_size": 40,
+  "limitations": [
+    "Original instruction transport proposal; source types remain provisional."
+  ]
+}

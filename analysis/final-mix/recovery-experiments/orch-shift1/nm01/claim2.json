@@ -1,0 +1,26 @@
+{
+  "leases": [
+    {
+      "address": "00198aa8",
+      "token": "c32ce3da5f7e4878add65f3ba498fe67",
+      "expires": 1791854175.2739873,
+      "metadata": {
+        "address": "00198aa8",
+        "end": "00198ae0",
+        "bytes": 56,
+        "priority": 2,
+        "pseudocode_available": true,
+        "callees": [],
+        "best_proposal": {
+          "proof": "analysis/final-mix/recovery-experiments/fm_scalar_03.verification.json",
+          "source": "analysis/final-mix/recovery-experiments/fm_scalar_03.cpp",
+          "compiled_bytes": 64,
+          "target_bytes": 56,
+          "different_words": 11
+        }
+      },
+      "blocker": "{\"report\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\orch-shift1\\\\rec62\\\\00198aa8-BLOCKED.md\", \"sha256\": \"cff0d7a5727274733324771382c48623fcd6d0970b7575e3d07c45de339e40f9\", \"hypothesis\": \"bind index*12 to register 15 or asm +r to force addu object,scaled operand order (1 word from exact in v2)\"}",
+      "attempts": 2
+    }
+  ]
+}

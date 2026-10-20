@@ -1,0 +1,86 @@
+{
+ "0014b950": {
+  "size": 88,
+  "original_range_sha256": "7649ce5357975a62fe31f21f963f3f261b44b6f21df148f0fcbeb33197e64a20",
+  "source": "analysis/final-mix/recovery-experiments/fm_scalar_probes.cpp",
+  "source_sha256": "3b17810db4be4664e7ca6d41c708bd7cd29211855ad7848abd7527576fe0d2c2",
+  "difference_offsets": [
+   40,
+   44,
+   52,
+   60,
+   68,
+   72
+  ]
+ },
+ "00109e30": {
+  "size": 92,
+  "original_range_sha256": "2d2dfd3b3558364a14c579edad74f0e3e03bc7a17af7374f019800b054d32427",
+  "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_width_all_00_0.cpp",
+  "source_sha256": "c1303eebc622c9ebc839cd3352199e2b4b542a81e1bc660c2063b5295c268709",
+  "difference_offsets": [
+   4,
+   12,
+   16,
+   20,
+   24,
+   76
+  ]
+ },
+ "00242500": {
+  "size": 92,
+  "original_range_sha256": "7f015e8667596167cd72b03c1959b9ffcf35e2d8f4cf1b3e85fb91c40b1ce848",
+  "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_width_all_09_1.cpp",
+  "source_sha256": "56ea340e937b5138c9da90348d73fe50a94e6df7e6fc4b2ff56456f9685b8af9",
+  "difference_offsets": [
+   20,
+   36,
+   40,
+   48,
+   80,
+   88
+  ]
+ },
+ "001ac310": {
+  "size": 104,
+  "original_range_sha256": "b03036da19607b8f046dace92f0af98a0e4e6cb68e3343f6dffa005e6d142667",
+  "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_05_0.cpp",
+  "source_sha256": "f055b12b3c4feecc3ea4c90968993f59316f066ac9a8e8fe111add26f15bdf8b",
+  "difference_offsets": [
+   44,
+   52,
+   56,
+   60,
+   64,
+   72
+  ]
+ },
+ "001e7230": {
+  "size": 104,
+  "original_range_sha256": "7a7315c48aaba29fd4fd48f2728674d8a1257ee00a1e03778b375ecf3189c3b9",
+  "source": "analysis/final-mix/recovery-experiments/fm_scalar_05.cpp",
+  "source_sha256": "fb8eb80bdc694d9581df41e11f87208826d1559934e55de00432d783f7b2f291",
+  "difference_offsets": [
+   16,
+   48,
+   56,
+   60,
+   72,
+   88
+  ]
+ },
+ "001576e8": {
+  "size": 112,
+  "original_range_sha256": "9b8bce7ccfeec1b8944838293ce9c7178e0c4b026099c5d25da6674d967c081f",
+  "source": "analysis/final-mix/recovery-experiments/fm_call_fixed_width_all_01_0.cpp",
+  "source_sha256": "e7454b0b17b5d0f5785d9e4697d8b8a4cb70741aebae38119e0e3faf0c1e6d6d",
+  "difference_offsets": [
+   24,
+   32,
+   48,
+   56,
+   72,
+   80
+  ]
+ }
+}

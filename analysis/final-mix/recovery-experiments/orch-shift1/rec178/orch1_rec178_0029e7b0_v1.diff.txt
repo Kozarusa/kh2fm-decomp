@@ -1,0 +1,26 @@
+0029e7b0: compiled 80 bytes, target 88 bytes, exact=False
+Differing words: 21. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0029e7b0: 3c0e0037  lui	t6,0x37                                      | 0029e7b0: 3c0e0037  lui	t6,0x37
+!! 0029e7b4: 2402ffff  li	v0,-1                                         | 0029e7b4: 85cf4a08  lh	t7,18952(t6)   ; = D_00374a08
+!! 0029e7b8: 85cf4a08  lh	t7,18952(t6)   ; = D_00374a08                 | 0029e7b8: 19e0000f  blez	t7,29e7f8 <func_0029e7b0+0x48>
+!! 0029e7bc: 19e00010  blez	t7,0x29e800                                 | 0029e7bc: 0000602d  move	t4,zero
+!! 0029e7c0: 0000602d  move	t4,zero                                     | 0029e7c0: 25cb4a08  addiu	t3,t6,18952   ; = D_00374a08
+!! 0029e7c4: 25cb4a08  addiu	t3,t6,18952   ; = D_00374a08               | 0029e7c4: 0000682d  move	t5,zero
+!! 0029e7c8: 0000682d  move	t5,zero                                     | 0029e7c8: 01ab1021  addu	v0,t5,t3
+!! 0029e7cc: 01ab7021  addu	t6,t5,t3                                    | 0029e7cc: 844f0000  lh	t7,0(v0)
+!! 0029e7d0: 85cf0000  lh	t7,0(t6)                                      | 0029e7d0: 55e40003  bnel	t7,a0,29e7e0 <func_0029e7b0+0x30>
+!! 0029e7d4: 55e40004  bnel	t7,a0,0x29e7e8                              | 0029e7d4: 258c0001  addiu	t4,t4,1
+!! 0029e7d8: 258c0001  addiu	t4,t4,1                                    | 0029e7d8: 03e00008  jr	ra
+!! 0029e7dc: 03e00008  jr	ra                                            | 0029e7dc: 84420002  lh	v0,2(v0)
+!! 0029e7e0: 85c20002  lh	v0,2(t6)                                      | 0029e7e0: 000c7880  sll	t7,t4,0x2
+!! 0029e7e4: 00000000  nop                                              | 0029e7e4: 01e0682d  move	t5,t7
+!! 0029e7e8: 000c7880  sll	t7,t4,0x2                                    | 0029e7e8: 01eb7021  addu	t6,t7,t3
+!! 0029e7ec: 01e0682d  move	t5,t7                                       | 0029e7ec: 85cf0000  lh	t7,0(t6)
+!! 0029e7f0: 01eb7021  addu	t6,t7,t3                                    | 0029e7f0: 5de0fff6  bgtzl	t7,29e7cc <func_0029e7b0+0x1c>
+!! 0029e7f4: 85cf0000  lh	t7,0(t6)                                      | 0029e7f4: 01ab1021  addu	v0,t5,t3
+!! 0029e7f8: 1de0fff5  bgtz	t7,0x29e7d0                                 | 0029e7f8: 03e00008  jr	ra
+!! 0029e7fc: 01ab7021  addu	t6,t5,t3                                    | 0029e7fc: 2402ffff  li	v0,-1
+!! 0029e800: 03e00008  jr	ra                                            | 
+!! 0029e804: 00000000  nop                                              | 

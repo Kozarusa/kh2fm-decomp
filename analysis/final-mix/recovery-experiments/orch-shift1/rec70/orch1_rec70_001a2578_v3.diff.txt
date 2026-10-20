@@ -1,0 +1,24 @@
+001a2578: compiled 80 bytes, target 80 bytes, exact=False
+Differing words: 19. First difference at instruction 0 (0-based).
+
+ORIGINAL                                                                | COMPILED
+!! 001a2578: 8c8e0244  lw	t6,580(a0)                                    | 001a2578: 8c8d0244  lw	t5,580(a0)
+!! 001a257c: 51c0000c  beqzl	t6,0x1a25b0                                | 001a257c: 51a00008  beqzl	t5,1a25a0 <func_001a2578+0x28>
+   001a2580: 948e0188  lhu	t6,392(a0)                                   | 001a2580: 948e0188  lhu	t6,392(a0)
+!! 001a2584: 91cc0009  lbu	t4,9(t6)                                     | 001a2584: 91ae0009  lbu	t6,9(t5)
+!! 001a2588: 318d00ff  andi	t5,t4,0xff                                  | 001a2588: 01c56021  addu	t4,t6,a1
+!! 001a258c: 01a57821  addu	t7,t5,a1                                    | 001a258c: 298f0065  slti	t7,t4,101
+!! 001a2590: 29ef0065  slti	t7,t7,101                                   | 001a2590: 51e00009  beqzl	t7,1a25b8 <func_001a2578+0x40>
+!! 001a2594: 55e00004  bnezl	t7,0x1a25a8                                | 001a2594: 240f0064  li	t7,100
+!! 001a2598: 01857821  addu	t7,t4,a1                                    | 001a2598: a1ac0009  sb	t4,9(t5)
+!! 001a259c: 240f0064  li	t7,100                                        | 001a259c: 948e0188  lhu	t6,392(a0)
+!! 001a25a0: 01ed2823  subu	a1,t7,t5                                    | 001a25a0: 948f0190  lhu	t7,400(a0)
+!! 001a25a4: 01857821  addu	t7,t4,a1                                    | 001a25a4: 01c57021  addu	t6,t6,a1
+!! 001a25a8: a1cf0009  sb	t7,9(t6)                                      | 001a25a8: 01e57821  addu	t7,t7,a1
+!! 001a25ac: 948e0188  lhu	t6,392(a0)                                   | 001a25ac: a48e0188  sh	t6,392(a0)
+!! 001a25b0: 948f0190  lhu	t7,400(a0)                                   | 001a25b0: 03e00008  jr	ra
+!! 001a25b4: 01c57021  addu	t6,t6,a1                                    | 001a25b4: a48f0190  sh	t7,400(a0)
+!! 001a25b8: 01e57821  addu	t7,t7,a1                                    | 001a25b8: 01ee2823  subu	a1,t7,t6
+!! 001a25bc: a48e0188  sh	t6,392(a0)                                    | 001a25bc: 01c57021  addu	t6,t6,a1
+!! 001a25c0: 03e00008  jr	ra                                            | 001a25c0: 1000fff6  b	1a259c <func_001a2578+0x24>
+!! 001a25c4: a48f0190  sh	t7,400(a0)                                    | 001a25c4: a1ae0009  sb	t6,9(t5)

@@ -1,0 +1,30 @@
+001db198: compiled 92 bytes, target 104 bytes, exact=False
+Differing words: 21. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001db198: 27bdffe0  addiu	sp,sp,-32                                  | 001db198: 27bdffe0  addiu	sp,sp,-32
+!! 001db19c: 24020001  li	v0,1                                          | 001db19c: 2caf0003  sltiu	t7,a1,3
+   001db1a0: ffb00000  sd	s0,0(sp)                                      | 001db1a0: ffb00000  sd	s0,0(sp)
+   001db1a4: ffb10008  sd	s1,8(sp)                                      | 001db1a4: ffb10008  sd	s1,8(sp)
+   001db1a8: ffbf0010  sd	ra,16(sp)                                     | 001db1a8: ffbf0010  sd	ra,16(sp)
+!! 001db1ac: 10a0000d  beqz	a1,0x1db1e4                                 | 001db1ac: 24100001  li	s0,1
+!! 001db1b0: 0080802d  move	s0,a0                                       | 001db1b0: 10a0000a  beqz	a1,1db1dc <func_001db198+0x44>
+!! 001db1b4: 04a00010  bltz	a1,0x1db1f8                                 | 001db1b4: 0080882d  move	s1,a0
+!! 001db1b8: 28af0003  slti	t7,a1,3                                     | 001db1b8: 11e00008  beqz	t7,1db1dc <func_001db198+0x44>
+!! 001db1bc: 11e00009  beqz	t7,0x1db1e4                                 | 001db1bc: 0000802d  move	s0,zero
+!! 001db1c0: 0000102d  move	v0,zero                                     | 001db1c0: 0c076c80  jal	1db200 <func_001db200>
+!! 001db1c4: 0c076c80  jal	0x1db200                                     | 001db1c4: 00000000  nop
+!! 001db1c8: 0000882d  move	s1,zero                                     | 001db1c8: 10400004  beqz	v0,1db1dc <func_001db198+0x44>
+!! 001db1cc: 10400004  beqz	v0,0x1db1e0                                 | 001db1cc: 0220202d  move	a0,s1
+!! 001db1d0: 0200202d  move	a0,s0                                       | 001db1d0: 0c076c94  jal	1db250 <func_001db250>
+!! 001db1d4: 0c076c94  jal	0x1db250                                     | 001db1d4: 00000000  nop
+!! 001db1d8: 00000000  nop                                              | 001db1d8: 0002802b  sltu	s0,zero,v0
+!! 001db1dc: 0002882b  sltu	s1,zero,v0                                  | 001db1dc: 0200102d  move	v0,s0
+!! 001db1e0: 0220102d  move	v0,s1                                       | 001db1e0: dfb10008  ld	s1,8(sp)
+   001db1e4: dfb00000  ld	s0,0(sp)                                      | 001db1e4: dfb00000  ld	s0,0(sp)
+!! 001db1e8: dfb10008  ld	s1,8(sp)                                      | 001db1e8: dfbf0010  ld	ra,16(sp)
+!! 001db1ec: dfbf0010  ld	ra,16(sp)                                     | 001db1ec: 03e00008  jr	ra
+!! 001db1f0: 03e00008  jr	ra                                            | 001db1f0: 27bd0020  addiu	sp,sp,32
+!! 001db1f4: 27bd0020  addiu	sp,sp,32                                   | 
+!! 001db1f8: 1000fffa  b	0x1db1e4                                       | 
+!! 001db1fc: 0000102d  move	v0,zero                                     | 

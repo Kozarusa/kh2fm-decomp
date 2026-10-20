@@ -1,0 +1,901 @@
+2026-10-05 16:44:11 INFO  (LoggingInitialization) Using log config file: jar:file:/C:/Users/KoZa/Documents/ChatGPT/tools/ghidra-install/ghidra_12.1.4_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml  
+2026-10-05 16:44:11 INFO  (LoggingInitialization) Using log file: C:\Users\KoZa\Documents\ChatGPT\analysis\final-mix\ghidra-iop.log  
+2026-10-05 16:44:12 DEBUG (GhidraObjectInputFilter) Including serial input filter: FileSystem/data/client.rmi.serial.filter  
+2026-10-05 16:44:12 INFO  (Preferences) Loading user preferences: C:\Users\KoZa\AppData\Roaming\ghidra\ghidra_12.1.4_PUBLIC\preferences  
+2026-10-05 16:44:12 INFO  (ClassSearcher) Searching for classes...  
+2026-10-05 16:44:12 INFO  (ClassSearcher) Class search complete (622 ms)  
+2026-10-05 16:44:12 INFO  (DefaultSSLContextInitializer) Initializing SSL Context  
+2026-10-05 16:44:12 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+2026-10-05 16:44:12 INFO  (SecureRandomFactory) Random Number Generator initialization complete: SHA1PRNG  
+2026-10-05 16:44:12 INFO  (DefaultTrustManagerFactory) Trust manager disabled, cacerts have not been set  
+2026-10-05 16:44:13 DEBUG (SleighLanguage) Sleigh compile: -DBaseDir=C:/Users/KoZa/Documents/ChatGPT/tools/ghidra-install/ghidra_12.1.4_PUBLIC/ -i C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Processors\MIPS\data\sleighArgs.txt C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Processors\MIPS\data\languages\mips32le.slaspec C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Processors\MIPS\data\languages\mips32le.sla   
+2026-10-05 16:44:14 WARN  (SleighCompile) 131 NOP constructors found  
+2026-10-05 16:44:14 WARN  (SleighCompile) Use -n switch to list each individually  
+2026-10-05 16:44:14 WARN  (SleighCompile) 211 unnecessary extensions/truncations were converted to copies  
+2026-10-05 16:44:14 WARN  (SleighCompile) Use -u switch to list each individually  
+2026-10-05 16:44:14 WARN  (SleighCompile) mips.sinc:902: Unreferenced table: 'S18L3'  
+2026-10-05 16:44:14 WARN  (SleighCompile) mips.sinc:905: Unreferenced table: 'S16L32'  
+2026-10-05 16:44:14 WARN  (SleighCompile) mips.sinc:906: Unreferenced table: 'S16L48'  
+2026-10-05 16:44:14 WARN  (SleighCompile) mipsmicro.sinc:286: Unreferenced table: 'RS0R5'  
+2026-10-05 16:44:14 WARN  (SleighCompile) mipsmicro.sinc:307: Unreferenced table: 'RT5RD5'  
+2026-10-05 16:44:14 WARN  (SleighCompile) mipsmicro.sinc:382: Unreferenced table: 'EXT_MS18'  
+2026-10-05 16:44:14 WARN  (SleighCompile) mipsmicro.sinc:387: Unreferenced table: 'EXT_MS48'  
+2026-10-05 16:44:14 WARN  (SleighCompile) mipsmicro.sinc:388: Unreferenced table: 'EXT_MS64'  
+2026-10-05 16:44:14 WARN  (SleighCompile) mipsmicro.sinc:410: Unreferenced table: 'SIZEPLG'  
+2026-10-05 16:44:14 WARN  (SleighCompile) mipsmicro.sinc:412: Unreferenced table: 'SIZEQLG'  
+2026-10-05 16:44:14 WARN  (SleighCompile) mipsmicro.sinc:413: Unreferenced table: 'POSHI'  
+2026-10-05 16:44:14 WARN  (SleighCompile) mipsmicro.sinc:424: Unreferenced table: 'SA32'  
+2026-10-05 16:44:15 INFO  (AnalyzeHeadless) Headless startup complete (4445 ms)  
+2026-10-05 16:44:15 INFO  (ClassSearcher) Class searcher loaded 59 extension points (20 false positives)  
+2026-10-05 16:44:15 INFO  (HeadlessAnalyzer) HEADLESS Script Paths:
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\FunctionID\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\GnuDemangler\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\FileFormats\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\BytePatterns\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Processors\8051\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Processors\Atmel\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\PyGhidra\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Processors\PIC\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Extensions\ghidra-emotionengine-reloaded\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\PDB\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\SystemEmulation\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Debug\Debugger\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Processors\DATA\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\SwiftDemangler\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\VersionTracking\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\kh2-audit
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Processors\JVM\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\BSim\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\Decompiler\ghidra_scripts  
+2026-10-05 16:44:15 INFO  (HeadlessAnalyzer) HEADLESS: execution starts  
+2026-10-05 16:44:15 INFO  (HeadlessAnalyzer) Opening existing project: C:\Users\KoZa\Documents\ChatGPT\analysis\final-mix\ghidra-projects\kh2fm  
+2026-10-05 16:44:15 INFO  (HeadlessProject) Opening project: C:\Users\KoZa\Documents\ChatGPT\analysis\final-mix\ghidra-projects\kh2fm  
+2026-10-05 16:44:15 INFO  (HeadlessAnalyzer) REPORT: Processing input files:   
+2026-10-05 16:44:15 INFO  (HeadlessAnalyzer)      project: C:\Users\KoZa\Documents\ChatGPT\analysis\final-mix\ghidra-projects\kh2fm  
+2026-10-05 16:44:15 INFO  (HeadlessAnalyzer) IMPORTING: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/DBCMAN.IRX  
+2026-10-05 16:44:16 INFO  (ProgramLoader) Using Loader: Executable and Linking Format (ELF)  
+2026-10-05 16:44:16 INFO  (ProgramLoader) Using Language/Compiler: MIPS:LE:32:default:default  
+2026-10-05 16:44:16 INFO  (ProgramLoader) Using Library Search Path: [., C:\WINDOWS\SysWOW64, C:\Program Files\Eclipse Adoptium\jdk-25.0.4.101-hotspot\bin, C:\WINDOWS\Sun\Java\bin, C:\WINDOWS\system32, C:\WINDOWS, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell, C:\Users\KoZa\.codex\tmp\arg0\codex-arg05P56g4, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\libheif\libheif\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\jxrlib\jxrlib\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\poppler\Library\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\override, C:\Python314\Scripts\, C:\Python314\, C:\WINDOWS\System32\Wbem, C:\WINDOWS\System32\WindowsPowerShell\v1.0\, C:\WINDOWS\System32\OpenSSH\, C:\Program Files\dotnet\, C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\, C:\Program Files\Process Lasso\, C:\Program Files\nodejs\, C:\ProgramData\chocolatey\bin, C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common, C:\Program Files\Git\cmd, C:\Users\KoZa\.cargo\bin, C:\Users\KoZa\.pi\agent\bin, C:\Users\KoZa\AppData\Local\Microsoft\WindowsApps, C:\Users\KoZa\.dotnet\tools, C:\Users\KoZa\AppData\Roaming\npm, C:\Users\KoZa\AppData\Local\Programs\Ollama, C:\Users\KoZa\AppData\Local\PowerToys\DSCModules\, C:\Users\KoZa\AppData\Local\GitHubDesktop\bin, C:\Users\KoZa\AppData\Local\Unity\bin, C:\Users\KoZa\AppData\Local\Microsoft\WinGet\Links, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\fallback, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\6de5bf5fa8384f8d, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\f544b3844e0f14e9]  
+2026-10-05 16:44:16 DEBUG (ElfHeader) Elf symbol table section .symtab linked to string table section .strtab  
+2026-10-05 16:44:16 DEBUG (ElfHeader) Elf relocation table section .rel.text linked to symbol table section .symtab affecting .text  
+2026-10-05 16:44:16 DEBUG (ElfHeader) Elf relocation table section .rel.rodata linked to symbol table section .symtab affecting .rodata  
+2026-10-05 16:44:16 DEBUG (ElfHeader) Elf relocation table section .rel.data linked to symbol table section .symtab affecting .data  
+2026-10-05 16:44:16 INFO  (ProgramLoader) Additional info:
+Loading file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/DBCMAN.IRX?MD5=27ace0c47ec9cbfbfbff1e5963820076...
+Skipping segment[0, IRX header] included by section .iopmod
+Created %got.text block required for relocation processing (gp=0xbfd07ff0)
+------------------------------------------------
+
+  
+2026-10-05 16:44:16 INFO  (HeadlessAnalyzer) IMPORTING: Loaded 0 additional files  
+2026-10-05 16:44:17 INFO  (HeadlessAnalyzer) ANALYZING all memory and code: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/DBCMAN.IRX  
+2026-10-05 16:44:17 DEBUG (FidAnalyzer) No FID Libraries apply for language MIPS:LE:32:default  
+2026-10-05 16:44:17 INFO  (PackedDatabaseCache) Packed database cache: C:\Users\KoZa\AppData\Local\ghidra\packed-db-cache  
+2026-10-05 16:44:17 DEBUG (PackedDatabaseCache) Using cached packed database: C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\data\typeinfo\generic\generic_clib.gdt  
+2026-10-05 16:44:18 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2026-10-05 16:44:18 INFO  (AutoAnalysisManager) -----------------------------------------------------
+    ASCII Strings                              0.207 secs
+    Apply Data Archives                        0.331 secs
+    Call-Fixup Installer                       0.003 secs
+    Create Address Tables                      0.004 secs
+    Create Address Tables - One Time           0.014 secs
+    Create Function                            0.053 secs
+    Data Reference                             0.006 secs
+    Decompiler Switch Analysis                 0.360 secs
+    Demangler GNU                              0.001 secs
+    Disassemble                                0.159 secs
+    Disassemble Entry Points                   0.002 secs
+    Embedded Media                             0.003 secs
+    External Entry References                  0.000 secs
+    Function ID                                0.062 secs
+    Function Start Search                      0.023 secs
+    MIPS Constant Reference Analyzer           0.078 secs
+    MIPS Symbol                                0.002 secs
+    MIPS UnAlligned Instruction Fix            0.004 secs
+    Non-Returning Functions - Discovered       0.003 secs
+    Non-Returning Functions - Known            0.002 secs
+    Reference                                  0.023 secs
+    Shared Return Calls                        0.010 secs
+    Stack                                      0.102 secs
+    Subroutine References                      0.011 secs
+-----------------------------------------------------
+     Total Time   1 secs
+-----------------------------------------------------
+  
+2026-10-05 16:44:18 INFO  (HeadlessAnalyzer) REPORT: Analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/DBCMAN.IRX  
+2026-10-05 16:44:18 INFO  (HeadlessAnalyzer) REPORT: Execute script: ExportIop.java 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-pseudocode/iop' 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-inputs.json'   
+2026-10-05 16:44:19 INFO  (HeadlessAnalyzer) SCRIPT: C:\Users\KoZa\Documents\ChatGPT\tools\kh2-audit\ExportIop.java  
+2026-10-05 16:44:20 INFO  (GhidraScript) ExportIop.java> FM export finished: 95 candidates, 0 failures, 0 suspicious outputs  
+2026-10-05 16:44:20 INFO  (HeadlessAnalyzer) ANALYZING changes made by post scripts: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/DBCMAN.IRX  
+2026-10-05 16:44:20 INFO  (HeadlessAnalyzer) REPORT: Post-analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/DBCMAN.IRX  
+2026-10-05 16:44:20 INFO  (LocalFileSystem) /DBCMAN.IRX: file created (KoZa)  
+2026-10-05 16:44:20 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for: /DBCMAN.IRX (kh2fm:/DBCMAN.IRX)  
+2026-10-05 16:44:20 INFO  (HeadlessAnalyzer) REPORT: Import succeeded  
+2026-10-05 16:44:20 INFO  (HeadlessAnalyzer) IMPORTING: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/LIBSD.IRX  
+2026-10-05 16:44:20 INFO  (ProgramLoader) Using Loader: Executable and Linking Format (ELF)  
+2026-10-05 16:44:20 INFO  (ProgramLoader) Using Language/Compiler: MIPS:LE:32:default:default  
+2026-10-05 16:44:20 INFO  (ProgramLoader) Using Library Search Path: [., C:\WINDOWS\SysWOW64, C:\Program Files\Eclipse Adoptium\jdk-25.0.4.101-hotspot\bin, C:\WINDOWS\Sun\Java\bin, C:\WINDOWS\system32, C:\WINDOWS, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell, C:\Users\KoZa\.codex\tmp\arg0\codex-arg05P56g4, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\libheif\libheif\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\jxrlib\jxrlib\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\poppler\Library\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\override, C:\Python314\Scripts\, C:\Python314\, C:\WINDOWS\System32\Wbem, C:\WINDOWS\System32\WindowsPowerShell\v1.0\, C:\WINDOWS\System32\OpenSSH\, C:\Program Files\dotnet\, C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\, C:\Program Files\Process Lasso\, C:\Program Files\nodejs\, C:\ProgramData\chocolatey\bin, C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common, C:\Program Files\Git\cmd, C:\Users\KoZa\.cargo\bin, C:\Users\KoZa\.pi\agent\bin, C:\Users\KoZa\AppData\Local\Microsoft\WindowsApps, C:\Users\KoZa\.dotnet\tools, C:\Users\KoZa\AppData\Roaming\npm, C:\Users\KoZa\AppData\Local\Programs\Ollama, C:\Users\KoZa\AppData\Local\PowerToys\DSCModules\, C:\Users\KoZa\AppData\Local\GitHubDesktop\bin, C:\Users\KoZa\AppData\Local\Unity\bin, C:\Users\KoZa\AppData\Local\Microsoft\WinGet\Links, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\fallback, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\6de5bf5fa8384f8d, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\f544b3844e0f14e9]  
+2026-10-05 16:44:20 DEBUG (ElfHeader) Elf symbol table section .symtab linked to string table section .strtab  
+2026-10-05 16:44:20 DEBUG (ElfHeader) Elf relocation table section .rel.text linked to symbol table section .symtab affecting .text  
+2026-10-05 16:44:20 DEBUG (ElfHeader) Elf relocation table section .rel.rodata linked to symbol table section .symtab affecting .rodata  
+2026-10-05 16:44:20 DEBUG (ElfHeader) Elf relocation table section .rel.data linked to symbol table section .symtab affecting .data  
+2026-10-05 16:44:20 INFO  (ProgramLoader) Additional info:
+Loading file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/LIBSD.IRX?MD5=e0375e62ccab77b9739ba9022fbfb326...
+Skipping segment[0, IRX header] included by section .iopmod
+Created %got.text block required for relocation processing (gp=0xbfd07ff0)
+------------------------------------------------
+
+  
+2026-10-05 16:44:20 INFO  (HeadlessAnalyzer) IMPORTING: Loaded 0 additional files  
+2026-10-05 16:44:20 INFO  (HeadlessAnalyzer) ANALYZING all memory and code: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/LIBSD.IRX  
+2026-10-05 16:44:21 DEBUG (FidAnalyzer) No FID Libraries apply for language MIPS:LE:32:default  
+2026-10-05 16:44:21 DEBUG (PackedDatabaseCache) Using cached packed database: C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\data\typeinfo\generic\generic_clib.gdt  
+2026-10-05 16:44:21 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2026-10-05 16:44:21 INFO  (AutoAnalysisManager) -----------------------------------------------------
+    ASCII Strings                              0.006 secs
+    Apply Data Archives                        0.068 secs
+    Call-Fixup Installer                       0.002 secs
+    Create Address Tables                      0.007 secs
+    Create Address Tables - One Time           0.023 secs
+    Create Function                            0.014 secs
+    Data Reference                             0.008 secs
+    Decompiler Switch Analysis                 0.900 secs
+    Demangler GNU                              0.000 secs
+    Disassemble                                0.046 secs
+    Disassemble Entry Points                   0.000 secs
+    Embedded Media                             0.001 secs
+    External Entry References                  0.000 secs
+    Function ID                                0.000 secs
+    Function Start Search                      0.011 secs
+    MIPS Constant Reference Analyzer           0.084 secs
+    MIPS Symbol                                0.000 secs
+    MIPS UnAlligned Instruction Fix            0.003 secs
+    Non-Returning Functions - Discovered       0.002 secs
+    Non-Returning Functions - Known            0.003 secs
+    Reference                                  0.009 secs
+    Shared Return Calls                        0.003 secs
+    Stack                                      0.082 secs
+    Subroutine References                      0.008 secs
+-----------------------------------------------------
+     Total Time   1 secs
+-----------------------------------------------------
+  
+2026-10-05 16:44:21 INFO  (HeadlessAnalyzer) REPORT: Analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/LIBSD.IRX  
+2026-10-05 16:44:21 INFO  (HeadlessAnalyzer) REPORT: Execute script: ExportIop.java 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-pseudocode/iop' 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-inputs.json'   
+2026-10-05 16:44:21 INFO  (HeadlessAnalyzer) SCRIPT: C:\Users\KoZa\Documents\ChatGPT\tools\kh2-audit\ExportIop.java  
+2026-10-05 16:44:22 INFO  (GhidraScript) ExportIop.java> FM export finished: 72 candidates, 0 failures, 0 suspicious outputs  
+2026-10-05 16:44:22 INFO  (HeadlessAnalyzer) ANALYZING changes made by post scripts: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/LIBSD.IRX  
+2026-10-05 16:44:22 INFO  (HeadlessAnalyzer) REPORT: Post-analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/LIBSD.IRX  
+2026-10-05 16:44:22 INFO  (LocalFileSystem) /LIBSD.IRX: file created (KoZa)  
+2026-10-05 16:44:22 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for: /LIBSD.IRX (kh2fm:/LIBSD.IRX)  
+2026-10-05 16:44:22 INFO  (HeadlessAnalyzer) REPORT: Import succeeded  
+2026-10-05 16:44:22 INFO  (HeadlessAnalyzer) IMPORTING: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/LIBSSL.IRX  
+2026-10-05 16:44:22 INFO  (ProgramLoader) Using Loader: Executable and Linking Format (ELF)  
+2026-10-05 16:44:22 INFO  (ProgramLoader) Using Language/Compiler: MIPS:LE:32:default:default  
+2026-10-05 16:44:22 INFO  (ProgramLoader) Using Library Search Path: [., C:\WINDOWS\SysWOW64, C:\Program Files\Eclipse Adoptium\jdk-25.0.4.101-hotspot\bin, C:\WINDOWS\Sun\Java\bin, C:\WINDOWS\system32, C:\WINDOWS, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell, C:\Users\KoZa\.codex\tmp\arg0\codex-arg05P56g4, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\libheif\libheif\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\jxrlib\jxrlib\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\poppler\Library\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\override, C:\Python314\Scripts\, C:\Python314\, C:\WINDOWS\System32\Wbem, C:\WINDOWS\System32\WindowsPowerShell\v1.0\, C:\WINDOWS\System32\OpenSSH\, C:\Program Files\dotnet\, C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\, C:\Program Files\Process Lasso\, C:\Program Files\nodejs\, C:\ProgramData\chocolatey\bin, C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common, C:\Program Files\Git\cmd, C:\Users\KoZa\.cargo\bin, C:\Users\KoZa\.pi\agent\bin, C:\Users\KoZa\AppData\Local\Microsoft\WindowsApps, C:\Users\KoZa\.dotnet\tools, C:\Users\KoZa\AppData\Roaming\npm, C:\Users\KoZa\AppData\Local\Programs\Ollama, C:\Users\KoZa\AppData\Local\PowerToys\DSCModules\, C:\Users\KoZa\AppData\Local\GitHubDesktop\bin, C:\Users\KoZa\AppData\Local\Unity\bin, C:\Users\KoZa\AppData\Local\Microsoft\WinGet\Links, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\fallback, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\6de5bf5fa8384f8d, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\f544b3844e0f14e9]  
+2026-10-05 16:44:22 DEBUG (ElfHeader) Elf symbol table section .symtab linked to string table section .strtab  
+2026-10-05 16:44:22 DEBUG (ElfHeader) Elf relocation table section .rel.text linked to symbol table section .symtab affecting .text  
+2026-10-05 16:44:22 DEBUG (ElfHeader) Elf relocation table section .rel.rodata linked to symbol table section .symtab affecting .rodata  
+2026-10-05 16:44:22 DEBUG (ElfHeader) Elf relocation table section .rel.data linked to symbol table section .symtab affecting .data  
+2026-10-05 16:44:22 INFO  (ProgramLoader) Additional info:
+Loading file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/LIBSSL.IRX?MD5=84414877f7cc2639e68e800902f740b8...
+Skipping segment[0, IRX header] included by section .iopmod
+Created %got.text block required for relocation processing (gp=0xbfd07ff0)
+------------------------------------------------
+
+  
+2026-10-05 16:44:22 INFO  (HeadlessAnalyzer) IMPORTING: Loaded 0 additional files  
+2026-10-05 16:44:22 INFO  (HeadlessAnalyzer) ANALYZING all memory and code: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/LIBSSL.IRX  
+2026-10-05 16:44:24 DEBUG (FidAnalyzer) No FID Libraries apply for language MIPS:LE:32:default  
+2026-10-05 16:44:24 DEBUG (PackedDatabaseCache) Using cached packed database: C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\data\typeinfo\generic\generic_clib.gdt  
+2026-10-05 16:44:24 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2026-10-05 16:44:25 INFO  (AutoAnalysisManager) -----------------------------------------------------
+    ASCII Strings                              0.017 secs
+    Apply Data Archives                        0.084 secs
+    Call-Fixup Installer                       0.000 secs
+    Create Address Tables                      0.006 secs
+    Create Address Tables - One Time           0.065 secs
+    Create Function                            0.051 secs
+    Data Reference                             0.027 secs
+    Decompiler Switch Analysis                 1.713 secs
+    Demangler GNU                              0.001 secs
+    Disassemble                                0.166 secs
+    Disassemble Entry Points                   0.000 secs
+    Embedded Media                             0.002 secs
+    External Entry References                  0.000 secs
+    Function ID                                0.000 secs
+    Function Start Search                      0.012 secs
+    MIPS Constant Reference Analyzer           0.366 secs
+    MIPS Symbol                                0.001 secs
+    MIPS UnAlligned Instruction Fix            0.016 secs
+    Non-Returning Functions - Discovered       0.010 secs
+    Non-Returning Functions - Known            0.002 secs
+    Reference                                  0.045 secs
+    Shared Return Calls                        0.011 secs
+    Stack                                      0.363 secs
+    Subroutine References                      0.019 secs
+-----------------------------------------------------
+     Total Time   2 secs
+-----------------------------------------------------
+  
+2026-10-05 16:44:25 INFO  (HeadlessAnalyzer) REPORT: Analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/LIBSSL.IRX  
+2026-10-05 16:44:25 INFO  (HeadlessAnalyzer) REPORT: Execute script: ExportIop.java 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-pseudocode/iop' 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-inputs.json'   
+2026-10-05 16:44:25 INFO  (HeadlessAnalyzer) SCRIPT: C:\Users\KoZa\Documents\ChatGPT\tools\kh2-audit\ExportIop.java  
+2026-10-05 16:44:26 INFO  (GhidraScript) ExportIop.java> FM export finished: 291 candidates, 0 failures, 0 suspicious outputs  
+2026-10-05 16:44:26 INFO  (HeadlessAnalyzer) ANALYZING changes made by post scripts: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/LIBSSL.IRX  
+2026-10-05 16:44:26 INFO  (HeadlessAnalyzer) REPORT: Post-analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/LIBSSL.IRX  
+2026-10-05 16:44:26 INFO  (LocalFileSystem) /LIBSSL.IRX: file created (KoZa)  
+2026-10-05 16:44:26 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for: /LIBSSL.IRX (kh2fm:/LIBSSL.IRX)  
+2026-10-05 16:44:26 INFO  (HeadlessAnalyzer) REPORT: Import succeeded  
+2026-10-05 16:44:26 INFO  (HeadlessAnalyzer) IMPORTING: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/MCMAN.IRX  
+2026-10-05 16:44:26 INFO  (ProgramLoader) Using Loader: Executable and Linking Format (ELF)  
+2026-10-05 16:44:26 INFO  (ProgramLoader) Using Language/Compiler: MIPS:LE:32:default:default  
+2026-10-05 16:44:26 INFO  (ProgramLoader) Using Library Search Path: [., C:\WINDOWS\SysWOW64, C:\Program Files\Eclipse Adoptium\jdk-25.0.4.101-hotspot\bin, C:\WINDOWS\Sun\Java\bin, C:\WINDOWS\system32, C:\WINDOWS, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell, C:\Users\KoZa\.codex\tmp\arg0\codex-arg05P56g4, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\libheif\libheif\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\jxrlib\jxrlib\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\poppler\Library\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\override, C:\Python314\Scripts\, C:\Python314\, C:\WINDOWS\System32\Wbem, C:\WINDOWS\System32\WindowsPowerShell\v1.0\, C:\WINDOWS\System32\OpenSSH\, C:\Program Files\dotnet\, C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\, C:\Program Files\Process Lasso\, C:\Program Files\nodejs\, C:\ProgramData\chocolatey\bin, C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common, C:\Program Files\Git\cmd, C:\Users\KoZa\.cargo\bin, C:\Users\KoZa\.pi\agent\bin, C:\Users\KoZa\AppData\Local\Microsoft\WindowsApps, C:\Users\KoZa\.dotnet\tools, C:\Users\KoZa\AppData\Roaming\npm, C:\Users\KoZa\AppData\Local\Programs\Ollama, C:\Users\KoZa\AppData\Local\PowerToys\DSCModules\, C:\Users\KoZa\AppData\Local\GitHubDesktop\bin, C:\Users\KoZa\AppData\Local\Unity\bin, C:\Users\KoZa\AppData\Local\Microsoft\WinGet\Links, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\fallback, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\6de5bf5fa8384f8d, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\f544b3844e0f14e9]  
+2026-10-05 16:44:26 DEBUG (ElfHeader) Elf symbol table section .symtab linked to string table section .strtab  
+2026-10-05 16:44:26 DEBUG (ElfHeader) Elf relocation table section .rel.text linked to symbol table section .symtab affecting .text  
+2026-10-05 16:44:26 DEBUG (ElfHeader) Elf relocation table section .rel.rodata linked to symbol table section .symtab affecting .rodata  
+2026-10-05 16:44:26 DEBUG (ElfHeader) Elf relocation table section .rel.data linked to symbol table section .symtab affecting .data  
+2026-10-05 16:44:26 INFO  (ProgramLoader) Additional info:
+Loading file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/MCMAN.IRX?MD5=cfd3beb65b9e878f56df7ed37fefba1b...
+Skipping segment[0, IRX header] included by section .iopmod
+Created %got.text block required for relocation processing (gp=0xbfd07ff0)
+------------------------------------------------
+
+  
+2026-10-05 16:44:26 INFO  (HeadlessAnalyzer) IMPORTING: Loaded 0 additional files  
+2026-10-05 16:44:26 INFO  (HeadlessAnalyzer) ANALYZING all memory and code: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/MCMAN.IRX  
+2026-10-05 16:44:27 DEBUG (FidAnalyzer) No FID Libraries apply for language MIPS:LE:32:default  
+2026-10-05 16:44:27 DEBUG (PackedDatabaseCache) Using cached packed database: C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\data\typeinfo\generic\generic_clib.gdt  
+2026-10-05 16:44:27 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2026-10-05 16:44:28 INFO  (AutoAnalysisManager) -----------------------------------------------------
+    ASCII Strings                              0.011 secs
+    Apply Data Archives                        0.048 secs
+    Call-Fixup Installer                       0.002 secs
+    Create Address Tables                      0.009 secs
+    Create Address Tables - One Time           0.023 secs
+    Create Function                            0.039 secs
+    Data Reference                             0.009 secs
+    Decompiler Switch Analysis                 0.446 secs
+    Demangler GNU                              0.000 secs
+    Disassemble                                0.125 secs
+    Disassemble Entry Points                   0.000 secs
+    Embedded Media                             0.003 secs
+    External Entry References                  0.000 secs
+    Function ID                                0.001 secs
+    Function Start Search                      0.010 secs
+    MIPS Constant Reference Analyzer           0.300 secs
+    MIPS Symbol                                0.000 secs
+    MIPS UnAlligned Instruction Fix            0.009 secs
+    Non-Returning Functions - Discovered       0.006 secs
+    Non-Returning Functions - Known            0.003 secs
+    Reference                                  0.013 secs
+    Shared Return Calls                        0.006 secs
+    Stack                                      0.366 secs
+    Subroutine References                      0.011 secs
+-----------------------------------------------------
+     Total Time   1 secs
+-----------------------------------------------------
+  
+2026-10-05 16:44:28 INFO  (HeadlessAnalyzer) REPORT: Analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/MCMAN.IRX  
+2026-10-05 16:44:28 INFO  (HeadlessAnalyzer) REPORT: Execute script: ExportIop.java 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-pseudocode/iop' 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-inputs.json'   
+2026-10-05 16:44:28 INFO  (HeadlessAnalyzer) SCRIPT: C:\Users\KoZa\Documents\ChatGPT\tools\kh2-audit\ExportIop.java  
+2026-10-05 16:44:29 INFO  (GhidraScript) ExportIop.java> FM export finished: 229 candidates, 0 failures, 0 suspicious outputs  
+2026-10-05 16:44:29 INFO  (HeadlessAnalyzer) ANALYZING changes made by post scripts: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/MCMAN.IRX  
+2026-10-05 16:44:29 INFO  (HeadlessAnalyzer) REPORT: Post-analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/MCMAN.IRX  
+2026-10-05 16:44:29 INFO  (LocalFileSystem) /MCMAN.IRX: file created (KoZa)  
+2026-10-05 16:44:29 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for: /MCMAN.IRX (kh2fm:/MCMAN.IRX)  
+2026-10-05 16:44:29 INFO  (HeadlessAnalyzer) REPORT: Import succeeded  
+2026-10-05 16:44:29 INFO  (HeadlessAnalyzer) IMPORTING: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/MCSERV.IRX  
+2026-10-05 16:44:29 INFO  (ProgramLoader) Using Loader: Executable and Linking Format (ELF)  
+2026-10-05 16:44:29 INFO  (ProgramLoader) Using Language/Compiler: MIPS:LE:32:default:default  
+2026-10-05 16:44:29 INFO  (ProgramLoader) Using Library Search Path: [., C:\WINDOWS\SysWOW64, C:\Program Files\Eclipse Adoptium\jdk-25.0.4.101-hotspot\bin, C:\WINDOWS\Sun\Java\bin, C:\WINDOWS\system32, C:\WINDOWS, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell, C:\Users\KoZa\.codex\tmp\arg0\codex-arg05P56g4, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\libheif\libheif\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\jxrlib\jxrlib\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\poppler\Library\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\override, C:\Python314\Scripts\, C:\Python314\, C:\WINDOWS\System32\Wbem, C:\WINDOWS\System32\WindowsPowerShell\v1.0\, C:\WINDOWS\System32\OpenSSH\, C:\Program Files\dotnet\, C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\, C:\Program Files\Process Lasso\, C:\Program Files\nodejs\, C:\ProgramData\chocolatey\bin, C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common, C:\Program Files\Git\cmd, C:\Users\KoZa\.cargo\bin, C:\Users\KoZa\.pi\agent\bin, C:\Users\KoZa\AppData\Local\Microsoft\WindowsApps, C:\Users\KoZa\.dotnet\tools, C:\Users\KoZa\AppData\Roaming\npm, C:\Users\KoZa\AppData\Local\Programs\Ollama, C:\Users\KoZa\AppData\Local\PowerToys\DSCModules\, C:\Users\KoZa\AppData\Local\GitHubDesktop\bin, C:\Users\KoZa\AppData\Local\Unity\bin, C:\Users\KoZa\AppData\Local\Microsoft\WinGet\Links, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\fallback, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\6de5bf5fa8384f8d, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\f544b3844e0f14e9]  
+2026-10-05 16:44:29 DEBUG (ElfHeader) Elf symbol table section .symtab linked to string table section .strtab  
+2026-10-05 16:44:29 DEBUG (ElfHeader) Elf relocation table section .rel.text linked to symbol table section .symtab affecting .text  
+2026-10-05 16:44:29 DEBUG (ElfHeader) Elf relocation table section .rel.data linked to symbol table section .symtab affecting .data  
+2026-10-05 16:44:29 INFO  (ProgramLoader) Additional info:
+Loading file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/MCSERV.IRX?MD5=55ee65c3f10b3c9c568c0bc37cf095c5...
+Skipping segment[0, IRX header] included by section .iopmod
+Created %got.text block required for relocation processing (gp=0xbfd07ff0)
+------------------------------------------------
+
+  
+2026-10-05 16:44:29 INFO  (HeadlessAnalyzer) IMPORTING: Loaded 0 additional files  
+2026-10-05 16:44:29 INFO  (HeadlessAnalyzer) ANALYZING all memory and code: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/MCSERV.IRX  
+2026-10-05 16:44:29 DEBUG (FidAnalyzer) No FID Libraries apply for language MIPS:LE:32:default  
+2026-10-05 16:44:29 DEBUG (PackedDatabaseCache) Using cached packed database: C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\data\typeinfo\generic\generic_clib.gdt  
+2026-10-05 16:44:29 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2026-10-05 16:44:29 INFO  (HeadlessAnalyzer) REPORT: Analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/MCSERV.IRX  
+2026-10-05 16:44:29 INFO  (HeadlessAnalyzer) REPORT: Execute script: ExportIop.java 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-pseudocode/iop' 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-inputs.json'   
+2026-10-05 16:44:29 INFO  (HeadlessAnalyzer) SCRIPT: C:\Users\KoZa\Documents\ChatGPT\tools\kh2-audit\ExportIop.java  
+2026-10-05 16:44:29 INFO  (GhidraScript) ExportIop.java> FM export finished: 76 candidates, 0 failures, 0 suspicious outputs  
+2026-10-05 16:44:29 INFO  (HeadlessAnalyzer) ANALYZING changes made by post scripts: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/MCSERV.IRX  
+2026-10-05 16:44:29 INFO  (HeadlessAnalyzer) REPORT: Post-analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/MCSERV.IRX  
+2026-10-05 16:44:29 INFO  (LocalFileSystem) /MCSERV.IRX: file created (KoZa)  
+2026-10-05 16:44:29 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for: /MCSERV.IRX (kh2fm:/MCSERV.IRX)  
+2026-10-05 16:44:29 INFO  (HeadlessAnalyzer) REPORT: Import succeeded  
+2026-10-05 16:44:29 INFO  (HeadlessAnalyzer) IMPORTING: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_CDVDFSV.IRX  
+2026-10-05 16:44:29 INFO  (ProgramLoader) Using Loader: Executable and Linking Format (ELF)  
+2026-10-05 16:44:29 INFO  (ProgramLoader) Using Language/Compiler: MIPS:LE:32:default:default  
+2026-10-05 16:44:29 INFO  (ProgramLoader) Using Library Search Path: [., C:\WINDOWS\SysWOW64, C:\Program Files\Eclipse Adoptium\jdk-25.0.4.101-hotspot\bin, C:\WINDOWS\Sun\Java\bin, C:\WINDOWS\system32, C:\WINDOWS, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell, C:\Users\KoZa\.codex\tmp\arg0\codex-arg05P56g4, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\libheif\libheif\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\jxrlib\jxrlib\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\poppler\Library\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\override, C:\Python314\Scripts\, C:\Python314\, C:\WINDOWS\System32\Wbem, C:\WINDOWS\System32\WindowsPowerShell\v1.0\, C:\WINDOWS\System32\OpenSSH\, C:\Program Files\dotnet\, C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\, C:\Program Files\Process Lasso\, C:\Program Files\nodejs\, C:\ProgramData\chocolatey\bin, C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common, C:\Program Files\Git\cmd, C:\Users\KoZa\.cargo\bin, C:\Users\KoZa\.pi\agent\bin, C:\Users\KoZa\AppData\Local\Microsoft\WindowsApps, C:\Users\KoZa\.dotnet\tools, C:\Users\KoZa\AppData\Roaming\npm, C:\Users\KoZa\AppData\Local\Programs\Ollama, C:\Users\KoZa\AppData\Local\PowerToys\DSCModules\, C:\Users\KoZa\AppData\Local\GitHubDesktop\bin, C:\Users\KoZa\AppData\Local\Unity\bin, C:\Users\KoZa\AppData\Local\Microsoft\WinGet\Links, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\fallback, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\6de5bf5fa8384f8d, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\f544b3844e0f14e9]  
+2026-10-05 16:44:29 DEBUG (ElfHeader) Elf symbol table section .symtab linked to string table section .strtab  
+2026-10-05 16:44:29 DEBUG (ElfHeader) Elf relocation table section .rel.text linked to symbol table section .symtab affecting .text  
+2026-10-05 16:44:29 DEBUG (ElfHeader) Elf relocation table section .rel.rodata linked to symbol table section .symtab affecting .rodata  
+2026-10-05 16:44:29 DEBUG (ElfHeader) Elf relocation table section .rel.data linked to symbol table section .symtab affecting .data  
+2026-10-05 16:44:29 INFO  (ProgramLoader) Additional info:
+Loading file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_CDVDFSV.IRX?MD5=60d1ed3ca25537790d0b0e90d3e8d0c4...
+Skipping segment[0, IRX header] included by section .iopmod
+Created %got.text block required for relocation processing (gp=0xbfd07ff0)
+------------------------------------------------
+
+  
+2026-10-05 16:44:29 INFO  (HeadlessAnalyzer) IMPORTING: Loaded 0 additional files  
+2026-10-05 16:44:30 INFO  (HeadlessAnalyzer) ANALYZING all memory and code: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_CDVDFSV.IRX  
+2026-10-05 16:44:30 DEBUG (FidAnalyzer) No FID Libraries apply for language MIPS:LE:32:default  
+2026-10-05 16:44:30 DEBUG (PackedDatabaseCache) Using cached packed database: C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\data\typeinfo\generic\generic_clib.gdt  
+2026-10-05 16:44:30 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2026-10-05 16:44:30 INFO  (HeadlessAnalyzer) REPORT: Analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_CDVDFSV.IRX  
+2026-10-05 16:44:30 INFO  (HeadlessAnalyzer) REPORT: Execute script: ExportIop.java 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-pseudocode/iop' 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-inputs.json'   
+2026-10-05 16:44:30 INFO  (HeadlessAnalyzer) SCRIPT: C:\Users\KoZa\Documents\ChatGPT\tools\kh2-audit\ExportIop.java  
+2026-10-05 16:44:31 INFO  (GhidraScript) ExportIop.java> FM export finished: 121 candidates, 0 failures, 0 suspicious outputs  
+2026-10-05 16:44:31 INFO  (HeadlessAnalyzer) ANALYZING changes made by post scripts: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_CDVDFSV.IRX  
+2026-10-05 16:44:31 INFO  (HeadlessAnalyzer) REPORT: Post-analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_CDVDFSV.IRX  
+2026-10-05 16:44:31 INFO  (LocalFileSystem) /ROM_CDVDFSV.IRX: file created (KoZa)  
+2026-10-05 16:44:31 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for: /ROM_CDVDFSV.IRX (kh2fm:/ROM_CDVDFSV.IRX)  
+2026-10-05 16:44:31 INFO  (HeadlessAnalyzer) REPORT: Import succeeded  
+2026-10-05 16:44:31 INFO  (HeadlessAnalyzer) IMPORTING: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_CDVDMAN.IRX  
+2026-10-05 16:44:31 INFO  (ProgramLoader) Using Loader: Executable and Linking Format (ELF)  
+2026-10-05 16:44:31 INFO  (ProgramLoader) Using Language/Compiler: MIPS:LE:32:default:default  
+2026-10-05 16:44:31 INFO  (ProgramLoader) Using Library Search Path: [., C:\WINDOWS\SysWOW64, C:\Program Files\Eclipse Adoptium\jdk-25.0.4.101-hotspot\bin, C:\WINDOWS\Sun\Java\bin, C:\WINDOWS\system32, C:\WINDOWS, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell, C:\Users\KoZa\.codex\tmp\arg0\codex-arg05P56g4, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\libheif\libheif\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\jxrlib\jxrlib\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\poppler\Library\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\override, C:\Python314\Scripts\, C:\Python314\, C:\WINDOWS\System32\Wbem, C:\WINDOWS\System32\WindowsPowerShell\v1.0\, C:\WINDOWS\System32\OpenSSH\, C:\Program Files\dotnet\, C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\, C:\Program Files\Process Lasso\, C:\Program Files\nodejs\, C:\ProgramData\chocolatey\bin, C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common, C:\Program Files\Git\cmd, C:\Users\KoZa\.cargo\bin, C:\Users\KoZa\.pi\agent\bin, C:\Users\KoZa\AppData\Local\Microsoft\WindowsApps, C:\Users\KoZa\.dotnet\tools, C:\Users\KoZa\AppData\Roaming\npm, C:\Users\KoZa\AppData\Local\Programs\Ollama, C:\Users\KoZa\AppData\Local\PowerToys\DSCModules\, C:\Users\KoZa\AppData\Local\GitHubDesktop\bin, C:\Users\KoZa\AppData\Local\Unity\bin, C:\Users\KoZa\AppData\Local\Microsoft\WinGet\Links, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\fallback, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\6de5bf5fa8384f8d, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\f544b3844e0f14e9]  
+2026-10-05 16:44:31 DEBUG (ElfHeader) Elf symbol table section .symtab linked to string table section .strtab  
+2026-10-05 16:44:31 DEBUG (ElfHeader) Elf relocation table section .rel.text linked to symbol table section .symtab affecting .text  
+2026-10-05 16:44:31 DEBUG (ElfHeader) Elf relocation table section .rel.rodata linked to symbol table section .symtab affecting .rodata  
+2026-10-05 16:44:31 DEBUG (ElfHeader) Elf relocation table section .rel.data linked to symbol table section .symtab affecting .data  
+2026-10-05 16:44:31 INFO  (ProgramLoader) Additional info:
+Loading file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_CDVDMAN.IRX?MD5=e1f84dca104752d57982265fe4197cfd...
+Skipping segment[0, IRX header] included by section .iopmod
+Created %got.text block required for relocation processing (gp=0xbfd07ff0)
+------------------------------------------------
+
+  
+2026-10-05 16:44:31 INFO  (HeadlessAnalyzer) IMPORTING: Loaded 0 additional files  
+2026-10-05 16:44:31 INFO  (HeadlessAnalyzer) ANALYZING all memory and code: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_CDVDMAN.IRX  
+2026-10-05 16:44:33 DEBUG (FidAnalyzer) No FID Libraries apply for language MIPS:LE:32:default  
+2026-10-05 16:44:33 DEBUG (PackedDatabaseCache) Using cached packed database: C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\data\typeinfo\generic\generic_clib.gdt  
+2026-10-05 16:44:33 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2026-10-05 16:44:33 INFO  (AutoAnalysisManager) -----------------------------------------------------
+    ASCII Strings                              0.012 secs
+    Apply Data Archives                        0.047 secs
+    Call-Fixup Installer                       0.001 secs
+    Create Address Tables                      0.008 secs
+    Create Address Tables - One Time           0.039 secs
+    Create Function                            0.028 secs
+    Data Reference                             0.008 secs
+    Decompiler Switch Analysis                 1.338 secs
+    Demangler GNU                              0.000 secs
+    Disassemble                                0.083 secs
+    Disassemble Entry Points                   0.000 secs
+    Embedded Media                             0.003 secs
+    External Entry References                  0.000 secs
+    Function ID                                0.000 secs
+    Function Start Search                      0.009 secs
+    MIPS Constant Reference Analyzer           0.224 secs
+    MIPS Symbol                                0.000 secs
+    MIPS UnAlligned Instruction Fix            0.010 secs
+    Non-Returning Functions - Discovered       0.007 secs
+    Non-Returning Functions - Known            0.002 secs
+    Reference                                  0.019 secs
+    Shared Return Calls                        0.005 secs
+    Stack                                      0.239 secs
+    Subroutine References                      0.011 secs
+-----------------------------------------------------
+     Total Time   2 secs
+-----------------------------------------------------
+  
+2026-10-05 16:44:33 INFO  (HeadlessAnalyzer) REPORT: Analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_CDVDMAN.IRX  
+2026-10-05 16:44:33 INFO  (HeadlessAnalyzer) REPORT: Execute script: ExportIop.java 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-pseudocode/iop' 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-inputs.json'   
+2026-10-05 16:44:33 INFO  (HeadlessAnalyzer) SCRIPT: C:\Users\KoZa\Documents\ChatGPT\tools\kh2-audit\ExportIop.java  
+2026-10-05 16:44:34 INFO  (GhidraScript) ExportIop.java> FM export finished: 191 candidates, 0 failures, 0 suspicious outputs  
+2026-10-05 16:44:34 INFO  (HeadlessAnalyzer) ANALYZING changes made by post scripts: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_CDVDMAN.IRX  
+2026-10-05 16:44:34 INFO  (HeadlessAnalyzer) REPORT: Post-analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_CDVDMAN.IRX  
+2026-10-05 16:44:34 INFO  (LocalFileSystem) /ROM_CDVDMAN.IRX: file created (KoZa)  
+2026-10-05 16:44:34 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for: /ROM_CDVDMAN.IRX (kh2fm:/ROM_CDVDMAN.IRX)  
+2026-10-05 16:44:34 INFO  (HeadlessAnalyzer) REPORT: Import succeeded  
+2026-10-05 16:44:34 INFO  (HeadlessAnalyzer) IMPORTING: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_EESYNC.IRX  
+2026-10-05 16:44:34 INFO  (ProgramLoader) Using Loader: Executable and Linking Format (ELF)  
+2026-10-05 16:44:34 INFO  (ProgramLoader) Using Language/Compiler: MIPS:LE:32:default:default  
+2026-10-05 16:44:34 INFO  (ProgramLoader) Using Library Search Path: [., C:\WINDOWS\SysWOW64, C:\Program Files\Eclipse Adoptium\jdk-25.0.4.101-hotspot\bin, C:\WINDOWS\Sun\Java\bin, C:\WINDOWS\system32, C:\WINDOWS, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell, C:\Users\KoZa\.codex\tmp\arg0\codex-arg05P56g4, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\libheif\libheif\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\jxrlib\jxrlib\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\poppler\Library\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\override, C:\Python314\Scripts\, C:\Python314\, C:\WINDOWS\System32\Wbem, C:\WINDOWS\System32\WindowsPowerShell\v1.0\, C:\WINDOWS\System32\OpenSSH\, C:\Program Files\dotnet\, C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\, C:\Program Files\Process Lasso\, C:\Program Files\nodejs\, C:\ProgramData\chocolatey\bin, C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common, C:\Program Files\Git\cmd, C:\Users\KoZa\.cargo\bin, C:\Users\KoZa\.pi\agent\bin, C:\Users\KoZa\AppData\Local\Microsoft\WindowsApps, C:\Users\KoZa\.dotnet\tools, C:\Users\KoZa\AppData\Roaming\npm, C:\Users\KoZa\AppData\Local\Programs\Ollama, C:\Users\KoZa\AppData\Local\PowerToys\DSCModules\, C:\Users\KoZa\AppData\Local\GitHubDesktop\bin, C:\Users\KoZa\AppData\Local\Unity\bin, C:\Users\KoZa\AppData\Local\Microsoft\WinGet\Links, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\fallback, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\6de5bf5fa8384f8d, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\f544b3844e0f14e9]  
+2026-10-05 16:44:34 DEBUG (ElfHeader) Elf symbol table section .symtab linked to string table section .strtab  
+2026-10-05 16:44:34 DEBUG (ElfHeader) Elf relocation table section .rel.text linked to symbol table section .symtab affecting .text  
+2026-10-05 16:44:34 DEBUG (ElfHeader) Elf relocation table section .rel.data linked to symbol table section .symtab affecting .data  
+2026-10-05 16:44:34 INFO  (ProgramLoader) Additional info:
+Loading file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_EESYNC.IRX?MD5=77e18a735afa5ca705b4206f8ce24d85...
+Skipping segment[0, IRX header] included by section .iopmod
+Skipping section [.bss] with invalid size 0x0
+Created %got.text block required for relocation processing (gp=0xbfd07ff0)
+------------------------------------------------
+
+  
+2026-10-05 16:44:34 INFO  (HeadlessAnalyzer) IMPORTING: Loaded 0 additional files  
+2026-10-05 16:44:34 INFO  (HeadlessAnalyzer) ANALYZING all memory and code: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_EESYNC.IRX  
+2026-10-05 16:44:34 DEBUG (FidAnalyzer) No FID Libraries apply for language MIPS:LE:32:default  
+2026-10-05 16:44:34 DEBUG (PackedDatabaseCache) Using cached packed database: C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\data\typeinfo\generic\generic_clib.gdt  
+2026-10-05 16:44:34 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2026-10-05 16:44:34 INFO  (HeadlessAnalyzer) REPORT: Analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_EESYNC.IRX  
+2026-10-05 16:44:34 INFO  (HeadlessAnalyzer) REPORT: Execute script: ExportIop.java 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-pseudocode/iop' 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-inputs.json'   
+2026-10-05 16:44:34 INFO  (HeadlessAnalyzer) SCRIPT: C:\Users\KoZa\Documents\ChatGPT\tools\kh2-audit\ExportIop.java  
+2026-10-05 16:44:35 INFO  (GhidraScript) ExportIop.java> FM export finished: 10 candidates, 0 failures, 0 suspicious outputs  
+2026-10-05 16:44:35 INFO  (HeadlessAnalyzer) ANALYZING changes made by post scripts: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_EESYNC.IRX  
+2026-10-05 16:44:35 INFO  (HeadlessAnalyzer) REPORT: Post-analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_EESYNC.IRX  
+2026-10-05 16:44:35 INFO  (LocalFileSystem) /ROM_EESYNC.IRX: file created (KoZa)  
+2026-10-05 16:44:35 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for: /ROM_EESYNC.IRX (kh2fm:/ROM_EESYNC.IRX)  
+2026-10-05 16:44:35 INFO  (HeadlessAnalyzer) REPORT: Import succeeded  
+2026-10-05 16:44:35 INFO  (HeadlessAnalyzer) IMPORTING: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_FILEIO.IRX  
+2026-10-05 16:44:35 INFO  (ProgramLoader) Using Loader: Executable and Linking Format (ELF)  
+2026-10-05 16:44:35 INFO  (ProgramLoader) Using Language/Compiler: MIPS:LE:32:default:default  
+2026-10-05 16:44:35 INFO  (ProgramLoader) Using Library Search Path: [., C:\WINDOWS\SysWOW64, C:\Program Files\Eclipse Adoptium\jdk-25.0.4.101-hotspot\bin, C:\WINDOWS\Sun\Java\bin, C:\WINDOWS\system32, C:\WINDOWS, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell, C:\Users\KoZa\.codex\tmp\arg0\codex-arg05P56g4, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\libheif\libheif\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\jxrlib\jxrlib\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\poppler\Library\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\override, C:\Python314\Scripts\, C:\Python314\, C:\WINDOWS\System32\Wbem, C:\WINDOWS\System32\WindowsPowerShell\v1.0\, C:\WINDOWS\System32\OpenSSH\, C:\Program Files\dotnet\, C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\, C:\Program Files\Process Lasso\, C:\Program Files\nodejs\, C:\ProgramData\chocolatey\bin, C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common, C:\Program Files\Git\cmd, C:\Users\KoZa\.cargo\bin, C:\Users\KoZa\.pi\agent\bin, C:\Users\KoZa\AppData\Local\Microsoft\WindowsApps, C:\Users\KoZa\.dotnet\tools, C:\Users\KoZa\AppData\Roaming\npm, C:\Users\KoZa\AppData\Local\Programs\Ollama, C:\Users\KoZa\AppData\Local\PowerToys\DSCModules\, C:\Users\KoZa\AppData\Local\GitHubDesktop\bin, C:\Users\KoZa\AppData\Local\Unity\bin, C:\Users\KoZa\AppData\Local\Microsoft\WinGet\Links, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\fallback, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\6de5bf5fa8384f8d, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\f544b3844e0f14e9]  
+2026-10-05 16:44:35 DEBUG (ElfHeader) Elf symbol table section .symtab linked to string table section .strtab  
+2026-10-05 16:44:35 DEBUG (ElfHeader) Elf relocation table section .rel.text linked to symbol table section .symtab affecting .text  
+2026-10-05 16:44:35 DEBUG (ElfHeader) Elf relocation table section .rel.rodata linked to symbol table section .symtab affecting .rodata  
+2026-10-05 16:44:35 DEBUG (ElfHeader) Elf relocation table section .rel.data linked to symbol table section .symtab affecting .data  
+2026-10-05 16:44:35 INFO  (ProgramLoader) Additional info:
+Loading file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_FILEIO.IRX?MD5=33f14ea9c52fe9091ef6e48190999b0a...
+Skipping segment[0, IRX header] included by section .iopmod
+Created %got.text block required for relocation processing (gp=0xbfd07ff0)
+------------------------------------------------
+
+  
+2026-10-05 16:44:35 INFO  (HeadlessAnalyzer) IMPORTING: Loaded 0 additional files  
+2026-10-05 16:44:35 INFO  (HeadlessAnalyzer) ANALYZING all memory and code: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_FILEIO.IRX  
+2026-10-05 16:44:35 DEBUG (FidAnalyzer) No FID Libraries apply for language MIPS:LE:32:default  
+2026-10-05 16:44:35 DEBUG (PackedDatabaseCache) Using cached packed database: C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\data\typeinfo\generic\generic_clib.gdt  
+2026-10-05 16:44:35 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2026-10-05 16:44:36 INFO  (HeadlessAnalyzer) REPORT: Analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_FILEIO.IRX  
+2026-10-05 16:44:36 INFO  (HeadlessAnalyzer) REPORT: Execute script: ExportIop.java 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-pseudocode/iop' 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-inputs.json'   
+2026-10-05 16:44:36 INFO  (HeadlessAnalyzer) SCRIPT: C:\Users\KoZa\Documents\ChatGPT\tools\kh2-audit\ExportIop.java  
+2026-10-05 16:44:36 INFO  (GhidraScript) ExportIop.java> FM export finished: 123 candidates, 0 failures, 0 suspicious outputs  
+2026-10-05 16:44:36 INFO  (HeadlessAnalyzer) ANALYZING changes made by post scripts: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_FILEIO.IRX  
+2026-10-05 16:44:36 INFO  (HeadlessAnalyzer) REPORT: Post-analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_FILEIO.IRX  
+2026-10-05 16:44:36 INFO  (LocalFileSystem) /ROM_FILEIO.IRX: file created (KoZa)  
+2026-10-05 16:44:36 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for: /ROM_FILEIO.IRX (kh2fm:/ROM_FILEIO.IRX)  
+2026-10-05 16:44:36 INFO  (HeadlessAnalyzer) REPORT: Import succeeded  
+2026-10-05 16:44:36 INFO  (HeadlessAnalyzer) IMPORTING: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_IOMAN.IRX  
+2026-10-05 16:44:36 INFO  (ProgramLoader) Using Loader: Executable and Linking Format (ELF)  
+2026-10-05 16:44:36 INFO  (ProgramLoader) Using Language/Compiler: MIPS:LE:32:default:default  
+2026-10-05 16:44:36 INFO  (ProgramLoader) Using Library Search Path: [., C:\WINDOWS\SysWOW64, C:\Program Files\Eclipse Adoptium\jdk-25.0.4.101-hotspot\bin, C:\WINDOWS\Sun\Java\bin, C:\WINDOWS\system32, C:\WINDOWS, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell, C:\Users\KoZa\.codex\tmp\arg0\codex-arg05P56g4, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\libheif\libheif\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\jxrlib\jxrlib\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\poppler\Library\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\override, C:\Python314\Scripts\, C:\Python314\, C:\WINDOWS\System32\Wbem, C:\WINDOWS\System32\WindowsPowerShell\v1.0\, C:\WINDOWS\System32\OpenSSH\, C:\Program Files\dotnet\, C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\, C:\Program Files\Process Lasso\, C:\Program Files\nodejs\, C:\ProgramData\chocolatey\bin, C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common, C:\Program Files\Git\cmd, C:\Users\KoZa\.cargo\bin, C:\Users\KoZa\.pi\agent\bin, C:\Users\KoZa\AppData\Local\Microsoft\WindowsApps, C:\Users\KoZa\.dotnet\tools, C:\Users\KoZa\AppData\Roaming\npm, C:\Users\KoZa\AppData\Local\Programs\Ollama, C:\Users\KoZa\AppData\Local\PowerToys\DSCModules\, C:\Users\KoZa\AppData\Local\GitHubDesktop\bin, C:\Users\KoZa\AppData\Local\Unity\bin, C:\Users\KoZa\AppData\Local\Microsoft\WinGet\Links, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\fallback, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\6de5bf5fa8384f8d, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\f544b3844e0f14e9]  
+2026-10-05 16:44:36 DEBUG (ElfHeader) Elf symbol table section .symtab linked to string table section .strtab  
+2026-10-05 16:44:36 DEBUG (ElfHeader) Elf relocation table section .rel.text linked to symbol table section .symtab affecting .text  
+2026-10-05 16:44:36 DEBUG (ElfHeader) Elf relocation table section .rel.data linked to symbol table section .symtab affecting .data  
+2026-10-05 16:44:36 INFO  (ProgramLoader) Additional info:
+Loading file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_IOMAN.IRX?MD5=5fc0f7639e13f99d651fb002956a7c9a...
+Skipping segment[0, IRX header] included by section .iopmod
+Created %got.text block required for relocation processing (gp=0xbfd07ff0)
+------------------------------------------------
+
+  
+2026-10-05 16:44:36 INFO  (HeadlessAnalyzer) IMPORTING: Loaded 0 additional files  
+2026-10-05 16:44:36 INFO  (HeadlessAnalyzer) ANALYZING all memory and code: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_IOMAN.IRX  
+2026-10-05 16:44:36 DEBUG (FidAnalyzer) No FID Libraries apply for language MIPS:LE:32:default  
+2026-10-05 16:44:36 DEBUG (PackedDatabaseCache) Using cached packed database: C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\data\typeinfo\generic\generic_clib.gdt  
+2026-10-05 16:44:36 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2026-10-05 16:44:36 INFO  (HeadlessAnalyzer) REPORT: Analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_IOMAN.IRX  
+2026-10-05 16:44:36 INFO  (HeadlessAnalyzer) REPORT: Execute script: ExportIop.java 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-pseudocode/iop' 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-inputs.json'   
+2026-10-05 16:44:36 INFO  (HeadlessAnalyzer) SCRIPT: C:\Users\KoZa\Documents\ChatGPT\tools\kh2-audit\ExportIop.java  
+2026-10-05 16:44:37 INFO  (GhidraScript) ExportIop.java> FM export finished: 57 candidates, 0 failures, 0 suspicious outputs  
+2026-10-05 16:44:37 INFO  (HeadlessAnalyzer) ANALYZING changes made by post scripts: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_IOMAN.IRX  
+2026-10-05 16:44:37 INFO  (HeadlessAnalyzer) REPORT: Post-analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_IOMAN.IRX  
+2026-10-05 16:44:37 INFO  (LocalFileSystem) /ROM_IOMAN.IRX: file created (KoZa)  
+2026-10-05 16:44:37 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for: /ROM_IOMAN.IRX (kh2fm:/ROM_IOMAN.IRX)  
+2026-10-05 16:44:37 INFO  (HeadlessAnalyzer) REPORT: Import succeeded  
+2026-10-05 16:44:37 INFO  (HeadlessAnalyzer) IMPORTING: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_LOADCORE.IRX  
+2026-10-05 16:44:37 INFO  (ProgramLoader) Using Loader: Executable and Linking Format (ELF)  
+2026-10-05 16:44:37 INFO  (ProgramLoader) Using Language/Compiler: MIPS:LE:32:default:default  
+2026-10-05 16:44:37 INFO  (ProgramLoader) Using Library Search Path: [., C:\WINDOWS\SysWOW64, C:\Program Files\Eclipse Adoptium\jdk-25.0.4.101-hotspot\bin, C:\WINDOWS\Sun\Java\bin, C:\WINDOWS\system32, C:\WINDOWS, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell, C:\Users\KoZa\.codex\tmp\arg0\codex-arg05P56g4, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\libheif\libheif\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\jxrlib\jxrlib\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\poppler\Library\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\override, C:\Python314\Scripts\, C:\Python314\, C:\WINDOWS\System32\Wbem, C:\WINDOWS\System32\WindowsPowerShell\v1.0\, C:\WINDOWS\System32\OpenSSH\, C:\Program Files\dotnet\, C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\, C:\Program Files\Process Lasso\, C:\Program Files\nodejs\, C:\ProgramData\chocolatey\bin, C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common, C:\Program Files\Git\cmd, C:\Users\KoZa\.cargo\bin, C:\Users\KoZa\.pi\agent\bin, C:\Users\KoZa\AppData\Local\Microsoft\WindowsApps, C:\Users\KoZa\.dotnet\tools, C:\Users\KoZa\AppData\Roaming\npm, C:\Users\KoZa\AppData\Local\Programs\Ollama, C:\Users\KoZa\AppData\Local\PowerToys\DSCModules\, C:\Users\KoZa\AppData\Local\GitHubDesktop\bin, C:\Users\KoZa\AppData\Local\Unity\bin, C:\Users\KoZa\AppData\Local\Microsoft\WinGet\Links, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\fallback, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\6de5bf5fa8384f8d, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\f544b3844e0f14e9]  
+2026-10-05 16:44:37 DEBUG (ElfHeader) Elf symbol table section .symtab linked to string table section .strtab  
+2026-10-05 16:44:37 DEBUG (ElfHeader) Elf relocation table section .rel.text linked to symbol table section .symtab affecting .text  
+2026-10-05 16:44:37 DEBUG (ElfHeader) Elf relocation table section .rel.data linked to symbol table section .symtab affecting .data  
+2026-10-05 16:44:37 INFO  (ProgramLoader) Additional info:
+Loading file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_LOADCORE.IRX?MD5=487147617e720af50d8ab9b722cdf287...
+Skipping segment[0, IRX header] included by section .iopmod
+Created %got.text block required for relocation processing (gp=0xbfd07ff0)
+------------------------------------------------
+
+  
+2026-10-05 16:44:37 INFO  (HeadlessAnalyzer) IMPORTING: Loaded 0 additional files  
+2026-10-05 16:44:37 INFO  (HeadlessAnalyzer) ANALYZING all memory and code: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_LOADCORE.IRX  
+2026-10-05 16:44:37 DEBUG (FidAnalyzer) No FID Libraries apply for language MIPS:LE:32:default  
+2026-10-05 16:44:37 DEBUG (PackedDatabaseCache) Using cached packed database: C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\data\typeinfo\generic\generic_clib.gdt  
+2026-10-05 16:44:37 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2026-10-05 16:44:37 INFO  (HeadlessAnalyzer) REPORT: Analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_LOADCORE.IRX  
+2026-10-05 16:44:37 INFO  (HeadlessAnalyzer) REPORT: Execute script: ExportIop.java 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-pseudocode/iop' 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-inputs.json'   
+2026-10-05 16:44:37 INFO  (HeadlessAnalyzer) SCRIPT: C:\Users\KoZa\Documents\ChatGPT\tools\kh2-audit\ExportIop.java  
+2026-10-05 16:44:38 INFO  (GhidraScript) ExportIop.java> FM export finished: 41 candidates, 0 failures, 0 suspicious outputs  
+2026-10-05 16:44:38 INFO  (HeadlessAnalyzer) ANALYZING changes made by post scripts: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_LOADCORE.IRX  
+2026-10-05 16:44:38 INFO  (HeadlessAnalyzer) REPORT: Post-analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_LOADCORE.IRX  
+2026-10-05 16:44:38 INFO  (LocalFileSystem) /ROM_LOADCORE.IRX: file created (KoZa)  
+2026-10-05 16:44:38 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for: /ROM_LOADCORE.IRX (kh2fm:/ROM_LOADCORE.IRX)  
+2026-10-05 16:44:38 INFO  (HeadlessAnalyzer) REPORT: Import succeeded  
+2026-10-05 16:44:38 INFO  (HeadlessAnalyzer) IMPORTING: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_LOADFILE.IRX  
+2026-10-05 16:44:38 INFO  (ProgramLoader) Using Loader: Executable and Linking Format (ELF)  
+2026-10-05 16:44:38 INFO  (ProgramLoader) Using Language/Compiler: MIPS:LE:32:default:default  
+2026-10-05 16:44:38 INFO  (ProgramLoader) Using Library Search Path: [., C:\WINDOWS\SysWOW64, C:\Program Files\Eclipse Adoptium\jdk-25.0.4.101-hotspot\bin, C:\WINDOWS\Sun\Java\bin, C:\WINDOWS\system32, C:\WINDOWS, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell, C:\Users\KoZa\.codex\tmp\arg0\codex-arg05P56g4, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\libheif\libheif\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\jxrlib\jxrlib\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\poppler\Library\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\override, C:\Python314\Scripts\, C:\Python314\, C:\WINDOWS\System32\Wbem, C:\WINDOWS\System32\WindowsPowerShell\v1.0\, C:\WINDOWS\System32\OpenSSH\, C:\Program Files\dotnet\, C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\, C:\Program Files\Process Lasso\, C:\Program Files\nodejs\, C:\ProgramData\chocolatey\bin, C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common, C:\Program Files\Git\cmd, C:\Users\KoZa\.cargo\bin, C:\Users\KoZa\.pi\agent\bin, C:\Users\KoZa\AppData\Local\Microsoft\WindowsApps, C:\Users\KoZa\.dotnet\tools, C:\Users\KoZa\AppData\Roaming\npm, C:\Users\KoZa\AppData\Local\Programs\Ollama, C:\Users\KoZa\AppData\Local\PowerToys\DSCModules\, C:\Users\KoZa\AppData\Local\GitHubDesktop\bin, C:\Users\KoZa\AppData\Local\Unity\bin, C:\Users\KoZa\AppData\Local\Microsoft\WinGet\Links, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\fallback, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\6de5bf5fa8384f8d, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\f544b3844e0f14e9]  
+2026-10-05 16:44:38 DEBUG (ElfHeader) Elf symbol table section .symtab linked to string table section .strtab  
+2026-10-05 16:44:38 DEBUG (ElfHeader) Elf relocation table section .rel.text linked to symbol table section .symtab affecting .text  
+2026-10-05 16:44:38 DEBUG (ElfHeader) Elf relocation table section .rel.data linked to symbol table section .symtab affecting .data  
+2026-10-05 16:44:38 INFO  (ProgramLoader) Additional info:
+Loading file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_LOADFILE.IRX?MD5=40d71a1a745e733337c8859cb28b1e71...
+Skipping segment[0, IRX header] included by section .iopmod
+Created %got.text block required for relocation processing (gp=0xbfd07ff0)
+------------------------------------------------
+
+  
+2026-10-05 16:44:38 INFO  (HeadlessAnalyzer) IMPORTING: Loaded 0 additional files  
+2026-10-05 16:44:38 INFO  (HeadlessAnalyzer) ANALYZING all memory and code: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_LOADFILE.IRX  
+2026-10-05 16:44:38 DEBUG (FidAnalyzer) No FID Libraries apply for language MIPS:LE:32:default  
+2026-10-05 16:44:38 DEBUG (PackedDatabaseCache) Using cached packed database: C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\data\typeinfo\generic\generic_clib.gdt  
+2026-10-05 16:44:38 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2026-10-05 16:44:38 INFO  (HeadlessAnalyzer) REPORT: Analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_LOADFILE.IRX  
+2026-10-05 16:44:38 INFO  (HeadlessAnalyzer) REPORT: Execute script: ExportIop.java 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-pseudocode/iop' 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-inputs.json'   
+2026-10-05 16:44:38 INFO  (HeadlessAnalyzer) SCRIPT: C:\Users\KoZa\Documents\ChatGPT\tools\kh2-audit\ExportIop.java  
+2026-10-05 16:44:38 INFO  (GhidraScript) ExportIop.java> FM export finished: 62 candidates, 0 failures, 0 suspicious outputs  
+2026-10-05 16:44:38 INFO  (HeadlessAnalyzer) ANALYZING changes made by post scripts: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_LOADFILE.IRX  
+2026-10-05 16:44:38 INFO  (HeadlessAnalyzer) REPORT: Post-analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_LOADFILE.IRX  
+2026-10-05 16:44:38 INFO  (LocalFileSystem) /ROM_LOADFILE.IRX: file created (KoZa)  
+2026-10-05 16:44:38 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for: /ROM_LOADFILE.IRX (kh2fm:/ROM_LOADFILE.IRX)  
+2026-10-05 16:44:38 INFO  (HeadlessAnalyzer) REPORT: Import succeeded  
+2026-10-05 16:44:38 INFO  (HeadlessAnalyzer) IMPORTING: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_MODLOAD.IRX  
+2026-10-05 16:44:38 INFO  (ProgramLoader) Using Loader: Executable and Linking Format (ELF)  
+2026-10-05 16:44:38 INFO  (ProgramLoader) Using Language/Compiler: MIPS:LE:32:default:default  
+2026-10-05 16:44:38 INFO  (ProgramLoader) Using Library Search Path: [., C:\WINDOWS\SysWOW64, C:\Program Files\Eclipse Adoptium\jdk-25.0.4.101-hotspot\bin, C:\WINDOWS\Sun\Java\bin, C:\WINDOWS\system32, C:\WINDOWS, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell, C:\Users\KoZa\.codex\tmp\arg0\codex-arg05P56g4, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\libheif\libheif\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\jxrlib\jxrlib\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\poppler\Library\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\override, C:\Python314\Scripts\, C:\Python314\, C:\WINDOWS\System32\Wbem, C:\WINDOWS\System32\WindowsPowerShell\v1.0\, C:\WINDOWS\System32\OpenSSH\, C:\Program Files\dotnet\, C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\, C:\Program Files\Process Lasso\, C:\Program Files\nodejs\, C:\ProgramData\chocolatey\bin, C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common, C:\Program Files\Git\cmd, C:\Users\KoZa\.cargo\bin, C:\Users\KoZa\.pi\agent\bin, C:\Users\KoZa\AppData\Local\Microsoft\WindowsApps, C:\Users\KoZa\.dotnet\tools, C:\Users\KoZa\AppData\Roaming\npm, C:\Users\KoZa\AppData\Local\Programs\Ollama, C:\Users\KoZa\AppData\Local\PowerToys\DSCModules\, C:\Users\KoZa\AppData\Local\GitHubDesktop\bin, C:\Users\KoZa\AppData\Local\Unity\bin, C:\Users\KoZa\AppData\Local\Microsoft\WinGet\Links, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\fallback, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\6de5bf5fa8384f8d, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\f544b3844e0f14e9]  
+2026-10-05 16:44:38 DEBUG (ElfHeader) Elf symbol table section .symtab linked to string table section .strtab  
+2026-10-05 16:44:38 DEBUG (ElfHeader) Elf relocation table section .rel.text linked to symbol table section .symtab affecting .text  
+2026-10-05 16:44:38 DEBUG (ElfHeader) Elf relocation table section .rel.rodata linked to symbol table section .symtab affecting .rodata  
+2026-10-05 16:44:38 DEBUG (ElfHeader) Elf relocation table section .rel.data linked to symbol table section .symtab affecting .data  
+2026-10-05 16:44:38 INFO  (ProgramLoader) Additional info:
+Loading file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_MODLOAD.IRX?MD5=c442655e0e9ca20322ccaf2a0fbe336f...
+Skipping segment[0, IRX header] included by section .iopmod
+Created %got.text block required for relocation processing (gp=0xbfd07ff0)
+------------------------------------------------
+
+  
+2026-10-05 16:44:38 INFO  (HeadlessAnalyzer) IMPORTING: Loaded 0 additional files  
+2026-10-05 16:44:38 INFO  (HeadlessAnalyzer) ANALYZING all memory and code: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_MODLOAD.IRX  
+2026-10-05 16:44:39 DEBUG (FidAnalyzer) No FID Libraries apply for language MIPS:LE:32:default  
+2026-10-05 16:44:39 DEBUG (PackedDatabaseCache) Using cached packed database: C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\data\typeinfo\generic\generic_clib.gdt  
+2026-10-05 16:44:39 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2026-10-05 16:44:39 INFO  (HeadlessAnalyzer) REPORT: Analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_MODLOAD.IRX  
+2026-10-05 16:44:39 INFO  (HeadlessAnalyzer) REPORT: Execute script: ExportIop.java 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-pseudocode/iop' 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-inputs.json'   
+2026-10-05 16:44:39 INFO  (HeadlessAnalyzer) SCRIPT: C:\Users\KoZa\Documents\ChatGPT\tools\kh2-audit\ExportIop.java  
+2026-10-05 16:44:39 WARN  (DecompileCallback) Decompiling 00002cec: Unable to read bytes at ram:1fc02008  
+2026-10-05 16:44:39 WARN  (DecompileCallback) Decompiling 00002cec: Unable to read bytes at ram:1fc0200c  
+2026-10-05 16:44:39 WARN  (DecompileCallback) Decompiling 00002cec: Unable to read bytes at ram:1fc02010  
+2026-10-05 16:44:39 WARN  (DecompileCallback) Decompiling 00002cec: Unable to read bytes at ram:1fc02014  
+2026-10-05 16:44:39 WARN  (DecompileCallback) Decompiling 00002cec: Unable to read bytes at ram:1fc02008  
+2026-10-05 16:44:39 WARN  (DecompileCallback) Decompiling 00002cec: Unable to read bytes at ram:1fc0200c  
+2026-10-05 16:44:39 WARN  (DecompileCallback) Decompiling 00002cec: Unable to read bytes at ram:1fc02010  
+2026-10-05 16:44:39 WARN  (DecompileCallback) Decompiling 00002cec: Unable to read bytes at ram:1fc02014  
+2026-10-05 16:44:39 INFO  (GhidraScript) ExportIop.java> FM export finished: 108 candidates, 0 failures, 0 suspicious outputs  
+2026-10-05 16:44:39 INFO  (HeadlessAnalyzer) ANALYZING changes made by post scripts: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_MODLOAD.IRX  
+2026-10-05 16:44:39 INFO  (HeadlessAnalyzer) REPORT: Post-analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_MODLOAD.IRX  
+2026-10-05 16:44:39 INFO  (LocalFileSystem) /ROM_MODLOAD.IRX: file created (KoZa)  
+2026-10-05 16:44:39 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for: /ROM_MODLOAD.IRX (kh2fm:/ROM_MODLOAD.IRX)  
+2026-10-05 16:44:39 INFO  (HeadlessAnalyzer) REPORT: Import succeeded  
+2026-10-05 16:44:39 INFO  (HeadlessAnalyzer) IMPORTING: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_ROMDRV.IRX  
+2026-10-05 16:44:39 INFO  (ProgramLoader) Using Loader: Executable and Linking Format (ELF)  
+2026-10-05 16:44:39 INFO  (ProgramLoader) Using Language/Compiler: MIPS:LE:32:default:default  
+2026-10-05 16:44:39 INFO  (ProgramLoader) Using Library Search Path: [., C:\WINDOWS\SysWOW64, C:\Program Files\Eclipse Adoptium\jdk-25.0.4.101-hotspot\bin, C:\WINDOWS\Sun\Java\bin, C:\WINDOWS\system32, C:\WINDOWS, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell, C:\Users\KoZa\.codex\tmp\arg0\codex-arg05P56g4, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\libheif\libheif\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\jxrlib\jxrlib\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\poppler\Library\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\override, C:\Python314\Scripts\, C:\Python314\, C:\WINDOWS\System32\Wbem, C:\WINDOWS\System32\WindowsPowerShell\v1.0\, C:\WINDOWS\System32\OpenSSH\, C:\Program Files\dotnet\, C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\, C:\Program Files\Process Lasso\, C:\Program Files\nodejs\, C:\ProgramData\chocolatey\bin, C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common, C:\Program Files\Git\cmd, C:\Users\KoZa\.cargo\bin, C:\Users\KoZa\.pi\agent\bin, C:\Users\KoZa\AppData\Local\Microsoft\WindowsApps, C:\Users\KoZa\.dotnet\tools, C:\Users\KoZa\AppData\Roaming\npm, C:\Users\KoZa\AppData\Local\Programs\Ollama, C:\Users\KoZa\AppData\Local\PowerToys\DSCModules\, C:\Users\KoZa\AppData\Local\GitHubDesktop\bin, C:\Users\KoZa\AppData\Local\Unity\bin, C:\Users\KoZa\AppData\Local\Microsoft\WinGet\Links, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\fallback, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\6de5bf5fa8384f8d, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\f544b3844e0f14e9]  
+2026-10-05 16:44:39 DEBUG (ElfHeader) Elf symbol table section .symtab linked to string table section .strtab  
+2026-10-05 16:44:39 DEBUG (ElfHeader) Elf relocation table section .rel.text linked to symbol table section .symtab affecting .text  
+2026-10-05 16:44:39 DEBUG (ElfHeader) Elf relocation table section .rel.data linked to symbol table section .symtab affecting .data  
+2026-10-05 16:44:39 INFO  (ProgramLoader) Additional info:
+Loading file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_ROMDRV.IRX?MD5=fe9bc04eb6dc5a22c88976e39946d5f2...
+Skipping segment[0, IRX header] included by section .iopmod
+Created %got.text block required for relocation processing (gp=0xbfd07ff0)
+------------------------------------------------
+
+  
+2026-10-05 16:44:39 INFO  (HeadlessAnalyzer) IMPORTING: Loaded 0 additional files  
+2026-10-05 16:44:39 INFO  (HeadlessAnalyzer) ANALYZING all memory and code: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_ROMDRV.IRX  
+2026-10-05 16:44:39 DEBUG (FidAnalyzer) No FID Libraries apply for language MIPS:LE:32:default  
+2026-10-05 16:44:39 DEBUG (PackedDatabaseCache) Using cached packed database: C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\data\typeinfo\generic\generic_clib.gdt  
+2026-10-05 16:44:40 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2026-10-05 16:44:40 INFO  (HeadlessAnalyzer) REPORT: Analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_ROMDRV.IRX  
+2026-10-05 16:44:40 INFO  (HeadlessAnalyzer) REPORT: Execute script: ExportIop.java 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-pseudocode/iop' 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-inputs.json'   
+2026-10-05 16:44:40 INFO  (HeadlessAnalyzer) SCRIPT: C:\Users\KoZa\Documents\ChatGPT\tools\kh2-audit\ExportIop.java  
+2026-10-05 16:44:40 INFO  (GhidraScript) ExportIop.java> FM export finished: 14 candidates, 0 failures, 0 suspicious outputs  
+2026-10-05 16:44:40 INFO  (HeadlessAnalyzer) ANALYZING changes made by post scripts: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_ROMDRV.IRX  
+2026-10-05 16:44:40 INFO  (HeadlessAnalyzer) REPORT: Post-analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_ROMDRV.IRX  
+2026-10-05 16:44:40 INFO  (LocalFileSystem) /ROM_ROMDRV.IRX: file created (KoZa)  
+2026-10-05 16:44:40 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for: /ROM_ROMDRV.IRX (kh2fm:/ROM_ROMDRV.IRX)  
+2026-10-05 16:44:40 INFO  (HeadlessAnalyzer) REPORT: Import succeeded  
+2026-10-05 16:44:40 INFO  (HeadlessAnalyzer) IMPORTING: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_SIFCMD.IRX  
+2026-10-05 16:44:40 INFO  (ProgramLoader) Using Loader: Executable and Linking Format (ELF)  
+2026-10-05 16:44:40 INFO  (ProgramLoader) Using Language/Compiler: MIPS:LE:32:default:default  
+2026-10-05 16:44:40 INFO  (ProgramLoader) Using Library Search Path: [., C:\WINDOWS\SysWOW64, C:\Program Files\Eclipse Adoptium\jdk-25.0.4.101-hotspot\bin, C:\WINDOWS\Sun\Java\bin, C:\WINDOWS\system32, C:\WINDOWS, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell, C:\Users\KoZa\.codex\tmp\arg0\codex-arg05P56g4, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\libheif\libheif\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\jxrlib\jxrlib\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\poppler\Library\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\override, C:\Python314\Scripts\, C:\Python314\, C:\WINDOWS\System32\Wbem, C:\WINDOWS\System32\WindowsPowerShell\v1.0\, C:\WINDOWS\System32\OpenSSH\, C:\Program Files\dotnet\, C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\, C:\Program Files\Process Lasso\, C:\Program Files\nodejs\, C:\ProgramData\chocolatey\bin, C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common, C:\Program Files\Git\cmd, C:\Users\KoZa\.cargo\bin, C:\Users\KoZa\.pi\agent\bin, C:\Users\KoZa\AppData\Local\Microsoft\WindowsApps, C:\Users\KoZa\.dotnet\tools, C:\Users\KoZa\AppData\Roaming\npm, C:\Users\KoZa\AppData\Local\Programs\Ollama, C:\Users\KoZa\AppData\Local\PowerToys\DSCModules\, C:\Users\KoZa\AppData\Local\GitHubDesktop\bin, C:\Users\KoZa\AppData\Local\Unity\bin, C:\Users\KoZa\AppData\Local\Microsoft\WinGet\Links, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\fallback, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\6de5bf5fa8384f8d, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\f544b3844e0f14e9]  
+2026-10-05 16:44:40 DEBUG (ElfHeader) Elf symbol table section .symtab linked to string table section .strtab  
+2026-10-05 16:44:40 DEBUG (ElfHeader) Elf relocation table section .rel.text linked to symbol table section .symtab affecting .text  
+2026-10-05 16:44:40 DEBUG (ElfHeader) Elf relocation table section .rel.data linked to symbol table section .symtab affecting .data  
+2026-10-05 16:44:40 INFO  (ProgramLoader) Additional info:
+Loading file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_SIFCMD.IRX?MD5=a31f029c2db9fdba7126aa3d901467cd...
+Skipping segment[0, IRX header] included by section .iopmod
+Created %got.text block required for relocation processing (gp=0xbfd07ff0)
+------------------------------------------------
+
+  
+2026-10-05 16:44:40 INFO  (HeadlessAnalyzer) IMPORTING: Loaded 0 additional files  
+2026-10-05 16:44:40 INFO  (HeadlessAnalyzer) ANALYZING all memory and code: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_SIFCMD.IRX  
+2026-10-05 16:44:40 DEBUG (FidAnalyzer) No FID Libraries apply for language MIPS:LE:32:default  
+2026-10-05 16:44:40 DEBUG (PackedDatabaseCache) Using cached packed database: C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\data\typeinfo\generic\generic_clib.gdt  
+2026-10-05 16:44:40 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2026-10-05 16:44:40 INFO  (HeadlessAnalyzer) REPORT: Analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_SIFCMD.IRX  
+2026-10-05 16:44:40 INFO  (HeadlessAnalyzer) REPORT: Execute script: ExportIop.java 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-pseudocode/iop' 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-inputs.json'   
+2026-10-05 16:44:40 INFO  (HeadlessAnalyzer) SCRIPT: C:\Users\KoZa\Documents\ChatGPT\tools\kh2-audit\ExportIop.java  
+2026-10-05 16:44:40 INFO  (GhidraScript) ExportIop.java> FM export finished: 62 candidates, 0 failures, 0 suspicious outputs  
+2026-10-05 16:44:40 INFO  (HeadlessAnalyzer) ANALYZING changes made by post scripts: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_SIFCMD.IRX  
+2026-10-05 16:44:40 INFO  (HeadlessAnalyzer) REPORT: Post-analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_SIFCMD.IRX  
+2026-10-05 16:44:41 INFO  (LocalFileSystem) /ROM_SIFCMD.IRX: file created (KoZa)  
+2026-10-05 16:44:41 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for: /ROM_SIFCMD.IRX (kh2fm:/ROM_SIFCMD.IRX)  
+2026-10-05 16:44:41 INFO  (HeadlessAnalyzer) REPORT: Import succeeded  
+2026-10-05 16:44:41 INFO  (HeadlessAnalyzer) IMPORTING: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_SIFMAN.IRX  
+2026-10-05 16:44:41 INFO  (ProgramLoader) Using Loader: Executable and Linking Format (ELF)  
+2026-10-05 16:44:41 INFO  (ProgramLoader) Using Language/Compiler: MIPS:LE:32:default:default  
+2026-10-05 16:44:41 INFO  (ProgramLoader) Using Library Search Path: [., C:\WINDOWS\SysWOW64, C:\Program Files\Eclipse Adoptium\jdk-25.0.4.101-hotspot\bin, C:\WINDOWS\Sun\Java\bin, C:\WINDOWS\system32, C:\WINDOWS, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell, C:\Users\KoZa\.codex\tmp\arg0\codex-arg05P56g4, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\libheif\libheif\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\jxrlib\jxrlib\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\poppler\Library\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\override, C:\Python314\Scripts\, C:\Python314\, C:\WINDOWS\System32\Wbem, C:\WINDOWS\System32\WindowsPowerShell\v1.0\, C:\WINDOWS\System32\OpenSSH\, C:\Program Files\dotnet\, C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\, C:\Program Files\Process Lasso\, C:\Program Files\nodejs\, C:\ProgramData\chocolatey\bin, C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common, C:\Program Files\Git\cmd, C:\Users\KoZa\.cargo\bin, C:\Users\KoZa\.pi\agent\bin, C:\Users\KoZa\AppData\Local\Microsoft\WindowsApps, C:\Users\KoZa\.dotnet\tools, C:\Users\KoZa\AppData\Roaming\npm, C:\Users\KoZa\AppData\Local\Programs\Ollama, C:\Users\KoZa\AppData\Local\PowerToys\DSCModules\, C:\Users\KoZa\AppData\Local\GitHubDesktop\bin, C:\Users\KoZa\AppData\Local\Unity\bin, C:\Users\KoZa\AppData\Local\Microsoft\WinGet\Links, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\fallback, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\6de5bf5fa8384f8d, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\f544b3844e0f14e9]  
+2026-10-05 16:44:41 DEBUG (ElfHeader) Elf symbol table section .symtab linked to string table section .strtab  
+2026-10-05 16:44:41 DEBUG (ElfHeader) Elf relocation table section .rel.text linked to symbol table section .symtab affecting .text  
+2026-10-05 16:44:41 DEBUG (ElfHeader) Elf relocation table section .rel.data linked to symbol table section .symtab affecting .data  
+2026-10-05 16:44:41 INFO  (ProgramLoader) Additional info:
+Loading file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_SIFMAN.IRX?MD5=5c6eb3194f1d0c89861ad3cdd32ec103...
+Skipping segment[0, IRX header] included by section .iopmod
+Created %got.text block required for relocation processing (gp=0xbfd07ff0)
+------------------------------------------------
+
+  
+2026-10-05 16:44:41 INFO  (HeadlessAnalyzer) IMPORTING: Loaded 0 additional files  
+2026-10-05 16:44:41 INFO  (HeadlessAnalyzer) ANALYZING all memory and code: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_SIFMAN.IRX  
+2026-10-05 16:44:41 DEBUG (FidAnalyzer) No FID Libraries apply for language MIPS:LE:32:default  
+2026-10-05 16:44:41 DEBUG (PackedDatabaseCache) Using cached packed database: C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\data\typeinfo\generic\generic_clib.gdt  
+2026-10-05 16:44:41 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2026-10-05 16:44:41 INFO  (HeadlessAnalyzer) REPORT: Analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_SIFMAN.IRX  
+2026-10-05 16:44:41 INFO  (HeadlessAnalyzer) REPORT: Execute script: ExportIop.java 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-pseudocode/iop' 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-inputs.json'   
+2026-10-05 16:44:41 INFO  (HeadlessAnalyzer) SCRIPT: C:\Users\KoZa\Documents\ChatGPT\tools\kh2-audit\ExportIop.java  
+2026-10-05 16:44:42 INFO  (GhidraScript) ExportIop.java> FM export finished: 31 candidates, 0 failures, 0 suspicious outputs  
+2026-10-05 16:44:42 INFO  (HeadlessAnalyzer) ANALYZING changes made by post scripts: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_SIFMAN.IRX  
+2026-10-05 16:44:42 INFO  (HeadlessAnalyzer) REPORT: Post-analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_SIFMAN.IRX  
+2026-10-05 16:44:42 INFO  (LocalFileSystem) /ROM_SIFMAN.IRX: file created (KoZa)  
+2026-10-05 16:44:42 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for: /ROM_SIFMAN.IRX (kh2fm:/ROM_SIFMAN.IRX)  
+2026-10-05 16:44:42 INFO  (HeadlessAnalyzer) REPORT: Import succeeded  
+2026-10-05 16:44:42 INFO  (HeadlessAnalyzer) IMPORTING: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_STDIO.IRX  
+2026-10-05 16:44:42 INFO  (ProgramLoader) Using Loader: Executable and Linking Format (ELF)  
+2026-10-05 16:44:42 INFO  (ProgramLoader) Using Language/Compiler: MIPS:LE:32:default:default  
+2026-10-05 16:44:42 INFO  (ProgramLoader) Using Library Search Path: [., C:\WINDOWS\SysWOW64, C:\Program Files\Eclipse Adoptium\jdk-25.0.4.101-hotspot\bin, C:\WINDOWS\Sun\Java\bin, C:\WINDOWS\system32, C:\WINDOWS, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell, C:\Users\KoZa\.codex\tmp\arg0\codex-arg05P56g4, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\libheif\libheif\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\jxrlib\jxrlib\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\poppler\Library\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\override, C:\Python314\Scripts\, C:\Python314\, C:\WINDOWS\System32\Wbem, C:\WINDOWS\System32\WindowsPowerShell\v1.0\, C:\WINDOWS\System32\OpenSSH\, C:\Program Files\dotnet\, C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\, C:\Program Files\Process Lasso\, C:\Program Files\nodejs\, C:\ProgramData\chocolatey\bin, C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common, C:\Program Files\Git\cmd, C:\Users\KoZa\.cargo\bin, C:\Users\KoZa\.pi\agent\bin, C:\Users\KoZa\AppData\Local\Microsoft\WindowsApps, C:\Users\KoZa\.dotnet\tools, C:\Users\KoZa\AppData\Roaming\npm, C:\Users\KoZa\AppData\Local\Programs\Ollama, C:\Users\KoZa\AppData\Local\PowerToys\DSCModules\, C:\Users\KoZa\AppData\Local\GitHubDesktop\bin, C:\Users\KoZa\AppData\Local\Unity\bin, C:\Users\KoZa\AppData\Local\Microsoft\WinGet\Links, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\fallback, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\6de5bf5fa8384f8d, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\f544b3844e0f14e9]  
+2026-10-05 16:44:42 DEBUG (ElfHeader) Elf symbol table section .symtab linked to string table section .strtab  
+2026-10-05 16:44:42 DEBUG (ElfHeader) Elf relocation table section .rel.text linked to symbol table section .symtab affecting .text  
+2026-10-05 16:44:42 DEBUG (ElfHeader) Elf relocation table section .rel.data linked to symbol table section .symtab affecting .data  
+2026-10-05 16:44:42 INFO  (ProgramLoader) Additional info:
+Loading file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_STDIO.IRX?MD5=98e6dbe37f5cbd4eaffe16752163886a...
+Skipping segment[0, IRX header] included by section .iopmod
+Skipping section [.bss] with invalid size 0x0
+Created %got.text block required for relocation processing (gp=0xbfd07ff0)
+------------------------------------------------
+
+  
+2026-10-05 16:44:42 INFO  (HeadlessAnalyzer) IMPORTING: Loaded 0 additional files  
+2026-10-05 16:44:42 INFO  (HeadlessAnalyzer) ANALYZING all memory and code: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_STDIO.IRX  
+2026-10-05 16:44:42 DEBUG (FidAnalyzer) No FID Libraries apply for language MIPS:LE:32:default  
+2026-10-05 16:44:42 DEBUG (PackedDatabaseCache) Using cached packed database: C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\data\typeinfo\generic\generic_clib.gdt  
+2026-10-05 16:44:42 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2026-10-05 16:44:42 INFO  (HeadlessAnalyzer) REPORT: Analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_STDIO.IRX  
+2026-10-05 16:44:42 INFO  (HeadlessAnalyzer) REPORT: Execute script: ExportIop.java 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-pseudocode/iop' 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-inputs.json'   
+2026-10-05 16:44:42 INFO  (HeadlessAnalyzer) SCRIPT: C:\Users\KoZa\Documents\ChatGPT\tools\kh2-audit\ExportIop.java  
+2026-10-05 16:44:42 INFO  (GhidraScript) ExportIop.java> FM export finished: 17 candidates, 0 failures, 0 suspicious outputs  
+2026-10-05 16:44:42 INFO  (HeadlessAnalyzer) ANALYZING changes made by post scripts: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_STDIO.IRX  
+2026-10-05 16:44:42 INFO  (HeadlessAnalyzer) REPORT: Post-analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_STDIO.IRX  
+2026-10-05 16:44:42 INFO  (LocalFileSystem) /ROM_STDIO.IRX: file created (KoZa)  
+2026-10-05 16:44:42 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for: /ROM_STDIO.IRX (kh2fm:/ROM_STDIO.IRX)  
+2026-10-05 16:44:42 INFO  (HeadlessAnalyzer) REPORT: Import succeeded  
+2026-10-05 16:44:42 INFO  (HeadlessAnalyzer) IMPORTING: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_SYSCLIB.IRX  
+2026-10-05 16:44:42 INFO  (ProgramLoader) Using Loader: Executable and Linking Format (ELF)  
+2026-10-05 16:44:42 INFO  (ProgramLoader) Using Language/Compiler: MIPS:LE:32:default:default  
+2026-10-05 16:44:42 INFO  (ProgramLoader) Using Library Search Path: [., C:\WINDOWS\SysWOW64, C:\Program Files\Eclipse Adoptium\jdk-25.0.4.101-hotspot\bin, C:\WINDOWS\Sun\Java\bin, C:\WINDOWS\system32, C:\WINDOWS, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell, C:\Users\KoZa\.codex\tmp\arg0\codex-arg05P56g4, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\libheif\libheif\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\jxrlib\jxrlib\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\poppler\Library\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\override, C:\Python314\Scripts\, C:\Python314\, C:\WINDOWS\System32\Wbem, C:\WINDOWS\System32\WindowsPowerShell\v1.0\, C:\WINDOWS\System32\OpenSSH\, C:\Program Files\dotnet\, C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\, C:\Program Files\Process Lasso\, C:\Program Files\nodejs\, C:\ProgramData\chocolatey\bin, C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common, C:\Program Files\Git\cmd, C:\Users\KoZa\.cargo\bin, C:\Users\KoZa\.pi\agent\bin, C:\Users\KoZa\AppData\Local\Microsoft\WindowsApps, C:\Users\KoZa\.dotnet\tools, C:\Users\KoZa\AppData\Roaming\npm, C:\Users\KoZa\AppData\Local\Programs\Ollama, C:\Users\KoZa\AppData\Local\PowerToys\DSCModules\, C:\Users\KoZa\AppData\Local\GitHubDesktop\bin, C:\Users\KoZa\AppData\Local\Unity\bin, C:\Users\KoZa\AppData\Local\Microsoft\WinGet\Links, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\fallback, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\6de5bf5fa8384f8d, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\f544b3844e0f14e9]  
+2026-10-05 16:44:42 DEBUG (ElfHeader) Elf symbol table section .symtab linked to string table section .strtab  
+2026-10-05 16:44:42 DEBUG (ElfHeader) Elf relocation table section .rel.text linked to symbol table section .symtab affecting .text  
+2026-10-05 16:44:42 DEBUG (ElfHeader) Elf relocation table section .rel.rodata linked to symbol table section .symtab affecting .rodata  
+2026-10-05 16:44:42 DEBUG (ElfHeader) Elf relocation table section .rel.data linked to symbol table section .symtab affecting .data  
+2026-10-05 16:44:42 INFO  (ProgramLoader) Additional info:
+Loading file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_SYSCLIB.IRX?MD5=6efea888ee9de80cb70ab5de7e0f273e...
+Skipping segment[0, IRX header] included by section .iopmod
+Skipping section [.bss] with invalid size 0x0
+Created %got.text block required for relocation processing (gp=0xbfd07ff0)
+------------------------------------------------
+
+  
+2026-10-05 16:44:42 INFO  (HeadlessAnalyzer) IMPORTING: Loaded 0 additional files  
+2026-10-05 16:44:42 INFO  (HeadlessAnalyzer) ANALYZING all memory and code: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_SYSCLIB.IRX  
+2026-10-05 16:44:42 DEBUG (FidAnalyzer) No FID Libraries apply for language MIPS:LE:32:default  
+2026-10-05 16:44:42 DEBUG (PackedDatabaseCache) Using cached packed database: C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\data\typeinfo\generic\generic_clib.gdt  
+2026-10-05 16:44:42 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2026-10-05 16:44:42 INFO  (HeadlessAnalyzer) REPORT: Analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_SYSCLIB.IRX  
+2026-10-05 16:44:42 INFO  (HeadlessAnalyzer) REPORT: Execute script: ExportIop.java 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-pseudocode/iop' 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-inputs.json'   
+2026-10-05 16:44:42 INFO  (HeadlessAnalyzer) SCRIPT: C:\Users\KoZa\Documents\ChatGPT\tools\kh2-audit\ExportIop.java  
+2026-10-05 16:44:43 INFO  (GhidraScript) ExportIop.java> FM export finished: 25 candidates, 0 failures, 0 suspicious outputs  
+2026-10-05 16:44:43 INFO  (HeadlessAnalyzer) ANALYZING changes made by post scripts: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_SYSCLIB.IRX  
+2026-10-05 16:44:43 INFO  (HeadlessAnalyzer) REPORT: Post-analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_SYSCLIB.IRX  
+2026-10-05 16:44:43 INFO  (LocalFileSystem) /ROM_SYSCLIB.IRX: file created (KoZa)  
+2026-10-05 16:44:43 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for: /ROM_SYSCLIB.IRX (kh2fm:/ROM_SYSCLIB.IRX)  
+2026-10-05 16:44:43 INFO  (HeadlessAnalyzer) REPORT: Import succeeded  
+2026-10-05 16:44:43 INFO  (HeadlessAnalyzer) IMPORTING: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_SYSMEM.IRX  
+2026-10-05 16:44:43 INFO  (ProgramLoader) Using Loader: Executable and Linking Format (ELF)  
+2026-10-05 16:44:43 INFO  (ProgramLoader) Using Language/Compiler: MIPS:LE:32:default:default  
+2026-10-05 16:44:43 INFO  (ProgramLoader) Using Library Search Path: [., C:\WINDOWS\SysWOW64, C:\Program Files\Eclipse Adoptium\jdk-25.0.4.101-hotspot\bin, C:\WINDOWS\Sun\Java\bin, C:\WINDOWS\system32, C:\WINDOWS, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell, C:\Users\KoZa\.codex\tmp\arg0\codex-arg05P56g4, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\libheif\libheif\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\jxrlib\jxrlib\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\poppler\Library\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\override, C:\Python314\Scripts\, C:\Python314\, C:\WINDOWS\System32\Wbem, C:\WINDOWS\System32\WindowsPowerShell\v1.0\, C:\WINDOWS\System32\OpenSSH\, C:\Program Files\dotnet\, C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\, C:\Program Files\Process Lasso\, C:\Program Files\nodejs\, C:\ProgramData\chocolatey\bin, C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common, C:\Program Files\Git\cmd, C:\Users\KoZa\.cargo\bin, C:\Users\KoZa\.pi\agent\bin, C:\Users\KoZa\AppData\Local\Microsoft\WindowsApps, C:\Users\KoZa\.dotnet\tools, C:\Users\KoZa\AppData\Roaming\npm, C:\Users\KoZa\AppData\Local\Programs\Ollama, C:\Users\KoZa\AppData\Local\PowerToys\DSCModules\, C:\Users\KoZa\AppData\Local\GitHubDesktop\bin, C:\Users\KoZa\AppData\Local\Unity\bin, C:\Users\KoZa\AppData\Local\Microsoft\WinGet\Links, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\fallback, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\6de5bf5fa8384f8d, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\f544b3844e0f14e9]  
+2026-10-05 16:44:43 DEBUG (ElfHeader) Elf symbol table section .symtab linked to string table section .strtab  
+2026-10-05 16:44:43 DEBUG (ElfHeader) Elf relocation table section .rel.text linked to symbol table section .symtab affecting .text  
+2026-10-05 16:44:43 DEBUG (ElfHeader) Elf relocation table section .rel.data linked to symbol table section .symtab affecting .data  
+2026-10-05 16:44:43 INFO  (ProgramLoader) Additional info:
+Loading file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_SYSMEM.IRX?MD5=73c3dd411285a3c2ad4dfc5242faec6a...
+Skipping segment[0, IRX header] included by section .iopmod
+Created %got.text block required for relocation processing (gp=0xbfd07ff0)
+------------------------------------------------
+
+  
+2026-10-05 16:44:43 INFO  (HeadlessAnalyzer) IMPORTING: Loaded 0 additional files  
+2026-10-05 16:44:43 INFO  (HeadlessAnalyzer) ANALYZING all memory and code: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_SYSMEM.IRX  
+2026-10-05 16:44:43 DEBUG (FidAnalyzer) No FID Libraries apply for language MIPS:LE:32:default  
+2026-10-05 16:44:43 DEBUG (PackedDatabaseCache) Using cached packed database: C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\data\typeinfo\generic\generic_clib.gdt  
+2026-10-05 16:44:43 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2026-10-05 16:44:43 INFO  (HeadlessAnalyzer) REPORT: Analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_SYSMEM.IRX  
+2026-10-05 16:44:43 INFO  (HeadlessAnalyzer) REPORT: Execute script: ExportIop.java 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-pseudocode/iop' 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-inputs.json'   
+2026-10-05 16:44:43 INFO  (HeadlessAnalyzer) SCRIPT: C:\Users\KoZa\Documents\ChatGPT\tools\kh2-audit\ExportIop.java  
+2026-10-05 16:44:43 INFO  (GhidraScript) ExportIop.java> FM export finished: 18 candidates, 0 failures, 0 suspicious outputs  
+2026-10-05 16:44:43 INFO  (HeadlessAnalyzer) ANALYZING changes made by post scripts: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_SYSMEM.IRX  
+2026-10-05 16:44:43 INFO  (HeadlessAnalyzer) REPORT: Post-analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_SYSMEM.IRX  
+2026-10-05 16:44:43 INFO  (LocalFileSystem) /ROM_SYSMEM.IRX: file created (KoZa)  
+2026-10-05 16:44:43 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for: /ROM_SYSMEM.IRX (kh2fm:/ROM_SYSMEM.IRX)  
+2026-10-05 16:44:43 INFO  (HeadlessAnalyzer) REPORT: Import succeeded  
+2026-10-05 16:44:43 INFO  (HeadlessAnalyzer) IMPORTING: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_THREADMAN.IRX  
+2026-10-05 16:44:43 INFO  (ProgramLoader) Using Loader: Executable and Linking Format (ELF)  
+2026-10-05 16:44:43 INFO  (ProgramLoader) Using Language/Compiler: MIPS:LE:32:default:default  
+2026-10-05 16:44:43 INFO  (ProgramLoader) Using Library Search Path: [., C:\WINDOWS\SysWOW64, C:\Program Files\Eclipse Adoptium\jdk-25.0.4.101-hotspot\bin, C:\WINDOWS\Sun\Java\bin, C:\WINDOWS\system32, C:\WINDOWS, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell, C:\Users\KoZa\.codex\tmp\arg0\codex-arg05P56g4, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\libheif\libheif\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\jxrlib\jxrlib\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\poppler\Library\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\override, C:\Python314\Scripts\, C:\Python314\, C:\WINDOWS\System32\Wbem, C:\WINDOWS\System32\WindowsPowerShell\v1.0\, C:\WINDOWS\System32\OpenSSH\, C:\Program Files\dotnet\, C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\, C:\Program Files\Process Lasso\, C:\Program Files\nodejs\, C:\ProgramData\chocolatey\bin, C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common, C:\Program Files\Git\cmd, C:\Users\KoZa\.cargo\bin, C:\Users\KoZa\.pi\agent\bin, C:\Users\KoZa\AppData\Local\Microsoft\WindowsApps, C:\Users\KoZa\.dotnet\tools, C:\Users\KoZa\AppData\Roaming\npm, C:\Users\KoZa\AppData\Local\Programs\Ollama, C:\Users\KoZa\AppData\Local\PowerToys\DSCModules\, C:\Users\KoZa\AppData\Local\GitHubDesktop\bin, C:\Users\KoZa\AppData\Local\Unity\bin, C:\Users\KoZa\AppData\Local\Microsoft\WinGet\Links, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\fallback, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\6de5bf5fa8384f8d, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\f544b3844e0f14e9]  
+2026-10-05 16:44:43 DEBUG (ElfHeader) Elf symbol table section .symtab linked to string table section .strtab  
+2026-10-05 16:44:43 DEBUG (ElfHeader) Elf relocation table section .rel.text linked to symbol table section .symtab affecting .text  
+2026-10-05 16:44:43 DEBUG (ElfHeader) Elf relocation table section .rel.rodata linked to symbol table section .symtab affecting .rodata  
+2026-10-05 16:44:43 DEBUG (ElfHeader) Elf relocation table section .rel.data linked to symbol table section .symtab affecting .data  
+2026-10-05 16:44:43 INFO  (ProgramLoader) Additional info:
+Loading file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_THREADMAN.IRX?MD5=58a22ece7b0a11f7e2c38fdeba3fa00d...
+Skipping segment[0, IRX header] included by section .iopmod
+Created %got.text block required for relocation processing (gp=0xbfd07ff0)
+------------------------------------------------
+
+  
+2026-10-05 16:44:43 INFO  (HeadlessAnalyzer) IMPORTING: Loaded 0 additional files  
+2026-10-05 16:44:43 INFO  (HeadlessAnalyzer) ANALYZING all memory and code: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_THREADMAN.IRX  
+2026-10-05 16:44:44 DEBUG (FidAnalyzer) No FID Libraries apply for language MIPS:LE:32:default  
+2026-10-05 16:44:44 DEBUG (PackedDatabaseCache) Using cached packed database: C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\data\typeinfo\generic\generic_clib.gdt  
+2026-10-05 16:44:44 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2026-10-05 16:44:44 INFO  (HeadlessAnalyzer) REPORT: Analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_THREADMAN.IRX  
+2026-10-05 16:44:44 INFO  (HeadlessAnalyzer) REPORT: Execute script: ExportIop.java 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-pseudocode/iop' 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-inputs.json'   
+2026-10-05 16:44:44 INFO  (HeadlessAnalyzer) SCRIPT: C:\Users\KoZa\Documents\ChatGPT\tools\kh2-audit\ExportIop.java  
+2026-10-05 16:44:44 INFO  (GhidraScript) ExportIop.java> FM export finished: 162 candidates, 0 failures, 0 suspicious outputs  
+2026-10-05 16:44:44 INFO  (HeadlessAnalyzer) ANALYZING changes made by post scripts: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_THREADMAN.IRX  
+2026-10-05 16:44:44 INFO  (HeadlessAnalyzer) REPORT: Post-analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_THREADMAN.IRX  
+2026-10-05 16:44:44 INFO  (LocalFileSystem) /ROM_THREADMAN.IRX: file created (KoZa)  
+2026-10-05 16:44:44 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for: /ROM_THREADMAN.IRX (kh2fm:/ROM_THREADMAN.IRX)  
+2026-10-05 16:44:44 INFO  (HeadlessAnalyzer) REPORT: Import succeeded  
+2026-10-05 16:44:44 INFO  (HeadlessAnalyzer) IMPORTING: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_TIMEMANI.IRX  
+2026-10-05 16:44:44 INFO  (ProgramLoader) Using Loader: Executable and Linking Format (ELF)  
+2026-10-05 16:44:44 INFO  (ProgramLoader) Using Language/Compiler: MIPS:LE:32:default:default  
+2026-10-05 16:44:44 INFO  (ProgramLoader) Using Library Search Path: [., C:\WINDOWS\SysWOW64, C:\Program Files\Eclipse Adoptium\jdk-25.0.4.101-hotspot\bin, C:\WINDOWS\Sun\Java\bin, C:\WINDOWS\system32, C:\WINDOWS, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell, C:\Users\KoZa\.codex\tmp\arg0\codex-arg05P56g4, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\libheif\libheif\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\jxrlib\jxrlib\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\poppler\Library\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\override, C:\Python314\Scripts\, C:\Python314\, C:\WINDOWS\System32\Wbem, C:\WINDOWS\System32\WindowsPowerShell\v1.0\, C:\WINDOWS\System32\OpenSSH\, C:\Program Files\dotnet\, C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\, C:\Program Files\Process Lasso\, C:\Program Files\nodejs\, C:\ProgramData\chocolatey\bin, C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common, C:\Program Files\Git\cmd, C:\Users\KoZa\.cargo\bin, C:\Users\KoZa\.pi\agent\bin, C:\Users\KoZa\AppData\Local\Microsoft\WindowsApps, C:\Users\KoZa\.dotnet\tools, C:\Users\KoZa\AppData\Roaming\npm, C:\Users\KoZa\AppData\Local\Programs\Ollama, C:\Users\KoZa\AppData\Local\PowerToys\DSCModules\, C:\Users\KoZa\AppData\Local\GitHubDesktop\bin, C:\Users\KoZa\AppData\Local\Unity\bin, C:\Users\KoZa\AppData\Local\Microsoft\WinGet\Links, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\fallback, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\6de5bf5fa8384f8d, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\f544b3844e0f14e9]  
+2026-10-05 16:44:44 DEBUG (ElfHeader) Elf symbol table section .symtab linked to string table section .strtab  
+2026-10-05 16:44:44 DEBUG (ElfHeader) Elf relocation table section .rel.text linked to symbol table section .symtab affecting .text  
+2026-10-05 16:44:44 DEBUG (ElfHeader) Elf relocation table section .rel.rodata linked to symbol table section .symtab affecting .rodata  
+2026-10-05 16:44:44 DEBUG (ElfHeader) Elf relocation table section .rel.data linked to symbol table section .symtab affecting .data  
+2026-10-05 16:44:44 INFO  (ProgramLoader) Additional info:
+Loading file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_TIMEMANI.IRX?MD5=cd32382a7db676240d75b2d0fc493eb8...
+Skipping segment[0, IRX header] included by section .iopmod
+Skipping section [.bss] with invalid size 0x0
+Created %got.text block required for relocation processing (gp=0xbfd07ff0)
+------------------------------------------------
+
+  
+2026-10-05 16:44:44 INFO  (HeadlessAnalyzer) IMPORTING: Loaded 0 additional files  
+2026-10-05 16:44:45 INFO  (HeadlessAnalyzer) ANALYZING all memory and code: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_TIMEMANI.IRX  
+2026-10-05 16:44:45 DEBUG (FidAnalyzer) No FID Libraries apply for language MIPS:LE:32:default  
+2026-10-05 16:44:45 DEBUG (PackedDatabaseCache) Using cached packed database: C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\data\typeinfo\generic\generic_clib.gdt  
+2026-10-05 16:44:45 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2026-10-05 16:44:45 INFO  (HeadlessAnalyzer) REPORT: Analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_TIMEMANI.IRX  
+2026-10-05 16:44:45 INFO  (HeadlessAnalyzer) REPORT: Execute script: ExportIop.java 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-pseudocode/iop' 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-inputs.json'   
+2026-10-05 16:44:45 INFO  (HeadlessAnalyzer) SCRIPT: C:\Users\KoZa\Documents\ChatGPT\tools\kh2-audit\ExportIop.java  
+2026-10-05 16:44:45 INFO  (GhidraScript) ExportIop.java> FM export finished: 19 candidates, 0 failures, 0 suspicious outputs  
+2026-10-05 16:44:45 INFO  (HeadlessAnalyzer) ANALYZING changes made by post scripts: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_TIMEMANI.IRX  
+2026-10-05 16:44:45 INFO  (HeadlessAnalyzer) REPORT: Post-analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/ROM_TIMEMANI.IRX  
+2026-10-05 16:44:45 INFO  (LocalFileSystem) /ROM_TIMEMANI.IRX: file created (KoZa)  
+2026-10-05 16:44:45 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for: /ROM_TIMEMANI.IRX (kh2fm:/ROM_TIMEMANI.IRX)  
+2026-10-05 16:44:45 INFO  (HeadlessAnalyzer) REPORT: Import succeeded  
+2026-10-05 16:44:45 INFO  (HeadlessAnalyzer) IMPORTING: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/SIO2D.IRX  
+2026-10-05 16:44:45 INFO  (ProgramLoader) Using Loader: Executable and Linking Format (ELF)  
+2026-10-05 16:44:45 INFO  (ProgramLoader) Using Language/Compiler: MIPS:LE:32:default:default  
+2026-10-05 16:44:45 INFO  (ProgramLoader) Using Library Search Path: [., C:\WINDOWS\SysWOW64, C:\Program Files\Eclipse Adoptium\jdk-25.0.4.101-hotspot\bin, C:\WINDOWS\Sun\Java\bin, C:\WINDOWS\system32, C:\WINDOWS, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell, C:\Users\KoZa\.codex\tmp\arg0\codex-arg05P56g4, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\libheif\libheif\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\jxrlib\jxrlib\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\poppler\Library\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\override, C:\Python314\Scripts\, C:\Python314\, C:\WINDOWS\System32\Wbem, C:\WINDOWS\System32\WindowsPowerShell\v1.0\, C:\WINDOWS\System32\OpenSSH\, C:\Program Files\dotnet\, C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\, C:\Program Files\Process Lasso\, C:\Program Files\nodejs\, C:\ProgramData\chocolatey\bin, C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common, C:\Program Files\Git\cmd, C:\Users\KoZa\.cargo\bin, C:\Users\KoZa\.pi\agent\bin, C:\Users\KoZa\AppData\Local\Microsoft\WindowsApps, C:\Users\KoZa\.dotnet\tools, C:\Users\KoZa\AppData\Roaming\npm, C:\Users\KoZa\AppData\Local\Programs\Ollama, C:\Users\KoZa\AppData\Local\PowerToys\DSCModules\, C:\Users\KoZa\AppData\Local\GitHubDesktop\bin, C:\Users\KoZa\AppData\Local\Unity\bin, C:\Users\KoZa\AppData\Local\Microsoft\WinGet\Links, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\fallback, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\6de5bf5fa8384f8d, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\f544b3844e0f14e9]  
+2026-10-05 16:44:45 DEBUG (ElfHeader) Elf symbol table section .symtab linked to string table section .strtab  
+2026-10-05 16:44:45 DEBUG (ElfHeader) Elf relocation table section .rel.text linked to symbol table section .symtab affecting .text  
+2026-10-05 16:44:45 DEBUG (ElfHeader) Elf relocation table section .rel.data linked to symbol table section .symtab affecting .data  
+2026-10-05 16:44:45 INFO  (ProgramLoader) Additional info:
+Loading file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/SIO2D.IRX?MD5=ac2ecb32a24c5f47f70eaad5f326d841...
+Skipping segment[0, IRX header] included by section .iopmod
+Created %got.text block required for relocation processing (gp=0xbfd07ff0)
+------------------------------------------------
+
+  
+2026-10-05 16:44:45 INFO  (HeadlessAnalyzer) IMPORTING: Loaded 0 additional files  
+2026-10-05 16:44:45 INFO  (HeadlessAnalyzer) ANALYZING all memory and code: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/SIO2D.IRX  
+2026-10-05 16:44:45 DEBUG (FidAnalyzer) No FID Libraries apply for language MIPS:LE:32:default  
+2026-10-05 16:44:45 DEBUG (PackedDatabaseCache) Using cached packed database: C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\data\typeinfo\generic\generic_clib.gdt  
+2026-10-05 16:44:45 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2026-10-05 16:44:45 INFO  (HeadlessAnalyzer) REPORT: Analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/SIO2D.IRX  
+2026-10-05 16:44:45 INFO  (HeadlessAnalyzer) REPORT: Execute script: ExportIop.java 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-pseudocode/iop' 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-inputs.json'   
+2026-10-05 16:44:45 INFO  (HeadlessAnalyzer) SCRIPT: C:\Users\KoZa\Documents\ChatGPT\tools\kh2-audit\ExportIop.java  
+2026-10-05 16:44:46 INFO  (GhidraScript) ExportIop.java> FM export finished: 39 candidates, 0 failures, 0 suspicious outputs  
+2026-10-05 16:44:46 INFO  (HeadlessAnalyzer) ANALYZING changes made by post scripts: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/SIO2D.IRX  
+2026-10-05 16:44:46 INFO  (HeadlessAnalyzer) REPORT: Post-analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/SIO2D.IRX  
+2026-10-05 16:44:46 INFO  (LocalFileSystem) /SIO2D.IRX: file created (KoZa)  
+2026-10-05 16:44:46 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for: /SIO2D.IRX (kh2fm:/SIO2D.IRX)  
+2026-10-05 16:44:46 INFO  (HeadlessAnalyzer) REPORT: Import succeeded  
+2026-10-05 16:44:46 INFO  (HeadlessAnalyzer) IMPORTING: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/SIO2MAN.IRX  
+2026-10-05 16:44:46 INFO  (ProgramLoader) Using Loader: Executable and Linking Format (ELF)  
+2026-10-05 16:44:46 INFO  (ProgramLoader) Using Language/Compiler: MIPS:LE:32:default:default  
+2026-10-05 16:44:46 INFO  (ProgramLoader) Using Library Search Path: [., C:\WINDOWS\SysWOW64, C:\Program Files\Eclipse Adoptium\jdk-25.0.4.101-hotspot\bin, C:\WINDOWS\Sun\Java\bin, C:\WINDOWS\system32, C:\WINDOWS, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell, C:\Users\KoZa\.codex\tmp\arg0\codex-arg05P56g4, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\libheif\libheif\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\jxrlib\jxrlib\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\poppler\Library\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\override, C:\Python314\Scripts\, C:\Python314\, C:\WINDOWS\System32\Wbem, C:\WINDOWS\System32\WindowsPowerShell\v1.0\, C:\WINDOWS\System32\OpenSSH\, C:\Program Files\dotnet\, C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\, C:\Program Files\Process Lasso\, C:\Program Files\nodejs\, C:\ProgramData\chocolatey\bin, C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common, C:\Program Files\Git\cmd, C:\Users\KoZa\.cargo\bin, C:\Users\KoZa\.pi\agent\bin, C:\Users\KoZa\AppData\Local\Microsoft\WindowsApps, C:\Users\KoZa\.dotnet\tools, C:\Users\KoZa\AppData\Roaming\npm, C:\Users\KoZa\AppData\Local\Programs\Ollama, C:\Users\KoZa\AppData\Local\PowerToys\DSCModules\, C:\Users\KoZa\AppData\Local\GitHubDesktop\bin, C:\Users\KoZa\AppData\Local\Unity\bin, C:\Users\KoZa\AppData\Local\Microsoft\WinGet\Links, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\fallback, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\6de5bf5fa8384f8d, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\f544b3844e0f14e9]  
+2026-10-05 16:44:46 DEBUG (ElfHeader) Elf symbol table section .symtab linked to string table section .strtab  
+2026-10-05 16:44:46 DEBUG (ElfHeader) Elf relocation table section .rel.text linked to symbol table section .symtab affecting .text  
+2026-10-05 16:44:46 DEBUG (ElfHeader) Elf relocation table section .rel.data linked to symbol table section .symtab affecting .data  
+2026-10-05 16:44:46 INFO  (ProgramLoader) Additional info:
+Loading file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/SIO2MAN.IRX?MD5=8e7a1d9d6be499ad7c99138cfb186f75...
+Skipping segment[0, IRX header] included by section .iopmod
+Created %got.text block required for relocation processing (gp=0xbfd07ff0)
+------------------------------------------------
+
+  
+2026-10-05 16:44:46 INFO  (HeadlessAnalyzer) IMPORTING: Loaded 0 additional files  
+2026-10-05 16:44:46 INFO  (HeadlessAnalyzer) ANALYZING all memory and code: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/SIO2MAN.IRX  
+2026-10-05 16:44:46 DEBUG (FidAnalyzer) No FID Libraries apply for language MIPS:LE:32:default  
+2026-10-05 16:44:46 DEBUG (PackedDatabaseCache) Using cached packed database: C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\data\typeinfo\generic\generic_clib.gdt  
+2026-10-05 16:44:46 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2026-10-05 16:44:46 INFO  (HeadlessAnalyzer) REPORT: Analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/SIO2MAN.IRX  
+2026-10-05 16:44:46 INFO  (HeadlessAnalyzer) REPORT: Execute script: ExportIop.java 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-pseudocode/iop' 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-inputs.json'   
+2026-10-05 16:44:46 INFO  (HeadlessAnalyzer) SCRIPT: C:\Users\KoZa\Documents\ChatGPT\tools\kh2-audit\ExportIop.java  
+2026-10-05 16:44:46 INFO  (GhidraScript) ExportIop.java> FM export finished: 65 candidates, 0 failures, 0 suspicious outputs  
+2026-10-05 16:44:46 INFO  (HeadlessAnalyzer) ANALYZING changes made by post scripts: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/SIO2MAN.IRX  
+2026-10-05 16:44:46 INFO  (HeadlessAnalyzer) REPORT: Post-analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/SIO2MAN.IRX  
+2026-10-05 16:44:46 INFO  (LocalFileSystem) /SIO2MAN.IRX: file created (KoZa)  
+2026-10-05 16:44:46 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for: /SIO2MAN.IRX (kh2fm:/SIO2MAN.IRX)  
+2026-10-05 16:44:46 INFO  (HeadlessAnalyzer) REPORT: Import succeeded  
+2026-10-05 16:44:46 INFO  (HeadlessAnalyzer) IMPORTING: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/PAD2/DS2O.IRX  
+2026-10-05 16:44:46 INFO  (ProgramLoader) Using Loader: Executable and Linking Format (ELF)  
+2026-10-05 16:44:46 INFO  (ProgramLoader) Using Language/Compiler: MIPS:LE:32:default:default  
+2026-10-05 16:44:46 INFO  (ProgramLoader) Using Library Search Path: [., C:\WINDOWS\SysWOW64, C:\Program Files\Eclipse Adoptium\jdk-25.0.4.101-hotspot\bin, C:\WINDOWS\Sun\Java\bin, C:\WINDOWS\system32, C:\WINDOWS, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell, C:\Users\KoZa\.codex\tmp\arg0\codex-arg05P56g4, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\libheif\libheif\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\jxrlib\jxrlib\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\poppler\Library\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\override, C:\Python314\Scripts\, C:\Python314\, C:\WINDOWS\System32\Wbem, C:\WINDOWS\System32\WindowsPowerShell\v1.0\, C:\WINDOWS\System32\OpenSSH\, C:\Program Files\dotnet\, C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\, C:\Program Files\Process Lasso\, C:\Program Files\nodejs\, C:\ProgramData\chocolatey\bin, C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common, C:\Program Files\Git\cmd, C:\Users\KoZa\.cargo\bin, C:\Users\KoZa\.pi\agent\bin, C:\Users\KoZa\AppData\Local\Microsoft\WindowsApps, C:\Users\KoZa\.dotnet\tools, C:\Users\KoZa\AppData\Roaming\npm, C:\Users\KoZa\AppData\Local\Programs\Ollama, C:\Users\KoZa\AppData\Local\PowerToys\DSCModules\, C:\Users\KoZa\AppData\Local\GitHubDesktop\bin, C:\Users\KoZa\AppData\Local\Unity\bin, C:\Users\KoZa\AppData\Local\Microsoft\WinGet\Links, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\fallback, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin, C:\Users\KoZa\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\6de5bf5fa8384f8d, C:\Users\KoZa\AppData\Local\OpenAI\Codex\bin\f544b3844e0f14e9]  
+2026-10-05 16:44:46 DEBUG (ElfHeader) Elf symbol table section .symtab linked to string table section .strtab  
+2026-10-05 16:44:46 DEBUG (ElfHeader) Elf relocation table section .rel.text linked to symbol table section .symtab affecting .text  
+2026-10-05 16:44:46 DEBUG (ElfHeader) Elf relocation table section .rel.rodata linked to symbol table section .symtab affecting .rodata  
+2026-10-05 16:44:46 DEBUG (ElfHeader) Elf relocation table section .rel.data linked to symbol table section .symtab affecting .data  
+2026-10-05 16:44:46 INFO  (ProgramLoader) Additional info:
+Loading file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/PAD2/DS2O.IRX?MD5=7da445d569638c297d27130c08f78ddb...
+Skipping segment[0, IRX header] included by section .iopmod
+Created %got.text block required for relocation processing (gp=0xbfd07ff0)
+------------------------------------------------
+
+  
+2026-10-05 16:44:46 INFO  (HeadlessAnalyzer) IMPORTING: Loaded 0 additional files  
+2026-10-05 16:44:46 INFO  (HeadlessAnalyzer) ANALYZING all memory and code: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/PAD2/DS2O.IRX  
+2026-10-05 16:44:46 DEBUG (FidAnalyzer) No FID Libraries apply for language MIPS:LE:32:default  
+2026-10-05 16:44:46 DEBUG (PackedDatabaseCache) Using cached packed database: C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\data\typeinfo\generic\generic_clib.gdt  
+2026-10-05 16:44:46 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib  
+2026-10-05 16:44:46 INFO  (HeadlessAnalyzer) REPORT: Analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/PAD2/DS2O.IRX  
+2026-10-05 16:44:46 INFO  (HeadlessAnalyzer) REPORT: Execute script: ExportIop.java 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-pseudocode/iop' 'C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/native-inputs.json'   
+2026-10-05 16:44:47 INFO  (HeadlessAnalyzer) SCRIPT: C:\Users\KoZa\Documents\ChatGPT\tools\kh2-audit\ExportIop.java  
+2026-10-05 16:44:47 INFO  (GhidraScript) ExportIop.java> FM export finished: 67 candidates, 0 failures, 0 suspicious outputs  
+2026-10-05 16:44:47 INFO  (HeadlessAnalyzer) ANALYZING changes made by post scripts: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/PAD2/DS2O.IRX  
+2026-10-05 16:44:47 INFO  (HeadlessAnalyzer) REPORT: Post-analysis succeeded for file: file:///C:/Users/KoZa/Documents/ChatGPT/analysis/final-mix/binaries/PAD2/DS2O.IRX  
+2026-10-05 16:44:47 INFO  (LocalFileSystem) /DS2O.IRX: file created (KoZa)  
+2026-10-05 16:44:47 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for: /DS2O.IRX (kh2fm:/DS2O.IRX)  
+2026-10-05 16:44:47 INFO  (HeadlessAnalyzer) REPORT: Import succeeded  

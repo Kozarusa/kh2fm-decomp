@@ -1,0 +1,22 @@
+  241f20:	340fffff 	li	t7,0xffff
+  241f24:	14af0012 	bne	a1,t7,241f70 
+  241f28:	240f0001 	li	t7,1
+  241f2c:	148f0010 	bne	a0,t7,241f70 
+  241f30:	3c0f0036 	lui	t7,0x36
+  241f34:	3c0c01db 	lui	t4,0x1db
+  241f38:	8deeebf8 	lw	t6,-5128(t7)
+  241f3c:	258ce688 	addiu	t4,t4,-6520
+  241f40:	240f03c4 	li	t7,964
+  241f44:	ad8e0000 	sw	t6,0(t4)
+  241f48:	ad8f0004 	sw	t7,4(t4)
+  241f4c:	3c0d0001 	lui	t5,0x1
+  241f50:	ad800010 	sw	zero,16(t4)
+  241f54:	35ad0fc0 	ori	t5,t5,0xfc0
+  241f58:	3c0f0036 	lui	t7,0x36
+  241f5c:	8deeebfc 	lw	t6,-5124(t7)
+  241f60:	340f8a58 	li	t7,0x8a58
+  241f64:	ad8d0014 	sw	t5,20(t4)
+  241f68:	ad8e0008 	sw	t6,8(t4)
+  241f6c:	ad8f000c 	sw	t7,12(t4)
+  241f70:	03e00008 	jr	ra
+  241f74:	00000000 	nop

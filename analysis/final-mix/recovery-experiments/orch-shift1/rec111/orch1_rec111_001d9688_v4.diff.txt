@@ -1,0 +1,17 @@
+001d9688: compiled 52 bytes, target 52 bytes, exact=False
+Differing words: 8. First difference at instruction 3 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001d9688: 00057840  sll	t7,a1,0x1                                    | 001d9688: 00057840  sll	t7,a1,0x1
+   001d968c: 01e57821  addu	t7,t7,a1                                    | 001d968c: 01e57821  addu	t7,t7,a1
+   001d9690: 01e47821  addu	t7,t7,a0                                    | 001d9690: 01e47821  addu	t7,t7,a0
+!! 001d9694: 01e67021  addu	t6,t7,a2                                    | 001d9694: 01e66821  addu	t5,t7,a2
+!! 001d9698: 91c20000  lbu	v0,0(t6)                                     | 001d9698: 91ae0000  lbu	t6,0(t5)
+!! 001d969c: 304f00ff  andi	t7,v0,0xff                                  | 001d969c: 31c200ff  andi	v0,t6,0xff
+!! 001d96a0: 2def0063  sltiu	t7,t7,99                                   | 001d96a0: 2c4f0063  sltiu	t7,v0,99
+   001d96a4: 11e00003  beqz	t7,0x1d96b4                                 | 001d96a4: 11e00003  beqz	t7,1d96b4 <func_001d9688+0x2c>
+!! 001d96a8: 244d0001  addiu	t5,v0,1                                    | 001d96a8: 25ce0001  addiu	t6,t6,1
+!! 001d96ac: a1cd0000  sb	t5,0(t6)                                      | 001d96ac: a1ae0000  sb	t6,0(t5)
+!! 001d96b0: 01a0102d  move	v0,t5                                       | 001d96b0: 31c200ff  andi	v0,t6,0xff
+   001d96b4: 03e00008  jr	ra                                            | 001d96b4: 03e00008  jr	ra
+!! 001d96b8: 304200ff  andi	v0,v0,0xff                                  | 001d96b8: 00000000  nop

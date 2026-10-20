@@ -1,0 +1,34 @@
+00154b98: compiled 120 bytes, target 120 bytes, exact=False
+Differing words: 14. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00154b98: 27bdffe0  addiu	sp,sp,-32                                  | 00154b98: 27bdffe0  addiu	sp,sp,-32
+!! 00154b9c: 240c00c8  li	t4,200                                        | 00154b9c: 240d00c8  li	t5,200
+   00154ba0: ffb00000  sd	s0,0(sp)                                      | 00154ba0: ffb00000  sd	s0,0(sp)
+   00154ba4: ffb10008  sd	s1,8(sp)                                      | 00154ba4: ffb10008  sd	s1,8(sp)
+   00154ba8: ffbf0010  sd	ra,16(sp)                                     | 00154ba8: ffbf0010  sd	ra,16(sp)
+!! 00154bac: 8c8d3cc4  lw	t5,15556(a0)                                  | 00154bac: 24910b58  addiu	s1,a0,2904
+!! 00154bb0: 01a5782a  slt	t7,t5,a1                                     | 00154bb0: 8c8c3cc4  lw	t4,15556(a0)
+!! 00154bb4: 01af280b  movn	a1,t5,t7                                    | 00154bb4: 0185782a  slt	t7,t4,a1
+!! 00154bb8: 24aeffff  addiu	t6,a1,-1                                   | 00154bb8: 018f280b  movn	a1,t4,t7
+!! 00154bbc: ac853cc0  sw	a1,15552(a0)                                  | 00154bbc: 24aeffff  addiu	t6,a1,-1
+!! 00154bc0: 01cc001a  div	zero,t6,t4                                   | 00154bc0: ac853cc0  sw	a1,15552(a0)
+!! 00154bc4: ac853ccc  sw	a1,15564(a0)                                  | 00154bc4: 01cd001a  div	zero,t6,t5
+!! 00154bc8: ac853cc8  sw	a1,15560(a0)                                  | 00154bc8: ac853ccc  sw	a1,15564(a0)
+!! 00154bcc: 51800001  beqzl	t4,0x154bd4                                | 00154bcc: ac853cc8  sw	a1,15560(a0)
+!! 00154bd0: 000001cd  break	0x7                                        | 00154bd0: 51a00001  beqzl	t5,154bd8 <func_00154b98+0x40>
+!! 00154bd4: 00007012  mflo	t6                                          | 00154bd4: 000001cd  break	0x7
+!! 00154bd8: 19c00008  blez	t6,0x154bfc                                 | 00154bd8: 00007012  mflo	t6
+!! 00154bdc: 24910b58  addiu	s1,a0,2904                                 | 00154bdc: 19c00007  blez	t6,154bfc <func_00154b98+0x64>
+   00154be0: 00008012  mflo	s0                                          | 00154be0: 00008012  mflo	s0
+   00154be4: 0220202d  move	a0,s1                                       | 00154be4: 0220202d  move	a0,s1
+   00154be8: 0c04e304  jal	0x138c10                                     | 00154be8: 0c04e304  jal	138c10 <func_00138c10>
+   00154bec: 2405002c  li	a1,44                                         | 00154bec: 2405002c  li	a1,44
+   00154bf0: 2610ffff  addiu	s0,s0,-1                                   | 00154bf0: 2610ffff  addiu	s0,s0,-1
+   00154bf4: 1600fffb  bnez	s0,0x154be4                                 | 00154bf4: 1600fffb  bnez	s0,154be4 <func_00154b98+0x4c>
+   00154bf8: 26310330  addiu	s1,s1,816                                  | 00154bf8: 26310330  addiu	s1,s1,816
+   00154bfc: dfb00000  ld	s0,0(sp)                                      | 00154bfc: dfb00000  ld	s0,0(sp)
+   00154c00: dfb10008  ld	s1,8(sp)                                      | 00154c00: dfb10008  ld	s1,8(sp)
+   00154c04: dfbf0010  ld	ra,16(sp)                                     | 00154c04: dfbf0010  ld	ra,16(sp)
+   00154c08: 03e00008  jr	ra                                            | 00154c08: 03e00008  jr	ra
+   00154c0c: 27bd0020  addiu	sp,sp,32                                   | 00154c0c: 27bd0020  addiu	sp,sp,32

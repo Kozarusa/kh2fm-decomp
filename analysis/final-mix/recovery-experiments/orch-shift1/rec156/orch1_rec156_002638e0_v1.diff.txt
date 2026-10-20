@@ -1,0 +1,35 @@
+002638e0: compiled 124 bytes, target 124 bytes, exact=False
+Differing words: 1. First difference at instruction 9 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   002638e0: 27bdffe0  addiu	sp,sp,-32                                  | 002638e0: 27bdffe0  addiu	sp,sp,-32
+   002638e4: ffb10008  sd	s1,8(sp)                                      | 002638e4: ffb10008  sd	s1,8(sp)
+   002638e8: ffb00000  sd	s0,0(sp)                                      | 002638e8: ffb00000  sd	s0,0(sp)
+   002638ec: ffbf0010  sd	ra,16(sp)                                     | 002638ec: ffbf0010  sd	ra,16(sp)
+   002638f0: 0080882d  move	s1,a0                                       | 002638f0: 0080882d  move	s1,a0
+   002638f4: 0c0a1ef0  jal	0x287bc0                                     | 002638f4: 0c0a1ef0  jal	287bc0 <func_00287bc0>
+   002638f8: 0000802d  move	s0,zero                                     | 002638f8: 0000802d  move	s0,zero
+   002638fc: 240f000a  li	t7,10                                         | 002638fc: 240f000a  li	t7,10
+   00263900: 104f0005  beq	v0,t7,0x263918                               | 00263900: 104f0005  beq	v0,t7,263918 <func_002638e0+0x38>
+!! 00263904: 284f000b  slti	t7,v0,11                                    | 00263904: 2c4f000b  sltiu	t7,v0,11
+   00263908: 11e0000a  beqz	t7,0x263934                                 | 00263908: 11e0000a  beqz	t7,263934 <func_002638e0+0x54>
+   0026390c: 240f0001  li	t7,1                                          | 0026390c: 240f0001  li	t7,1
+   00263910: 104f0002  beq	v0,t7,0x26391c                               | 00263910: 104f0002  beq	v0,t7,26391c <func_002638e0+0x3c>
+   00263914: 24100001  li	s0,1                                          | 00263914: 24100001  li	s0,1
+   00263918: 24100001  li	s0,1                                          | 00263918: 24100001  li	s0,1
+   0026391c: 0200102d  move	v0,s0                                       | 0026391c: 0200102d  move	v0,s0
+   00263920: dfb10008  ld	s1,8(sp)                                      | 00263920: dfb10008  ld	s1,8(sp)
+   00263924: dfb00000  ld	s0,0(sp)                                      | 00263924: dfb00000  ld	s0,0(sp)
+   00263928: dfbf0010  ld	ra,16(sp)                                     | 00263928: dfbf0010  ld	ra,16(sp)
+   0026392c: 03e00008  jr	ra                                            | 0026392c: 03e00008  jr	ra
+   00263930: 27bd0020  addiu	sp,sp,32                                   | 00263930: 27bd0020  addiu	sp,sp,32
+   00263934: 240f000b  li	t7,11                                         | 00263934: 240f000b  li	t7,11
+   00263938: 544ffff8  bnel	v0,t7,0x26391c                              | 00263938: 544ffff8  bnel	v0,t7,26391c <func_002638e0+0x3c>
+   0026393c: 24100001  li	s0,1                                          | 0026393c: 24100001  li	s0,1
+   00263940: 0620fff7  bltz	s1,0x263920                                 | 00263940: 0620fff7  bltz	s1,263920 <func_002638e0+0x40>
+   00263944: 0200102d  move	v0,s0                                       | 00263944: 0200102d  move	v0,s0
+   00263948: 0c098dfa  jal	0x2637e8                                     | 00263948: 0c098dfa  jal	2637e8 <func_002637e8>
+   0026394c: 0220202d  move	a0,s1                                       | 0026394c: 0220202d  move	a0,s1
+   00263950: 00021027  nor	v0,zero,v0                                   | 00263950: 00021027  nor	v0,zero,v0
+   00263954: 1000fff1  b	0x26391c                                       | 00263954: 1000fff1  b	26391c <func_002638e0+0x3c>
+   00263958: 000287c2  srl	s0,v0,0x1f                                   | 00263958: 000287c2  srl	s0,v0,0x1f

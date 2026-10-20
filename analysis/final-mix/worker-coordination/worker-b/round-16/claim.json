@@ -1,0 +1,272 @@
+{
+  "worker_id": "worker-b",
+  "round": 16,
+  "role": "isolated proposals and reports only; primary retains active sources, functions.tsv, layout.tsv, stage sync, full builds, manifests, receipts, Ghidra and HANDOFF.md",
+  "written": "2026-10-08",
+  "previous_rounds": "rounds 2-15 reported in worker-b/STATUS-REPORT.md",
+  "selection_method": "round-16/pick_targets.py. Round-15's picker with ATTEMPTED harvested mechanically from every round-*/claim.json (260 distinct 8-hex addresses, rounds 1-15), primary's live claim re-read from primary-claim.json at run time, the CRLF layout.tsv fix carried, and both unreachable-class exclusions retained (jalr through a loaded entry; no sd ra). Screening keeps framed, integer-only, 20-120 byte bodies and ranks NO-BRANCH first. Output: 975 candidates from 5512 registered rows, 11383 layout ranges, 11398 pseudocode records. This round leans on the shapes that actually landed in rounds 7, 11-13 and 15: a vtable-pointer store followed by two calls, live-value-across-calls, and mixed-size store groups.",
+  "original_elf_sha256": "d869ce4b8edd61cb978c4ff9ede595fe4d7d7b21cbb96a145275217120d8bc87",
+  "claimed_addresses": [
+    {
+      "address": "00315678",
+      "size": 56
+    },
+    {
+      "address": "00315700",
+      "size": 56
+    },
+    {
+      "address": "00316890",
+      "size": 56
+    },
+    {
+      "address": "001053c0",
+      "size": 60
+    },
+    {
+      "address": "0014cfc8",
+      "size": 60
+    },
+    {
+      "address": "0014dbc8",
+      "size": 60
+    },
+    {
+      "address": "0014dc08",
+      "size": 60
+    },
+    {
+      "address": "00170530",
+      "size": 60
+    },
+    {
+      "address": "00197be8",
+      "size": 60
+    },
+    {
+      "address": "002e2e18",
+      "size": 56
+    },
+    {
+      "address": "0016e200",
+      "size": 60
+    },
+    {
+      "address": "0016e500",
+      "size": 60
+    },
+    {
+      "address": "001c13a8",
+      "size": 60
+    },
+    {
+      "address": "001e6c00",
+      "size": 60
+    },
+    {
+      "address": "00265740",
+      "size": 60
+    },
+    {
+      "address": "002d47a8",
+      "size": 60
+    }
+  ],
+  "intended_outputs": [
+    "Codex/analysis/final-mix/recovery-experiments/fm_worker_b_round16_<address>_solved.cpp",
+    "Codex/analysis/final-mix/recovery-experiments/fm_worker_b_round16_<address>_solved.verification.json",
+    "Codex/analysis/final-mix/worker-coordination/worker-b/round-16/REPORT.md"
+  ],
+  "compiler_use": "every candidate compiled ONLY through the shared harness Public/tools/kh2-audit/probe_fm_source.py inside the pinned container kh2-local/ps2-compiler:3.2-ee-040921-objdiff; no compiler flags changed, no container restart, no executable byte patching, no writes to shared stage inputs",
+  "ownership": "worker B owns only its isolated proposals and reports; accepted-source promotion, functions.tsv, layout.tsv, stage sync, full builds, manifests, receipts, Ghidra and HANDOFF.md belong to primary",
+  "range_verification": "16/16 verified: per-range sha256 over the original ELF (sha256 d869ce4b8edd61cb978c4ff9ede595fe4d7d7b21cbb96a145275217120d8bc87) with start/end/size agreeing with /root/kh2fm-build/layout.tsv. See r16_ranges.txt, r16_range_hashes.txt, r16_orig_disasm.txt.",
+  "acceptance_baseline": "as recorded in primary-status.md at claim time",
+  "round16_result": {
+    "summary": "6/16 byte-exact, each with its own _solved.cpp and a re-run proof showing exact_match true, boundary_agreement true, 0 differing words",
+    "exact": {
+      "001053c0": {
+        "compiled_size": 60,
+        "target_size": 60,
+        "variant": "v01",
+        "mechanism": "three calls then the global is cleared; the target loads the global TWICE, so it must be declared volatile",
+        "source": "recovery-experiments/fm_worker_b_round16_001053c0_solved.cpp",
+        "source_sha256": "9a361f214d319691039d7e3be5d6d73402cc7e6cfcfdadc7e8a12b240687801d",
+        "proof": "recovery-experiments/fm_worker_b_round16_001053c0_solved.verification.json",
+        "exact_match": true,
+        "boundary_agreement": true,
+        "differing_words": []
+      },
+      "0014cfc8": {
+        "compiled_size": 60,
+        "target_size": 60,
+        "variant": "v03",
+        "mechanism": "three calls then two global clears in the same page, each with its own lui; declaring BOTH globals volatile keeps the two lui/store pairs ordered as the target has them",
+        "source": "recovery-experiments/fm_worker_b_round16_0014cfc8_solved.cpp",
+        "source_sha256": "78e0c746846c2443cc214cf09b05e8647cc680947fc9604ef29ae07d8173461e",
+        "proof": "recovery-experiments/fm_worker_b_round16_0014cfc8_solved.verification.json",
+        "exact_match": true,
+        "boundary_agreement": true,
+        "differing_words": []
+      },
+      "00197be8": {
+        "compiled_size": 60,
+        "target_size": 60,
+        "variant": "v02",
+        "mechanism": "global loaded once into s0 and forwarded to both calls; the trailing empty asm inside the guard block keeps the second call a real jal",
+        "source": "recovery-experiments/fm_worker_b_round16_00197be8_solved.cpp",
+        "source_sha256": "471169ee7bb2091f0a5292d2f186cfa70996430f34a485168785dd1a711218fb",
+        "proof": "recovery-experiments/fm_worker_b_round16_00197be8_solved.verification.json",
+        "exact_match": true,
+        "boundary_agreement": true,
+        "differing_words": []
+      },
+      "001c13a8": {
+        "compiled_size": 60,
+        "target_size": 60,
+        "variant": "v02",
+        "mechanism": "three real calls; the load of param_1[12] must NOT be hoisted above the first call, so it is written inline as an argument rather than into a temporary",
+        "source": "recovery-experiments/fm_worker_b_round16_001c13a8_solved.cpp",
+        "source_sha256": "8ae689a3bf5fb05130ea08afc149f06aa391b31b1317b92f1542a7e8fe6f0b5d",
+        "proof": "recovery-experiments/fm_worker_b_round16_001c13a8_solved.verification.json",
+        "exact_match": true,
+        "boundary_agreement": true,
+        "differing_words": []
+      },
+      "001e6c00": {
+        "compiled_size": 60,
+        "target_size": 60,
+        "variant": "v04",
+        "mechanism": "two calls; the second needs a trailing empty asm, and the global is reached by lw so the TRUNCATING no-carry rule applies - declare 0x1dae6e4, not Ghidra's 0x1de6e4",
+        "source": "recovery-experiments/fm_worker_b_round16_001e6c00_solved.cpp",
+        "source_sha256": "551bc20ac5fdb65c42e34990e947f6d97a157d1d469ed2b8416a3b94f8263fa2",
+        "proof": "recovery-experiments/fm_worker_b_round16_001e6c00_solved.verification.json",
+        "exact_match": true,
+        "boundary_agreement": true,
+        "differing_words": []
+      },
+      "002d47a8": {
+        "compiled_size": 60,
+        "target_size": 60,
+        "variant": "v03",
+        "mechanism": "vtable-pointer store then two calls; the +3208 argument must be spelled as a BYTE offset, not a u32 index, or GCC folds it to +802",
+        "source": "recovery-experiments/fm_worker_b_round16_002d47a8_solved.cpp",
+        "source_sha256": "08b9aad95d90cd435668a60a001e1c17c82fcd42d88d0c1c3b830623d0ef57b6",
+        "proof": "recovery-experiments/fm_worker_b_round16_002d47a8_solved.verification.json",
+        "exact_match": true,
+        "boundary_agreement": true,
+        "differing_words": []
+      }
+    },
+    "unresolved": {
+      "0014dbc8": {
+        "best": "v01 (6 words); v02 volatile, v03 barrier (5 words)",
+        "measured": "60/60, 5-6 words",
+        "blocker": "the target orders the six zero-stores sb 0x1d9, sw 0x1d0, sh 0x1d4, sb 0x1d6, sb 0x1d7, sb 0x1d8; GCC swaps the first two (emits 0x1d8 then 0x1d9). All six are to the same base, so there is no aliasing reason for the swap and neither a memory barrier nor volatile pins it.",
+        "attempts": [
+          "plain mixed-width stores",
+          "all stores volatile",
+          "memory barrier after the leading byte store"
+        ]
+      },
+      "0014dc08": {
+        "best": "v01 (6 words); v02 volatile, v03 barrier (5 words)",
+        "measured": "identical to 0014dbc8 (byte-identical bodies)",
+        "blocker": "same store-ordering issue as 0014dbc8",
+        "attempts": [
+          "plain",
+          "volatile",
+          "barrier"
+        ]
+      },
+      "00170530": {
+        "best": "v03",
+        "measured": "60/60, 4 words at v03; 5 at v04",
+        "blocker": "the target keeps the two constants in DISTINCT registers (li t6,1; sh t7,58; sb t6,0); GCC reuses t7 for both. param_3 must stay unmasked (a u16 parameter adds an andi, 8 words). Barriers and named temporaries both widen the gap.",
+        "attempts": [
+          "u16 parameter",
+          "u32 parameter with memory barriers between stores",
+          "named temporaries for both constants"
+        ]
+      },
+      "002e2e18": {
+        "best": "v01",
+        "measured": "56/56, 4 words",
+        "blocker": "the machine form is a LIKELY branch (beql) with lw v0,264(s0) in its delay slot and the same load repeated after the call. __builtin_expect plus a volatile reload grew the body to 64/56 instead of producing the likely-branch shape.",
+        "attempts": [
+          "plain guarded form",
+          "__builtin_expect(...,1) with a volatile reload"
+        ]
+      },
+      "0016e200": {
+        "best": "v01",
+        "measured": "56/60, 7 words",
+        "blocker": "two differences: the target uses lq t0/sq t0 where GCC picks t7, and the target emits ld s0,0(sp) TWICE (beq delay slot, then after the sq) while GCC elides the dead reload",
+        "attempts": [
+          "aligned 16-byte quad struct copy"
+        ]
+      },
+      "0016e500": {
+        "best": "v01",
+        "measured": "56/60, 7 words",
+        "blocker": "identical to 0016e200 (byte-identical bodies)",
+        "attempts": [
+          "aligned 16-byte quad struct copy"
+        ]
+      },
+      "00315678": {
+        "best": "v01",
+        "measured": "56/56, 2 words at w4/w5",
+        "blocker": "PROLOGUE-SINK CLASS. The target sinks the vtable-pointer store to the incoming parameter BELOW both prologue saves (sd s0,0(sp); sd ra,8(sp); sw t7,0(a0)); GCC always schedules it BETWEEN them. Same shape as round-15's 0028b7f8.",
+        "attempts": [
+          "plain",
+          "volatile store",
+          "named pointer local",
+          "volatile pointer local",
+          "memory barrier before the store"
+        ]
+      },
+      "00315700": {
+        "best": "v01",
+        "measured": "56/56, 2 words",
+        "blocker": "identical to 00315678 (same three-instruction family)",
+        "attempts": [
+          "plain",
+          "volatile store"
+        ]
+      },
+      "00316890": {
+        "best": "v01",
+        "measured": "56/56, 2 words",
+        "blocker": "identical to 00315678 (same three-instruction family)",
+        "attempts": [
+          "plain",
+          "volatile store"
+        ]
+      },
+      "00265740": {
+        "best": "v01",
+        "measured": "56/60, 13 words at v01",
+        "blocker": "the target is 15 words: it saves ra BEFORE s0 (sd ra,8(sp); sd s0,0(sp)) and ends with sltiu v0,v0,1, i.e. it returns 1 when (x ^ 0x8d) == 0. v02 with the == 0 predicate regressed to 56/60 and sltu; v01's prologue order also differs by one slot, so both the predicate and the prologue ordering are needed at once and no single spelling produced both.",
+        "attempts": [
+          "!= 0 predicate (v01)",
+          "== 0 predicate (v02)"
+        ]
+      }
+    },
+    "unresolved_after_round16": [
+      "0014dbc8",
+      "0014dc08",
+      "0016e200",
+      "0016e500",
+      "00170530",
+      "00265740",
+      "002e2e18",
+      "00315678",
+      "00315700",
+      "00316890"
+    ],
+    "new_compiler_level_classes": [
+      "prologue-sink: a vtable-pointer store to the incoming parameter is always scheduled BETWEEN the two prologue saves (4 targets now: 0028b7f8 r15, 00315678/00315700/00316890 r16)"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+00109360: compiled 104 bytes, target 104 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00109360: 27bdfff0  addiu	sp,sp,-16                                  | 00109360: 27bdfff0  addiu	sp,sp,-16
+   00109364: 3c0f0034  lui	t7,0x34                                      | 00109364: 3c0f0034  lui	t7,0x34
+   00109368: ffb00000  sd	s0,0(sp)                                      | 00109368: ffb00000  sd	s0,0(sp)
+   0010936c: 000568c0  sll	t5,a1,0x3                                    | 0010936c: 000568c0  sll	t5,a1,0x3
+   00109370: ffbf0008  sd	ra,8(sp)                                      | 00109370: ffbf0008  sd	ra,8(sp)
+   00109374: 8dee0eac  lw	t6,3756(t7)   ; = D_00340eac                  | 00109374: 8dee0eac  lw	t6,3756(t7)   ; = D_00340eac
+   00109378: 11c5000f  beq	t6,a1,0x1093b8                               | 00109378: 11c5000f  beq	t6,a1,1093b8 <func_00109360+0x58>
+   0010937c: 00a0802d  move	s0,a1                                       | 0010937c: 00a0802d  move	s0,a1
+   00109380: 3c0f003b  lui	t7,0x3b                                      | 00109380: 3c0f003b  lui	t7,0x3b
+   00109384: 25ef8ea0  addiu	t7,t7,-29024   ; = D_003a8ea0              | 00109384: 25ef8ea0  addiu	t7,t7,-29024   ; = D_003a8ea0
+   00109388: 01af7821  addu	t7,t5,t7                                    | 00109388: 01af7821  addu	t7,t5,t7
+   0010938c: 8de50000  lw	a1,0(t7)                                      | 0010938c: 8de50000  lw	a1,0(t7)
+   00109390: 50a00008  beqzl	a1,0x1093b4                                | 00109390: 50a00008  beqzl	a1,1093b4 <func_00109360+0x54>
+   00109394: 3c0f0034  lui	t7,0x34                                      | 00109394: 3c0f0034  lui	t7,0x34
+   00109398: 8def0004  lw	t7,4(t7)   ; = D_00340004                     | 00109398: 8def0004  lw	t7,4(t7)   ; = D_00340004
+   0010939c: 11e00004  beqz	t7,0x1093b0                                 | 0010939c: 11e00004  beqz	t7,1093b0 <func_00109360+0x50>
+   001093a0: 01e0302d  move	a2,t7                                       | 001093a0: 01e0302d  move	a2,t7
+   001093a4: 0000382d  move	a3,zero                                     | 001093a4: 0000382d  move	a3,zero
+   001093a8: 0c04cf1e  jal	0x133c78                                     | 001093a8: 0c04cf1e  jal	133c78 <func_00133c78>
+   001093ac: 0000402d  move	t0,zero                                     | 001093ac: 0000402d  move	t0,zero
+   001093b0: 3c0f0034  lui	t7,0x34                                      | 001093b0: 3c0f0034  lui	t7,0x34
+   001093b4: adf00eac  sw	s0,3756(t7)   ; = D_00340eac                  | 001093b4: adf00eac  sw	s0,3756(t7)   ; = D_00340eac
+   001093b8: dfb00000  ld	s0,0(sp)                                      | 001093b8: dfb00000  ld	s0,0(sp)
+   001093bc: dfbf0008  ld	ra,8(sp)                                      | 001093bc: dfbf0008  ld	ra,8(sp)
+   001093c0: 03e00008  jr	ra                                            | 001093c0: 03e00008  jr	ra
+   001093c4: 27bd0010  addiu	sp,sp,16                                   | 001093c4: 27bd0010  addiu	sp,sp,16

@@ -1,0 +1,17 @@
+00135cc8: compiled 52 bytes, target 52 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00135cc8: 8c8d000c  lw	t5,12(a0)                                     | 00135cc8: 8c8d000c  lw	t5,12(a0)
+   00135ccc: 19a00009  blez	t5,0x135cf4                                 | 00135ccc: 19a00009  blez	t5,135cf4 <func_00135cc8+0x2c>
+   00135cd0: 0000702d  move	t6,zero                                     | 00135cd0: 0000702d  move	t6,zero
+   00135cd4: 8c8f0010  lw	t7,16(a0)                                     | 00135cd4: 8c8f0010  lw	t7,16(a0)
+   00135cd8: 55e50003  bnel	t7,a1,0x135ce8                              | 00135cd8: 55e50003  bnel	t7,a1,135ce8 <func_00135cc8+0x20>
+   00135cdc: 25ce0001  addiu	t6,t6,1                                    | 00135cdc: 25ce0001  addiu	t6,t6,1
+   00135ce0: 03e00008  jr	ra                                            | 00135ce0: 03e00008  jr	ra
+   00135ce4: ac860010  sw	a2,16(a0)                                     | 00135ce4: ac860010  sw	a2,16(a0)
+   00135ce8: 01cd782a  slt	t7,t6,t5                                     | 00135ce8: 01cd782a  slt	t7,t6,t5
+   00135cec: 15e0fff9  bnez	t7,0x135cd4                                 | 00135cec: 15e0fff9  bnez	t7,135cd4 <func_00135cc8+0xc>
+   00135cf0: 24840004  addiu	a0,a0,4                                    | 00135cf0: 24840004  addiu	a0,a0,4
+   00135cf4: 03e00008  jr	ra                                            | 00135cf4: 03e00008  jr	ra
+   00135cf8: 00000000  nop                                              | 00135cf8: 00000000  nop

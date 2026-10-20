@@ -1,0 +1,22 @@
+00171418: compiled 72 bytes, target 72 bytes, exact=False
+Differing words: 7. First difference at instruction 7 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00171418: 27bdfff0  addiu	sp,sp,-16                                  | 00171418: 27bdfff0  addiu	sp,sp,-16
+   0017141c: ffb00000  sd	s0,0(sp)                                      | 0017141c: ffb00000  sd	s0,0(sp)
+   00171420: ffbf0008  sd	ra,8(sp)                                      | 00171420: ffbf0008  sd	ra,8(sp)
+   00171424: 0080802d  move	s0,a0                                       | 00171424: 0080802d  move	s0,a0
+   00171428: 8c8f0000  lw	t7,0(a0)                                      | 00171428: 8c8f0000  lw	t7,0(a0)
+   0017142c: 0c05b00a  jal	0x16c028                                     | 0017142c: 0c05b00a  jal	16c028 <func_0016c028>
+   00171430: 8de40004  lw	a0,4(t7)                                      | 00171430: 8de40004  lw	a0,4(t7)
+!! 00171434: 3c0f01c6  lui	t7,0x1c6                                     | 00171434: 3c0e01c5  lui	t6,0x1c5
+!! 00171438: 25eff480  addiu	t7,t7,-2944   ; = D_01c5f480               | 00171438: 35cef480  ori	t6,t6,0xf480
+!! 0017143c: 504f0004  beql	v0,t7,0x171450                              | 0017143c: 504e0004  beql	v0,t6,171450 <func_00171418+0x38>
+!! 00171440: ae0f0000  sw	t7,0(s0)                                      | 00171440: ae0e0000  sw	t6,0(s0)
+!! 00171444: 78480000  lq	t0,0(v0)                                      | 00171444: 784f0000  lq	t7,0(v0)
+!! 00171448: 7de80000  sq	t0,0(t7)                                      | 00171448: 7dcf0000  sq	t7,0(t6)
+!! 0017144c: ae0f0000  sw	t7,0(s0)                                      | 0017144c: ae0e0000  sw	t6,0(s0)
+   00171450: dfbf0008  ld	ra,8(sp)                                      | 00171450: dfbf0008  ld	ra,8(sp)
+   00171454: dfb00000  ld	s0,0(sp)                                      | 00171454: dfb00000  ld	s0,0(sp)
+   00171458: 03e00008  jr	ra                                            | 00171458: 03e00008  jr	ra
+   0017145c: 27bd0010  addiu	sp,sp,16                                   | 0017145c: 27bd0010  addiu	sp,sp,16

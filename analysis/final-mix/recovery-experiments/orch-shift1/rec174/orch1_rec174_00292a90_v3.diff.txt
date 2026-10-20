@@ -1,0 +1,27 @@
+00292a90: compiled 88 bytes, target 92 bytes, exact=False
+Differing words: 19. First difference at instruction 2 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00292a90: 3c0f0036  lui	t7,0x36                                      | 00292a90: 3c0f0036  lui	t7,0x36
+   00292a94: 0000682d  move	t5,zero                                     | 00292a94: 0000682d  move	t5,zero
+!! 00292a98: 8deff4d0  lw	t7,-2864(t7)   ; = D_0035f4d0                 | 00292a98: 8debf4d0  lw	t3,-2864(t7)   ; = D_0035f4d0
+!! 00292a9c: 19e00011  blez	t7,0x292ae4                                 | 00292a9c: 1960000f  blez	t3,292adc <func_00292a90+0x4c>
+   00292aa0: 0000102d  move	v0,zero                                     | 00292aa0: 0000102d  move	v0,zero
+!! 00292aa4: 01e0602d  move	t4,t7                                       | 00292aa4: 3c0f0036  lui	t7,0x36
+!! 00292aa8: 3c0f0036  lui	t7,0x36                                      | 00292aa8: 8deef4d4  lw	t6,-2860(t7)   ; = D_0035f4d4
+!! 00292aac: 8deef4d4  lw	t6,-2860(t7)   ; = D_0035f4d4                 | 00292aac: 91cf0004  lbu	t7,4(t6)
+!! 00292ab0: 8dcf0004  lw	t7,4(t6)                                      | 00292ab0: 31ef0001  andi	t7,t7,0x1
+!! 00292ab4: 31ef0001  andi	t7,t7,0x1                                   | 00292ab4: 31ef00ff  andi	t7,t7,0xff
+!! 00292ab8: 31ef00ff  andi	t7,t7,0xff                                  | 00292ab8: 51e00005  beqzl	t7,292ad0 <func_00292a90+0x40>
+!! 00292abc: 51e00006  beqzl	t7,0x292ad8                                | 00292abc: 25ad0001  addiu	t5,t5,1
+!! 00292ac0: 25ad0001  addiu	t5,t5,1                                    | 00292ac0: 8dcf0000  lw	t7,0(t6)
+!! 00292ac4: 8dcf0000  lw	t7,0(t6)                                      | 00292ac4: 11e40006  beq	t7,a0,292ae0 <func_00292a90+0x50>
+!! 00292ac8: 55e40003  bnel	t7,a0,0x292ad8                              | 00292ac8: 240c0001  li	t4,1
+   00292acc: 25ad0001  addiu	t5,t5,1                                    | 00292acc: 25ad0001  addiu	t5,t5,1
+!! 00292ad0: 03e00008  jr	ra                                            | 00292ad0: 01ab782a  slt	t7,t5,t3
+!! 00292ad4: 24020001  li	v0,1                                          | 00292ad4: 15e0fff5  bnez	t7,292aac <func_00292a90+0x1c>
+!! 00292ad8: 01ac782a  slt	t7,t5,t4                                     | 00292ad8: 25ce0010  addiu	t6,t6,16
+!! 00292adc: 15e0fff4  bnez	t7,0x292ab0                                 | 00292adc: 0040602d  move	t4,v0
+!! 00292ae0: 25ce0010  addiu	t6,t6,16                                   | 00292ae0: 03e00008  jr	ra
+!! 00292ae4: 03e00008  jr	ra                                            | 00292ae4: 0180102d  move	v0,t4
+!! 00292ae8: 00000000  nop                                              | 

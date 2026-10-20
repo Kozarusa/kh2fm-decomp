@@ -1,0 +1,29 @@
+0018a1b8: compiled 100 bytes, target 96 bytes, exact=False
+Differing words: 16. First difference at instruction 9 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0018a1b8: 8c8e0000  lw	t6,0(a0)                                      | 0018a1b8: 8c8e0000  lw	t6,0(a0)
+   0018a1bc: 240f0014  li	t7,20                                         | 0018a1bc: 240f0014  li	t7,20
+   0018a1c0: 248c0040  addiu	t4,a0,64                                   | 0018a1c0: 248c0040  addiu	t4,a0,64
+   0018a1c4: 24cd0014  addiu	t5,a2,20                                   | 0018a1c4: 24cd0014  addiu	t5,a2,20
+   0018a1c8: 01cf7018  mult	t6,t6,t7                                    | 0018a1c8: 01cf7018  mult	t6,t6,t7
+   0018a1cc: 01a6600b  movn	t4,t5,a2                                    | 0018a1cc: 01a6600b  movn	t4,t5,a2
+   0018a1d0: 008e2021  addu	a0,a0,t6                                    | 0018a1d0: 008e2021  addu	a0,a0,t6
+   0018a1d4: 24840040  addiu	a0,a0,64                                   | 0018a1d4: 24840040  addiu	a0,a0,64
+   0018a1d8: 0184782b  sltu	t7,t4,a0                                    | 0018a1d8: 0184782b  sltu	t7,t4,a0
+!! 0018a1dc: 11e0000b  beqz	t7,0x18a20c                                 | 0018a1dc: 11e0000d  beqz	t7,18a214 <func_0018a1b8+0x5c>
+!! 0018a1e0: 0180302d  move	a2,t4                                       | 0018a1e0: 0000102d  move	v0,zero
+!! 0018a1e4: 240d0001  li	t5,1                                          | 0018a1e4: 0180102d  move	v0,t4
+!! 0018a1e8: 90cf0004  lbu	t7,4(a2)                                     | 0018a1e8: 240e0001  li	t6,1
+!! 0018a1ec: 00c0102d  move	v0,a2                                       | 0018a1ec: 904f0004  lbu	t7,4(v0)
+!! 0018a1f0: 24c60014  addiu	a2,a2,20                                   | 0018a1f0: 01ee7804  sllv	t7,t6,t7
+!! 0018a1f4: 01ed7804  sllv	t7,t5,t7                                    | 0018a1f4: 00af7824  and	t7,a1,t7
+!! 0018a1f8: 00af7824  and	t7,a1,t7                                     | 0018a1f8: 15e00006  bnez	t7,18a214 <func_0018a1b8+0x5c>
+!! 0018a1fc: 15e00004  bnez	t7,0x18a210                                 | 0018a1fc: 00000000  nop
+!! 0018a200: 00c4702b  sltu	t6,a2,a0                                    | 0018a200: 24420014  addiu	v0,v0,20
+!! 0018a204: 55c0fff9  bnezl	t6,0x18a1ec                                | 0018a204: 0044782b  sltu	t7,v0,a0
+!! 0018a208: 90cf0004  lbu	t7,4(a2)                                     | 0018a208: 55e0fff9  bnezl	t7,18a1f0 <func_0018a1b8+0x38>
+!! 0018a20c: 0000102d  move	v0,zero                                     | 0018a20c: 904f0004  lbu	t7,4(v0)
+!! 0018a210: 03e00008  jr	ra                                            | 0018a210: 0000102d  move	v0,zero
+!! 0018a214: 00000000  nop                                              | 0018a214: 03e00008  jr	ra
+!!                                                                      | 0018a218: 00000000  nop

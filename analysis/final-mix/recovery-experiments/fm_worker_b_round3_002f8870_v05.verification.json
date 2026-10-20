@@ -1,0 +1,18 @@
+{
+  "source_sha256": "4f3e3cb201bdf780804ac9cfaa490dfa6283b443a351845c398eb1f68f83d766",
+  "source": "analysis/final-mix/recovery-experiments/fm_worker_b_round3_002f8870_v05.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "002f8870",
+      "symbol": "_Z13func_002f8870f",
+      "compiled_size": 24,
+      "target_size": 24,
+      "ghidra_body_size": 24,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "00600e44ff7f0f3cffffef352468cf010800e00300008d44",
+      "target_hex": "00600e44ff7f0f3cffffef352470cf010800e00300008e44"
+    }
+  ]
+}

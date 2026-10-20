@@ -1,0 +1,102 @@
+002ddbb8 [(0, 'f80a8f8c', 'f80a8e8c'), (4, '0400e011', '0400c011'), (8, '00000000', '2d100000'), (12, '1200ef95', '1200cf95'), (16, '0800e003', '0100ef31'), (20, '0100e231', 'ffffe231'), (28, '2d100000', '00000000')]
+u32 func_002ddbb8(u8* object) { u32 value=*(u32*)(object+0xaf8); if(!value) return 0; return (u32)*(u16*)(value+0x12)&1u; }
+00171690 [(12, '0800858c', '0800868c'), (16, '0400ee8d', '0400e58d'), (20, '04008cc4', '0400848c'), (24, '2b280500', '9e14060c'), (28, '0000bfdf', '2b300600'), (32, '2d20c001', '0000bfdf'), (36, '9e140608', '0800e003')]
+void func_00171690(int *param_1)
+
+{
+  func_00185278(param_1[1],*(u32 *)(*param_1 + 4),param_1[2] != 0); asm volatile("" ::: "memory");
+  return;
+}
+00172078 [(12, '0c008cc4', '0400868c'), (16, '0400ee8d', '0800878c'), (20, '0400858c', '0400e58d'), (24, '0800868c', '6851060c'), (28, '0000bfdf', '0c00848c'), (32, '2d20c001', '0000bfdf'), (36, '68510608', '0800e003')]
+void func_00172078(int *param_1)
+
+{
+  func_001945a0(param_1[3],*(u32 *)(*param_1 + 4),param_1[1],param_1[2]); asm volatile("" ::: "memory");
+  return;
+}
+001c0a80 [(0, '2d700000', '2d680000'), (4, '21788e00', '2d708000'), (8, '0000e0a1', '0000c0a1'), (12, '0100ce25', '0100ad25'), (16, '1300cf29', '1300af29'), (28, 'faffe055', 'faffe015'), (32, '21788e00', '21708d00')]
+void func_001c0a80(u8 *param_1)
+
+{
+  int iVar1;
+  u8 *puVar2;
+  
+  iVar1 = 0;
+  puVar2 = param_1;
+  while( true ) {
+    *puVar2 = 0;
+    iVar1 = iVar1 + 1;
+    if (0x12 < iVar1) break;
+    puVar2 = param_1 + iVar1;
+  }
+  return;
+}
+002eb068 [(0, '0c008e8c', '0c008f8c'), (4, '0400cf8d', '3d000e24'), (8, '3300ee39', '0400ed8d'), (12, '3d00ef39', '0400ae11'), (16, '0300e011', '2d100000'), (20, '2d100000', '33000f24'), (24, '0200c015', '0200af15')]
+u32 func_002eb068(int param_1)
+
+{
+  int iVar1;
+  u32 uVar2;
+  
+  iVar1 = *(int *)(*(int *)(param_1 + 0xc) + 4);
+  uVar2 = 0;
+  if ((iVar1 == 0x3d) || (iVar1 == 0x33)) {
+    uVar2 = 1;
+  }
+  return uVar2;
+}
+00172368 [(8, '04008f8c', '2d30a003'), (12, '0000e879', '04008f8c'), (16, '0000a87f', '00008d8c'), (20, '00008e8c', '0000ee8d'), (24, '2d28a003', '0800848c'), (28, '08008cc4', '0000aeaf'), (36, '0400c48d', '0400a58d')]
+void func_00172368(int *param_1)
+
+{
+  u32 *puVar1;
+  u32 uStack_20;
+  u32 uStack_1c;
+  u32 uStack_18;
+  u32 uStack_14;
+  
+  puVar1 = (u32 *)param_1[1];
+  uStack_20 = *puVar1;
+  uStack_1c = puVar1[1];
+  uStack_18 = puVar1[2];
+  uStack_14 = puVar1[3];
+  func_001a0710(param_1[2],*(u32 *)(*param_1 + 4),&uStack_20);
+  return;
+}
+00173808 [(8, '04008f8c', '2d30a003'), (12, '0000e879', '04008f8c'), (16, '0000a87f', '00008d8c'), (20, '00008e8c', '0000ee8d'), (24, '2d28a003', '0800848c'), (28, '08008cc4', '0000aeaf'), (36, '0400c48d', '0400a58d')]
+void func_00173808(int *param_1)
+
+{
+  u32 *puVar1;
+  u32 uStack_20;
+  u32 uStack_1c;
+  u32 uStack_18;
+  u32 uStack_14;
+  
+  puVar1 = (u32 *)param_1[1];
+  uStack_20 = *puVar1;
+  uStack_1c = puVar1[1];
+  uStack_18 = puVar1[2];
+  uStack_14 = puVar1[3];
+  func_0019fdc0(param_1[2],*(u32 *)(*param_1 + 4),&uStack_20);
+  return;
+}
+002e8038 [(8, '08008f8c', '2d30a003'), (12, '0000e879', '08008f8c'), (16, '0000a87f', '04008d8c'), (20, '04008e8c', '0000ee8d'), (24, '2d30a003', '0000848c'), (28, '0000848c', '0000aeaf'), (36, '0400c58d', '0400a58d')]
+void func_002e8038(u32 *param_1)
+
+{
+  u32 *puVar1;
+  u32 uStack_20;
+  u32 uStack_1c;
+  u32 uStack_18;
+  u32 uStack_14;
+  
+  puVar1 = (u32 *)param_1[2];
+  uStack_20 = *puVar1;
+  uStack_1c = puVar1[1];
+  uStack_18 = puVar1[2];
+  uStack_14 = puVar1[3];
+  func_002e9fe0(*param_1,*(u32 *)(param_1[1] + 4),&uStack_20);
+  return;
+}
+16 disjoint 7-word proposals and full original byte proofs prepared.

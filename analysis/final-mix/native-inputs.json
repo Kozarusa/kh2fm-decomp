@@ -1,0 +1,3484 @@
+{
+  "SLPM_666.75": {
+    "sha256": "d869ce4b8edd61cb978c4ff9ede595fe4d7d7b21cbb96a145275217120d8bc87",
+    "size": 2629364,
+    "machine": 8,
+    "entry": 1048604,
+    "flags": 546439169,
+    "sections": [
+      {
+        "name": "",
+        "type": 0,
+        "flags": 0,
+        "address": 0,
+        "offset": 0,
+        "size": 0,
+        "executable": false
+      },
+      {
+        "name": "overlay",
+        "type": 8,
+        "flags": 6,
+        "address": 32604160,
+        "offset": 2605056,
+        "size": 152,
+        "executable": true
+      },
+      {
+        "name": "main",
+        "type": 1,
+        "flags": 7,
+        "address": 1048576,
+        "offset": 4096,
+        "size": 2598068,
+        "executable": true
+      },
+      {
+        "name": ".ctors",
+        "type": 1,
+        "flags": 3,
+        "address": 3646644,
+        "offset": 2602164,
+        "size": 564,
+        "executable": false
+      },
+      {
+        "name": ".dtors",
+        "type": 1,
+        "flags": 3,
+        "address": 3647208,
+        "offset": 2602728,
+        "size": 280,
+        "executable": false
+      },
+      {
+        "name": ".reginfo",
+        "type": 1879048198,
+        "flags": 0,
+        "address": 3647488,
+        "offset": 2605056,
+        "size": 24,
+        "executable": false
+      },
+      {
+        "name": ".bss",
+        "type": 8,
+        "flags": 3,
+        "address": 3647616,
+        "offset": 2603136,
+        "size": 28123112,
+        "executable": false
+      },
+      {
+        "name": ".mdebug.eabi64",
+        "type": 1,
+        "flags": 0,
+        "address": 0,
+        "offset": 2605080,
+        "size": 0,
+        "executable": false
+      },
+      {
+        "name": ".DVP.ovlytab",
+        "type": 2147480608,
+        "flags": 1,
+        "address": 0,
+        "offset": 2605080,
+        "size": 168,
+        "executable": false
+      },
+      {
+        "name": ".DVP.ovlystrtab",
+        "type": 3,
+        "flags": 1,
+        "address": 0,
+        "offset": 2605248,
+        "size": 509,
+        "executable": false
+      },
+      {
+        "name": ".DVP.overlay..0x0.3554102140.7.0",
+        "type": 2147480609,
+        "flags": 5,
+        "address": 0,
+        "offset": 2605757,
+        "size": 2048,
+        "executable": true
+      },
+      {
+        "name": ".DVP.overlay..unknvma.2121604776.30.1",
+        "type": 2147480609,
+        "flags": 5,
+        "address": 0,
+        "offset": 2607805,
+        "size": 2048,
+        "executable": true
+      },
+      {
+        "name": ".DVP.overlay..unknvma.1739335321.312.2",
+        "type": 2147480609,
+        "flags": 5,
+        "address": 0,
+        "offset": 2609853,
+        "size": 1928,
+        "executable": true
+      },
+      {
+        "name": ".DVP.overlay..0x0.1714750360.7.0",
+        "type": 2147480609,
+        "flags": 5,
+        "address": 0,
+        "offset": 2611781,
+        "size": 2048,
+        "executable": true
+      },
+      {
+        "name": ".DVP.overlay..unknvma.3779483803.299.1",
+        "type": 2147480609,
+        "flags": 5,
+        "address": 0,
+        "offset": 2613829,
+        "size": 2048,
+        "executable": true
+      },
+      {
+        "name": ".DVP.overlay..unknvma.891035233.46.2",
+        "type": 2147480609,
+        "flags": 5,
+        "address": 0,
+        "offset": 2615877,
+        "size": 2048,
+        "executable": true
+      },
+      {
+        "name": ".DVP.overlay..unknvma.3104148915.140.3",
+        "type": 2147480609,
+        "flags": 5,
+        "address": 0,
+        "offset": 2617925,
+        "size": 2048,
+        "executable": true
+      },
+      {
+        "name": ".DVP.overlay..unknvma.3104148915.491.4",
+        "type": 2147480609,
+        "flags": 5,
+        "address": 0,
+        "offset": 2619973,
+        "size": 864,
+        "executable": true
+      },
+      {
+        "name": ".DVP.overlay..0x0.2676314146.7.0",
+        "type": 2147480609,
+        "flags": 5,
+        "address": 0,
+        "offset": 2620837,
+        "size": 816,
+        "executable": true
+      },
+      {
+        "name": ".DVP.overlay..0x0.743817772.7.0",
+        "type": 2147480609,
+        "flags": 5,
+        "address": 0,
+        "offset": 2621653,
+        "size": 2048,
+        "executable": true
+      },
+      {
+        "name": ".DVP.overlay..unknvma.4015768367.308.1",
+        "type": 2147480609,
+        "flags": 5,
+        "address": 0,
+        "offset": 2623701,
+        "size": 912,
+        "executable": true
+      },
+      {
+        "name": ".DVP.overlay..0x0.2065756426.27.0",
+        "type": 2147480609,
+        "flags": 5,
+        "address": 0,
+        "offset": 2624613,
+        "size": 64,
+        "executable": true
+      },
+      {
+        "name": ".DVP.overlay..0x0.3867744864.35.0",
+        "type": 2147480609,
+        "flags": 5,
+        "address": 0,
+        "offset": 2624677,
+        "size": 1480,
+        "executable": true
+      },
+      {
+        "name": ".DVP.overlay..0x0.633986788.36.0",
+        "type": 2147480609,
+        "flags": 5,
+        "address": 0,
+        "offset": 2626157,
+        "size": 1608,
+        "executable": true
+      },
+      {
+        "name": ".shstrtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 2627765,
+        "size": 598,
+        "executable": false
+      }
+    ],
+    "segments": [
+      {
+        "type": 1,
+        "offset": 4096,
+        "address": 1048576,
+        "file_size": 2598912,
+        "memory_size": 30722152,
+        "flags": 7
+      },
+      {
+        "type": 1,
+        "offset": 2605056,
+        "address": 32604160,
+        "file_size": 0,
+        "memory_size": 152,
+        "flags": 5
+      }
+    ]
+  },
+  "SIO2MAN.IRX": {
+    "sha256": "565ec77e75f174cfddf72c41ccc446c1c07a3d5fb0a2ccfefad337cb8a7d0728",
+    "size": 6641,
+    "machine": 8,
+    "entry": 1588,
+    "flags": 1,
+    "sections": [
+      {
+        "name": "",
+        "type": 0,
+        "flags": 0,
+        "address": 0,
+        "offset": 0,
+        "size": 0,
+        "executable": false
+      },
+      {
+        "name": ".iopmod",
+        "type": 1879048320,
+        "flags": 0,
+        "address": 0,
+        "offset": 116,
+        "size": 34,
+        "executable": false
+      },
+      {
+        "name": ".text",
+        "type": 1,
+        "flags": 6,
+        "address": 0,
+        "offset": 160,
+        "size": 3904,
+        "executable": true
+      },
+      {
+        "name": ".rel.text",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 4712,
+        "size": 1904,
+        "executable": false
+      },
+      {
+        "name": ".rodata",
+        "type": 1,
+        "flags": 2,
+        "address": 3904,
+        "offset": 4064,
+        "size": 96,
+        "executable": false
+      },
+      {
+        "name": ".data",
+        "type": 1,
+        "flags": 3,
+        "address": 4000,
+        "offset": 4160,
+        "size": 32,
+        "executable": false
+      },
+      {
+        "name": ".rel.data",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 6616,
+        "size": 8,
+        "executable": false
+      },
+      {
+        "name": ".bss",
+        "type": 8,
+        "flags": 3,
+        "address": 4032,
+        "offset": 4192,
+        "size": 48,
+        "executable": false
+      },
+      {
+        "name": ".shstrtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 4192,
+        "size": 80,
+        "executable": false
+      },
+      {
+        "name": ".symtab",
+        "type": 2,
+        "flags": 0,
+        "address": 0,
+        "offset": 6624,
+        "size": 16,
+        "executable": false
+      },
+      {
+        "name": ".strtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 6640,
+        "size": 1,
+        "executable": false
+      }
+    ],
+    "segments": [
+      {
+        "type": 1879048320,
+        "offset": 116,
+        "address": 0,
+        "file_size": 34,
+        "memory_size": 0,
+        "flags": 4
+      },
+      {
+        "type": 1,
+        "offset": 160,
+        "address": 0,
+        "file_size": 4032,
+        "memory_size": 4080,
+        "flags": 7
+      }
+    ]
+  },
+  "SIO2D.IRX": {
+    "sha256": "b07339d0b6ef6021ebb2bd8dba1138f3159b2cdfbf1b29df799694107107d330",
+    "size": 11289,
+    "machine": 8,
+    "entry": 3604,
+    "flags": 1,
+    "sections": [
+      {
+        "name": "",
+        "type": 0,
+        "flags": 0,
+        "address": 0,
+        "offset": 0,
+        "size": 0,
+        "executable": false
+      },
+      {
+        "name": ".iopmod",
+        "type": 1879048320,
+        "flags": 0,
+        "address": 0,
+        "offset": 116,
+        "size": 32,
+        "executable": false
+      },
+      {
+        "name": ".text",
+        "type": 1,
+        "flags": 6,
+        "address": 0,
+        "offset": 160,
+        "size": 6944,
+        "executable": true
+      },
+      {
+        "name": ".rel.text",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 7816,
+        "size": 3448,
+        "executable": false
+      },
+      {
+        "name": ".rodata",
+        "type": 1,
+        "flags": 2,
+        "address": 6944,
+        "offset": 7104,
+        "size": 160,
+        "executable": false
+      },
+      {
+        "name": ".data",
+        "type": 1,
+        "flags": 3,
+        "address": 7104,
+        "offset": 7264,
+        "size": 32,
+        "executable": false
+      },
+      {
+        "name": ".rel.data",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 11264,
+        "size": 8,
+        "executable": false
+      },
+      {
+        "name": ".bss",
+        "type": 8,
+        "flags": 3,
+        "address": 7136,
+        "offset": 7296,
+        "size": 4480,
+        "executable": false
+      },
+      {
+        "name": ".shstrtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 7296,
+        "size": 80,
+        "executable": false
+      },
+      {
+        "name": ".symtab",
+        "type": 2,
+        "flags": 0,
+        "address": 0,
+        "offset": 11272,
+        "size": 16,
+        "executable": false
+      },
+      {
+        "name": ".strtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 11288,
+        "size": 1,
+        "executable": false
+      }
+    ],
+    "segments": [
+      {
+        "type": 1879048320,
+        "offset": 116,
+        "address": 0,
+        "file_size": 32,
+        "memory_size": 0,
+        "flags": 4
+      },
+      {
+        "type": 1,
+        "offset": 160,
+        "address": 0,
+        "file_size": 7136,
+        "memory_size": 11616,
+        "flags": 7
+      }
+    ]
+  },
+  "DBCMAN.IRX": {
+    "sha256": "60bfea7d0877df3af370676666e5f1043b6e71723fab94cdff790c19e75e12e7",
+    "size": 15653,
+    "machine": 8,
+    "entry": 0,
+    "flags": 1,
+    "sections": [
+      {
+        "name": "",
+        "type": 0,
+        "flags": 0,
+        "address": 0,
+        "offset": 0,
+        "size": 0,
+        "executable": false
+      },
+      {
+        "name": ".iopmod",
+        "type": 1879048320,
+        "flags": 0,
+        "address": 0,
+        "offset": 116,
+        "size": 38,
+        "executable": false
+      },
+      {
+        "name": ".text",
+        "type": 1,
+        "flags": 6,
+        "address": 0,
+        "offset": 160,
+        "size": 8864,
+        "executable": true
+      },
+      {
+        "name": ".rel.text",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 10764,
+        "size": 4072,
+        "executable": false
+      },
+      {
+        "name": ".rodata",
+        "type": 1,
+        "flags": 2,
+        "address": 8864,
+        "offset": 9024,
+        "size": 1136,
+        "executable": false
+      },
+      {
+        "name": ".rel.rodata",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 14836,
+        "size": 792,
+        "executable": false
+      },
+      {
+        "name": ".data",
+        "type": 1,
+        "flags": 3,
+        "address": 10000,
+        "offset": 10160,
+        "size": 32,
+        "executable": false
+      },
+      {
+        "name": ".rel.data",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 15628,
+        "size": 8,
+        "executable": false
+      },
+      {
+        "name": ".bss",
+        "type": 8,
+        "flags": 3,
+        "address": 10032,
+        "offset": 10192,
+        "size": 10784,
+        "executable": false
+      },
+      {
+        "name": ".shstrtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 10192,
+        "size": 92,
+        "executable": false
+      },
+      {
+        "name": ".symtab",
+        "type": 2,
+        "flags": 0,
+        "address": 0,
+        "offset": 15636,
+        "size": 16,
+        "executable": false
+      },
+      {
+        "name": ".strtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 15652,
+        "size": 1,
+        "executable": false
+      }
+    ],
+    "segments": [
+      {
+        "type": 1879048320,
+        "offset": 116,
+        "address": 0,
+        "file_size": 38,
+        "memory_size": 0,
+        "flags": 4
+      },
+      {
+        "type": 1,
+        "offset": 160,
+        "address": 0,
+        "file_size": 10032,
+        "memory_size": 20816,
+        "flags": 7
+      }
+    ]
+  },
+  "PAD2/DS2O.IRX": {
+    "sha256": "7d8615abb7ba6dc78c385cb8f6205882262f5adf11c02bcaf9dad962256d352d",
+    "size": 10973,
+    "machine": 8,
+    "entry": 0,
+    "flags": 1,
+    "sections": [
+      {
+        "name": "",
+        "type": 0,
+        "flags": 0,
+        "address": 0,
+        "offset": 0,
+        "size": 0,
+        "executable": false
+      },
+      {
+        "name": ".iopmod",
+        "type": 1879048320,
+        "flags": 0,
+        "address": 0,
+        "offset": 116,
+        "size": 31,
+        "executable": false
+      },
+      {
+        "name": ".text",
+        "type": 1,
+        "flags": 6,
+        "address": 0,
+        "offset": 160,
+        "size": 7968,
+        "executable": true
+      },
+      {
+        "name": ".rel.text",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 8908,
+        "size": 1904,
+        "executable": false
+      },
+      {
+        "name": ".rodata",
+        "type": 1,
+        "flags": 2,
+        "address": 7968,
+        "offset": 8128,
+        "size": 112,
+        "executable": false
+      },
+      {
+        "name": ".rel.rodata",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 10812,
+        "size": 112,
+        "executable": false
+      },
+      {
+        "name": ".data",
+        "type": 1,
+        "flags": 3,
+        "address": 8080,
+        "offset": 8240,
+        "size": 96,
+        "executable": false
+      },
+      {
+        "name": ".rel.data",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 10924,
+        "size": 32,
+        "executable": false
+      },
+      {
+        "name": ".bss",
+        "type": 8,
+        "flags": 3,
+        "address": 8176,
+        "offset": 8336,
+        "size": 560,
+        "executable": false
+      },
+      {
+        "name": ".shstrtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 8336,
+        "size": 92,
+        "executable": false
+      },
+      {
+        "name": ".symtab",
+        "type": 2,
+        "flags": 0,
+        "address": 0,
+        "offset": 10956,
+        "size": 16,
+        "executable": false
+      },
+      {
+        "name": ".strtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 10972,
+        "size": 1,
+        "executable": false
+      }
+    ],
+    "segments": [
+      {
+        "type": 1879048320,
+        "offset": 116,
+        "address": 0,
+        "file_size": 31,
+        "memory_size": 0,
+        "flags": 4
+      },
+      {
+        "type": 1,
+        "offset": 160,
+        "address": 0,
+        "file_size": 8176,
+        "memory_size": 8736,
+        "flags": 7
+      }
+    ]
+  },
+  "MCMAN.IRX": {
+    "sha256": "b4df4061f8fdc9c7cf06a329b96227ad6ca69d008df475c1fc4d3e8d06fe3fa4",
+    "size": 96181,
+    "machine": 8,
+    "entry": 376,
+    "flags": 1,
+    "sections": [
+      {
+        "name": "",
+        "type": 0,
+        "flags": 0,
+        "address": 0,
+        "offset": 0,
+        "size": 0,
+        "executable": false
+      },
+      {
+        "name": ".iopmod",
+        "type": 1879048320,
+        "flags": 0,
+        "address": 0,
+        "offset": 116,
+        "size": 32,
+        "executable": false
+      },
+      {
+        "name": ".text",
+        "type": 1,
+        "flags": 6,
+        "address": 0,
+        "offset": 160,
+        "size": 72784,
+        "executable": true
+      },
+      {
+        "name": ".rel.text",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 74492,
+        "size": 21240,
+        "executable": false
+      },
+      {
+        "name": ".rodata",
+        "type": 1,
+        "flags": 2,
+        "address": 72784,
+        "offset": 72944,
+        "size": 464,
+        "executable": false
+      },
+      {
+        "name": ".rel.rodata",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 95732,
+        "size": 184,
+        "executable": false
+      },
+      {
+        "name": ".data",
+        "type": 1,
+        "flags": 3,
+        "address": 73248,
+        "offset": 73408,
+        "size": 512,
+        "executable": false
+      },
+      {
+        "name": ".rel.data",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 95916,
+        "size": 248,
+        "executable": false
+      },
+      {
+        "name": ".bss",
+        "type": 8,
+        "flags": 3,
+        "address": 73760,
+        "offset": 73920,
+        "size": 86852,
+        "executable": false
+      },
+      {
+        "name": ".shstrtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 73920,
+        "size": 92,
+        "executable": false
+      },
+      {
+        "name": ".symtab",
+        "type": 2,
+        "flags": 0,
+        "address": 0,
+        "offset": 96164,
+        "size": 16,
+        "executable": false
+      },
+      {
+        "name": ".strtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 96180,
+        "size": 1,
+        "executable": false
+      }
+    ],
+    "segments": [
+      {
+        "type": 1879048320,
+        "offset": 116,
+        "address": 0,
+        "file_size": 32,
+        "memory_size": 0,
+        "flags": 4
+      },
+      {
+        "type": 1,
+        "offset": 160,
+        "address": 0,
+        "file_size": 73760,
+        "memory_size": 160612,
+        "flags": 7
+      }
+    ]
+  },
+  "MCSERV.IRX": {
+    "sha256": "5006b0dd650fa416d03a559bc8e3bae8a7ae95be81f3e4f3fd9bd524fa27e000",
+    "size": 7385,
+    "machine": 8,
+    "entry": 64,
+    "flags": 1,
+    "sections": [
+      {
+        "name": "",
+        "type": 0,
+        "flags": 0,
+        "address": 0,
+        "offset": 0,
+        "size": 0,
+        "executable": false
+      },
+      {
+        "name": ".iopmod",
+        "type": 1879048320,
+        "flags": 0,
+        "address": 0,
+        "offset": 116,
+        "size": 33,
+        "executable": false
+      },
+      {
+        "name": ".text",
+        "type": 1,
+        "flags": 6,
+        "address": 0,
+        "offset": 160,
+        "size": 4672,
+        "executable": true
+      },
+      {
+        "name": ".rel.text",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 5448,
+        "size": 1912,
+        "executable": false
+      },
+      {
+        "name": ".rodata",
+        "type": 1,
+        "flags": 2,
+        "address": 4672,
+        "offset": 4832,
+        "size": 64,
+        "executable": false
+      },
+      {
+        "name": ".data",
+        "type": 1,
+        "flags": 3,
+        "address": 4736,
+        "offset": 4896,
+        "size": 32,
+        "executable": false
+      },
+      {
+        "name": ".rel.data",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 7360,
+        "size": 8,
+        "executable": false
+      },
+      {
+        "name": ".bss",
+        "type": 8,
+        "flags": 3,
+        "address": 4768,
+        "offset": 4928,
+        "size": 9376,
+        "executable": false
+      },
+      {
+        "name": ".shstrtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 4928,
+        "size": 80,
+        "executable": false
+      },
+      {
+        "name": ".symtab",
+        "type": 2,
+        "flags": 0,
+        "address": 0,
+        "offset": 7368,
+        "size": 16,
+        "executable": false
+      },
+      {
+        "name": ".strtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 7384,
+        "size": 1,
+        "executable": false
+      }
+    ],
+    "segments": [
+      {
+        "type": 1879048320,
+        "offset": 116,
+        "address": 0,
+        "file_size": 33,
+        "memory_size": 0,
+        "flags": 4
+      },
+      {
+        "type": 1,
+        "offset": 160,
+        "address": 0,
+        "file_size": 4768,
+        "memory_size": 14144,
+        "flags": 7
+      }
+    ]
+  },
+  "LIBSD.IRX": {
+    "sha256": "94915a3d9673e8a370e144ae493552d5e1f3956bb9ae5bd91e2da5f36c83ce7d",
+    "size": 30085,
+    "machine": 8,
+    "entry": 176,
+    "flags": 1,
+    "sections": [
+      {
+        "name": "",
+        "type": 0,
+        "flags": 0,
+        "address": 0,
+        "offset": 0,
+        "size": 0,
+        "executable": false
+      },
+      {
+        "name": ".iopmod",
+        "type": 1879048320,
+        "flags": 0,
+        "address": 0,
+        "offset": 116,
+        "size": 47,
+        "executable": false
+      },
+      {
+        "name": ".text",
+        "type": 1,
+        "flags": 6,
+        "address": 0,
+        "offset": 176,
+        "size": 19376,
+        "executable": true
+      },
+      {
+        "name": ".rel.text",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 22892,
+        "size": 6704,
+        "executable": false
+      },
+      {
+        "name": ".rodata",
+        "type": 1,
+        "flags": 2,
+        "address": 19376,
+        "offset": 19552,
+        "size": 464,
+        "executable": false
+      },
+      {
+        "name": ".rel.rodata",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 29596,
+        "size": 464,
+        "executable": false
+      },
+      {
+        "name": ".data",
+        "type": 1,
+        "flags": 3,
+        "address": 19840,
+        "offset": 20016,
+        "size": 2304,
+        "executable": false
+      },
+      {
+        "name": ".rel.data",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 30060,
+        "size": 8,
+        "executable": false
+      },
+      {
+        "name": ".bss",
+        "type": 8,
+        "flags": 3,
+        "address": 22144,
+        "offset": 22320,
+        "size": 1632,
+        "executable": false
+      },
+      {
+        "name": ".shstrtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 22320,
+        "size": 92,
+        "executable": false
+      },
+      {
+        "name": ".symtab",
+        "type": 2,
+        "flags": 0,
+        "address": 0,
+        "offset": 30068,
+        "size": 16,
+        "executable": false
+      },
+      {
+        "name": ".strtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 30084,
+        "size": 1,
+        "executable": false
+      }
+    ],
+    "segments": [
+      {
+        "type": 1879048320,
+        "offset": 116,
+        "address": 0,
+        "file_size": 47,
+        "memory_size": 0,
+        "flags": 4
+      },
+      {
+        "type": 1,
+        "offset": 176,
+        "address": 0,
+        "file_size": 22144,
+        "memory_size": 23776,
+        "flags": 7
+      }
+    ]
+  },
+  "LIBSSL.IRX": {
+    "sha256": "be07cd1de25f2d3acddd144fa79cd80bb76875d1cd239c7f6f1d117468797b3f",
+    "size": 91949,
+    "machine": 8,
+    "entry": 7388,
+    "flags": 1,
+    "sections": [
+      {
+        "name": "",
+        "type": 0,
+        "flags": 0,
+        "address": 0,
+        "offset": 0,
+        "size": 0,
+        "executable": false
+      },
+      {
+        "name": ".iopmod",
+        "type": 1879048320,
+        "flags": 0,
+        "address": 0,
+        "offset": 116,
+        "size": 50,
+        "executable": false
+      },
+      {
+        "name": ".text",
+        "type": 1,
+        "flags": 6,
+        "address": 0,
+        "offset": 176,
+        "size": 63248,
+        "executable": true
+      },
+      {
+        "name": ".rel.text",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 69292,
+        "size": 20264,
+        "executable": false
+      },
+      {
+        "name": ".rodata",
+        "type": 1,
+        "flags": 2,
+        "address": 63248,
+        "offset": 63424,
+        "size": 1200,
+        "executable": false
+      },
+      {
+        "name": ".rel.rodata",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 89556,
+        "size": 856,
+        "executable": false
+      },
+      {
+        "name": ".data",
+        "type": 1,
+        "flags": 3,
+        "address": 64448,
+        "offset": 64624,
+        "size": 4048,
+        "executable": false
+      },
+      {
+        "name": ".rel.data",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 90412,
+        "size": 1520,
+        "executable": false
+      },
+      {
+        "name": ".sbss",
+        "type": 8,
+        "flags": 268435459,
+        "address": 68496,
+        "offset": 68672,
+        "size": 280,
+        "executable": false
+      },
+      {
+        "name": ".bss",
+        "type": 8,
+        "flags": 3,
+        "address": 68784,
+        "offset": 68672,
+        "size": 1066336,
+        "executable": false
+      },
+      {
+        "name": ".shstrtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 68672,
+        "size": 98,
+        "executable": false
+      },
+      {
+        "name": ".symtab",
+        "type": 2,
+        "flags": 0,
+        "address": 0,
+        "offset": 91932,
+        "size": 16,
+        "executable": false
+      },
+      {
+        "name": ".strtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 91948,
+        "size": 1,
+        "executable": false
+      }
+    ],
+    "segments": [
+      {
+        "type": 1879048320,
+        "offset": 116,
+        "address": 0,
+        "file_size": 50,
+        "memory_size": 0,
+        "flags": 4
+      },
+      {
+        "type": 1,
+        "offset": 176,
+        "address": 0,
+        "file_size": 68496,
+        "memory_size": 1135120,
+        "flags": 7
+      }
+    ]
+  },
+  "ROM_SYSMEM.IRX": {
+    "sha256": "78951a48a2e1179e41b7141a30812c73991040e716a4d04ef76782166947ec1b",
+    "size": 6041,
+    "machine": 8,
+    "entry": 96,
+    "flags": 1,
+    "sections": [
+      {
+        "name": "",
+        "type": 0,
+        "flags": 0,
+        "address": 0,
+        "offset": 0,
+        "size": 0,
+        "executable": false
+      },
+      {
+        "name": ".iopmod",
+        "type": 1879048320,
+        "flags": 0,
+        "address": 0,
+        "offset": 116,
+        "size": 48,
+        "executable": false
+      },
+      {
+        "name": ".text",
+        "type": 1,
+        "flags": 6,
+        "address": 0,
+        "offset": 176,
+        "size": 4208,
+        "executable": true
+      },
+      {
+        "name": ".rel.text",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 4984,
+        "size": 1032,
+        "executable": false
+      },
+      {
+        "name": ".rodata",
+        "type": 1,
+        "flags": 2,
+        "address": 4208,
+        "offset": 4384,
+        "size": 32,
+        "executable": false
+      },
+      {
+        "name": ".data",
+        "type": 1,
+        "flags": 3,
+        "address": 4240,
+        "offset": 4416,
+        "size": 48,
+        "executable": false
+      },
+      {
+        "name": ".rel.data",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 6016,
+        "size": 8,
+        "executable": false
+      },
+      {
+        "name": ".bss",
+        "type": 8,
+        "flags": 3,
+        "address": 4288,
+        "offset": 4464,
+        "size": 32,
+        "executable": false
+      },
+      {
+        "name": ".shstrtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 4464,
+        "size": 80,
+        "executable": false
+      },
+      {
+        "name": ".symtab",
+        "type": 2,
+        "flags": 0,
+        "address": 0,
+        "offset": 6024,
+        "size": 16,
+        "executable": false
+      },
+      {
+        "name": ".strtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 6040,
+        "size": 1,
+        "executable": false
+      }
+    ],
+    "segments": [
+      {
+        "type": 1879048320,
+        "offset": 116,
+        "address": 0,
+        "file_size": 48,
+        "memory_size": 0,
+        "flags": 4
+      },
+      {
+        "type": 1,
+        "offset": 176,
+        "address": 0,
+        "file_size": 4288,
+        "memory_size": 4320,
+        "flags": 7
+      }
+    ]
+  },
+  "ROM_LOADCORE.IRX": {
+    "sha256": "f78836df50893f625746b1bc8ff0ff964c44c29e1019dcb23c0b9d1dc50b2e38",
+    "size": 10433,
+    "machine": 8,
+    "entry": 0,
+    "flags": 1,
+    "sections": [
+      {
+        "name": "",
+        "type": 0,
+        "flags": 0,
+        "address": 0,
+        "offset": 0,
+        "size": 0,
+        "executable": false
+      },
+      {
+        "name": ".iopmod",
+        "type": 1879048320,
+        "flags": 0,
+        "address": 0,
+        "offset": 116,
+        "size": 41,
+        "executable": false
+      },
+      {
+        "name": ".text",
+        "type": 1,
+        "flags": 6,
+        "address": 0,
+        "offset": 160,
+        "size": 7968,
+        "executable": true
+      },
+      {
+        "name": ".rel.text",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 8696,
+        "size": 1712,
+        "executable": false
+      },
+      {
+        "name": ".rodata",
+        "type": 1,
+        "flags": 2,
+        "address": 7968,
+        "offset": 8128,
+        "size": 16,
+        "executable": false
+      },
+      {
+        "name": ".data",
+        "type": 1,
+        "flags": 3,
+        "address": 7984,
+        "offset": 8144,
+        "size": 32,
+        "executable": false
+      },
+      {
+        "name": ".rel.data",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 10408,
+        "size": 8,
+        "executable": false
+      },
+      {
+        "name": ".bss",
+        "type": 8,
+        "flags": 3,
+        "address": 8016,
+        "offset": 8176,
+        "size": 116,
+        "executable": false
+      },
+      {
+        "name": ".shstrtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 8176,
+        "size": 80,
+        "executable": false
+      },
+      {
+        "name": ".symtab",
+        "type": 2,
+        "flags": 0,
+        "address": 0,
+        "offset": 10416,
+        "size": 16,
+        "executable": false
+      },
+      {
+        "name": ".strtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 10432,
+        "size": 1,
+        "executable": false
+      }
+    ],
+    "segments": [
+      {
+        "type": 1879048320,
+        "offset": 116,
+        "address": 0,
+        "file_size": 41,
+        "memory_size": 0,
+        "flags": 4
+      },
+      {
+        "type": 1,
+        "offset": 160,
+        "address": 0,
+        "file_size": 8016,
+        "memory_size": 8132,
+        "flags": 7
+      }
+    ]
+  },
+  "ROM_SIFCMD.IRX": {
+    "sha256": "7874b008124038a4bfb70d4069c037f4ded2d0a452133233cf67df8b0066cc47",
+    "size": 10529,
+    "machine": 8,
+    "entry": 208,
+    "flags": 1,
+    "sections": [
+      {
+        "name": "",
+        "type": 0,
+        "flags": 0,
+        "address": 0,
+        "offset": 0,
+        "size": 0,
+        "executable": false
+      },
+      {
+        "name": ".iopmod",
+        "type": 1879048320,
+        "flags": 0,
+        "address": 0,
+        "offset": 116,
+        "size": 48,
+        "executable": false
+      },
+      {
+        "name": ".text",
+        "type": 1,
+        "flags": 6,
+        "address": 0,
+        "offset": 176,
+        "size": 7312,
+        "executable": true
+      },
+      {
+        "name": ".rel.text",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 8136,
+        "size": 2368,
+        "executable": false
+      },
+      {
+        "name": ".rodata",
+        "type": 1,
+        "flags": 2,
+        "address": 7312,
+        "offset": 7488,
+        "size": 80,
+        "executable": false
+      },
+      {
+        "name": ".data",
+        "type": 1,
+        "flags": 3,
+        "address": 7392,
+        "offset": 7568,
+        "size": 48,
+        "executable": false
+      },
+      {
+        "name": ".rel.data",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 10504,
+        "size": 8,
+        "executable": false
+      },
+      {
+        "name": ".bss",
+        "type": 8,
+        "flags": 3,
+        "address": 7440,
+        "offset": 7616,
+        "size": 6960,
+        "executable": false
+      },
+      {
+        "name": ".shstrtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 7616,
+        "size": 80,
+        "executable": false
+      },
+      {
+        "name": ".symtab",
+        "type": 2,
+        "flags": 0,
+        "address": 0,
+        "offset": 10512,
+        "size": 16,
+        "executable": false
+      },
+      {
+        "name": ".strtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 10528,
+        "size": 1,
+        "executable": false
+      }
+    ],
+    "segments": [
+      {
+        "type": 1879048320,
+        "offset": 116,
+        "address": 0,
+        "file_size": 48,
+        "memory_size": 0,
+        "flags": 4
+      },
+      {
+        "type": 1,
+        "offset": 176,
+        "address": 0,
+        "file_size": 7440,
+        "memory_size": 14400,
+        "flags": 7
+      }
+    ]
+  },
+  "ROM_SIFMAN.IRX": {
+    "sha256": "e37e0af7bcce87de48408e7a517a93128c2c2551889c13fb0a50f9e1aea3f4de",
+    "size": 6145,
+    "machine": 8,
+    "entry": 0,
+    "flags": 1,
+    "sections": [
+      {
+        "name": "",
+        "type": 0,
+        "flags": 0,
+        "address": 0,
+        "offset": 0,
+        "size": 0,
+        "executable": false
+      },
+      {
+        "name": ".iopmod",
+        "type": 1879048320,
+        "flags": 0,
+        "address": 0,
+        "offset": 116,
+        "size": 42,
+        "executable": false
+      },
+      {
+        "name": ".text",
+        "type": 1,
+        "flags": 6,
+        "address": 0,
+        "offset": 160,
+        "size": 4288,
+        "executable": true
+      },
+      {
+        "name": ".rel.text",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 5160,
+        "size": 960,
+        "executable": false
+      },
+      {
+        "name": ".rodata",
+        "type": 1,
+        "flags": 2,
+        "address": 4288,
+        "offset": 4448,
+        "size": 160,
+        "executable": false
+      },
+      {
+        "name": ".data",
+        "type": 1,
+        "flags": 3,
+        "address": 4448,
+        "offset": 4608,
+        "size": 32,
+        "executable": false
+      },
+      {
+        "name": ".rel.data",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 6120,
+        "size": 8,
+        "executable": false
+      },
+      {
+        "name": ".bss",
+        "type": 8,
+        "flags": 3,
+        "address": 4480,
+        "offset": 4640,
+        "size": 1600,
+        "executable": false
+      },
+      {
+        "name": ".shstrtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 4640,
+        "size": 80,
+        "executable": false
+      },
+      {
+        "name": ".symtab",
+        "type": 2,
+        "flags": 0,
+        "address": 0,
+        "offset": 6128,
+        "size": 16,
+        "executable": false
+      },
+      {
+        "name": ".strtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 6144,
+        "size": 1,
+        "executable": false
+      }
+    ],
+    "segments": [
+      {
+        "type": 1879048320,
+        "offset": 116,
+        "address": 0,
+        "file_size": 42,
+        "memory_size": 0,
+        "flags": 4
+      },
+      {
+        "type": 1,
+        "offset": 160,
+        "address": 0,
+        "file_size": 4480,
+        "memory_size": 6080,
+        "flags": 7
+      }
+    ]
+  },
+  "ROM_THREADMAN.IRX": {
+    "sha256": "d9b5c8c30173338554e637a269680c4d13c8972f6406666e386ad524ca8593d6",
+    "size": 39405,
+    "machine": 8,
+    "entry": 16,
+    "flags": 1,
+    "sections": [
+      {
+        "name": "",
+        "type": 0,
+        "flags": 0,
+        "address": 0,
+        "offset": 0,
+        "size": 0,
+        "executable": false
+      },
+      {
+        "name": ".iopmod",
+        "type": 1879048320,
+        "flags": 0,
+        "address": 0,
+        "offset": 116,
+        "size": 47,
+        "executable": false
+      },
+      {
+        "name": ".text",
+        "type": 1,
+        "flags": 6,
+        "address": 0,
+        "offset": 176,
+        "size": 27792,
+        "executable": true
+      },
+      {
+        "name": ".rel.text",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 29548,
+        "size": 9768,
+        "executable": false
+      },
+      {
+        "name": ".rodata",
+        "type": 1,
+        "flags": 2,
+        "address": 27792,
+        "offset": 27968,
+        "size": 976,
+        "executable": false
+      },
+      {
+        "name": ".rel.rodata",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 39316,
+        "size": 64,
+        "executable": false
+      },
+      {
+        "name": ".data",
+        "type": 1,
+        "flags": 3,
+        "address": 28768,
+        "offset": 28944,
+        "size": 32,
+        "executable": false
+      },
+      {
+        "name": ".rel.data",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 39380,
+        "size": 8,
+        "executable": false
+      },
+      {
+        "name": ".bss",
+        "type": 8,
+        "flags": 3,
+        "address": 28800,
+        "offset": 28976,
+        "size": 1236,
+        "executable": false
+      },
+      {
+        "name": ".shstrtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 28976,
+        "size": 92,
+        "executable": false
+      },
+      {
+        "name": ".symtab",
+        "type": 2,
+        "flags": 0,
+        "address": 0,
+        "offset": 39388,
+        "size": 16,
+        "executable": false
+      },
+      {
+        "name": ".strtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 39404,
+        "size": 1,
+        "executable": false
+      }
+    ],
+    "segments": [
+      {
+        "type": 1879048320,
+        "offset": 116,
+        "address": 0,
+        "file_size": 47,
+        "memory_size": 0,
+        "flags": 4
+      },
+      {
+        "type": 1,
+        "offset": 176,
+        "address": 0,
+        "file_size": 28800,
+        "memory_size": 30036,
+        "flags": 7
+      }
+    ]
+  },
+  "ROM_IOMAN.IRX": {
+    "sha256": "2194e7d0eaefaea9d4e4c0c3d2e129cec08481c6c990df9e57048607847aa0d1",
+    "size": 12545,
+    "machine": 8,
+    "entry": 0,
+    "flags": 1,
+    "sections": [
+      {
+        "name": "",
+        "type": 0,
+        "flags": 0,
+        "address": 0,
+        "offset": 0,
+        "size": 0,
+        "executable": false
+      },
+      {
+        "name": ".iopmod",
+        "type": 1879048320,
+        "flags": 0,
+        "address": 0,
+        "offset": 116,
+        "size": 42,
+        "executable": false
+      },
+      {
+        "name": ".text",
+        "type": 1,
+        "flags": 6,
+        "address": 0,
+        "offset": 160,
+        "size": 7776,
+        "executable": true
+      },
+      {
+        "name": ".rel.text",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 9000,
+        "size": 3336,
+        "executable": false
+      },
+      {
+        "name": ".rodata",
+        "type": 1,
+        "flags": 2,
+        "address": 7776,
+        "offset": 7936,
+        "size": 192,
+        "executable": false
+      },
+      {
+        "name": ".data",
+        "type": 1,
+        "flags": 3,
+        "address": 7968,
+        "offset": 8128,
+        "size": 304,
+        "executable": false
+      },
+      {
+        "name": ".rel.data",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 12336,
+        "size": 192,
+        "executable": false
+      },
+      {
+        "name": ".sbss",
+        "type": 8,
+        "flags": 268435459,
+        "address": 8272,
+        "offset": 8432,
+        "size": 16,
+        "executable": false
+      },
+      {
+        "name": ".bss",
+        "type": 8,
+        "flags": 3,
+        "address": 8288,
+        "offset": 8432,
+        "size": 640,
+        "executable": false
+      },
+      {
+        "name": ".shstrtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 8432,
+        "size": 86,
+        "executable": false
+      },
+      {
+        "name": ".symtab",
+        "type": 2,
+        "flags": 0,
+        "address": 0,
+        "offset": 12528,
+        "size": 16,
+        "executable": false
+      },
+      {
+        "name": ".strtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 12544,
+        "size": 1,
+        "executable": false
+      }
+    ],
+    "segments": [
+      {
+        "type": 1879048320,
+        "offset": 116,
+        "address": 0,
+        "file_size": 42,
+        "memory_size": 0,
+        "flags": 4
+      },
+      {
+        "type": 1,
+        "offset": 160,
+        "address": 0,
+        "file_size": 8272,
+        "memory_size": 8928,
+        "flags": 7
+      }
+    ]
+  },
+  "ROM_MODLOAD.IRX": {
+    "sha256": "8a70343332d45654e4995fa6f75b5c309ef3cd37cc58db2d372f488b00e9acde",
+    "size": 18565,
+    "machine": 8,
+    "entry": 0,
+    "flags": 1,
+    "sections": [
+      {
+        "name": "",
+        "type": 0,
+        "flags": 0,
+        "address": 0,
+        "offset": 0,
+        "size": 0,
+        "executable": false
+      },
+      {
+        "name": ".iopmod",
+        "type": 1879048320,
+        "flags": 0,
+        "address": 0,
+        "offset": 116,
+        "size": 46,
+        "executable": false
+      },
+      {
+        "name": ".text",
+        "type": 1,
+        "flags": 6,
+        "address": 0,
+        "offset": 176,
+        "size": 13200,
+        "executable": true
+      },
+      {
+        "name": ".rel.text",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 14908,
+        "size": 3424,
+        "executable": false
+      },
+      {
+        "name": ".rodata",
+        "type": 1,
+        "flags": 2,
+        "address": 13200,
+        "offset": 13376,
+        "size": 864,
+        "executable": false
+      },
+      {
+        "name": ".rel.rodata",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 18332,
+        "size": 120,
+        "executable": false
+      },
+      {
+        "name": ".data",
+        "type": 1,
+        "flags": 3,
+        "address": 14064,
+        "offset": 14240,
+        "size": 96,
+        "executable": false
+      },
+      {
+        "name": ".rel.data",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 18452,
+        "size": 96,
+        "executable": false
+      },
+      {
+        "name": ".bss",
+        "type": 8,
+        "flags": 3,
+        "address": 14160,
+        "offset": 14336,
+        "size": 36,
+        "executable": false
+      },
+      {
+        "name": ".shstrtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 14336,
+        "size": 92,
+        "executable": false
+      },
+      {
+        "name": ".symtab",
+        "type": 2,
+        "flags": 0,
+        "address": 0,
+        "offset": 18548,
+        "size": 16,
+        "executable": false
+      },
+      {
+        "name": ".strtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 18564,
+        "size": 1,
+        "executable": false
+      }
+    ],
+    "segments": [
+      {
+        "type": 1879048320,
+        "offset": 116,
+        "address": 0,
+        "file_size": 46,
+        "memory_size": 0,
+        "flags": 4
+      },
+      {
+        "type": 1,
+        "offset": 176,
+        "address": 0,
+        "file_size": 14160,
+        "memory_size": 14196,
+        "flags": 7
+      }
+    ]
+  },
+  "ROM_FILEIO.IRX": {
+    "sha256": "270c6408794d7817c5e016dc7f0fba6df4e93db6cb31058dec480fd8270cdb42",
+    "size": 19661,
+    "machine": 8,
+    "entry": 0,
+    "flags": 1,
+    "sections": [
+      {
+        "name": "",
+        "type": 0,
+        "flags": 0,
+        "address": 0,
+        "offset": 0,
+        "size": 0,
+        "executable": false
+      },
+      {
+        "name": ".iopmod",
+        "type": 1879048320,
+        "flags": 0,
+        "address": 0,
+        "offset": 116,
+        "size": 41,
+        "executable": false
+      },
+      {
+        "name": ".text",
+        "type": 1,
+        "flags": 6,
+        "address": 0,
+        "offset": 160,
+        "size": 11904,
+        "executable": true
+      },
+      {
+        "name": ".rel.text",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 13820,
+        "size": 5336,
+        "executable": false
+      },
+      {
+        "name": ".rodata",
+        "type": 1,
+        "flags": 2,
+        "address": 11904,
+        "offset": 12064,
+        "size": 928,
+        "executable": false
+      },
+      {
+        "name": ".rel.rodata",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 19156,
+        "size": 480,
+        "executable": false
+      },
+      {
+        "name": ".data",
+        "type": 1,
+        "flags": 3,
+        "address": 12832,
+        "offset": 12992,
+        "size": 208,
+        "executable": false
+      },
+      {
+        "name": ".rel.data",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 19636,
+        "size": 8,
+        "executable": false
+      },
+      {
+        "name": ".sbss",
+        "type": 8,
+        "flags": 268435459,
+        "address": 13040,
+        "offset": 13200,
+        "size": 8,
+        "executable": false
+      },
+      {
+        "name": ".bss",
+        "type": 8,
+        "flags": 3,
+        "address": 13056,
+        "offset": 13200,
+        "size": 3968,
+        "executable": false
+      },
+      {
+        "name": ".shstrtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 13200,
+        "size": 98,
+        "executable": false
+      },
+      {
+        "name": ".symtab",
+        "type": 2,
+        "flags": 0,
+        "address": 0,
+        "offset": 19644,
+        "size": 16,
+        "executable": false
+      },
+      {
+        "name": ".strtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 19660,
+        "size": 1,
+        "executable": false
+      }
+    ],
+    "segments": [
+      {
+        "type": 1879048320,
+        "offset": 116,
+        "address": 0,
+        "file_size": 41,
+        "memory_size": 0,
+        "flags": 4
+      },
+      {
+        "type": 1,
+        "offset": 160,
+        "address": 0,
+        "file_size": 13040,
+        "memory_size": 17024,
+        "flags": 7
+      }
+    ]
+  },
+  "ROM_CDVDMAN.IRX": {
+    "sha256": "4262983b6470897a7e015120ab1883685e9821300469f6a325c99ae72a1db856",
+    "size": 85053,
+    "machine": 8,
+    "entry": 0,
+    "flags": 1,
+    "sections": [
+      {
+        "name": "",
+        "type": 0,
+        "flags": 0,
+        "address": 0,
+        "offset": 0,
+        "size": 0,
+        "executable": false
+      },
+      {
+        "name": ".iopmod",
+        "type": 1879048320,
+        "flags": 0,
+        "address": 0,
+        "offset": 116,
+        "size": 38,
+        "executable": false
+      },
+      {
+        "name": ".text",
+        "type": 1,
+        "flags": 6,
+        "address": 0,
+        "offset": 160,
+        "size": 50464,
+        "executable": true
+      },
+      {
+        "name": ".rel.text",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 57260,
+        "size": 25520,
+        "executable": false
+      },
+      {
+        "name": ".rodata",
+        "type": 1,
+        "flags": 2,
+        "address": 50464,
+        "offset": 50624,
+        "size": 5392,
+        "executable": false
+      },
+      {
+        "name": ".rel.rodata",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 82780,
+        "size": 2000,
+        "executable": false
+      },
+      {
+        "name": ".data",
+        "type": 1,
+        "flags": 3,
+        "address": 55856,
+        "offset": 56016,
+        "size": 624,
+        "executable": false
+      },
+      {
+        "name": ".rel.data",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 84780,
+        "size": 256,
+        "executable": false
+      },
+      {
+        "name": ".sbss",
+        "type": 8,
+        "flags": 268435459,
+        "address": 56480,
+        "offset": 56640,
+        "size": 68,
+        "executable": false
+      },
+      {
+        "name": ".bss",
+        "type": 8,
+        "flags": 3,
+        "address": 56560,
+        "offset": 56640,
+        "size": 54240,
+        "executable": false
+      },
+      {
+        "name": ".shstrtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 56640,
+        "size": 98,
+        "executable": false
+      },
+      {
+        "name": ".symtab",
+        "type": 2,
+        "flags": 0,
+        "address": 0,
+        "offset": 85036,
+        "size": 16,
+        "executable": false
+      },
+      {
+        "name": ".strtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 85052,
+        "size": 1,
+        "executable": false
+      }
+    ],
+    "segments": [
+      {
+        "type": 1879048320,
+        "offset": 116,
+        "address": 0,
+        "file_size": 38,
+        "memory_size": 0,
+        "flags": 4
+      },
+      {
+        "type": 1,
+        "offset": 160,
+        "address": 0,
+        "file_size": 56480,
+        "memory_size": 110800,
+        "flags": 7
+      }
+    ]
+  },
+  "ROM_CDVDFSV.IRX": {
+    "sha256": "7bf9682c1ab36bd060c6785080c6529165d00641454d11366cf9c7eb2db9b23f",
+    "size": 33429,
+    "machine": 8,
+    "entry": 344,
+    "flags": 1,
+    "sections": [
+      {
+        "name": "",
+        "type": 0,
+        "flags": 0,
+        "address": 0,
+        "offset": 0,
+        "size": 0,
+        "executable": false
+      },
+      {
+        "name": ".iopmod",
+        "type": 1879048320,
+        "flags": 0,
+        "address": 0,
+        "offset": 116,
+        "size": 41,
+        "executable": false
+      },
+      {
+        "name": ".text",
+        "type": 1,
+        "flags": 6,
+        "address": 0,
+        "offset": 160,
+        "size": 19872,
+        "executable": true
+      },
+      {
+        "name": ".rel.text",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 22668,
+        "size": 10272,
+        "executable": false
+      },
+      {
+        "name": ".rodata",
+        "type": 1,
+        "flags": 2,
+        "address": 19872,
+        "offset": 20032,
+        "size": 1920,
+        "executable": false
+      },
+      {
+        "name": ".rel.rodata",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 32940,
+        "size": 464,
+        "executable": false
+      },
+      {
+        "name": ".data",
+        "type": 1,
+        "flags": 3,
+        "address": 21792,
+        "offset": 21952,
+        "size": 96,
+        "executable": false
+      },
+      {
+        "name": ".rel.data",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 33404,
+        "size": 8,
+        "executable": false
+      },
+      {
+        "name": ".sbss",
+        "type": 8,
+        "flags": 268435459,
+        "address": 21888,
+        "offset": 22048,
+        "size": 24,
+        "executable": false
+      },
+      {
+        "name": ".bss",
+        "type": 8,
+        "flags": 3,
+        "address": 21920,
+        "offset": 22048,
+        "size": 4672,
+        "executable": false
+      },
+      {
+        "name": ".shstrtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 22048,
+        "size": 98,
+        "executable": false
+      },
+      {
+        "name": ".symtab",
+        "type": 2,
+        "flags": 0,
+        "address": 0,
+        "offset": 33412,
+        "size": 16,
+        "executable": false
+      },
+      {
+        "name": ".strtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 33428,
+        "size": 1,
+        "executable": false
+      }
+    ],
+    "segments": [
+      {
+        "type": 1879048320,
+        "offset": 116,
+        "address": 0,
+        "file_size": 41,
+        "memory_size": 0,
+        "flags": 4
+      },
+      {
+        "type": 1,
+        "offset": 160,
+        "address": 0,
+        "file_size": 21888,
+        "memory_size": 26592,
+        "flags": 7
+      }
+    ]
+  },
+  "ROM_LOADFILE.IRX": {
+    "sha256": "79dbd79942cb241af3116b9ffec425420cdfddf3529b52e8ad3ff3805a32f7a1",
+    "size": 10505,
+    "machine": 8,
+    "entry": 0,
+    "flags": 1,
+    "sections": [
+      {
+        "name": "",
+        "type": 0,
+        "flags": 0,
+        "address": 0,
+        "offset": 0,
+        "size": 0,
+        "executable": false
+      },
+      {
+        "name": ".iopmod",
+        "type": 1879048320,
+        "flags": 0,
+        "address": 0,
+        "offset": 116,
+        "size": 41,
+        "executable": false
+      },
+      {
+        "name": ".text",
+        "type": 1,
+        "flags": 6,
+        "address": 0,
+        "offset": 160,
+        "size": 6752,
+        "executable": true
+      },
+      {
+        "name": ".rel.text",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 8168,
+        "size": 2224,
+        "executable": false
+      },
+      {
+        "name": ".rodata",
+        "type": 1,
+        "flags": 2,
+        "address": 6752,
+        "offset": 6912,
+        "size": 560,
+        "executable": false
+      },
+      {
+        "name": ".data",
+        "type": 1,
+        "flags": 3,
+        "address": 7312,
+        "offset": 7472,
+        "size": 128,
+        "executable": false
+      },
+      {
+        "name": ".rel.data",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 10392,
+        "size": 96,
+        "executable": false
+      },
+      {
+        "name": ".sbss",
+        "type": 8,
+        "flags": 268435459,
+        "address": 7440,
+        "offset": 7600,
+        "size": 4,
+        "executable": false
+      },
+      {
+        "name": ".bss",
+        "type": 8,
+        "flags": 3,
+        "address": 7456,
+        "offset": 7600,
+        "size": 652,
+        "executable": false
+      },
+      {
+        "name": ".shstrtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 7600,
+        "size": 86,
+        "executable": false
+      },
+      {
+        "name": ".symtab",
+        "type": 2,
+        "flags": 0,
+        "address": 0,
+        "offset": 10488,
+        "size": 16,
+        "executable": false
+      },
+      {
+        "name": ".strtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 10504,
+        "size": 1,
+        "executable": false
+      }
+    ],
+    "segments": [
+      {
+        "type": 1879048320,
+        "offset": 116,
+        "address": 0,
+        "file_size": 41,
+        "memory_size": 0,
+        "flags": 4
+      },
+      {
+        "type": 1,
+        "offset": 160,
+        "address": 0,
+        "file_size": 7440,
+        "memory_size": 8108,
+        "flags": 7
+      }
+    ]
+  },
+  "ROM_TIMEMANI.IRX": {
+    "sha256": "603d4f54409682d538b7005e0ce396e4a993feafb04ee58d3fd7444f8fb7b291",
+    "size": 6085,
+    "machine": 8,
+    "entry": 0,
+    "flags": 1,
+    "sections": [
+      {
+        "name": "",
+        "type": 0,
+        "flags": 0,
+        "address": 0,
+        "offset": 0,
+        "size": 0,
+        "executable": false
+      },
+      {
+        "name": ".iopmod",
+        "type": 1879048320,
+        "flags": 0,
+        "address": 0,
+        "offset": 116,
+        "size": 40,
+        "executable": false
+      },
+      {
+        "name": ".text",
+        "type": 1,
+        "flags": 6,
+        "address": 0,
+        "offset": 160,
+        "size": 3776,
+        "executable": true
+      },
+      {
+        "name": ".rel.text",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 4892,
+        "size": 1056,
+        "executable": false
+      },
+      {
+        "name": ".rodata",
+        "type": 1,
+        "flags": 2,
+        "address": 3776,
+        "offset": 3936,
+        "size": 48,
+        "executable": false
+      },
+      {
+        "name": ".rel.rodata",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 5948,
+        "size": 64,
+        "executable": false
+      },
+      {
+        "name": ".data",
+        "type": 1,
+        "flags": 3,
+        "address": 3824,
+        "offset": 3984,
+        "size": 336,
+        "executable": false
+      },
+      {
+        "name": ".rel.data",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 6012,
+        "size": 56,
+        "executable": false
+      },
+      {
+        "name": ".bss",
+        "type": 8,
+        "flags": 3,
+        "address": 4160,
+        "offset": 4320,
+        "size": 0,
+        "executable": false
+      },
+      {
+        "name": ".shstrtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 4320,
+        "size": 92,
+        "executable": false
+      },
+      {
+        "name": ".symtab",
+        "type": 2,
+        "flags": 0,
+        "address": 0,
+        "offset": 6068,
+        "size": 16,
+        "executable": false
+      },
+      {
+        "name": ".strtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 6084,
+        "size": 1,
+        "executable": false
+      }
+    ],
+    "segments": [
+      {
+        "type": 1879048320,
+        "offset": 116,
+        "address": 0,
+        "file_size": 40,
+        "memory_size": 0,
+        "flags": 4
+      },
+      {
+        "type": 1,
+        "offset": 160,
+        "address": 0,
+        "file_size": 4160,
+        "memory_size": 4160,
+        "flags": 7
+      }
+    ]
+  },
+  "ROM_ROMDRV.IRX": {
+    "sha256": "8518392c81f6c8238bf72cc47559c7b9b4a5699449c10690649ae6dcadcf1b24",
+    "size": 3881,
+    "machine": 8,
+    "entry": 0,
+    "flags": 1,
+    "sections": [
+      {
+        "name": "",
+        "type": 0,
+        "flags": 0,
+        "address": 0,
+        "offset": 0,
+        "size": 0,
+        "executable": false
+      },
+      {
+        "name": ".iopmod",
+        "type": 1879048320,
+        "flags": 0,
+        "address": 0,
+        "offset": 116,
+        "size": 42,
+        "executable": false
+      },
+      {
+        "name": ".text",
+        "type": 1,
+        "flags": 6,
+        "address": 0,
+        "offset": 160,
+        "size": 2128,
+        "executable": true
+      },
+      {
+        "name": ".rel.text",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 3000,
+        "size": 696,
+        "executable": false
+      },
+      {
+        "name": ".rodata",
+        "type": 1,
+        "flags": 2,
+        "address": 2128,
+        "offset": 2288,
+        "size": 32,
+        "executable": false
+      },
+      {
+        "name": ".data",
+        "type": 1,
+        "flags": 3,
+        "address": 2160,
+        "offset": 2320,
+        "size": 160,
+        "executable": false
+      },
+      {
+        "name": ".rel.data",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 3696,
+        "size": 168,
+        "executable": false
+      },
+      {
+        "name": ".bss",
+        "type": 8,
+        "flags": 3,
+        "address": 2320,
+        "offset": 2480,
+        "size": 208,
+        "executable": false
+      },
+      {
+        "name": ".shstrtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 2480,
+        "size": 80,
+        "executable": false
+      },
+      {
+        "name": ".symtab",
+        "type": 2,
+        "flags": 0,
+        "address": 0,
+        "offset": 3864,
+        "size": 16,
+        "executable": false
+      },
+      {
+        "name": ".strtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 3880,
+        "size": 1,
+        "executable": false
+      }
+    ],
+    "segments": [
+      {
+        "type": 1879048320,
+        "offset": 116,
+        "address": 0,
+        "file_size": 42,
+        "memory_size": 0,
+        "flags": 4
+      },
+      {
+        "type": 1,
+        "offset": 160,
+        "address": 0,
+        "file_size": 2320,
+        "memory_size": 2528,
+        "flags": 7
+      }
+    ]
+  },
+  "ROM_EESYNC.IRX": {
+    "sha256": "65badfb985e5bba0a0356b5325181137af2d39a7d12c42061b9f19e6cd0f5452",
+    "size": 1545,
+    "machine": 8,
+    "entry": 0,
+    "flags": 1,
+    "sections": [
+      {
+        "name": "",
+        "type": 0,
+        "flags": 0,
+        "address": 0,
+        "offset": 0,
+        "size": 0,
+        "executable": false
+      },
+      {
+        "name": ".iopmod",
+        "type": 1879048320,
+        "flags": 0,
+        "address": 0,
+        "offset": 116,
+        "size": 33,
+        "executable": false
+      },
+      {
+        "name": ".text",
+        "type": 1,
+        "flags": 6,
+        "address": 0,
+        "offset": 160,
+        "size": 640,
+        "executable": true
+      },
+      {
+        "name": ".rel.text",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 1368,
+        "size": 152,
+        "executable": false
+      },
+      {
+        "name": ".rodata",
+        "type": 1,
+        "flags": 2,
+        "address": 640,
+        "offset": 800,
+        "size": 16,
+        "executable": false
+      },
+      {
+        "name": ".data",
+        "type": 1,
+        "flags": 3,
+        "address": 656,
+        "offset": 816,
+        "size": 32,
+        "executable": false
+      },
+      {
+        "name": ".rel.data",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 1520,
+        "size": 8,
+        "executable": false
+      },
+      {
+        "name": ".bss",
+        "type": 8,
+        "flags": 3,
+        "address": 688,
+        "offset": 848,
+        "size": 0,
+        "executable": false
+      },
+      {
+        "name": ".shstrtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 848,
+        "size": 80,
+        "executable": false
+      },
+      {
+        "name": ".symtab",
+        "type": 2,
+        "flags": 0,
+        "address": 0,
+        "offset": 1528,
+        "size": 16,
+        "executable": false
+      },
+      {
+        "name": ".strtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 1544,
+        "size": 1,
+        "executable": false
+      }
+    ],
+    "segments": [
+      {
+        "type": 1879048320,
+        "offset": 116,
+        "address": 0,
+        "file_size": 33,
+        "memory_size": 0,
+        "flags": 4
+      },
+      {
+        "type": 1,
+        "offset": 160,
+        "address": 0,
+        "file_size": 688,
+        "memory_size": 688,
+        "flags": 7
+      }
+    ]
+  },
+  "ROM_SYSCLIB.IRX": {
+    "sha256": "96e8bf4a2cb888c2d81ea7280588ae3afb17ea34802c5d9de80984715631988c",
+    "size": 10045,
+    "machine": 8,
+    "entry": 0,
+    "flags": 1,
+    "sections": [
+      {
+        "name": "",
+        "type": 0,
+        "flags": 0,
+        "address": 0,
+        "offset": 0,
+        "size": 0,
+        "executable": false
+      },
+      {
+        "name": ".iopmod",
+        "type": 1879048320,
+        "flags": 0,
+        "address": 0,
+        "offset": 116,
+        "size": 39,
+        "executable": false
+      },
+      {
+        "name": ".text",
+        "type": 1,
+        "flags": 6,
+        "address": 0,
+        "offset": 160,
+        "size": 6272,
+        "executable": true
+      },
+      {
+        "name": ".rel.text",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 7756,
+        "size": 1296,
+        "executable": false
+      },
+      {
+        "name": ".rodata",
+        "type": 1,
+        "flags": 2,
+        "address": 6272,
+        "offset": 6432,
+        "size": 560,
+        "executable": false
+      },
+      {
+        "name": ".rel.rodata",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 9052,
+        "size": 968,
+        "executable": false
+      },
+      {
+        "name": ".data",
+        "type": 1,
+        "flags": 3,
+        "address": 6832,
+        "offset": 6992,
+        "size": 192,
+        "executable": false
+      },
+      {
+        "name": ".rel.data",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 10020,
+        "size": 8,
+        "executable": false
+      },
+      {
+        "name": ".bss",
+        "type": 8,
+        "flags": 3,
+        "address": 7024,
+        "offset": 7184,
+        "size": 0,
+        "executable": false
+      },
+      {
+        "name": ".shstrtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 7184,
+        "size": 92,
+        "executable": false
+      },
+      {
+        "name": ".symtab",
+        "type": 2,
+        "flags": 0,
+        "address": 0,
+        "offset": 10028,
+        "size": 16,
+        "executable": false
+      },
+      {
+        "name": ".strtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 10044,
+        "size": 1,
+        "executable": false
+      }
+    ],
+    "segments": [
+      {
+        "type": 1879048320,
+        "offset": 116,
+        "address": 0,
+        "file_size": 39,
+        "memory_size": 0,
+        "flags": 4
+      },
+      {
+        "type": 1,
+        "offset": 160,
+        "address": 0,
+        "file_size": 7024,
+        "memory_size": 7024,
+        "flags": 7
+      }
+    ]
+  },
+  "ROM_STDIO.IRX": {
+    "sha256": "fcd9f4edf55578083675940da2e48e7436c19ad32b69e9910c2ed2faaf1f69ff",
+    "size": 3377,
+    "machine": 8,
+    "entry": 0,
+    "flags": 1,
+    "sections": [
+      {
+        "name": "",
+        "type": 0,
+        "flags": 0,
+        "address": 0,
+        "offset": 0,
+        "size": 0,
+        "executable": false
+      },
+      {
+        "name": ".iopmod",
+        "type": 1879048320,
+        "flags": 0,
+        "address": 0,
+        "offset": 116,
+        "size": 32,
+        "executable": false
+      },
+      {
+        "name": ".text",
+        "type": 1,
+        "flags": 6,
+        "address": 0,
+        "offset": 160,
+        "size": 1856,
+        "executable": true
+      },
+      {
+        "name": ".rel.text",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 2664,
+        "size": 688,
+        "executable": false
+      },
+      {
+        "name": ".rodata",
+        "type": 1,
+        "flags": 2,
+        "address": 1856,
+        "offset": 2016,
+        "size": 48,
+        "executable": false
+      },
+      {
+        "name": ".data",
+        "type": 1,
+        "flags": 3,
+        "address": 1904,
+        "offset": 2064,
+        "size": 32,
+        "executable": false
+      },
+      {
+        "name": ".rel.data",
+        "type": 9,
+        "flags": 0,
+        "address": 0,
+        "offset": 3352,
+        "size": 8,
+        "executable": false
+      },
+      {
+        "name": ".sbss",
+        "type": 8,
+        "flags": 268435459,
+        "address": 1936,
+        "offset": 2096,
+        "size": 4,
+        "executable": false
+      },
+      {
+        "name": ".bss",
+        "type": 8,
+        "flags": 3,
+        "address": 1952,
+        "offset": 2096,
+        "size": 0,
+        "executable": false
+      },
+      {
+        "name": ".shstrtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 2096,
+        "size": 86,
+        "executable": false
+      },
+      {
+        "name": ".symtab",
+        "type": 2,
+        "flags": 0,
+        "address": 0,
+        "offset": 3360,
+        "size": 16,
+        "executable": false
+      },
+      {
+        "name": ".strtab",
+        "type": 3,
+        "flags": 0,
+        "address": 0,
+        "offset": 3376,
+        "size": 1,
+        "executable": false
+      }
+    ],
+    "segments": [
+      {
+        "type": 1879048320,
+        "offset": 116,
+        "address": 0,
+        "file_size": 32,
+        "memory_size": 0,
+        "flags": 4
+      },
+      {
+        "type": 1,
+        "offset": 160,
+        "address": 0,
+        "file_size": 1936,
+        "memory_size": 1952,
+        "flags": 7
+      }
+    ]
+  },
+  "ovl_gumibattle.x": {
+    "format": "raw_overlay",
+    "size": 443896,
+    "sha256": "d89e29ffa5f02d033df31d6f0e467cbdb428fb01cfb17077aee311ce05dddb49",
+    "load_address": null,
+    "status": "extracted_boundaries_unverified"
+  },
+  "ovl_title.x": {
+    "format": "raw_overlay",
+    "size": 96368,
+    "sha256": "27c862b1342d4c8a166fbce5a176b998c35273aa6bea7d8b3336c30000fa4212",
+    "load_address": null,
+    "status": "extracted_boundaries_unverified"
+  },
+  "ovl_shop.x": {
+    "format": "raw_overlay",
+    "size": 151632,
+    "sha256": "55559ae6ad393fe3727e6015306c1c47b49787dc1a6394c40530ce27b0a57de7",
+    "load_address": null,
+    "status": "extracted_boundaries_unverified"
+  },
+  "ovl_movie.x": {
+    "format": "raw_overlay",
+    "size": 84020,
+    "sha256": "55ac8b8d99e704fd2f0017d805fcb92474ee44f49edd2156c5cc39df7612380c",
+    "load_address": null,
+    "status": "extracted_boundaries_unverified"
+  },
+  "ovl_gumimenu.x": {
+    "format": "raw_overlay",
+    "size": 476168,
+    "sha256": "1345947e5dade3ad94677f1a66d30a4463695297903a39d0ef928d8cdecee0a9",
+    "load_address": null,
+    "status": "extracted_boundaries_unverified"
+  }
+}

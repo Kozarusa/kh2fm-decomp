@@ -1,0 +1,19 @@
+{
+  "address": "0017dfc8",
+  "source_sha256": "0edd06aa2d5301ee4dba1ade7cc6ab27a33124b709149fa21cfecd5859fd21b7",
+  "prior_source": "analysis/final-mix/recovery-experiments/fm_width_all_03_0.cpp",
+  "prior_source_sha256": "5c6fc364d9a6809e59ad686ce645452486baec703cf17892ff3ae5b272029c38",
+  "prior_proof": "analysis/final-mix/recovery-experiments/fm_width_all_03_0.verification.json",
+  "prior_proof_sha256": "e946268fdd92f65aced7de5b79610822c035bdbe98ea09ea5cbdcb10ccf9193a",
+  "changes": [
+    [
+      "*(short *)((int)uVar2 + 0x4c)",
+      "*(u16 *)((int)uVar2 + 0x4c)"
+    ]
+  ],
+  "target_size": 100,
+  "original_range_sha256": "547658790e2290e4a3876149484e6143adf4604f4f31fbb5ad017e567dd48499",
+  "limitations": [
+    "Instruction transport proposal; source types and callee semantics remain provisional."
+  ]
+}

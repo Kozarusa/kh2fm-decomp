@@ -1,0 +1,4 @@
+#include "../common/types.h"
+extern s32 D_0034c768,D_0034c76c;
+void func_00161a58(s32 input) { register s32 value asm("$14")=input; asm volatile("" : "+r"(value)); if(input>=0) { asm volatile("" ::: "$15"); if(input>128) { value=128; asm volatile("" : "+r"(value)); } } else { value=0; asm volatile("" : "+r"(value)); } register u32 high asm("$15")=0x350000; asm volatile("" : "+r"(high)); *(s32*)(high-0x3898)=value; }
+void func_00161a80(s32 input) { register s32 value asm("$14")=input; asm volatile("" : "+r"(value)); if(input>=0) { asm volatile("" ::: "$15"); if(input>128) { value=128; asm volatile("" : "+r"(value)); } } else { value=0; asm volatile("" : "+r"(value)); } register u32 high asm("$15")=0x350000; asm volatile("" : "+r"(high)); *(s32*)(high-0x3894)=value; }

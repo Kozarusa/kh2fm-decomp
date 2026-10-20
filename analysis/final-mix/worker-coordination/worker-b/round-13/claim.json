@@ -1,0 +1,105 @@
+{
+  "worker_id": "worker-b",
+  "round": 13,
+  "role": "recovery worker (isolated proposals and reports only)",
+  "written": "2026-10-08",
+  "previous_rounds": {
+    "round5": "5/5 exact (closed)",
+    "round6": "2/10 exact (closed)",
+    "round7": "8/10 exact (closed)",
+    "round8": "8/12 exact (closed)",
+    "round9": "4/12 exact (closed)",
+    "round10": "5/12 exact (closed)",
+    "round11": "in progress, 6 exact so far",
+    "round12": "in progress, 3 exact so far"
+  },
+  "selection_method": "round-13/pick_targets.py (derived from round 12, with every round 1-12 claim address harvested automatically): framed targets only (open with `addiu sp,sp,-N` and containing at least one sd/ld), integer-only (no COP1/CO2, no MULT/DIV premul, no bltz), 20-120 B, unregistered, never attempted by worker B, and not in primary's live claim. Framing is retained because round 6 proved frameless sibling-call thunks are unreproducible on this compiler. This batch deliberately leans on the shapes rounds 9-12 proved productive: the `if (param != 0) { (*(code *)(*(u32 *)DAT + off))(DAT, param); }` dispatcher (0023fe28/00288c20/0028cc40 are siblings of round 12's exact 0023fb90), and small constant-argument forwarders.",
+  "original_elf_sha256": "d869ce4b8edd61cb978c4ff9ede595fe4d7d7b21cbb96a145275217120d8bc87",
+  "claimed_addresses": [
+    {
+      "address": "0023fe28",
+      "end": "0023fe5c",
+      "size": 52
+    },
+    {
+      "address": "00288c20",
+      "end": "00288c54",
+      "size": 52
+    },
+    {
+      "address": "0028cc40",
+      "end": "0028cc74",
+      "size": 52
+    },
+    {
+      "address": "0020f118",
+      "end": "0020f14c",
+      "size": 52
+    },
+    {
+      "address": "0020f150",
+      "end": "0020f184",
+      "size": 52
+    },
+    {
+      "address": "001d5030",
+      "end": "001d5064",
+      "size": 52
+    },
+    {
+      "address": "001a74f8",
+      "end": "001a752c",
+      "size": 52
+    },
+    {
+      "address": "002bd538",
+      "end": "002bd56c",
+      "size": 52
+    },
+    {
+      "address": "001bba88",
+      "end": "001bbabc",
+      "size": 52
+    },
+    {
+      "address": "001bbcc0",
+      "end": "001bbcf4",
+      "size": 52
+    },
+    {
+      "address": "00314480",
+      "end": "003144ac",
+      "size": 44
+    },
+    {
+      "address": "003110a8",
+      "end": "003110d8",
+      "size": 48
+    },
+    {
+      "address": "00185da8",
+      "end": "00185ddc",
+      "size": 52
+    },
+    {
+      "address": "00186078",
+      "end": "001860ac",
+      "size": 52
+    }
+  ],
+  "range_verification": {
+    "method": "sha256 of each declared range recomputed from the original ELF, cross-checked against /root/kh2fm-build/layout.tsv",
+    "helper": "analysis/final-mix/worker-coordination/worker-b/round-13/r13_dump_orig.py",
+    "evidence": "analysis/final-mix/worker-coordination/worker-b/round-13/r13_range_hashes.txt",
+    "disassembly": "analysis/final-mix/worker-coordination/worker-b/round-13/r13_orig_disasm.txt",
+    "raw_bytes": "analysis/final-mix/worker-coordination/worker-b/round-13/<address>.orig.hex"
+  },
+  "intended_outputs": {
+    "sources": "analysis/final-mix/recovery-experiments/fm_worker_b_round13_<address>_v<NN>.cpp",
+    "proofs": "analysis/final-mix/recovery-experiments/fm_worker_b_round13_<address>_v<NN>.verification.json",
+    "report": "analysis/final-mix/worker-coordination/worker-b/round-13/REPORT.md"
+  },
+  "compiler_use": "shared read-only probe harness only; no flag changes, no stage writes, no docker restart",
+  "ownership": "worker B owns only files under worker-coordination/worker-b/** and analysis/final-mix/recovery-experiments/fm_worker_b_round13_*; primary owns active sources, functions.tsv, layout.tsv, stage sync, builds, manifests, receipts, Ghidra, HANDOFF.md",
+  "acceptance_baseline": "5,512 registered rows observed at pick time; primary's live claim holds 11 addresses and was re-read at pick time to stay disjoint"
+}

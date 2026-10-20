@@ -1,0 +1,24 @@
+001d79b8: compiled 80 bytes, target 80 bytes, exact=False
+Differing words: 14. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001d79b8: 27bdfff0  addiu	sp,sp,-16                                  | 001d79b8: 27bdfff0  addiu	sp,sp,-16
+!! 001d79bc: 0000502d  move	t2,zero                                     | 001d79bc: 0000602d  move	t4,zero
+   001d79c0: ffbf0000  sd	ra,0(sp)                                      | 001d79c0: ffbf0000  sd	ra,0(sp)
+!! 001d79c4: 0000582d  move	t3,zero                                     | 001d79c4: 0000682d  move	t5,zero
+!! 001d79c8: 248d0004  addiu	t5,a0,4                                    | 001d79c8: 8c8f0004  lw	t7,4(a0)
+!! 001d79cc: 8daf0000  lw	t7,0(t5)                                      | 001d79cc: 248e0004  addiu	t6,a0,4
+!! 001d79d0: 11e5000b  beq	t7,a1,0x1d7a00                               | 001d79d0: 01cf600a  movz	t4,t6,t7
+!! 001d79d4: 39ec0000  xori	t4,t7,0x0                                   | 001d79d4: 11e5000a  beq	t7,a1,1d7a00 <func_001d79b8+0x48>
+!! 001d79d8: 256b0001  addiu	t3,t3,1                                    | 001d79d8: 24840008  addiu	a0,a0,8
+!! 001d79dc: 01ac500a  movz	t2,t5,t4                                    | 001d79dc: 25ad0001  addiu	t5,t5,1
+!! 001d79e0: 296f0004  slti	t7,t3,4                                     | 001d79e0: 29af0004  slti	t7,t5,4
+!! 001d79e4: 15e0fff9  bnez	t7,0x1d79cc                                 | 001d79e4: 55e0fff9  bnezl	t7,1d79cc <func_001d79b8+0x14>
+!! 001d79e8: 25ad0008  addiu	t5,t5,8                                    | 001d79e8: 8c8f0004  lw	t7,4(a0)
+!! 001d79ec: e54c0004  swc1	$f12,4(t2)                                  | 001d79ec: ad850000  sw	a1,0(t4)
+!! 001d79f0: ad450000  sw	a1,0(t2)                                      | 001d79f0: e58c0004  swc1	$f12,4(t4)
+   001d79f4: dfbf0000  ld	ra,0(sp)                                      | 001d79f4: dfbf0000  ld	ra,0(sp)
+   001d79f8: 08075ec4  j	0x1d7b10                                       | 001d79f8: 08075ec4  j	1d7b10 <func_001d7b10>
+   001d79fc: 27bd0010  addiu	sp,sp,16                                   | 001d79fc: 27bd0010  addiu	sp,sp,16
+   001d7a00: 1000fffa  b	0x1d79ec                                       | 001d7a00: 1000fffa  b	1d79ec <func_001d79b8+0x34>
+!! 001d7a04: 01a0502d  move	t2,t5                                       | 001d7a04: 01c0602d  move	t4,t6

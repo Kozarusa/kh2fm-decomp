@@ -1,0 +1,32 @@
+Exact probe matches: 27/100
+Detailed proof: analysis/final-mix/recovery-experiments/fm_scalar_06.verification.json
+recovery-experiments/fm_scalar_06/probe.cpp: In function `void 
+   func_00232ea0(u32*, int, u32*, unsigned int)':
+recovery-experiments/fm_scalar_06/probe.cpp:440: warning: assignment to `
+   unsigned int' from `float'
+recovery-experiments/fm_scalar_06/probe.cpp:440: warning: argument to `unsigned 
+   int' from `float'
+recovery-experiments/fm_scalar_06/probe.cpp:448: warning: assignment to `
+   unsigned int' from `float'
+recovery-experiments/fm_scalar_06/probe.cpp:448: warning: argument to `unsigned 
+   int' from `float'
+recovery-experiments/fm_scalar_06/probe.cpp: In function `u64 
+   func_0023e788(long long unsigned int, int, int)':
+recovery-experiments/fm_scalar_06/probe.cpp:751: warning: cast to pointer from 
+   integer of different size
+recovery-experiments/fm_scalar_06/probe.cpp: In function `void 
+   func_00241fd0(long long unsigned int, unsigned int)':
+recovery-experiments/fm_scalar_06/probe.cpp:886: warning: cast to pointer from 
+   integer of different size
+recovery-experiments/fm_scalar_06/probe.cpp:888: warning: cast to pointer from 
+   integer of different size
+recovery-experiments/fm_scalar_06/probe.cpp: In function `u32 func_00244a10()':
+recovery-experiments/fm_scalar_06/probe.cpp:1100: warning: cast to pointer from 
+   integer of different size
+recovery-experiments/fm_scalar_06/probe.cpp: In function `u32 func_0024ad50()':
+recovery-experiments/fm_scalar_06/probe.cpp:1123: warning: cast to pointer from 
+   integer of different size
+recovery-experiments/fm_scalar_06/probe.cpp: In function `void 
+   func_00263688()':
+recovery-experiments/fm_scalar_06/probe.cpp:1376: warning: cast to pointer from 
+   integer of different size

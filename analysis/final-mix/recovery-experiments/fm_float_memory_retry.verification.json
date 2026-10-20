@@ -1,0 +1,51 @@
+{
+  "source_sha256": "89761e7d06e24c8efc331edb1c53fcc328f0f8346417e74e23f386e899123961",
+  "source": "analysis/final-mix/recovery-experiments/fm_float_memory_retry.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "00134d10",
+      "symbol": "_Z13func_00134d10Ph",
+      "compiled_size": 60,
+      "target_size": 60,
+      "ghidra_body_size": 60,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "37000f3c000080ac48acef25080080ac0000e0c537000f3c1c0080e44cacef250c0080e40000e1c5100080e4040081e4140080e40800e003180080e4",
+      "target_hex": "37000f3c000080ac48acef25080080ac0000e0c537000f3c1c0080e44cacef250c0080e40000e1c5100080e4040081e4140080e40800e003180080e4"
+    },
+    {
+      "address": "001957e8",
+      "symbol": "_Z13func_001957e8Ph",
+      "compiled_size": 112,
+      "target_size": 112,
+      "ghidra_body_size": 112,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "37000f3c34d0ef250000e0c537000f3c000080e438d0ef250000e1c537000f3c040081e43cd0ef250000e0c537000f3c080080e440d0ef250000e1c50c0081e435000f3c3021ee8d37000f3c1400c1c544d0ef250000e0c5100081e4180080e4200080ac140080ac0800e0031c0080ac",
+      "target_hex": "37000f3c34d0ef250000e0c537000f3c000080e438d0ef250000e1c537000f3c040081e43cd0ef250000e0c537000f3c080080e440d0ef250000e1c50c0081e435000f3c3021ee8d37000f3c1400c1c544d0ef250000e0c5100081e4180080e4200080ac140080ac0800e0031c0080ac"
+    },
+    {
+      "address": "0028d188",
+      "symbol": "_Z13func_0028d188Ph",
+      "compiled_size": 52,
+      "target_size": 52,
+      "ghidra_body_size": 52,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "37000f3cb80180ac3844ef259c0180a00000e0c59d0180a0a00180e4a40180aca80180acac0180acb00180ac0800e003b40180ac",
+      "target_hex": "37000f3cb80180ac3844ef259c0180a00000e0c59d0180a0a00180e4a40180aca80180acac0180acb00180ac0800e003b40180ac"
+    },
+    {
+      "address": "002cd260",
+      "symbol": "_Z13func_002cd260Ph",
+      "compiled_size": 48,
+      "target_size": 48,
+      "ghidra_body_size": 48,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "87008f900800e01537000f3c180080acec58ef25880080ac0000e0c5040080ac1c0080e4080080ac0800e00300000000",
+      "target_hex": "87008f900800e01137000f3c180080acec58ef25880080ac0000e0c5040080ac1c0080e4080080ac0800e00300000000"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+recovery-experiments/eight_hour_0010cce0_node_return_lifetime_v2_2/probe.cpp:3: warning: ISO
+   C++ forbids declaration of `s64object' with no type
+recovery-experiments/eight_hour_0010cce0_node_return_lifetime_v2_2/probe.cpp:4: warning: ISO
+   C++ forbids declaration of `s64func_001b9bc8' with no type
+recovery-experiments/eight_hour_0010cce0_node_return_lifetime_v2_2/probe.cpp: In
+   function `s64 func_0010cce0(long long int)':
+recovery-experiments/eight_hour_0010cce0_node_return_lifetime_v2_2/probe.cpp:5: `
+   func_001b9bc8' undeclared (first use this function)
+recovery-experiments/eight_hour_0010cce0_node_return_lifetime_v2_2/probe.cpp:5: (Each
+   undeclared identifier is reported only once for each function it appears 
+   in.)
+Traceback (most recent call last):
+  File "/mnt/c/Users/KoZa/Documents/AGENTS/Public/tools/kh2-audit/probe_fm_source.py", line 36, in <module>
+    run(f'/opt/ps2/gcc/bin/ee-g++ -O2 -g0 -x c++ -fno-exceptions -fno-rtti -fpermissive -ffunction-sections -c {relative}/probe.cpp -o {relative}/probe.o')
+  File "/mnt/c/Users/KoZa/Documents/AGENTS/Public/tools/kh2-audit/probe_fm_source.py", line 32, in run
+    subprocess.run(['docker', 'run', '--rm', '--platform', 'linux/amd64',
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['docker', 'run', '--rm', '--platform', 'linux/amd64', '-v', '/root/kh2fm-build:/work', '-w', '/work', 'kh2-local/ps2-compiler:3.2-ee-040921-objdiff', 'bash', '-lc', '/opt/ps2/gcc/bin/ee-g++ -O2 -g0 -x c++ -fno-exceptions -fno-rtti -fpermissive -ffunction-sections -c recovery-experiments/eight_hour_0010cce0_node_return_lifetime_v2_2/probe.cpp -o recovery-experiments/eight_hour_0010cce0_node_return_lifetime_v2_2/probe.o']' returned non-zero exit status 1.

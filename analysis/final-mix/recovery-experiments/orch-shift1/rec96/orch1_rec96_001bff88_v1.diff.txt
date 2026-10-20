@@ -1,0 +1,24 @@
+001bff88: compiled 80 bytes, target 80 bytes, exact=False
+Differing words: 9. First difference at instruction 10 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001bff88: 3c0f01d5  lui	t7,0x1d5                                     | 001bff88: 3c0f01d5  lui	t7,0x1d5
+   001bff8c: 240e0007  li	t6,7                                          | 001bff8c: 240e0007  li	t6,7
+   001bff90: 25ef9328  addiu	t7,t7,-27864   ; = D_01d49328              | 001bff90: 25ef9328  addiu	t7,t7,-27864   ; = D_01d49328
+   001bff94: ade00000  sw	zero,0(t7)                                    | 001bff94: ade00000  sw	zero,0(t7)
+   001bff98: 25ceffff  addiu	t6,t6,-1                                   | 001bff98: 25ceffff  addiu	t6,t6,-1
+   001bff9c: 00000000  nop                                              | 001bff9c: 00000000  nop
+   001bffa0: 00000000  nop                                              | 001bffa0: 00000000  nop
+   001bffa4: 00000000  nop                                              | 001bffa4: 00000000  nop
+   001bffa8: 05c1fffa  bgez	t6,0x1bff94                                 | 001bffa8: 05c1fffa  bgez	t6,1bff94 <func_001bff88+0xc>
+   001bffac: 25ef0004  addiu	t7,t7,4                                    | 001bffac: 25ef0004  addiu	t7,t7,4
+!! 001bffb0: 240d0100  li	t5,256                                        | 001bffb0: 3c0f01d5  lui	t7,0x1d5
+!! 001bffb4: 3c0f01d5  lui	t7,0x1d5                                     | 001bffb4: 3c0e01d5  lui	t6,0x1d5
+!! 001bffb8: 3c0e01d5  lui	t6,0x1d5                                     | 001bffb8: 240d0100  li	t5,256
+!! 001bffbc: aded934c  sw	t5,-27828(t7)   ; = D_01d4934c                | 001bffbc: adc09348  sw	zero,-27832(t6)   ; = D_01d49348
+!! 001bffc0: 3c0c01d5  lui	t4,0x1d5                                     | 001bffc0: aded934c  sw	t5,-27828(t7)   ; = D_01d4934c
+!! 001bffc4: adc09348  sw	zero,-27832(t6)   ; = D_01d49348              | 001bffc4: 3c0e01d5  lui	t6,0x1d5
+!! 001bffc8: 258b9350  addiu	t3,t4,-27824   ; = D_01d49350              | 001bffc8: 3c0f01d5  lui	t7,0x1d5
+!! 001bffcc: ad809350  sw	zero,-27824(t4)   ; = D_01d49350              | 001bffcc: adc09354  sw	zero,-27820(t6)   ; = D_01d49354
+   001bffd0: 03e00008  jr	ra                                            | 001bffd0: 03e00008  jr	ra
+!! 001bffd4: ad600004  sw	zero,4(t3)                                    | 001bffd4: ade09350  sw	zero,-27824(t7)   ; = D_01d49350

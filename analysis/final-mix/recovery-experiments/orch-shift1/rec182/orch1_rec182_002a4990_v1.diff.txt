@@ -1,0 +1,31 @@
+002a4990: compiled 108 bytes, target 108 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   002a4990: 04810009  bgez	a0,0x2a49b8                                 | 002a4990: 04810009  bgez	a0,2a49b8 <func_002a4990+0x28>
+   002a4994: 3c0b0036  lui	t3,0x36                                      | 002a4994: 3c0b0036  lui	t3,0x36
+   002a4998: 8d6ef5e4  lw	t6,-2588(t3)   ; = D_0035f5e4                 | 002a4998: 8d6ef5e4  lw	t6,-2588(t3)   ; = D_0035f5e4
+   002a499c: 8dcf1088  lw	t7,4232(t6)                                   | 002a499c: 8dcf1088  lw	t7,4232(t6)
+   002a49a0: 8dcc1084  lw	t4,4228(t6)                                   | 002a49a0: 8dcc1084  lw	t4,4228(t6)
+   002a49a4: 25ed0007  addiu	t5,t7,7                                    | 002a49a4: 25ed0007  addiu	t5,t7,7
+   002a49a8: 29ee0000  slti	t6,t7,0                                     | 002a49a8: 29ee0000  slti	t6,t7,0
+   002a49ac: 01ae780b  movn	t7,t5,t6                                    | 002a49ac: 01ae780b  movn	t7,t5,t6
+   002a49b0: 000f78c3  sra	t7,t7,0x3                                    | 002a49b0: 000f78c3  sra	t7,t7,0x3
+   002a49b4: 018f2021  addu	a0,t4,t7                                    | 002a49b4: 018f2021  addu	a0,t4,t7
+   002a49b8: 8d6ff5e4  lw	t7,-2588(t3)   ; = D_0035f5e4                 | 002a49b8: 8d6ff5e4  lw	t7,-2588(t3)   ; = D_0035f5e4
+   002a49bc: 0000682d  move	t5,zero                                     | 002a49bc: 0000682d  move	t5,zero
+   002a49c0: 0000102d  move	v0,zero                                     | 002a49c0: 0000102d  move	v0,zero
+   002a49c4: 25ee1001  addiu	t6,t7,4097                                 | 002a49c4: 25ee1001  addiu	t6,t7,4097
+   002a49c8: 91cf0000  lbu	t7,0(t6)                                     | 002a49c8: 91cf0000  lbu	t7,0(t6)
+   002a49cc: 11e00005  beqz	t7,0x2a49e4                                 | 002a49cc: 11e00005  beqz	t7,2a49e4 <func_002a4990+0x54>
+   002a49d0: 25ce0008  addiu	t6,t6,8                                    | 002a49d0: 25ce0008  addiu	t6,t6,8
+   002a49d4: 01af6821  addu	t5,t5,t7                                    | 002a49d4: 01af6821  addu	t5,t5,t7
+   002a49d8: 008d782a  slt	t7,a0,t5                                     | 002a49d8: 008d782a  slt	t7,a0,t5
+   002a49dc: 15e00005  bnez	t7,0x2a49f4                                 | 002a49dc: 15e00005  bnez	t7,2a49f4 <func_002a4990+0x64>
+   002a49e0: 00000000  nop                                              | 002a49e0: 00000000  nop
+   002a49e4: 24420001  addiu	v0,v0,1                                    | 002a49e4: 24420001  addiu	v0,v0,1
+   002a49e8: 284f000f  slti	t7,v0,15                                    | 002a49e8: 284f000f  slti	t7,v0,15
+   002a49ec: 55e0fff7  bnezl	t7,0x2a49cc                                | 002a49ec: 55e0fff7  bnezl	t7,2a49cc <func_002a4990+0x3c>
+   002a49f0: 91cf0000  lbu	t7,0(t6)                                     | 002a49f0: 91cf0000  lbu	t7,0(t6)
+   002a49f4: 03e00008  jr	ra                                            | 002a49f4: 03e00008  jr	ra
+   002a49f8: 00000000  nop                                              | 002a49f8: 00000000  nop

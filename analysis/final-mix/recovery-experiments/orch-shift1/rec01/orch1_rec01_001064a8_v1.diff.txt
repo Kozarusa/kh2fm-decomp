@@ -1,0 +1,32 @@
+001064a8: compiled 108 bytes, target 120 bytes, exact=False
+Differing words: 13. First difference at instruction 5 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001064a8: 27bdfff0  addiu	sp,sp,-16                                  | 001064a8: 27bdfff0  addiu	sp,sp,-16
+   001064ac: 00047842  srl	t7,a0,0x1                                    | 001064ac: 00047842  srl	t7,a0,0x1
+   001064b0: 308e0001  andi	t6,a0,0x1                                   | 001064b0: 308e0001  andi	t6,a0,0x1
+   001064b4: ffbf0000  sd	ra,0(sp)                                      | 001064b4: ffbf0000  sd	ra,0(sp)
+   001064b8: e7b40008  swc1	$f20,8(sp)                                  | 001064b8: e7b40008  swc1	$f20,8(sp)
+!! 001064bc: 04800014  bltz	a0,0x106510                                 | 001064bc: 04800011  bltz	a0,106504 <func_001064a8+0x5c>
+   001064c0: 01cf7025  or	t6,t6,t7                                      | 001064c0: 01cf7025  or	t6,t6,t7
+   001064c4: 4484a000  mtc1	a0,$f20                                     | 001064c4: 4484a000  mtc1	a0,$f20
+   001064c8: 4680a520  cvt.s.w	$f20,$f20                                | 001064c8: 4680a520  cvt.s.w	$f20,$f20
+   001064cc: 0c0bfa86  jal	0x2fea18                                     | 001064cc: 0c0bfa86  jal	2fea18 <func_002fea18>
+   001064d0: 00000000  nop                                              | 001064d0: 00000000  nop
+   001064d4: 44826000  mtc1	v0,$f12                                     | 001064d4: 44826000  mtc1	v0,$f12
+   001064d8: 3c0f0037  lui	t7,0x37                                      | 001064d8: 3c0f0037  lui	t7,0x37
+!! 001064dc: 25efa098  addiu	t7,t7,-24424   ; = D_0036a098              | 001064dc: c5e0a098  lwc1	$f0,-24424(t7)   ; = D_0036a098
+   001064e0: 46806320  cvt.s.w	$f12,$f12                                | 001064e0: 46806320  cvt.s.w	$f12,$f12
+!! 001064e4: c5e00000  lwc1	$f0,0(t7)                                   | 001064e4: dfbf0000  ld	ra,0(sp)
+   001064e8: 460ca302  mul.s	$f12,$f20,$f12                             | 001064e8: 460ca302  mul.s	$f12,$f20,$f12
+   001064f4: 46006303  div.s	$f12,$f12,$f0                              | 001064f4: 46006303  div.s	$f12,$f12,$f0
+!! 001064f8: 0c0c4ef0  jal	0x313bc0                                     | 001064f8: c7b40008  lwc1	$f20,8(sp)
+!! 001064fc: 00000000  nop                                              | 001064fc: 080c4ef0  j	313bc0 <func_00313bc0>
+!! 00106500: dfbf0000  ld	ra,0(sp)                                      | 00106500: 27bd0010  addiu	sp,sp,16
+!! 00106504: c7b40008  lwc1	$f20,8(sp)                                  | 00106504: 448ea000  mtc1	t6,$f20
+!! 00106508: 03e00008  jr	ra                                            | 00106508: 4680a520  cvt.s.w	$f20,$f20
+!! 0010650c: 27bd0010  addiu	sp,sp,16                                   | 0010650c: 1000ffef  b	1064cc <func_001064a8+0x24>
+!! 00106510: 448ea000  mtc1	t6,$f20                                     | 00106510: 4614a500  add.s	$f20,$f20,$f20
+!! 00106514: 4680a520  cvt.s.w	$f20,$f20                                | 
+!! 00106518: 1000ffec  b	0x1064cc                                       | 
+!! 0010651c: 4614a500  add.s	$f20,$f20,$f20                             | 

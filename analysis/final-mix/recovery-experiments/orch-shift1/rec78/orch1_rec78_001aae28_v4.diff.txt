@@ -1,0 +1,19 @@
+001aae28: compiled 60 bytes, target 60 bytes, exact=False
+Differing words: 2. First difference at instruction 0 (0-based).
+
+ORIGINAL                                                                | COMPILED
+!! 001aae28: 8faf0010  lw	t7,16(sp)                                     | 001aae28: ac850000  sw	a1,0(a0)
+   001aae2c: 27ae0000  addiu	t6,sp,0                                    | 001aae2c: 27ae0000  addiu	t6,sp,0
+!! 001aae30: ac850000  sw	a1,0(a0)                                      | 001aae30: 8faf0010  lw	t7,16(sp)
+   001aae34: ac8f0018  sw	t7,24(a0)                                     | 001aae34: ac8f0018  sw	t7,24(a0)
+   001aae38: ac860004  sw	a2,4(a0)                                      | 001aae38: ac860004  sw	a2,4(a0)
+   001aae3c: ac870008  sw	a3,8(a0)                                      | 001aae3c: ac870008  sw	a3,8(a0)
+   001aae40: ac88000c  sw	t0,12(a0)                                     | 001aae40: ac88000c  sw	t0,12(a0)
+   001aae44: a0890010  sb	t1,16(a0)                                     | 001aae44: a0890010  sb	t1,16(a0)
+   001aae48: a08a0011  sb	t2,17(a0)                                     | 001aae48: a08a0011  sb	t2,17(a0)
+   001aae4c: a08b0012  sb	t3,18(a0)                                     | 001aae4c: a08b0012  sb	t3,18(a0)
+   001aae50: 8dcf0000  lw	t7,0(t6)                                      | 001aae50: 8dcf0000  lw	t7,0(t6)
+   001aae54: 8fae0008  lw	t6,8(sp)                                      | 001aae54: 8fae0008  lw	t6,8(sp)
+   001aae58: a08f0013  sb	t7,19(a0)                                     | 001aae58: a08f0013  sb	t7,19(a0)
+   001aae5c: 03e00008  jr	ra                                            | 001aae5c: 03e00008  jr	ra
+   001aae60: ac8e0014  sw	t6,20(a0)                                     | 001aae60: ac8e0014  sw	t6,20(a0)

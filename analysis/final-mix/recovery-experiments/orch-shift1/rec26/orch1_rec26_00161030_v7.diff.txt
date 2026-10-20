@@ -1,0 +1,22 @@
+00161030: compiled 72 bytes, target 72 bytes, exact=False
+Differing words: 3. First difference at instruction 3 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00161030: 0000702d  move	t6,zero                                     | 00161030: 0000702d  move	t6,zero
+   00161034: 0000682d  move	t5,zero                                     | 00161034: 0000682d  move	t5,zero
+   00161038: 3c0c004f  lui	t4,0x4f                                      | 00161038: 3c0c004f  lui	t4,0x4f
+!! 0016103c: 55c00002  bnezl	t6,0x161048                                | 0016103c: 11c00002  beqz	t6,161048 <func_00161030+0x18>
+!! 00161040: 8dc20080  lw	v0,128(t6)                                    | 00161040: 8d823b38  lw	v0,15160(t4)   ; = D_004f3b38
+!! 00161044: 8d823b38  lw	v0,15160(t4)   ; = D_004f3b38                 | 00161044: 8dc20080  lw	v0,128(t6)
+   00161048: 14400004  bnez	v0,0x16105c                                 | 00161048: 14400004  bnez	v0,16105c <func_00161030+0x2c>
+   0016104c: 0040702d  move	t6,v0                                       | 0016104c: 0040702d  move	t6,v0
+   00161050: 0000102d  move	v0,zero                                     | 00161050: 0000102d  move	v0,zero
+   00161054: 03e00008  jr	ra                                            | 00161054: 03e00008  jr	ra
+   00161058: 00000000  nop                                              | 00161058: 00000000  nop
+   0016105c: 8c4f01b0  lw	t7,432(v0)                                    | 0016105c: 8c4f01b0  lw	t7,432(v0)
+   00161060: 15e0fff6  bnez	t7,0x16103c                                 | 00161060: 15e0fff6  bnez	t7,16103c <func_00161030+0xc>
+   00161064: 00000000  nop                                              | 00161064: 00000000  nop
+   00161068: 11a4fffa  beq	t5,a0,0x161054                               | 00161068: 11a4fffa  beq	t5,a0,161054 <func_00161030+0x24>
+   0016106c: 00000000  nop                                              | 0016106c: 00000000  nop
+   00161070: 1000fff2  b	0x16103c                                       | 00161070: 1000fff2  b	16103c <func_00161030+0xc>
+   00161074: 25ad0001  addiu	t5,t5,1                                    | 00161074: 25ad0001  addiu	t5,t5,1

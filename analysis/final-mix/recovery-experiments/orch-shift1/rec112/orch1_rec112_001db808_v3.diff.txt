@@ -1,0 +1,22 @@
+001db808: compiled 72 bytes, target 72 bytes, exact=False
+Differing words: 6. First difference at instruction 5 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001db808: 27bdfff0  addiu	sp,sp,-16                                  | 001db808: 27bdfff0  addiu	sp,sp,-16
+   001db80c: 3c0f0035  lui	t7,0x35                                      | 001db80c: 3c0f0035  lui	t7,0x35
+   001db810: ffb00000  sd	s0,0(sp)                                      | 001db810: ffb00000  sd	s0,0(sp)
+   001db814: 25ef2a38  addiu	t7,t7,10808   ; = D_00352a38               | 001db814: 25ef2a38  addiu	t7,t7,10808   ; = D_00352a38
+   001db818: ffbf0008  sd	ra,8(sp)                                      | 001db818: ffbf0008  sd	ra,8(sp)
+!! 001db81c: ac8f0000  sw	t7,0(a0)                                      | 001db81c: 0080802d  move	s0,a0
+!! 001db820: 0080802d  move	s0,a0                                       | 001db820: ac8f0000  sw	t7,0(a0)
+   001db824: 8c8d0004  lw	t5,4(a0)                                      | 001db824: 8c8d0004  lw	t5,4(a0)
+!! 001db828: 8c85000c  lw	a1,12(a0)                                     | 001db828: 8e05000c  lw	a1,12(s0)
+!! 001db82c: 8daf0000  lw	t7,0(t5)                                      | 001db82c: 8dae0000  lw	t6,0(t5)
+!! 001db830: 8dee0004  lw	t6,4(t7)                                      | 001db830: 8dc20004  lw	v0,4(t6)
+!! 001db834: 01c0f809  jalr	t6                                          | 001db834: 0040f809  jalr	v0
+   001db838: 01a0202d  move	a0,t5                                       | 001db838: 01a0202d  move	a0,t5
+   001db83c: 0200202d  move	a0,s0                                       | 001db83c: 0200202d  move	a0,s0
+   001db840: dfbf0008  ld	ra,8(sp)                                      | 001db840: dfbf0008  ld	ra,8(sp)
+   001db844: dfb00000  ld	s0,0(sp)                                      | 001db844: dfb00000  ld	s0,0(sp)
+   001db848: 08041908  j	0x106420                                       | 001db848: 08041908  j	106420 <func_00106420>
+   001db84c: 27bd0010  addiu	sp,sp,16                                   | 001db84c: 27bd0010  addiu	sp,sp,16

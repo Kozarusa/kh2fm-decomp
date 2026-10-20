@@ -1,0 +1,35 @@
+001904f0: compiled 124 bytes, target 124 bytes, exact=False
+Differing words: 8. First difference at instruction 14 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001904f0: 27bdffe0  addiu	sp,sp,-32                                  | 001904f0: 27bdffe0  addiu	sp,sp,-32
+   001904f4: ffb00000  sd	s0,0(sp)                                      | 001904f4: ffb00000  sd	s0,0(sp)
+   001904f8: ffb10008  sd	s1,8(sp)                                      | 001904f8: ffb10008  sd	s1,8(sp)
+   001904fc: ffbf0010  sd	ra,16(sp)                                     | 001904fc: ffbf0010  sd	ra,16(sp)
+   00190500: 0080802d  move	s0,a0                                       | 00190500: 0080802d  move	s0,a0
+   00190504: 00a0882d  move	s1,a1                                       | 00190504: 00a0882d  move	s1,a1
+   00190508: 0c066e98  jal	0x19ba60                                     | 00190508: 0c066e98  jal	19ba60 <func_0019ba60>
+   0019050c: 8c840000  lw	a0,0(a0)                                      | 0019050c: 8c840000  lw	a0,0(a0)
+   00190510: 8e040000  lw	a0,0(s0)                                      | 00190510: 8e040000  lw	a0,0(s0)
+   00190514: 24050013  li	a1,19                                         | 00190514: 24050013  li	a1,19
+   00190518: 0c05af08  jal	0x16bc20                                     | 00190518: 0c05af08  jal	16bc20 <func_0016bc20>
+   0019051c: 8e060004  lw	a2,4(s0)                                      | 0019051c: 8e060004  lw	a2,4(s0)
+   00190520: 0040302d  move	a2,v0                                       | 00190520: 0040302d  move	a2,v0
+   00190524: 0220202d  move	a0,s1                                       | 00190524: 0220202d  move	a0,s1
+!! 00190528: 1040000c  beqz	v0,0x19055c                                 | 00190528: 1040000b  beqz	v0,190558 <func_001904f0+0x68>
+   0019052c: 0220282d  move	a1,s1                                       | 0019052c: 0220282d  move	a1,s1
+   00190530: 0c062a06  jal	0x18a818                                     | 00190530: 0c062a06  jal	18a818 <func_0018a818>
+   00190534: 8e050000  lw	a1,0(s0)                                      | 00190534: 8e050000  lw	a1,0(s0)
+   00190538: 3c0f0037  lui	t7,0x37                                      | 00190538: 3c0f0037  lui	t7,0x37
+   0019053c: dfb00000  ld	s0,0(sp)                                      | 0019053c: dfb00000  ld	s0,0(sp)
+!! 00190540: 25efcd20  addiu	t7,t7,-13024   ; = D_0036cd20              | 00190540: c5e0cd20  lwc1	$f0,-13024(t7)   ; = D_0036cd20
+   00190544: dfbf0010  ld	ra,16(sp)                                     | 00190544: dfbf0010  ld	ra,16(sp)
+!! 00190548: c5e00000  lwc1	$f0,0(t7)                                   | 00190548: e620001c  swc1	$f0,28(s1)
+!! 0019054c: e620001c  swc1	$f0,28(s1)                                  | 0019054c: dfb10008  ld	s1,8(sp)
+!! 00190550: dfb10008  ld	s1,8(sp)                                      | 00190550: 03e00008  jr	ra
+!! 00190554: 03e00008  jr	ra                                            | 00190554: 27bd0020  addiu	sp,sp,32
+!! 00190558: 27bd0020  addiu	sp,sp,32                                   | 00190558: 0200202d  move	a0,s0
+   0019055c: 0c0640aa  jal	0x1902a8                                     | 0019055c: 0c0640aa  jal	1902a8 <func_001902a8>
+!! 00190560: 0200202d  move	a0,s0                                       | 00190560: 0000302d  move	a2,zero
+   00190564: 1000fff5  b	0x19053c                                       | 00190564: 1000fff5  b	19053c <func_001904f0+0x4c>
+   00190568: 3c0f0037  lui	t7,0x37                                      | 00190568: 3c0f0037  lui	t7,0x37

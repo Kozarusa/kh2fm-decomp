@@ -1,0 +1,194 @@
+{
+  "source_sha256": "d4d923d9bc26e38083267abdb56dbadc0e41a08622bedeaf63593ea5c969f369",
+  "source": "analysis/final-mix/recovery-experiments/fm_global_probes_v2_04_1.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "0027ae20",
+      "symbol": "_Z13func_0027ae20v",
+      "compiled_size": 92,
+      "target_size": 88,
+      "ghidra_body_size": 88,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "36000f3c2d10000030f2eb8d2d60000006000a2407008a111f008e3100006f8501004d240778cf010100ef390100ef310a10af0101008c2507008f29f5ffe01536000e3c01004c2430f2cd8d0000af8d8000ef310800e0030b108f01",
+      "target_hex": "36000f3c2d10000030f2ec8d2d68000006000b240600ab1101004e2400008f850778af010100ef390100ef310a10cf010100ad250700af29f6ffe01536000e3c01004c2430f2cd8d0000af958000ef310800e0030b108f01"
+    },
+    {
+      "address": "0027ae78",
+      "symbol": "_Z13func_0027ae78i",
+      "compiled_size": 88,
+      "target_size": 92,
+      "ghidra_body_size": 92,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "36000f3c2d60000030f2eb8d2d68000006000a240a00aa111f00ae3100006f8d0778cf010100ef390100ef310500e0550100ad2506008c100000000001008c250100ad250800af29f2ffe015000000000800e00300000000",
+      "target_hex": "36000f3c2d70000030f2ed8d2d10000006000c240c004c50010042240000af8507784f000100ef390100ef31ff00ef310500e0550100422406008e10000000000100ce250100422408004f28f1ffe015000000000800e00300000000"
+    },
+    {
+      "address": "002e1878",
+      "symbol": "_Z13func_002e1878ii",
+      "compiled_size": 64,
+      "target_size": 64,
+      "ghidra_body_size": 64,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "ffff0f340c00af1401000f240a008f1437000f3c36000e3cf85ee0c536000f3c882dc0e5802de0ad36000e3c36000f3c8c2dc0ad842de0ad0800e00300000000",
+      "target_hex": "ffff0f340c00af1401000f240a008f140008804436000e3c802dcf25802dc1e50c00e1e537000e3c0400e1e5f85ece250000c0c50800e0e50800e00300000000"
+    },
+    {
+      "address": "002e2e50",
+      "symbol": "_Z13func_002e2e50ii",
+      "compiled_size": 64,
+      "target_size": 64,
+      "ghidra_body_size": 64,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "ffff0f340c00af1401000f240a008f1437000f3c36000e3c505fe0c536000f3c782ec0e5702ee0ad36000e3c36000f3c7c2ec0ad742ee0ad0800e00300000000",
+      "target_hex": "ffff0f340c00af1401000f240a008f140008804436000e3c702ecf25702ec1e50c00e1e537000e3c0400e1e5505fce250000c0c50800e0e50800e00300000000"
+    },
+    {
+      "address": "002e3f78",
+      "symbol": "_Z13func_002e3f78Pj",
+      "compiled_size": 60,
+      "target_size": 36,
+      "ghidra_body_size": 36,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "f0ffbd2737000f3c0000b0ff0800bfff785fecc54eab0b0c2d8080000c0002ae040000ae000000ae080000ae0800bfdf0000b0df0800e0031000bd27",
+      "target_hex": "37000f3c00008044785fef250000e1c5000080e40c0081e4080080e40800e003040080e4"
+    },
+    {
+      "address": "002e4a08",
+      "symbol": "_Z13func_002e4a08Pj",
+      "compiled_size": 64,
+      "target_size": 36,
+      "ghidra_body_size": 36,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "f0ffbd2737000f3c0800bfff0000b0ffb85fecc54eab0b0c2d80800037000f3c000002ae4eab0b0cbc5fecc5040002ae0800bfdf0000b0df0800e0031000bd27",
+      "target_hex": "37000f3cb85fef250000e0c537000f3c000080e4bc5fef250000e1c50800e003040081e4"
+    },
+    {
+      "address": "002e98b0",
+      "symbol": "_Z13func_002e98b0i",
+      "compiled_size": 60,
+      "target_size": 60,
+      "ghidra_body_size": 60,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "e3010c3ce3010f3ca4bf8e8da0bfed8dffffce25a4bf8ead23208d0083210400f807af8d0100ee2580780f00f807aead2178ed010800e0038007e4ad",
+      "target_hex": "e3010c3ce3010f3ca4bf8e8da0bfed8dffffce25a4bf8ead23208d0083210400f807af8d80700f000100ef252170cd01f807afad0800e0038007c4ad"
+    },
+    {
+      "address": "002eac70",
+      "symbol": "_Z13func_002eac70jjjj",
+      "compiled_size": 196,
+      "target_size": 36,
+      "ghidra_body_size": 36,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "2a00800442700400000084442000804636000f3c1e00a0044034e0e5000085442000804636000f3c1200c0044834e0e5000086442000804636000f3c0600e0044c34e0e5000087442000804636000f3c0800e0035034e0e5427007000100ef302578ee0100008f4420008046f7ff001000000046427006000100cf302578ee0100008f4420008046ebff001000000046427005000100af302578ee0100008f4420008046dfff00100000004601008f302578ee0100008f4420008046d4ff001000000046",
+      "target_hex": "36000f3c36000e3c4034ece54834cde536000f3c36000e3c4c34eee50800e0035034cfe5"
+    },
+    {
+      "address": "002ead48",
+      "symbol": "_Z13func_002ead48ii",
+      "compiled_size": 40,
+      "target_size": 44,
+      "ghidra_body_size": 44,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "ffff0f340600af1401000f2404008f1437000f3c36000e3cd460e0c54834c0e50800e00300000000",
+      "target_hex": "ffff0f340700af1401000f2405008f1437000f3cd460ef250000e0c536000f3c4834e0e50800e00300000000"
+    },
+    {
+      "address": "002eaee8",
+      "symbol": "_Z13func_002eaee8ii",
+      "compiled_size": 40,
+      "target_size": 44,
+      "ghidra_body_size": 44,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "ffff0f340600af1401000f2404008f1437000f3c36000e3cdc60e0c5f034c0e50800e00300000000",
+      "target_hex": "ffff0f340700af1401000f2405008f1437000f3cdc60ef250000e0c536000f3cf034e0e50800e00300000000"
+    },
+    {
+      "address": "002eccd0",
+      "symbol": "_Z13func_002eccd0ii",
+      "compiled_size": 92,
+      "target_size": 132,
+      "ghidra_body_size": 132,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "ffff0f341300af1401000f240a008f14ffff0f3437000f3c37000e3c8061e0c58461c1c5e3010f3ce3010e3c40c0e0e544c0c1e5ffff0f340600af1401000f2404008f1437000f3ce3010e3c8461e0c548c0c0e50800e00300000000",
+      "target_hex": "ffff0f341500af140000000001000f2407008f14ffff0f3437000f3c8061ef250000e0c5e3010f3c40c0e0e5ffff0f340a00af14ffff0f3401000f2407008f14ffff0f3437000f3c8461ef250000e0c5e3010f3c44c0e0e5ffff0f340700af1401000f2405008f1437000f3c8461ef250000e0c5e3010f3c48c0e0e50800e00300000000"
+    },
+    {
+      "address": "003086b8",
+      "symbol": "_Z13func_003086b8jjj",
+      "compiled_size": 92,
+      "target_size": 120,
+      "ghidra_body_size": 120,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "0e0081040c000f24ff7f0e3cffffce35e3010c3c24708e00e4578d8d1878cf012170ed010000c5ad0400c6ade457848d2178e4010800e0030800e0ade3010d3c18788f00ec57ae8d2170ee010000c5ad0400c6adf6ff0010ec57a48d",
+      "target_hex": "2d1080000f0041042d38a000ff7f033c0c000524ffff6334e301043c24184300d8578424181865000c00828c21106200040046ac000047ac2d2880030b0000100c00828c0c000324e301043c18184300d85784241400828c21106200040046ac000047ac2d2880031400828c211862000800e003080065ac"
+    },
+    {
+      "address": "00308730",
+      "symbol": "_Z13func_00308730j",
+      "compiled_size": 68,
+      "target_size": 76,
+      "ghidra_body_size": 76,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "0b0081040c000f24ff7f0f3c0c000d24ffffef35e3010e3c24788f00e457cc8d1878ed012178ec010800e0030000e0ade3010e3c18788f00ec57cd8dfaff00102178ed01",
+      "target_hex": "2d3080000b00c1040c000224ff7f023c0c000524ffff4234e301033c2410c200e457648c18104500211044000800e003000040ace301043c1810c200ec57838c211043000800e003000040ac"
+    },
+    {
+      "address": "0030fc28",
+      "symbol": "_Z13func_0030fc28Pi",
+      "compiled_size": 60,
+      "target_size": 56,
+      "ghidra_body_size": 56,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "0000828c04008f8c0a00e0112d7040000000e2ad36000f3c3071ee8d030040103071eead04008f8c04004fac0800e003040080acf9ff001036000f3c",
+      "target_hex": "0400828c030040100000838c03000010000043ac3600023c307143ac04006050040080ac0400828c040062ac040080ac0800e0032d106000"
+    },
+    {
+      "address": "0030ffd8",
+      "symbol": "_Z13func_0030ffd8v",
+      "compiled_size": 104,
+      "target_size": 112,
+      "ghidra_body_size": 112,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "36000a3c0080023c2c714c8d058042341300801100590c0036000e3c36000d3c2871cf8d0100ef252871cfad280080ad0c0080ad180080ad00008f8d2471ae8d2c714fad0100ce25ff01cf312471aead40780f000100ef3508008fad25106f010800e00300000000",
+      "target_hex": "3600023c187147241400e68c0400c014000000000080023c0800e003058042341000e28c002906000000c48c010042242800c0ac1000e2ac0c00c0ac1400e4ac0c00e38c1800c0fc010063240c00e3ac0c00e28c40100200fe034230010042340800c2ac0800c28c0800e0032510a200"
+    },
+    {
+      "address": "00310180",
+      "symbol": "_Z13func_00310180ii",
+      "compiled_size": 72,
+      "target_size": 80,
+      "ghidra_body_size": 80,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "36000f3c0080023c2071ee8d0c00c005018042340300801036000f3c2871ee8d00008eac0500a01036000f3c80000e242871ed8d2370cd010000aeac2d1000000800e00300000000",
+      "target_hex": "3600023c187143240800628c04004104000000000080023c0800e0030180423403008010000000001000628c000082ac0500a010000000001000638c80000224231043000000a2ac0800e0032d100000"
+    },
+    {
+      "address": "0031e268",
+      "symbol": "_Z13func_0031e268i",
+      "compiled_size": 100,
+      "target_size": 76,
+      "ghidra_body_size": 76,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "f0ffbd2737000f3c0000b0ff0800bfff2d80800038c2ecc54eab0b0c0400102607000e2480ff0f24ffff0d24fcff00aeffffce2500000fa201000fa202000fa203000fa2040002ae080000aef7ffcd15100010260000b0df0800bfdf0800e0031000bd27",
+      "target_hex": "37000f3c0400842438c2ef2507000e240000e0c5ffff0d2480000f24fcff80acffffce2500008fa001008fa002008fa003008fa0040080e4080080acf7ffcd15100084240800e00300000000"
+    }
+  ]
+}

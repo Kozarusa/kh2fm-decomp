@@ -1,0 +1,28 @@
+{
+  "leases": [
+    {
+      "address": "001a8c78",
+      "token": "dd461d22308b45428a4726285146a635",
+      "expires": 1791857880.0411987,
+      "metadata": {
+        "address": "001a8c78",
+        "end": "001a8ccc",
+        "bytes": 84,
+        "priority": 2,
+        "pseudocode_available": true,
+        "callees": [
+          "001c9db0"
+        ],
+        "best_proposal": {
+          "proof": "analysis/final-mix/recovery-experiments/fm_scalar_03.verification.json",
+          "source": "analysis/final-mix/recovery-experiments/fm_scalar_03.cpp",
+          "compiled_bytes": 84,
+          "target_bytes": 84,
+          "different_words": 18
+        }
+      },
+      "blocker": "{\"report\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\orch-shift1\\\\rec76\\\\001a8c78-BLOCKED.md\", \"sha256\": \"0ed439f05d5e31b180fe6a8a76e4dcb4106a4c82d69ad68145e93466d01b6541\", \"hypothesis\": \"only andi order/registers differ: reorder kind computation before 0x80 test or bind kind to register 14\"}",
+      "attempts": 2
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "wp_dir": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\orch-shift1\\nm26",
+  "start": "2026-10-17T07:17:07Z",
+  "reviewed": [
+    "00284ea8"
+  ],
+  "blocked_reports": [],
+  "results": [
+    {
+      "level": "PASS",
+      "address": "00284ea8",
+      "detail": "68 bytes exact; source orch1_nm26_00284ea8_v4.cpp"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/HANDOFF.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/PROGRESS.md"
+    }
+  ]
+}

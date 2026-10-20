@@ -1,0 +1,16 @@
+{
+  "source_sha256": "5c2d7d9cf57486ce2a5cca5a6b40dfa62e03b9da3cd4f9782cdee46cd886d71f",
+  "prior_source": "analysis/final-mix/recovery-experiments/fm_global_probes_v3_01_0.cpp",
+  "prior_source_sha256": "969d15d151ecf1bddc14d5464708e26ad36b4d7f9039239105af683bb110107d",
+  "prior_proof_sha256": "6a1c6c91d3198c1178ec20d0e2b1e15c6c90e5468b357241f190f918675dc96a",
+  "changes": [
+    {
+      "address": "001d37a0",
+      "prior_definition_sha256": "192c1a261107960d8de800ca759ddc1c55af4c0bd2b507b4e01e9c679e831f16",
+      "proposed_definition_sha256": "af3134e4920001f20e51d72c12b54c4b26d650e149cfd6378c2155b92f840271"
+    }
+  ],
+  "limitations": [
+    "Float transport roles are provisional and require complete original-range compiler equality."
+  ]
+}

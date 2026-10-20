@@ -1,0 +1,18 @@
+{
+  "source_sha256": "4c87a7c7a314503a15ecc78a3db8474033da8abef5e528de346e5ecf99b51c45",
+  "source": "analysis/final-mix/recovery-experiments/eight-hour-20261011/eight_hour_0013fec0_quad_pointer_lifetime_v2_3.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "0013fec0",
+      "symbol": "_Z13func_0013fec0Ph",
+      "compiled_size": 72,
+      "target_size": 72,
+      "ghidra_body_size": 72,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd270000b0ff0800bfff44ff040c2d808000500000e65eff040c2d20000260000f261000102604000f520000b0df0000e8790000087e0000b0df0800bfdf0800e0031000bd27",
+      "target_hex": "f0ffbd270000b0ff0800bfff44ff040c2d808000500000e65eff040c2d20000260000f261000102604000f520000b0df0000e8790000087e0000b0df0800bfdf0800e0031000bd27"
+    }
+  ]
+}

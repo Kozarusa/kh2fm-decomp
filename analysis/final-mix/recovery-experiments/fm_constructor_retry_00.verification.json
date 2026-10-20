@@ -1,0 +1,29 @@
+{
+  "source_sha256": "1fb25e8d04e20b2b1d931b81828164c46226e68017f158987f74b9516753304d",
+  "source": "analysis/final-mix/recovery-experiments/fm_constructor_retry_00.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "001060b8",
+      "symbol": "_Z13func_001060b8Pjjj",
+      "compiled_size": 40,
+      "target_size": 40,
+      "ghidra_body_size": 40,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd2734000f3c0000bfff18ccef2500008fac080086ac040085ac0000bfdf421804081000bd27",
+      "target_hex": "f0ffbd2734000f3c0000bfff18ccef2500008fac080086ac040085ac0000bfdf421804081000bd27"
+    },
+    {
+      "address": "001060e0",
+      "symbol": "_Z13func_001060e0Pjjj",
+      "compiled_size": 40,
+      "target_size": 40,
+      "ghidra_body_size": 40,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd2734000f3c0000bfff18ccef2500008fac080086ac040085ac0000bfdf421804081000bd27",
+      "target_hex": "f0ffbd2734000f3c0000bfff18ccef2500008fac080086ac040085ac0000bfdf421804081000bd27"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+001700e8: compiled 132 bytes, target 120 bytes, exact=False
+Differing words: 28. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001700e8: 27bdfff0  addiu	sp,sp,-16                                  | 001700e8: 27bdfff0  addiu	sp,sp,-16
+!! 001700ec: 3c0e0035  lui	t6,0x35                                      | 001700ec: 3c0d0035  lui	t5,0x35
+   001700f0: ffbf0000  sd	ra,0(sp)                                      | 001700f0: ffbf0000  sd	ra,0(sp)
+!! 001700f4: 8dcfdca0  lw	t7,-9056(t6)   ; = D_0034dca0                 | 001700f4: 8daedca0  lw	t6,-9056(t5)   ; = D_0034dca0
+!! 001700f8: 548f000d  bnel	a0,t7,0x170130                              | 001700f8: 148e000e  bne	a0,t6,170134 <func_001700e8+0x4c>
+!! 001700fc: 8dee003c  lw	t6,60(t7)                                     | 001700fc: 0080602d  move	t4,a0
+   00170100: 8c8f003c  lw	t7,60(a0)                                     | 00170100: 8c8f003c  lw	t7,60(a0)
+!! 00170104: 0000682d  move	t5,zero                                     | 00170104: 0000582d  move	t3,zero
+!! 00170108: adcfdca0  sw	t7,-9056(t6)                                  | 00170108: adafdca0  sw	t7,-9056(t5)   ; = D_0034dca0
+   0017010c: 3c0f0035  lui	t7,0x35                                      | 0017010c: 3c0f0035  lui	t7,0x35
+!! 00170110: 25efdca0  addiu	t7,t7,-9056   ; = D_0034dca0               | 00170110: dfbf0000  ld	ra,0(sp)
+!! 00170114: 8dee0004  lw	t6,4(t7)                                      | 00170114: 8deedca4  lw	t6,-9052(t7)   ; = D_0034dca4
+!! 00170118: 508e0001  beql	a0,t6,0x170120                              | 00170118: 0180202d  move	a0,t4
+!! 0017011c: aded0004  sw	t5,4(t7)                                      | 0017011c: 018e6826  xor	t5,t4,t6
+!! 00170120: ac80003c  sw	zero,60(a0)                                   | 00170120: 016d700a  movz	t6,t3,t5
+!! 00170124: dfbf0000  ld	ra,0(sp)                                      | 00170124: adeedca4  sw	t6,-9052(t7)   ; = D_0034dca4
+!! 00170128: 0805bec0  j	0x16fb00                                       | 00170128: ad80003c  sw	zero,60(t4)
+!! 0017012c: 27bd0010  addiu	sp,sp,16                                   | 0017012c: 0805bec0  j	16fb00 <func_0016fb00>
+!! 00170130: 11c40008  beq	t6,a0,0x170154                               | 00170130: 27bd0010  addiu	sp,sp,16
+!! 00170134: 01e0682d  move	t5,t7                                       | 00170134: 8dcf003c  lw	t7,60(t6)
+!! 00170138: 8dcf003c  lw	t7,60(t6)                                     | 00170138: 11e40009  beq	t7,a0,170160 <func_001700e8+0x78>
+!! 0017013c: 01c0682d  move	t5,t6                                       | 0017013c: 01c0582d  move	t3,t6
+!! 00170140: 00000000  nop                                              | 00170140: 01e0582d  move	t3,t7
+!! 00170144: 00000000  nop                                              | 00170144: 8def003c  lw	t7,60(t7)
+   00170148: 00000000  nop                                              | 00170148: 00000000  nop
+!! 0017014c: 15e4fffa  bne	t7,a0,0x170138                               | 0017014c: 00000000  nop
+!! 00170150: 01e0702d  move	t6,t7                                       | 00170150: 00000000  nop
+!! 00170154: 8c8f003c  lw	t7,60(a0)                                     | 00170154: 00000000  nop
+!! 00170158: 1000ffec  b	0x17010c                                       | 00170158: 55ecfffa  bnel	t7,t4,170144 <func_001700e8+0x5c>
+!! 0017015c: adaf003c  sw	t7,60(t5)                                     | 0017015c: 01e0582d  move	t3,t7
+!!                                                                      | 00170160: 8d8f003c  lw	t7,60(t4)
+!!                                                                      | 00170164: 1000ffe9  b	17010c <func_001700e8+0x24>
+!!                                                                      | 00170168: ad6f003c  sw	t7,60(t3)

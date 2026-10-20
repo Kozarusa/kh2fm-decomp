@@ -1,0 +1,11 @@
+{
+  "minimum_active_seconds": 28800,
+  "measured_active_seconds": 28802,
+  "measured_active_duration": "8 hours, 0 minutes, 2 seconds",
+  "interruptions_and_calendar_idle_excluded": true,
+  "source": "Goal service get_goal timeUsedSeconds, sampled after all acceptance and deliverable audits passed.",
+  "recorded_at_utc": "2026-10-12T13:59:42.715865+00:00",
+  "accepted_new_exact_functions": 281,
+  "final_exact_functions": 6087,
+  "final_checkpoint": "primary-queuexiprime-checkpoint-2026-10-08.json"
+}

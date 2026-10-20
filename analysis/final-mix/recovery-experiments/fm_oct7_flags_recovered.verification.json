@@ -1,0 +1,29 @@
+{
+  "source_sha256": "96cb27accae79fe7d3a4d734e530cc12c9bfa229a6a9818919e8d2dc8dbb5048",
+  "source": "analysis/final-mix/recovery-experiments/fm_oct7_flags_recovered.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "001671e8",
+      "symbol": "_Z13func_001671e8ij",
+      "compiled_size": 44,
+      "target_size": 44,
+      "ghidra_body_size": 44,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "983a0f24983a8d284f000c3c0b20ed0140428e25ff00a53001000f240100c5a140428fa10800e0030400c4ad",
+      "target_hex": "983a0f24983a8d284f000c3c0b20ed0140428e25ff00a53001000f240100c5a140428fa10800e0030400c4ad"
+    },
+    {
+      "address": "0020ea70",
+      "symbol": "_Z13func_0020ea70jj",
+      "compiled_size": 44,
+      "target_size": 44,
+      "ghidra_body_size": 44,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "ff008430ff00a5300008854436000f3c000084441091ef2560088046200080460800e1e50800e0030c00e0e5",
+      "target_hex": "ff008430ff00a5300008854436000f3c000084441091ef2560088046200080460800e1e50800e0030c00e0e5"
+    }
+  ]
+}

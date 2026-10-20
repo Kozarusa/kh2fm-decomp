@@ -1,0 +1,31 @@
+002a74c0: compiled 108 bytes, target 108 bytes, exact=False
+Differing words: 16. First difference at instruction 5 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   002a74c0: 27bdfff0  addiu	sp,sp,-16                                  | 002a74c0: 27bdfff0  addiu	sp,sp,-16
+   002a74c4: ffbf0000  sd	ra,0(sp)                                      | 002a74c4: ffbf0000  sd	ra,0(sp)
+   002a74c8: 0c04163a  jal	0x1058e8                                     | 002a74c8: 0c04163a  jal	1058e8 <func_001058e8>
+   002a74cc: 00000000  nop                                              | 002a74cc: 00000000  nop
+   002a74d0: 244249f4  addiu	v0,v0,18932                                | 002a74d0: 244249f4  addiu	v0,v0,18932
+!! 002a74d4: 0000502d  move	t2,zero                                     | 002a74d4: 0000482d  move	t1,zero
+   002a74d8: 0000602d  move	t4,zero                                     | 002a74d8: 0000602d  move	t4,zero
+!! 002a74dc: 240b0001  li	t3,1                                          | 002a74dc: 240a0001  li	t2,1
+!! 002a74e0: 000c7942  srl	t7,t4,0x5                                    | 002a74e0: 000c6942  srl	t5,t4,0x5
+!! 002a74e4: 318d001f  andi	t5,t4,0x1f                                  | 002a74e4: 318e001f  andi	t6,t4,0x1f
+!! 002a74e8: 000f7880  sll	t7,t7,0x2                                    | 002a74e8: 258c0001  addiu	t4,t4,1
+!! 002a74ec: 258c0001  addiu	t4,t4,1                                    | 002a74ec: 000d6880  sll	t5,t5,0x2
+!! 002a74f0: 01e27821  addu	t7,t7,v0                                    | 002a74f0: 01a26821  addu	t5,t5,v0
+!! 002a74f4: 01ab6804  sllv	t5,t3,t5                                    | 002a74f4: 01ca7004  sllv	t6,t2,t6
+!! 002a74f8: 8dee0000  lw	t6,0(t7)                                      | 002a74f8: 8daf0000  lw	t7,0(t5)
+!! 002a74fc: 01cd7024  and	t6,t6,t5                                     | 002a74fc: 01ee7824  and	t7,t7,t6
+!! 002a7500: 11c00006  beqz	t6,0x2a751c                                 | 002a7500: 11e00006  beqz	t7,2a751c <func_002a74c0+0x5c>
+!! 002a7504: 298f0040  slti	t7,t4,64                                    | 002a7504: 298b0040  slti	t3,t4,64
+!! 002a7508: 240a0001  li	t2,1                                          | 002a7508: 24090001  li	t1,1
+   002a750c: dfbf0000  ld	ra,0(sp)                                      | 002a750c: dfbf0000  ld	ra,0(sp)
+!! 002a7510: 0140102d  move	v0,t2                                       | 002a7510: 0120102d  move	v0,t1
+   002a7514: 03e00008  jr	ra                                            | 002a7514: 03e00008  jr	ra
+   002a7518: 27bd0010  addiu	sp,sp,16                                   | 002a7518: 27bd0010  addiu	sp,sp,16
+!! 002a751c: 55e0fff1  bnezl	t7,0x2a74e4                                | 002a751c: 1560fff1  bnez	t3,2a74e4 <func_002a74c0+0x24>
+!! 002a7520: 000c7942  srl	t7,t4,0x5                                    | 002a7520: 000c6942  srl	t5,t4,0x5
+   002a7524: 1000fffa  b	0x2a7510                                       | 002a7524: 1000fffa  b	2a7510 <func_002a74c0+0x50>
+   002a7528: dfbf0000  ld	ra,0(sp)                                      | 002a7528: dfbf0000  ld	ra,0(sp)

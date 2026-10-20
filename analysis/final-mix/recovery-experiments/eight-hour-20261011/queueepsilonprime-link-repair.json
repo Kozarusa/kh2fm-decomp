@@ -1,0 +1,18 @@
+{
+  "address": "001394d8",
+  "reason": "The legacy assembly definition of func_00139768 resolves to temporary linked text and shadows the address PROVIDE. A distinct typed function alias D_00139768 resolves absolutely to 00139768.",
+  "old_registered_sha256": "2b97141221838d7cb58d153372cab82fdbacab63600e4715fe3f9911e70a95b3",
+  "archived_registered_source": "analysis/final-mix/recovery-experiments/eight-hour-20261011/queueepsilonprime-pre-repair-registered.cpp",
+  "new_registered_source": "src/anon/fm_primary_queueepsilonprime_repaired_001394d8.cpp",
+  "new_source_sha256": "f4fabdb7390d81e4fca90958d9d08cf4b79bcc49bd4e5b1300766ad40f87dfe0",
+  "new_proof_sha256": "92abaabea32fa80873c0d15d02fbcb303b5eed54585a9e877a2e68301b08e899",
+  "stage_old_source": "src/anon/fm_primary_queueepsilonprime_recovered_001394d8.cpp",
+  "stage_archive": "out/rejected/fm_primary_queueepsilonprime_recovered_001394d8.cpp",
+  "sync_manifest": "analysis/final-mix/native-build/primary-queueepsilonprime-repair-sync-inputs.json",
+  "failed_full_elf": "queueepsilonprime-failed-full.elf",
+  "prior_receipts": [
+    "analysis/final-mix/recovery-experiments/eight-hour-20261011/queueepsilonprime-curated-inputs.json.before-link-repair",
+    "analysis/final-mix/recovery-experiments/eight-hour-20261011/primary-queueepsilonprime-curated-bundle.json.before-link-repair",
+    "analysis/final-mix/recovery-experiments/eight-hour-20261011/queueepsilonprime-queue-submissions.json.before-link-repair"
+  ]
+}

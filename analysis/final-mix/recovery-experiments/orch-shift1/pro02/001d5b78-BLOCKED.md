@@ -1,0 +1,11 @@
+# 001d5b78 blocked
+- Range: 001d5b78, 64 bytes. Versions tried: 5. Best: v1 with 2 differing words (64/64 bytes).
+- First difference of the best version: `!! 001d5b80: ffbf0000  sd	ra,0(sp)                                      | 001d5b80: 8deeba70  lw	t6,-17808(t7)   ; = D_01d5ba70`
+- Changes tried:
+  - v1: copy of recovery_a v1 (Ghidra names and `long` casts removed): 2 words (lw t6 and sd ra swapped).
+  - v2: blocker hypothesis, t6-bound pointer with `asm("" : "+r"(pointer) : "r"(shifted))` after the sll: 5 words. Prefix now exact (addiu sp, lui t7, sd ra, sll, lw t6), but the tail reorders to lui t0, lw a2, or, addiu t0, li a3.
+  - v3: same marker without the shifted input: 4 words. Prefix and `or` exact; only lw a2,4(t6) moves ahead of lui t0 / li a3 (original: lui t0, li a3, lw a2, addiu t0).
+  - v4: v3 with the shift written inline in the call: 4 words, identical to v3.
+  - v5: v3 without the $14 binding: 9 words (pointer allocated to a1, flag copied to t6).
+- Why it stops here: no improvement for 3 versions.
+- Next hypothesis: start from v3 (prefix solved by the single-reader marker on the t6 pointer); the remaining residual is lw a2,4(t6) ranking above lui t0 and li a3. Try delaying the third argument load (for example a second empty `+r` marker on the loaded third value bound to $6, or loading it through the marker output after the 8 and the D_003217a0 address are computed) so the reverse argument order lui t0, li a3, lw a2 is restored.

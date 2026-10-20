@@ -1,0 +1,27 @@
+0016c508: compiled 92 bytes, target 92 bytes, exact=False
+Differing words: 13. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0016c508: 27bdffe0  addiu	sp,sp,-32                                  | 0016c508: 27bdffe0  addiu	sp,sp,-32
+!! 0016c50c: ffb00000  sd	s0,0(sp)                                      | 0016c50c: ffb10008  sd	s1,8(sp)
+!! 0016c510: ffb10008  sd	s1,8(sp)                                      | 0016c510: ffb00000  sd	s0,0(sp)
+!! 0016c514: 0080802d  move	s0,a0                                       | 0016c514: 0080882d  move	s1,a0
+   0016c518: ffbf0010  sd	ra,16(sp)                                     | 0016c518: ffbf0010  sd	ra,16(sp)
+!! 0016c51c: 00a0882d  move	s1,a1                                       | 0016c51c: 00a0802d  move	s0,a1
+   0016c520: 0c05b00a  jal	0x16c028                                     | 0016c520: 0c05b00a  jal	16c028 <func_0016c028>
+   0016c524: 00a0202d  move	a0,a1                                       | 0016c524: 00a0202d  move	a0,a1
+!! 0016c528: 78480000  lq	t0,0(v0)                                      | 0016c528: 8e0e0008  lw	t6,8(s0)
+!! 0016c52c: 7e080000  sq	t0,0(s0)                                      | 0016c52c: 784f0000  lq	t7,0(v0)
+!! 0016c530: 8e2f0008  lw	t7,8(s1)                                      | 0016c530: 95c4004e  lhu	a0,78(t6)
+   0016c534: 0c0738ca  jal	0x1ce328                                     | 0016c534: 0c0738ca  jal	1ce328 <func_001ce328>
+!! 0016c538: 95e4004e  lhu	a0,78(t7)                                    | 0016c538: 7e2f0000  sq	t7,0(s1)
+   0016c53c: c4410030  lwc1	$f1,48(v0)                                  | 0016c53c: c4410030  lwc1	$f1,48(v0)
+!! 0016c540: c6000004  lwc1	$f0,4(s0)                                   | 0016c540: c6200004  lwc1	$f0,4(s1)
+!! 0016c544: 0200102d  move	v0,s0                                       | 0016c544: 0220102d  move	v0,s1
+!! 0016c548: dfb10008  ld	s1,8(sp)                                      | 0016c548: dfb00000  ld	s0,0(sp)
+   0016c54c: 46010001  sub.s	$f0,$f0,$f1                                | 0016c54c: 46010001  sub.s	$f0,$f0,$f1
+   0016c550: dfbf0010  ld	ra,16(sp)                                     | 0016c550: dfbf0010  ld	ra,16(sp)
+!! 0016c554: e6000004  swc1	$f0,4(s0)                                   | 0016c554: e6200004  swc1	$f0,4(s1)
+!! 0016c558: dfb00000  ld	s0,0(sp)                                      | 0016c558: dfb10008  ld	s1,8(sp)
+   0016c55c: 03e00008  jr	ra                                            | 0016c55c: 03e00008  jr	ra
+   0016c560: 27bd0020  addiu	sp,sp,32                                   | 0016c560: 27bd0020  addiu	sp,sp,32

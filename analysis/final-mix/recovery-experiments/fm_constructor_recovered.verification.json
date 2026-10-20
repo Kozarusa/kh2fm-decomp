@@ -1,0 +1,29 @@
+{
+  "source_sha256": "5cb89b2ce47772ab9584a163786baf4a710b4975d708eb1ffca83d718ee5770b",
+  "source": "analysis/final-mix/recovery-experiments/fm_constructor_recovered.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "001060b8",
+      "symbol": "_Z13func_001060b8Pjjj",
+      "compiled_size": 40,
+      "target_size": 40,
+      "ghidra_body_size": 40,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd2734000f3c0000bfff18ccef2500008fac080086ac040085ac0000bfdf421804081000bd27",
+      "target_hex": "f0ffbd2734000f3c0000bfff18ccef2500008fac080086ac040085ac0000bfdf421804081000bd27"
+    },
+    {
+      "address": "001060e0",
+      "symbol": "_Z13func_001060e0Pjjj",
+      "compiled_size": 40,
+      "target_size": 40,
+      "ghidra_body_size": 40,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd2734000f3c0000bfff18ccef2500008fac080086ac040085ac0000bfdf421804081000bd27",
+      "target_hex": "f0ffbd2734000f3c0000bfff18ccef2500008fac080086ac040085ac0000bfdf421804081000bd27"
+    }
+  ]
+}

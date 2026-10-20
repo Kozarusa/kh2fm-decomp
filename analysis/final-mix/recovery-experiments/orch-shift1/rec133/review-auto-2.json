@@ -1,0 +1,61 @@
+{
+  "wp_dir": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\orch-shift1\\rec133",
+  "start": "2026-10-13T16:56:02Z",
+  "reviewed": [
+    "00225690",
+    "002278e0",
+    "00225aa8",
+    "00224f38",
+    "00225328"
+  ],
+  "blocked_reports": [
+    "00226050-BLOCKED.md"
+  ],
+  "results": [
+    {
+      "level": "PASS",
+      "address": "00225690",
+      "detail": "52 bytes exact; source orch1_rec133_00225690_v1.cpp"
+    },
+    {
+      "level": "PASS",
+      "address": "002278e0",
+      "detail": "80 bytes exact; source orch1_rec133_002278e0_v2.cpp"
+    },
+    {
+      "level": "PASS",
+      "address": "00225aa8",
+      "detail": "84 bytes exact; source orch1_rec133_00225aa8_v1.cpp"
+    },
+    {
+      "level": "PASS",
+      "address": "00224f38",
+      "detail": "104 bytes exact; source orch1_rec133_00224f38_v3.cpp"
+    },
+    {
+      "level": "PASS",
+      "address": "00225328",
+      "detail": "116 bytes exact; source orch1_rec133_00225328_v1.cpp"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/GPT6-MEMORY.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/HANDOFF.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/PROGRESS.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/rec133-prototype-correction.md"
+    }
+  ]
+}

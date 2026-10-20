@@ -1,0 +1,6 @@
+Exact probe matches: 0/1
+Detailed proof: analysis/final-mix/recovery-experiments/queue-run-20261009/recovery-a/recovery_a_0019ab30_2412c22c_v3.verification.json
+recovery-experiments/recovery_a_0019ab30_2412c22c_v3/probe.cpp: In function 
+   `u32 func_0019ab30(int)':
+recovery-experiments/recovery_a_0019ab30_2412c22c_v3/probe.cpp:11: warning: cast
+   from pointer to integer of different size

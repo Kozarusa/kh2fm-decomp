@@ -1,0 +1,25 @@
+{
+  "kind": "separate_assembly_review_candidates_not_cpp_recoveries",
+  "artifacts": [
+    {
+      "source": "recovery_b_00100228_70118fc3_startup_v2.S",
+      "source_sha256": "c6eb900e954722685b21b8ef50f781aa697a2776ee59aa20c8d7030448643e25",
+      "proof": "recovery_b_00100228_70118fc3_startup_v2.assembly-verification.json",
+      "proof_sha256": "43aad87856c249c9d8ff8c0810dadd4f5cc95d93b70893f64c6b6b34a1994064",
+      "address": "00100228",
+      "bytes": 116,
+      "kind": "structured_startup_assembly_not_cpp_recovery",
+      "abi": "Incoming v0 cursor and v1 exclusive end; outgoing v0=end; a0 scratch; no frame."
+    },
+    {
+      "source": "recovery_b_001002a0_c03ab829_startup_thunk.S",
+      "source_sha256": "bfc309862493809a4829b3bfb3add9c58729aa8580ba1bc6fafd6b3359254db1",
+      "proof": "recovery_b_001002a0_c03ab829_startup_thunk.assembly-verification.json",
+      "proof_sha256": "141ed3a9e7f864eff6ec96aff9e8a9fadc2abefc009ffa17f55e302b3506e722",
+      "address": "001002a0",
+      "bytes": 8,
+      "kind": "structured_startup_assembly_not_cpp_recovery",
+      "abi": "Tail jump to0030f468, preserving incoming registers and original link register."
+    }
+  ]
+}

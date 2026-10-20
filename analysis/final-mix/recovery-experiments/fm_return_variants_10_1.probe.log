@@ -1,0 +1,40 @@
+recovery-experiments/fm_return_variants_10_1/probe.cpp: In function `void 
+   func_00263688()':
+recovery-experiments/fm_return_variants_10_1/probe.cpp:160: cannot convert `
+   func_002632d0(...)()' from type `void' to type `u16*'
+recovery-experiments/fm_return_variants_10_1/probe.cpp: In function `u16 
+   func_00271870(long long int)':
+recovery-experiments/fm_return_variants_10_1/probe.cpp:342: warning: cast to 
+   pointer from integer of different size
+recovery-experiments/fm_return_variants_10_1/probe.cpp: In function `void 
+   func_00272a00()':
+recovery-experiments/fm_return_variants_10_1/probe.cpp:367: void value not 
+   ignored as it ought to be
+recovery-experiments/fm_return_variants_10_1/probe.cpp: In function `void 
+   func_00272a70()':
+recovery-experiments/fm_return_variants_10_1/probe.cpp:391: void value not 
+   ignored as it ought to be
+recovery-experiments/fm_return_variants_10_1/probe.cpp: In function `void 
+   func_00288c58(int, int)':
+recovery-experiments/fm_return_variants_10_1/probe.cpp:558: void value not 
+   ignored as it ought to be
+recovery-experiments/fm_return_variants_10_1/probe.cpp:560: void value not 
+   ignored as it ought to be
+recovery-experiments/fm_return_variants_10_1/probe.cpp:562: void value not 
+   ignored as it ought to be
+recovery-experiments/fm_return_variants_10_1/probe.cpp: In function `void 
+   func_0028afd0(long long unsigned int, short int)':
+recovery-experiments/fm_return_variants_10_1/probe.cpp:620: warning: cast to 
+   pointer from integer of different size
+recovery-experiments/fm_return_variants_10_1/probe.cpp: In function `void 
+   func_0028bdb8(u32*)':
+recovery-experiments/fm_return_variants_10_1/probe.cpp:669: void value not 
+   ignored as it ought to be
+Traceback (most recent call last):
+  File "/mnt/c/Users/KoZa/Documents/ChatGPT/tools/kh2-audit/probe_fm_source.py", line 36, in <module>
+    run(f'/opt/ps2/gcc/bin/ee-g++ -O2 -g0 -x c++ -fno-exceptions -fno-rtti -fpermissive -ffunction-sections -c {relative}/probe.cpp -o {relative}/probe.o')
+  File "/mnt/c/Users/KoZa/Documents/ChatGPT/tools/kh2-audit/probe_fm_source.py", line 32, in run
+    subprocess.run(['docker', 'run', '--rm', '--platform', 'linux/amd64',
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['docker', 'run', '--rm', '--platform', 'linux/amd64', '-v', '/root/kh2fm-build:/work', '-w', '/work', 'kh2-local/ps2-compiler:3.2-ee-040921-objdiff', 'bash', '-lc', '/opt/ps2/gcc/bin/ee-g++ -O2 -g0 -x c++ -fno-exceptions -fno-rtti -fpermissive -ffunction-sections -c recovery-experiments/fm_return_variants_10_1/probe.cpp -o recovery-experiments/fm_return_variants_10_1/probe.o']' returned non-zero exit status 1.

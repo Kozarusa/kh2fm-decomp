@@ -1,0 +1,13 @@
+# Medium vector and scalar recovery rationale
+
+Sixteen independently matching proposals were curated for queuexiprime. Acceptance still requires the full cumulative executable and proof matrix; the publication receipt is authoritative.
+
+Seven vector routines construct a 16-byte temporary using a helper, conditionally copy it to a global or helper-returned destination, and in most cases update a descriptor pointer. The source uses the compiler's 128-bit integer mode for the quadword. A conditional volatile quadword read prevents the compiler from speculating the load into an ordinary branch delay slot. This reproduces the original branch-likely instruction or duplicated restoration paths. The volatile qualification models the original conditional memory access; it does not introduce an emitted assembly instruction.
+
+The PS2 ABI allocates Word arguments and floating-point arguments in separate register banks. Ordering Word parameters before floating-point parameters in the provisional helper declarations restores the original load scheduling without changing their physical argument registers. These declarations document observed machine transport, not established original class or function signatures.
+
+The scalar matches cover a buffer selector, ordered global writes, two virtual dispatch routines, a conditional callback with common argument preparation, a vector-valued helper call, a virtual callback with a local vector snapshot, a guarded helper sequence, and a global flag predicate. In the flag predicate, an empty constraint on the already masked Word prevents the compiler from replacing ANDI plus SLTU with a shift and a low-bit mask. In the global writer, volatile stores and constrained pointer allocation preserve the measured store order. In the snapshot callback, a memory dependency after the copy places the outgoing call arguments after the completed local snapshot.
+
+All sixteen selected sources express their operations in C++ with compiler register or memory constraints; their assembly strings are empty and emit no instruction bodies. Narrow emitted primitives occur in other accepted session families and are explained separately. Isolated proof equality alone is insufficient: linked function addresses, all accepted native ranges, the full executable hash, warning audit, and cumulative bundle receipts must pass before queue acceptance.
+
+Eight other ranges remain unaccepted. Their individual medium blocker reports and failed-census JSON files record the measured differences and hash the saved proof files. A mismatch is a focused next investigation, not a claim that recovery is impossible.

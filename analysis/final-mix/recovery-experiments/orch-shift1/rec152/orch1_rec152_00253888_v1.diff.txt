@@ -1,0 +1,31 @@
+00253888: compiled 104 bytes, target 108 bytes, exact=False
+Differing words: 26. First difference at instruction 0 (0-based).
+
+ORIGINAL                                                                | COMPILED
+!! 00253888: 3c0f01db  lui	t7,0x1db                                     | 00253888: 3c0f0036  lui	t7,0x36
+!! 0025388c: 3c0e0036  lui	t6,0x36                                      | 0025388c: 3c0e01db  lui	t6,0x1db
+!! 00253890: 25e9e6c0  addiu	t1,t7,-6464   ; = D_01dae6c0               | 00253890: 25edeee0  addiu	t5,t7,-4384   ; = D_0035eee0
+!! 00253894: 25ceeee0  addiu	t6,t6,-4384   ; = D_0035eee0               | 00253894: 25cee6c0  addiu	t6,t6,-6464   ; = D_01dae6c0
+!! 00253898: 0000502d  move	t2,zero                                     | 00253898: 0000482d  move	t1,zero
+!! 0025389c: 240c0006  li	t4,6                                          | 0025389c: 240b0006  li	t3,6
+!! 002538a0: 8dcd000c  lw	t5,12(t6)                                     | 002538a0: 8dac000c  lw	t4,12(t5)
+!! 002538a4: 11a0000c  beqz	t5,0x2538d8                                 | 002538a4: 1180000b  beqz	t4,2538d4 <func_00253888+0x4c>
+!! 002538a8: 258cffff  addiu	t4,t4,-1                                   | 002538a8: 256bffff  addiu	t3,t3,-1
+!! 002538ac: 8dcf0000  lw	t7,0(t6)                                      | 002538ac: 8daf0000  lw	t7,0(t5)
+!! 002538b0: 01e45826  xor	t3,t7,a0                                     | 002538b0: 01e45026  xor	t2,t7,a0
+   002538b4: 01e4782a  slt	t7,t7,a0                                     | 002538b4: 01e4782a  slt	t7,t7,a0
+!! 002538b8: 15e00007  bnez	t7,0x2538d8                                 | 002538b8: 15e00006  bnez	t7,2538d4 <func_00253888+0x4c>
+!! 002538bc: 00000000  nop                                              | 002538bc: 018e7823  subu	t7,t4,t6
+!! 002538c0: 01a97823  subu	t7,t5,t1                                    | 002538c0: ada00000  sw	zero,0(t5)
+!! 002538c4: adc00000  sw	zero,0(t6)                                    | 002538c4: ada00004  sw	zero,4(t5)
+!! 002538c8: adc00004  sw	zero,4(t6)                                    | 002538c8: 01ea480a  movz	t1,t7,t2
+!! 002538cc: 01eb500a  movz	t2,t7,t3                                    | 002538cc: ada0000c  sw	zero,12(t5)
+!! 002538d0: adc0000c  sw	zero,12(t6)                                   | 002538d0: ada00008  sw	zero,8(t5)
+!! 002538d4: adc00008  sw	zero,8(t6)                                    | 002538d4: 0561fff2  bgez	t3,2538a0 <func_00253888+0x18>
+!! 002538d8: 0581fff1  bgez	t4,0x2538a0                                 | 002538d8: 25ad0010  addiu	t5,t5,16
+!! 002538dc: 25ce0010  addiu	t6,t6,16                                   | 002538dc: 3c0f0036  lui	t7,0x36
+!! 002538e0: 3c0f0036  lui	t7,0x36                                      | 002538e0: 3c0e0036  lui	t6,0x36
+!! 002538e4: 3c0e0036  lui	t6,0x36                                      | 002538e4: ade9ef50  sw	t1,-4272(t7)   ; = D_0035ef50
+!! 002538e8: adeaef50  sw	t2,-4272(t7)   ; = D_0035ef50                 | 002538e8: 03e00008  jr	ra
+!! 002538ec: 03e00008  jr	ra                                            | 002538ec: adc4ef54  sw	a0,-4268(t6)   ; = D_0035ef54
+!! 002538f0: adc4ef54  sw	a0,-4268(t6)   ; = D_0035ef54                 | 

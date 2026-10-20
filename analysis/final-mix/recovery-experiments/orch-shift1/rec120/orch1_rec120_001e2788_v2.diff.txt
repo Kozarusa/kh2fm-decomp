@@ -1,0 +1,17 @@
+001e2788: compiled 52 bytes, target 52 bytes, exact=False
+Differing words: 2. First difference at instruction 3 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001e2788: 27bdfff0  addiu	sp,sp,-16                                  | 001e2788: 27bdfff0  addiu	sp,sp,-16
+   001e278c: ac800dc0  sw	zero,3520(a0)                                 | 001e278c: ac800dc0  sw	zero,3520(a0)
+   001e2790: ffbf0000  sd	ra,0(sp)                                      | 001e2790: ffbf0000  sd	ra,0(sp)
+!! 001e2794: 240effff  li	t6,-1                                         | 001e2794: 240fffff  li	t7,-1
+!! 001e2798: ac8e0e00  sw	t6,3584(a0)                                   | 001e2798: ac8f0e00  sw	t7,3584(a0)
+   001e279c: ac800dc4  sw	zero,3524(a0)                                 | 001e279c: ac800dc4  sw	zero,3524(a0)
+   001e27a0: ac800dcc  sw	zero,3532(a0)                                 | 001e27a0: ac800dcc  sw	zero,3532(a0)
+   001e27a4: ac800dd0  sw	zero,3536(a0)                                 | 001e27a4: ac800dd0  sw	zero,3536(a0)
+   001e27a8: ac800de4  sw	zero,3556(a0)                                 | 001e27a8: ac800de4  sw	zero,3556(a0)
+   001e27ac: ac800dec  sw	zero,3564(a0)                                 | 001e27ac: ac800dec  sw	zero,3564(a0)
+   001e27b0: dfbf0000  ld	ra,0(sp)                                      | 001e27b0: dfbf0000  ld	ra,0(sp)
+   001e27b4: 080785ee  j	0x1e17b8                                       | 001e27b4: 080785ee  j	1e17b8 <func_001e17b8>
+   001e27b8: 27bd0010  addiu	sp,sp,16                                   | 001e27b8: 27bd0010  addiu	sp,sp,16

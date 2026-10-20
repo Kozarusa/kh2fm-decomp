@@ -1,0 +1,18 @@
+{
+  "source_sha256": "c4072974fc5ee61a4356314e9d97a01fdef30c26066ebecf004755c9f8d6a60c",
+  "source": "analysis/final-mix/recovery-experiments/orch-shift1/rec112/orch1_rec112_001db198_v3.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "001db198",
+      "symbol": "_Z13func_001db198xx",
+      "compiled_size": 96,
+      "target_size": 104,
+      "ghidra_body_size": 104,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "f0ffbd27010002240000b0ff0800bfff0f00a0102d8080000d00a0042d1000000300af280b00e0510000b0df806c070c000000002d780000040040102d200002946c070c000000002b7802002d10e0010000b0df0800bfdf0800e0031000bd27",
+      "target_hex": "e0ffbd27010002240000b0ff0800b1ff1000bfff0d00a0102d8080001000a0040300af280900e0112d100000806c070c2d880000040040102d200002946c070c000000002b8802002d1020020000b0df0800b1df1000bfdf0800e0032000bd27faff00102d100000"
+    }
+  ]
+}

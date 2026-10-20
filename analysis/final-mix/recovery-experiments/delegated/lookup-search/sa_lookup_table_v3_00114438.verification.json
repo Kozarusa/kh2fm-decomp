@@ -1,0 +1,18 @@
+{
+  "source_sha256": "71f6f992ab983766bbf055041c93ec8db8e5d94ae01fec120333f96c3e625fb0",
+  "source": "analysis/final-mix/recovery-experiments/delegated/lookup-search/sa_lookup_table_v3_00114438.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "00114438",
+      "symbol": "_Z13func_00114438ji",
+      "compiled_size": 88,
+      "target_size": 88,
+      "ghidra_body_size": 84,
+      "boundary_agreement": false,
+      "exact_match": false,
+      "compiled_hex": "08008e8c1200c01100000000a400cf8d2d600000a000cd8d0d00a0192178cf012d50e0012d58a001c0790c002168ea0101008c250000af8d0300e5152a708b010800e0032d10a001f8ffc015c0790c000800e0032d100000",
+      "target_hex": "08008e8c1200c0112d100000a400cf8d2d600000a000cd8d0d00a0192150cf012d58a001c0790c002168ea0101008c250000af8d0400e5152a708b010800e0032d10a00100000000f7ffc015c0790c000800e00300000000"
+    }
+  ]
+}

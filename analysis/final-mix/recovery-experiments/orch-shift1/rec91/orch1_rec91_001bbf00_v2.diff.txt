@@ -1,0 +1,21 @@
+001bbf00: compiled 68 bytes, target 64 bytes, exact=False
+Differing words: 6. First difference at instruction 4 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001bbf00: 27bdfff0  addiu	sp,sp,-16                                  | 001bbf00: 27bdfff0  addiu	sp,sp,-16
+   001bbf04: ffbf0000  sd	ra,0(sp)                                      | 001bbf04: ffbf0000  sd	ra,0(sp)
+   001bbf08: 0c06ed28  jal	0x1bb4a0                                     | 001bbf08: 0c06ed28  jal	1bb4a0 <func_001bb4a0>
+   001bbf0c: 00000000  nop                                              | 001bbf0c: 00000000  nop
+!! 001bbf10: 10400007  beqz	v0,0x1bbf30                                 | 001bbf10: 10400008  beqz	v0,1bbf34 <func_001bbf00+0x34>
+   001bbf14: 0000782d  move	t7,zero                                     | 001bbf14: 0000782d  move	t7,zero
+   001bbf18: 0c06ef2c  jal	0x1bbcb0                                     | 001bbf18: 0c06ef2c  jal	1bbcb0 <func_001bbcb0>
+   001bbf1c: 00000000  nop                                              | 001bbf1c: 00000000  nop
+   001bbf20: 8c4e0008  lw	t6,8(v0)                                      | 001bbf20: 8c4e0008  lw	t6,8(v0)
+   001bbf24: 95cf0004  lhu	t7,4(t6)                                     | 001bbf24: 95cf0004  lhu	t7,4(t6)
+   001bbf28: 000f7b02  srl	t7,t7,0xc                                    | 001bbf28: 000f7b02  srl	t7,t7,0xc
+   001bbf2c: 31ef0001  andi	t7,t7,0x1                                   | 001bbf2c: 31ef0001  andi	t7,t7,0x1
+!! 001bbf30: dfbf0000  ld	ra,0(sp)                                      | 001bbf30: 31efffff  andi	t7,t7,0xffff
+!! 001bbf34: 01e0102d  move	v0,t7                                       | 001bbf34: dfbf0000  ld	ra,0(sp)
+!! 001bbf38: 03e00008  jr	ra                                            | 001bbf38: 01e0102d  move	v0,t7
+!! 001bbf3c: 27bd0010  addiu	sp,sp,16                                   | 001bbf3c: 03e00008  jr	ra
+!!                                                                      | 001bbf40: 27bd0010  addiu	sp,sp,16

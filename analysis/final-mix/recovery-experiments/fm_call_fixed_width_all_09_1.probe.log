@@ -1,0 +1,12 @@
+Exact probe matches: 0/45
+Detailed proof: analysis/final-mix/recovery-experiments/fm_call_fixed_width_all_09_1.verification.json
+recovery-experiments/fm_call_fixed_width_all_09_1/probe.cpp: In function `void 
+   func_002367c8(int)':
+recovery-experiments/fm_call_fixed_width_all_09_1/probe.cpp:197: warning: right 
+   shift count >= width of type
+recovery-experiments/fm_call_fixed_width_all_09_1/probe.cpp:201: warning: right 
+   shift count >= width of type
+recovery-experiments/fm_call_fixed_width_all_09_1/probe.cpp: In function `void 
+   func_00240240(int, unsigned int, unsigned int)':
+recovery-experiments/fm_call_fixed_width_all_09_1/probe.cpp:315: warning: invalid
+   conversion from `u8*' to `long long unsigned int'

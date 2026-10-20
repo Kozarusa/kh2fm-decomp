@@ -1,0 +1,53 @@
+{
+  "original_source": "analysis/final-mix/recovery-experiments/fm_scalar_03.cpp",
+  "original_source_sha256": "05bd735dd67fab30396b27b36e66954ddfee4058923016dca126ea79dfa18bdc",
+  "original_proof_sha256": "1ddcc13389e9742f711b670a2c1b2b8651021b41d809213a3322e8bef29cd3b0",
+  "variant_source_sha256": "ef234eb205927b9c04e9c80f6d58fd74c11304c10130083084f3b1293828b492",
+  "rows": [
+    {
+      "address": "001943e8",
+      "changed_parameters": [
+        "param_1"
+      ]
+    },
+    {
+      "address": "00195f88",
+      "changed_parameters": [
+        "param_1"
+      ]
+    },
+    {
+      "address": "00198700",
+      "changed_parameters": [
+        "param_1"
+      ]
+    },
+    {
+      "address": "0019aa00",
+      "changed_parameters": [
+        "param_1"
+      ]
+    },
+    {
+      "address": "0019e6e8",
+      "changed_parameters": [
+        "param_2"
+      ]
+    },
+    {
+      "address": "001a1a20",
+      "changed_parameters": [
+        "param_1"
+      ]
+    },
+    {
+      "address": "001a8c78",
+      "changed_parameters": [
+        "param_2"
+      ]
+    }
+  ],
+  "limitations": [
+    "Parameter types are provisional; only exact compiler bytes can accept a variant."
+  ]
+}

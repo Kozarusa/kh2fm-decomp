@@ -1,0 +1,20 @@
+#include "../common/types.h"
+extern "C" u8 D_0032bb30[];
+extern "C" u16 func_001a67b0(s32);
+extern "C" u8* func_001b8e88(u64);
+
+void func_001bdff0(void) {
+    u32 base = (u32)D_0032bb30;
+    asm("" : "+r"(base)); // why: keeps the base address materialized before the offset add
+    register u16* cursor asm("$16") = (u16*)(base + 14064); // why: original keeps its loop cursor in s0
+    asm("" : "+r"(cursor)); // why: pins the cursor computation right after the base
+    s32 count = 3;
+    do {
+        u8* entry = func_001b8e88(cursor[4]);
+        if (*(u16*)(entry + 2) == 2) {
+            cursor[4] = func_001a67b0(*(s16*)(entry + 4));
+        }
+        count--;
+        cursor++;
+    } while (count >= 0);
+}

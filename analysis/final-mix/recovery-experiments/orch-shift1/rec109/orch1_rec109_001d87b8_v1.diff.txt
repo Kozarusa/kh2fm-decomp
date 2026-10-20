@@ -1,0 +1,33 @@
+001d87b8: compiled 116 bytes, target 100 bytes, exact=False
+Differing words: 27. First difference at instruction 0 (0-based).
+
+ORIGINAL                                                                | COMPILED
+!! 001d87b8: 27bdfff0  addiu	sp,sp,-16                                  | 001d87b8: 27bdffe0  addiu	sp,sp,-32
+   001d87bc: ffb00000  sd	s0,0(sp)                                      | 001d87bc: ffb00000  sd	s0,0(sp)
+!! 001d87c0: ffbf0008  sd	ra,8(sp)                                      | 001d87c0: ffb10008  sd	s1,8(sp)
+!! 001d87c4: 0c06ed28  jal	0x1bb4a0                                     | 001d87c4: ffbf0010  sd	ra,16(sp)
+   001d87c8: 0080802d  move	s0,a0                                       | 001d87c8: 0080802d  move	s0,a0
+!! 001d87cc: 1040000f  beqz	v0,0x1d880c                                 | 001d87cc: 0c06ed28  jal	1bb4a0 <func_001bb4a0>
+!! 001d87d0: 0000102d  move	v0,zero                                     | 001d87d0: 0000882d  move	s1,zero
+!! 001d87d4: 0c06ef2c  jal	0x1bbcb0                                     | 001d87d4: 10400010  beqz	v0,1d8818 <func_001d87b8+0x60>
+!! 001d87d8: 00000000  nop                                              | 001d87d8: 0220102d  move	v0,s1
+!! 001d87dc: 240f0038  li	t7,56                                         | 001d87dc: 0c06ef2c  jal	1bbcb0 <func_001bbcb0>
+!! 001d87e0: 020f8018  mult	s0,s0,t7                                    | 001d87e0: 00000000  nop
+!! 001d87e4: 00501021  addu	v0,v0,s0                                    | 001d87e4: 240f0038  li	t7,56
+!! 001d87e8: 8c4f00f4  lw	t7,244(v0)                                    | 001d87e8: 020f8018  mult	s0,s0,t7
+!! 001d87ec: 31ef0001  andi	t7,t7,0x1                                   | 001d87ec: 02021021  addu	v0,s0,v0
+!! 001d87f0: 31ef00ff  andi	t7,t7,0xff                                  | 001d87f0: 904f00f4  lbu	t7,244(v0)
+!! 001d87f4: 11e00005  beqz	t7,0x1d880c                                 | 001d87f4: 31ef0001  andi	t7,t7,0x1
+!! 001d87f8: 0000102d  move	v0,zero                                     | 001d87f8: 31ef00ff  andi	t7,t7,0xff
+!! 001d87fc: 0c06ef2c  jal	0x1bbcb0                                     | 001d87fc: 11e00006  beqz	t7,1d8818 <func_001d87b8+0x60>
+!! 001d8800: 00000000  nop                                              | 001d8800: 0220102d  move	v0,s1
+!! 001d8804: 02021021  addu	v0,s0,v0                                    | 001d8804: 0c06ef2c  jal	1bbcb0 <func_001bbcb0>
+!! 001d8808: 8c420114  lw	v0,276(v0)                                    | 001d8808: 00000000  nop
+!! 001d880c: dfb00000  ld	s0,0(sp)                                      | 001d880c: 02021021  addu	v0,s0,v0
+!! 001d8810: dfbf0008  ld	ra,8(sp)                                      | 001d8810: 8c510114  lw	s1,276(v0)
+!! 001d8814: 03e00008  jr	ra                                            | 001d8814: 0220102d  move	v0,s1
+!! 001d8818: 27bd0010  addiu	sp,sp,16                                   | 001d8818: dfb00000  ld	s0,0(sp)
+!!                                                                      | 001d881c: dfb10008  ld	s1,8(sp)
+!!                                                                      | 001d8820: dfbf0010  ld	ra,16(sp)
+!!                                                                      | 001d8824: 03e00008  jr	ra
+!!                                                                      | 001d8828: 27bd0020  addiu	sp,sp,32

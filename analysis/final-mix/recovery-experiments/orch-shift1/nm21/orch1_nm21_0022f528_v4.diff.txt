@@ -1,0 +1,34 @@
+0022f528: compiled 120 bytes, target 120 bytes, exact=False
+Differing words: 5. First difference at instruction 15 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0022f528: 27bdffb0  addiu	sp,sp,-80                                  | 0022f528: 27bdffb0  addiu	sp,sp,-80
+   0022f52c: 24850008  addiu	a1,a0,8                                    | 0022f52c: 24850008  addiu	a1,a0,8
+   0022f530: ffb10038  sd	s1,56(sp)                                     | 0022f530: ffb10038  sd	s1,56(sp)
+   0022f534: ffb00030  sd	s0,48(sp)                                     | 0022f534: ffb00030  sd	s0,48(sp)
+   0022f538: 2411ffff  li	s1,-1                                         | 0022f538: 2411ffff  li	s1,-1
+   0022f53c: ffbf0040  sd	ra,64(sp)                                     | 0022f53c: ffbf0040  sd	ra,64(sp)
+   0022f540: 0080802d  move	s0,a0                                       | 0022f540: 0080802d  move	s0,a0
+   0022f544: afb10000  sw	s1,0(sp)                                      | 0022f544: afb10000  sw	s1,0(sp)
+   0022f548: afb10004  sw	s1,4(sp)                                      | 0022f548: afb10004  sw	s1,4(sp)
+   0022f54c: 27a40017  addiu	a0,sp,23                                   | 0022f54c: 27a40017  addiu	a0,sp,23
+   0022f550: afa00008  sw	zero,8(sp)                                    | 0022f550: afa00008  sw	zero,8(sp)
+   0022f554: a3a00016  sb	zero,22(sp)                                   | 0022f554: a3a00016  sb	zero,22(sp)
+   0022f558: 0c0bfcba  jal	0x2ff2e8                                     | 0022f558: 0c0bfcba  jal	2ff2e8 <func_002ff2e8>
+   0022f55c: a3a00017  sb	zero,23(sp)                                   | 0022f55c: a3a00017  sb	zero,23(sp)
+   0022f560: 860e0006  lh	t6,6(s0)                                      | 0022f560: 860e0006  lh	t6,6(s0)
+!! 0022f564: 03a0202d  move	a0,sp                                       | 0022f564: 860f0004  lh	t7,4(s0)
+!! 0022f568: 860f0004  lh	t7,4(s0)                                      | 0022f568: afb10010  sw	s1,16(sp)
+!! 0022f56c: afb10010  sw	s1,16(sp)                                     | 0022f56c: afae0004  sw	t6,4(sp)
+   0022f570: afb1000c  sw	s1,12(sp)                                     | 0022f570: afb1000c  sw	s1,12(sp)
+!! 0022f574: afae0004  sw	t6,4(sp)                                      | 0022f574: afaf0000  sw	t7,0(sp)
+!! 0022f578: afaf0000  sw	t7,0(sp)                                      | 0022f578: 03a0202d  move	a0,sp
+   0022f57c: afa00008  sw	zero,8(sp)                                    | 0022f57c: afa00008  sw	zero,8(sp)
+   0022f580: a3a00014  sb	zero,20(sp)                                   | 0022f580: a3a00014  sb	zero,20(sp)
+   0022f584: 0c089f6a  jal	0x227da8                                     | 0022f584: 0c089f6a  jal	227da8 <func_00227da8>
+   0022f588: a3a00015  sb	zero,21(sp)                                   | 0022f588: a3a00015  sb	zero,21(sp)
+   0022f58c: dfb00030  ld	s0,48(sp)                                     | 0022f58c: dfb00030  ld	s0,48(sp)
+   0022f590: dfb10038  ld	s1,56(sp)                                     | 0022f590: dfb10038  ld	s1,56(sp)
+   0022f594: dfbf0040  ld	ra,64(sp)                                     | 0022f594: dfbf0040  ld	ra,64(sp)
+   0022f598: 03e00008  jr	ra                                            | 0022f598: 03e00008  jr	ra
+   0022f59c: 27bd0050  addiu	sp,sp,80                                   | 0022f59c: 27bd0050  addiu	sp,sp,80

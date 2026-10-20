@@ -1,0 +1,14 @@
+# 0018dbd8 blocked
+- Range: 0018dbd8, 80 bytes. Versions tried: 8. Best: v5 with 10 differing words (84/80 bytes).
+- First difference of the best version: `!! 0018dbe4: 15e0000d  bnez	t7,0x18dc1c                                 | 0018dbe4: 15e0000e  bnez	t7,18dc20 <func_0018dbd8+0x48>` (only a branch offset; the real divergence is an extra `sltu t7,zero,t7` after the second `andi t7,t4,0xff` at 0018dc08).
+- Changes tried:
+  - v1 `return a || ({bool s = b || c; s;}) || d`: 17 words (fold merges the 0x8/0x10 tests into andi 0x18).
+  - v2 same with flags read through memory: 17 words (still merged).
+  - v3 inner if/else-if in statement expression, memory flags: 18 words (flags reloaded, sltu store-flag).
+  - v4 local flags, `selected=false; if/else-if`: 14 words (sltu store-flag, no byte temp).
+  - v5 `selected=false; if (({f&8;}) || ({f&0x10;})) selected=true;` inside outer `||` return: 10 words; byte temp t4, both andi 0xff and branch layout match up to 0018dc04.
+  - v6 selected as u8: 10 words (same).
+  - v7 outer tests as if statements: 13 words.
+  - v8 selected assigned directly from the || value: 12 words (andi 0xff dropped).
+- Why it stops here: no improvement for 3 versions.
+- Next hypothesis: C8: remove the extra `sltu` bool normalisation between the masked byte temp and the `bnezl` (the original tests `andi t7,t4,0xff` directly); the registry name `YS::ATTACK::is_hit()` suggests an inline bool member helper whose return value is the byte temp, so a reviewed exception for a helper or a different truth-value shape for the statement-expression result is the next control.

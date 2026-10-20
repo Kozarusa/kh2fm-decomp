@@ -1,0 +1,20 @@
+0023e918: compiled 64 bytes, target 64 bytes, exact=False
+Differing words: 4. First difference at instruction 8 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0023e918: 00a42821  addu	a1,a1,a0                                    | 0023e918: 00a42821  addu	a1,a1,a0
+   0023e91c: 240f0140  li	t7,320                                        | 0023e91c: 240f0140  li	t7,320
+   0023e920: 90ae0b64  lbu	t6,2916(a1)                                  | 0023e920: 90ae0b64  lbu	t6,2916(a1)
+   0023e924: 27bdfff0  addiu	sp,sp,-16                                  | 0023e924: 27bdfff0  addiu	sp,sp,-16
+   0023e928: 01cf7018  mult	t6,t6,t7                                    | 0023e928: 01cf7018  mult	t6,t6,t7
+   0023e92c: afa0000c  sw	zero,12(sp)                                   | 0023e92c: afa0000c  sw	zero,12(sp)
+   0023e930: e7ac0000  swc1	$f12,0(sp)                                  | 0023e930: e7ac0000  swc1	$f12,0(sp)
+   0023e934: e7ad0004  swc1	$f13,4(sp)                                  | 0023e934: e7ad0004  swc1	$f13,4(sp)
+!! 0023e938: 008e2021  addu	a0,a0,t6                                    | 0023e938: 008e7021  addu	t6,a0,t6
+!! 0023e93c: 24840680  addiu	a0,a0,1664                                 | 0023e93c: 25c40680  addiu	a0,t6,1664
+   0023e940: 109d0003  beq	a0,sp,0x23e950                               | 0023e940: 109d0003  beq	a0,sp,23e950 <func_0023e918+0x38>
+   0023e944: e7ae0008  swc1	$f14,8(sp)                                  | 0023e944: e7ae0008  swc1	$f14,8(sp)
+!! 0023e948: 7ba80000  lq	t0,0(sp)                                      | 0023e948: 7baf0000  lq	t7,0(sp)
+!! 0023e94c: 7c880000  sq	t0,0(a0)                                      | 0023e94c: 7dcf0680  sq	t7,1664(t6)
+   0023e950: 03e00008  jr	ra                                            | 0023e950: 03e00008  jr	ra
+   0023e954: 27bd0010  addiu	sp,sp,16                                   | 0023e954: 27bd0010  addiu	sp,sp,16

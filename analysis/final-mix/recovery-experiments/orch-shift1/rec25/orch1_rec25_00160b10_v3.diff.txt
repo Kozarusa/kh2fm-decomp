@@ -1,0 +1,34 @@
+00160b10: compiled 120 bytes, target 120 bytes, exact=False
+Differing words: 23. First difference at instruction 6 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00160b10: 27bdffe0  addiu	sp,sp,-32                                  | 00160b10: 27bdffe0  addiu	sp,sp,-32
+   00160b14: ffb00000  sd	s0,0(sp)                                      | 00160b14: ffb00000  sd	s0,0(sp)
+   00160b18: ffb10008  sd	s1,8(sp)                                      | 00160b18: ffb10008  sd	s1,8(sp)
+   00160b1c: ffbf0010  sd	ra,16(sp)                                     | 00160b1c: ffbf0010  sd	ra,16(sp)
+   00160b20: 0000802d  move	s0,zero                                     | 00160b20: 0000802d  move	s0,zero
+   00160b24: 3c11004f  lui	s1,0x4f                                      | 00160b24: 3c11004f  lui	s1,0x4f
+!! 00160b28: 56000002  bnezl	s0,0x160b34                                | 00160b28: 12000002  beqz	s0,160b34 <func_00160b10+0x24>
+!! 00160b2c: 8e040084  lw	a0,132(s0)                                    | 00160b2c: 8e243b40  lw	a0,15168(s1)   ; = D_004f3b40
+!! 00160b30: 8e243b40  lw	a0,15168(s1)   ; = D_004f3b40                 | 00160b30: 8e040084  lw	a0,132(s0)
+!! 00160b34: 1480000a  bnez	a0,0x160b60                                 | 00160b34: 1080000b  beqz	a0,160b64 <func_00160b10+0x54>
+   00160b38: 0080802d  move	s0,a0                                       | 00160b38: 0080802d  move	s0,a0
+!! 00160b3c: 3c0f004f  lui	t7,0x4f                                      | 00160b3c: 8c8f0180  lw	t7,384(a0)
+!! 00160b40: dfb00000  ld	s0,0(sp)                                      | 00160b40: 31ef0004  andi	t7,t7,0x4
+!! 00160b44: 25ee3b40  addiu	t6,t7,15168   ; = D_004f3b40               | 00160b44: 15e0fff8  bnez	t7,160b28 <func_00160b10+0x18>
+!! 00160b48: ade03b40  sw	zero,15168(t7)   ; = D_004f3b40               | 00160b48: 00000000  nop
+!! 00160b4c: adc00004  sw	zero,4(t6)                                    | 00160b4c: 8c8e0000  lw	t6,0(a0)
+!! 00160b50: dfb10008  ld	s1,8(sp)                                      | 00160b50: 8dcf0008  lw	t7,8(t6)
+!! 00160b54: dfbf0010  ld	ra,16(sp)                                     | 00160b54: 01e0f809  jalr	t7
+!! 00160b58: 03e00008  jr	ra                                            | 00160b58: 00000000  nop
+!! 00160b5c: 27bd0020  addiu	sp,sp,32                                   | 00160b5c: 1000fff2  b	160b28 <func_00160b10+0x18>
+!! 00160b60: 8c8f0180  lw	t7,384(a0)                                    | 00160b60: 00000000  nop
+!! 00160b64: 31ef0004  andi	t7,t7,0x4                                   | 00160b64: 3c0f004f  lui	t7,0x4f
+!! 00160b68: 15e0ffef  bnez	t7,0x160b28                                 | 00160b68: dfb00000  ld	s0,0(sp)
+!! 00160b6c: 00000000  nop                                              | 00160b6c: 25ee3b40  addiu	t6,t7,15168   ; = D_004f3b40
+!! 00160b70: 8c8e0000  lw	t6,0(a0)                                      | 00160b70: ade03b40  sw	zero,15168(t7)   ; = D_004f3b40
+!! 00160b74: 8dcf0008  lw	t7,8(t6)                                      | 00160b74: adc00004  sw	zero,4(t6)
+!! 00160b78: 01e0f809  jalr	t7                                          | 00160b78: dfb10008  ld	s1,8(sp)
+!! 00160b7c: 00000000  nop                                              | 00160b7c: dfbf0010  ld	ra,16(sp)
+!! 00160b80: 1000ffe9  b	0x160b28                                       | 00160b80: 03e00008  jr	ra
+!! 00160b84: 00000000  nop                                              | 00160b84: 27bd0020  addiu	sp,sp,32

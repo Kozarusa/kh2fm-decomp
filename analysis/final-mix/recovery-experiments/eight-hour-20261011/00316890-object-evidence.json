@@ -1,0 +1,42 @@
+{
+  "address": "00316890",
+  "accepted": false,
+  "proofs": [
+    {
+      "source": "eight_hour_00316890_object_u32_0.cpp",
+      "source_sha256": "aec518ebff756a1ab88469526f7a3713df7f902430e961b44bec9aeeb2fbd49a",
+      "proof": "eight_hour_00316890_object_u32_0.verification.json",
+      "proof_sha256": "388cb985f2871bbf30ebb5fb07f70b25d1aca0515173e156cc4e7a5c5b57d813",
+      "compiled_bytes": 56,
+      "target_bytes": 56,
+      "differing_words": 2
+    },
+    {
+      "source": "eight_hour_00316890_object_u32_1.cpp",
+      "source_sha256": "9831ed5c21bd82ee14ccff052015ea3eff278cb4891abd35e5017ecfd066256d",
+      "proof": "eight_hour_00316890_object_u32_1.verification.json",
+      "proof_sha256": "a8c5a72848eaa995b394ec7d2bf6790607e69b953ffdc5782a5c1ef65b0f8243",
+      "compiled_bytes": 56,
+      "target_bytes": 56,
+      "differing_words": 2
+    },
+    {
+      "source": "eight_hour_00316890_object_voidpointer_0.cpp",
+      "source_sha256": "dfe128b94e2c3e310355dddf63b0b85f33a3aee9d6d5387257595774854f9ef7",
+      "proof": "eight_hour_00316890_object_voidpointer_0.verification.json",
+      "proof_sha256": "bfd8619a4783094ad59c14ed3c4b4ab6efd31e446e3b6e4ed92bf6d8c7e2d787",
+      "compiled_bytes": 56,
+      "target_bytes": 56,
+      "differing_words": 2
+    },
+    {
+      "source": "eight_hour_00316890_object_voidpointer_1.cpp",
+      "source_sha256": "c58bef08871d304116aa35fbb87dc7274d94101a94702797aa2cbfbb76563d5b",
+      "proof": "eight_hour_00316890_object_voidpointer_1.verification.json",
+      "proof_sha256": "25821d7ed00bb529230d75774ccca867abbbad6a1cbbbb360b5fd5e5f4a1a22e",
+      "compiled_bytes": 56,
+      "target_bytes": 56,
+      "differing_words": 2
+    }
+  ]
+}

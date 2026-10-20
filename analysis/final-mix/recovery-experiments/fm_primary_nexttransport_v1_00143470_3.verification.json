@@ -1,0 +1,18 @@
+{
+  "source_sha256": "21817c3ea0e2dc3c4062fdee523e6b2152ca2d659404d9f10dd8cfb33fc94678",
+  "source": "analysis/final-mix/recovery-experiments/fm_primary_nexttransport_v1_00143470_3.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "00143470",
+      "symbol": "_Z13func_00143470yyyyyyy",
+      "compiled_size": 92,
+      "target_size": 92,
+      "ghidra_body_size": 92,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "f0ffbd272d7080000000b0ff35000f3c2d68a0000800bfff2d60c0000488e48d2d18e0002d1000012d8020012d5840012d28c0012d30a0012d3880012d4060002d484000b294050c2d5000020000b0df0800bfdf0800e0031000bd27",
+      "target_hex": "f0ffbd272d7080000000b0ff35000f3c2d68a0000800bfff2d60c0000488e48d2d18e0002d1000012d8020012d5840012d5000022d28c0012d30a0012d3880012d406000b294050c2d4840000000b0df0800bfdf0800e0031000bd27"
+    }
+  ]
+}

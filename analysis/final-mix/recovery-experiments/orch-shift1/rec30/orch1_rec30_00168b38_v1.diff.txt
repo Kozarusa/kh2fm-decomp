@@ -1,0 +1,24 @@
+00168b38: compiled 80 bytes, target 80 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00168b38: 8c8d0004  lw	t5,4(a0)                                      | 00168b38: 8c8d0004  lw	t5,4(a0)
+   00168b3c: 19a0000f  blez	t5,0x168b7c                                 | 00168b3c: 19a0000f  blez	t5,168b7c <func_00168b38+0x44>
+   00168b40: 0000702d  move	t6,zero                                     | 00168b40: 0000702d  move	t6,zero
+   00168b44: 24840010  addiu	a0,a0,16                                   | 00168b44: 24840010  addiu	a0,a0,16
+   00168b48: 240cffff  li	t4,-1                                         | 00168b48: 240cffff  li	t4,-1
+   00168b4c: 50ac0005  beql	a1,t4,0x168b64                              | 00168b4c: 50ac0005  beql	a1,t4,168b64 <func_00168b38+0x2c>
+   00168b50: 24c6ffff  addiu	a2,a2,-1                                   | 00168b50: 24c6ffff  addiu	a2,a2,-1
+   00168b54: 948f0000  lhu	t7,0(a0)                                     | 00168b54: 948f0000  lhu	t7,0(a0)
+   00168b58: 55e50005  bnel	t7,a1,0x168b70                              | 00168b58: 55e50005  bnel	t7,a1,168b70 <func_00168b38+0x38>
+   00168b5c: 25ce0001  addiu	t6,t6,1                                    | 00168b5c: 25ce0001  addiu	t6,t6,1
+   00168b60: 24c6ffff  addiu	a2,a2,-1                                   | 00168b60: 24c6ffff  addiu	a2,a2,-1
+   00168b64: 10cc0006  beq	a2,t4,0x168b80                               | 00168b64: 10cc0006  beq	a2,t4,168b80 <func_00168b38+0x48>
+   00168b68: 0080102d  move	v0,a0                                       | 00168b68: 0080102d  move	v0,a0
+   00168b6c: 25ce0001  addiu	t6,t6,1                                    | 00168b6c: 25ce0001  addiu	t6,t6,1
+   00168b70: 01cd782a  slt	t7,t6,t5                                     | 00168b70: 01cd782a  slt	t7,t6,t5
+   00168b74: 15e0fff5  bnez	t7,0x168b4c                                 | 00168b74: 15e0fff5  bnez	t7,168b4c <func_00168b38+0x14>
+   00168b78: 24840010  addiu	a0,a0,16                                   | 00168b78: 24840010  addiu	a0,a0,16
+   00168b7c: 0000102d  move	v0,zero                                     | 00168b7c: 0000102d  move	v0,zero
+   00168b80: 03e00008  jr	ra                                            | 00168b80: 03e00008  jr	ra
+   00168b84: 00000000  nop                                              | 00168b84: 00000000  nop

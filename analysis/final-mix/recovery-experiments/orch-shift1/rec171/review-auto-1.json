@@ -1,0 +1,71 @@
+{
+  "wp_dir": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\orch-shift1\\rec171",
+  "start": "2026-10-17T17:32:19Z",
+  "reviewed": [
+    "0028e5e0",
+    "0028eb88",
+    "0028dd90",
+    "0028cf28"
+  ],
+  "blocked_reports": [
+    "0028d068-BLOCKED.md",
+    "0028e350-BLOCKED.md"
+  ],
+  "results": [
+    {
+      "level": "PASS",
+      "address": "0028e5e0",
+      "detail": "112 bytes exact; source orch1_rec171_0028e5e0_v1.cpp"
+    },
+    {
+      "level": "PASS",
+      "address": "0028eb88",
+      "detail": "104 bytes exact; source orch1_rec171_0028eb88_v3.cpp"
+    },
+    {
+      "level": "PASS",
+      "address": "0028dd90",
+      "detail": "68 bytes exact; source orch1_rec171_0028dd90_v3.cpp"
+    },
+    {
+      "level": "PASS",
+      "address": "0028cf28",
+      "detail": "112 bytes exact; source orch1_rec171_0028cf28_v1.cpp"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/DEVIATIONS.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/HANDOFF.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/ORCHESTRATION.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/PROGRESS.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/ROSTER.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/briefs/nm29.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/briefs/rec172.md"
+    }
+  ]
+}

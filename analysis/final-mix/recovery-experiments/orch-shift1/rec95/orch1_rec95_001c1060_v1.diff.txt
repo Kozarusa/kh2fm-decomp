@@ -1,0 +1,26 @@
+001c1060: compiled 88 bytes, target 88 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001c1060: 27bdfff0  addiu	sp,sp,-16                                  | 001c1060: 27bdfff0  addiu	sp,sp,-16
+   001c1064: ffb00000  sd	s0,0(sp)                                      | 001c1064: ffb00000  sd	s0,0(sp)
+   001c1068: ffbf0008  sd	ra,8(sp)                                      | 001c1068: ffbf0008  sd	ra,8(sp)
+   001c106c: 0000802d  move	s0,zero                                     | 001c106c: 0000802d  move	s0,zero
+   001c1070: 0c06e6f2  jal	0x1b9bc8                                     | 001c1070: 0c06e6f2  jal	1b9bc8 <func_001b9bc8>
+   001c1074: 0200202d  move	a0,s0                                       | 001c1074: 0200202d  move	a0,s0
+   001c1078: 0040802d  move	s0,v0                                       | 001c1078: 0040802d  move	s0,v0
+   001c107c: 14400006  bnez	v0,0x1c1098                                 | 001c107c: 14400006  bnez	v0,1c1098 <func_001c1060+0x38>
+   001c1080: 0040202d  move	a0,v0                                       | 001c1080: 0040202d  move	a0,v0
+   001c1084: dfb00000  ld	s0,0(sp)                                      | 001c1084: dfb00000  ld	s0,0(sp)
+   001c1088: dfbf0008  ld	ra,8(sp)                                      | 001c1088: dfbf0008  ld	ra,8(sp)
+   001c108c: 03e00008  jr	ra                                            | 001c108c: 03e00008  jr	ra
+   001c1090: 27bd0010  addiu	sp,sp,16                                   | 001c1090: 27bd0010  addiu	sp,sp,16
+   001c1094: 00000000  nop                                              | 001c1094: 00000000  nop
+   001c1098: 0c070336  jal	0x1c0cd8                                     | 001c1098: 0c070336  jal	1c0cd8 <func_001c0cd8>
+   001c109c: 00000000  nop                                              | 001c109c: 00000000  nop
+   001c10a0: 1040fff3  beqz	v0,0x1c1070                                 | 001c10a0: 1040fff3  beqz	v0,1c1070 <func_001c1060+0x10>
+   001c10a4: 0200202d  move	a0,s0                                       | 001c10a4: 0200202d  move	a0,s0
+   001c10a8: 0c070398  jal	0x1c0e60                                     | 001c10a8: 0c070398  jal	1c0e60 <func_001c0e60>
+   001c10ac: 00000000  nop                                              | 001c10ac: 00000000  nop
+   001c10b0: 1000ffef  b	0x1c1070                                       | 001c10b0: 1000ffef  b	1c1070 <func_001c1060+0x10>
+   001c10b4: 00000000  nop                                              | 001c10b4: 00000000  nop

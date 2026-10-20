@@ -1,0 +1,188 @@
+{
+  "worker_id": "worker-b",
+  "round": 9,
+  "role": "recovery worker (isolated proposals and reports only)",
+  "written": "2026-10-08",
+  "previous_rounds": {
+    "round5": "5/5 exact (closed)",
+    "round6": "2/10 exact (closed)",
+    "round7": "8/10 exact (closed)",
+    "round8": "in progress: 00196300 and 001d9d00 exact from batch 1"
+  },
+  "selection_method": "round-9/pick_targets.py: framed targets only (open with `addiu sp,sp,-N`, contain at least one sd/ld), integer-only (no COP1/CO2 words, no MULT/DIV premul, no bltz), size 20-120 B, unregistered, not attempted by worker B in rounds 1-8, not in primary live claim. Frameless bodies excluded: round 6 proved GCC 3.2 -O2 cannot reproduce a frameless sibling call. This batch deliberately leans on shapes round 8 proved productive: vtable dispatchers and global-pointer initialisers.",
+  "original_elf_sha256": "d869ce4b8edd61cb978c4ff9ede595fe4d7d7b21cbb96a145275217120d8bc87",
+  "claimed_addresses": [
+    {
+      "address": "00305e48",
+      "end": "00305e70",
+      "size": 40
+    },
+    {
+      "address": "0023fb28",
+      "end": "0023fb54",
+      "size": 44
+    },
+    {
+      "address": "00185a68",
+      "end": "00185a94",
+      "size": 44
+    },
+    {
+      "address": "00171348",
+      "end": "00171374",
+      "size": 44
+    },
+    {
+      "address": "00171378",
+      "end": "001713a4",
+      "size": 44
+    },
+    {
+      "address": "00171e58",
+      "end": "00171e84",
+      "size": 44
+    },
+    {
+      "address": "003197f8",
+      "end": "00319820",
+      "size": 40
+    },
+    {
+      "address": "0031f940",
+      "end": "0031f968",
+      "size": 40
+    },
+    {
+      "address": "002ba3b8",
+      "end": "002ba3e4",
+      "size": 44
+    },
+    {
+      "address": "002ef340",
+      "end": "002ef36c",
+      "size": 44
+    },
+    {
+      "address": "00307f40",
+      "end": "00307f68",
+      "size": 40
+    },
+    {
+      "address": "00180770",
+      "end": "0018079c",
+      "size": 44
+    }
+  ],
+  "range_verification": {
+    "method": "sha256 of each declared range recomputed from the original ELF, cross-checked against /root/kh2fm-build/layout.tsv",
+    "helper": "analysis/final-mix/worker-coordination/worker-b/round-9/r9_dump_orig.py",
+    "evidence": "analysis/final-mix/worker-coordination/worker-b/round-9/r9_range_hashes.txt",
+    "disassembly": "analysis/final-mix/worker-coordination/worker-b/round-9/r9_orig_disasm.txt",
+    "raw_bytes": "analysis/final-mix/worker-coordination/worker-b/round-9/<address>.orig.hex"
+  },
+  "intended_outputs": {
+    "sources": "analysis/final-mix/recovery-experiments/fm_worker_b_round9_<address>_v<NN>.cpp",
+    "proofs": "analysis/final-mix/recovery-experiments/fm_worker_b_round9_<address>_v<NN>.verification.json",
+    "report": "analysis/final-mix/worker-coordination/worker-b/round-9/REPORT.md"
+  },
+  "compiler_use": "shared read-only probe harness only; no flag changes, no stage writes, no docker restart",
+  "ownership": "worker B owns only files under worker-coordination/worker-b/** and analysis/final-mix/recovery-experiments/fm_worker_b_round9_*; primary owns active sources, functions.tsv, layout.tsv, stage sync, builds, manifests, receipts, Ghidra, HANDOFF.md",
+  "acceptance_baseline": "5,512 equal-size exact matches (registration row count observed when this claim was written)",
+  "round9_result": {
+    "summary": "4/12 exact (0023fb28, 00180770, 003197f8, 0031f940); 8 open with measured blockers",
+    "exact": {
+      "0023fb28": {
+        "address": "0023fb28",
+        "variant": "v01",
+        "mechanism": "two global stores after one call; DAT_0036ebe0 = 0; DAT_0036ebec = 0; declared as 0x36ebe0/0x36ebec per the no-carry global convention",
+        "source": "fm_worker_b_round9_0023fb28_solved.cpp",
+        "source_sha256": "74308186f1cdc87439fb4a06bf29ffde1c61b36a691af2fb2d9aa6b1f2a285d6",
+        "proof": "fm_worker_b_round9_0023fb28_solved.verification.json",
+        "exact_match": true,
+        "boundary_agreement": true
+      },
+      "00180770": {
+        "address": "00180770",
+        "variant": "v01",
+        "mechanism": "object returned in $v0; (*(code *)(*(u32 *)puVar1 + 0x1c))(puVar1); - a call return keeps v0, so no second temp register is needed",
+        "source": "fm_worker_b_round9_00180770_solved.cpp",
+        "source_sha256": "3f1c7204732aabe433eb0418cb1c6a86d99fb47af7f19a3b0ec67c5884ed257f",
+        "proof": "fm_worker_b_round9_00180770_solved.verification.json",
+        "exact_match": true,
+        "boundary_agreement": true
+      },
+      "003197f8": {
+        "address": "003197f8",
+        "variant": "v02",
+        "mechanism": "param_1 = *(u32 *)(param_1 + 4); pins the reloaded base to $a0, then (*(code *)(iVar1 + 4))(param_1);",
+        "source": "fm_worker_b_round9_003197f8_solved.cpp",
+        "source_sha256": "f31b0700929917b775dd2e712418425155db433018e1a0aa8bc8ecc2da557bb0",
+        "proof": "fm_worker_b_round9_003197f8_solved.verification.json",
+        "exact_match": true,
+        "boundary_agreement": true
+      },
+      "0031f940": {
+        "address": "0031f940",
+        "variant": "v02",
+        "mechanism": "same recipe with slot 0x18 and entry offset 0x10",
+        "source": "fm_worker_b_round9_0031f940_solved.cpp",
+        "source_sha256": "2fcb2c4d0b41204ab06979385a79bc93a4f280dcc67484d83d34fde1ea08ced1",
+        "proof": "fm_worker_b_round9_0031f940_solved.verification.json",
+        "exact_match": true,
+        "boundary_agreement": true
+      }
+    },
+    "unresolved": {
+      "00305e48": {
+        "status": "open",
+        "measured": "same family as round-8 00305ce0/00305e20 (byte-identical body): best 40/40 with 2 differing words - compiled `li t7,5` / `sw t7,0(t6)` vs target `li v1,5` / `sw v1,0(v0)`",
+        "reason": "GCC copies the call result out of $v0 into a temp before the store and materialises the literal 5 in $t7; every C spelling tried keeps both properties"
+      },
+      "00185a68": {
+        "status": "open",
+        "measured": "v02 48/44 (11 diffs) then v04/v05 52/44 - the four-argument forward made GCC emit extra late moves",
+        "reason": "target forwards this in $a3 plus three stack-free args; the argument-shuffling shape is not reachable from an O32 signature"
+      },
+      "00171348": {
+        "status": "open",
+        "measured": "v03/v04 44/44 with 2 differing words - target reloads the second level into $a0, GCC uses $t7",
+        "reason": "distinct temp registers for a two-level vtable load; register pins are unavailable on this compiler (round 5)"
+      },
+      "00171378": {
+        "status": "open",
+        "measured": "44/44, 2 differing words, same register-choice cause as 00171348",
+        "reason": "same"
+      },
+      "00171e58": {
+        "status": "open",
+        "measured": "44/44, 2 differing words, same cause",
+        "reason": "same"
+      },
+      "002ba3b8": {
+        "status": "open",
+        "measured": "48/44",
+        "reason": "target passes arguments in $9/$10/$11 (t1/t2/t3), which are not an O32 argument register set"
+      },
+      "002ef340": {
+        "status": "open",
+        "measured": "28/44",
+        "reason": "the target's `sd a1,0(sp)` / `sw a2,16(sp)` spills are never reloaded, so GCC elides them entirely"
+      },
+      "00307f40": {
+        "status": "open",
+        "measured": "40/40 with 3 differing words",
+        "reason": "the target keeps `sd ra,0(sp)` in the `beqz` delay slot; GCC 3.2 always emits the prologue store before the branch"
+      }
+    }
+  },
+  "unresolved_after_round9": [
+    "00305e48",
+    "00185a68",
+    "00171348",
+    "00171378",
+    "00171e58",
+    "002ba3b8",
+    "002ef340",
+    "00307f40"
+  ]
+}

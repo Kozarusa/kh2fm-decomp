@@ -1,0 +1,18 @@
+0018e108: compiled 56 bytes, target 56 bytes, exact=False
+Differing words: 7. First difference at instruction 0 (0-based).
+
+ORIGINAL                                                                | COMPILED
+!! 0018e108: 3c0f0035  lui	t7,0x35                                      | 0018e108: 3c0e0035  lui	t6,0x35
+!! 0018e10c: 25efeef0  addiu	t7,t7,-4368   ; = D_0034eef0               | 0018e10c: 25cfeef0  addiu	t7,t6,-4368   ; = D_0034eef0
+   0018e110: 508f0004  beql	a0,t7,0x18e124                              | 0018e110: 508f0004  beql	a0,t7,18e124 <func_0018e108+0x1c>
+!! 0018e114: 3c0f0035  lui	t7,0x35                                      | 0018e114: 3c0e0035  lui	t6,0x35
+   0018e118: 78880000  lq	t0,0(a0)                                      | 0018e118: 78880000  lq	t0,0(a0)
+!! 0018e11c: 7de80000  sq	t0,0(t7)   ; = D_00350000                     | 0018e11c: 7dc8eef0  sq	t0,-4368(t6)   ; = D_0034eef0
+!! 0018e120: 3c0f0035  lui	t7,0x35                                      | 0018e120: 3c0e0035  lui	t6,0x35
+!! 0018e124: 25efef00  addiu	t7,t7,-4352   ; = D_0034ef00               | 0018e124: 25cfef00  addiu	t7,t6,-4352   ; = D_0034ef00
+   0018e128: 10af0003  beq	a1,t7,0x18e138                               | 0018e128: 10af0003  beq	a1,t7,18e138 <func_0018e108+0x30>
+   0018e12c: 00000000  nop                                              | 0018e12c: 00000000  nop
+   0018e130: 78a80000  lq	t0,0(a1)                                      | 0018e130: 78a80000  lq	t0,0(a1)
+!! 0018e134: 7de80000  sq	t0,0(t7)                                      | 0018e134: 7dc8ef00  sq	t0,-4352(t6)   ; = D_0034ef00
+   0018e138: 03e00008  jr	ra                                            | 0018e138: 03e00008  jr	ra
+   0018e13c: 00000000  nop                                              | 0018e13c: 00000000  nop

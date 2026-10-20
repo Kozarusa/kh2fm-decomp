@@ -1,0 +1,25 @@
+001ddd30: compiled 72 bytes, target 84 bytes, exact=False
+Differing words: 19. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001ddd30: 27bdfff0  addiu	sp,sp,-16                                  | 001ddd30: 27bdfff0  addiu	sp,sp,-16
+!! 001ddd34: 0000682d  move	t5,zero                                     | 001ddd34: 0000702d  move	t6,zero
+   001ddd38: ffbf0000  sd	ra,0(sp)                                      | 001ddd38: ffbf0000  sd	ra,0(sp)
+!! 001ddd3c: 3c0c01da  lui	t4,0x1da                                     | 001ddd3c: 3c0d01da  lui	t5,0x1da
+!! 001ddd40: 55a00002  bnezl	t5,0x1ddd4c                                | 001ddd40: 11c00002  beqz	t6,1ddd4c <func_001ddd30+0x1c>
+!! 001ddd44: 8dae0014  lw	t6,20(t5)                                     | 001ddd44: 8dafe348  lw	t7,-7352(t5)   ; = D_01d9e348
+!! 001ddd48: 8d8ee348  lw	t6,-7352(t4)   ; = D_01d9e348                 | 001ddd48: 8dcf0014  lw	t7,20(t6)
+!! 001ddd4c: 15c00009  bnez	t6,0x1ddd74                                 | 001ddd4c: 11e00004  beqz	t7,1ddd60 <func_001ddd30+0x30>
+!! 001ddd50: 01c0682d  move	t5,t6                                       | 001ddd50: 0000702d  move	t6,zero
+!! 001ddd54: 0000782d  move	t7,zero                                     | 001ddd54: 15e4fffa  bne	t7,a0,1ddd40 <func_001ddd30+0x10>
+!! 001ddd58: 31ef00ff  andi	t7,t7,0xff                                  | 001ddd58: 01e0702d  move	t6,t7
+!! 001ddd5c: 11e00003  beqz	t7,0x1ddd6c                                 | 001ddd5c: 240e0001  li	t6,1
+!! 001ddd60: dfbf0000  ld	ra,0(sp)                                      | 001ddd60: 11c00003  beqz	t6,1ddd70 <func_001ddd30+0x40>
+!! 001ddd64: 08077790  j	0x1dde40                                       | 001ddd64: dfbf0000  ld	ra,0(sp)
+!! 001ddd68: 27bd0010  addiu	sp,sp,16                                   | 001ddd68: 08077790  j	1dde40 <func_001dde40>
+!! 001ddd6c: 03e00008  jr	ra                                            | 001ddd6c: 27bd0010  addiu	sp,sp,16
+!! 001ddd70: 27bd0010  addiu	sp,sp,16                                   | 001ddd70: 03e00008  jr	ra
+!! 001ddd74: 11c4fff8  beq	t6,a0,0x1ddd58                               | 001ddd74: 27bd0010  addiu	sp,sp,16
+!! 001ddd78: 240f0001  li	t7,1                                          | 
+!! 001ddd7c: 1000fff0  b	0x1ddd40                                       | 
+!! 001ddd80: 00000000  nop                                              | 

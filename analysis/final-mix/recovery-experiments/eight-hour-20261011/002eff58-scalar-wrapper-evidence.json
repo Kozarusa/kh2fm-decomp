@@ -1,0 +1,150 @@
+{
+  "address": "002eff58",
+  "accepted": false,
+  "proofs": [
+    {
+      "source": "eight_hour_002eff58_scalar_predicate_0.cpp",
+      "source_sha256": "9ef422c05915e07897008d4002d1d76540bf8d8e9b0bcbdb6a1f6268ffb8601f",
+      "proof": "eight_hour_002eff58_scalar_predicate_0.verification.json",
+      "proof_sha256": "dcaf1994a3ea273620451715989fd01ccd5b7bfe9f115e2da916250a4ac13756",
+      "compiled_bytes": 52,
+      "target_bytes": 56,
+      "differing_words": 12
+    },
+    {
+      "source": "eight_hour_002eff58_scalar_predicate_1.cpp",
+      "source_sha256": "d6189df157dfdb215bf39d01c1a96fe94dcf476d22feed37214429c46d890ca2",
+      "proof": "eight_hour_002eff58_scalar_predicate_1.verification.json",
+      "proof_sha256": "4beff5ba7a320ca0761a34c742c7ffcd134bc9e536f81e44271b3990d5ea9383",
+      "compiled_bytes": 52,
+      "target_bytes": 56,
+      "differing_words": 12
+    },
+    {
+      "source": "eight_hour_002eff58_v2_float_registers_0.cpp",
+      "source_sha256": "66788b04c803b5053bd7176f5ecb0f4655b9639a642c83c15db7d065396af3a0",
+      "proof": "eight_hour_002eff58_v2_float_registers_0.verification.json",
+      "proof_sha256": "6a95ecdf87420039aac3dc5517e1f1d09fb95e7cd57c79415f00fecf308381cf",
+      "compiled_bytes": 56,
+      "target_bytes": 56,
+      "differing_words": 4
+    },
+    {
+      "source": "eight_hour_002eff58_v2_float_registers_1.cpp",
+      "source_sha256": "6f173e0ebe8176a7d6a7af9e0f2c5ef699c85ae4e20e8cc968854e2a3dede577",
+      "proof": "eight_hour_002eff58_v2_float_registers_1.verification.json",
+      "proof_sha256": "103a0909ab35496fba159bbc489f09d10eb6727ece833236d8f3f20b1adff7ca",
+      "compiled_bytes": 56,
+      "target_bytes": 56,
+      "differing_words": 8
+    },
+    {
+      "source": "eight_hour_002eff58_v2_float_registers_2.cpp",
+      "source_sha256": "9f99e48554afc9fdab55a83ece59275940c905a3628d71e850aae7f2b7bf8dd2",
+      "proof": "eight_hour_002eff58_v2_float_registers_2.verification.json",
+      "proof_sha256": "5a4abacf3d618599697079c4f9c6001ebfc2126e9672cd67d5b5ceb547b88690",
+      "compiled_bytes": 56,
+      "target_bytes": 56,
+      "differing_words": 9
+    },
+    {
+      "source": "eight_hour_002eff58_v2_float_registers_3.cpp",
+      "source_sha256": "4ff0b1c90b86c57b0520ec00b0617c6c94337bd035180dcecb9f260b71a673f7",
+      "proof": "eight_hour_002eff58_v2_float_registers_3.verification.json",
+      "proof_sha256": "438373ee0055d60272f05a0e0ca5605f9a8ab04f75f9c80f35c0f99f9f0100f3",
+      "compiled_bytes": 56,
+      "target_bytes": 56,
+      "differing_words": 9
+    },
+    {
+      "source": "eight_hour_002eff58_v3_float_value_lifetimes_0.cpp",
+      "source_sha256": "89f56c5dfe87290512d7f290f819fb53e701dd99a23f4ba45f278f0dda850d68",
+      "proof": "eight_hour_002eff58_v3_float_value_lifetimes_0.verification.json",
+      "proof_sha256": "4b9ce16e9a8a7440196a48734c876fe676876339bdc06acbae29555e00d63c10",
+      "compiled_bytes": 60,
+      "target_bytes": 56,
+      "differing_words": 14
+    },
+    {
+      "source": "eight_hour_002eff58_v3_float_value_lifetimes_1.cpp",
+      "source_sha256": "ef8376431771947297cf6ad4a26a711e3b59979caf5c812e8b84ce4b98609b83",
+      "proof": "eight_hour_002eff58_v3_float_value_lifetimes_1.verification.json",
+      "proof_sha256": "e92ab7ae55f88deee16469464294cf0401f79c0c6b54c29cb43a156ef0562b44",
+      "compiled_bytes": 60,
+      "target_bytes": 56,
+      "differing_words": 14
+    },
+    {
+      "source": "eight_hour_002eff58_v3_float_value_lifetimes_2.cpp",
+      "source_sha256": "c93e9bea8c298d91cd0dddf44106593bb3093a25b286599897400f4712634bcf",
+      "proof": "eight_hour_002eff58_v3_float_value_lifetimes_2.verification.json",
+      "proof_sha256": "33ce85de8f7e923ec249c4c1c3bb19e4eadf3bcad6be9f8eb27c3d571aa48f90",
+      "compiled_bytes": 60,
+      "target_bytes": 56,
+      "differing_words": 14
+    },
+    {
+      "source": "eight_hour_002eff58_v3_float_value_lifetimes_3.cpp",
+      "source_sha256": "94703c47142fbeb3d759c1bc66b82470fd1650dbcd6068a0923a6e625581e8ab",
+      "proof": "eight_hour_002eff58_v3_float_value_lifetimes_3.verification.json",
+      "proof_sha256": "47a29172c5af3fd42e28cda67651ef37354dd7f0b14cabc17f511cfda0e58f4b",
+      "compiled_bytes": 60,
+      "target_bytes": 56,
+      "differing_words": 14
+    },
+    {
+      "source": "eight_hour_002eff58_v4_float_operation_dependencies_0.cpp",
+      "source_sha256": "162bf1eace4890dfa9c0bf36ee943f42c4383bcf00cd1c967442bdcc4c57c7a8",
+      "proof": "eight_hour_002eff58_v4_float_operation_dependencies_0.verification.json",
+      "proof_sha256": "f0b2d7e550e96dccbc5649b81c8f882ccddb66babb2d773c5790248730faaef6",
+      "compiled_bytes": 56,
+      "target_bytes": 56,
+      "differing_words": 10
+    },
+    {
+      "source": "eight_hour_002eff58_v4_float_operation_dependencies_1.cpp",
+      "source_sha256": "fe0266b4cd1d2973b2db244daa8303d091579af99124195a3c2eb1cada02c667",
+      "proof": "eight_hour_002eff58_v4_float_operation_dependencies_1.verification.json",
+      "proof_sha256": "d95315dd24189f7989257e34c3aba8b26a0f0a8b1ea9dd210dfa83cbac8c88f5",
+      "compiled_bytes": 56,
+      "target_bytes": 56,
+      "differing_words": 10
+    },
+    {
+      "source": "eight_hour_002eff58_v5_expression_evaluation_0.cpp",
+      "source_sha256": "8c5b76dffb3236721eea8e879659bab7f44b8ab475cfc201e9fea106e8b7774f",
+      "proof": "eight_hour_002eff58_v5_expression_evaluation_0.verification.json",
+      "proof_sha256": "61427adea15ba78cad46e6fcbc3367524dfa17c73dcabc1cdd3a2a4664322a87",
+      "compiled_bytes": 56,
+      "target_bytes": 56,
+      "differing_words": 6
+    },
+    {
+      "source": "eight_hour_002eff58_v5_expression_evaluation_1.cpp",
+      "source_sha256": "c80953c137f9fee28c0ad6bf0b67506a6cd435805641adaddc5a01763a295903",
+      "proof": "eight_hour_002eff58_v5_expression_evaluation_1.verification.json",
+      "proof_sha256": "e9427b94d1c51772948ae6e9aaf725c7ed46111e97da224160621863a0ae2577",
+      "compiled_bytes": 56,
+      "target_bytes": 56,
+      "differing_words": 7
+    },
+    {
+      "source": "eight_hour_002eff58_v5_expression_evaluation_2.cpp",
+      "source_sha256": "6ff5c74d9399c5320f41f6b6564727074ca302144e360efeeb020cb5584fa429",
+      "proof": "eight_hour_002eff58_v5_expression_evaluation_2.verification.json",
+      "proof_sha256": "e9ea25530ee999c851769adc1835e44d32e3a022cf7d866e4ee108ae539b1c2c",
+      "compiled_bytes": 56,
+      "target_bytes": 56,
+      "differing_words": 6
+    },
+    {
+      "source": "eight_hour_002eff58_v5_expression_evaluation_3.cpp",
+      "source_sha256": "bccc65db1c66450dadd44a057b1759c544b3193be15f631a3ca17e18967320fd",
+      "proof": "eight_hour_002eff58_v5_expression_evaluation_3.verification.json",
+      "proof_sha256": "ab7af03ab29f9370edc82fd25a19675f7fab23d767e22d9626d27df976fe2ff3",
+      "compiled_bytes": 56,
+      "target_bytes": 56,
+      "differing_words": 7
+    }
+  ]
+}

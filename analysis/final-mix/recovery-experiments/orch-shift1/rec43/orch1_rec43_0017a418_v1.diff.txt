@@ -1,0 +1,29 @@
+0017a418: compiled 92 bytes, target 100 bytes, exact=False
+Differing words: 18. First difference at instruction 6 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0017a418: 27bdffe0  addiu	sp,sp,-32                                  | 0017a418: 27bdffe0  addiu	sp,sp,-32
+   0017a41c: 240f0001  li	t7,1                                          | 0017a41c: 240f0001  li	t7,1
+   0017a420: ffb00000  sd	s0,0(sp)                                      | 0017a420: ffb00000  sd	s0,0(sp)
+   0017a424: ffb10008  sd	s1,8(sp)                                      | 0017a424: ffb10008  sd	s1,8(sp)
+   0017a428: ffbf0010  sd	ra,16(sp)                                     | 0017a428: ffbf0010  sd	ra,16(sp)
+   0017a42c: 00a0802d  move	s0,a1                                       | 0017a42c: 00a0802d  move	s0,a1
+!! 0017a430: 10af000e  beq	a1,t7,0x17a46c                               | 0017a430: 14af0009  bne	a1,t7,17a458 <func_0017a418+0x40>
+   0017a434: 0080882d  move	s1,a0                                       | 0017a434: 0080882d  move	s1,a0
+!! 0017a438: 240f0002  li	t7,2                                          | 0017a438: 0c075ab8  jal	1d6ae0 <func_001d6ae0>
+!! 0017a43c: 10af0007  beq	a1,t7,0x17a45c                               | 0017a43c: 8c840b3c  lw	a0,2876(a0)
+!! 0017a440: 00000000  nop                                              | 0017a440: a2300b64  sb	s0,2916(s1)
+!! 0017a444: a2300b64  sb	s0,2916(s1)                                   | 0017a444: dfbf0010  ld	ra,16(sp)
+!! 0017a448: dfbf0010  ld	ra,16(sp)                                     | 0017a448: dfb00000  ld	s0,0(sp)
+!! 0017a44c: dfb00000  ld	s0,0(sp)                                      | 0017a44c: dfb10008  ld	s1,8(sp)
+!! 0017a450: dfb10008  ld	s1,8(sp)                                      | 0017a450: 03e00008  jr	ra
+!! 0017a454: 03e00008  jr	ra                                            | 0017a454: 27bd0020  addiu	sp,sp,32
+!! 0017a458: 27bd0020  addiu	sp,sp,32                                   | 0017a458: 240f0002  li	t7,2
+!! 0017a45c: 0c075ad0  jal	0x1d6b40                                     | 0017a45c: 54affff9  bnel	a1,t7,17a444 <func_0017a418+0x2c>
+!! 0017a460: 8c840b3c  lw	a0,2876(a0)                                   | 0017a460: a2300b64  sb	s0,2916(s1)
+!! 0017a464: 1000fff8  b	0x17a448                                       | 0017a464: 0c075ad0  jal	1d6b40 <func_001d6b40>
+!! 0017a468: a2300b64  sb	s0,2916(s1)                                   | 0017a468: 8c840b3c  lw	a0,2876(a0)
+!! 0017a46c: 0c075ab8  jal	0x1d6ae0                                     | 0017a46c: 1000fff5  b	17a444 <func_0017a418+0x2c>
+!! 0017a470: 8c840b3c  lw	a0,2876(a0)                                   | 0017a470: a2300b64  sb	s0,2916(s1)
+!! 0017a474: 1000fff4  b	0x17a448                                       | 
+!! 0017a478: a2300b64  sb	s0,2916(s1)                                   | 

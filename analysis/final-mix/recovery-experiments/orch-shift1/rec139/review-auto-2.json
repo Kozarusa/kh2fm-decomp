@@ -1,0 +1,40 @@
+{
+  "wp_dir": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\orch-shift1\\rec139",
+  "start": "2026-10-15T01:02:47Z",
+  "reviewed": [],
+  "blocked_reports": [
+    "00232db0-BLOCKED.md",
+    "00233410-BLOCKED.md",
+    "002338a8-BLOCKED.md",
+    "00234098-BLOCKED.md",
+    "002341e8-BLOCKED.md",
+    "00234298-BLOCKED.md"
+  ],
+  "results": [
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/ORCHESTRATION.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/PROGRESS.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/ROSTER.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/briefs/nm21.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "no submitted proposals from this WP are awaiting integration"
+    }
+  ]
+}

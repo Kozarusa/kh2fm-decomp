@@ -1,0 +1,32 @@
+001be890: compiled 112 bytes, target 112 bytes, exact=False
+Differing words: 2. First difference at instruction 6 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001be890: 27bdffe0  addiu	sp,sp,-32                                  | 001be890: 27bdffe0  addiu	sp,sp,-32
+   001be894: ffb20010  sd	s2,16(sp)                                     | 001be894: ffb20010  sd	s2,16(sp)
+   001be898: ffb00000  sd	s0,0(sp)                                      | 001be898: ffb00000  sd	s0,0(sp)
+   001be89c: ffb10008  sd	s1,8(sp)                                      | 001be89c: ffb10008  sd	s1,8(sp)
+   001be8a0: 0080902d  move	s2,a0                                       | 001be8a0: 0080902d  move	s2,a0
+   001be8a4: ffbf0018  sd	ra,24(sp)                                     | 001be8a4: ffbf0018  sd	ra,24(sp)
+!! 001be8a8: 00a0202d  move	a0,a1                                       | 001be8a8: 0000802d  move	s0,zero
+   001be8ac: 00a0882d  move	s1,a1                                       | 001be8ac: 00a0882d  move	s1,a1
+   001be8b0: 0c06f1de  jal	0x1bc778                                     | 001be8b0: 0c06f1de  jal	1bc778 <func_001bc778>
+!! 001be8b4: 0000802d  move	s0,zero                                     | 001be8b4: 00a0202d  move	a0,a1
+   001be8b8: 26050003  addiu	a1,s0,3                                    | 001be8b8: 26050003  addiu	a1,s0,3
+   001be8bc: 0c06f55c  jal	0x1bd570                                     | 001be8bc: 0c06f55c  jal	1bd570 <func_001bd570>
+   001be8c0: 0240202d  move	a0,s2                                       | 001be8c0: 0240202d  move	a0,s2
+   001be8c4: 26100001  addiu	s0,s0,1                                    | 001be8c4: 26100001  addiu	s0,s0,1
+   001be8c8: 90470004  lbu	a3,4(v0)                                     | 001be8c8: 90470004  lbu	a3,4(v0)
+   001be8cc: 2446000c  addiu	a2,v0,12                                   | 001be8cc: 2446000c  addiu	a2,v0,12
+   001be8d0: 94450002  lhu	a1,2(v0)                                     | 001be8d0: 94450002  lhu	a1,2(v0)
+   001be8d4: 0c06f1e0  jal	0x1bc780                                     | 001be8d4: 0c06f1e0  jal	1bc780 <func_001bc780>
+   001be8d8: 0220202d  move	a0,s1                                       | 001be8d8: 0220202d  move	a0,s1
+   001be8dc: 2a0f0004  slti	t7,s0,4                                     | 001be8dc: 2a0f0004  slti	t7,s0,4
+   001be8e0: 15e0fff6  bnez	t7,0x1be8bc                                 | 001be8e0: 15e0fff6  bnez	t7,1be8bc <func_001be890+0x2c>
+   001be8e4: 26050003  addiu	a1,s0,3                                    | 001be8e4: 26050003  addiu	a1,s0,3
+   001be8e8: dfb00000  ld	s0,0(sp)                                      | 001be8e8: dfb00000  ld	s0,0(sp)
+   001be8ec: dfb10008  ld	s1,8(sp)                                      | 001be8ec: dfb10008  ld	s1,8(sp)
+   001be8f0: dfb20010  ld	s2,16(sp)                                     | 001be8f0: dfb20010  ld	s2,16(sp)
+   001be8f4: dfbf0018  ld	ra,24(sp)                                     | 001be8f4: dfbf0018  ld	ra,24(sp)
+   001be8f8: 03e00008  jr	ra                                            | 001be8f8: 03e00008  jr	ra
+   001be8fc: 27bd0020  addiu	sp,sp,32                                   | 001be8fc: 27bd0020  addiu	sp,sp,32

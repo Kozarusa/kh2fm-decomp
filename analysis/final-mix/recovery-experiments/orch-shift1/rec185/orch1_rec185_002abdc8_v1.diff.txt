@@ -1,0 +1,28 @@
+002abdc8: compiled 96 bytes, target 96 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   002abdc8: 27bdfff0  addiu	sp,sp,-16                                  | 002abdc8: 27bdfff0  addiu	sp,sp,-16
+   002abdcc: ffbf0000  sd	ra,0(sp)                                      | 002abdcc: ffbf0000  sd	ra,0(sp)
+   002abdd0: 0c0aa75a  jal	0x2a9d68                                     | 002abdd0: 0c0aa75a  jal	2a9d68 <func_002a9d68>
+   002abdd4: 00000000  nop                                              | 002abdd4: 00000000  nop
+   002abdd8: 24420140  addiu	v0,v0,320                                  | 002abdd8: 24420140  addiu	v0,v0,320
+   002abddc: 0000582d  move	t3,zero                                     | 002abddc: 0000582d  move	t3,zero
+   002abde0: 24090001  li	t1,1                                          | 002abde0: 24090001  li	t1,1
+   002abde4: 000b7942  srl	t7,t3,0x5                                    | 002abde4: 000b7942  srl	t7,t3,0x5
+   002abde8: 316e001f  andi	t6,t3,0x1f                                  | 002abde8: 316e001f  andi	t6,t3,0x1f
+   002abdec: 000f7880  sll	t7,t7,0x2                                    | 002abdec: 000f7880  sll	t7,t7,0x2
+   002abdf0: 01c97004  sllv	t6,t1,t6                                    | 002abdf0: 01c97004  sllv	t6,t1,t6
+   002abdf4: 01e25021  addu	t2,t7,v0                                    | 002abdf4: 01e25021  addu	t2,t7,v0
+   002abdf8: 256b0001  addiu	t3,t3,1                                    | 002abdf8: 256b0001  addiu	t3,t3,1
+   002abdfc: 8d4f0000  lw	t7,0(t2)                                      | 002abdfc: 8d4f0000  lw	t7,0(t2)
+   002abe00: 01ee6825  or	t5,t7,t6                                      | 002abe00: 01ee6825  or	t5,t7,t6
+   002abe04: 01ee7824  and	t7,t7,t6                                     | 002abe04: 01ee7824  and	t7,t7,t6
+   002abe08: 15e00002  bnez	t7,0x2abe14                                 | 002abe08: 15e00002  bnez	t7,2abe14 <func_002abdc8+0x4c>
+   002abe0c: 296c0004  slti	t4,t3,4                                     | 002abe0c: 296c0004  slti	t4,t3,4
+   002abe10: ad4d0000  sw	t5,0(t2)                                      | 002abe10: ad4d0000  sw	t5,0(t2)
+   002abe14: 1580fff4  bnez	t4,0x2abde8                                 | 002abe14: 1580fff4  bnez	t4,2abde8 <func_002abdc8+0x20>
+   002abe18: 000b7942  srl	t7,t3,0x5                                    | 002abe18: 000b7942  srl	t7,t3,0x5
+   002abe1c: dfbf0000  ld	ra,0(sp)                                      | 002abe1c: dfbf0000  ld	ra,0(sp)
+   002abe20: 03e00008  jr	ra                                            | 002abe20: 03e00008  jr	ra
+   002abe24: 27bd0010  addiu	sp,sp,16                                   | 002abe24: 27bd0010  addiu	sp,sp,16

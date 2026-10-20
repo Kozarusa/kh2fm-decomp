@@ -1,0 +1,26 @@
+0019b328: compiled 88 bytes, target 84 bytes, exact=False
+Differing words: 21. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0019b328: 8c8f0008  lw	t7,8(a0)                                      | 0019b328: 8c8f0008  lw	t7,8(a0)
+!! 0019b32c: 0000682d  move	t5,zero                                     | 0019b32c: 0000602d  move	t4,zero
+!! 0019b330: 95ef0008  lhu	t7,8(t7)                                     | 0019b330: 95eb0008  lhu	t3,8(t7)
+!! 0019b334: 11e0000e  beqz	t7,0x19b370                                 | 0019b334: 1160000d  beqz	t3,19b36c <func_0019b328+0x44>
+!! 0019b338: 8c82002c  lw	v0,44(a0)                                     | 0019b338: 8c8d002c  lw	t5,44(a0)
+!! 0019b33c: 01e0602d  move	t4,t7                                       | 0019b33c: 04a0000c  bltz	a1,19b370 <func_0019b328+0x48>
+!! 0019b340: 04a0000c  bltz	a1,0x19b374                                 | 0019b340: 01a0102d  move	v0,t5
+!! 0019b344: 240b000c  li	t3,12                                         | 0019b344: 240a000c  li	t2,12
+!! 0019b348: 944f0000  lhu	t7,0(v0)                                     | 0019b348: 95af0000  lhu	t7,0(t5)
+!! 0019b34c: 11e50009  beq	t7,a1,0x19b374                               | 0019b34c: 11e5000a  beq	t7,a1,19b378 <func_0019b328+0x50>
+!! 0019b350: 00000000  nop                                              | 0019b350: 258c0001  addiu	t4,t4,1
+!! 0019b354: 944f0002  lhu	t7,2(v0)                                     | 0019b354: 95af0002  lhu	t7,2(t5)
+!! 0019b358: 25ad0001  addiu	t5,t5,1                                    | 0019b358: 018b702a  slt	t6,t4,t3
+!! 0019b35c: 01ac702a  slt	t6,t5,t4                                     | 0019b35c: 01ea7818  mult	t7,t7,t2
+!! 0019b360: 01eb7818  mult	t7,t7,t3                                    | 0019b360: 01af7821  addu	t7,t5,t7
+!! 0019b364: 004f7821  addu	t7,v0,t7                                    | 0019b364: 15c0fff8  bnez	t6,19b348 <func_0019b328+0x20>
+!! 0019b368: 15c0fff7  bnez	t6,0x19b348                                 | 0019b368: 25ed0008  addiu	t5,t7,8
+!! 0019b36c: 25e20008  addiu	v0,t7,8                                    | 0019b36c: 0000102d  move	v0,zero
+!! 0019b370: 0000102d  move	v0,zero                                     | 0019b370: 03e00008  jr	ra
+!! 0019b374: 03e00008  jr	ra                                            | 0019b374: 00000000  nop
+!! 0019b378: 00000000  nop                                              | 0019b378: 03e00008  jr	ra
+!!                                                                      | 0019b37c: 01a0102d  move	v0,t5

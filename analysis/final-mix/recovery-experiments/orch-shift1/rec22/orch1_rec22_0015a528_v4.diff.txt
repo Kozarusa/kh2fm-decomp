@@ -1,0 +1,36 @@
+0015a528: compiled 128 bytes, target 128 bytes, exact=False
+Differing words: 10. First difference at instruction 2 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0015a528: 27bdffc0  addiu	sp,sp,-64                                  | 0015a528: 27bdffc0  addiu	sp,sp,-64
+   0015a52c: ffb00020  sd	s0,32(sp)                                     | 0015a52c: ffb00020  sd	s0,32(sp)
+!! 0015a530: ffb20030  sd	s2,48(sp)                                     | 0015a530: ffb10028  sd	s1,40(sp)
+   0015a534: 24900080  addiu	s0,a0,128                                  | 0015a534: 24900080  addiu	s0,a0,128
+!! 0015a538: ffb10028  sd	s1,40(sp)                                     | 0015a538: ffb20030  sd	s2,48(sp)
+   0015a53c: ffbf0038  sd	ra,56(sp)                                     | 0015a53c: ffbf0038  sd	ra,56(sp)
+!! 0015a540: 0080902d  move	s2,a0                                       | 0015a540: 0080882d  move	s1,a0
+   0015a544: 7a080000  lq	t0,0(s0)                                      | 0015a544: 7a080000  lq	t0,0(s0)
+   0015a548: 7fa80000  sq	t0,0(sp)                                      | 0015a548: 7fa80000  sq	t0,0(sp)
+!! 0015a54c: 27b10010  addiu	s1,sp,16                                   | 0015a54c: 27b20010  addiu	s2,sp,16
+   0015a550: 0c056738  jal	0x159ce0                                     | 0015a550: 0c056738  jal	159ce0 <func_00159ce0>
+!! 0015a554: 0220282d  move	a1,s1                                       | 0015a554: 0240282d  move	a1,s2
+!! 0015a558: 0240202d  move	a0,s2                                       | 0015a558: 0220202d  move	a0,s1
+!! 0015a55c: 0220282d  move	a1,s1                                       | 0015a55c: 0240282d  move	a1,s2
+   0015a560: 0c04fe22  jal	0x13f888                                     | 0015a560: 0c04fe22  jal	13f888 <func_0013f888>
+   0015a564: 0000302d  move	a2,zero                                     | 0015a564: 0000302d  move	a2,zero
+!! 0015a568: 12110003  beq	s0,s1,0x15a578                               | 0015a568: 12120003  beq	s0,s2,15a578 <func_0015a528+0x50>
+   0015a56c: 00000000  nop                                              | 0015a56c: 00000000  nop
+!! 0015a570: 7a280000  lq	t0,0(s1)                                      | 0015a570: 7a480000  lq	t0,0(s2)
+   0015a574: 7e080000  sq	t0,0(s0)                                      | 0015a574: 7e080000  sq	t0,0(s0)
+   0015a578: 0c04ff2a  jal	0x13fca8                                     | 0015a578: 0c04ff2a  jal	13fca8 <func_0013fca8>
+!! 0015a57c: 0240202d  move	a0,s2                                       | 0015a57c: 0220202d  move	a0,s1
+   0015a580: 521d0004  beql	s0,sp,0x15a594                              | 0015a580: 521d0004  beql	s0,sp,15a594 <func_0015a528+0x6c>
+   0015a584: dfb00020  ld	s0,32(sp)                                     | 0015a584: dfb00020  ld	s0,32(sp)
+   0015a588: 7ba80000  lq	t0,0(sp)                                      | 0015a588: 7ba80000  lq	t0,0(sp)
+   0015a58c: 7e080000  sq	t0,0(s0)                                      | 0015a58c: 7e080000  sq	t0,0(s0)
+   0015a590: dfb00020  ld	s0,32(sp)                                     | 0015a590: dfb00020  ld	s0,32(sp)
+   0015a594: dfb10028  ld	s1,40(sp)                                     | 0015a594: dfb10028  ld	s1,40(sp)
+   0015a598: dfb20030  ld	s2,48(sp)                                     | 0015a598: dfb20030  ld	s2,48(sp)
+   0015a59c: dfbf0038  ld	ra,56(sp)                                     | 0015a59c: dfbf0038  ld	ra,56(sp)
+   0015a5a0: 03e00008  jr	ra                                            | 0015a5a0: 03e00008  jr	ra
+   0015a5a4: 27bd0040  addiu	sp,sp,64                                   | 0015a5a4: 27bd0040  addiu	sp,sp,64

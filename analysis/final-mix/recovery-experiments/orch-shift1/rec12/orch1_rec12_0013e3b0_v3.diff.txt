@@ -1,0 +1,32 @@
+0013e3b0: compiled 112 bytes, target 96 bytes, exact=False
+Differing words: 26. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0013e3b0: 27bdffd0  addiu	sp,sp,-48                                  | 0013e3b0: 27bdffd0  addiu	sp,sp,-48
+!! 0013e3b4: ffb00010  sd	s0,16(sp)                                     | 0013e3b4: 0080702d  move	t6,a0
+!! 0013e3b8: ffb10018  sd	s1,24(sp)                                     | 0013e3b8: ffb00010  sd	s0,16(sp)
+!! 0013e3bc: 00a0802d  move	s0,a1                                       | 0013e3bc: ffb10018  sd	s1,24(sp)
+   0013e3c0: ffbf0020  sd	ra,32(sp)                                     | 0013e3c0: ffbf0020  sd	ra,32(sp)
+!! 0013e3c4: 78a80000  lq	t0,0(a1)                                      | 0013e3c4: 13a50003  beq	sp,a1,13e3d4 <func_0013e3b0+0x24>
+!! 0013e3c8: 7fa80000  sq	t0,0(sp)                                      | 0013e3c8: 00a0802d  move	s0,a1
+!! 0013e3cc: 249101c0  addiu	s1,a0,448                                  | 0013e3cc: 78a80000  lq	t0,0(a1)
+!! 0013e3d0: 0c04e46a  jal	0x1391a8                                     | 0013e3d0: 7fa80000  sq	t0,0(sp)
+!! 0013e3d4: 03a0282d  move	a1,sp                                       | 0013e3d4: 25d101c0  addiu	s1,t6,448
+!! 0013e3d8: 0c04e75e  jal	0x139d78                                     | 0013e3d8: 0c04e46a  jal	1391a8 <func_001391a8>
+!! 0013e3dc: 0220202d  move	a0,s1                                       | 0013e3dc: 03a0282d  move	a1,sp
+!! 0013e3e0: 50400007  beqzl	v0,0x13e400                                | 0013e3e0: 0c04e75e  jal	139d78 <func_00139d78>
+!! 0013e3e4: dfb00010  ld	s0,16(sp)                                     | 0013e3e4: 0220202d  move	a0,s1
+!! 0013e3e8: 7a080000  lq	t0,0(s0)                                      | 0013e3e8: 50400009  beqzl	v0,13e410 <func_0013e3b0+0x60>
+!! 0013e3ec: 7fa80000  sq	t0,0(sp)                                      | 0013e3ec: dfb00010  ld	s0,16(sp)
+!! 0013e3f0: 0220202d  move	a0,s1                                       | 0013e3f0: 13b00004  beq	sp,s0,13e404 <func_0013e3b0+0x54>
+!! 0013e3f4: 0c04e46a  jal	0x1391a8                                     | 0013e3f4: 0220202d  move	a0,s1
+!! 0013e3f8: 03a0282d  move	a1,sp                                       | 0013e3f8: 7a080000  lq	t0,0(s0)
+!! 0013e3fc: dfb00010  ld	s0,16(sp)                                     | 0013e3fc: 7fa80000  sq	t0,0(sp)
+!! 0013e400: dfb10018  ld	s1,24(sp)                                     | 0013e400: 0220202d  move	a0,s1
+!! 0013e404: dfbf0020  ld	ra,32(sp)                                     | 0013e404: 0c04e46a  jal	1391a8 <func_001391a8>
+!! 0013e408: 03e00008  jr	ra                                            | 0013e408: 03a0282d  move	a1,sp
+!! 0013e40c: 27bd0030  addiu	sp,sp,48                                   | 0013e40c: dfb00010  ld	s0,16(sp)
+!!                                                                      | 0013e410: dfb10018  ld	s1,24(sp)
+!!                                                                      | 0013e414: dfbf0020  ld	ra,32(sp)
+!!                                                                      | 0013e418: 03e00008  jr	ra
+!!                                                                      | 0013e41c: 27bd0030  addiu	sp,sp,48

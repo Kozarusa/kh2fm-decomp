@@ -1,0 +1,26 @@
+﻿{
+  "leases": [
+    {
+      "address": "001c9958",
+      "token": "8a7ba66a9e954c3188cc6d8f1a254aa8",
+      "expires": 1791867402.138182,
+      "metadata": {
+        "address": "001c9958",
+        "end": "001c99b0",
+        "bytes": 88,
+        "priority": 2,
+        "pseudocode_available": true,
+        "callees": [],
+        "best_proposal": {
+          "proof": "analysis/final-mix/recovery-experiments/fm_scalar_04.verification.json",
+          "source": "analysis/final-mix/recovery-experiments/fm_scalar_04.cpp",
+          "compiled_bytes": 92,
+          "target_bytes": 88,
+          "different_words": 23
+        }
+      },
+      "blocker": null,
+      "attempts": 1
+    }
+  ]
+}

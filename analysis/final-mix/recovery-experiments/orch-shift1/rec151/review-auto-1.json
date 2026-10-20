@@ -1,0 +1,66 @@
+{
+  "wp_dir": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\orch-shift1\\rec151",
+  "start": "2026-10-15T20:23:41Z",
+  "reviewed": [
+    "002519d0",
+    "00251e90",
+    "00252618"
+  ],
+  "blocked_reports": [
+    "00251ec8-BLOCKED.md",
+    "00252020-BLOCKED.md",
+    "00252710-BLOCKED.md"
+  ],
+  "results": [
+    {
+      "level": "PASS",
+      "address": "002519d0",
+      "detail": "52 bytes exact; source orch1_rec151_002519d0_v1.cpp"
+    },
+    {
+      "level": "PASS",
+      "address": "00251e90",
+      "detail": "52 bytes exact; source orch1_rec151_00251e90_v1.cpp"
+    },
+    {
+      "level": "PASS",
+      "address": "00252618",
+      "detail": "72 bytes exact; source orch1_rec151_00252618_v2.cpp"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/STATUS.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/DEVIATIONS.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/GPT6-MEMORY.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/HANDOFF.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/ORCHESTRATION.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/PROGRESS.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/return-contract-audit-2026-10-15.md"
+    }
+  ]
+}

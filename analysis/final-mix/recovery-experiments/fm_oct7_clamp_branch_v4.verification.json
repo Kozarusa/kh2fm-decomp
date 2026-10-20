@@ -1,0 +1,29 @@
+{
+  "source_sha256": "b316b77efdfeb7d4cffb716813b78760122e2307566b96321305b386fdd997cd",
+  "source": "analysis/final-mix/recovery-experiments/fm_oct7_clamp_branch_v4.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "00161a58",
+      "symbol": "_Z13func_00161a58i",
+      "compiled_size": 44,
+      "target_size": 40,
+      "ghidra_body_size": 40,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "81008f28050081042d7080002d70000035000f3c0800e00368c7eeadfdffe05535000f3cfaff001080000e24",
+      "target_hex": "070080042d70800081008f280100e05180000e2435000f3c0800e00368c7eeadfcff00102d700000"
+    },
+    {
+      "address": "00161a80",
+      "symbol": "_Z13func_00161a80i",
+      "compiled_size": 44,
+      "target_size": 40,
+      "ghidra_body_size": 40,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "81008f28050081042d7080002d70000035000f3c0800e0036cc7eeadfdffe05535000f3cfaff001080000e24",
+      "target_hex": "070080042d70800081008f280100e05180000e2435000f3c0800e0036cc7eeadfcff00102d700000"
+    }
+  ]
+}

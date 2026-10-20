@@ -1,0 +1,365 @@
+{
+  "source_sha256": "e92fba8c33f4a7c9b42b3e46a5b3846cd84252fd25de4c36414ad4206b18fe8b",
+  "prior_source": "analysis/final-mix/recovery-experiments/fm_width_all_13_0.cpp",
+  "prior_source_sha256": "118f6c67e4418a1ae7f57a62d1d40a3a26d1a3a04bc6aa1fe66c5a6bfc2dd886",
+  "prior_proof_sha256": "ea4bd81bd1675c145d9146699de0e6cff6f1ae3f41b14c6ddd69bc86ea300e5a",
+  "main_export_sha256": "aa24f5742f14453ebe408146889dcebdb4236a7b8bf0a7cab209cad2f2ec84f6",
+  "changes": [
+    {
+      "callee": "00181500",
+      "proposed_arguments": [
+        "s64"
+      ]
+    },
+    {
+      "callee": "001c3888",
+      "proposed_arguments": [
+        "void*"
+      ]
+    },
+    {
+      "callee": "0016c028",
+      "proposed_arguments": [
+        "s32"
+      ]
+    },
+    {
+      "callee": "001b9bc8",
+      "proposed_arguments": [
+        "s32"
+      ]
+    },
+    {
+      "callee": "001bc780",
+      "proposed_arguments": [
+        "s32",
+        "u64",
+        "s32",
+        "u64"
+      ]
+    },
+    {
+      "callee": "002cb890",
+      "proposed_arguments": [
+        "s32",
+        "s32"
+      ]
+    },
+    {
+      "callee": "001050c8",
+      "proposed_arguments": []
+    },
+    {
+      "callee": "00105110",
+      "proposed_arguments": [
+        "u64"
+      ]
+    },
+    {
+      "callee": "001063f0",
+      "proposed_arguments": [
+        "u64",
+        "u64"
+      ]
+    },
+    {
+      "callee": "00106450",
+      "proposed_arguments": [
+        "s64"
+      ]
+    },
+    {
+      "callee": "00106a18",
+      "proposed_arguments": [
+        "s8"
+      ]
+    },
+    {
+      "callee": "00106a60",
+      "proposed_arguments": [
+        "s8"
+      ]
+    },
+    {
+      "callee": "00106f30",
+      "proposed_arguments": [
+        "s32",
+        "s32"
+      ]
+    },
+    {
+      "callee": "00107368",
+      "proposed_arguments": [
+        "s32",
+        "void*"
+      ]
+    },
+    {
+      "callee": "00107478",
+      "proposed_arguments": [
+        "s32",
+        "void*"
+      ]
+    },
+    {
+      "callee": "00108398",
+      "proposed_arguments": [
+        "void*"
+      ]
+    },
+    {
+      "callee": "00138c10",
+      "proposed_arguments": [
+        "s32",
+        "u32"
+      ]
+    },
+    {
+      "callee": "0016b070",
+      "proposed_arguments": [
+        "s32",
+        "void*"
+      ]
+    },
+    {
+      "callee": "0016bd60",
+      "proposed_arguments": [
+        "u64",
+        "u64"
+      ]
+    },
+    {
+      "callee": "00178888",
+      "proposed_arguments": [
+        "s32"
+      ]
+    },
+    {
+      "callee": "00190128",
+      "proposed_arguments": [
+        "void*"
+      ]
+    },
+    {
+      "callee": "00190140",
+      "proposed_arguments": [
+        "s32"
+      ]
+    },
+    {
+      "callee": "001906f0",
+      "proposed_arguments": [
+        "u64",
+        "void*"
+      ]
+    },
+    {
+      "callee": "00198450",
+      "proposed_arguments": [
+        "u64"
+      ]
+    },
+    {
+      "callee": "00198860",
+      "proposed_arguments": [
+        "u64",
+        "u64"
+      ]
+    },
+    {
+      "callee": "001bc778",
+      "proposed_arguments": [
+        "s32"
+      ]
+    },
+    {
+      "callee": "001c2b58",
+      "proposed_arguments": [
+        "s32"
+      ]
+    },
+    {
+      "callee": "001c3748",
+      "proposed_arguments": [
+        "u64",
+        "s32"
+      ]
+    },
+    {
+      "callee": "002b9b78",
+      "proposed_arguments": []
+    },
+    {
+      "callee": "002ba390",
+      "proposed_arguments": []
+    },
+    {
+      "callee": "002ba9c0",
+      "proposed_arguments": []
+    },
+    {
+      "callee": "002baa60",
+      "proposed_arguments": []
+    },
+    {
+      "callee": "002bbf98",
+      "proposed_arguments": []
+    },
+    {
+      "callee": "002bc188",
+      "proposed_arguments": [
+        "u64",
+        "u64"
+      ]
+    },
+    {
+      "callee": "002bc470",
+      "proposed_arguments": [
+        "s32"
+      ]
+    },
+    {
+      "callee": "002bc608",
+      "proposed_arguments": [
+        "s32"
+      ]
+    },
+    {
+      "callee": "002bc798",
+      "proposed_arguments": []
+    },
+    {
+      "callee": "002bced8",
+      "proposed_arguments": [
+        "s32"
+      ]
+    },
+    {
+      "callee": "002bcee8",
+      "proposed_arguments": [
+        "void*"
+      ]
+    },
+    {
+      "callee": "002bcf58",
+      "proposed_arguments": [
+        "s32"
+      ]
+    },
+    {
+      "callee": "002c1b60",
+      "proposed_arguments": [
+        "s32",
+        "void*"
+      ]
+    },
+    {
+      "callee": "002c6490",
+      "proposed_arguments": [
+        "s32"
+      ]
+    },
+    {
+      "callee": "002cd428",
+      "proposed_arguments": [
+        "u64",
+        "u64"
+      ]
+    },
+    {
+      "callee": "002cf2d0",
+      "proposed_arguments": [
+        "void*"
+      ]
+    },
+    {
+      "callee": "002d1260",
+      "proposed_arguments": []
+    },
+    {
+      "callee": "002d5c40",
+      "proposed_arguments": [
+        "s32"
+      ]
+    },
+    {
+      "callee": "002e34c8",
+      "proposed_arguments": [
+        "void*"
+      ]
+    },
+    {
+      "callee": "002e64b0",
+      "proposed_arguments": [
+        "s32"
+      ]
+    },
+    {
+      "callee": "002e9cb8",
+      "proposed_arguments": [
+        "void*",
+        "u64",
+        "s32"
+      ]
+    },
+    {
+      "callee": "002eac70",
+      "proposed_arguments": [
+        "u32",
+        "u32",
+        "u32",
+        "u32"
+      ]
+    },
+    {
+      "callee": "002eb990",
+      "proposed_arguments": [
+        "u32",
+        "u64",
+        "u64"
+      ]
+    },
+    {
+      "callee": "002f1900",
+      "proposed_arguments": [
+        "void*",
+        "u64",
+        "u64"
+      ]
+    },
+    {
+      "callee": "00325320",
+      "proposed_arguments": [
+        "void*",
+        "s32"
+      ]
+    },
+    {
+      "callee": "0016ac38",
+      "proposed_arguments": [
+        "s64",
+        "u64",
+        "u64",
+        "u64",
+        "s64"
+      ]
+    },
+    {
+      "callee": "002b7fbc",
+      "proposed_arguments": [
+        "u32"
+      ]
+    },
+    {
+      "callee": "002d3fa8",
+      "proposed_arguments": [
+        "u64",
+        "s64",
+        "s64"
+      ]
+    }
+  ],
+  "limitations": [
+    "Argument types are proposals. Complete compiler equality and full-build gates are mandatory."
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "source_sha256": "92414e563a8d085bde0312a801bb960a2443030532da26631c420ae5ff4327ef",
+  "source": "analysis/final-mix/recovery-experiments/fm_primary_addressalias_v1_0020f150.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "0020f150",
+      "symbol": "_Z13func_0020f150v",
+      "compiled_size": 52,
+      "target_size": 52,
+      "ghidra_body_size": 52,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "f0ffbd272d2000000000bfff68c90b0c2d28000037000f3c3600053cc891e48d46ce0b0c1099a5240000bfdf0800e0031000bd27",
+      "target_hex": "f0ffbd272d2000000000bfff68c90b0c2d28000036000f3c3600053cc891e48d46ce0b0c1099a5240000bfdf0800e0031000bd27"
+    }
+  ]
+}

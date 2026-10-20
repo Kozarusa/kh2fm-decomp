@@ -1,0 +1,24 @@
+recovery-experiments/fm_primary_near_recovered/probe.cpp:32: parse error before 
+   `*' token
+recovery-experiments/fm_primary_near_recovered/probe.cpp: In function `void 
+   func_001b6dd0(...)':
+recovery-experiments/fm_primary_near_recovered/probe.cpp:33: `FmLocalQuad' 
+   undeclared (first use this function)
+recovery-experiments/fm_primary_near_recovered/probe.cpp:33: (Each undeclared 
+   identifier is reported only once for each function it appears in.)
+recovery-experiments/fm_primary_near_recovered/probe.cpp:33: parse error before 
+   `;' token
+recovery-experiments/fm_primary_near_recovered/probe.cpp:36: `copy' undeclared 
+   (first use this function)
+recovery-experiments/fm_primary_near_recovered/probe.cpp:36: `source' 
+   undeclared (first use this function)
+recovery-experiments/fm_primary_near_recovered/probe.cpp:37: `object' 
+   undeclared (first use this function)
+Traceback (most recent call last):
+  File "/mnt/c/Users/KoZa/Documents/ChatGPT/tools/kh2-audit/probe_fm_source.py", line 36, in <module>
+    run(f'/opt/ps2/gcc/bin/ee-g++ -O2 -g0 -x c++ -fno-exceptions -fno-rtti -fpermissive -ffunction-sections -c {relative}/probe.cpp -o {relative}/probe.o')
+  File "/mnt/c/Users/KoZa/Documents/ChatGPT/tools/kh2-audit/probe_fm_source.py", line 32, in run
+    subprocess.run(['docker', 'run', '--rm', '--platform', 'linux/amd64',
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['docker', 'run', '--rm', '--platform', 'linux/amd64', '-v', '/root/kh2fm-build:/work', '-w', '/work', 'kh2-local/ps2-compiler:3.2-ee-040921-objdiff', 'bash', '-lc', '/opt/ps2/gcc/bin/ee-g++ -O2 -g0 -x c++ -fno-exceptions -fno-rtti -fpermissive -ffunction-sections -c recovery-experiments/fm_primary_near_recovered/probe.cpp -o recovery-experiments/fm_primary_near_recovered/probe.o']' returned non-zero exit status 1.

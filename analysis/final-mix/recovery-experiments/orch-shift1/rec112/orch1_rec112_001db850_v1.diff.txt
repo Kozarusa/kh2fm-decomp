@@ -1,0 +1,18 @@
+001db850: compiled 56 bytes, target 56 bytes, exact=False
+Differing words: 5. First difference at instruction 3 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001db850: 8c8e0018  lw	t6,24(a0)                                     | 001db850: 8c8e0018  lw	t6,24(a0)
+   001db854: 19c0000a  blez	t6,0x1db880                                 | 001db854: 19c0000a  blez	t6,1db880 <func_001db850+0x30>
+   001db858: 0000682d  move	t5,zero                                     | 001db858: 0000682d  move	t5,zero
+!! 001db85c: 8c8f0010  lw	t7,16(a0)                                     | 001db85c: 8c8e0010  lw	t6,16(a0)
+!! 001db860: 000d7080  sll	t6,t5,0x2                                    | 001db860: 000d7880  sll	t7,t5,0x2
+!! 001db864: 01cf7021  addu	t6,t6,t7                                    | 001db864: 01ee7821  addu	t7,t7,t6
+!! 001db868: adcd0000  sw	t5,0(t6)                                      | 001db868: aded0000  sw	t5,0(t7)
+   001db86c: 8c8e0018  lw	t6,24(a0)                                     | 001db86c: 8c8e0018  lw	t6,24(a0)
+   001db870: 25ad0001  addiu	t5,t5,1                                    | 001db870: 25ad0001  addiu	t5,t5,1
+   001db874: 01ae782a  slt	t7,t5,t6                                     | 001db874: 01ae782a  slt	t7,t5,t6
+   001db878: 55e0fff9  bnezl	t7,0x1db860                                | 001db878: 55e0fff9  bnezl	t7,1db860 <func_001db850+0x10>
+!! 001db87c: 8c8f0010  lw	t7,16(a0)                                     | 001db87c: 8c8e0010  lw	t6,16(a0)
+   001db880: 03e00008  jr	ra                                            | 001db880: 03e00008  jr	ra
+   001db884: ac8e0008  sw	t6,8(a0)                                      | 001db884: ac8e0008  sw	t6,8(a0)

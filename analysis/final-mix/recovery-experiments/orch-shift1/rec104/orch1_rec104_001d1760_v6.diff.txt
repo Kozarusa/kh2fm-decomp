@@ -1,0 +1,23 @@
+001d1760: compiled 60 bytes, target 76 bytes, exact=False
+Differing words: 18. First difference at instruction 0 (0-based).
+
+ORIGINAL                                                                | COMPILED
+!! 001d1760: 00a0702d  move	t6,a1                                       | 001d1760: 8c8e001c  lw	t6,28(a0)
+!! 001d1764: 8c85001c  lw	a1,28(a0)                                     | 001d1764: 0000682d  move	t5,zero
+!! 001d1768: 18a00007  blez	a1,0x1d1788                                 | 001d1768: 19c00009  blez	t6,1d1790 <func_001d1760+0x30>
+!! 001d176c: 0000102d  move	v0,zero                                     | 001d176c: 00ae102a  slt	v0,a1,t6
+   001d1770: 8c8f0014  lw	t7,20(a0)                                     | 001d1770: 8c8f0014  lw	t7,20(a0)
+!! 001d1774: 00af782a  slt	t7,a1,t7                                     | 001d1774: 01cf782a  slt	t7,t6,t7
+!! 001d1778: 11e00007  beqz	t7,0x1d1798                                 | 001d1778: 11e00006  beqz	t7,1d1794 <func_001d1760+0x34>
+!! 001d177c: 00ae782a  slt	t7,a1,t6                                     | 001d177c: 2c420001  sltiu	v0,v0,1
+!! 001d1780: 51e00001  beqzl	t7,0x1d1788                                | 001d1780: 01c5782a  slt	t7,t6,a1
+!! 001d1784: 24020001  li	v0,1                                          | 001d1784: 39ef0000  xori	t7,t7,0x0
+!! 001d1788: 03e00008  jr	ra                                            | 001d1788: 240e0001  li	t6,1
+!! 001d178c: 00000000  nop                                              | 001d178c: 01cf680a  movz	t5,t6,t7
+!! 001d1790: 03e00008  jr	ra                                            | 001d1790: 01a0102d  move	v0,t5
+!! 001d1794: 00000000  nop                                              | 001d1794: 03e00008  jr	ra
+!! 001d1798: 01c5782a  slt	t7,t6,a1                                     | 001d1798: 00000000  nop
+!! 001d179c: 15e0fffc  bnez	t7,0x1d1790                                 | 
+!! 001d17a0: 00000000  nop                                              | 
+!! 001d17a4: 03e00008  jr	ra                                            | 
+!! 001d17a8: 24020001  li	v0,1                                          | 

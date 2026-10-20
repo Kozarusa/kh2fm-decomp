@@ -1,0 +1,62 @@
+{
+  "source_sha256": "723fae5cdab519edfa786016f1df03f26b23e903cb8829074b3f9f6470f6f61a",
+  "source": "analysis/final-mix/recovery-experiments/fm_width_recovered_09.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "001bd4e8",
+      "symbol": "_Z13func_001bd4e8jPjj",
+      "compiled_size": 136,
+      "target_size": 136,
+      "ghidra_body_size": 136,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "d0ffbd2700020d3c0000b0ff1000b2ff1800b3ff2d80a0000800b1ff2d9080002000bfffe0098f8c8805ee8d2470cd010e00c0152d98c000acf6060c2d8800000000068e030025262d2040022d3860020100082464000924f8f4060c0100312604002f2af6ffe015040010260000b0df0800b1df1000b2df1800b3df2000bfdf0800e0033000bd27",
+      "target_hex": "d0ffbd2700020d3c0000b0ff1000b2ff1800b3ff2d80a0000800b1ff2d9080002000bfffe0098f8c8805ee8d2470cd010e00c0152d98c000acf6060c2d8800000000068e030025262d2040022d3860020100082464000924f8f4060c0100312604002f2af6ffe015040010260000b0df0800b1df1000b2df1800b3df2000bfdf0800e0033000bd27"
+    },
+    {
+      "address": "001c9d88",
+      "symbol": "_Z13func_001c9d88v",
+      "compiled_size": 40,
+      "target_size": 40,
+      "ghidra_body_size": 40,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd270000bfffdaa2060c000000009af9050c2d2040000000bfdf0100422c0800e0031000bd27",
+      "target_hex": "f0ffbd270000bfffdaa2060c000000009af9050c2d2040000000bfdf0100422c0800e0031000bd27"
+    },
+    {
+      "address": "001d18c0",
+      "symbol": "_Z13func_001d18c0j",
+      "compiled_size": 76,
+      "target_size": 76,
+      "ghidra_body_size": 76,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd270000b0ff0800bfffbe45070c2d80800004000f8e0600e0112d20e0010800058e2000068e2400078ea23d050c1c00088e1400058e2d2000020800bfdf0000b0df544607081000bd27",
+      "target_hex": "f0ffbd270000b0ff0800bfffbe45070c2d80800004000f8e0600e0112d20e0010800058e2000068e2400078ea23d050c1c00088e1400058e2d2000020800bfdf0000b0df544607081000bd27"
+    },
+    {
+      "address": "001d6da8",
+      "symbol": "_Z13func_001d6da8Pt",
+      "compiled_size": 96,
+      "target_size": 96,
+      "ghidra_body_size": 96,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "e0ffbd270000b0ff0800b1ff1000bfff2d8000002d888000325b070c2d200002070040142d804000000020a60000b0df0800b1df1000bfdf0800e0032000bd275c8d060c02000496f3ff40180000000000000f9600002fa6efff001002003126",
+      "target_hex": "e0ffbd270000b0ff0800b1ff1000bfff2d8000002d888000325b070c2d200002070040142d804000000020a60000b0df0800b1df1000bfdf0800e0032000bd275c8d060c02000496f3ff40180000000000000f9600002fa6efff001002003126"
+    },
+    {
+      "address": "001d7e00",
+      "symbol": "_Z13func_001d7e00j",
+      "compiled_size": 52,
+      "target_size": 52,
+      "ghidra_body_size": 52,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd27020005240000b0ff0800bfff2d8080002d3000024842060cf40984242d2000020800bfdf0000b0df146106081000bd27",
+      "target_hex": "f0ffbd27020005240000b0ff0800bfff2d8080002d3000024842060cf40984242d2000020800bfdf0000b0df146106081000bd27"
+    }
+  ]
+}

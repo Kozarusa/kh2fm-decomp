@@ -1,0 +1,14 @@
+{
+  "probe_source": "analysis/final-mix/recovery-experiments/fm_primary_virtualsiblings_v1_00171e58.cpp",
+  "probe_source_sha256": "ee3ec99a76c6cc90c0291964a36b305e28c2672a6a020c2142ae1566495f8be4",
+  "probe_proof_sha256": "66d3f2fcf5abab3fafda3d03152a73d2b497ac49c6e3052b52953995a89f5ace",
+  "curated_source": "analysis/final-mix/recovery-experiments/fm_primary_virtualsiblings_recovered_00171e58.cpp",
+  "curated_source_sha256": "494f6ab7c893b83bae2e9fa7e92f4844a285a68028362a26892846e95c67e72b",
+  "selected_addresses": [
+    "00171e58"
+  ],
+  "exclusion_receipt": null,
+  "limitations": [
+    "Curated source still requires a new probe, registration and full build."
+  ]
+}

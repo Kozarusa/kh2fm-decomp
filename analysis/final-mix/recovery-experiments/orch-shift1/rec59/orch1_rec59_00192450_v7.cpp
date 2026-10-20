@@ -1,0 +1,16 @@
+#include "../common/types.h"
+
+s32 func_00192450(s32 base, s32 index) {
+    u32 value = *(u8*)(base + index);
+    s32 result = value - 32;
+    u32 high = value - 25;
+    if (value < 32) {
+        if ((high & 0xff) < 7) {
+            // why: keeps the second address sum from being merged with the first
+            asm("" : "+r"(index));
+            return (high << 8) + *(u8*)(index + base + 1) + 224;
+        }
+        result = -1;
+    }
+    return result;
+}

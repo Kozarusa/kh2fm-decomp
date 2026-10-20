@@ -1,0 +1,20 @@
+001c5f38: compiled 64 bytes, target 64 bytes, exact=False
+Differing words: 9. First difference at instruction 0 (0-based).
+
+ORIGINAL                                                                | COMPILED
+!! 001c5f38: 27bdfff0  addiu	sp,sp,-16                                  | 001c5f38: 908d0052  lbu	t5,82(a0)
+!! 001c5f3c: 3c0f0035  lui	t7,0x35                                      | 001c5f3c: 27bdfff0  addiu	sp,sp,-16
+!! 001c5f40: ffbf0000  sd	ra,0(sp)                                      | 001c5f40: 3c0f0035  lui	t7,0x35
+!! 001c5f44: 25ef1680  addiu	t7,t7,5760   ; = D_00351680                | 001c5f44: ffbf0000  sd	ra,0(sp)
+!! 001c5f48: 908e0052  lbu	t6,82(a0)                                    | 001c5f48: 25ef1680  addiu	t7,t7,5760   ; = D_00351680
+!! 001c5f4c: 000e7140  sll	t6,t6,0x5                                    | 001c5f4c: 000d6940  sll	t5,t5,0x5
+!! 001c5f50: 01cf7021  addu	t6,t6,t7                                    | 001c5f50: 01af6821  addu	t5,t5,t7
+!! 001c5f54: 8dcd0014  lw	t5,20(t6)                                     | 001c5f54: 8dae0014  lw	t6,20(t5)
+!! 001c5f58: 19a00004  blez	t5,0x1c5f6c                                 | 001c5f58: 19c00004  blez	t6,1c5f6c <func_001c5f38+0x34>
+   001c5f5c: 0000102d  move	v0,zero                                     | 001c5f5c: 0000102d  move	v0,zero
+   001c5f60: 0c0717a2  jal	0x1c5e88                                     | 001c5f60: 0c0717a2  jal	1c5e88 <func_001c5e88>
+   001c5f64: 00000000  nop                                              | 001c5f64: 00000000  nop
+   001c5f68: 24020001  li	v0,1                                          | 001c5f68: 24020001  li	v0,1
+   001c5f6c: dfbf0000  ld	ra,0(sp)                                      | 001c5f6c: dfbf0000  ld	ra,0(sp)
+   001c5f70: 03e00008  jr	ra                                            | 001c5f70: 03e00008  jr	ra
+   001c5f74: 27bd0010  addiu	sp,sp,16                                   | 001c5f74: 27bd0010  addiu	sp,sp,16

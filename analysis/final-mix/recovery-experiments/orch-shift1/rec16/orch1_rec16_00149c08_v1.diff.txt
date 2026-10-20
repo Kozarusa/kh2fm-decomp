@@ -1,0 +1,18 @@
+00149c08: compiled 56 bytes, target 56 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00149c08: 27bdfff0  addiu	sp,sp,-16                                  | 00149c08: 27bdfff0  addiu	sp,sp,-16
+   00149c0c: ffbf0008  sd	ra,8(sp)                                      | 00149c0c: ffbf0008  sd	ra,8(sp)
+   00149c10: ffb00000  sd	s0,0(sp)                                      | 00149c10: ffb00000  sd	s0,0(sp)
+   00149c14: 0c04e980  jal	0x13a600                                     | 00149c14: 0c04e980  jal	13a600 <func_0013a600>
+   00149c18: 3c100035  lui	s0,0x35                                      | 00149c18: 3c100035  lui	s0,0x35
+   00149c1c: 0c04e932  jal	0x13a4c8                                     | 00149c1c: 0c04e932  jal	13a4c8 <func_0013a4c8>
+   00149c20: 26108d68  addiu	s0,s0,-29336   ; = D_00348d68              | 00149c20: 26108d68  addiu	s0,s0,-29336   ; = D_00348d68
+   00149c24: 0c0524ee  jal	0x1493b8                                     | 00149c24: 0c0524ee  jal	1493b8 <func_001493b8>
+   00149c28: 0200202d  move	a0,s0                                       | 00149c28: 0200202d  move	a0,s0
+   00149c2c: 0200202d  move	a0,s0                                       | 00149c2c: 0200202d  move	a0,s0
+   00149c30: dfbf0008  ld	ra,8(sp)                                      | 00149c30: dfbf0008  ld	ra,8(sp)
+   00149c34: dfb00000  ld	s0,0(sp)                                      | 00149c34: dfb00000  ld	s0,0(sp)
+   00149c38: 0805250a  j	0x149428                                       | 00149c38: 0805250a  j	149428 <func_00149428>
+   00149c3c: 27bd0010  addiu	sp,sp,16                                   | 00149c3c: 27bd0010  addiu	sp,sp,16

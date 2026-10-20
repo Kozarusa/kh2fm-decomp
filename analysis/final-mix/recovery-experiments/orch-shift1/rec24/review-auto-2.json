@@ -1,0 +1,56 @@
+{
+  "wp_dir": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\orch-shift1\\rec24",
+  "start": "2026-10-12T20:37:03Z",
+  "reviewed": [
+    "0015edb8",
+    "0015de98",
+    "0015cff0",
+    "0015eaf8"
+  ],
+  "blocked_reports": [
+    "0015cc80-BLOCKED.md",
+    "0015def8-BLOCKED.md"
+  ],
+  "results": [
+    {
+      "level": "PASS",
+      "address": "0015edb8",
+      "detail": "88 bytes exact; source orch1_rec24_0015edb8_v1.cpp"
+    },
+    {
+      "level": "PASS",
+      "address": "0015de98",
+      "detail": "92 bytes exact; source orch1_rec24_0015de98_v6.cpp"
+    },
+    {
+      "level": "FLAG",
+      "address": "0015cff0",
+      "detail": "6 emitted non-VU asm instructions; reviewer must confirm these are narrow primitives, not a pasted body"
+    },
+    {
+      "level": "PASS",
+      "address": "0015cff0",
+      "detail": "104 bytes exact; source orch1_rec24_0015cff0_v3.cpp"
+    },
+    {
+      "level": "PASS",
+      "address": "0015eaf8",
+      "detail": "112 bytes exact; source orch1_rec24_0015eaf8_v1.cpp"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/ORCHESTRATION.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/PROGRESS.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/briefs/rec24.md"
+    }
+  ]
+}

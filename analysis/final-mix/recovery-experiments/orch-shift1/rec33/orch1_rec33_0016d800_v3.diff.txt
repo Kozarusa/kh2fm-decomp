@@ -1,0 +1,22 @@
+0016d800: compiled 72 bytes, target 72 bytes, exact=False
+Differing words: 5. First difference at instruction 4 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0016d800: 27bdffe0  addiu	sp,sp,-32                                  | 0016d800: 27bdffe0  addiu	sp,sp,-32
+   0016d804: 0080782d  move	t7,a0                                       | 0016d804: 0080782d  move	t7,a0
+   0016d808: ffb00010  sd	s0,16(sp)                                     | 0016d808: ffb00010  sd	s0,16(sp)
+   0016d80c: ffbf0018  sd	ra,24(sp)                                     | 0016d80c: ffbf0018  sd	ra,24(sp)
+!! 0016d810: 8c900000  lw	s0,0(a0)                                      | 0016d810: 8df00000  lw	s0,0(t7)
+!! 0016d814: 8de60004  lw	a2,4(t7)                                      | 0016d814: c48c0008  lwc1	$f12,8(a0)
+!! 0016d818: c5ec0008  lwc1	$f12,8(t7)                                  | 0016d818: 8de60004  lw	a2,4(t7)
+!! 0016d81c: 03a0202d  move	a0,sp                                       | 0016d81c: 0200282d  move	a1,s0
+   0016d820: 0c05f4d2  jal	0x17d348                                     | 0016d820: 0c05f4d2  jal	17d348 <func_0017d348>
+!! 0016d824: 0200282d  move	a1,s0                                       | 0016d824: 03a0202d  move	a0,sp
+   0016d828: 521d0004  beql	s0,sp,0x16d83c                              | 0016d828: 521d0004  beql	s0,sp,16d83c <func_0016d800+0x3c>
+   0016d82c: dfb00010  ld	s0,16(sp)                                     | 0016d82c: dfb00010  ld	s0,16(sp)
+   0016d830: 7ba80000  lq	t0,0(sp)                                      | 0016d830: 7ba80000  lq	t0,0(sp)
+   0016d834: 7e080000  sq	t0,0(s0)                                      | 0016d834: 7e080000  sq	t0,0(s0)
+   0016d838: dfb00010  ld	s0,16(sp)                                     | 0016d838: dfb00010  ld	s0,16(sp)
+   0016d83c: dfbf0018  ld	ra,24(sp)                                     | 0016d83c: dfbf0018  ld	ra,24(sp)
+   0016d840: 03e00008  jr	ra                                            | 0016d840: 03e00008  jr	ra
+   0016d844: 27bd0020  addiu	sp,sp,32                                   | 0016d844: 27bd0020  addiu	sp,sp,32

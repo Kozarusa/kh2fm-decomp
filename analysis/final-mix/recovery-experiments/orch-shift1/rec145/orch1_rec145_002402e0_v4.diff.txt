@@ -1,0 +1,35 @@
+002402e0: compiled 116 bytes, target 124 bytes, exact=False
+Differing words: 25. First difference at instruction 4 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   002402e0: 27bdfff0  addiu	sp,sp,-16                                  | 002402e0: 27bdfff0  addiu	sp,sp,-16
+   002402e4: ffbf0000  sd	ra,0(sp)                                      | 002402e4: ffbf0000  sd	ra,0(sp)
+   002402e8: 0c04170c  jal	0x105c30                                     | 002402e8: 0c04170c  jal	105c30 <func_00105c30>
+   002402ec: 00000000  nop                                              | 002402ec: 00000000  nop
+!! 002402f0: 3c0d01db  lui	t5,0x1db                                     | 002402f0: 240f0002  li	t7,2
+!! 002402f4: 240f0002  li	t7,2                                          | 002402f4: 104f0014  beq	v0,t7,240348 <func_002402e0+0x68>
+!! 002402f8: 104f0015  beq	v0,t7,0x240350                               | 002402f8: 284e0003  slti	t6,v0,3
+!! 002402fc: 284e0003  slti	t6,v0,3                                     | 002402fc: 11c0000d  beqz	t6,240334 <func_002402e0+0x54>
+!! 00240300: 11c0000e  beqz	t6,0x24033c                                 | 00240300: 240f0001  li	t7,1
+!! 00240304: 240f0001  li	t7,1                                          | 00240304: 104f0009  beq	v0,t7,24032c <func_002402e0+0x4c>
+!! 00240308: 104f000a  beq	v0,t7,0x240334                               | 00240308: 3c0f0036  lui	t7,0x36
+   0024030c: 3c0f0036  lui	t7,0x36                                      | 0024030c: 3c0f0036  lui	t7,0x36
+!! 00240310: 3c0f0036  lui	t7,0x36                                      | 00240310: 8deeecb4  lw	t6,-4940(t7)   ; = D_0035ecb4
+!! 00240314: 3c0d01db  lui	t5,0x1db                                     | 00240314: 3c0f01db  lui	t7,0x1db
+!! 00240318: 8deeecb4  lw	t6,-4940(t7)   ; = D_0035ecb4                 | 00240318: dfbf0000  ld	ra,0(sp)
+!! 0024031c: adaee6a0  sw	t6,-6496(t5)   ; = D_01dae6a0                 | 0024031c: adeee6a0  sw	t6,-6496(t7)   ; = D_01dae6a0
+!! 00240320: dfbf0000  ld	ra,0(sp)                                      | 00240320: 8de2e6a0  lw	v0,-6496(t7)   ; = D_01dae6a0
+!! 00240324: 8da2e6a0  lw	v0,-6496(t5)   ; = D_01dae6a0                 | 00240324: 03e00008  jr	ra
+!! 00240328: 03e00008  jr	ra                                            | 00240328: 27bd0010  addiu	sp,sp,16
+!! 0024032c: 27bd0010  addiu	sp,sp,16                                   | 0024032c: 1000fff9  b	240314 <func_002402e0+0x34>
+!! 00240330: 3c0d01db  lui	t5,0x1db                                     | 00240330: 8deeecac  lw	t6,-4948(t7)   ; = D_01daecac
+!! 00240334: 1000fff9  b	0x24031c                                       | 00240334: 240f0008  li	t7,8
+!! 00240338: 8deeecac  lw	t6,-4948(t7)   ; = D_0035ecac                 | 00240338: 544ffff5  bnel	v0,t7,240310 <func_002402e0+0x30>
+!! 0024033c: 240f0008  li	t7,8                                          | 0024033c: 3c0f0036  lui	t7,0x36
+!! 00240340: 544ffff4  bnel	v0,t7,0x240314                              | 00240340: 1000fffa  b	24032c <func_002402e0+0x4c>
+   00240344: 3c0f0036  lui	t7,0x36                                      | 00240344: 3c0f0036  lui	t7,0x36
+!! 00240348: 1000fff9  b	0x240330                                       | 00240348: 3c0f0036  lui	t7,0x36
+!! 0024034c: 3c0f0036  lui	t7,0x36                                      | 0024034c: 1000fff1  b	240314 <func_002402e0+0x34>
+!! 00240350: 3c0f0036  lui	t7,0x36                                      | 00240350: 8deeecb0  lw	t6,-4944(t7)   ; = D_0035ecb0
+!! 00240354: 1000fff1  b	0x24031c                                       | 
+!! 00240358: 8deeecb0  lw	t6,-4944(t7)   ; = D_0035ecb0                 | 

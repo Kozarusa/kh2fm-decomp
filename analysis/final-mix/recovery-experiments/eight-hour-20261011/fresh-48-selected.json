@@ -1,0 +1,42 @@
+[
+  {
+    "address": "0016f770",
+    "source": "eight_hour_0016f770_v2_word_argument_0.cpp",
+    "proof": "eight_hour_0016f770_v2_word_argument_0.verification.json"
+  },
+  {
+    "address": "00191bf0",
+    "source": "eight_hour_00191bf0_scalar_global_0.cpp",
+    "proof": "eight_hour_00191bf0_scalar_global_0.verification.json"
+  },
+  {
+    "address": "001b83f0",
+    "source": "eight_hour_001b83f0_record_payload_0.cpp",
+    "proof": "eight_hour_001b83f0_record_payload_0.verification.json"
+  },
+  {
+    "address": "001b9c28",
+    "source": "eight_hour_001b9c28_global_bitset_0.cpp",
+    "proof": "eight_hour_001b9c28_global_bitset_0.verification.json"
+  },
+  {
+    "address": "001c2d48",
+    "source": "eight_hour_001c2d48_record_payload_0.cpp",
+    "proof": "eight_hour_001c2d48_record_payload_0.verification.json"
+  },
+  {
+    "address": "001de7d8",
+    "source": "eight_hour_001de7d8_stored_argument_0.cpp",
+    "proof": "eight_hour_001de7d8_stored_argument_0.verification.json"
+  },
+  {
+    "address": "002289c0",
+    "source": "eight_hour_002289c0_virtual_then_helper_0.cpp",
+    "proof": "eight_hour_002289c0_virtual_then_helper_0.verification.json"
+  },
+  {
+    "address": "00228e28",
+    "source": "eight_hour_00228e28_virtual_then_helper_0.cpp",
+    "proof": "eight_hour_00228e28_virtual_then_helper_0.verification.json"
+  }
+]

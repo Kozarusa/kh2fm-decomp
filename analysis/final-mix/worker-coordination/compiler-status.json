@@ -1,0 +1,8 @@
+{
+  "owner": "primary",
+  "state": "idle",
+  "phase": "orchfd-accepted",
+  "last_accepted_phase": "primary-orchfd",
+  "coordination": "Queue workers may resume isolated probes in unique scratch directories.",
+  "status": "idle"
+}

@@ -1,0 +1,26 @@
+00258ce8: compiled 88 bytes, target 88 bytes, exact=False
+Differing words: 8. First difference at instruction 2 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00258ce8: 1480000a  bnez	a0,0x258d14                                 | 00258ce8: 1480000a  bnez	a0,258d14 <func_00258ce8+0x2c>
+   00258cec: 3c0f0036  lui	t7,0x36                                      | 00258cec: 3c0f0036  lui	t7,0x36
+!! 00258cf0: 3c0d0036  lui	t5,0x36                                      | 00258cf0: 240e9fcf  li	t6,-24625
+!! 00258cf4: 240f9fcf  li	t7,-24625                                     | 00258cf4: a5eef0a8  sh	t6,-3928(t7)   ; = D_0035f0a8
+!! 00258cf8: a5aff0a8  sh	t7,-3928(t5)   ; = D_0035f0a8                 | 00258cf8: 240d9fd1  li	t5,-24623
+!! 00258cfc: 25acf0a8  addiu	t4,t5,-3928   ; = D_0035f0a8               | 00258cfc: 3c0f0036  lui	t7,0x36
+!! 00258d00: 240e9fd1  li	t6,-24623                                     | 00258d00: 240e9fd0  li	t6,-24624
+!! 00258d04: 240f9fd0  li	t7,-24624                                     | 00258d04: a5edf0ac  sh	t5,-3924(t7)   ; = D_0035f0ac
+!! 00258d08: a58e0004  sh	t6,4(t4)                                      | 00258d08: 3c0f0036  lui	t7,0x36
+   00258d0c: 03e00008  jr	ra                                            | 00258d0c: 03e00008  jr	ra
+!! 00258d10: a58f0002  sh	t7,2(t4)                                      | 00258d10: a5eef0aa  sh	t6,-3926(t7)   ; = D_0035f0aa
+   00258d14: 240d0002  li	t5,2                                          | 00258d14: 240d0002  li	t5,2
+   00258d18: 25eef0a8  addiu	t6,t7,-3928                                | 00258d18: 25eef0a8  addiu	t6,t7,-3928   ; = D_0035f0a8
+   00258d1c: 948f0000  lhu	t7,0(a0)                                     | 00258d1c: 948f0000  lhu	t7,0(a0)
+   00258d20: 25adffff  addiu	t5,t5,-1                                   | 00258d20: 25adffff  addiu	t5,t5,-1
+   00258d24: a5cf0000  sh	t7,0(t6)                                      | 00258d24: a5cf0000  sh	t7,0(t6)
+   00258d28: 24840002  addiu	a0,a0,2                                    | 00258d28: 24840002  addiu	a0,a0,2
+   00258d2c: 00000000  nop                                              | 00258d2c: 00000000  nop
+   00258d30: 05a1fffa  bgez	t5,0x258d1c                                 | 00258d30: 05a1fffa  bgez	t5,258d1c <func_00258ce8+0x34>
+   00258d34: 25ce0002  addiu	t6,t6,2                                    | 00258d34: 25ce0002  addiu	t6,t6,2
+   00258d38: 03e00008  jr	ra                                            | 00258d38: 03e00008  jr	ra
+   00258d3c: 00000000  nop                                              | 00258d3c: 00000000  nop

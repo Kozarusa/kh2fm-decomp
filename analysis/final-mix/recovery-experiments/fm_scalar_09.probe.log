@@ -1,0 +1,33 @@
+Exact probe matches: 13/98
+Detailed proof: analysis/final-mix/recovery-experiments/fm_scalar_09.verification.json
+recovery-experiments/fm_scalar_09/probe.cpp: In function `u64 
+   func_002ef660(long long unsigned int, int)':
+recovery-experiments/fm_scalar_09/probe.cpp:613: warning: cast to pointer from 
+   integer of different size
+recovery-experiments/fm_scalar_09/probe.cpp: In function `void 
+   func_002f0af0(int*)':
+recovery-experiments/fm_scalar_09/probe.cpp:811: warning: cast to pointer from 
+   integer of different size
+recovery-experiments/fm_scalar_09/probe.cpp:821: warning: cast to pointer from 
+   integer of different size
+recovery-experiments/fm_scalar_09/probe.cpp: In function `void 
+   func_002f0b60(int*)':
+recovery-experiments/fm_scalar_09/probe.cpp:845: warning: cast to pointer from 
+   integer of different size
+recovery-experiments/fm_scalar_09/probe.cpp:855: warning: cast to pointer from 
+   integer of different size
+recovery-experiments/fm_scalar_09/probe.cpp: In function `void 
+   func_002f3490(long long unsigned int)':
+recovery-experiments/fm_scalar_09/probe.cpp:937: warning: cast to pointer from 
+   integer of different size
+recovery-experiments/fm_scalar_09/probe.cpp:945: warning: cast to pointer from 
+   integer of different size
+recovery-experiments/fm_scalar_09/probe.cpp: In function `u32 func_00305ce0()':
+recovery-experiments/fm_scalar_09/probe.cpp:1165: warning: cast to pointer from 
+   integer of different size
+recovery-experiments/fm_scalar_09/probe.cpp: In function `u32 func_00305e20()':
+recovery-experiments/fm_scalar_09/probe.cpp:1184: warning: cast to pointer from 
+   integer of different size
+recovery-experiments/fm_scalar_09/probe.cpp: In function `u32 func_00305e48()':
+recovery-experiments/fm_scalar_09/probe.cpp:1194: warning: cast to pointer from 
+   integer of different size

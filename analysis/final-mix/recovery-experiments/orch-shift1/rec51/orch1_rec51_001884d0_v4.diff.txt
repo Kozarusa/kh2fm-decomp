@@ -1,0 +1,36 @@
+001884d0: compiled 128 bytes, target 128 bytes, exact=False
+Differing words: 4. First difference at instruction 18 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001884d0: 27bdffe0  addiu	sp,sp,-32                                  | 001884d0: 27bdffe0  addiu	sp,sp,-32
+   001884d4: ffb00000  sd	s0,0(sp)                                      | 001884d4: ffb00000  sd	s0,0(sp)
+   001884d8: ffb10008  sd	s1,8(sp)                                      | 001884d8: ffb10008  sd	s1,8(sp)
+   001884dc: ffbf0010  sd	ra,16(sp)                                     | 001884dc: ffbf0010  sd	ra,16(sp)
+   001884e0: 0080802d  move	s0,a0                                       | 001884e0: 0080802d  move	s0,a0
+   001884e4: 00a0882d  move	s1,a1                                       | 001884e4: 00a0882d  move	s1,a1
+   001884e8: 8c8f008c  lw	t7,140(a0)                                    | 001884e8: 8c8f008c  lw	t7,140(a0)
+   001884ec: 11e00013  beqz	t7,0x18853c                                 | 001884ec: 11e00013  beqz	t7,18853c <func_001884d0+0x6c>
+   001884f0: 01e0202d  move	a0,t7                                       | 001884f0: 01e0202d  move	a0,t7
+   001884f4: 0c061eae  jal	0x187ab8                                     | 001884f4: 0c061eae  jal	187ab8 <func_00187ab8>
+   001884f8: 8ca50000  lw	a1,0(a1)                                      | 001884f8: 8ca50000  lw	a1,0(a1)
+   001884fc: 3c0e01c6  lui	t6,0x1c6                                     | 001884fc: 3c0e01c6  lui	t6,0x1c6
+   00188500: 0200202d  move	a0,s0                                       | 00188500: 0200202d  move	a0,s0
+   00188504: 25cd0be0  addiu	t5,t6,3040   ; = D_01c60be0                | 00188504: 25cd0be0  addiu	t5,t6,3040   ; = D_01c60be0
+   00188508: 24070002  li	a3,2                                          | 00188508: 24070002  li	a3,2
+   0018850c: 1040000b  beqz	v0,0x18853c                                 | 0018850c: 1040000b  beqz	v0,18853c <func_001884d0+0x6c>
+   00188510: 01a0302d  move	a2,t5                                       | 00188510: 01a0302d  move	a2,t5
+   00188514: 8e0f0088  lw	t7,136(s0)                                    | 00188514: 8e0f0088  lw	t7,136(s0)
+!! 00188518: dfbf0010  ld	ra,16(sp)                                     | 00188518: 94450014  lhu	a1,20(v0)
+   0018851c: adcf0be0  sw	t7,3040(t6)   ; = D_01c60be0                  | 0018851c: adcf0be0  sw	t7,3040(t6)   ; = D_01c60be0
+   00188520: dfb00000  ld	s0,0(sp)                                      | 00188520: dfb00000  ld	s0,0(sp)
+   00188524: 8e2e0004  lw	t6,4(s1)                                      | 00188524: 8e2e0004  lw	t6,4(s1)
+!! 00188528: adae0004  sw	t6,4(t5)                                      | 00188528: dfbf0010  ld	ra,16(sp)
+!! 0018852c: dfb10008  ld	s1,8(sp)                                      | 0018852c: adae0004  sw	t6,4(t5)
+!! 00188530: 94450014  lhu	a1,20(v0)                                    | 00188530: dfb10008  ld	s1,8(sp)
+   00188534: 080620e6  j	0x188398                                       | 00188534: 080620e6  j	188398 <func_00188398>
+   00188538: 27bd0020  addiu	sp,sp,32                                   | 00188538: 27bd0020  addiu	sp,sp,32
+   0018853c: dfb00000  ld	s0,0(sp)                                      | 0018853c: dfb00000  ld	s0,0(sp)
+   00188540: dfb10008  ld	s1,8(sp)                                      | 00188540: dfb10008  ld	s1,8(sp)
+   00188544: dfbf0010  ld	ra,16(sp)                                     | 00188544: dfbf0010  ld	ra,16(sp)
+   00188548: 03e00008  jr	ra                                            | 00188548: 03e00008  jr	ra
+   0018854c: 27bd0020  addiu	sp,sp,32                                   | 0018854c: 27bd0020  addiu	sp,sp,32

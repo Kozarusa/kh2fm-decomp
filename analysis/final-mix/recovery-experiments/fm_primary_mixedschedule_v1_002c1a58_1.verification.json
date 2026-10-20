@@ -1,0 +1,18 @@
+{
+  "source_sha256": "7b0f9445f0db760b0f8d5c838d28866d4d277ba7e7e51114a4b95183f4ff5c42",
+  "source": "analysis/final-mix/recovery-experiments/fm_primary_mixedschedule_v1_002c1a58_1.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "002c1a58",
+      "symbol": "_Z13func_002c1a58PVj",
+      "compiled_size": 68,
+      "target_size": 68,
+      "ghidra_body_size": 68,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "f0ffbd270000b0ff0800bfffdcf90a0c2d8080008c050e8e36000f3c201bef250800bfdfe40a00ae0100ce3500000fae8c050eaee80a00a20000b0df0800e0031000bd27",
+      "target_hex": "f0ffbd270000b0ff0800bfffdcf90a0c2d8080008c050e8e36000f3c201bef25e40a00ae0100ce3500000fae8c050eaee80a00a20800bfdf0000b0df0800e0031000bd27"
+    }
+  ]
+}

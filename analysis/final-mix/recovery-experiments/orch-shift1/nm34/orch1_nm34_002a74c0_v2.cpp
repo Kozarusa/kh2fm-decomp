@@ -1,0 +1,19 @@
+#include "../common/types.h"
+extern "C" u32 func_001058e8(void);
+u32 func_002a74c0() {
+    u32 address = func_001058e8() + 0x49f4u;
+    u32 result = 0;
+    u32 index = 0;
+    do {
+        u32 word = index >> 5;
+        register u32 bit asm("$13") = index & 31u; // why: constrain bit scheduling to original t5
+        u32 mask = 1u << bit;
+        ++index;
+        if ((*(u32*)(word * 4u + address) & mask) != 0) {
+            result = 1;
+            break;
+        }
+    } while ((s32)index < 64);
+    return result;
+}
+

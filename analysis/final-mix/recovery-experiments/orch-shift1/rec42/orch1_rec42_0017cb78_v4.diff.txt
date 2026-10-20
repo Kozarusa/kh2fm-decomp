@@ -1,0 +1,37 @@
+0017cb78: compiled 132 bytes, target 124 bytes, exact=False
+Differing words: 33. First difference at instruction 0 (0-based).
+
+ORIGINAL                                                                | COMPILED
+!! 0017cb78: 27bdfff0  addiu	sp,sp,-16                                  | 0017cb78: 27bdffe0  addiu	sp,sp,-32
+!! 0017cb7c: 24a40140  addiu	a0,a1,320                                  | 0017cb7c: 3c0f0037  lui	t7,0x37
+!! 0017cb80: ffb00000  sd	s0,0(sp)                                      | 0017cb80: ffb00010  sd	s0,16(sp)
+!! 0017cb84: 240f0004  li	t7,4                                          | 0017cb84: 25efc540  addiu	t7,t7,-15040   ; = D_0036c540
+!! 0017cb88: ffbf0008  sd	ra,8(sp)                                      | 0017cb88: ffbf0018  sd	ra,24(sp)
+!! 0017cb8c: 00a0802d  move	s0,a1                                       | 0017cb8c: 24a40140  addiu	a0,a1,320
+!! 0017cb90: 8cae0100  lw	t6,256(a1)                                    | 0017cb90: afaf0000  sw	t7,0(sp)
+!! 0017cb94: 15cf000e  bne	t6,t7,0x17cbd0                               | 0017cb94: 00a0802d  move	s0,a1
+!! 0017cb98: 24050004  li	a1,4                                          | 0017cb98: 8cae0100  lw	t6,256(a1)
+!! 0017cb9c: 3c0f0037  lui	t7,0x37                                      | 0017cb9c: 240f0004  li	t7,4
+!! 0017cba0: 44806800  mtc1	zero,$f13                                   | 0017cba0: 15cf000d  bne	t6,t7,17cbd8 <func_0017cb78+0x60>
+!! 0017cba4: 25efc540  addiu	t7,t7,-15040   ; = D_0036c540              | 0017cba4: 24050004  li	a1,4
+!! 0017cba8: 0c05fd22  jal	0x17f488                                     | 0017cba8: 8faf0000  lw	t7,0(sp)
+!! 0017cbac: c5ec0000  lwc1	$f12,0(t7)                                  | 0017cbac: 44806800  mtc1	zero,$f13
+!! 0017cbb0: 8e0f010c  lw	t7,268(s0)                                    | 0017cbb0: 0c05fd22  jal	17f488 <func_0017f488>
+!! 0017cbb4: 240efffe  li	t6,-2                                         | 0017cbb4: c5ec0000  lwc1	$f12,0(t7)
+!! 0017cbb8: dfbf0008  ld	ra,8(sp)                                      | 0017cbb8: 8e0f010c  lw	t7,268(s0)
+!! 0017cbbc: 01ee7824  and	t7,t7,t6                                     | 0017cbbc: 240efffe  li	t6,-2
+!! 0017cbc0: ae0f010c  sw	t7,268(s0)                                    | 0017cbc0: dfbf0018  ld	ra,24(sp)
+!! 0017cbc4: dfb00000  ld	s0,0(sp)                                      | 0017cbc4: 01ee7824  and	t7,t7,t6
+!! 0017cbc8: 03e00008  jr	ra                                            | 0017cbc8: ae0f010c  sw	t7,268(s0)
+!! 0017cbcc: 27bd0010  addiu	sp,sp,16                                   | 0017cbcc: dfb00010  ld	s0,16(sp)
+!! 0017cbd0: 05c0fff7  bltz	t6,0x17cbb0                                 | 0017cbd0: 03e00008  jr	ra
+!! 0017cbd4: 3c0f0037  lui	t7,0x37                                      | 0017cbd4: 27bd0020  addiu	sp,sp,32
+!! 0017cbd8: 26040140  addiu	a0,s0,320                                  | 0017cbd8: 05c2fff8  bltzl	t6,17cbbc <func_0017cb78+0x44>
+!! 0017cbdc: 25efc540  addiu	t7,t7,-15040   ; = D_0036c540              | 0017cbdc: 8e0f010c  lw	t7,268(s0)
+!! 0017cbe0: 01c0282d  move	a1,t6                                       | 0017cbe0: 8faf0000  lw	t7,0(sp)
+!! 0017cbe4: 0c060322  jal	0x180c88                                     | 0017cbe4: 26040140  addiu	a0,s0,320
+!! 0017cbe8: c5ec0000  lwc1	$f12,0(t7)                                  | 0017cbe8: 01c0282d  move	a1,t6
+!! 0017cbec: 1000fff1  b	0x17cbb4                                       | 0017cbec: 0c060322  jal	180c88 <func_00180c88>
+!! 0017cbf0: 8e0f010c  lw	t7,268(s0)                                    | 0017cbf0: c5ec0000  lwc1	$f12,0(t7)
+!!                                                                      | 0017cbf4: 1000fff1  b	17cbbc <func_0017cb78+0x44>
+!!                                                                      | 0017cbf8: 8e0f010c  lw	t7,268(s0)

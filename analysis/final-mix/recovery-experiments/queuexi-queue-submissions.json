@@ -1,0 +1,16 @@
+[
+  {
+    "address": "001a1db8",
+    "owner": "eight-hour-primary",
+    "metadata": "{\"address\": \"001a1db8\", \"end\": \"001a1de0\", \"bytes\": 40, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [\"001a1a20\"], \"best_proposal\": {\"proof\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_primary_width_00_all_narrow32.verification.json\", \"source\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_primary_width_00_all_narrow32.cpp\", \"compiled_bytes\": 36, \"target_bytes\": 40, \"different_words\": 6}}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_001a1db8_v2_fpu_zero_1.cpp\", \"source_sha256\": \"6521deb55d8bfa59ebcba18a455fdb4f791ef8dd02bf1e1b48def3334a61a659\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_001a1db8_v2_fpu_zero_1.verification.json\", \"proof_sha256\": \"c11e87a7a3c5b107000e592d15c2a90a6ed0b5f55907b769504b3268ee866c5b\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_queuexi_recovered_001a1db8.cpp"
+  },
+  {
+    "address": "001b1be0",
+    "owner": "eight-hour-primary",
+    "metadata": "{\"address\": \"001b1be0\", \"end\": \"001b1c0c\", \"bytes\": 44, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [\"001ad990\"], \"best_proposal\": null}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_001b1be0_v2_bound_0.cpp\", \"source_sha256\": \"7d85ac5a62226ff799ba644a7da5d3fd2529254a4c1918c328eca2ea7c3d7f37\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_001b1be0_v2_bound_0.verification.json\", \"proof_sha256\": \"8aa0a180db562b6fdc912daaeb5945327a30aaa6b6f8008d4166dcc1581c291f\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_queuexi_recovered_001b1be0.cpp"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "probe_source": "analysis/final-mix/recovery-experiments/eight-hour-20261011/eight_hour_00172890_vector_conditional_load_v3_1.cpp",
+  "probe_source_sha256": "d84aba55621c9c7d9f73ab29f2d70f9925fd775c08d1430507cf9e7f8ef78e71",
+  "probe_proof_sha256": "1a371d77394f7c61b7cf559d5bfeda471012269a487759c3cfcd9f2003d50ba7",
+  "curated_source": "analysis/final-mix/recovery-experiments/fm_primary_queuexiprime_recovered_00172890.cpp",
+  "curated_source_sha256": "a477fd3deea1c95d75d931211f313d5a6eb308bf42359d0a2c6722f4d0c99ab6",
+  "selected_addresses": [
+    "00172890"
+  ],
+  "exclusion_receipt": null,
+  "limitations": [
+    "Curated source still requires a new probe, registration and full build."
+  ]
+}

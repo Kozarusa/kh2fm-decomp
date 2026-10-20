@@ -1,0 +1,22 @@
+00170dd0: compiled 72 bytes, target 72 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00170dd0: 27bdfff0  addiu	sp,sp,-16                                  | 00170dd0: 27bdfff0  addiu	sp,sp,-16
+   00170dd4: ffb00000  sd	s0,0(sp)                                      | 00170dd4: ffb00000  sd	s0,0(sp)
+   00170dd8: ffbf0008  sd	ra,8(sp)                                      | 00170dd8: ffbf0008  sd	ra,8(sp)
+   00170ddc: 0080802d  move	s0,a0                                       | 00170ddc: 0080802d  move	s0,a0
+   00170de0: 0c05c334  jal	0x170cd0                                     | 00170de0: 0c05c334  jal	170cd0 <func_00170cd0>
+   00170de4: 00000000  nop                                              | 00170de4: 00000000  nop
+   00170de8: 0200202d  move	a0,s0                                       | 00170de8: 0200202d  move	a0,s0
+   00170dec: 14400006  bnez	v0,0x170e08                                 | 00170dec: 14400006  bnez	v0,170e08 <func_00170dd0+0x38>
+   00170df0: 0000282d  move	a1,zero                                     | 00170df0: 0000282d  move	a1,zero
+   00170df4: dfb00000  ld	s0,0(sp)                                      | 00170df4: dfb00000  ld	s0,0(sp)
+   00170df8: dfbf0008  ld	ra,8(sp)                                      | 00170df8: dfbf0008  ld	ra,8(sp)
+   00170dfc: 03e00008  jr	ra                                            | 00170dfc: 03e00008  jr	ra
+   00170e00: 27bd0010  addiu	sp,sp,16                                   | 00170e00: 27bd0010  addiu	sp,sp,16
+   00170e04: 00000000  nop                                              | 00170e04: 00000000  nop
+   00170e08: 0c040912  jal	0x102448                                     | 00170e08: 0c040912  jal	102448 <func_00102448>
+   00170e0c: 00000000  nop                                              | 00170e0c: 00000000  nop
+   00170e10: 1000fff3  b	0x170de0                                       | 00170e10: 1000fff3  b	170de0 <func_00170dd0+0x10>
+   00170e14: 00000000  nop                                              | 00170e14: 00000000  nop

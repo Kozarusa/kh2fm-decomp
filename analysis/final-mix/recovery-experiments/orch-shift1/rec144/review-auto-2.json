@@ -1,0 +1,66 @@
+{
+  "wp_dir": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\orch-shift1\\rec144",
+  "start": "2026-10-15T08:22:55Z",
+  "reviewed": [
+    "0023ef50",
+    "00241320",
+    "00240b48",
+    "002409b8",
+    "00240a08"
+  ],
+  "blocked_reports": [
+    "0023f5b8-BLOCKED.md"
+  ],
+  "results": [
+    {
+      "level": "PASS",
+      "address": "0023ef50",
+      "detail": "100 bytes exact; source orch1_rec144_0023ef50_v4.cpp"
+    },
+    {
+      "level": "PASS",
+      "address": "00241320",
+      "detail": "56 bytes exact; source orch1_rec144_00241320_v1.cpp"
+    },
+    {
+      "level": "PASS",
+      "address": "00240b48",
+      "detail": "68 bytes exact; source orch1_rec144_00240b48_v1.cpp"
+    },
+    {
+      "level": "PASS",
+      "address": "002409b8",
+      "detail": "76 bytes exact; source orch1_rec144_002409b8_v1.cpp"
+    },
+    {
+      "level": "PASS",
+      "address": "00240a08",
+      "detail": "100 bytes exact; source orch1_rec144_00240a08_v3.cpp"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/ORCHESTRATION.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/PROGRESS.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/ROSTER.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/briefs/nm23.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/briefs/rec146.md"
+    }
+  ]
+}

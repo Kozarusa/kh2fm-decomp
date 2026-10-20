@@ -1,0 +1,21 @@
+0028dd90: compiled 68 bytes, target 68 bytes, exact=False
+Differing words: 6. First difference at instruction 8 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0028dd90: 240f000a  li	t7,10                                         | 0028dd90: 240f000a  li	t7,10
+   0028dd94: 0000102d  move	v0,zero                                     | 0028dd94: 0000102d  move	v0,zero
+   0028dd98: 008f001a  div	zero,a0,t7                                   | 0028dd98: 008f001a  div	zero,a0,t7
+   0028dd9c: 51e00001  beqzl	t7,0x28dda4                                | 0028dd9c: 51e00001  beqzl	t7,28dda4 <func_0028dd90+0x14>
+   0028dda0: 000001cd  break	0x7                                        | 0028dda0: 000001cd  break	0x7
+   0028dda4: 00007010  mfhi	t6                                          | 0028dda4: 00007010  mfhi	t6
+   0028dda8: 240f0001  li	t7,1                                          | 0028dda8: 240f0001  li	t7,1
+   0028ddac: 11cf0007  beq	t6,t7,0x28ddcc                               | 0028ddac: 11cf0007  beq	t6,t7,28ddcc <func_0028dd90+0x3c>
+!! 0028ddb0: 29cd0002  slti	t5,t6,2                                     | 0028ddb0: 240f0002  li	t7,2
+!! 0028ddb4: 15a00003  bnez	t5,0x28ddc4                                 | 0028ddb4: 11cf0003  beq	t6,t7,28ddc4 <func_0028dd90+0x34>
+!! 0028ddb8: 240f0002  li	t7,2                                          | 0028ddb8: 00000000  nop
+!! 0028ddbc: 51cf0001  beql	t6,t7,0x28ddc4                              | 0028ddbc: 03e00008  jr	ra
+!! 0028ddc0: 24020001  li	v0,1                                          | 0028ddc0: 00000000  nop
+   0028ddc4: 03e00008  jr	ra                                            | 0028ddc4: 03e00008  jr	ra
+!! 0028ddc8: 00000000  nop                                              | 0028ddc8: 24020001  li	v0,1
+   0028ddcc: 03e00008  jr	ra                                            | 0028ddcc: 03e00008  jr	ra
+   0028ddd0: 24020002  li	v0,2                                          | 0028ddd0: 24020002  li	v0,2

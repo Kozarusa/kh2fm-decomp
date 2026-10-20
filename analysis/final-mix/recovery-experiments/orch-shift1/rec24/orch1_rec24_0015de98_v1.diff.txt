@@ -1,0 +1,27 @@
+0015de98: compiled 92 bytes, target 92 bytes, exact=False
+Differing words: 3. First difference at instruction 15 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0015de98: 27bdfff0  addiu	sp,sp,-16                                  | 0015de98: 27bdfff0  addiu	sp,sp,-16
+   0015de9c: 3c0f0035  lui	t7,0x35                                      | 0015de9c: 3c0f0035  lui	t7,0x35
+   0015dea0: ffbf0008  sd	ra,8(sp)                                      | 0015dea0: ffbf0008  sd	ra,8(sp)
+   0015dea4: 03e0302d  move	a2,ra                                       | 0015dea4: 03e0302d  move	a2,ra
+   0015dea8: ffb00000  sd	s0,0(sp)                                      | 0015dea8: ffb00000  sd	s0,0(sp)
+   0015deac: 8de4b278  lw	a0,-19848(t7)   ; = D_0034b278                | 0015deac: 8de4b278  lw	a0,-19848(t7)   ; = D_0034b278
+   0015deb0: 8c8f0000  lw	t7,0(a0)                                      | 0015deb0: 8c8f0000  lw	t7,0(a0)
+   0015deb4: 8de20000  lw	v0,0(t7)                                      | 0015deb4: 8de20000  lw	v0,0(t7)
+   0015deb8: 0040f809  jalr	v0                                          | 0015deb8: 0040f809  jalr	v0
+   0015debc: 24051340  li	a1,4928                                       | 0015debc: 24051340  li	a1,4928
+   0015dec0: 0040802d  move	s0,v0                                       | 0015dec0: 0040802d  move	s0,v0
+   0015dec4: 0c0c7754  jal	0x31dd50                                     | 0015dec4: 0c0c7754  jal	31dd50 <func_0031dd50>
+   0015dec8: 0040202d  move	a0,v0                                       | 0015dec8: 0040202d  move	a0,v0
+   0015decc: 3c0f0035  lui	t7,0x35                                      | 0015decc: 3c0f0035  lui	t7,0x35
+   0015ded0: adf0b240  sw	s0,-19904(t7)   ; = D_0034b240                | 0015ded0: adf0b240  sw	s0,-19904(t7)   ; = D_0034b240
+!! 0015ded4: 8e0f0000  lw	t7,0(s0)                                      | 0015ded4: 8e0e0000  lw	t6,0(s0)
+!! 0015ded8: 8dee0000  lw	t6,0(t7)                                      | 0015ded8: 8dc20000  lw	v0,0(t6)
+!! 0015dedc: 01c0f809  jalr	t6                                          | 0015dedc: 0040f809  jalr	v0
+   0015dee0: 0200202d  move	a0,s0                                       | 0015dee0: 0200202d  move	a0,s0
+   0015dee4: dfb00000  ld	s0,0(sp)                                      | 0015dee4: dfb00000  ld	s0,0(sp)
+   0015dee8: dfbf0008  ld	ra,8(sp)                                      | 0015dee8: dfbf0008  ld	ra,8(sp)
+   0015deec: 03e00008  jr	ra                                            | 0015deec: 03e00008  jr	ra
+   0015def0: 27bd0010  addiu	sp,sp,16                                   | 0015def0: 27bd0010  addiu	sp,sp,16

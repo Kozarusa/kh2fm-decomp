@@ -1,0 +1,39 @@
+{
+  "source": "fm_primary_lookupswitch_recovered.cpp",
+  "source_sha256": "1cf5e336df79c8dd6655f930c4e9d1ac78db5898a9ef596c5ed3a8d67c561da3",
+  "code_proof_sha256": "04e2462c3a79c47b130b71a7fb69e76b24fdd61b9e954c967ad44ac014487713",
+  "linked_elf_sha256": "975d1addd8227071dffe7fbb47e011758240d07467803e249bb714021b428f2c",
+  "tables": [
+    {
+      "address": "0036b2c4",
+      "function": "00155ee8",
+      "bytes": 20,
+      "exact_match": true,
+      "hex": "285f1500285f1500305f1500385f1500205f1500",
+      "targets": [
+        "00155f28",
+        "00155f28",
+        "00155f30",
+        "00155f38",
+        "00155f20"
+      ]
+    },
+    {
+      "address": "0036b2ec",
+      "function": "00155fc0",
+      "bytes": 20,
+      "exact_match": true,
+      "hex": "0860150008601500f85f15000060150008601500",
+      "targets": [
+        "00156008",
+        "00156008",
+        "00155ff8",
+        "00156000",
+        "00156008"
+      ]
+    }
+  ],
+  "limitations": [
+    "This isolated proof does not prove full build acceptance, data integration, or runtime behavior."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "probe_source": "analysis/final-mix/recovery-experiments/fm_primary_callbackschedule_v2_001d22a8_1.cpp",
+  "probe_source_sha256": "8ca46aac62f17a92dfeaa9ae818da6d78ca45878fd566166427e3edaabbd2d62",
+  "probe_proof_sha256": "a8974c693e58601e19bbf324341aae10e7a4a9e5adc7efd3fe73ab4f844bc550",
+  "curated_source": "analysis/final-mix/recovery-experiments/fm_primary_callbackfamily_recovered_001d22a8.cpp",
+  "curated_source_sha256": "34359a5ea216092f130b5e5c908acf723c552867b6b5c61c11c1d5967d76f8a7",
+  "selected_addresses": [
+    "001d22a8"
+  ],
+  "exclusion_receipt": null,
+  "limitations": [
+    "Curated source still requires a new probe, registration and full build."
+  ]
+}

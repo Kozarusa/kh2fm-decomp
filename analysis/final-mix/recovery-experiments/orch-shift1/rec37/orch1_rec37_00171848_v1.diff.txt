@@ -1,0 +1,24 @@
+00171848: compiled 80 bytes, target 80 bytes, exact=False
+Differing words: 2. First difference at instruction 9 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00171848: 27bdfff0  addiu	sp,sp,-16                                  | 00171848: 27bdfff0  addiu	sp,sp,-16
+   0017184c: ffb00000  sd	s0,0(sp)                                      | 0017184c: ffb00000  sd	s0,0(sp)
+   00171850: ffbf0008  sd	ra,8(sp)                                      | 00171850: ffbf0008  sd	ra,8(sp)
+   00171854: 8c8f0000  lw	t7,0(a0)                                      | 00171854: 8c8f0000  lw	t7,0(a0)
+   00171858: 11e00004  beqz	t7,0x17186c                                 | 00171858: 11e00004  beqz	t7,17186c <func_00171848+0x24>
+   0017185c: 0080802d  move	s0,a0                                       | 0017185c: 0080802d  move	s0,a0
+   00171860: 0c066e98  jal	0x19ba60                                     | 00171860: 0c066e98  jal	19ba60 <func_0019ba60>
+   00171864: 8de40004  lw	a0,4(t7)                                      | 00171864: 8de40004  lw	a0,4(t7)
+   00171868: 8e0f0000  lw	t7,0(s0)                                      | 00171868: 8e0f0000  lw	t7,0(s0)
+!! 0017186c: 8de40004  lw	a0,4(t7)                                      | 0017186c: 8dee0004  lw	t6,4(t7)
+!! 00171870: 8c8f0588  lw	t7,1416(a0)                                   | 00171870: 8dcf0588  lw	t7,1416(t6)
+   00171874: 31ef0004  andi	t7,t7,0x4                                   | 00171874: 31ef0004  andi	t7,t7,0x4
+   00171878: 11e00004  beqz	t7,0x17188c                                 | 00171878: 11e00004  beqz	t7,17188c <func_00171848+0x44>
+   0017187c: dfb00000  ld	s0,0(sp)                                      | 0017187c: dfb00000  ld	s0,0(sp)
+   00171880: dfbf0008  ld	ra,8(sp)                                      | 00171880: dfbf0008  ld	ra,8(sp)
+   00171884: 0805de66  j	0x177998                                       | 00171884: 0805de66  j	177998 <func_00177998>
+   00171888: 27bd0010  addiu	sp,sp,16                                   | 00171888: 27bd0010  addiu	sp,sp,16
+   0017188c: dfbf0008  ld	ra,8(sp)                                      | 0017188c: dfbf0008  ld	ra,8(sp)
+   00171890: 03e00008  jr	ra                                            | 00171890: 03e00008  jr	ra
+   00171894: 27bd0010  addiu	sp,sp,16                                   | 00171894: 27bd0010  addiu	sp,sp,16

@@ -1,0 +1,18 @@
+{
+  "source_sha256": "edf3f9bd777f56b7ec249e59ad4e246a1bca64bace9b369ad6c2485237d4d1bf",
+  "source": "analysis/final-mix/recovery-experiments/fm_primary_queuezeta_recovered_00162b68.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "00162b68",
+      "symbol": "_Z13func_00162b68PKfS0_Pf",
+      "compiled_size": 68,
+      "target_size": 68,
+      "ghidra_body_size": 68,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "000081d80000a2d86a08c24b4108014b4208014b00082848000888440c00a0c4400800460000c1e4100080c434000146020001452d100000010002240800e00300000000",
+      "target_hex": "000081d80000a2d86a08c24b4108014b4208014b00082848000888440c00a0c4400800460000c1e4100080c434000146020001452d100000010002240800e00300000000"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+001dbcd0: compiled 104 bytes, target 104 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001dbcd0: 27bdfff0  addiu	sp,sp,-16                                  | 001dbcd0: 27bdfff0  addiu	sp,sp,-16
+   001dbcd4: ffb00000  sd	s0,0(sp)                                      | 001dbcd4: ffb00000  sd	s0,0(sp)
+   001dbcd8: ffbf0008  sd	ra,8(sp)                                      | 001dbcd8: ffbf0008  sd	ra,8(sp)
+   001dbcdc: 3c100035  lui	s0,0x35                                      | 001dbcdc: 3c100035  lui	s0,0x35
+   001dbce0: 0c066e98  jal	0x19ba60                                     | 001dbce0: 0c066e98  jal	19ba60 <func_0019ba60>
+   001dbce4: 8e04e948  lw	a0,-5816(s0)   ; = D_0034e948                 | 001dbce4: 8e04e948  lw	a0,-5816(s0)   ; = D_0034e948
+   001dbce8: 1040000a  beqz	v0,0x1dbd14                                 | 001dbce8: 1040000a  beqz	v0,1dbd14 <func_001dbcd0+0x44>
+   001dbcec: 3c0e0035  lui	t6,0x35                                      | 001dbcec: 3c0e0035  lui	t6,0x35
+   001dbcf0: 0c05b00a  jal	0x16c028                                     | 001dbcf0: 0c05b00a  jal	16c028 <func_0016c028>
+   001dbcf4: 8e04e948  lw	a0,-5816(s0)   ; = D_0034e948                 | 001dbcf4: 8e04e948  lw	a0,-5816(s0)   ; = D_0034e948
+   001dbcf8: 3c0f01d6  lui	t7,0x1d6                                     | 001dbcf8: 3c0f01d6  lui	t7,0x1d6
+   001dbcfc: 25efbab0  addiu	t7,t7,-17744   ; = D_01d5bab0              | 001dbcfc: 25efbab0  addiu	t7,t7,-17744   ; = D_01d5bab0
+   001dbd00: 104f0004  beq	v0,t7,0x1dbd14                               | 001dbd00: 104f0004  beq	v0,t7,1dbd14 <func_001dbcd0+0x44>
+   001dbd04: 3c0e0035  lui	t6,0x35                                      | 001dbd04: 3c0e0035  lui	t6,0x35
+   001dbd08: 78480000  lq	t0,0(v0)                                      | 001dbd08: 78480000  lq	t0,0(v0)
+   001dbd0c: 7de80000  sq	t0,0(t7)                                      | 001dbd0c: 7de80000  sq	t0,0(t7)
+   001dbd10: 3c0e0035  lui	t6,0x35                                      | 001dbd10: 3c0e0035  lui	t6,0x35
+   001dbd14: dfb00000  ld	s0,0(sp)                                      | 001dbd14: dfb00000  ld	s0,0(sp)
+   001dbd18: 3c0f0035  lui	t7,0x35                                      | 001dbd18: 3c0f0035  lui	t7,0x35
+   001dbd1c: c5c02ad0  lwc1	$f0,10960(t6)   ; = D_00352ad0              | 001dbd1c: c5c02ad0  lwc1	$f0,10960(t6)   ; = D_00352ad0
+   001dbd20: c5e19e10  lwc1	$f1,-25072(t7)   ; = D_00349e10             | 001dbd20: c5e19e10  lwc1	$f1,-25072(t7)   ; = D_00349e10
+   001dbd24: dfbf0008  ld	ra,8(sp)                                      | 001dbd24: dfbf0008  ld	ra,8(sp)
+   001dbd28: 46010001  sub.s	$f0,$f0,$f1                                | 001dbd28: 46010001  sub.s	$f0,$f0,$f1
+   001dbd2c: e5c02ad0  swc1	$f0,10960(t6)   ; = D_00352ad0              | 001dbd2c: e5c02ad0  swc1	$f0,10960(t6)   ; = D_00352ad0
+   001dbd30: 03e00008  jr	ra                                            | 001dbd30: 03e00008  jr	ra
+   001dbd34: 27bd0010  addiu	sp,sp,16                                   | 001dbd34: 27bd0010  addiu	sp,sp,16

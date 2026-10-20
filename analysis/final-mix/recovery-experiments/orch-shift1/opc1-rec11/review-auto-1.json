@@ -1,0 +1,1243 @@
+{
+  "wp_dir": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\orch-shift1\\opc1-rec11",
+  "start": "2026-10-13T02:40:00Z",
+  "reviewed": [
+    "002803e0",
+    "002835d8"
+  ],
+  "blocked_reports": [
+    "002811f8-BLOCKED.md"
+  ],
+  "results": [
+    {
+      "level": "FLAG",
+      "address": "002803e0",
+      "detail": "source name orch1_opc1-rec11_002803e0_v1.cpp does not follow orch<shift>_<wp>_<address>_v<n>.cpp"
+    },
+    {
+      "level": "PASS",
+      "address": "002803e0",
+      "detail": "60 bytes exact; source orch1_opc1-rec11_002803e0_v1.cpp"
+    },
+    {
+      "level": "FLAG",
+      "address": "002835d8",
+      "detail": "source name orch1_opc1-rec11_002835d8_v1.cpp does not follow orch<shift>_<wp>_<address>_v<n>.cpp"
+    },
+    {
+      "level": "PASS",
+      "address": "002835d8",
+      "detail": "64 bytes exact; source orch1_opc1-rec11_002835d8_v1.cpp"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Public/tools/kh2-reference/functions.tsv"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Public/tools/kh2-reference/layout.tsv"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Public/tools/kh2-reference/src/anon/fm_primary_orchcd_recovered_001ac858.cpp"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Public/tools/kh2-reference/src/anon/fm_primary_orchcd_recovered_001ac8b0.cpp"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Public/tools/kh2-reference/src/anon/fm_primary_orchcd_recovered_001acf38.cpp"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Public/tools/kh2-reference/src/anon/fm_primary_orchcd_recovered_001ad1d0.cpp"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Public/tools/kh2-reference/src/anon/fm_primary_orchcd_recovered_001ad228.cpp"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Public/tools/kh2-reference/src/anon/fm_primary_orchcd_recovered_001ad3e0.cpp"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Public/tools/kh2-reference/src/anon/fm_primary_orchcd_recovered_001ad430.cpp"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Public/tools/kh2-audit/finish_fm_primary_matrix.py"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Public/tools/kh2-audit/verify_fm_primary_orchcd_checkpoint.py"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/primary-orchcc-checkpoint-2026-10-08.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/primary-orchcd-checkpoint-2026-10-08.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/artifact-manifest.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/autonomous-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/build-input-provenance.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/compiled-objects.tar.gz"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/compiler-range-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/followup-complete-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/kh2.elf"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/last-window-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/linked.tmp.elf"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/native-build-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/objdiff-linux-stage.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/oct7-clamp-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/oct7-complete-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-addressalias-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-addresspair-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-aliashelpers-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-allocatorfinish-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-animation-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-animationfinish-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-argument-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-argumentfinish-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-bytewrapper-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-callbackaddress-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-callbackfamily-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-callbackreturn-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-calltransport-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-capacity-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-clearloop-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-clearsequence-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-close-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-conditionfinish-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-conditionresult-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-controlshape-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-delegatedbatch-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-dependencyfamily-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-fiveword-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-flagguard-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-floatarguments-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-floatdenominator-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-floatiterator-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-floatload-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-floatpacket-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-floatresult-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-fourword-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-fourwordfresh-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-fourwordnext-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-framealias-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-freshhelpers-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-globalargument-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-globalcall-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-indexedmask-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-loadorder-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-lookupswitch-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-lookupswitch-table-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-maskpair-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-matrix-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-mediumcall-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-memoryfamily-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-mixedtransport-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-near-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-nearhelper-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-offsetpair-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-oneword-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchaa-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchab-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchac-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchad-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchae-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchaf-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchag-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchah-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchai-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchaj-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchak-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchal-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orcham-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchan-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchao-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchap-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchaq-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchar-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchas-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchat-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchau-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchav-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchaw-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchax-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchay-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchaz-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchba-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchbb-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchbc-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchbd-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchbe-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchbf-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchbg-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchbh-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchbi-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchbj-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchbk-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchbl-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchbm-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchbn-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchbo-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchbp-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchbq-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchbr-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchbs-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchbt-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchbu-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchbv-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchbw-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchbx-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchby-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchbz-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchca-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchcb-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchcc-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchcd-001ac858-registration-evidence.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchcd-001ac858-sync-inputs.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchcd-001ac8b0-registration-evidence.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchcd-001ac8b0-sync-inputs.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchcd-001acf38-registration-evidence.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchcd-001acf38-sync-inputs.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchcd-001ad1d0-registration-evidence.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchcd-001ad1d0-sync-inputs.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchcd-001ad228-registration-evidence.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchcd-001ad228-sync-inputs.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchcd-001ad3e0-registration-evidence.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchcd-001ad3e0-sync-inputs.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchcd-001ad430-registration-evidence.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchcd-001ad430-sync-inputs.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchcd-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchcd-final-checks.log"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchcd-make-verify.log"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchcd-sync-inputs-receipt.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-orchcd-sync-inputs.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-order-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-packet-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-packetalias-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-packetnext-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-packetorder-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-packetreturn-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-predicatereg-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-quadtransport-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-queuealpha-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-queuealphaprime-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-queuebeta-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-queuebetaprime-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-queuechi-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-queuedelta-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-queuedeltaprime-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-queueepsilon-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-queueepsilonprime-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-queueeta-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-queueetaprime-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-queuegamma-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-queuegammaprime-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-queueiota-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-queueiotaprime-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-queuekappa-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-queuekappaprime-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-queuelambda-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-queuelambdaprime-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-queuemu-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-queuemuprime-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-queuenu-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-queueomega-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-queueomicron-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-queuephi-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-queuepi-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-queuepsi-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-queuerho-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-queuesigma-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-queuetau-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-queuetheta-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-queuethetaprime-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-queueupsilon-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-queuexi-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-queuexiprime-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-queuezeta-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-queuezetaprime-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-queunuprime-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-resume-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-resumeoct-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-scalartransport-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-schedule-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-sixword-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-sixwordnext-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-storeorder-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-structure-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-tablelookup-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-tailcallload-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-threeword-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-threewordnext-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-transport-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-transportnext-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-twoword-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-twowordfresh-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-twowordnext-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-virtualaddress-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-virtualguard-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-virtualsiblings-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-width-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-workerbacklog-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-workerfive-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-workerround-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-workerthree-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-workertwo-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/primary-wrapperorder-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/scalar-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/scalar-extra-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/switch-byte-table-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/switch-helpers-table-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/native-build/worker-b-initializers-curated-bundle-verification.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/worker-coordination/compiler-status.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/worker-coordination/primary-status.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/analysis/final-mix/worker-coordination/queue-run-20261009.json"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/STATUS.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/CHANGELOG.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/HANDOFF.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/ORCHESTRATION.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/PROGRESS.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/ROSTER.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/briefs/cdx1-rec12.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/briefs/nm05.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/briefs/rec80.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/briefs/rec81.md"
+    },
+    {
+      "level": "FLAG",
+      "address": "-",
+      "detail": "changed outside the WP since it started (check who changed it): Codex/orchestration/briefs/rec82.md"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+0016d230: compiled 76 bytes, target 76 bytes, exact=False
+Differing words: 2. First difference at instruction 15 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0016d230: 340fffff  li	t7,0xffff                                     | 0016d230: 340fffff  li	t7,0xffff
+   0016d234: 14af000f  bne	a1,t7,0x16d274                               | 0016d234: 14af000f  bne	a1,t7,16d274 <func_0016d230+0x44>
+   0016d238: 240f0001  li	t7,1                                          | 0016d238: 240f0001  li	t7,1
+   0016d23c: 148f0006  bne	a0,t7,0x16d258                               | 0016d23c: 148f0006  bne	a0,t7,16d258 <func_0016d230+0x28>
+   0016d240: 340fffff  li	t7,0xffff                                     | 0016d240: 340fffff  li	t7,0xffff
+   0016d244: 3c0f0033  lui	t7,0x33                                      | 0016d244: 3c0f0033  lui	t7,0x33
+   0016d248: 3c0e004f  lui	t6,0x4f                                      | 0016d248: 3c0e004f  lui	t6,0x4f
+   0016d24c: 8dedb91c  lw	t5,-18148(t7)   ; = D_0032b91c                | 0016d24c: 8dedb91c  lw	t5,-18148(t7)   ; = D_0032b91c
+   0016d250: adcd6288  sw	t5,25224(t6)   ; = D_004f6288                 | 0016d250: adcd6288  sw	t5,25224(t6)   ; = D_004f6288
+   0016d254: 340fffff  li	t7,0xffff                                     | 0016d254: 340fffff  li	t7,0xffff
+   0016d258: 14af0006  bne	a1,t7,0x16d274                               | 0016d258: 14af0006  bne	a1,t7,16d274 <func_0016d230+0x44>
+   0016d25c: 240f0001  li	t7,1                                          | 0016d25c: 240f0001  li	t7,1
+   0016d260: 148f0004  bne	a0,t7,0x16d274                               | 0016d260: 148f0004  bne	a0,t7,16d274 <func_0016d230+0x44>
+   0016d264: 3c0e004f  lui	t6,0x4f                                      | 0016d264: 3c0e004f  lui	t6,0x4f
+   0016d268: 25cf6290  addiu	t7,t6,25232   ; = D_004f6290               | 0016d268: 25cf6290  addiu	t7,t6,25232   ; = D_004f6290
+!! 0016d26c: adc06290  sw	zero,25232(t6)   ; = D_004f6290               | 0016d26c: ade00004  sw	zero,4(t7)
+!! 0016d270: ade00004  sw	zero,4(t7)                                    | 0016d270: adc06290  sw	zero,25232(t6)   ; = D_004f6290
+   0016d274: 03e00008  jr	ra                                            | 0016d274: 03e00008  jr	ra
+   0016d278: 00000000  nop                                              | 0016d278: 00000000  nop

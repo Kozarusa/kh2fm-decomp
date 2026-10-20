@@ -1,0 +1,23 @@
+001d6cc8: compiled 76 bytes, target 56 bytes, exact=False
+Differing words: 19. First difference at instruction 0 (0-based).
+
+ORIGINAL                                                                | COMPILED
+!! 001d6cc8: 14800004  bnez	a0,0x1d6cdc                                 | 001d6cc8: 1080000e  beqz	a0,1d6d04 <func_001d6cc8+0x3c>
+!! 001d6ccc: 3c0f01d6  lui	t7,0x1d6                                     | 001d6ccc: 24820040  addiu	v0,a0,64
+!! 001d6cd0: 8deeba98  lw	t6,-17768(t7)   ; = D_01d5ba98                | 001d6cd0: 3c0f01d6  lui	t7,0x1d6
+!! 001d6cd4: 03e00008  jr	ra                                            | 001d6cd4: 8deeba98  lw	t6,-17768(t7)   ; = D_01d5ba98
+!! 001d6cd8: 25c20008  addiu	v0,t6,8                                    | 001d6cd8: 8dcd0004  lw	t5,4(t6)
+!! 001d6cdc: 24820040  addiu	v0,a0,64                                   | 001d6cdc: 000d6980  sll	t5,t5,0x6
+!! 001d6ce0: 8deeba98  lw	t6,-17768(t7)   ; = D_01d5ba98                | 001d6ce0: 01cd7021  addu	t6,t6,t5
+!! 001d6ce4: 8dcd0004  lw	t5,4(t6)                                      | 001d6ce4: 25ce0008  addiu	t6,t6,8
+!! 001d6ce8: 000d6980  sll	t5,t5,0x6                                    | 001d6ce8: 004e702b  sltu	t6,v0,t6
+!! 001d6cec: 01cd7021  addu	t6,t6,t5                                    | 001d6cec: 15c00003  bnez	t6,1d6cfc <func_001d6cc8+0x34>
+!! 001d6cf0: 25ce0008  addiu	t6,t6,8                                    | 001d6cf0: 00000000  nop
+!! 001d6cf4: 004e702b  sltu	t6,v0,t6                                    | 001d6cf4: 03e00008  jr	ra
+!! 001d6cf8: 03e00008  jr	ra                                            | 001d6cf8: 0000102d  move	v0,zero
+!! 001d6cfc: 000e100a  movz	v0,zero,t6                                  | 001d6cfc: 03e00008  jr	ra
+!!                                                                      | 001d6d00: 00000000  nop
+!!                                                                      | 001d6d04: 3c0f01d6  lui	t7,0x1d6
+!!                                                                      | 001d6d08: 8deeba98  lw	t6,-17768(t7)   ; = D_01d5ba98
+!!                                                                      | 001d6d0c: 03e00008  jr	ra
+!!                                                                      | 001d6d10: 25c20008  addiu	v0,t6,8

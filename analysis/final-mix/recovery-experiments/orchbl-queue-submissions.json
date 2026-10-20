@@ -1,0 +1,51 @@
+[
+  {
+    "address": "001940b8",
+    "owner": "orch1-rec59",
+    "metadata": "{\"address\": \"001940b8\", \"end\": \"001940ec\", \"bytes\": 52, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [\"001ad990\"], \"best_proposal\": {\"proof\": \"analysis/final-mix/recovery-experiments/fm_return_variants_v2_04_0.verification.json\", \"source\": \"analysis/final-mix/recovery-experiments/fm_return_variants_v2_04_0.cpp\", \"compiled_bytes\": 64, \"target_bytes\": 52, \"different_words\": 16}}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\orch-shift1\\\\rec59\\\\orch1_rec59_001940b8_v2.cpp\", \"source_sha256\": \"f6d833fdcd1233e509b674b9cc07a7e12fc212114cda7a0c7aa225c489b16c50\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\orch-shift1\\\\rec59\\\\orch1_rec59_001940b8_v2.verification.json\", \"proof_sha256\": \"c82aac759a2c068042510df5ec1ddded623721bbe768ee18867800a05d015677\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_orchbl_recovered_001940b8.cpp"
+  },
+  {
+    "address": "001942b8",
+    "owner": "orch1-rec58",
+    "metadata": "{\"address\": \"001942b8\", \"end\": \"00194314\", \"bytes\": 92, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [\"001dcb98\"], \"best_proposal\": {\"proof\": \"analysis/final-mix/recovery-experiments/fm_return_variants_v2_04_0.verification.json\", \"source\": \"analysis/final-mix/recovery-experiments/fm_return_variants_v2_04_0.cpp\", \"compiled_bytes\": 92, \"target_bytes\": 92, \"different_words\": 16}}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\orch-shift1\\\\rec58\\\\orch1_rec58_001942b8_v1.cpp\", \"source_sha256\": \"d146fd7fa4a7a54061d3435d06cfbf34734fd516d29da66c10da0a34c842cbb2\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\orch-shift1\\\\rec58\\\\orch1_rec58_001942b8_v1.verification.json\", \"proof_sha256\": \"afecb28037c6dc7e64d1c84301e85b0c296941f7c912b1e32d1f6a51e7a6b489\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_orchbl_recovered_001942b8.cpp"
+  },
+  {
+    "address": "001943e8",
+    "owner": "orch1-rec59",
+    "metadata": "{\"address\": \"001943e8\", \"end\": \"00194464\", \"bytes\": 124, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [\"001943e8\", \"001c0cd8\"], \"best_proposal\": {\"proof\": \"analysis/final-mix/recovery-experiments/fm_scalar_03_pointer.verification.json\", \"source\": \"analysis/final-mix/recovery-experiments/fm_scalar_03_pointer.cpp\", \"compiled_bytes\": 164, \"target_bytes\": 124, \"different_words\": 41}}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\orch-shift1\\\\rec59\\\\orch1_rec59_001943e8_v1.cpp\", \"source_sha256\": \"fccaa6388643b2aa9107884d9b5fd9a02820200c88f44edd62220c9139a6ee7e\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\orch-shift1\\\\rec59\\\\orch1_rec59_001943e8_v1.verification.json\", \"proof_sha256\": \"e6aa6bd4d8886dd2d8c8203d5edb038a98bf62d776dba2f3c8b3b006a8e7c604\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_orchbl_recovered_001943e8.cpp"
+  },
+  {
+    "address": "001947c0",
+    "owner": "orch1-rec59",
+    "metadata": "{\"address\": \"001947c0\", \"end\": \"0019482c\", \"bytes\": 108, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [], \"best_proposal\": null}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\orch-shift1\\\\rec59\\\\orch1_rec59_001947c0_v5.cpp\", \"source_sha256\": \"96bd46ed767a569f4d4b60c57740acd8579ba3003a0479cd22a49b6094db28d5\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\orch-shift1\\\\rec59\\\\orch1_rec59_001947c0_v5.verification.json\", \"proof_sha256\": \"4afd0f2d6c38ad2f4f9f163d779ba00619de3d4b5970a8ded9d5ef132a75d0c1\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_orchbl_recovered_001947c0.cpp"
+  },
+  {
+    "address": "00194930",
+    "owner": "orch1-rec58",
+    "metadata": "{\"address\": \"00194930\", \"end\": \"00194980\", \"bytes\": 80, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [\"001947c0\", \"001a9110\"], \"best_proposal\": null}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\orch-shift1\\\\rec58\\\\orch1_rec58_00194930_v1.cpp\", \"source_sha256\": \"38be65f268713b7c4ed6178e8008460af5e07102c20a5dc188b38b095d5b9a6b\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\orch-shift1\\\\rec58\\\\orch1_rec58_00194930_v1.verification.json\", \"proof_sha256\": \"2a7e74ee75312cb6a38a03bdc6114dc0f571fd36b89c968d966545135a39ef73\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_orchbl_recovered_00194930.cpp"
+  },
+  {
+    "address": "00194980",
+    "owner": "orch1-rec59",
+    "metadata": "{\"address\": \"00194980\", \"end\": \"001949d0\", \"bytes\": 80, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [\"001947c0\", \"001a3570\"], \"best_proposal\": null}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\orch-shift1\\\\rec59\\\\orch1_rec59_00194980_v8.cpp\", \"source_sha256\": \"0569bcfa5c0bef1b3edaffa05b2e28bae5a9dadc7ff86b3c467c656d9afe85aa\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\orch-shift1\\\\rec59\\\\orch1_rec59_00194980_v8.verification.json\", \"proof_sha256\": \"7262ff66ac54725fbff23b5231b433d197357072657ea3aa03a40b747bf2350a\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_orchbl_recovered_00194980.cpp"
+  },
+  {
+    "address": "00195858",
+    "owner": "orch1-rec59",
+    "metadata": "{\"address\": \"00195858\", \"end\": \"001958d0\", \"bytes\": 120, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [\"001ce2d8\", \"001ce328\"], \"best_proposal\": {\"proof\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_04_0.verification.json\", \"source\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_04_0.cpp\", \"compiled_bytes\": 120, \"target_bytes\": 120, \"different_words\": 13}}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\orch-shift1\\\\rec59\\\\orch1_rec59_00195858_v3.cpp\", \"source_sha256\": \"3bfa30df5d237424712dd859aa53cf236f2de76f5f8639da962dec49df1fc811\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\orch-shift1\\\\rec59\\\\orch1_rec59_00195858_v3.verification.json\", \"proof_sha256\": \"be6f13ba9c5074e41f90369cae9b1a2d08758764a2d5205a1df8625e97764080\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_orchbl_recovered_00195858.cpp"
+  }
+]

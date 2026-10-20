@@ -1,0 +1,34 @@
+0010ce78: compiled 112 bytes, target 120 bytes, exact=False
+Differing words: 22. First difference at instruction 5 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0010ce78: 27bdffe0  addiu	sp,sp,-32                                  | 0010ce78: 27bdffe0  addiu	sp,sp,-32
+   0010ce7c: ffb00000  sd	s0,0(sp)                                      | 0010ce7c: ffb00000  sd	s0,0(sp)
+   0010ce80: ffb20010  sd	s2,16(sp)                                     | 0010ce80: ffb20010  sd	s2,16(sp)
+   0010ce84: ffb10008  sd	s1,8(sp)                                      | 0010ce84: ffb10008  sd	s1,8(sp)
+   0010ce88: 3c100034  lui	s0,0x34                                      | 0010ce88: 3c100034  lui	s0,0x34
+!! 0010ce8c: ffbf0018  sd	ra,24(sp)                                     | 0010ce8c: 0080902d  move	s2,a0
+!! 0010ce90: 0080902d  move	s2,a0                                       | 0010ce90: ffbf0018  sd	ra,24(sp)
+   0010ce94: 260417b0  addiu	a0,s0,6064   ; = D_003417b0                | 0010ce94: 260417b0  addiu	a0,s0,6064   ; = D_003417b0
+   0010ce98: 0c064050  jal	0x190140                                     | 0010ce98: 0c064050  jal	190140 <func_00190140>
+   0010ce9c: 0000882d  move	s1,zero                                     | 0010ce9c: 0000882d  move	s1,zero
+!! 0010cea0: 10400003  beqz	v0,0x10ceb0                                 | 0010cea0: 10400002  beqz	v0,10ceac <func_0010ce78+0x34>
+!! 0010cea4: 0000702d  move	t6,zero                                     | 0010cea4: 8e0f17b0  lw	t7,6064(s0)   ; = D_003417b0
+!! 0010cea8: 8e0f17b0  lw	t7,6064(s0)   ; = D_003417b0                  | 0010cea8: 000f882b  sltu	s1,zero,t7
+!! 0010ceac: 000f882b  sltu	s1,zero,t7                                  | 0010ceac: 1220000c  beqz	s1,10cee0 <func_0010ce78+0x68>
+!! 0010ceb0: 322f00ff  andi	t7,s1,0xff                                  | 0010ceb0: 8e0417b0  lw	a0,6064(s0)   ; = D_003417b0
+!! 0010ceb4: 11e00007  beqz	t7,0x10ced4                                 | 0010ceb4: 10800004  beqz	a0,10cec8 <func_0010ce78+0x50>
+!! 0010ceb8: 8e0417b0  lw	a0,6064(s0)   ; = D_003417b0                  | 0010ceb8: 0000102d  move	v0,zero
+!! 0010cebc: 10800005  beqz	a0,0x10ced4                                 | 0010cebc: 8e4f09f4  lw	t7,2548(s2)
+!! 0010cec0: 240e0001  li	t6,1                                          | 0010cec0: 01e47826  xor	t7,t7,a0
+!! 0010cec4: 8e4f09f4  lw	t7,2548(s2)                                   | 0010cec4: 000f102b  sltu	v0,zero,t7
+!! 0010cec8: 11e40002  beq	t7,a0,0x10ced4                               | 0010cec8: dfb00000  ld	s0,0(sp)
+!! 0010cecc: 0000702d  move	t6,zero                                     | 0010cecc: dfb10008  ld	s1,8(sp)
+!! 0010ced0: 240e0001  li	t6,1                                          | 0010ced0: dfb20010  ld	s2,16(sp)
+!! 0010ced4: dfb00000  ld	s0,0(sp)                                      | 0010ced4: dfbf0018  ld	ra,24(sp)
+!! 0010ced8: 01c0102d  move	v0,t6                                       | 0010ced8: 03e00008  jr	ra
+!! 0010cedc: dfb10008  ld	s1,8(sp)                                      | 0010cedc: 27bd0020  addiu	sp,sp,32
+!! 0010cee0: dfb20010  ld	s2,16(sp)                                     | 0010cee0: 1000fff9  b	10cec8 <func_0010ce78+0x50>
+!! 0010cee4: dfbf0018  ld	ra,24(sp)                                     | 0010cee4: 0000102d  move	v0,zero
+!! 0010cee8: 03e00008  jr	ra                                            | 
+!! 0010ceec: 27bd0020  addiu	sp,sp,32                                   | 

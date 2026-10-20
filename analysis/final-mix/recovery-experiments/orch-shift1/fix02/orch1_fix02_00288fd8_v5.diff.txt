@@ -1,0 +1,27 @@
+00288fd8: compiled 88 bytes, target 92 bytes, exact=False
+Differing words: 13. First difference at instruction 10 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00288fd8: 000570c0  sll	t6,a1,0x3                                    | 00288fd8: 000570c0  sll	t6,a1,0x3
+   00288fdc: 240d0003  li	t5,3                                          | 00288fdc: 240d0003  li	t5,3
+   00288fe0: 00052880  sll	a1,a1,0x2                                    | 00288fe0: 00052880  sll	a1,a1,0x2
+   00288fe4: 8c8f002c  lw	t7,44(a0)                                     | 00288fe4: 8c8f002c  lw	t7,44(a0)
+   00288fe8: 25adffff  addiu	t5,t5,-1                                   | 00288fe8: 25adffff  addiu	t5,t5,-1
+   00288fec: 01cf7821  addu	t7,t6,t7                                    | 00288fec: 01cf7821  addu	t7,t6,t7
+   00288ff0: a5e60000  sh	a2,0(t7)                                      | 00288ff0: a5e60000  sh	a2,0(t7)
+   00288ff4: 00000000  nop                                              | 00288ff4: 00000000  nop
+   00288ff8: 05a1fffa  bgez	t5,0x288fe4                                 | 00288ff8: 05a1fffa  bgez	t5,288fe4 <func_00288fd8+0xc>
+   00288ffc: 25ce0002  addiu	t6,t6,2                                    | 00288ffc: 25ce0002  addiu	t6,t6,2
+!! 00289000: 00052840  sll	a1,a1,0x1                                    | 00289000: 00e7300b  movn	a2,a3,a3
+!! 00289004: 240d0003  li	t5,3                                          | 00289004: 00052840  sll	a1,a1,0x1
+!! 00289008: 8c8f0030  lw	t7,48(a0)                                     | 00289008: 240e0003  li	t6,3
+!! 0028900c: 00e0702d  move	t6,a3                                       | 0028900c: 8c8f0030  lw	t7,48(a0)
+!! 00289010: 00af7821  addu	t7,a1,t7                                    | 00289010: 25ceffff  addiu	t6,t6,-1
+!! 00289014: 14e00002  bnez	a3,0x289020                                 | 00289014: 00af7821  addu	t7,a1,t7
+!! 00289018: 24a50002  addiu	a1,a1,2                                    | 00289018: a5e60000  sh	a2,0(t7)
+!! 0028901c: 00c0702d  move	t6,a2                                       | 0028901c: 00000000  nop
+!! 00289020: 25adffff  addiu	t5,t5,-1                                   | 00289020: 05c1fffa  bgez	t6,28900c <func_00288fd8+0x34>
+!! 00289024: 05a1fff8  bgez	t5,0x289008                                 | 00289024: 24a50002  addiu	a1,a1,2
+!! 00289028: a5ee0000  sh	t6,0(t7)                                      | 00289028: 03e00008  jr	ra
+!! 0028902c: 03e00008  jr	ra                                            | 0028902c: 00000000  nop
+!! 00289030: 00000000  nop                                              | 

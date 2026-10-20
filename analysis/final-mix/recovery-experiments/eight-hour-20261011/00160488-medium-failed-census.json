@@ -1,0 +1,24 @@
+{
+  "address": "00160488",
+  "outcome": "Unaccepted isolated candidates; no impossibility claim.",
+  "variants": [
+    {
+      "proof": "eight_hour_00160488_medium_scalar_v1_1.verification.json",
+      "proof_sha256": "d7b60206c61432cce17034702bee666f0d4566110738f9f1a9b419b4c1b1be74",
+      "source_sha256": "a79380c5290e708bfc08681ce1ee85b03f60bd1d2ddd9d685a3076897a14b03b",
+      "compiled_bytes": 72,
+      "native_bytes": 76,
+      "differing_words": 17,
+      "target_sha256": "35a1ddcb1a2a24d90276a8fa2642ccc8bf2bde20386f6786b5fb1c9ec89c22a2"
+    },
+    {
+      "proof": "eight_hour_00160488_medium_scalar_v1_0.verification.json",
+      "proof_sha256": "bcf96d7de6e2d5c4a002bb8fee2765052c29fe4ca45e2910a4bd732813c79f3b",
+      "source_sha256": "c617f1893c013e364acc0e372a6308342de58abba5f9531683fcc609c5039599",
+      "compiled_bytes": 64,
+      "native_bytes": 76,
+      "differing_words": 15,
+      "target_sha256": "35a1ddcb1a2a24d90276a8fa2642ccc8bf2bde20386f6786b5fb1c9ec89c22a2"
+    }
+  ]
+}

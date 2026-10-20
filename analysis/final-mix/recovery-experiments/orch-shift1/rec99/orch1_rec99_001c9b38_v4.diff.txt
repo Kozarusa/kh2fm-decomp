@@ -1,0 +1,26 @@
+001c9b38: compiled 88 bytes, target 88 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001c9b38: 27bdfff0  addiu	sp,sp,-16                                  | 001c9b38: 27bdfff0  addiu	sp,sp,-16
+   001c9b3c: 240f0004  li	t7,4                                          | 001c9b3c: 240f0004  li	t7,4
+   001c9b40: ffbf0000  sd	ra,0(sp)                                      | 001c9b40: ffbf0000  sd	ra,0(sp)
+   001c9b44: 948e0002  lhu	t6,2(a0)                                     | 001c9b44: 948e0002  lhu	t6,2(a0)
+   001c9b48: 11cf000d  beq	t6,t7,0x1c9b80                               | 001c9b48: 11cf000d  beq	t6,t7,1c9b80 <func_001c9b38+0x48>
+   001c9b4c: 240f0048  li	t7,72                                         | 001c9b4c: 240f0048  li	t7,72
+   001c9b50: 11cf0005  beq	t6,t7,0x1c9b68                               | 001c9b50: 11cf0005  beq	t6,t7,1c9b68 <func_001c9b38+0x30>
+   001c9b54: 0000782d  move	t7,zero                                     | 001c9b54: 0000782d  move	t7,zero
+   001c9b58: dfbf0000  ld	ra,0(sp)                                      | 001c9b58: dfbf0000  ld	ra,0(sp)
+   001c9b5c: 01e0102d  move	v0,t7                                       | 001c9b5c: 01e0102d  move	v0,t7
+   001c9b60: 03e00008  jr	ra                                            | 001c9b60: 03e00008  jr	ra
+   001c9b64: 27bd0010  addiu	sp,sp,16                                   | 001c9b64: 27bd0010  addiu	sp,sp,16
+   001c9b68: 0c0726ae  jal	0x1c9ab8                                     | 001c9b68: 0c0726ae  jal	1c9ab8 <func_001c9ab8>
+   001c9b6c: 00000000  nop                                              | 001c9b6c: 00000000  nop
+   001c9b70: 1040fff9  beqz	v0,0x1c9b58                                 | 001c9b70: 1040fff9  beqz	v0,1c9b58 <func_001c9b38+0x20>
+   001c9b74: 240f0002  li	t7,2                                          | 001c9b74: 240f0002  li	t7,2
+   001c9b78: 1000fff7  b	0x1c9b58                                       | 001c9b78: 1000fff7  b	1c9b58 <func_001c9b38+0x20>
+   001c9b7c: 0000782d  move	t7,zero                                     | 001c9b7c: 0000782d  move	t7,zero
+   001c9b80: 84840004  lh	a0,4(a0)                                      | 001c9b80: 84840004  lh	a0,4(a0)
+   001c9b84: dfbf0000  ld	ra,0(sp)                                      | 001c9b84: dfbf0000  ld	ra,0(sp)
+   001c9b88: 0807266c  j	0x1c99b0                                       | 001c9b88: 0807266c  j	1c99b0 <func_001c99b0>
+   001c9b8c: 27bd0010  addiu	sp,sp,16                                   | 001c9b8c: 27bd0010  addiu	sp,sp,16

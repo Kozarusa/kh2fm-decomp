@@ -1,0 +1,26 @@
+001b7f30: compiled 88 bytes, target 88 bytes, exact=False
+Differing words: 2. First difference at instruction 16 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001b7f30: 27bdfff0  addiu	sp,sp,-16                                  | 001b7f30: 27bdfff0  addiu	sp,sp,-16
+   001b7f34: ffb00000  sd	s0,0(sp)                                      | 001b7f34: ffb00000  sd	s0,0(sp)
+   001b7f38: ffbf0008  sd	ra,8(sp)                                      | 001b7f38: ffbf0008  sd	ra,8(sp)
+   001b7f3c: 8c8f0000  lw	t7,0(a0)                                      | 001b7f3c: 8c8f0000  lw	t7,0(a0)
+   001b7f40: 11e0000a  beqz	t7,0x1b7f6c                                 | 001b7f40: 11e0000a  beqz	t7,1b7f6c <func_001b7f30+0x3c>
+   001b7f44: 0080802d  move	s0,a0                                       | 001b7f44: 0080802d  move	s0,a0
+   001b7f48: 3c0f0035  lui	t7,0x35                                      | 001b7f48: 3c0f0035  lui	t7,0x35
+   001b7f4c: 240e0001  li	t6,1                                          | 001b7f4c: 240e0001  li	t6,1
+   001b7f50: 91ed11c3  lbu	t5,4547(t7)   ; = D_003511c3                 | 001b7f50: 91ed11c3  lbu	t5,4547(t7)   ; = D_003511c3
+   001b7f54: 55ae0006  bnel	t5,t6,0x1b7f70                              | 001b7f54: 55ae0006  bnel	t5,t6,1b7f70 <func_001b7f30+0x40>
+   001b7f58: ae000000  sw	zero,0(s0)                                    | 001b7f58: ae000000  sw	zero,0(s0)
+   001b7f5c: 0c06dfe2  jal	0x1b7f88                                     | 001b7f5c: 0c06dfe2  jal	1b7f88 <func_001b7f88>
+   001b7f60: 00000000  nop                                              | 001b7f60: 00000000  nop
+   001b7f64: 0c05c300  jal	0x170c00                                     | 001b7f64: 0c05c300  jal	170c00 <func_00170c00>
+   001b7f68: 8e040000  lw	a0,0(s0)                                      | 001b7f68: 8e040000  lw	a0,0(s0)
+   001b7f6c: ae000000  sw	zero,0(s0)                                    | 001b7f6c: ae000000  sw	zero,0(s0)
+!! 001b7f70: ae000008  sw	zero,8(s0)                                    | 001b7f70: ae000004  sw	zero,4(s0)
+!! 001b7f74: ae000004  sw	zero,4(s0)                                    | 001b7f74: ae000008  sw	zero,8(s0)
+   001b7f78: dfbf0008  ld	ra,8(sp)                                      | 001b7f78: dfbf0008  ld	ra,8(sp)
+   001b7f7c: dfb00000  ld	s0,0(sp)                                      | 001b7f7c: dfb00000  ld	s0,0(sp)
+   001b7f80: 03e00008  jr	ra                                            | 001b7f80: 03e00008  jr	ra
+   001b7f84: 27bd0010  addiu	sp,sp,16                                   | 001b7f84: 27bd0010  addiu	sp,sp,16

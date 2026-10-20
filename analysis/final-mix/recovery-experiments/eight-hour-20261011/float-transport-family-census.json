@@ -1,0 +1,21 @@
+{
+  "positive_control": "00174af8",
+  "declared_range_bytes": 48,
+  "scope": "Current declared 48-byte main-executable ranges only",
+  "matches": [
+    {
+      "address": "00174af8",
+      "accepted": false,
+      "callee": "001b1bb8",
+      "mode": 128,
+      "load_offsets": [
+        0,
+        16,
+        4,
+        8,
+        12
+      ],
+      "original_range_sha256": "0ec667191adf9493144009e8b09e8a9d641d9a2b15c964f93bea20f353ce20df"
+    }
+  ]
+}

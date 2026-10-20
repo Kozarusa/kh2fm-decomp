@@ -1,0 +1,20 @@
+{
+  "warning_bearing_functions": 430,
+  "category_counts": {
+    "stack_pointer": 1,
+    "bad_instruction": 1,
+    "unreachable_block": 133,
+    "nonreturning_call": 26,
+    "overlapping_globals": 206,
+    "manual_switch_override": 31,
+    "type_propagation": 9,
+    "decompiler_restart": 3,
+    "instruction_overlap": 7,
+    "unrecovered_jumptable": 22,
+    "indirect_flow": 22,
+    "infinite_loop": 2,
+    "memory_attributes": 11
+  },
+  "diagnosed_functions": 40,
+  "unresolved_priority_1": 22
+}

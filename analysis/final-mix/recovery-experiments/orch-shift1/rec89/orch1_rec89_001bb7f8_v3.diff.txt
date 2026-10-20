@@ -1,0 +1,27 @@
+001bb7f8: compiled 92 bytes, target 92 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001bb7f8: 27bdfff0  addiu	sp,sp,-16                                  | 001bb7f8: 27bdfff0  addiu	sp,sp,-16
+   001bb7fc: ffb00000  sd	s0,0(sp)                                      | 001bb7fc: ffb00000  sd	s0,0(sp)
+   001bb800: ffbf0008  sd	ra,8(sp)                                      | 001bb800: ffbf0008  sd	ra,8(sp)
+   001bb804: 0c06ed28  jal	0x1bb4a0                                     | 001bb804: 0c06ed28  jal	1bb4a0 <func_001bb4a0>
+   001bb808: 0000802d  move	s0,zero                                     | 001bb808: 0000802d  move	s0,zero
+   001bb80c: 24040008  li	a0,8                                          | 001bb80c: 24040008  li	a0,8
+   001bb810: 1040000b  beqz	v0,0x1bb840                                 | 001bb810: 1040000b  beqz	v0,1bb840 <func_001bb7f8+0x48>
+   001bb814: 2405ffff  li	a1,-1                                         | 001bb814: 2405ffff  li	a1,-1
+   001bb818: 0c066340  jal	0x198d00                                     | 001bb818: 0c066340  jal	198d00 <func_00198d00>
+   001bb81c: 00000000  nop                                              | 001bb81c: 00000000  nop
+   001bb820: 54400007  bnezl	v0,0x1bb840                                | 001bb820: 54400007  bnezl	v0,1bb840 <func_001bb7f8+0x48>
+   001bb824: 24100001  li	s0,1                                          | 001bb824: 24100001  li	s0,1
+   001bb828: 3c0f01d5  lui	t7,0x1d5                                     | 001bb828: 3c0f01d5  lui	t7,0x1d5
+   001bb82c: 8dee9320  lw	t6,-27872(t7)   ; = D_01d49320                | 001bb82c: 8dee9320  lw	t6,-27872(t7)   ; = D_01d49320
+   001bb830: 8dcd00ac  lw	t5,172(t6)                                    | 001bb830: 8dcd00ac  lw	t5,172(t6)
+   001bb834: 11a00003  beqz	t5,0x1bb844                                 | 001bb834: 11a00003  beqz	t5,1bb844 <func_001bb7f8+0x4c>
+   001bb838: 0200102d  move	v0,s0                                       | 001bb838: 0200102d  move	v0,s0
+   001bb83c: 24100001  li	s0,1                                          | 001bb83c: 24100001  li	s0,1
+   001bb840: 0200102d  move	v0,s0                                       | 001bb840: 0200102d  move	v0,s0
+   001bb844: dfbf0008  ld	ra,8(sp)                                      | 001bb844: dfbf0008  ld	ra,8(sp)
+   001bb848: dfb00000  ld	s0,0(sp)                                      | 001bb848: dfb00000  ld	s0,0(sp)
+   001bb84c: 03e00008  jr	ra                                            | 001bb84c: 03e00008  jr	ra
+   001bb850: 27bd0010  addiu	sp,sp,16                                   | 001bb850: 27bd0010  addiu	sp,sp,16

@@ -1,0 +1,17 @@
+00179c80: compiled 52 bytes, target 52 bytes, exact=False
+Differing words: 5. First difference at instruction 6 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00179c80: 8c8e0b50  lw	t6,2896(a0)                                   | 00179c80: 8c8e0b50  lw	t6,2896(a0)
+   00179c84: 240f0007  li	t7,7                                          | 00179c84: 240f0007  li	t7,7
+   00179c88: 15cf0008  bne	t6,t7,0x179cac                               | 00179c88: 15cf0008  bne	t6,t7,179cac <func_00179c80+0x2c>
+   00179c8c: 0000102d  move	v0,zero                                     | 00179c8c: 0000102d  move	v0,zero
+   00179c90: 8c840154  lw	a0,340(a0)                                    | 00179c90: 8c840154  lw	a0,340(a0)
+   00179c94: 240f00cb  li	t7,203                                        | 00179c94: 240f00cb  li	t7,203
+!! 00179c98: 108f0003  beq	a0,t7,0x179ca8                               | 00179c98: 108f0004  beq	a0,t7,179cac <func_00179c80+0x2c>
+!! 00179c9c: 240f00cc  li	t7,204                                        | 00179c9c: 24020001  li	v0,1
+!! 00179ca0: 148f0002  bne	a0,t7,0x179cac                               | 00179ca0: 240f00cc  li	t7,204
+!! 00179ca4: 00000000  nop                                              | 00179ca4: 548f0001  bnel	a0,t7,179cac <func_00179c80+0x2c>
+!! 00179ca8: 24020001  li	v0,1                                          | 00179ca8: 0000102d  move	v0,zero
+   00179cac: 03e00008  jr	ra                                            | 00179cac: 03e00008  jr	ra
+   00179cb0: 00000000  nop                                              | 00179cb0: 00000000  nop

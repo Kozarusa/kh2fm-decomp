@@ -1,0 +1,29 @@
+002953c8: compiled 100 bytes, target 100 bytes, exact=False
+Differing words: 18. First difference at instruction 6 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   002953c8: 27bdfff0  addiu	sp,sp,-16                                  | 002953c8: 27bdfff0  addiu	sp,sp,-16
+   002953cc: ffb00000  sd	s0,0(sp)                                      | 002953cc: ffb00000  sd	s0,0(sp)
+   002953d0: ffbf0008  sd	ra,8(sp)                                      | 002953d0: ffbf0008  sd	ra,8(sp)
+   002953d4: 0080802d  move	s0,a0                                       | 002953d4: 0080802d  move	s0,a0
+   002953d8: 0c0a5000  jal	0x294000                                     | 002953d8: 0c0a5000  jal	294000 <func_00294000>
+   002953dc: 0000202d  move	a0,zero                                     | 002953dc: 0000202d  move	a0,zero
+!! 002953e0: 8c4c0008  lw	t4,8(v0)                                      | 002953e0: 8c4a0008  lw	t2,8(v0)
+   002953e4: 244b0010  addiu	t3,v0,16                                   | 002953e4: 244b0010  addiu	t3,v0,16
+!! 002953e8: 1980000e  blez	t4,0x295424                                 | 002953e8: 0000602d  move	t4,zero
+!! 002953ec: 0000682d  move	t5,zero                                     | 002953ec: 1940000b  blez	t2,29541c <func_002953c8+0x54>
+!! 002953f0: 000d1100  sll	v0,t5,0x4                                    | 002953f0: 0160102d  move	v0,t3
+!! 002953f4: 004b7821  addu	t7,v0,t3                                    | 002953f4: 0000682d  move	t5,zero
+!! 002953f8: 25ad0001  addiu	t5,t5,1                                    | 002953f8: 258c0001  addiu	t4,t4,1
+!! 002953fc: 81ee0000  lb	t6,0(t7)                                      | 002953fc: 01ab1021  addu	v0,t5,t3
+!! 00295400: 11d00003  beq	t6,s0,0x295410                               | 00295400: 000c7900  sll	t7,t4,0x4
+!! 00295404: 01ac782a  slt	t7,t5,t4                                     | 00295404: 804e0000  lb	t6,0(v0)
+!! 00295408: 15e0fff9  bnez	t7,0x2953f0                                 | 00295408: 01e0682d  move	t5,t7
+!! 0029540c: 000d1100  sll	v0,t5,0x4                                    | 0029540c: 11d00003  beq	t6,s0,29541c <func_002953c8+0x54>
+!! 00295410: dfb00000  ld	s0,0(sp)                                      | 00295410: 018a782a  slt	t7,t4,t2
+!! 00295414: 01621021  addu	v0,t3,v0                                    | 00295414: 15e0fff8  bnez	t7,2953f8 <func_002953c8+0x30>
+!! 00295418: dfbf0008  ld	ra,8(sp)                                      | 00295418: 01ab1021  addu	v0,t5,t3
+!! 0029541c: 03e00008  jr	ra                                            | 0029541c: dfb00000  ld	s0,0(sp)
+!! 00295420: 27bd0010  addiu	sp,sp,16                                   | 00295420: dfbf0008  ld	ra,8(sp)
+!! 00295424: 1000fffa  b	0x295410                                       | 00295424: 03e00008  jr	ra
+!! 00295428: 0000102d  move	v0,zero                                     | 00295428: 27bd0010  addiu	sp,sp,16

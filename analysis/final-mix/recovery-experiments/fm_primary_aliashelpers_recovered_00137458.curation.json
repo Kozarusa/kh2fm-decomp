@@ -1,0 +1,14 @@
+{
+  "probe_source": "analysis/final-mix/recovery-experiments/fm_primary_freshhelpers_v2_00137458_1.cpp",
+  "probe_source_sha256": "a5882a35c38c25058b12e3d1c23ddf2d0883d87369d65345c3eac55695da1087",
+  "probe_proof_sha256": "1b1a8bcb04f44ee164b9e0ecfe9e07cb40dbf90f6f025a52c74834cff5e5f0b8",
+  "curated_source": "analysis/final-mix/recovery-experiments/fm_primary_aliashelpers_recovered_00137458.cpp",
+  "curated_source_sha256": "1e02daacb3409165b8507dad37d8f793b9e15e969c07ce00f4271da5c586105f",
+  "selected_addresses": [
+    "00137458"
+  ],
+  "exclusion_receipt": null,
+  "limitations": [
+    "Curated source still requires a new probe, registration and full build."
+  ]
+}

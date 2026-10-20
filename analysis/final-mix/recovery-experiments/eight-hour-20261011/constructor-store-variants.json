@@ -1,0 +1,10 @@
+[
+  "eight_hour_001c2c98_both_volatile.cpp",
+  "eight_hour_001c2c98_table_volatile.cpp",
+  "eight_hour_001c2c98_flag_volatile.cpp",
+  "eight_hour_001c2c98_memory_barrier.cpp",
+  "eight_hour_001c2ce8_both_volatile.cpp",
+  "eight_hour_001c2ce8_table_volatile.cpp",
+  "eight_hour_001c2ce8_flag_volatile.cpp",
+  "eight_hour_001c2ce8_memory_barrier.cpp"
+]

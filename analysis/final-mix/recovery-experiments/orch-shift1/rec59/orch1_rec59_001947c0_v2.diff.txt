@@ -1,0 +1,34 @@
+001947c0: compiled 120 bytes, target 108 bytes, exact=False
+Differing words: 23. First difference at instruction 4 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001947c0: 3c0e0033  lui	t6,0x33                                      | 001947c0: 3c0e0033  lui	t6,0x33
+   001947c4: 04810002  bgez	a0,0x1947d0                                 | 001947c4: 04810002  bgez	a0,1947d0 <func_001947c0+0x10>
+   001947c8: 25cfbae0  addiu	t7,t6,-17696   ; = D_0032bae0              | 001947c8: 25cfbae0  addiu	t7,t6,-17696   ; = D_0032bae0
+   001947cc: 91e40001  lbu	a0,1(t7)                                     | 001947cc: 91e40001  lbu	a0,1(t7)
+!! 001947d0: 04a30004  bgezl	a1,0x1947e4                                | 001947d0: 04a30005  bgezl	a1,1947e8 <func_001947c0+0x28>
+   001947d4: 3c0e01c6  lui	t6,0x1c6                                     | 001947d4: 3c0e01c6  lui	t6,0x1c6
+   001947d8: 91c5bae0  lbu	a1,-17696(t6)   ; = D_01c5bae0               | 001947d8: 91c5bae0  lbu	a1,-17696(t6)   ; = D_01c5bae0
+!! 001947dc: 04a00011  bltz	a1,0x194824                                 | 001947dc: 04a00014  bltz	a1,194830 <func_001947c0+0x70>
+!! 001947e0: 3c0e01c6  lui	t6,0x1c6                                     | 001947e0: 0000102d  move	v0,zero
+!! 001947e4: 8dcd1af0  lw	t5,6896(t6)   ; = D_01c61af0                  | 001947e4: 3c0e01c6  lui	t6,0x1c6
+!! 001947e8: 8daf0004  lw	t7,4(t5)                                      | 001947e8: 8dcd1af0  lw	t5,6896(t6)   ; = D_01c61af0
+!! 001947ec: 00af782a  slt	t7,a1,t7                                     | 001947ec: 8daf0004  lw	t7,4(t5)
+!! 001947f0: 11e0000c  beqz	t7,0x194824                                 | 001947f0: 00af782a  slt	t7,a1,t7
+!! 001947f4: 00000000  nop                                              | 001947f4: 51e0000e  beqzl	t7,194830 <func_001947c0+0x70>
+!! 001947f8: 0480000a  bltz	a0,0x194824                                 | 001947f8: 0000102d  move	v0,zero
+!! 001947fc: 00057080  sll	t6,a1,0x2                                    | 001947fc: 0480000b  bltz	a0,19482c <func_001947c0+0x6c>
+!! 00194800: 01cd2821  addu	a1,t6,t5                                    | 00194800: 00057080  sll	t6,a1,0x2
+!! 00194804: 94af0008  lhu	t7,8(a1)                                     | 00194804: 01ae2821  addu	a1,t5,t6
+!! 00194808: 008f782a  slt	t7,a0,t7                                     | 00194808: 94af0008  lhu	t7,8(a1)
+!! 0019480c: 11e00005  beqz	t7,0x194824                                 | 0019480c: 008f782a  slt	t7,a0,t7
+!! 00194810: 00047180  sll	t6,a0,0x6                                    | 00194810: 51e00007  beqzl	t7,194830 <func_001947c0+0x70>
+!! 00194814: 94af000a  lhu	t7,10(a1)                                    | 00194814: 0000102d  move	v0,zero
+!! 00194818: 01af7821  addu	t7,t5,t7                                    | 00194818: 94af000a  lhu	t7,10(a1)
+!! 0019481c: 03e00008  jr	ra                                            | 0019481c: 00047180  sll	t6,a0,0x6
+!! 00194820: 01ee1021  addu	v0,t7,t6                                    | 00194820: 01af7821  addu	t7,t5,t7
+   00194824: 03e00008  jr	ra                                            | 00194824: 03e00008  jr	ra
+!! 00194828: 0000102d  move	v0,zero                                     | 00194828: 01ee1021  addu	v0,t7,t6
+!!                                                                      | 0019482c: 0000102d  move	v0,zero
+!!                                                                      | 00194830: 03e00008  jr	ra
+!!                                                                      | 00194834: 00000000  nop

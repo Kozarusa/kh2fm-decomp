@@ -1,0 +1,24 @@
+001ca448: compiled 80 bytes, target 76 bytes, exact=False
+Differing words: 4. First difference at instruction 16 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001ca448: 8c8e0154  lw	t6,340(a0)                                    | 001ca448: 8c8e0154  lw	t6,340(a0)
+   001ca44c: 240f002c  li	t7,44                                         | 001ca44c: 240f002c  li	t7,44
+   001ca450: 11cf0007  beq	t6,t7,0x1ca470                               | 001ca450: 11cf0007  beq	t6,t7,1ca470 <func_001ca448+0x28>
+   001ca454: 29cd002d  slti	t5,t6,45                                    | 001ca454: 29cd002d  slti	t5,t6,45
+   001ca458: 11a00007  beqz	t5,0x1ca478                                 | 001ca458: 11a00007  beqz	t5,1ca478 <func_001ca448+0x30>
+   001ca45c: 240f0010  li	t7,16                                         | 001ca45c: 240f0010  li	t7,16
+   001ca460: 11cf0003  beq	t6,t7,0x1ca470                               | 001ca460: 11cf0003  beq	t6,t7,1ca470 <func_001ca448+0x28>
+   001ca464: 00000000  nop                                              | 001ca464: 00000000  nop
+   001ca468: 03e00008  jr	ra                                            | 001ca468: 03e00008  jr	ra
+   001ca46c: 24020001  li	v0,1                                          | 001ca46c: 24020001  li	v0,1
+   001ca470: 03e00008  jr	ra                                            | 001ca470: 03e00008  jr	ra
+   001ca474: 0000102d  move	v0,zero                                     | 001ca474: 0000102d  move	v0,zero
+   001ca478: 240f00a1  li	t7,161                                        | 001ca478: 240f00a1  li	t7,161
+   001ca47c: 15cffffa  bne	t6,t7,0x1ca468                               | 001ca47c: 15cffffa  bne	t6,t7,1ca468 <func_001ca448+0x20>
+   001ca480: 00000000  nop                                              | 001ca480: 00000000  nop
+   001ca484: 8c8f0588  lw	t7,1416(a0)                                   | 001ca484: 8c8f0588  lw	t7,1416(a0)
+!! 001ca488: 31ef0080  andi	t7,t7,0x80                                  | 001ca488: 000f79c3  sra	t7,t7,0x7
+!! 001ca48c: 03e00008  jr	ra                                            | 001ca48c: 39ef0001  xori	t7,t7,0x1
+!! 001ca490: 2de20001  sltiu	v0,t7,1                                    | 001ca490: 03e00008  jr	ra
+!!                                                                      | 001ca494: 31e20001  andi	v0,t7,0x1

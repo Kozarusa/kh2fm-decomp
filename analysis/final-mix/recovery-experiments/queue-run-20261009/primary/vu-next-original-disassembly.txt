@@ -1,0 +1,86 @@
+
+SLPM_666.75:     file format elf32-littlemips
+
+Disassembly of section main:
+
+00222678 <main+0x122678>:
+  222678:	27bdfff0 	addiu	sp,sp,-16
+  22267c:	e7ac0000 	swc1	$f12,0(sp)
+  222680:	e7ad0004 	swc1	$f13,4(sp)
+  222684:	dba10000 	lqc2	vf1,0(sp)
+  222688:	4b010851 	vmaxy.x	vf1,vf1,vf1y
+  22268c:	fba10000 	sqc2	vf1,0(sp)
+  222690:	c7a00000 	lwc1	$f0,0(sp)
+  222694:	03e00008 	jr	ra
+  222698:	27bd0010 	addiu	sp,sp,16
+
+
+SLPM_666.75:     file format elf32-littlemips
+
+Disassembly of section main:
+
+002229a0 <main+0x1229a0>:
+  2229a0:	27bdfff0 	addiu	sp,sp,-16
+  2229a4:	d88a0000 	lqc2	vf10,0(a0)
+  2229a8:	4bca52aa 	vmul.xyz	vf10,vf10,vf10
+  2229ac:	4bc9533c 	vmove.xyz	vf9,vf10
+  2229b0:	4a894a40 	vaddx.y	vf9,vf9,vf9x
+  2229b4:	4a494a41 	vaddy.z	vf9,vf9,vf9y
+  2229b8:	4b0903bd 	vsqrt	Q,vf9z
+  2229bc:	4a0003bf 	vwaitq
+  2229c0:	4b0002a0 	vaddq.x	vf10,vf0,Q
+  2229c4:	fbaa0000 	sqc2	vf10,0(sp)
+  2229c8:	c7a00000 	lwc1	$f0,0(sp)
+  2229cc:	03e00008 	jr	ra
+  2229d0:	27bd0010 	addiu	sp,sp,16
+
+
+SLPM_666.75:     file format elf32-littlemips
+
+Disassembly of section main:
+
+002f3cd8 <main+0x1f3cd8>:
+  2f3cd8:	d8a40000 	lqc2	vf4,0(a1)
+  2f3cdc:	d8a50010 	lqc2	vf5,16(a1)
+  2f3ce0:	d8a60020 	lqc2	vf6,32(a1)
+  2f3ce4:	d8a70030 	lqc2	vf7,48(a1)
+  2f3ce8:	d8c80000 	lqc2	vf8,0(a2)
+  2f3cec:	4be821bc 	vmulax.wxyz	ACC,vf4,vf8x
+  2f3cf0:	4be828bd 	vmadday.wxyz	ACC,vf5,vf8y
+  2f3cf4:	4be830be 	vmaddaz.wxyz	ACC,vf6,vf8z
+  2f3cf8:	4be83a4b 	vmaddw.wxyz	vf9,vf7,vf8w
+  2f3cfc:	03e00008 	jr	ra
+  2f3d00:	f8890000 	sqc2	vf9,0(a0)
+
+
+SLPM_666.75:     file format elf32-littlemips
+
+Disassembly of section main:
+
+002f4000 <main+0x1f4000>:
+  2f4000:	4be0012c 	vsub.wxyz	vf4,vf0,vf0
+  2f4004:	4a202128 	vadd.w	vf4,vf4,vf0
+  2f4008:	4be5233d 	vmr32.wxyz	vf5,vf4
+  2f400c:	4be62b3d 	vmr32.wxyz	vf6,vf5
+  2f4010:	4be7333d 	vmr32.wxyz	vf7,vf6
+  2f4014:	f8840030 	sqc2	vf4,48(a0)
+  2f4018:	f8850020 	sqc2	vf5,32(a0)
+  2f401c:	f8860010 	sqc2	vf6,16(a0)
+  2f4020:	03e00008 	jr	ra
+  2f4024:	f8870000 	sqc2	vf7,0(a0)
+
+
+SLPM_666.75:     file format elf32-littlemips
+
+Disassembly of section main:
+
+002f42e8 <main+0x1f42e8>:
+  2f42e8:	44086000 	mfc1	t0,$f12
+  2f42ec:	44096800 	mfc1	t1,$f13
+  2f42f0:	d8a60000 	lqc2	vf6,0(a1)
+  2f42f4:	48a82000 	qmtc2	t0,vf4
+  2f42f8:	48a92800 	qmtc2	t1,vf5
+  2f42fc:	4be43190 	vmaxx.wxyz	vf6,vf6,vf4x
+  2f4300:	4be53194 	vminix.wxyz	vf6,vf6,vf5x
+  2f4304:	03e00008 	jr	ra
+  2f4308:	f8860000 	sqc2	vf6,0(a0)

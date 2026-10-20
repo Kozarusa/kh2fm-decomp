@@ -1,0 +1,10 @@
+{
+  "payload_count": 727,
+  "status_counts": {
+    "byte_exact_roundtrip": 727
+  },
+  "limitations": [
+    "Byte equality verifies reconstruction, not game behavior.",
+    "Empty payloads are tracked separately from decoded scripts."
+  ]
+}

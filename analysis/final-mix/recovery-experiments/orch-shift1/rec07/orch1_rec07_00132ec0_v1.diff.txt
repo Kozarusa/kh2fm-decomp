@@ -1,0 +1,33 @@
+00132ec0: compiled 116 bytes, target 116 bytes, exact=False
+Differing words: 4. First difference at instruction 15 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00132ec0: 27bdffe0  addiu	sp,sp,-32                                  | 00132ec0: 27bdffe0  addiu	sp,sp,-32
+   00132ec4: ffb00000  sd	s0,0(sp)                                      | 00132ec4: ffb00000  sd	s0,0(sp)
+   00132ec8: ffb20010  sd	s2,16(sp)                                     | 00132ec8: ffb20010  sd	s2,16(sp)
+   00132ecc: ffb10008  sd	s1,8(sp)                                      | 00132ecc: ffb10008  sd	s1,8(sp)
+   00132ed0: 00a0802d  move	s0,a1                                       | 00132ed0: 00a0802d  move	s0,a1
+   00132ed4: ffbf0018  sd	ra,24(sp)                                     | 00132ed4: ffbf0018  sd	ra,24(sp)
+   00132ed8: 0c04cb1a  jal	0x132c68                                     | 00132ed8: 0c04cb1a  jal	132c68 <func_00132c68>
+   00132edc: 0080902d  move	s2,a0                                       | 00132edc: 0080902d  move	s2,a0
+   00132ee0: 0040882d  move	s1,v0                                       | 00132ee0: 0040882d  move	s1,v0
+   00132ee4: 0200302d  move	a2,s0                                       | 00132ee4: 0200302d  move	a2,s0
+   00132ee8: 0240202d  move	a0,s2                                       | 00132ee8: 0240202d  move	a0,s2
+   00132eec: 1040000b  beqz	v0,0x132f1c                                 | 00132eec: 1040000b  beqz	v0,132f1c <func_00132ec0+0x5c>
+   00132ef0: 3405ffff  li	a1,0xffff                                     | 00132ef0: 3405ffff  li	a1,0xffff
+   00132ef4: 0c04c972  jal	0x1325c8                                     | 00132ef4: 0c04c972  jal	1325c8 <func_001325c8>
+   00132ef8: 00000000  nop                                              | 00132ef8: 00000000  nop
+!! 00132efc: 04400007  bltz	v0,0x132f1c                                 | 00132efc: 00027880  sll	t7,v0,0x2
+!! 00132f00: 00027080  sll	t6,v0,0x2                                    | 00132f00: 04400006  bltz	v0,132f1c <func_00132ec0+0x5c>
+!! 00132f04: 8e2f001c  lw	t7,28(s1)                                     | 00132f04: 01f17021  addu	t6,t7,s1
+!! 00132f08: 022f7821  addu	t7,s1,t7                                    | 00132f08: 8e2f001c  lw	t7,28(s1)
+   00132f0c: 01cf7821  addu	t7,t6,t7                                    | 00132f0c: 01cf7821  addu	t7,t6,t7
+   00132f10: 8dee0000  lw	t6,0(t7)                                      | 00132f10: 8dee0000  lw	t6,0(t7)
+   00132f14: 022e7021  addu	t6,s1,t6                                    | 00132f14: 022e7021  addu	t6,s1,t6
+   00132f18: ae4e0274  sw	t6,628(s2)                                    | 00132f18: ae4e0274  sw	t6,628(s2)
+   00132f1c: dfb00000  ld	s0,0(sp)                                      | 00132f1c: dfb00000  ld	s0,0(sp)
+   00132f20: dfb10008  ld	s1,8(sp)                                      | 00132f20: dfb10008  ld	s1,8(sp)
+   00132f24: dfb20010  ld	s2,16(sp)                                     | 00132f24: dfb20010  ld	s2,16(sp)
+   00132f28: dfbf0018  ld	ra,24(sp)                                     | 00132f28: dfbf0018  ld	ra,24(sp)
+   00132f2c: 03e00008  jr	ra                                            | 00132f2c: 03e00008  jr	ra
+   00132f30: 27bd0020  addiu	sp,sp,32                                   | 00132f30: 27bd0020  addiu	sp,sp,32

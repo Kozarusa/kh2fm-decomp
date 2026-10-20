@@ -1,0 +1,28 @@
+001cd4c0: compiled 92 bytes, target 96 bytes, exact=False
+Differing words: 15. First difference at instruction 5 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001cd4c0: 27bdfff0  addiu	sp,sp,-16                                  | 001cd4c0: 27bdfff0  addiu	sp,sp,-16
+   001cd4c4: ffbf0000  sd	ra,0(sp)                                      | 001cd4c4: ffbf0000  sd	ra,0(sp)
+   001cd4c8: 0c06efc0  jal	0x1bbf00                                     | 001cd4c8: 0c06efc0  jal	1bbf00 <func_001bbf00>
+   001cd4cc: 00000000  nop                                              | 001cd4cc: 00000000  nop
+   001cd4d0: 1440000f  bnez	v0,0x1cd510                                 | 001cd4d0: 1440000f  bnez	v0,1cd510 <func_001cd4c0+0x50>
+!! 001cd4d4: 240f0001  li	t7,1                                          | 001cd4d4: dfbf0000  ld	ra,0(sp)
+   001cd4d8: 3c0f0033  lui	t7,0x33                                      | 001cd4d8: 3c0f0033  lui	t7,0x33
+   001cd4dc: 25efbae0  addiu	t7,t7,-17696   ; = D_0032bae0              | 001cd4dc: 25efbae0  addiu	t7,t7,-17696   ; = D_0032bae0
+   001cd4e0: 95ee0004  lhu	t6,4(t7)                                     | 001cd4e0: 95ee0004  lhu	t6,4(t7)
+   001cd4e4: 2dce0033  sltiu	t6,t6,51                                   | 001cd4e4: 2dce0033  sltiu	t6,t6,51
+!! 001cd4e8: 11c00008  beqz	t6,0x1cd50c                                 | 001cd4e8: 11c00009  beqz	t6,1cd510 <func_001cd4c0+0x50>
+!! 001cd4ec: 3c0f0035  lui	t7,0x35                                      | 001cd4ec: 0000782d  move	t7,zero
+!! 001cd4f0: 91ee0378  lbu	t6,888(t7)   ; = D_00350378                  | 001cd4f0: 3c0e0035  lui	t6,0x35
+!! 001cd4f4: 15c00006  bnez	t6,0x1cd510                                 | 001cd4f4: 91cd0378  lbu	t5,888(t6)   ; = D_00350378
+!! 001cd4f8: 0000782d  move	t7,zero                                     | 001cd4f8: 15a00006  bnez	t5,1cd514 <func_001cd4c0+0x54>
+!! 001cd4fc: 0c06ed28  jal	0x1bb4a0                                     | 001cd4fc: 01e0102d  move	v0,t7
+!! 001cd500: 00000000  nop                                              | 001cd500: 0c06ed28  jal	1bb4a0 <func_001bb4a0>
+!! 001cd504: 10400002  beqz	v0,0x1cd510                                 | 001cd504: 00000000  nop
+!! 001cd508: 240f0001  li	t7,1                                          | 001cd508: 0002780b  movn	t7,zero,v0
+!! 001cd50c: 0000782d  move	t7,zero                                     | 001cd50c: dfbf0000  ld	ra,0(sp)
+!! 001cd510: dfbf0000  ld	ra,0(sp)                                      | 001cd510: 01e0102d  move	v0,t7
+!! 001cd514: 01e0102d  move	v0,t7                                       | 001cd514: 03e00008  jr	ra
+!! 001cd518: 03e00008  jr	ra                                            | 001cd518: 27bd0010  addiu	sp,sp,16
+!! 001cd51c: 27bd0010  addiu	sp,sp,16                                   | 

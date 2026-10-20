@@ -1,0 +1,14 @@
+{
+  "probe_source": "analysis/final-mix/recovery-experiments/delegated/float-predicates/sa_float_flag_8.cpp",
+  "probe_source_sha256": "4186e22334868fad634159110475a35e7991ff33075b87deb162b6fd8f9d9c9f",
+  "probe_proof_sha256": "0f4fb868bbfac7f0aa36750c5ae7d640a52013e5e0fa1a7248b7517428e61285",
+  "curated_source": "analysis/final-mix/recovery-experiments/fm_primary_delegatedbatch_recovered_00148638.cpp",
+  "curated_source_sha256": "21c67d29ed457ae1a8d96db473333e14c6401176eb373fe62bff95a264665938",
+  "selected_addresses": [
+    "00148638"
+  ],
+  "exclusion_receipt": null,
+  "limitations": [
+    "Curated source still requires a new probe, registration and full build."
+  ]
+}

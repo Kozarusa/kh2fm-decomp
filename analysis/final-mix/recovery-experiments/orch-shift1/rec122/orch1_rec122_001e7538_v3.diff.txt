@@ -1,0 +1,31 @@
+001e7538: compiled 108 bytes, target 108 bytes, exact=False
+Differing words: 4. First difference at instruction 6 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001e7538: 3c091000  lui	t1,0x1000                                    | 001e7538: 3c091000  lui	t1,0x1000
+   001e753c: 3c0a1000  lui	t2,0x1000                                    | 001e753c: 3c0a1000  lui	t2,0x1000
+   001e7540: 3c0b1000  lui	t3,0x1000                                    | 001e7540: 3c0b1000  lui	t3,0x1000
+   001e7544: 3c0c1f00  lui	t4,0x1f00                                    | 001e7544: 3c0c1f00  lui	t4,0x1f00
+   001e7548: 35299000  ori	t1,t1,0x9000                                 | 001e7548: 35299000  ori	t1,t1,0x9000
+   001e754c: 354aa000  ori	t2,t2,0xa000                                 | 001e754c: 354aa000  ori	t2,t2,0xa000
+!! 001e7550: 24060002  li	a2,2                                          | 001e7550: 356b3c00  ori	t3,t3,0x3c00
+!! 001e7554: 356b3c00  ori	t3,t3,0x3c00                                 | 001e7554: 24060002  li	a2,2
+   001e7558: 358c0003  ori	t4,t4,0x3                                    | 001e7558: 358c0003  ori	t4,t4,0x3
+   001e755c: 24070004  li	a3,4                                          | 001e755c: 24070004  li	a3,4
+   001e7560: 24080008  li	t0,8                                          | 001e7560: 24080008  li	t0,8
+   001e7564: 8d2e0000  lw	t6,0(t1)                                      | 001e7564: 8d2e0000  lw	t6,0(t1)
+   001e7568: 8d4f0000  lw	t7,0(t2)                                      | 001e7568: 8d4f0000  lw	t7,0(t2)
+!! 001e756c: 31ce0100  andi	t6,t6,0x100                                 | 001e756c: 000e7203  sra	t6,t6,0x8
+!! 001e7570: 000e702b  sltu	t6,zero,t6                                  | 001e7570: 31ce0001  andi	t6,t6,0x1
+   001e7574: 8d6d0000  lw	t5,0(t3)                                      | 001e7574: 8d6d0000  lw	t5,0(t3)
+   001e7578: 31ef0100  andi	t7,t7,0x100                                 | 001e7578: 31ef0100  andi	t7,t7,0x100
+   001e757c: 00cf700b  movn	t6,a2,t7                                    | 001e757c: 00cf700b  movn	t6,a2,t7
+   001e7580: 01ac6824  and	t5,t5,t4                                     | 001e7580: 01ac6824  and	t5,t5,t4
+   001e7584: 00ed700b  movn	t6,a3,t5                                    | 001e7584: 00ed700b  movn	t6,a3,t5
+   001e7588: 484fe800  cfc2.ni	t7,$29                                   | 001e7588: 484fe800  cfc2.ni	t7,$29
+   001e758c: 31ef0100  andi	t7,t7,0x100                                 | 001e758c: 31ef0100  andi	t7,t7,0x100
+   001e7590: 010f700b  movn	t6,t0,t7                                    | 001e7590: 010f700b  movn	t6,t0,t7
+   001e7594: 15c0fff3  bnez	t6,0x1e7564                                 | 001e7594: 15c0fff3  bnez	t6,1e7564 <func_001e7538+0x2c>
+   001e7598: 00000000  nop                                              | 001e7598: 00000000  nop
+   001e759c: 03e00008  jr	ra                                            | 001e759c: 03e00008  jr	ra
+   001e75a0: 00000000  nop                                              | 001e75a0: 00000000  nop

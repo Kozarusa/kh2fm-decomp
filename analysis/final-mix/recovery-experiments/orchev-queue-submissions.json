@@ -1,0 +1,9 @@
+[
+  {
+    "address": "00294408",
+    "owner": "orch1-nm33",
+    "metadata": "{\"address\": \"00294408\", \"end\": \"0029447c\", \"bytes\": 116, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [\"00181500\", \"001a3570\"], \"best_proposal\": {\"proof\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_11_0.verification.json\", \"source\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_11_0.cpp\", \"compiled_bytes\": 116, \"target_bytes\": 116, \"different_words\": 14}}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\orch-shift1\\\\nm33\\\\orch1_nm33_00294408_v2.cpp\", \"source_sha256\": \"f744c32d4b4666633bfe002fe68bfb5e9daa5568b381810d762c9bffec53cc60\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\orch-shift1\\\\nm33\\\\orch1_nm33_00294408_v2.verification.json\", \"proof_sha256\": \"6c3567809b757d03a477083c50d907e67c41bb2a4448a5121469ca9c0f3decdb\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_orchev_recovered_00294408.cpp"
+  }
+]

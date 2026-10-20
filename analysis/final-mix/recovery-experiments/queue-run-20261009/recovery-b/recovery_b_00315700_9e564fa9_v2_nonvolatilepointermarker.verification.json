@@ -1,0 +1,18 @@
+{
+  "source_sha256": "319008e7d2548db1be2ddd5a9e7c6a72fa8ccae8c68f7adb4f4466f56aca9f21",
+  "source": "analysis/final-mix/recovery-experiments/queue-run-20261009/recovery-b/recovery_b_00315700_9e564fa9_v2_nonvolatilepointermarker.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "00315700",
+      "symbol": "_Z13func_00315700j",
+      "compiled_size": 56,
+      "target_size": 56,
+      "ghidra_body_size": 56,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "f0ffbd2736000f3c0000b0ff4878ef250800bfff2d808000fe590c0c00008fac0819040c2d2000020000b0df0800bfdf0800e0031000bd27",
+      "target_hex": "f0ffbd2736000f3c4878ef250000b0ff0800bfff00008facfe590c0c2d8080000819040c2d2000020000b0df0800bfdf0800e0031000bd27"
+    }
+  ]
+}

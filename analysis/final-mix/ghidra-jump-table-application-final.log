@@ -1,0 +1,80 @@
+2026-10-06 01:22:11 INFO  (LoggingInitialization) Using log config file: jar:file:/C:/Users/KoZa/Documents/ChatGPT/tools/ghidra-install/ghidra_12.1.4_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml  
+2026-10-06 01:22:11 INFO  (LoggingInitialization) Using log file: C:\Users\KoZa\Documents\ChatGPT\analysis\final-mix\ghidra-jump-table-application-final.log  
+2026-10-06 01:22:11 DEBUG (GhidraObjectInputFilter) Including serial input filter: FileSystem/data/client.rmi.serial.filter  
+2026-10-06 01:22:11 INFO  (Preferences) Loading user preferences: C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-state\config\ghidra\ghidra_12.1.4_PUBLIC\preferences  
+2026-10-06 01:22:11 INFO  (ClassSearcher) Searching for classes...  
+2026-10-06 01:22:12 INFO  (ClassSearcher) Class search complete (662 ms)  
+2026-10-06 01:22:12 INFO  (DefaultSSLContextInitializer) Initializing SSL Context  
+2026-10-06 01:22:12 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+2026-10-06 01:22:12 INFO  (SecureRandomFactory) Random Number Generator initialization complete: SHA1PRNG  
+2026-10-06 01:22:12 INFO  (DefaultTrustManagerFactory) Trust manager disabled, cacerts have not been set  
+2026-10-06 01:22:13 INFO  (AnalyzeHeadless) Headless startup complete (3392 ms)  
+2026-10-06 01:22:13 INFO  (ClassSearcher) Class searcher loaded 59 extension points (20 false positives)  
+2026-10-06 01:22:13 INFO  (HeadlessAnalyzer) HEADLESS Script Paths:
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\FunctionID\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\GnuDemangler\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\FileFormats\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\Base\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\BytePatterns\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Processors\8051\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Processors\Atmel\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\PyGhidra\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Processors\PIC\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Extensions\ghidra-emotionengine-reloaded\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\PDB\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\SystemEmulation\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Debug\Debugger\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Processors\DATA\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\SwiftDemangler\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\VersionTracking\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\kh2-audit
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Processors\JVM\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\BSim\ghidra_scripts
+    C:\Users\KoZa\Documents\ChatGPT\tools\ghidra-install\ghidra_12.1.4_PUBLIC\Ghidra\Features\Decompiler\ghidra_scripts  
+2026-10-06 01:22:13 INFO  (HeadlessAnalyzer) HEADLESS: execution starts  
+2026-10-06 01:22:13 INFO  (HeadlessAnalyzer) Opening existing project: C:\Users\KoZa\Documents\ChatGPT\analysis\final-mix\ghidra-projects\kh2fm  
+2026-10-06 01:22:13 INFO  (HeadlessProject) Opening project: C:\Users\KoZa\Documents\ChatGPT\analysis\final-mix\ghidra-projects\kh2fm  
+2026-10-06 01:22:18 INFO  (HeadlessAnalyzer) REPORT: Processing project file: /SLPM_666.75  
+2026-10-06 01:22:19 INFO  (HeadlessAnalyzer) REPORT: Execute script: ProbeFmJumpOverrides.java 'C:\Users\KoZa\Documents\ChatGPT\analysis\final-mix\native-pseudocode\main-jump-table-probe-inputs.tsv' 'C:\Users\KoZa\Documents\ChatGPT\analysis\final-mix\native-pseudocode\main-jump-table-override-application.json' 'apply'   
+2026-10-06 01:22:21 INFO  (HeadlessAnalyzer) SCRIPT: C:\Users\KoZa\Documents\ChatGPT\tools\kh2-audit\ProbeFmJumpOverrides.java  
+2026-10-06 01:22:22 INFO  (GhidraScript) ProbeFmJumpOverrides.java> FM override probe 00109ea8: warning removed=true, switch=true, applied=true  
+2026-10-06 01:22:22 INFO  (GhidraScript) ProbeFmJumpOverrides.java> FM override probe 00109f58: warning removed=true, switch=true, applied=true  
+2026-10-06 01:22:22 INFO  (GhidraScript) ProbeFmJumpOverrides.java> FM override probe 00186160: warning removed=true, switch=true, applied=true  
+2026-10-06 01:22:22 INFO  (GhidraScript) ProbeFmJumpOverrides.java> FM override probe 0018c528: warning removed=true, switch=true, applied=true  
+2026-10-06 01:22:22 INFO  (GhidraScript) ProbeFmJumpOverrides.java> FM override probe 0018ca48: warning removed=true, switch=true, applied=true  
+2026-10-06 01:22:22 INFO  (GhidraScript) ProbeFmJumpOverrides.java> FM override probe 00190920: warning removed=true, switch=true, applied=true  
+2026-10-06 01:22:22 INFO  (GhidraScript) ProbeFmJumpOverrides.java> FM override probe 001a9a28: warning removed=true, switch=true, applied=true  
+2026-10-06 01:22:22 INFO  (GhidraScript) ProbeFmJumpOverrides.java> FM override probe 001e34e0: warning removed=true, switch=true, applied=true  
+2026-10-06 01:22:22 INFO  (GhidraScript) ProbeFmJumpOverrides.java> FM override probe 001e3538: warning removed=true, switch=true, applied=true  
+2026-10-06 01:22:22 INFO  (GhidraScript) ProbeFmJumpOverrides.java> FM override probe 002249f8: warning removed=true, switch=true, applied=true  
+2026-10-06 01:22:22 INFO  (GhidraScript) ProbeFmJumpOverrides.java> FM override probe 00224cf0: warning removed=true, switch=true, applied=true  
+2026-10-06 01:22:22 INFO  (GhidraScript) ProbeFmJumpOverrides.java> FM override probe 00224d48: warning removed=true, switch=true, applied=true  
+2026-10-06 01:22:22 INFO  (GhidraScript) ProbeFmJumpOverrides.java> FM override probe 00229b28: warning removed=true, switch=true, applied=true  
+2026-10-06 01:22:22 INFO  (GhidraScript) ProbeFmJumpOverrides.java> FM override probe 0022a5c8: warning removed=true, switch=true, applied=true  
+2026-10-06 01:22:23 INFO  (GhidraScript) ProbeFmJumpOverrides.java> FM override probe 00255900: warning removed=true, switch=true, applied=true  
+2026-10-06 01:22:23 INFO  (GhidraScript) ProbeFmJumpOverrides.java> FM override probe 0025a468: warning removed=true, switch=true, applied=true  
+2026-10-06 01:22:23 INFO  (GhidraScript) ProbeFmJumpOverrides.java> FM override probe 0025dde8: warning removed=true, switch=true, applied=true  
+2026-10-06 01:22:23 INFO  (GhidraScript) ProbeFmJumpOverrides.java> FM override probe 002634d8: warning removed=true, switch=true, applied=true  
+2026-10-06 01:22:23 INFO  (GhidraScript) ProbeFmJumpOverrides.java> FM override probe 002644a0: warning removed=true, switch=true, applied=true  
+2026-10-06 01:22:23 INFO  (GhidraScript) ProbeFmJumpOverrides.java> FM override probe 002657a8: warning removed=true, switch=true, applied=true  
+2026-10-06 01:22:23 INFO  (GhidraScript) ProbeFmJumpOverrides.java> FM override probe 00265c78: warning removed=true, switch=true, applied=true  
+2026-10-06 01:22:23 INFO  (GhidraScript) ProbeFmJumpOverrides.java> FM override probe 00266248: warning removed=true, switch=true, applied=true  
+2026-10-06 01:22:23 INFO  (GhidraScript) ProbeFmJumpOverrides.java> FM override probe 00266988: warning removed=true, switch=true, applied=true  
+2026-10-06 01:22:23 INFO  (GhidraScript) ProbeFmJumpOverrides.java> FM override probe 00266b58: warning removed=true, switch=true, applied=true  
+2026-10-06 01:22:23 INFO  (GhidraScript) ProbeFmJumpOverrides.java> FM override probe 00266df8: warning removed=true, switch=true, applied=true  
+2026-10-06 01:22:23 INFO  (GhidraScript) ProbeFmJumpOverrides.java> FM override probe 0026ab18: warning removed=true, switch=true, applied=true  
+2026-10-06 01:22:23 INFO  (GhidraScript) ProbeFmJumpOverrides.java> FM override probe 0026f920: warning removed=true, switch=true, applied=true  
+2026-10-06 01:22:23 INFO  (GhidraScript) ProbeFmJumpOverrides.java> FM override probe 00270648: warning removed=true, switch=true, applied=true  
+2026-10-06 01:22:23 INFO  (GhidraScript) ProbeFmJumpOverrides.java> FM override probe 00272c20: warning removed=true, switch=true, applied=true  
+2026-10-06 01:22:24 INFO  (GhidraScript) ProbeFmJumpOverrides.java> FM switch 00275438: withheld; nested switch outside current body  
+2026-10-06 01:22:24 INFO  (GhidraScript) ProbeFmJumpOverrides.java> FM override probe 002764b0: warning removed=true, switch=true, applied=true  
+2026-10-06 01:22:24 INFO  (GhidraScript) ProbeFmJumpOverrides.java> FM override probe 0031b940: warning removed=true, switch=true, applied=true  
+2026-10-06 01:22:24 INFO  (GhidraScript) ProbeFmJumpOverrides.java> FM jump override report saved; only explicitly requested successful groups committed  
+2026-10-06 01:22:24 INFO  (HeadlessAnalyzer) REPORT: Execute script: ExportFmJumpTables.java 'C:\Users\KoZa\Documents\ChatGPT\analysis\final-mix\native-pseudocode\jump-table-export' 'C:\Users\KoZa\Documents\ChatGPT\analysis\final-mix\native-pseudocode\main-jump-table-probe-inputs.tsv'   
+2026-10-06 01:22:24 INFO  (HeadlessAnalyzer) SCRIPT: C:\Users\KoZa\Documents\ChatGPT\tools\kh2-audit\ExportFmJumpTables.java  
+2026-10-06 01:22:25 INFO  (GhidraScript) ExportFmJumpTables.java> FM export finished: 32 candidates, 0 failures, 0 suspicious outputs  
+2026-10-06 01:22:25 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for processed file: /SLPM_666.75  

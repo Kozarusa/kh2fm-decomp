@@ -1,0 +1,261 @@
+{
+  "source_sha256": "dafbde83d18e1ecfff05e3d1a2c814acde14c86e8f3a569f835a227ea67b7bae",
+  "superseded_failed_source_sha256": null,
+  "main_export_sha256": "a048feba3f72ff96b81797ae5c562d7b42c00e6c702c4f0813ffb07b23ec5145",
+  "rows": [
+    {
+      "address": "00112d28",
+      "size": 104,
+      "export_sha256": "cb817830a9ae6670acbbfa01ac0c9dc4c96ba2b9b38a0686425d2ac7ba8c5f0b"
+    },
+    {
+      "address": "001182d0",
+      "size": 88,
+      "export_sha256": "7759f5fcf53624aae9b71a81adf6897933ba110500f8546e1055704c6d6d5d29"
+    },
+    {
+      "address": "00132e28",
+      "size": 152,
+      "export_sha256": "859f649c462efa2bd155e5ca0358b37c56e935059c9e9b57f59b0275febc17d9"
+    },
+    {
+      "address": "00135dc8",
+      "size": 68,
+      "export_sha256": "30d56712ab03a4c4015e84ec250684c450278ad5e4a2e3990344aa0872a8f839"
+    },
+    {
+      "address": "00136200",
+      "size": 148,
+      "export_sha256": "e7424f8985e1380a6f5dbdbb07e92df5f559065db547a3ba65e582c5f244dfe0"
+    },
+    {
+      "address": "001387f8",
+      "size": 72,
+      "export_sha256": "fe5850c09324dc505e0c023a87ad0f22fef70136e6a324b847376cf875e5289b"
+    },
+    {
+      "address": "0013fec0",
+      "size": 72,
+      "export_sha256": "c88bdd2f7831e76c96d7e38c876872c120e3df48dbbe4c3aa244e88f08d0fd64"
+    },
+    {
+      "address": "00146d68",
+      "size": 120,
+      "export_sha256": "7f4900a5d3faac87007fd2a6ae29c302da1a54418553aea9f6cde902033c848e"
+    },
+    {
+      "address": "00152990",
+      "size": 160,
+      "export_sha256": "252d5919af7530df888fe64dce5d20d9260c5442de577b8866e279e2d6eaa9c5"
+    },
+    {
+      "address": "00155410",
+      "size": 80,
+      "export_sha256": "6ba7e33d9f775729dd2c5c537996b7ca4daa854ddf08713a54e0f0a413014886"
+    },
+    {
+      "address": "00155528",
+      "size": 64,
+      "export_sha256": "22bd58263c62f8e10bca25ca349a6c178d3c17b0601ee6dd5ba3c02b230bf709"
+    },
+    {
+      "address": "00167ee0",
+      "size": 56,
+      "export_sha256": "bd27b2449398981eb27dfc49fea8f12ec16f4345c0d11526f16a187dd7c8a339"
+    },
+    {
+      "address": "0016c028",
+      "size": 52,
+      "export_sha256": "91bd8aef43a36dfe74121838629082153ddac462260ca68b1ed7268453bd0d39"
+    },
+    {
+      "address": "0016c2b0",
+      "size": 128,
+      "export_sha256": "1e0aef84796d8b02ecc55a405f67a48dea7ab56ae8d5ae44e9e175c23b5ffdc7"
+    },
+    {
+      "address": "0016f6a0",
+      "size": 64,
+      "export_sha256": "0419651605f14b28f01844e821d10ea1589a72bbaeed0313501557684d4469e3"
+    },
+    {
+      "address": "00172bd8",
+      "size": 48,
+      "export_sha256": "5e2a91d536af53a1ca255b225cb9e5fd9ee6eb902141083b4d96a51c88c549ec"
+    },
+    {
+      "address": "00172c08",
+      "size": 48,
+      "export_sha256": "a9048cda07d15cf7a16d20c80e68ebaf490456626e36f4884de1af4fff00a82d"
+    },
+    {
+      "address": "0017c0a0",
+      "size": 104,
+      "export_sha256": "8cb22cb18dd7b77e47c717cdbb4b958af9c59e753a9e5ca3fb8c11890580c755"
+    },
+    {
+      "address": "0017ee68",
+      "size": 124,
+      "export_sha256": "d6066131bb847b5937d64f784c0d444f324ec7b1219307cf5cf7c7525bab35d8"
+    },
+    {
+      "address": "0017f4e0",
+      "size": 96,
+      "export_sha256": "e7784f2ad6cdb26b42fda10a6902c9ac8f803f8cbd58652d5386b9b9d36cf5d8"
+    },
+    {
+      "address": "001805a8",
+      "size": 64,
+      "export_sha256": "c2b1262d556ccdd7caec7bccd41901b7976563e36d23d163f15332bbd959dfa4"
+    },
+    {
+      "address": "00180c88",
+      "size": 72,
+      "export_sha256": "e32d5d4349106c12f2da1a16d9e6d5010f87d4d24ca440fe6281f0204bae87b9"
+    },
+    {
+      "address": "00181570",
+      "size": 92,
+      "export_sha256": "2ed23ee661355bf88884874db78cd950a5aa6474a1bf74afb67afef30469b334"
+    },
+    {
+      "address": "001819c0",
+      "size": 88,
+      "export_sha256": "3a1196e8796d09d18a2e6bb491753c7f889bf81f4db7960da0517fe38be74043"
+    },
+    {
+      "address": "00181a18",
+      "size": 88,
+      "export_sha256": "c669071d9221d9321c8fc32414e433e96d19f72a4ef5c6bb1f31a991f4ba27cb"
+    },
+    {
+      "address": "00185e20",
+      "size": 88,
+      "export_sha256": "02e669ec8aac7aca93cddc03cdd5691ae0212b993d0d4a86eb6b6e3f04a41eff"
+    },
+    {
+      "address": "00185e78",
+      "size": 92,
+      "export_sha256": "52da23c2cb8dcf9597cc4117d9013b58490e76b9eb082eee8cdba9bf4ebe197e"
+    },
+    {
+      "address": "00188398",
+      "size": 60,
+      "export_sha256": "801a7dfbedc53c50bae9f372eddc32511c01b9b71c75eb2a6dea736ae04dbde5"
+    },
+    {
+      "address": "00189028",
+      "size": 60,
+      "export_sha256": "ac0fec79c012da013074ac62986e388ddebcec8ad3b80e3f757ff356e7424ce3"
+    },
+    {
+      "address": "0018db38",
+      "size": 156,
+      "export_sha256": "3bcfd11996029e0170b840ad5f4f25c113a8a12dfb27be9dcd45753a0cb8ea1c"
+    },
+    {
+      "address": "0018f3a8",
+      "size": 100,
+      "export_sha256": "6e5eac30c5b2adc7d469b8781ea4a84602dd7aa1250ad6c41d01e3ce184ab72e"
+    },
+    {
+      "address": "00190140",
+      "size": 64,
+      "export_sha256": "b3e8735e440bce052f5147c14e559e9dfdae0ca50f12cddf3d55ced6836caaca"
+    },
+    {
+      "address": "001954a0",
+      "size": 84,
+      "export_sha256": "3af8866874a2f2aa4897e36862a5939bda3d761ce4e7117fceba3b13759a2e22"
+    },
+    {
+      "address": "00195750",
+      "size": 40,
+      "export_sha256": "4289435bd8c78e94f8b7bae3cd554fb6667618db53376417f6753faea07238ff"
+    },
+    {
+      "address": "0019ad00",
+      "size": 88,
+      "export_sha256": "8cd3231f218031d1dc34e1d375b1d1a58e6f9df49ebf110cec8a19c8ccd2d278"
+    },
+    {
+      "address": "0019c0f8",
+      "size": 92,
+      "export_sha256": "6f60af90c7417ed28d60b6cb22d0b235355d971988fac7a3c06763db02f1a099"
+    },
+    {
+      "address": "001a1db8",
+      "size": 40,
+      "export_sha256": "ba75b2eabdb14fcfba0148ec2d2cff7a9932e561a8fe1a9635aa021693c19d63"
+    },
+    {
+      "address": "001abd30",
+      "size": 96,
+      "export_sha256": "da686f22342f729df039c4f095e5e3438e64f26c9c48f3efa0b99b435d1177b2"
+    },
+    {
+      "address": "001abd90",
+      "size": 96,
+      "export_sha256": "4a01829ab7852bbb946f76c7a793ef5424b66faa65f5ec35b5d792ba6d6d15b4"
+    },
+    {
+      "address": "001b6dd0",
+      "size": 56,
+      "export_sha256": "ac62e55739ba366fed6e0b145c2e340957dae6e8b56127d2a7593e71d8980a48"
+    },
+    {
+      "address": "001bd668",
+      "size": 64,
+      "export_sha256": "a2575ed95d1912de1ad0398f30c5330c2f2c410bbb3eed349aaee53ad2408b57"
+    },
+    {
+      "address": "001bdf38",
+      "size": 48,
+      "export_sha256": "20495ebab9e7035c38e2a1b19820a7c88f6a1598efea16bb1632407b0490ef08"
+    },
+    {
+      "address": "001bdff0",
+      "size": 108,
+      "export_sha256": "23e695492bcea01cc5607bd8b3631a08e8ea68c41c04035a9424ba87ef9ad5a0"
+    },
+    {
+      "address": "001be4e0",
+      "size": 92,
+      "export_sha256": "d058e0a9763531ef93b699c52eab39e8a4db003b8361fdaebd6cab3761759608"
+    },
+    {
+      "address": "001befa8",
+      "size": 48,
+      "export_sha256": "3c2afb20b8c0543142d4d9cf191cce7b450b4320c3508ffb25f7b7ede037490f"
+    },
+    {
+      "address": "001c1890",
+      "size": 64,
+      "export_sha256": "4871b03cdf228a728c12819df8e464e56aba72d88d40b40f1124f262c6b8c5b5"
+    },
+    {
+      "address": "001c9ab8",
+      "size": 124,
+      "export_sha256": "bda6658eacbba03f064849cca97d320c76b1b2a3bad1066c74aeca40dda34e0f"
+    },
+    {
+      "address": "001ccda0",
+      "size": 76,
+      "export_sha256": "b7bf386b49a617831ed350ed72f0accb74a3f5b159035a63b989497ecdf13325"
+    },
+    {
+      "address": "001cddb8",
+      "size": 160,
+      "export_sha256": "a25c0ca392945de850e33cdbe051beae8c05e9a29e481e6510b03af540c020ce"
+    },
+    {
+      "address": "001d2248",
+      "size": 80,
+      "export_sha256": "595ad2d1f98e6006aab5504b2b45f3f8f10a06f65993abae956851e6ef7cf3fe"
+    }
+  ],
+  "limitations": [
+    "Variadic callee declarations are provisional; exact instruction gates decide acceptance.",
+    "A generated proposal is not a verified source recovery."
+  ]
+}

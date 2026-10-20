@@ -1,0 +1,36 @@
+001da458: compiled 128 bytes, target 124 bytes, exact=False
+Differing words: 30. First difference at instruction 2 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001da458: 27bdffe0  addiu	sp,sp,-32                                  | 001da458: 27bdffe0  addiu	sp,sp,-32
+   001da45c: ac850004  sw	a1,4(a0)                                      | 001da45c: ac850004  sw	a1,4(a0)
+!! 001da460: ffb10008  sd	s1,8(sp)                                      | 001da460: ffb00000  sd	s0,0(sp)
+!! 001da464: ffb00000  sd	s0,0(sp)                                      | 001da464: ffb10008  sd	s1,8(sp)
+!! 001da468: 00c0282d  move	a1,a2                                       | 001da468: ffb20010  sd	s2,16(sp)
+!! 001da46c: ffb20010  sd	s2,16(sp)                                     | 001da46c: 0000802d  move	s0,zero
+!! 001da470: 0000882d  move	s1,zero                                     | 001da470: ffbf0018  sd	ra,24(sp)
+!! 001da474: ffbf0018  sd	ra,24(sp)                                     | 001da474: 00c0882d  move	s1,a2
+!! 001da478: 8c8f0008  lw	t7,8(a0)                                      | 001da478: 8c8e0008  lw	t6,8(a0)
+!! 001da47c: 26310001  addiu	s1,s1,1                                    | 001da47c: adc00000  sw	zero,0(t6)
+!! 001da480: 2e2e0004  sltiu	t6,s1,4                                    | 001da480: 26100001  addiu	s0,s0,1
+!! 001da484: ade00000  sw	zero,0(t7)                                    | 001da484: 2e0f0004  sltiu	t7,s0,4
+!! 001da488: 25ef0004  addiu	t7,t7,4                                    | 001da488: 00000000  nop
+!! 001da48c: 15c0fffa  bnez	t6,0x1da478                                 | 001da48c: 00000000  nop
+!! 001da490: ac8f0008  sw	t7,8(a0)                                      | 001da490: 15e0fffa  bnez	t7,1da47c <func_001da458+0x24>
+!! 001da494: 18e00009  blez	a3,0x1da4bc                                 | 001da494: 25ce0004  addiu	t6,t6,4
+!! 001da498: 0080902d  move	s2,a0                                       | 001da498: 18e00009  blez	a3,1da4c0 <func_001da458+0x68>
+!! 001da49c: 00a0802d  move	s0,a1                                       | 001da49c: ac8e0008  sw	t6,8(a0)
+!! 001da4a0: 00e0882d  move	s1,a3                                       | 001da4a0: 0080902d  move	s2,a0
+!! 001da4a4: 0200282d  move	a1,s0                                       | 001da4a4: 00e0802d  move	s0,a3
+!! 001da4a8: 0c0768f6  jal	0x1da3d8                                     | 001da4a8: 0220282d  move	a1,s1
+!! 001da4ac: 0240202d  move	a0,s2                                       | 001da4ac: 0c0768f6  jal	1da3d8 <func_001da3d8>
+!! 001da4b0: 2631ffff  addiu	s1,s1,-1                                   | 001da4b0: 0240202d  move	a0,s2
+!! 001da4b4: 1620fffb  bnez	s1,0x1da4a4                                 | 001da4b4: 2610ffff  addiu	s0,s0,-1
+!! 001da4b8: 26100004  addiu	s0,s0,4                                    | 001da4b8: 1600fffb  bnez	s0,1da4a8 <func_001da458+0x50>
+!! 001da4bc: dfb00000  ld	s0,0(sp)                                      | 001da4bc: 26310004  addiu	s1,s1,4
+!! 001da4c0: dfb10008  ld	s1,8(sp)                                      | 001da4c0: dfb00000  ld	s0,0(sp)
+!! 001da4c4: dfb20010  ld	s2,16(sp)                                     | 001da4c4: dfb10008  ld	s1,8(sp)
+!! 001da4c8: dfbf0018  ld	ra,24(sp)                                     | 001da4c8: dfb20010  ld	s2,16(sp)
+!! 001da4cc: 03e00008  jr	ra                                            | 001da4cc: dfbf0018  ld	ra,24(sp)
+!! 001da4d0: 27bd0020  addiu	sp,sp,32                                   | 001da4d0: 03e00008  jr	ra
+!!                                                                      | 001da4d4: 27bd0020  addiu	sp,sp,32

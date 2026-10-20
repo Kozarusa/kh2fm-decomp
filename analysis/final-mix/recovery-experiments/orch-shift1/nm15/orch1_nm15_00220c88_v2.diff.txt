@@ -1,0 +1,30 @@
+00220c88: compiled 104 bytes, target 104 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00220c88: 27bdffd0  addiu	sp,sp,-48                                  | 00220c88: 27bdffd0  addiu	sp,sp,-48
+   00220c8c: ffbf0020  sd	ra,32(sp)                                     | 00220c8c: ffbf0020  sd	ra,32(sp)
+   00220c90: ffb00010  sd	s0,16(sp)                                     | 00220c90: ffb00010  sd	s0,16(sp)
+   00220c94: ffb10018  sd	s1,24(sp)                                     | 00220c94: ffb10018  sd	s1,24(sp)
+   00220c98: afa20000  sw	v0,0(sp)                                      | 00220c98: afa20000  sw	v0,0(sp)
+   00220c9c: 0040802d  move	s0,v0                                       | 00220c9c: 0040802d  move	s0,v0
+   00220ca0: 245101e0  addiu	s1,v0,480                                  | 00220ca0: 245101e0  addiu	s1,v0,480
+   00220ca4: 8c4501f4  lw	a1,500(v0)                                    | 00220ca4: 8c4501f4  lw	a1,500(v0)
+   00220ca8: 0c0bcfe2  jal	0x2f3f88                                     | 00220ca8: 0c0bcfe2  jal	2f3f88 <func_002f3f88>
+   00220cac: 0220202d  move	a0,s1                                       | 00220cac: 0220202d  move	a0,s1
+   00220cb0: 260400a0  addiu	a0,s0,160                                  | 00220cb0: 260400a0  addiu	a0,s0,160
+   00220cb4: 0220302d  move	a2,s1                                       | 00220cb4: 0220302d  move	a2,s1
+   00220cb8: 0c088a26  jal	0x222898                                     | 00220cb8: 0c088a26  jal	222898 <func_00222898>
+   00220cbc: 0200282d  move	a1,s0                                       | 00220cbc: 0200282d  move	a1,s0
+   00220cc0: 8e0e01f4  lw	t6,500(s0)                                    | 00220cc0: 8e0e01f4  lw	t6,500(s0)
+   00220cc4: 8e0f020c  lw	t7,524(s0)                                    | 00220cc4: 8e0f020c  lw	t7,524(s0)
+   00220cc8: 8e0d0204  lw	t5,516(s0)                                    | 00220cc8: 8e0d0204  lw	t5,516(s0)
+   00220ccc: 25efffff  addiu	t7,t7,-1                                   | 00220ccc: 25efffff  addiu	t7,t7,-1
+   00220cd0: dfb10018  ld	s1,24(sp)                                     | 00220cd0: dfb10018  ld	s1,24(sp)
+   00220cd4: 01cd7021  addu	t6,t6,t5                                    | 00220cd4: 01cd7021  addu	t6,t6,t5
+   00220cd8: ae0f020c  sw	t7,524(s0)                                    | 00220cd8: ae0f020c  sw	t7,524(s0)
+   00220cdc: ae0e01f4  sw	t6,500(s0)                                    | 00220cdc: ae0e01f4  sw	t6,500(s0)
+   00220ce0: dfbf0020  ld	ra,32(sp)                                     | 00220ce0: dfbf0020  ld	ra,32(sp)
+   00220ce4: dfb00010  ld	s0,16(sp)                                     | 00220ce4: dfb00010  ld	s0,16(sp)
+   00220ce8: 03e00008  jr	ra                                            | 00220ce8: 03e00008  jr	ra
+   00220cec: 27bd0030  addiu	sp,sp,48                                   | 00220cec: 27bd0030  addiu	sp,sp,48

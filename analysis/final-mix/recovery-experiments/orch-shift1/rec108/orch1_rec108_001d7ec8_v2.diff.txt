@@ -1,0 +1,22 @@
+001d7ec8: compiled 72 bytes, target 72 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001d7ec8: 27bdfff0  addiu	sp,sp,-16                                  | 001d7ec8: 27bdfff0  addiu	sp,sp,-16
+   001d7ecc: ffb00000  sd	s0,0(sp)                                      | 001d7ecc: ffb00000  sd	s0,0(sp)
+   001d7ed0: ffbf0008  sd	ra,8(sp)                                      | 001d7ed0: ffbf0008  sd	ra,8(sp)
+   001d7ed4: 0c075fc4  jal	0x1d7f10                                     | 001d7ed4: 0c075fc4  jal	1d7f10 <func_001d7f10>
+   001d7ed8: 0080802d  move	s0,a0                                       | 001d7ed8: 0080802d  move	s0,a0
+   001d7edc: 00107080  sll	t6,s0,0x2                                    | 001d7edc: 00107080  sll	t6,s0,0x2
+   001d7ee0: 10400006  beqz	v0,0x1d7efc                                 | 001d7ee0: 10400006  beqz	v0,1d7efc <func_001d7ec8+0x34>
+   001d7ee4: 0000682d  move	t5,zero                                     | 001d7ee4: 0000682d  move	t5,zero
+   001d7ee8: 3c0f0035  lui	t7,0x35                                      | 001d7ee8: 3c0f0035  lui	t7,0x35
+   001d7eec: 8ded28f8  lw	t5,10488(t7)   ; = D_003528f8                 | 001d7eec: 8ded28f8  lw	t5,10488(t7)   ; = D_003528f8
+   001d7ef0: 01cd7021  addu	t6,t6,t5                                    | 001d7ef0: 01cd7021  addu	t6,t6,t5
+   001d7ef4: 8dcf0008  lw	t7,8(t6)                                      | 001d7ef4: 8dcf0008  lw	t7,8(t6)
+   001d7ef8: 01af6821  addu	t5,t5,t7                                    | 001d7ef8: 01af6821  addu	t5,t5,t7
+   001d7efc: dfb00000  ld	s0,0(sp)                                      | 001d7efc: dfb00000  ld	s0,0(sp)
+   001d7f00: 01a0102d  move	v0,t5                                       | 001d7f00: 01a0102d  move	v0,t5
+   001d7f04: dfbf0008  ld	ra,8(sp)                                      | 001d7f04: dfbf0008  ld	ra,8(sp)
+   001d7f08: 03e00008  jr	ra                                            | 001d7f08: 03e00008  jr	ra
+   001d7f0c: 27bd0010  addiu	sp,sp,16                                   | 001d7f0c: 27bd0010  addiu	sp,sp,16

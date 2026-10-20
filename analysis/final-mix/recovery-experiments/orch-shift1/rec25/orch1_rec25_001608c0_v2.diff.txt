@@ -1,0 +1,35 @@
+001608c0: compiled 120 bytes, target 124 bytes, exact=False
+Differing words: 24. First difference at instruction 7 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001608c0: 27bdffe0  addiu	sp,sp,-32                                  | 001608c0: 27bdffe0  addiu	sp,sp,-32
+   001608c4: ffb00010  sd	s0,16(sp)                                     | 001608c4: ffb00010  sd	s0,16(sp)
+   001608c8: 03a0282d  move	a1,sp                                       | 001608c8: 03a0282d  move	a1,sp
+   001608cc: ffbf0018  sd	ra,24(sp)                                     | 001608cc: ffbf0018  sd	ra,24(sp)
+   001608d0: 0080802d  move	s0,a0                                       | 001608d0: 0080802d  move	s0,a0
+   001608d4: 0c051242  jal	0x144908                                     | 001608d4: 0c051242  jal	144908 <func_00144908>
+   001608d8: 24840290  addiu	a0,a0,656                                  | 001608d8: 24840290  addiu	a0,a0,656
+!! 001608dc: 260f0280  addiu	t7,s0,640                                  | 001608dc: 260e0280  addiu	t6,s0,640
+!! 001608e0: 11fd0003  beq	t7,sp,0x1608f0                               | 001608e0: 11dd0002  beq	t6,sp,1608ec <func_001608c0+0x2c>
+!! 001608e4: 00000000  nop                                              | 001608e4: 7baf0000  lq	t7,0(sp)
+!! 001608e8: 7ba80000  lq	t0,0(sp)                                      | 001608e8: 7dcf0000  sq	t7,0(t6)
+!! 001608ec: 7de80000  sq	t0,0(t7)                                      | 001608ec: 0c05ac34  jal	16b0d0 <func_0016b0d0>
+!! 001608f0: 0c05ac34  jal	0x16b0d0                                     | 001608f0: 00000000  nop
+!! 001608f4: 00000000  nop                                              | 001608f4: 5040000d  beqzl	v0,16092c <func_001608c0+0x6c>
+!! 001608f8: 5040000d  beqzl	v0,0x160930                                | 001608f8: dfb00010  ld	s0,16(sp)
+!! 001608fc: dfb00010  ld	s0,16(sp)                                     | 001608fc: 0c05b00a  jal	16c028 <func_0016c028>
+!! 00160900: 0c05b00a  jal	0x16c028                                     | 00160900: 0040202d  move	a0,v0
+!! 00160904: 0040202d  move	a0,v0                                       | 00160904: c4410004  lwc1	$f1,4(v0)
+!! 00160908: c4410004  lwc1	$f1,4(v0)                                   | 00160908: c6000294  lwc1	$f0,660(s0)
+!! 0016090c: c6000294  lwc1	$f0,660(s0)                                 | 0016090c: 46010036  c.le.s	$f0,$f1
+!! 00160910: 46010036  c.le.s	$f0,$f1                                   | 00160910: 45020006  bc1fl	16092c <func_001608c0+0x6c>
+!! 00160914: 45020006  bc1fl	0x160930                                   | 00160914: dfb00010  ld	s0,16(sp)
+!! 00160918: dfb00010  ld	s0,16(sp)                                     | 00160918: c60002a0  lwc1	$f0,672(s0)
+!! 0016091c: c60002a0  lwc1	$f0,672(s0)                                 | 0016091c: 46000836  c.le.s	$f1,$f0
+!! 00160920: 46000836  c.le.s	$f1,$f0                                   | 00160920: 45030001  bc1tl	160928 <func_001608c0+0x68>
+!! 00160924: 45030001  bc1tl	0x16092c                                   | 00160924: e6010284  swc1	$f1,644(s0)
+!! 00160928: e6010284  swc1	$f1,644(s0)                                 | 00160928: dfb00010  ld	s0,16(sp)
+!! 0016092c: dfb00010  ld	s0,16(sp)                                     | 0016092c: dfbf0018  ld	ra,24(sp)
+!! 00160930: dfbf0018  ld	ra,24(sp)                                     | 00160930: 03e00008  jr	ra
+!! 00160934: 03e00008  jr	ra                                            | 00160934: 27bd0020  addiu	sp,sp,32
+!! 00160938: 27bd0020  addiu	sp,sp,32                                   | 

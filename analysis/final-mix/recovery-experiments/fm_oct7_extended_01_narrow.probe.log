@@ -1,0 +1,31 @@
+Exact probe matches: 0/60
+Detailed proof: analysis/final-mix/recovery-experiments/fm_oct7_extended_01_narrow.verification.json
+recovery-experiments/fm_oct7_extended_01_narrow/probe.cpp: In function `void 
+   func_002362b0(int, int)':
+recovery-experiments/fm_oct7_extended_01_narrow/probe.cpp:1349: warning: left 
+   shift count >= width of type
+recovery-experiments/fm_oct7_extended_01_narrow/probe.cpp:1351: warning: left 
+   shift count >= width of type
+recovery-experiments/fm_oct7_extended_01_narrow/probe.cpp:1355: warning: left 
+   shift count >= width of type
+recovery-experiments/fm_oct7_extended_01_narrow/probe.cpp: In function `u32 
+   func_003012d8(unsigned int, int, int, unsigned int, u8*, unsigned int, int, 
+   int*)':
+recovery-experiments/fm_oct7_extended_01_narrow/probe.cpp:2781: warning: right 
+   shift count >= width of type
+recovery-experiments/fm_oct7_extended_01_narrow/probe.cpp: In function `u32* 
+   func_00303a68(u32*, u32*, unsigned int)':
+recovery-experiments/fm_oct7_extended_01_narrow/probe.cpp:2854: warning: right 
+   shift count >= width of type
+recovery-experiments/fm_oct7_extended_01_narrow/probe.cpp:2862: warning: right 
+   shift count >= width of type
+recovery-experiments/fm_oct7_extended_01_narrow/probe.cpp: In function `u32 
+   func_003048b8(unsigned int, int, int*, int*)':
+recovery-experiments/fm_oct7_extended_01_narrow/probe.cpp:3074: warning: right 
+   shift count >= width of type
+recovery-experiments/fm_oct7_extended_01_narrow/probe.cpp:3075: warning: right 
+   shift count >= width of type
+recovery-experiments/fm_oct7_extended_01_narrow/probe.cpp: In function `s32 
+   func_00311bb8(unsigned int)':
+recovery-experiments/fm_oct7_extended_01_narrow/probe.cpp:3129: warning: left 
+   shift count >= width of type

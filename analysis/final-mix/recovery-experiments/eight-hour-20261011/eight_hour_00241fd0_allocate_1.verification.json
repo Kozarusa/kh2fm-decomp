@@ -1,0 +1,18 @@
+{
+  "source_sha256": "51952137b6b4ec7c81ec5d1271c715df42f4b1b886d23c667dd7f20fbbf609b0",
+  "source": "analysis/final-mix/recovery-experiments/eight-hour-20261011/eight_hour_00241fd0_allocate_1.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "00241fd0",
+      "symbol": "_Z13func_00241fd0Pjj",
+      "compiled_size": 52,
+      "target_size": 52,
+      "ghidra_body_size": 52,
+      "boundary_agreement": true,
+      "exact_match": true,
+      "compiled_hex": "f0ffbd270000b0ff0800bfff2d808000000005aefc18040c00040424040002ae2d2000020800bfdf0000b0df220809081000bd27",
+      "target_hex": "f0ffbd270000b0ff0800bfff2d808000000005aefc18040c00040424040002ae2d2000020800bfdf0000b0df220809081000bd27"
+    }
+  ]
+}

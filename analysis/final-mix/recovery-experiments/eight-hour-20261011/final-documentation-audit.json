@@ -1,0 +1,24 @@
+{
+  "utf8_and_markdown_links": "pass",
+  "directory_rows": 409,
+  "accepted_batch_count": 31,
+  "sequential_accepted_counts": "pass",
+  "final_exact_total": 6087,
+  "documents": [
+    {
+      "file": "FOLDER_GUIDE.md",
+      "bytes": 10007,
+      "markdown_links_verified": 1
+    },
+    {
+      "file": "DIRECTORY_INDEX.md",
+      "bytes": 75331,
+      "markdown_links_verified": 1
+    },
+    {
+      "file": "EIGHT_HOUR_REPORT.md",
+      "bytes": 7788,
+      "markdown_links_verified": 2
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+00315700: compiled 56 bytes, target 56 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00315700: 27bdfff0  addiu	sp,sp,-16                                  | 00315700: 27bdfff0  addiu	sp,sp,-16
+   00315704: 3c0f0036  lui	t7,0x36                                      | 00315704: 3c0f0036  lui	t7,0x36
+   00315708: 25ef7848  addiu	t7,t7,30792   ; = D_00367848               | 00315708: 25ef7848  addiu	t7,t7,30792   ; = D_00367848
+   0031570c: ffb00000  sd	s0,0(sp)                                      | 0031570c: ffb00000  sd	s0,0(sp)
+   00315710: ffbf0008  sd	ra,8(sp)                                      | 00315710: ffbf0008  sd	ra,8(sp)
+   00315714: ac8f0000  sw	t7,0(a0)                                      | 00315714: ac8f0000  sw	t7,0(a0)
+   00315718: 0c0c59fe  jal	0x3167f8                                     | 00315718: 0c0c59fe  jal	3167f8 <func_003167f8>
+   0031571c: 0080802d  move	s0,a0                                       | 0031571c: 0080802d  move	s0,a0
+   00315720: 0c041908  jal	0x106420                                     | 00315720: 0c041908  jal	106420 <func_00106420>
+   00315724: 0200202d  move	a0,s0                                       | 00315724: 0200202d  move	a0,s0
+   00315728: dfb00000  ld	s0,0(sp)                                      | 00315728: dfb00000  ld	s0,0(sp)
+   0031572c: dfbf0008  ld	ra,8(sp)                                      | 0031572c: dfbf0008  ld	ra,8(sp)
+   00315730: 03e00008  jr	ra                                            | 00315730: 03e00008  jr	ra
+   00315734: 27bd0010  addiu	sp,sp,16                                   | 00315734: 27bd0010  addiu	sp,sp,16

@@ -1,0 +1,14 @@
+{
+  "positive_control": "0011ea40",
+  "positive_control_passed": true,
+  "pending": [
+    {
+      "address": "0011ea40",
+      "head_offset": 56,
+      "virtual_offset": 20,
+      "next_helper": "00132350",
+      "original_range_sha256": "839641db93c5c2268047da2faa180dc1949a28be05c41b0185bef32c7234a1d0"
+    }
+  ],
+  "prior_error": "First census used incorrect branch mask 1210000a instead of 1200000a; its empty result is invalid and preserved separately."
+}

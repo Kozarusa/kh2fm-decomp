@@ -1,0 +1,33 @@
+001d5868: compiled 116 bytes, target 116 bytes, exact=False
+Differing words: 11. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001d5868: 27bdfff0  addiu	sp,sp,-16                                  | 001d5868: 27bdfff0  addiu	sp,sp,-16
+!! 001d586c: 240f0002  li	t7,2                                          | 001d586c: 0000102d  move	v0,zero
+   001d5870: ffbf0000  sd	ra,0(sp)                                      | 001d5870: ffbf0000  sd	ra,0(sp)
+!! 001d5874: 948e0000  lhu	t6,0(a0)                                     | 001d5874: 240f0002  li	t7,2
+!! 001d5878: 11cf0014  beq	t6,t7,0x1d58cc                               | 001d5878: 948e0000  lhu	t6,0(a0)
+!! 001d587c: 29cf0003  slti	t7,t6,3                                     | 001d587c: 11cf0013  beq	t6,t7,1d58cc <func_001d5868+0x64>
+!! 001d5880: 11e0000b  beqz	t7,0x1d58b0                                 | 001d5880: 29cd0003  slti	t5,t6,3
+!! 001d5884: 240f0001  li	t7,1                                          | 001d5884: 11a0000a  beqz	t5,1d58b0 <func_001d5868+0x48>
+!! 001d5888: 11cf0005  beq	t6,t7,0x1d58a0                               | 001d5888: 240f0001  li	t7,1
+!! 001d588c: 00000000  nop                                              | 001d588c: 11cf0004  beq	t6,t7,1d58a0 <func_001d5868+0x38>
+!! 001d5890: 0000102d  move	v0,zero                                     | 001d5890: 00000000  nop
+   001d5894: dfbf0000  ld	ra,0(sp)                                      | 001d5894: dfbf0000  ld	ra,0(sp)
+   001d5898: 03e00008  jr	ra                                            | 001d5898: 03e00008  jr	ra
+   001d589c: 27bd0010  addiu	sp,sp,16                                   | 001d589c: 27bd0010  addiu	sp,sp,16
+   001d58a0: 0c060540  jal	0x181500                                     | 001d58a0: 0c060540  jal	181500 <func_00181500>
+   001d58a4: 94840002  lhu	a0,2(a0)                                     | 001d58a4: 94840002  lhu	a0,2(a0)
+   001d58a8: 1000fffb  b	0x1d5898                                       | 001d58a8: 1000fffb  b	1d5898 <func_001d5868+0x30>
+   001d58ac: dfbf0000  ld	ra,0(sp)                                      | 001d58ac: dfbf0000  ld	ra,0(sp)
+   001d58b0: 240f0003  li	t7,3                                          | 001d58b0: 240f0003  li	t7,3
+!! 001d58b4: 55cffff7  bnel	t6,t7,0x1d5894                              | 001d58b4: 55cffff8  bnel	t6,t7,1d5898 <func_001d5868+0x30>
+!! 001d58b8: 0000102d  move	v0,zero                                     | 001d58b8: dfbf0000  ld	ra,0(sp)
+   001d58bc: 0c069b42  jal	0x1a6d08                                     | 001d58bc: 0c069b42  jal	1a6d08 <func_001a6d08>
+   001d58c0: 94840002  lhu	a0,2(a0)                                     | 001d58c0: 94840002  lhu	a0,2(a0)
+   001d58c4: 1000fff4  b	0x1d5898                                       | 001d58c4: 1000fff4  b	1d5898 <func_001d5868+0x30>
+   001d58c8: dfbf0000  ld	ra,0(sp)                                      | 001d58c8: dfbf0000  ld	ra,0(sp)
+   001d58cc: 0c06e256  jal	0x1b8958                                     | 001d58cc: 0c06e256  jal	1b8958 <func_001b8958>
+   001d58d0: 94840002  lhu	a0,2(a0)                                     | 001d58d0: 94840002  lhu	a0,2(a0)
+   001d58d4: 1000fff0  b	0x1d5898                                       | 001d58d4: 1000fff0  b	1d5898 <func_001d5868+0x30>
+   001d58d8: dfbf0000  ld	ra,0(sp)                                      | 001d58d8: dfbf0000  ld	ra,0(sp)

@@ -1,0 +1,34 @@
+001a4498: compiled 120 bytes, target 120 bytes, exact=False
+Differing words: 7. First difference at instruction 11 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001a4498: 27bdfff0  addiu	sp,sp,-16                                  | 001a4498: 27bdfff0  addiu	sp,sp,-16
+   001a449c: 00c0782d  move	t7,a2                                       | 001a449c: 00c0782d  move	t7,a2
+   001a44a0: ffb00000  sd	s0,0(sp)                                      | 001a44a0: ffb00000  sd	s0,0(sp)
+   001a44a4: 00e0502d  move	t2,a3                                       | 001a44a4: 00e0502d  move	t2,a3
+   001a44a8: ffbf0008  sd	ra,8(sp)                                      | 001a44a8: ffbf0008  sd	ra,8(sp)
+   001a44ac: 01e0382d  move	a3,t7                                       | 001a44ac: 01e0382d  move	a3,t7
+   001a44b0: 0080802d  move	s0,a0                                       | 001a44b0: 0080802d  move	s0,a0
+   001a44b4: 0c063414  jal	0x18d050                                     | 001a44b4: 0c063414  jal	18d050 <func_0018d050>
+   001a44b8: 00a0302d  move	a2,a1                                       | 001a44b8: 00a0302d  move	a2,a1
+   001a44bc: ae0000c8  sw	zero,200(s0)                                  | 001a44bc: ae0000c8  sw	zero,200(s0)
+   001a44c0: 3c0f0035  lui	t7,0x35                                      | 001a44c0: 3c0f0035  lui	t7,0x35
+!! 001a44c4: 25ef0778  addiu	t7,t7,1912   ; = D_00350778                | 001a44c4: 260e0100  addiu	t6,s0,256
+!! 001a44c8: ae0000c4  sw	zero,196(s0)                                  | 001a44c8: 25ef0778  addiu	t7,t7,1912   ; = D_00350778
+!! 001a44cc: c60000c8  lwc1	$f0,200(s0)                                 | 001a44cc: ae0000c4  sw	zero,196(s0)
+!! 001a44d0: 260e0100  addiu	t6,s0,256                                  | 001a44d0: 26040110  addiu	a0,s0,272
+   001a44d4: ae0f0000  sw	t7,0(s0)                                      | 001a44d4: ae0f0000  sw	t7,0(s0)
+!! 001a44d8: 26040110  addiu	a0,s0,272                                  | 001a44d8: c60000c8  lwc1	$f0,200(s0)
+!! 001a44dc: ae0000cc  sw	zero,204(s0)                                  | 001a44dc: e6000100  swc1	$f0,256(s0)
+!! 001a44e0: e6000100  swc1	$f0,256(s0)                                 | 001a44e0: ae0000cc  sw	zero,204(s0)
+   001a44e4: e5c0000c  swc1	$f0,12(t6)                                  | 001a44e4: e5c0000c  swc1	$f0,12(t6)
+   001a44e8: e5c00004  swc1	$f0,4(t6)                                   | 001a44e8: e5c00004  swc1	$f0,4(t6)
+   001a44ec: 0c06914c  jal	0x1a4530                                     | 001a44ec: 0c06914c  jal	1a4530 <func_001a4530>
+   001a44f0: e5c00008  swc1	$f0,8(t6)                                   | 001a44f0: e5c00008  swc1	$f0,8(t6)
+   001a44f4: 8e0f0004  lw	t7,4(s0)                                      | 001a44f4: 8e0f0004  lw	t7,4(s0)
+   001a44f8: dfbf0008  ld	ra,8(sp)                                      | 001a44f8: dfbf0008  ld	ra,8(sp)
+   001a44fc: 35ef0100  ori	t7,t7,0x100                                  | 001a44fc: 35ef0100  ori	t7,t7,0x100
+   001a4500: ae0f0004  sw	t7,4(s0)                                      | 001a4500: ae0f0004  sw	t7,4(s0)
+   001a4504: dfb00000  ld	s0,0(sp)                                      | 001a4504: dfb00000  ld	s0,0(sp)
+   001a4508: 03e00008  jr	ra                                            | 001a4508: 03e00008  jr	ra
+   001a450c: 27bd0010  addiu	sp,sp,16                                   | 001a450c: 27bd0010  addiu	sp,sp,16

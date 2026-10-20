@@ -1,0 +1,26 @@
+0020f188: compiled 88 bytes, target 88 bytes, exact=False
+Differing words: 7. First difference at instruction 2 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0020f188: 27bdfff0  addiu	sp,sp,-16                                  | 0020f188: 27bdfff0  addiu	sp,sp,-16
+   0020f18c: 3c0f01db  lui	t7,0x1db                                     | 0020f18c: 3c0f01db  lui	t7,0x1db
+!! 0020f190: ffbf0008  sd	ra,8(sp)                                      | 0020f190: ffb00000  sd	s0,0(sp)
+   0020f194: 25ef8bb0  addiu	t7,t7,-29776   ; = D_01da8bb0              | 0020f194: 25ef8bb0  addiu	t7,t7,-29776   ; = D_01da8bb0
+!! 0020f198: ffb00000  sd	s0,0(sp)                                      | 0020f198: ffbf0008  sd	ra,8(sp)
+   0020f19c: 0000202d  move	a0,zero                                     | 0020f19c: 0000202d  move	a0,zero
+!! 0020f1a0: 0000282d  move	a1,zero                                     | 0020f1a0: 3c100036  lui	s0,0x36
+!! 0020f1a4: dded0048  ld	t5,72(t7)                                     | 0020f1a4: 0000282d  move	a1,zero
+!! 0020f1a8: 3c100036  lui	s0,0x36                                      | 0020f1a8: dded0048  ld	t5,72(t7)
+!! 0020f1ac: ddee0040  ld	t6,64(t7)                                     | 0020f1ac: 26109940  addiu	s0,s0,-26304   ; = D_00359940
+!! 0020f1b0: 26109940  addiu	s0,s0,-26304   ; = D_00359940              | 0020f1b0: ddee0040  ld	t6,64(t7)
+   0020f1b4: fe0d0028  sd	t5,40(s0)                                     | 0020f1b4: fe0d0028  sd	t5,40(s0)
+   0020f1b8: 0c0bc968  jal	0x2f25a0                                     | 0020f1b8: 0c0bc968  jal	2f25a0 <func_002f25a0>
+   0020f1bc: fe0e0020  sd	t6,32(s0)                                     | 0020f1bc: fe0e0020  sd	t6,32(s0)
+   0020f1c0: 3c0f0036  lui	t7,0x36                                      | 0020f1c0: 3c0f0036  lui	t7,0x36
+   0020f1c4: 0200282d  move	a1,s0                                       | 0020f1c4: 0200282d  move	a1,s0
+   0020f1c8: 0c0bce46  jal	0x2f3918                                     | 0020f1c8: 0c0bce46  jal	2f3918 <func_002f3918>
+   0020f1cc: 8de491c8  lw	a0,-28216(t7)   ; = D_003591c8                | 0020f1cc: 8de491c8  lw	a0,-28216(t7)   ; = D_003591c8
+   0020f1d0: dfb00000  ld	s0,0(sp)                                      | 0020f1d0: dfb00000  ld	s0,0(sp)
+   0020f1d4: dfbf0008  ld	ra,8(sp)                                      | 0020f1d4: dfbf0008  ld	ra,8(sp)
+   0020f1d8: 03e00008  jr	ra                                            | 0020f1d8: 03e00008  jr	ra
+   0020f1dc: 27bd0010  addiu	sp,sp,16                                   | 0020f1dc: 27bd0010  addiu	sp,sp,16

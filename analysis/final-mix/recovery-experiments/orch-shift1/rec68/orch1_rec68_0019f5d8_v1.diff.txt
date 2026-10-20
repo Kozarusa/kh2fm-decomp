@@ -1,0 +1,18 @@
+0019f5d8: compiled 56 bytes, target 56 bytes, exact=False
+Differing words: 1. First difference at instruction 8 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0019f5d8: 248e0060  addiu	t6,a0,96                                   | 0019f5d8: 248e0060  addiu	t6,a0,96
+   0019f5dc: 8c8f0000  lw	t7,0(a0)                                      | 0019f5dc: 8c8f0000  lw	t7,0(a0)
+   0019f5e0: 55e50005  bnel	t7,a1,0x19f5f8                              | 0019f5e0: 55e50005  bnel	t7,a1,19f5f8 <func_0019f5d8+0x20>
+   0019f5e4: 2484000c  addiu	a0,a0,12                                   | 0019f5e4: 2484000c  addiu	a0,a0,12
+   0019f5e8: 8c8f0004  lw	t7,4(a0)                                      | 0019f5e8: 8c8f0004  lw	t7,4(a0)
+   0019f5ec: 11e60006  beq	t7,a2,0x19f608                               | 0019f5ec: 11e60006  beq	t7,a2,19f608 <func_0019f5d8+0x30>
+   0019f5f0: 0080102d  move	v0,a0                                       | 0019f5f0: 0080102d  move	v0,a0
+   0019f5f4: 2484000c  addiu	a0,a0,12                                   | 0019f5f4: 2484000c  addiu	a0,a0,12
+!! 0019f5f8: 008e782a  slt	t7,a0,t6                                     | 0019f5f8: 008e782b  sltu	t7,a0,t6
+   0019f5fc: 55e0fff8  bnezl	t7,0x19f5e0                                | 0019f5fc: 55e0fff8  bnezl	t7,19f5e0 <func_0019f5d8+0x8>
+   0019f600: 8c8f0000  lw	t7,0(a0)                                      | 0019f600: 8c8f0000  lw	t7,0(a0)
+   0019f604: 0000102d  move	v0,zero                                     | 0019f604: 0000102d  move	v0,zero
+   0019f608: 03e00008  jr	ra                                            | 0019f608: 03e00008  jr	ra
+   0019f60c: 00000000  nop                                              | 0019f60c: 00000000  nop

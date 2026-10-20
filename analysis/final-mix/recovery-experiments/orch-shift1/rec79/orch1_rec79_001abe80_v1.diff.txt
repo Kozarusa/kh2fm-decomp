@@ -1,0 +1,36 @@
+001abe80: compiled 128 bytes, target 128 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001abe80: 27bdfff0  addiu	sp,sp,-16                                  | 001abe80: 27bdfff0  addiu	sp,sp,-16
+   001abe84: 240f0001  li	t7,1                                          | 001abe84: 240f0001  li	t7,1
+   001abe88: ffb00000  sd	s0,0(sp)                                      | 001abe88: ffb00000  sd	s0,0(sp)
+   001abe8c: ffbf0008  sd	ra,8(sp)                                      | 001abe8c: ffbf0008  sd	ra,8(sp)
+   001abe90: 00a0802d  move	s0,a1                                       | 001abe90: 00a0802d  move	s0,a1
+   001abe94: 8c8e0000  lw	t6,0(a0)                                      | 001abe94: 8c8e0000  lw	t6,0(a0)
+   001abe98: 11cf000d  beq	t6,t7,0x1abed0                               | 001abe98: 11cf000d  beq	t6,t7,1abed0 <func_001abe80+0x50>
+   001abe9c: 29cd0002  slti	t5,t6,2                                     | 001abe9c: 29cd0002  slti	t5,t6,2
+   001abea0: 15a00005  bnez	t5,0x1abeb8                                 | 001abea0: 15a00005  bnez	t5,1abeb8 <func_001abe80+0x38>
+   001abea4: dfb00000  ld	s0,0(sp)                                      | 001abea4: dfb00000  ld	s0,0(sp)
+   001abea8: 240f0002  li	t7,2                                          | 001abea8: 240f0002  li	t7,2
+   001abeac: 51cf0005  beql	t6,t7,0x1abec4                              | 001abeac: 51cf0005  beql	t6,t7,1abec4 <func_001abe80+0x44>
+   001abeb0: 2484015c  addiu	a0,a0,348                                  | 001abeb0: 2484015c  addiu	a0,a0,348
+   001abeb4: dfb00000  ld	s0,0(sp)                                      | 001abeb4: dfb00000  ld	s0,0(sp)
+   001abeb8: dfbf0008  ld	ra,8(sp)                                      | 001abeb8: dfbf0008  ld	ra,8(sp)
+   001abebc: 03e00008  jr	ra                                            | 001abebc: 03e00008  jr	ra
+   001abec0: 27bd0010  addiu	sp,sp,16                                   | 001abec0: 27bd0010  addiu	sp,sp,16
+   001abec4: dfbf0008  ld	ra,8(sp)                                      | 001abec4: dfbf0008  ld	ra,8(sp)
+   001abec8: 0806aefc  j	0x1abbf0                                       | 001abec8: 0806aefc  j	1abbf0 <func_001abbf0>
+   001abecc: 27bd0010  addiu	sp,sp,16                                   | 001abecc: 27bd0010  addiu	sp,sp,16
+   001abed0: dccf0008  ld	t7,8(a2)                                      | 001abed0: dccf0008  ld	t7,8(a2)
+   001abed4: 31ef040c  andi	t7,t7,0x40c                                 | 001abed4: 31ef040c  andi	t7,t7,0x40c
+   001abed8: 51e0fff7  beqzl	t7,0x1abeb8                                | 001abed8: 51e0fff7  beqzl	t7,1abeb8 <func_001abe80+0x38>
+   001abedc: dfb00000  ld	s0,0(sp)                                      | 001abedc: dfb00000  ld	s0,0(sp)
+   001abee0: 24040018  li	a0,24                                         | 001abee0: 24040018  li	a0,24
+   001abee4: 0c0ae8ba  jal	0x2ba2e8                                     | 001abee4: 0c0ae8ba  jal	2ba2e8 <func_002ba2e8>
+   001abee8: 0000282d  move	a1,zero                                     | 001abee8: 0000282d  move	a1,zero
+   001abeec: 0200202d  move	a0,s0                                       | 001abeec: 0200202d  move	a0,s0
+   001abef0: dfbf0008  ld	ra,8(sp)                                      | 001abef0: dfbf0008  ld	ra,8(sp)
+   001abef4: dfb00000  ld	s0,0(sp)                                      | 001abef4: dfb00000  ld	s0,0(sp)
+   001abef8: 0806b1ca  j	0x1ac728                                       | 001abef8: 0806b1ca  j	1ac728 <func_001ac728>
+   001abefc: 27bd0010  addiu	sp,sp,16                                   | 001abefc: 27bd0010  addiu	sp,sp,16

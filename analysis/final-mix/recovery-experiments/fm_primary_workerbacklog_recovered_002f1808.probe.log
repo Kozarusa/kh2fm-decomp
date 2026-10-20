@@ -1,0 +1,12 @@
+recovery-experiments/fm_primary_workerbacklog_recovered_002f1808/probe.cpp:6:5: warning: multi-line string literals are deprecated
+recovery-experiments/fm_primary_workerbacklog_recovered_002f1808/probe.cpp:10:5: warning: multi-line string literals are deprecated
+recovery-experiments/fm_primary_workerbacklog_recovered_002f1808/probe.cpp:14:5: warning: multi-line string literals are deprecated
+recovery-experiments/fm_primary_workerbacklog_recovered_002f1808/probe.cpp: In 
+   function `void func_002f1808()':
+recovery-experiments/fm_primary_workerbacklog_recovered_002f1808/probe.cpp:21: warning: passing
+   negative value `-1' for argument passing 2 of `u32 func_001708f8(unsigned 
+   int, unsigned int)'
+recovery-experiments/fm_primary_workerbacklog_recovered_002f1808/probe.cpp:21: warning: argument
+    of negative value `-1' to `unsigned int'
+Exact probe matches: 1/1
+Detailed proof: analysis/final-mix/recovery-experiments/fm_primary_workerbacklog_recovered_002f1808.verification.json

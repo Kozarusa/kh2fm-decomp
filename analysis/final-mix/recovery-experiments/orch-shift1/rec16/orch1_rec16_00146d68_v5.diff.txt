@@ -1,0 +1,34 @@
+00146d68: compiled 120 bytes, target 120 bytes, exact=False
+Differing words: 27. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00146d68: ac805360  sw	zero,21344(a0)                                | 00146d68: ac805360  sw	zero,21344(a0)
+!! 00146d6c: 8c8e0010  lw	t6,16(a0)                                     | 00146d6c: 8c890010  lw	t1,16(a0)
+!! 00146d70: 19c00019  blez	t6,0x146dd8                                 | 00146d70: 19200019  blez	t1,146dd8 <func_00146d68+0x70>
+!! 00146d74: 8c8f0004  lw	t7,4(a0)                                      | 00146d74: 00000000  nop
+!! 00146d78: 25ec002c  addiu	t4,t7,44                                   | 00146d78: 8c8f0004  lw	t7,4(a0)
+!! 00146d7c: 01c0382d  move	a3,t6                                       | 00146d7c: 25e4002c  addiu	a0,t7,44
+!! 00146d80: 8d8d0000  lw	t5,0(t4)                                      | 00146d80: 8c8a0000  lw	t2,0(a0)
+!! 00146d84: 51a00011  beqzl	t5,0x146dcc                                | 00146d84: 51400011  beqzl	t2,146dcc <func_00146d68+0x64>
+!! 00146d88: ad800000  sw	zero,0(t4)                                    | 00146d88: ac800000  sw	zero,0(a0)
+!! 00146d8c: 25ae0080  addiu	t6,t5,128                                  | 00146d8c: 254b0080  addiu	t3,t2,128
+!! 00146d90: 25af0040  addiu	t7,t5,64                                   | 00146d90: 254c0040  addiu	t4,t2,64
+!! 00146d94: 51cf000a  beql	t6,t7,0x146dc0                              | 00146d94: 516c000a  beql	t3,t4,146dc0 <func_00146d68+0x58>
+!! 00146d98: 8dad0110  lw	t5,272(t5)                                    | 00146d98: 8d4a0110  lw	t2,272(t2)
+!! 00146d9c: 79e80000  lq	t0,0(t7)                                      | 00146d9c: 798f0030  lq	t7,48(t4)
+!! 00146da0: 79e90010  lq	t1,16(t7)                                     | 00146da0: 798d0010  lq	t5,16(t4)
+!! 00146da4: 79ea0020  lq	t2,32(t7)                                     | 00146da4: 794e0040  lq	t6,64(t2)
+!! 00146da8: 79eb0030  lq	t3,48(t7)                                     | 00146da8: 798c0020  lq	t4,32(t4)
+!! 00146dac: 7dc80000  sq	t0,0(t6)                                      | 00146dac: 7d6f0030  sq	t7,48(t3)
+!! 00146db0: 7dc90010  sq	t1,16(t6)                                     | 00146db0: 7d6e0000  sq	t6,0(t3)
+!! 00146db4: 7dca0020  sq	t2,32(t6)                                     | 00146db4: 7d6d0010  sq	t5,16(t3)
+!! 00146db8: 7dcb0030  sq	t3,48(t6)                                     | 00146db8: 7d6c0020  sq	t4,32(t3)
+!! 00146dbc: 8dad0110  lw	t5,272(t5)                                    | 00146dbc: 8d4a0110  lw	t2,272(t2)
+!! 00146dc0: 15a0fff3  bnez	t5,0x146d90                                 | 00146dc0: 1540fff3  bnez	t2,146d90 <func_00146d68+0x28>
+!! 00146dc4: 25ae0080  addiu	t6,t5,128                                  | 00146dc4: 254b0080  addiu	t3,t2,128
+!! 00146dc8: ad800000  sw	zero,0(t4)                                    | 00146dc8: ac800000  sw	zero,0(a0)
+!! 00146dcc: 24e7ffff  addiu	a3,a3,-1                                   | 00146dcc: 2529ffff  addiu	t1,t1,-1
+!! 00146dd0: 14e0ffeb  bnez	a3,0x146d80                                 | 00146dd0: 1520ffeb  bnez	t1,146d80 <func_00146d68+0x18>
+!! 00146dd4: 258c0030  addiu	t4,t4,48                                   | 00146dd4: 24840030  addiu	a0,a0,48
+   00146dd8: 03e00008  jr	ra                                            | 00146dd8: 03e00008  jr	ra
+   00146ddc: 00000000  nop                                              | 00146ddc: 00000000  nop

@@ -1,0 +1,36 @@
+001de610: compiled 128 bytes, target 128 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001de610: 27bdffe0  addiu	sp,sp,-32                                  | 001de610: 27bdffe0  addiu	sp,sp,-32
+   001de614: ffb20010  sd	s2,16(sp)                                     | 001de614: ffb20010  sd	s2,16(sp)
+   001de618: ffb00000  sd	s0,0(sp)                                      | 001de618: ffb00000  sd	s0,0(sp)
+   001de61c: ffb10008  sd	s1,8(sp)                                      | 001de61c: ffb10008  sd	s1,8(sp)
+   001de620: ffbf0018  sd	ra,24(sp)                                     | 001de620: ffbf0018  sd	ra,24(sp)
+   001de624: 8c90000c  lw	s0,12(a0)                                     | 001de624: 8c90000c  lw	s0,12(a0)
+   001de628: 12000013  beqz	s0,0x1de678                                 | 001de628: 12000013  beqz	s0,1de678 <func_001de610+0x68>
+   001de62c: 0080902d  move	s2,a0                                       | 001de62c: 0080902d  move	s2,a0
+   001de630: 8e040040  lw	a0,64(s0)                                     | 001de630: 8e040040  lw	a0,64(s0)
+   001de634: 8c8f0008  lw	t7,8(a0)                                      | 001de634: 8c8f0008  lw	t7,8(a0)
+   001de638: 000f7e83  sra	t7,t7,0x1a                                   | 001de638: 000f7e83  sra	t7,t7,0x1a
+   001de63c: 31ef0001  andi	t7,t7,0x1                                   | 001de63c: 31ef0001  andi	t7,t7,0x1
+   001de640: 31ef00ff  andi	t7,t7,0xff                                  | 001de640: 31ef00ff  andi	t7,t7,0xff
+   001de644: 15e0000a  bnez	t7,0x1de670                                 | 001de644: 15e0000a  bnez	t7,1de670 <func_001de610+0x60>
+   001de648: 8e110060  lw	s1,96(s0)                                     | 001de648: 8e110060  lw	s1,96(s0)
+   001de64c: 0c077288  jal	0x1dca20                                     | 001de64c: 0c077288  jal	1dca20 <func_001dca20>
+   001de650: 00000000  nop                                              | 001de650: 00000000  nop
+   001de654: 0200282d  move	a1,s0                                       | 001de654: 0200282d  move	a1,s0
+   001de658: 10400005  beqz	v0,0x1de670                                 | 001de658: 10400005  beqz	v0,1de670 <func_001de610+0x60>
+   001de65c: 2644000c  addiu	a0,s2,12                                   | 001de65c: 2644000c  addiu	a0,s2,12
+   001de660: 0c0c873a  jal	0x321ce8                                     | 001de660: 0c0c873a  jal	321ce8 <func_00321ce8>
+   001de664: 00000000  nop                                              | 001de664: 00000000  nop
+   001de668: 0c078016  jal	0x1e0058                                     | 001de668: 0c078016  jal	1e0058 <func_001e0058>
+   001de66c: 0200202d  move	a0,s0                                       | 001de66c: 0200202d  move	a0,s0
+   001de670: 1620ffef  bnez	s1,0x1de630                                 | 001de670: 1620ffef  bnez	s1,1de630 <func_001de610+0x20>
+   001de674: 0220802d  move	s0,s1                                       | 001de674: 0220802d  move	s0,s1
+   001de678: dfb00000  ld	s0,0(sp)                                      | 001de678: dfb00000  ld	s0,0(sp)
+   001de67c: dfb10008  ld	s1,8(sp)                                      | 001de67c: dfb10008  ld	s1,8(sp)
+   001de680: dfb20010  ld	s2,16(sp)                                     | 001de680: dfb20010  ld	s2,16(sp)
+   001de684: dfbf0018  ld	ra,24(sp)                                     | 001de684: dfbf0018  ld	ra,24(sp)
+   001de688: 03e00008  jr	ra                                            | 001de688: 03e00008  jr	ra
+   001de68c: 27bd0020  addiu	sp,sp,32                                   | 001de68c: 27bd0020  addiu	sp,sp,32

@@ -1,0 +1,178 @@
+{
+  "worker_id": "worker-b",
+  "round": 5,
+  "role": "cooperating worker, isolated recovery batch (five unregistered round-4 ranges)",
+  "written": "2026-10-08",
+  "assignment": "analysis/final-mix/worker-coordination/worker-b/round-5/INSTRUCTIONS.md",
+  "assignment_packet": {
+    "file": "analysis/final-mix/worker-coordination/worker-b/round-5/assignment.json",
+    "sha256": "cd49cab66f4333ca20257e56591866180388c83a49714f2f8fa1f35d559918cf"
+  },
+  "starting_packet": {
+    "file": "analysis/final-mix/worker-coordination/worker-b/round-4/targets.json",
+    "note": "hash-bound starting packet named by the round-5 instructions"
+  },
+  "original_elf_sha256": "d869ce4b8edd61cb978c4ff9ede595fe4d7d7b21cbb96a145275217120d8bc87",
+  "claimed_addresses": [
+    {
+      "address": "00109e30",
+      "end": "00109e8c",
+      "size": 92,
+      "original_range_sha256": "2d2dfd3b3558364a14c579edad74f0e3e03bc7a17af7374f019800b054d32427",
+      "priority": 1
+    },
+    {
+      "address": "0014b950",
+      "end": "0014b9a8",
+      "size": 88,
+      "original_range_sha256": "7649ce5357975a62fe31f21f963f3f261b44b6f21df148f0fcbeb33197e64a20",
+      "priority": 2
+    },
+    {
+      "address": "001e7230",
+      "end": "001e7298",
+      "size": 104,
+      "original_range_sha256": "7a7315c48aaba29fd4fd48f2728674d8a1257ee00a1e03778b375ecf3189c3b9",
+      "priority": 3
+    },
+    {
+      "address": "001ac310",
+      "end": "001ac378",
+      "size": 104,
+      "original_range_sha256": "b03036da19607b8f046dace92f0af98a0e4e6cb68e3343f6dffa005e6d142667",
+      "priority": 4
+    },
+    {
+      "address": "00242500",
+      "end": "0024255c",
+      "size": 92,
+      "original_range_sha256": "7f015e8667596167cd72b03c1959b9ffcf35e2d8f4cf1b3e85fb91c40b1ce848",
+      "priority": 5
+    }
+  ],
+  "range_verification": {
+    "method": "sha256 of the declared byte range recomputed from AGENTS/Public/tools/kh2-reference/SLPM_666.75, plus start/end/size cross-checked against /root/kh2fm-build/layout.tsv",
+    "helper": "analysis/final-mix/worker-coordination/worker-b/round-5/r5_dump_orig.py",
+    "evidence": "analysis/final-mix/worker-coordination/worker-b/round-5/r5_range_hashes.txt",
+    "result": "5/5 original range hashes OK, 5/5 layout.tsv rows agree",
+    "disassembly": "analysis/final-mix/worker-coordination/worker-b/round-5/r5_orig_disasm.txt (pinned ee-objdump 3.2-ee-040921)",
+    "raw_bytes": "analysis/final-mix/worker-coordination/worker-b/round-5/<address>.orig.hex"
+  },
+  "prior_evidence_reused": {
+    "round4_best": {
+      "00109e30": "fm_worker_b_round4_00109e30_v10 (88/92, 2 words: sd ra vs beqz order)",
+      "0014b950": "fm_worker_b_round4_0014b950_v03 (88/88, 7 words, schedule only)",
+      "001e7230": "fm_worker_b_round4_001e7230_v02 (104/104, 6 words, t6 vs a5 only)",
+      "001ac310": "fm_worker_b_round4_001ac310_v09 (104/104, 5 words, store offsets vs ld ra order)",
+      "00242500": "fm_worker_b_round4_00242500_v03"
+    },
+    "note": "round-four sources and proofs are read-only inputs; no round-four file is modified or renamed"
+  },
+  "intended_outputs": {
+    "sources": "analysis/final-mix/recovery-experiments/fm_worker_b_round5_<address>_v<NN>.cpp",
+    "proofs": "analysis/final-mix/recovery-experiments/fm_worker_b_round5_<address>_v<NN>.verification.json",
+    "helpers": "analysis/final-mix/worker-coordination/worker-b/round-5/",
+    "report": "analysis/final-mix/worker-coordination/worker-b/round-5/REPORT.md",
+    "status": "analysis/final-mix/worker-coordination/worker-b/STATUS-REPORT.md"
+  },
+  "compiler_use": {
+    "image": "kh2-local/ps2-compiler:3.2-ee-040921-objdiff",
+    "stage": "/root/kh2fm-build",
+    "probe": "AGENTS/Public/tools/kh2-audit/probe_fm_source.py",
+    "isolation": "per-source scratch directory /root/kh2fm-build/recovery-experiments/<stem>/ only; no shared stage input, layout.tsv, functions.tsv, manifest or build output is written",
+    "coordination": "compiler-status.json is advisory and primary-owned; probes are short single-file compiles, and I re-read compiler-status.json before each batch and stop probing if primary reports an active build",
+    "not_done": "no full build, no docker restart, no stage synchronization, no shared-output mutation, no executable byte patching"
+  },
+  "ownership": {
+    "worker_b": "isolated proposals, worker claims, worker-b reports",
+    "primary": "active sources, functions.tsv, layout.tsv, stage synchronization, full builds, manifests, cumulative receipts, Ghidra, checkpoints, HANDOFF.md"
+  },
+  "delivered_round4_not_retouched": [
+    "00150de0",
+    "001576e8",
+    "0017dec0",
+    "00229d40",
+    "002e8290"
+  ],
+  "acceptance_baseline": "5,494 equal-size exact matches per primary-status.md 2026-10-08 (loadorder checkpoint)",
+  "round5_result": {
+    "summary": "5/5 assigned round-5 ranges recovered as byte-exact equal-size matches",
+    "exact": {
+      "00109e30": {
+        "bytes": "92/92",
+        "source": "fm_worker_b_round5_00109e30_solved.cpp (from v72)",
+        "source_sha256": "c183e71c2ad724f8f8fcbe1b92b4ab2ea7ec0a0b4e29bb0e3f3dfb4f29e97d7a",
+        "proof": "recovery-experiments/fm_worker_b_round5_00109e30_solved.cpp.verification.json",
+        "mechanism": "u8 parameter plus a single `asm volatile (\"nop\");` statement before the test. The parameter yields `andi a0,a0,0xff`, GCC hoists it above both prologue stores, and the emitted nop is absorbed into the beqz delay slot (target word 5) so the `sd ra,8(sp)` store is not pulled into the delay slot. Exact.",
+        "exact_match": true,
+        "boundary_agreement": true,
+        "compiled_size": 92,
+        "target_size": 92
+      },
+      "0014b950": {
+        "bytes": "88/88",
+        "source": "fm_worker_b_round5_0014b950_solved.cpp (from v44)",
+        "source_sha256": "84d356aad202f7da5842345b956f6f75bc18795ac9cb7b8f7d4a908859dada1e",
+        "proof": "recovery-experiments/fm_worker_b_round5_0014b950_solved.cpp.verification.json",
+        "mechanism": "single flat OR expression whose terms are spelled in the order param_2, (param_2+..-1)<<0x10, param_3<<0x20, (param_3+..-1)<<0x30 (permutation D,C,B,A of the 24 commutative orderings tried as v21..v44). That order reproduces the exact dsll32/dsra32 schedule and the two crossed or-accumulators.",
+        "exact_match": true,
+        "boundary_agreement": true,
+        "compiled_size": 88,
+        "target_size": 88
+      },
+      "001ac310": {
+        "bytes": "104/104",
+        "source": "fm_worker_b_round5_001ac310_solved.cpp (from v11)",
+        "source_sha256": "beefabea48e109c5879ce59da4c7f3d954764bea1caf581d1efd025423a5f3fc",
+        "proof": "recovery-experiments/fm_worker_b_round5_001ac310_solved.cpp.verification.json",
+        "mechanism": "Ghidra-style `puVar1 = param_1 + 3;` with stores at puVar1[0x52] and puVar1[0x53] (== param_1[0x55]/[0x56]) and the two loads written in source order `[1]` then `[2]`; GCC then emits the loads in target order (lw t6,8(s0) then lw t7,4(s0)) while storing through s1 at 0x148/0x14c.",
+        "exact_match": true,
+        "boundary_agreement": true,
+        "compiled_size": 104,
+        "target_size": 104
+      },
+      "001e7230": {
+        "bytes": "104/104",
+        "source": "fm_worker_b_round5_001e7230_solved.cpp (from v12)",
+        "source_sha256": "ef84402491861a9cd5a604e03f2a06db3b70d340fcfba089171a6cd495c8afa0",
+        "proof": "recovery-experiments/fm_worker_b_round5_001e7230_solved.cpp.verification.json",
+        "mechanism": "one reused `s32 iVar1` drives both the word and the byte loop and the second loop also compares against -1; reusing a single counter is what lands the loop counter in $t6 (no asm pinning needed).",
+        "exact_match": true,
+        "boundary_agreement": true,
+        "compiled_size": 104,
+        "target_size": 104
+      },
+      "00242500": {
+        "bytes": "92/92",
+        "source": "fm_worker_b_round5_00242500_solved.cpp (from v23)",
+        "source_sha256": "fc97a5b80fd28242f09797e4a84af1642aee8fd9ec216523bb35987c34780863",
+        "proof": "recovery-experiments/fm_worker_b_round5_00242500_solved.verification.json",
+        "mechanism": "store-then-call-then-load tail (`*(int *)(uVar1 + 0x2440) = iVar1; uVar1 = func_001058e8(); return *(int *)(uVar1 + 0x2440);`) lets GCC keep v0 live across the last call so `sw t7,0x2440(v0)` lands in that jal's delay slot. The accumulator lands in $t7 only when the accumulation is written as TWO statements - `iVar1 = *(int *)(uVar1 + 0x2440);` then `iVar1 = iVar1 + param_1;` - instead of the single expression; the one-statement form allocates it to $a0 (4 words off). No register pin is needed: this compiler rejects `register x asm(\"$t7\"/\"t7\"/\"7\"/\"$7\")` outright.",
+        "exact_match": true,
+        "boundary_agreement": true,
+        "compiled_size": 92,
+        "target_size": 92
+      }
+    },
+    "unresolved": {},
+    "probe_batches": [
+      "v01-v20 structural respellings (baseline round-four carries re-measured)",
+      "v21-v44 0014b950: all 24 commutative permutations of the four OR terms; v44 exact",
+      "v25, v27-v40 00109e30: parameter types, mask spellings, control-flow shapes, u8/s8",
+      "v41-v64 00109e30: empty volatile memory barrier placement (v47/v58 92/92 with 3 words differing)",
+      "v65-v72 00109e30: single `asm volatile (\"nop\")` statements (v65,v66,v67,v68,v72 exact)"
+    ],
+    "tooling": [
+      "r5_dump_orig.py",
+      "r5_cmp.py",
+      "r5_dis.py",
+      "r5_probe.sh"
+    ],
+    "ownership_note": "no primary-owned file (active sources, functions.tsv, layout.tsv, stage, manifests, receipts, Ghidra, HANDOFF.md) was read-modified or written by this round",
+    "retracted": [
+      "an earlier revision of this file listed 00242500 as exact on the strength of a `register ... asm(\"$t7\")` pin that this compiler refuses to compile; that claim was retracted and is now re-established legitimately by v23 (two-statement accumulation, no register pin)"
+    ]
+  },
+  "unresolved_after_round5": [],
+  "next_claim": "disjoint unregistered fallback ranges, selected with round-5/pick_targets.py (attempted/reserved sets include every worker-b round 1-5 address and primary's 21 claimed addresses)"
+}

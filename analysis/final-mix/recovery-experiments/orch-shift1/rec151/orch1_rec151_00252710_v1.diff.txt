@@ -1,0 +1,23 @@
+00252710: compiled 72 bytes, target 76 bytes, exact=False
+Differing words: 11. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00252710: 27bdfff0  addiu	sp,sp,-16                                  | 00252710: 27bdfff0  addiu	sp,sp,-16
+!! 00252714: ffb00000  sd	s0,0(sp)                                      | 00252714: ffbf0000  sd	ra,0(sp)
+!! 00252718: ffbf0008  sd	ra,8(sp)                                      | 00252718: 0c094844  jal	252110 <func_00252110>
+!! 0025271c: 0c094844  jal	0x252110                                     | 0025271c: 00000000  nop
+!! 00252720: 0000802d  move	s0,zero                                     | 00252720: 3c0f0037  lui	t7,0x37
+!! 00252724: 3c0f0037  lui	t7,0x37                                      | 00252724: 0000682d  move	t5,zero
+   00252728: 25ef2600  addiu	t7,t7,9728   ; = D_00372600                | 00252728: 25ef2600  addiu	t7,t7,9728   ; = D_00372600
+   0025272c: 004f1021  addu	v0,v0,t7                                    | 0025272c: 004f1021  addu	v0,v0,t7
+   00252730: 904e0000  lbu	t6,0(v0)                                     | 00252730: 904e0000  lbu	t6,0(v0)
+   00252734: 11c00004  beqz	t6,0x252748                                 | 00252734: 11c00004  beqz	t6,252748 <func_00252710+0x38>
+   00252738: 01c0202d  move	a0,t6                                       | 00252738: 01c0202d  move	a0,t6
+   0025273c: 0c069b42  jal	0x1a6d08                                     | 0025273c: 0c069b42  jal	1a6d08 <func_001a6d08>
+   00252740: 00000000  nop                                              | 00252740: 00000000  nop
+!! 00252744: 0002802b  sltu	s0,zero,v0                                  | 00252744: 0002682b  sltu	t5,zero,v0
+!! 00252748: 0200102d  move	v0,s0                                       | 00252748: dfbf0000  ld	ra,0(sp)
+!! 0025274c: dfbf0008  ld	ra,8(sp)                                      | 0025274c: 01a0102d  move	v0,t5
+!! 00252750: dfb00000  ld	s0,0(sp)                                      | 00252750: 03e00008  jr	ra
+!! 00252754: 03e00008  jr	ra                                            | 00252754: 27bd0010  addiu	sp,sp,16
+!! 00252758: 27bd0010  addiu	sp,sp,16                                   | 

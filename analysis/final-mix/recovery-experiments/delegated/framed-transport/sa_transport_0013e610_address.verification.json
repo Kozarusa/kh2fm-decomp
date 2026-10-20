@@ -1,0 +1,18 @@
+{
+  "source_sha256": "4344501b4c5f7a463144c6f618d4162e57b19d8dd6ecccbfa4a95f74ae78173c",
+  "source": "analysis/final-mix/recovery-experiments/delegated/framed-transport/sa_transport_0013e610_address.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "0013e610",
+      "symbol": "_Z13func_0013e610j",
+      "compiled_size": 100,
+      "target_size": 100,
+      "ghidra_body_size": 100,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "f0ffbd2735000f3c0800bfff2d2880000000b0ffa486f08da41f0e8effffce2580780e00a41f0eae2178f001801fed8d80030f2435000e3ca086c68d1878af012000c62421800f02b6f8040c2d2000022d1000020800bfdf0000b0df0800e0031000bd27",
+      "target_hex": "f0ffbd2735000f3c0800bfff2d2880000000b0ffa486f08da41f0e8effffce2580780e00a41f0eae2178f001801fed8d35000e3ca086c68d80030f241868af012000c62421800d02b6f8040c2d2000022d1000020800bfdf0000b0df0800e0031000bd27"
+    }
+  ]
+}

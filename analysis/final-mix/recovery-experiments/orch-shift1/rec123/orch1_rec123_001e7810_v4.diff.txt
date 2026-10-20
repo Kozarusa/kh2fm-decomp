@@ -1,0 +1,30 @@
+001e7810: compiled 104 bytes, target 104 bytes, exact=False
+Differing words: 6. First difference at instruction 5 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001e7810: 27bdffe0  addiu	sp,sp,-32                                  | 001e7810: 27bdffe0  addiu	sp,sp,-32
+   001e7814: ffb00000  sd	s0,0(sp)                                      | 001e7814: ffb00000  sd	s0,0(sp)
+   001e7818: ffb10008  sd	s1,8(sp)                                      | 001e7818: ffb10008  sd	s1,8(sp)
+   001e781c: ffbf0010  sd	ra,16(sp)                                     | 001e781c: ffbf0010  sd	ra,16(sp)
+   001e7820: 0000802d  move	s0,zero                                     | 001e7820: 0000802d  move	s0,zero
+!! 001e7824: 8c8c0064  lw	t4,100(a0)                                    | 001e7824: 8c8f0064  lw	t7,100(a0)
+!! 001e7828: 1980000e  blez	t4,0x1e7864                                 | 001e7828: 19e0000e  blez	t7,1e7864 <func_001e7810+0x54>
+   001e782c: 0080882d  move	s1,a0                                       | 001e782c: 0080882d  move	s1,a0
+   001e7830: 8e2f0078  lw	t7,120(s1)                                    | 001e7830: 8e2f0078  lw	t7,120(s1)
+   001e7834: 00107080  sll	t6,s0,0x2                                    | 001e7834: 00107080  sll	t6,s0,0x2
+   001e7838: 01cf7021  addu	t6,t6,t7                                    | 001e7838: 01cf7021  addu	t6,t6,t7
+   001e783c: 8dcd0000  lw	t5,0(t6)                                      | 001e783c: 8dcd0000  lw	t5,0(t6)
+   001e7840: 8daf0010  lw	t7,16(t5)                                     | 001e7840: 8daf0010  lw	t7,16(t5)
+!! 001e7844: 11e00004  beqz	t7,0x1e7858                                 | 001e7844: 11e00003  beqz	t7,1e7854 <func_001e7810+0x44>
+   001e7848: 26100001  addiu	s0,s0,1                                    | 001e7848: 26100001  addiu	s0,s0,1
+   001e784c: 01e0f809  jalr	t7                                          | 001e784c: 01e0f809  jalr	t7
+   001e7850: 0220202d  move	a0,s1                                       | 001e7850: 0220202d  move	a0,s1
+!! 001e7854: 8e2c0064  lw	t4,100(s1)                                    | 001e7854: 8e2f0064  lw	t7,100(s1)
+!! 001e7858: 020c782a  slt	t7,s0,t4                                     | 001e7858: 020f702a  slt	t6,s0,t7
+!! 001e785c: 55e0fff5  bnezl	t7,0x1e7834                                | 001e785c: 55c0fff5  bnezl	t6,1e7834 <func_001e7810+0x24>
+   001e7860: 8e2f0078  lw	t7,120(s1)                                    | 001e7860: 8e2f0078  lw	t7,120(s1)
+   001e7864: dfb00000  ld	s0,0(sp)                                      | 001e7864: dfb00000  ld	s0,0(sp)
+   001e7868: dfb10008  ld	s1,8(sp)                                      | 001e7868: dfb10008  ld	s1,8(sp)
+   001e786c: dfbf0010  ld	ra,16(sp)                                     | 001e786c: dfbf0010  ld	ra,16(sp)
+   001e7870: 03e00008  jr	ra                                            | 001e7870: 03e00008  jr	ra
+   001e7874: 27bd0020  addiu	sp,sp,32                                   | 001e7874: 27bd0020  addiu	sp,sp,32

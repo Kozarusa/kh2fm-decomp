@@ -1,0 +1,9 @@
+[
+  {
+    "address": "001ad990",
+    "owner": "eight-hour-primary",
+    "metadata": "{\"address\": \"001ad990\", \"end\": \"001ad9c4\", \"bytes\": 52, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [], \"best_proposal\": {\"proof\": \"analysis/final-mix/recovery-experiments/fm_scalar_04.verification.json\", \"source\": \"analysis/final-mix/recovery-experiments/fm_scalar_04.cpp\", \"compiled_bytes\": 128, \"target_bytes\": 52, \"different_words\": 32}}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_001ad990_v4_1.cpp\", \"source_sha256\": \"c192972f834354dc8fac0061cc232bd6db6e3e777ebbb45f3bac52b978a5d19d\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_001ad990_v4_1.verification.json\", \"proof_sha256\": \"e09b5001fe7c94e5a1ad12e991c5522680f9115db16cae24cfec23ce947af250\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_queuerho_recovered_001ad990.cpp"
+  }
+]

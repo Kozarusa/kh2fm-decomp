@@ -1,0 +1,149 @@
+[
+  {
+    "address": "002b6adc",
+    "owner": "eight-hour-primary",
+    "metadata": "{\"address\": \"002b6adc\", \"end\": \"002b6b24\", \"bytes\": 72, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [\"002b6708\"], \"best_proposal\": {\"proof\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_11_0.verification.json\", \"source\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_11_0.cpp\", \"compiled_bytes\": 44, \"target_bytes\": 72, \"different_words\": 18}}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002b6adc_sdk_larger_frame_v1_0.cpp\", \"source_sha256\": \"01b69cad0e021c95d7d3eb608e1326d629391cc22b0f629314d2492fd5cd4e44\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002b6adc_sdk_larger_frame_v1_0.verification.json\", \"proof_sha256\": \"2279b8b241cb94110e8a05af268fcd3ee9dd1a13f5a6889220bc85f600fff0bf\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_queuemuprime_recovered_002b6adc.cpp"
+  },
+  {
+    "address": "002b6b24",
+    "owner": "eight-hour-primary",
+    "metadata": "{\"address\": \"002b6b24\", \"end\": \"002b6b84\", \"bytes\": 96, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [\"002b6708\"], \"best_proposal\": {\"proof\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_11_0.verification.json\", \"source\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_11_0.cpp\", \"compiled_bytes\": 60, \"target_bytes\": 96, \"different_words\": 23}}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002b6b24_sdk_larger_frame_v1_0.cpp\", \"source_sha256\": \"256a452436592951b09ad7a30fbf484ac4357fe0fa717839e057495b2de787a3\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002b6b24_sdk_larger_frame_v1_0.verification.json\", \"proof_sha256\": \"c49fa8b09cc254fce313b68464a7b110220adb9815e62d1f8e80701f17c5e527\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_queuemuprime_recovered_002b6b24.cpp"
+  },
+  {
+    "address": "002b6f28",
+    "owner": "eight-hour-primary",
+    "metadata": "{\"address\": \"002b6f28\", \"end\": \"002b6f78\", \"bytes\": 80, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [\"002b6708\"], \"best_proposal\": {\"proof\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_11_0.verification.json\", \"source\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_11_0.cpp\", \"compiled_bytes\": 48, \"target_bytes\": 80, \"different_words\": 19}}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002b6f28_sdk_larger_frame_v1_0.cpp\", \"source_sha256\": \"f55bb2adb76cfa1457492a281fab1c45efaa63bca5e50ecb1727c6204a107b2f\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002b6f28_sdk_larger_frame_v1_0.verification.json\", \"proof_sha256\": \"48f28de83381a7336b2ef84431d438585d72770dc51ea5a33c57bdb165cd54fb\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_queuemuprime_recovered_002b6f28.cpp"
+  },
+  {
+    "address": "002b7010",
+    "owner": "eight-hour-primary",
+    "metadata": "{\"address\": \"002b7010\", \"end\": \"002b7078\", \"bytes\": 104, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [\"002b6708\"], \"best_proposal\": {\"proof\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_11_0.verification.json\", \"source\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_11_0.cpp\", \"compiled_bytes\": 68, \"target_bytes\": 104, \"different_words\": 25}}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002b7010_sdk_larger_frame_v1_0.cpp\", \"source_sha256\": \"46b64a4485aa5b2238690a03be764e1d7d59ce0d507ec348ea5c6d1544b67668\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002b7010_sdk_larger_frame_v1_0.verification.json\", \"proof_sha256\": \"414ea63b53c307d05759b7bdb24700a57ec5c3e9048216d3316851a81406d28e\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_queuemuprime_recovered_002b7010.cpp"
+  },
+  {
+    "address": "002b70b8",
+    "owner": "eight-hour-primary",
+    "metadata": "{\"address\": \"002b70b8\", \"end\": \"002b7108\", \"bytes\": 80, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [\"002b6708\"], \"best_proposal\": {\"proof\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_11_0.verification.json\", \"source\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_11_0.cpp\", \"compiled_bytes\": 48, \"target_bytes\": 80, \"different_words\": 19}}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002b70b8_sdk_larger_family.cpp\", \"source_sha256\": \"844074b658926fbc5ad6174670702b22f9508c9a87cb90eec005614aedfdb698\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002b70b8_sdk_larger_family.verification.json\", \"proof_sha256\": \"36df6f3c6564082c133d50ba9e02af9160f7189cd4ab4415e887e678cbf1ca5c\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_queuemuprime_recovered_002b70b8.cpp"
+  },
+  {
+    "address": "002b726c",
+    "owner": "eight-hour-primary",
+    "metadata": "{\"address\": \"002b726c\", \"end\": \"002b72e4\", \"bytes\": 120, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [\"002b6708\"], \"best_proposal\": {\"proof\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_11_0.verification.json\", \"source\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_11_0.cpp\", \"compiled_bytes\": 64, \"target_bytes\": 120, \"different_words\": 30}}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002b726c_sdk_guard_v2_1.cpp\", \"source_sha256\": \"38e3dac0288f7b5e1285195ee315281363d1ee8cadd29b4cbd9cd2c0ec4cd5f2\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002b726c_sdk_guard_v2_1.verification.json\", \"proof_sha256\": \"6ed6249b22862b67d460ecdfc93459dd85cc676889c48d0330d8f1fd2c13d435\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_queuemuprime_recovered_002b726c.cpp"
+  },
+  {
+    "address": "002b72e4",
+    "owner": "eight-hour-primary",
+    "metadata": "{\"address\": \"002b72e4\", \"end\": \"002b7334\", \"bytes\": 80, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [\"002b6708\"], \"best_proposal\": {\"proof\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_11_0.verification.json\", \"source\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_11_0.cpp\", \"compiled_bytes\": 48, \"target_bytes\": 80, \"different_words\": 19}}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002b72e4_sdk_larger_family.cpp\", \"source_sha256\": \"1242afa29914ea90094c5dadfaddd593aac49f2dbe2129c51238d7c4ab4124be\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002b72e4_sdk_larger_family.verification.json\", \"proof_sha256\": \"a70c292ffba67fc95914992bfb1333fe61e0f3cbce9e207135870f2621aaf82c\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_queuemuprime_recovered_002b72e4.cpp"
+  },
+  {
+    "address": "002b7334",
+    "owner": "eight-hour-primary",
+    "metadata": "{\"address\": \"002b7334\", \"end\": \"002b73ac\", \"bytes\": 120, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [\"002b6708\"], \"best_proposal\": {\"proof\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_11_0.verification.json\", \"source\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_11_0.cpp\", \"compiled_bytes\": 64, \"target_bytes\": 120, \"different_words\": 30}}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002b7334_sdk_guard_v2_1.cpp\", \"source_sha256\": \"7808e26d2b432730076ddee5ee33108893b03c0ff1349afeac73ec0dfc9b011f\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002b7334_sdk_guard_v2_1.verification.json\", \"proof_sha256\": \"6e355dba750ca55e0460a768acefb7bd9acb8c26bd1f6023af838f57ac30a039\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_queuemuprime_recovered_002b7334.cpp"
+  },
+  {
+    "address": "002b73ac",
+    "owner": "eight-hour-primary",
+    "metadata": "{\"address\": \"002b73ac\", \"end\": \"002b740c\", \"bytes\": 96, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [\"002b6708\"], \"best_proposal\": {\"proof\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_12_0.verification.json\", \"source\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_12_0.cpp\", \"compiled_bytes\": 60, \"target_bytes\": 96, \"different_words\": 23}}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002b73ac_sdk_larger_family.cpp\", \"source_sha256\": \"edc5bc0a28b20fb3fda689cdf54eb314dcb6a3594eb47c22ee79b01c4daa69de\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002b73ac_sdk_larger_family.verification.json\", \"proof_sha256\": \"3ff0b5088ca0db31ea5ffe9203ab2b5150fcd5e612ff83934ce1fc3a94ddb18e\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_queuemuprime_recovered_002b73ac.cpp"
+  },
+  {
+    "address": "002b788c",
+    "owner": "eight-hour-primary",
+    "metadata": "{\"address\": \"002b788c\", \"end\": \"002b78ec\", \"bytes\": 96, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [\"002b6708\"], \"best_proposal\": {\"proof\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_12_0.verification.json\", \"source\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_12_0.cpp\", \"compiled_bytes\": 60, \"target_bytes\": 96, \"different_words\": 24}}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002b788c_sdk_constant_tail_v2_0.cpp\", \"source_sha256\": \"30a84b899bf2414b4ab46b5f6e08d1fd5a9fc5d9f6109249030000f7810358b4\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002b788c_sdk_constant_tail_v2_0.verification.json\", \"proof_sha256\": \"fd4e59c41f85b0c04dc8e32f902febaefa2f557ebad0f082b7692ee2f415945f\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_queuemuprime_recovered_002b788c.cpp"
+  },
+  {
+    "address": "002b792c",
+    "owner": "eight-hour-primary",
+    "metadata": "{\"address\": \"002b792c\", \"end\": \"002b797c\", \"bytes\": 80, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [\"002b6708\"], \"best_proposal\": {\"proof\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_12_0.verification.json\", \"source\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_12_0.cpp\", \"compiled_bytes\": 48, \"target_bytes\": 80, \"different_words\": 19}}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002b792c_sdk_larger_family.cpp\", \"source_sha256\": \"064737de8dab29cd9da24b6b4202a343d33704296c4c845d9685056bac383e14\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002b792c_sdk_larger_family.verification.json\", \"proof_sha256\": \"7af9cd8ad04598bfece130c3a291fc201a9e944bfc41d052403b21d4bd35c688\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_queuemuprime_recovered_002b792c.cpp"
+  },
+  {
+    "address": "002b797c",
+    "owner": "eight-hour-primary",
+    "metadata": "{\"address\": \"002b797c\", \"end\": \"002b79cc\", \"bytes\": 80, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [\"002b6708\"], \"best_proposal\": {\"proof\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_12_0.verification.json\", \"source\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_12_0.cpp\", \"compiled_bytes\": 48, \"target_bytes\": 80, \"different_words\": 19}}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002b797c_sdk_larger_family.cpp\", \"source_sha256\": \"7a694321c19cebd2b028890c8048a3abbda5724337e41d0139ac299ecbbcbab3\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002b797c_sdk_larger_family.verification.json\", \"proof_sha256\": \"94b667a51ad45eb211c4efe80d20c9a3be071283f655795166d596291f460466\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_queuemuprime_recovered_002b797c.cpp"
+  },
+  {
+    "address": "002b7c34",
+    "owner": "eight-hour-primary",
+    "metadata": "{\"address\": \"002b7c34\", \"end\": \"002b7ca4\", \"bytes\": 112, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [\"002b6708\"], \"best_proposal\": {\"proof\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_12_0.verification.json\", \"source\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_12_0.cpp\", \"compiled_bytes\": 60, \"target_bytes\": 112, \"different_words\": 28}}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002b7c34_sdk_guard_v2_1.cpp\", \"source_sha256\": \"be5101d13fb581daaf9365c26ed12e48eb54b58da4475eb63a0ad0b4438892e5\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002b7c34_sdk_guard_v2_1.verification.json\", \"proof_sha256\": \"d770c6d6d5ea65fd6fd64374de44db38ef8f90a857f2b4e9df35fa1024f7bf52\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_queuemuprime_recovered_002b7c34.cpp"
+  },
+  {
+    "address": "002b7ca4",
+    "owner": "eight-hour-primary",
+    "metadata": "{\"address\": \"002b7ca4\", \"end\": \"002b7cec\", \"bytes\": 72, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [\"002b6708\"], \"best_proposal\": {\"proof\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_12_0.verification.json\", \"source\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_12_0.cpp\", \"compiled_bytes\": 44, \"target_bytes\": 72, \"different_words\": 18}}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002b7ca4_sdk_larger_frame_v1_0.cpp\", \"source_sha256\": \"d86e79b6532e19d4f7936d8067ed00d719821a851e7fa3ac485efa568f9c1cff\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002b7ca4_sdk_larger_frame_v1_0.verification.json\", \"proof_sha256\": \"aa0072f43d788b2d1ac718cfe565a00d51bdebd8b2f5ecf68129b345b9cfd656\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_queuemuprime_recovered_002b7ca4.cpp"
+  },
+  {
+    "address": "002b7cec",
+    "owner": "eight-hour-primary",
+    "metadata": "{\"address\": \"002b7cec\", \"end\": \"002b7d5c\", \"bytes\": 112, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [\"002b6708\"], \"best_proposal\": {\"proof\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_12_0.verification.json\", \"source\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_12_0.cpp\", \"compiled_bytes\": 60, \"target_bytes\": 112, \"different_words\": 28}}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002b7cec_sdk_guard_v2_1.cpp\", \"source_sha256\": \"62d75a51c6f7d993e298c5c2e548c6b24cbcda1e6c35f9373fc4a519d21937d5\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002b7cec_sdk_guard_v2_1.verification.json\", \"proof_sha256\": \"0ca010adc1855ade8adb7fdf8d1fa236ee9296b94011be66203e468cbbbec1db\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_queuemuprime_recovered_002b7cec.cpp"
+  },
+  {
+    "address": "002b7d5c",
+    "owner": "eight-hour-primary",
+    "metadata": "{\"address\": \"002b7d5c\", \"end\": \"002b7db4\", \"bytes\": 88, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [\"002b6708\"], \"best_proposal\": {\"proof\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_12_0.verification.json\", \"source\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_12_0.cpp\", \"compiled_bytes\": 52, \"target_bytes\": 88, \"different_words\": 22}}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002b7d5c_sdk_larger_frame_v1_0.cpp\", \"source_sha256\": \"5880f9a7de4b4ec64f4094326964ba7f5461dcde985e059bc5645b7158299b20\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002b7d5c_sdk_larger_frame_v1_0.verification.json\", \"proof_sha256\": \"501b7008f7af2a45ce697c7b3f98bb5bd6b4de23ce2d7862327f821f07df1ec4\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_queuemuprime_recovered_002b7d5c.cpp"
+  },
+  {
+    "address": "002b7db4",
+    "owner": "eight-hour-primary",
+    "metadata": "{\"address\": \"002b7db4\", \"end\": \"002b7e34\", \"bytes\": 128, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [\"002b6708\"], \"best_proposal\": {\"proof\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_12_0.verification.json\", \"source\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_12_0.cpp\", \"compiled_bytes\": 68, \"target_bytes\": 128, \"different_words\": 32}}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002b7db4_sdk_eight_payloads_v2_1.cpp\", \"source_sha256\": \"5139da425c5dbcde8090752b58d5d6abd49bdc932b4012650a432b2b8a923bca\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002b7db4_sdk_eight_payloads_v2_1.verification.json\", \"proof_sha256\": \"9d599bd2dd51ced2976961d87b7e72a54f764a301990ae5a183d418c407cab3d\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_queuemuprime_recovered_002b7db4.cpp"
+  },
+  {
+    "address": "002b7e74",
+    "owner": "eight-hour-primary",
+    "metadata": "{\"address\": \"002b7e74\", \"end\": \"002b7ebc\", \"bytes\": 72, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [\"002b6708\"], \"best_proposal\": {\"proof\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_12_0.verification.json\", \"source\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_12_0.cpp\", \"compiled_bytes\": 44, \"target_bytes\": 72, \"different_words\": 18}}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002b7e74_sdk_larger_family.cpp\", \"source_sha256\": \"41b28453a6f879ec675f73925306545b7ef2a6028a12991069bfaa1ff0ed1711\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002b7e74_sdk_larger_family.verification.json\", \"proof_sha256\": \"5ee810da8bd25dcfdd562c7682496d62a10f91c8836df915e746e7e7362bf9df\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_queuemuprime_recovered_002b7e74.cpp"
+  },
+  {
+    "address": "002b7f3c",
+    "owner": "eight-hour-primary",
+    "metadata": "{\"address\": \"002b7f3c\", \"end\": \"002b7f84\", \"bytes\": 72, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [\"002b6708\"], \"best_proposal\": {\"proof\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_12_0.verification.json\", \"source\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_12_0.cpp\", \"compiled_bytes\": 44, \"target_bytes\": 72, \"different_words\": 18}}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002b7f3c_sdk_larger_family.cpp\", \"source_sha256\": \"4c577197f2a3c302cdad0782fbed0171dcf76e80254dc9fdaf6b9a6cd7271609\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002b7f3c_sdk_larger_family.verification.json\", \"proof_sha256\": \"e8732686be42e4819d5ad9a5ca949b8891fd8680b871233206fa16d6cc00f70f\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_queuemuprime_recovered_002b7f3c.cpp"
+  },
+  {
+    "address": "002b823c",
+    "owner": "eight-hour-primary",
+    "metadata": "{\"address\": \"002b823c\", \"end\": \"002b8274\", \"bytes\": 56, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [\"002b6708\"], \"best_proposal\": {\"proof\": \"analysis/final-mix/recovery-experiments/fm_worker_b_round15_002b823c_v01.verification.json\", \"source\": \"analysis/final-mix/recovery-experiments/fm_worker_b_round15_002b823c_v01.cpp\", \"compiled_bytes\": 36, \"target_bytes\": 56, \"different_words\": 13}}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002b823c_sdk_gp_return_v2_0.cpp\", \"source_sha256\": \"b40dd0aa3b8b7b2f0323659a723f43cdf29b7127ecf8a3fbe142a9f292aede23\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002b823c_sdk_gp_return_v2_0.verification.json\", \"proof_sha256\": \"c92fc8b2679858a7658a4299c6b36594a4cbcb70aafc19b5e8381142e9304c3a\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_queuemuprime_recovered_002b823c.cpp"
+  },
+  {
+    "address": "002b83ec",
+    "owner": "eight-hour-primary",
+    "metadata": "{\"address\": \"002b83ec\", \"end\": \"002b8434\", \"bytes\": 72, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [\"002b6708\"], \"best_proposal\": {\"proof\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_12_0.verification.json\", \"source\": \"analysis/final-mix/recovery-experiments/fm_call_fixed_return_variants_v2_12_0.cpp\", \"compiled_bytes\": 44, \"target_bytes\": 72, \"different_words\": 18}}",
+    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002b83ec_sdk_larger_family.cpp\", \"source_sha256\": \"904b669a2544297eac0ec40b131ff128faa6bd5db89a7c7eabf1ce92bb864ec9\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_002b83ec_sdk_larger_family.verification.json\", \"proof_sha256\": \"fdef4cbc7b9aac0a686710484855afa69041b59e0fcbc610ce2baa38704e5436\"}",
+    "curated": "analysis/final-mix/recovery-experiments/fm_primary_queuemuprime_recovered_002b83ec.cpp"
+  }
+]

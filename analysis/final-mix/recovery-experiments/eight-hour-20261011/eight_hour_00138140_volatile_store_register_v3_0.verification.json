@@ -1,0 +1,18 @@
+{
+  "source_sha256": "765f82f6b90128b9df8e76e45d87f6084a21c3c28ea42ca58cac49def69567c5",
+  "source": "analysis/final-mix/recovery-experiments/eight-hour-20261011/eight_hour_00138140_volatile_store_register_v3_0.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "00138140",
+      "symbol": "_Z13func_00138140v",
+      "compiled_size": 76,
+      "target_size": 76,
+      "ghidra_body_size": 76,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "f0ffbd270000bfff34e6040c0d000424f6e5040c0d00042434000f3c0000bfdf647dee8d01000d243400c0ad2000cdad3000c0ad647dee8dc029cdadc829c0adc429c0ad0800e0031000bd27",
+      "target_hex": "f0ffbd270000bfff34e6040c0d000424f6e5040c0d00042434000d3c0000bfdf647daf8d01000c243400e0ad2000ecad3000e0ad647dae8dc029ccadc829c0adc429c0ad0800e0031000bd27"
+    }
+  ]
+}

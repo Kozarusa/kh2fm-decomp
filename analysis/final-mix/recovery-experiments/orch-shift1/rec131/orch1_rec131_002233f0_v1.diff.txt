@@ -1,0 +1,26 @@
+002233f0: compiled 80 bytes, target 88 bytes, exact=False
+Differing words: 12. First difference at instruction 8 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   002233f0: 27bdffe0  addiu	sp,sp,-32                                  | 002233f0: 27bdffe0  addiu	sp,sp,-32
+   002233f4: 0080782d  move	t7,a0                                       | 002233f4: 0080782d  move	t7,a0
+   002233f8: ffb00000  sd	s0,0(sp)                                      | 002233f8: ffb00000  sd	s0,0(sp)
+   002233fc: 3c040037  lui	a0,0x37                                      | 002233fc: 3c040037  lui	a0,0x37
+   00223400: ffb10008  sd	s1,8(sp)                                      | 00223400: ffb10008  sd	s1,8(sp)
+   00223404: 24840bd8  addiu	a0,a0,3032   ; = D_00370bd8                | 00223404: 24840bd8  addiu	a0,a0,3032   ; = D_00370bd8
+   00223408: ffbf0010  sd	ra,16(sp)                                     | 00223408: ffbf0010  sd	ra,16(sp)
+   0022340c: 00a0802d  move	s0,a1                                       | 0022340c: 00a0802d  move	s0,a1
+!! 00223410: 01e0282d  move	a1,t7                                       | 00223410: 00c0882d  move	s1,a2
+   00223414: 0c0bf7f2  jal	0x2fdfc8                                     | 00223414: 0c0bf7f2  jal	2fdfc8 <func_002fdfc8>
+!! 00223418: 00c0882d  move	s1,a2                                       | 00223418: 01e0282d  move	a1,t7
+!! 0022341c: 3c040037  lui	a0,0x37                                      | 0022341c: 0200282d  move	a1,s0
+!! 00223420: 0200282d  move	a1,s0                                       | 00223420: dfbf0010  ld	ra,16(sp)
+   00223424: 0220302d  move	a2,s1                                       | 00223424: 0220302d  move	a2,s1
+!! 00223428: 0c0bf7f2  jal	0x2fdfc8                                     | 00223428: dfb00000  ld	s0,0(sp)
+!! 0022342c: 24840bf8  addiu	a0,a0,3064   ; = D_00370bf8                | 0022342c: 3c040037  lui	a0,0x37
+!! 00223430: 0000000d  break                                            | 00223430: dfb10008  ld	s1,8(sp)
+!! 00223434: dfb00000  ld	s0,0(sp)                                      | 00223434: 24840bf8  addiu	a0,a0,3064   ; = D_00370bf8
+!! 00223438: dfb10008  ld	s1,8(sp)                                      | 00223438: 080bf7f2  j	2fdfc8 <func_002fdfc8>
+!! 0022343c: dfbf0010  ld	ra,16(sp)                                     | 0022343c: 27bd0020  addiu	sp,sp,32
+!! 00223440: 03e00008  jr	ra                                            | 
+!! 00223444: 27bd0020  addiu	sp,sp,32                                   | 

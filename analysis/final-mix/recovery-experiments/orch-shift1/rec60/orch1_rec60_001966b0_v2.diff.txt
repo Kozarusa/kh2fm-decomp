@@ -1,0 +1,27 @@
+001966b0: compiled 92 bytes, target 92 bytes, exact=False
+Differing words: 7. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001966b0: 3c0f0033  lui	t7,0x33                                      | 001966b0: 3c0f0033  lui	t7,0x33
+!! 001966b4: 00046880  sll	t5,a0,0x2                                    | 001966b4: 00046080  sll	t4,a0,0x2
+   001966b8: 25efbb30  addiu	t7,t7,-17616   ; = D_0032bb30              | 001966b8: 25efbb30  addiu	t7,t7,-17616   ; = D_0032bb30
+   001966bc: 3c0e01c6  lui	t6,0x1c6                                     | 001966bc: 3c0e01c6  lui	t6,0x1c6
+!! 001966c0: 01af6821  addu	t5,t5,t7                                    | 001966c0: 018f6021  addu	t4,t4,t7
+!! 001966c4: 8dcc1b08  lw	t4,6920(t6)   ; = D_01c61b08                  | 001966c4: 8dcd1b08  lw	t5,6920(t6)   ; = D_01c61b08
+   001966c8: 27bdfff0  addiu	sp,sp,-16                                  | 001966c8: 27bdfff0  addiu	sp,sp,-16
+   001966cc: 240fffff  li	t7,-1                                         | 001966cc: 240fffff  li	t7,-1
+   001966d0: ffbf0000  sd	ra,0(sp)                                      | 001966d0: ffbf0000  sd	ra,0(sp)
+   001966d4: 00042040  sll	a0,a0,0x1                                    | 001966d4: 00042040  sll	a0,a0,0x1
+!! 001966d8: a5af1ef8  sh	t7,7928(t5)                                   | 001966d8: a58f1ef8  sh	t7,7928(t4)
+!! 001966dc: 008c2021  addu	a0,a0,t4                                    | 001966dc: 01a46821  addu	t5,t5,a0
+!! 001966e0: 90850003  lbu	a1,3(a0)                                     | 001966e0: 91a40002  lbu	a0,2(t5)
+   001966e4: 0c0658e2  jal	0x196388                                     | 001966e4: 0c0658e2  jal	196388 <func_00196388>
+!! 001966e8: 90840002  lbu	a0,2(a0)                                     | 001966e8: 91a50003  lbu	a1,3(t5)
+   001966ec: 04400004  bltz	v0,0x196700                                 | 001966ec: 04400004  bltz	v0,196700 <func_001966b0+0x50>
+   001966f0: 0040202d  move	a0,v0                                       | 001966f0: 0040202d  move	a0,v0
+   001966f4: dfbf0000  ld	ra,0(sp)                                      | 001966f4: dfbf0000  ld	ra,0(sp)
+   001966f8: 080658fe  j	0x1963f8                                       | 001966f8: 080658fe  j	1963f8 <func_001963f8>
+   001966fc: 27bd0010  addiu	sp,sp,16                                   | 001966fc: 27bd0010  addiu	sp,sp,16
+   00196700: dfbf0000  ld	ra,0(sp)                                      | 00196700: dfbf0000  ld	ra,0(sp)
+   00196704: 03e00008  jr	ra                                            | 00196704: 03e00008  jr	ra
+   00196708: 27bd0010  addiu	sp,sp,16                                   | 00196708: 27bd0010  addiu	sp,sp,16

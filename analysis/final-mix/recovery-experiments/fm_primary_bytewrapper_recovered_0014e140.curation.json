@@ -1,0 +1,14 @@
+{
+  "probe_source": "analysis/final-mix/recovery-experiments/fm_primary_flagfamily_v2_0014e140_1.cpp",
+  "probe_source_sha256": "90732849ab64cca30cea7a2362d04f272ce83cca2de84a5180697f25c51d12c3",
+  "probe_proof_sha256": "cd60d963d3fdd8aeca6544bde204488c5bccbcd6bc5e6af711eff103904b6968",
+  "curated_source": "analysis/final-mix/recovery-experiments/fm_primary_bytewrapper_recovered_0014e140.cpp",
+  "curated_source_sha256": "102bf07029e0bd93dd3cefe7b2fef9ea570170c9aec8f816a21fc6e73ccb22c8",
+  "selected_addresses": [
+    "0014e140"
+  ],
+  "exclusion_receipt": null,
+  "limitations": [
+    "Curated source still requires a new probe, registration and full build."
+  ]
+}

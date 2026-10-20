@@ -1,0 +1,33 @@
+002252b0: compiled 116 bytes, target 116 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   002252b0: 27bdffe0  addiu	sp,sp,-32                                  | 002252b0: 27bdffe0  addiu	sp,sp,-32
+   002252b4: ffb00000  sd	s0,0(sp)                                      | 002252b4: ffb00000  sd	s0,0(sp)
+   002252b8: ffb10008  sd	s1,8(sp)                                      | 002252b8: ffb10008  sd	s1,8(sp)
+   002252bc: ffbf0010  sd	ra,16(sp)                                     | 002252bc: ffbf0010  sd	ra,16(sp)
+   002252c0: 0c089550  jal	0x225540                                     | 002252c0: 0c089550  jal	225540 <func_00225540>
+   002252c4: 00000000  nop                                              | 002252c4: 00000000  nop
+   002252c8: 10400011  beqz	v0,0x225310                                 | 002252c8: 10400011  beqz	v0,225310 <func_002252b0+0x60>
+   002252cc: 3c0e01db  lui	t6,0x1db                                     | 002252cc: 3c0e01db  lui	t6,0x1db
+   002252d0: 8dcfd910  lw	t7,-9968(t6)   ; = D_01dad910                 | 002252d0: 8dcfd910  lw	t7,-9968(t6)   ; = D_01dad910
+   002252d4: 25d1d910  addiu	s1,t6,-9968   ; = D_01dad910               | 002252d4: 25d1d910  addiu	s1,t6,-9968   ; = D_01dad910
+   002252d8: 2410ffff  li	s0,-1                                         | 002252d8: 2410ffff  li	s0,-1
+   002252dc: 11f00003  beq	t7,s0,0x2252ec                               | 002252dc: 11f00003  beq	t7,s0,2252ec <func_002252b0+0x3c>
+   002252e0: 01e0282d  move	a1,t7                                       | 002252e0: 01e0282d  move	a1,t7
+   002252e4: 0c04dade  jal	0x136b78                                     | 002252e4: 0c04dade  jal	136b78 <func_00136b78>
+   002252e8: 0000202d  move	a0,zero                                     | 002252e8: 0000202d  move	a0,zero
+   002252ec: 8e2f0004  lw	t7,4(s1)                                      | 002252ec: 8e2f0004  lw	t7,4(s1)
+   002252f0: 11f00007  beq	t7,s0,0x225310                               | 002252f0: 11f00007  beq	t7,s0,225310 <func_002252b0+0x60>
+   002252f4: 01e0282d  move	a1,t7                                       | 002252f4: 01e0282d  move	a1,t7
+   002252f8: dfb00000  ld	s0,0(sp)                                      | 002252f8: dfb00000  ld	s0,0(sp)
+   002252fc: 24040001  li	a0,1                                          | 002252fc: 24040001  li	a0,1
+   00225300: dfb10008  ld	s1,8(sp)                                      | 00225300: dfb10008  ld	s1,8(sp)
+   00225304: dfbf0010  ld	ra,16(sp)                                     | 00225304: dfbf0010  ld	ra,16(sp)
+   00225308: 0804dade  j	0x136b78                                       | 00225308: 0804dade  j	136b78 <func_00136b78>
+   0022530c: 27bd0020  addiu	sp,sp,32                                   | 0022530c: 27bd0020  addiu	sp,sp,32
+   00225310: dfb00000  ld	s0,0(sp)                                      | 00225310: dfb00000  ld	s0,0(sp)
+   00225314: dfb10008  ld	s1,8(sp)                                      | 00225314: dfb10008  ld	s1,8(sp)
+   00225318: dfbf0010  ld	ra,16(sp)                                     | 00225318: dfbf0010  ld	ra,16(sp)
+   0022531c: 03e00008  jr	ra                                            | 0022531c: 03e00008  jr	ra
+   00225320: 27bd0020  addiu	sp,sp,32                                   | 00225320: 27bd0020  addiu	sp,sp,32

@@ -1,0 +1,20 @@
+001906f0: compiled 64 bytes, target 64 bytes, exact=False
+Differing words: 2. First difference at instruction 7 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001906f0: 27bdffc0  addiu	sp,sp,-64                                  | 001906f0: 27bdffc0  addiu	sp,sp,-64
+   001906f4: ffb00030  sd	s0,48(sp)                                     | 001906f4: ffb00030  sd	s0,48(sp)
+   001906f8: ffbf0038  sd	ra,56(sp)                                     | 001906f8: ffbf0038  sd	ra,56(sp)
+   001906fc: 00a0802d  move	s0,a1                                       | 001906fc: 00a0802d  move	s0,a1
+   00190700: afa0000c  sw	zero,12(sp)                                   | 00190700: afa0000c  sw	zero,12(sp)
+   00190704: 0c0640aa  jal	0x1902a8                                     | 00190704: 0c0640aa  jal	1902a8 <func_001902a8>
+   00190708: 03a0282d  move	a1,sp                                       | 00190708: 03a0282d  move	a1,sp
+!! 0019070c: 27a50020  addiu	a1,sp,32                                   | 0019070c: 7a080000  lq	t0,0(s0)
+!! 00190710: 7a080000  lq	t0,0(s0)                                      | 00190710: 27a50020  addiu	a1,sp,32
+   00190714: 7ca80000  sq	t0,0(a1)                                      | 00190714: 7ca80000  sq	t0,0(a1)
+   00190718: 0c062a5c  jal	0x18a970                                     | 00190718: 0c062a5c  jal	18a970 <func_0018a970>
+   0019071c: 03a0202d  move	a0,sp                                       | 0019071c: 03a0202d  move	a0,sp
+   00190720: dfb00030  ld	s0,48(sp)                                     | 00190720: dfb00030  ld	s0,48(sp)
+   00190724: dfbf0038  ld	ra,56(sp)                                     | 00190724: dfbf0038  ld	ra,56(sp)
+   00190728: 03e00008  jr	ra                                            | 00190728: 03e00008  jr	ra
+   0019072c: 27bd0040  addiu	sp,sp,64                                   | 0019072c: 27bd0040  addiu	sp,sp,64

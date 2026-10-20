@@ -1,0 +1,39 @@
+002b5108: compiled 140 bytes, target 124 bytes, exact=False
+Differing words: 19. First difference at instruction 10 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   002b5108: 27bdffe0  addiu	sp,sp,-32                                  | 002b5108: 27bdffe0  addiu	sp,sp,-32
+   002b510c: ffb10008  sd	s1,8(sp)                                      | 002b510c: ffb10008  sd	s1,8(sp)
+   002b5110: ffb20010  sd	s2,16(sp)                                     | 002b5110: ffb20010  sd	s2,16(sp)
+   002b5114: 0080882d  move	s1,a0                                       | 002b5114: 0080882d  move	s1,a0
+   002b5118: ffb00000  sd	s0,0(sp)                                      | 002b5118: ffb00000  sd	s0,0(sp)
+   002b511c: 3c120036  lui	s2,0x36                                      | 002b511c: 3c120036  lui	s2,0x36
+   002b5120: ffbf0018  sd	ra,24(sp)                                     | 002b5120: ffbf0018  sd	ra,24(sp)
+   002b5124: 8e44f654  lw	a0,-2476(s2)   ; = D_0035f654                 | 002b5124: 8e44f654  lw	a0,-2476(s2)   ; = D_0035f654
+   002b5128: 0c04e75e  jal	0x139d78                                     | 002b5128: 0c04e75e  jal	139d78 <func_00139d78>
+   002b512c: 00a0802d  move	s0,a1                                       | 002b512c: 00a0802d  move	s0,a1
+!! 002b5130: 0220302d  move	a2,s1                                       | 002b5130: 0220202d  move	a0,s1
+   002b5134: 0200382d  move	a3,s0                                       | 002b5134: 0200382d  move	a3,s0
+   002b5138: 24050200  li	a1,512                                        | 002b5138: 24050200  li	a1,512
+!! 002b513c: 0600000d  bltz	s0,0x2b5174                                 | 002b513c: 0600000f  bltz	s0,2b517c <func_002b5108+0x74>
+!! 002b5140: 0220202d  move	a0,s1                                       | 002b5140: 0220302d  move	a2,s1
+   002b5144: 3c100036  lui	s0,0x36                                      | 002b5144: 3c100036  lui	s0,0x36
+   002b5148: 0c0ad8ce  jal	0x2b6338                                     | 002b5148: 0c0ad8ce  jal	2b6338 <func_002b6338>
+   002b514c: 8e04f6c8  lw	a0,-2360(s0)   ; = D_0035f6c8                 | 002b514c: 8e04f6c8  lw	a0,-2360(s0)   ; = D_0035f6c8
+   002b5150: 8e4ef654  lw	t6,-2476(s2)   ; = D_0035f654                 | 002b5150: 8e4ef654  lw	t6,-2476(s2)   ; = D_0035f654
+!! 002b5154: 8e0ff6c8  lw	t7,-2360(s0)   ; = D_0035f6c8                 | 002b5154: 0040682d  move	t5,v0
+!! 002b5158: adcf0198  sw	t7,408(t6)                                    | 002b5158: 8e0ff6c8  lw	t7,-2360(s0)   ; = D_0035f6c8
+!! 002b515c: dfb00000  ld	s0,0(sp)                                      | 002b515c: adcf0198  sw	t7,408(t6)
+!! 002b5160: dfb10008  ld	s1,8(sp)                                      | 002b5160: dfb00000  ld	s0,0(sp)
+!! 002b5164: dfb20010  ld	s2,16(sp)                                     | 002b5164: 01a0102d  move	v0,t5
+!! 002b5168: dfbf0018  ld	ra,24(sp)                                     | 002b5168: dfb10008  ld	s1,8(sp)
+!! 002b516c: 03e00008  jr	ra                                            | 002b516c: dfb20010  ld	s2,16(sp)
+!! 002b5170: 27bd0020  addiu	sp,sp,32                                   | 002b5170: dfbf0018  ld	ra,24(sp)
+!! 002b5174: 0c064812  jal	0x192048                                     | 002b5174: 03e00008  jr	ra
+!! 002b5178: 8e50f654  lw	s0,-2476(s2)                                  | 002b5178: 27bd0020  addiu	sp,sp,32
+!! 002b517c: 1000fff7  b	0x2b515c                                       | 002b517c: 0c064812  jal	192048 <func_00192048>
+!! 002b5180: ae020198  sw	v0,408(s0)                                    | 002b5180: 00000000  nop
+!!                                                                      | 002b5184: 8e4ff654  lw	t7,-2476(s2)
+!!                                                                      | 002b5188: 0040682d  move	t5,v0
+!!                                                                      | 002b518c: 1000fff4  b	2b5160 <func_002b5108+0x58>
+!!                                                                      | 002b5190: ade20198  sw	v0,408(t7)

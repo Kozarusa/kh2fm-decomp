@@ -1,0 +1,31 @@
+001d9148: compiled 108 bytes, target 92 bytes, exact=False
+Differing words: 25. First difference at instruction 0 (0-based).
+
+ORIGINAL                                                                | COMPILED
+!! 001d9148: 27bdfff0  addiu	sp,sp,-16                                  | 001d9148: 27bdffe0  addiu	sp,sp,-32
+   001d914c: ffb00000  sd	s0,0(sp)                                      | 001d914c: ffb00000  sd	s0,0(sp)
+!! 001d9150: ffbf0008  sd	ra,8(sp)                                      | 001d9150: ffb10008  sd	s1,8(sp)
+!! 001d9154: 0c06ed28  jal	0x1bb4a0                                     | 001d9154: ffbf0010  sd	ra,16(sp)
+   001d9158: 00048180  sll	s0,a0,0x6                                    | 001d9158: 00048180  sll	s0,a0,0x6
+!! 001d915c: 1040000d  beqz	v0,0x1d9194                                 | 001d915c: 0c06ed28  jal	1bb4a0 <func_001bb4a0>
+!! 001d9160: 0000102d  move	v0,zero                                     | 001d9160: 0000882d  move	s1,zero
+!! 001d9164: 0c06ef2c  jal	0x1bbcb0                                     | 001d9164: 1040000e  beqz	v0,1d91a0 <func_001d9148+0x58>
+!! 001d9168: 00000000  nop                                              | 001d9168: 0220102d  move	v0,s1
+!! 001d916c: 00501021  addu	v0,v0,s0                                    | 001d916c: 0c06ef2c  jal	1bbcb0 <func_001bbcb0>
+!! 001d9170: 8c4f026c  lw	t7,620(v0)                                    | 001d9170: 00000000  nop
+!! 001d9174: 31ef0001  andi	t7,t7,0x1                                   | 001d9174: 00501021  addu	v0,v0,s0
+!! 001d9178: 31ef00ff  andi	t7,t7,0xff                                  | 001d9178: 8c4f026c  lw	t7,620(v0)
+!! 001d917c: 11e00005  beqz	t7,0x1d9194                                 | 001d917c: 31ef0001  andi	t7,t7,0x1
+!! 001d9180: 0000102d  move	v0,zero                                     | 001d9180: 31ef00ff  andi	t7,t7,0xff
+!! 001d9184: 0c06ef2c  jal	0x1bbcb0                                     | 001d9184: 11e00006  beqz	t7,1d91a0 <func_001d9148+0x58>
+!! 001d9188: 00000000  nop                                              | 001d9188: 0220102d  move	v0,s1
+!! 001d918c: 00501021  addu	v0,v0,s0                                    | 001d918c: 0c06ef2c  jal	1bbcb0 <func_001bbcb0>
+!! 001d9190: 8c420298  lw	v0,664(v0)                                    | 001d9190: 00000000  nop
+!! 001d9194: dfb00000  ld	s0,0(sp)                                      | 001d9194: 00501021  addu	v0,v0,s0
+!! 001d9198: dfbf0008  ld	ra,8(sp)                                      | 001d9198: 8c510298  lw	s1,664(v0)
+!! 001d919c: 03e00008  jr	ra                                            | 001d919c: 0220102d  move	v0,s1
+!! 001d91a0: 27bd0010  addiu	sp,sp,16                                   | 001d91a0: dfb00000  ld	s0,0(sp)
+!!                                                                      | 001d91a4: dfb10008  ld	s1,8(sp)
+!!                                                                      | 001d91a8: dfbf0010  ld	ra,16(sp)
+!!                                                                      | 001d91ac: 03e00008  jr	ra
+!!                                                                      | 001d91b0: 27bd0020  addiu	sp,sp,32

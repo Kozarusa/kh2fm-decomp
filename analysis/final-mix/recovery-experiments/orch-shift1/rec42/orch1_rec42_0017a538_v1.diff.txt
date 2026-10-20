@@ -1,0 +1,25 @@
+0017a538: compiled 80 bytes, target 84 bytes, exact=False
+Differing words: 14. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0017a538: 27bdffe0  addiu	sp,sp,-32                                  | 0017a538: 27bdffe0  addiu	sp,sp,-32
+!! 0017a53c: ffb00000  sd	s0,0(sp)                                      | 0017a53c: ffb10008  sd	s1,8(sp)
+!! 0017a540: ffb10008  sd	s1,8(sp)                                      | 0017a540: ffb00000  sd	s0,0(sp)
+   0017a544: ffbf0010  sd	ra,16(sp)                                     | 0017a544: ffbf0010  sd	ra,16(sp)
+!! 0017a548: 0080802d  move	s0,a0                                       | 0017a548: 0080882d  move	s1,a0
+   0017a54c: 0c05a81c  jal	0x16a070                                     | 0017a54c: 0c05a81c  jal	16a070 <func_0016a070>
+!! 0017a550: 0000882d  move	s1,zero                                     | 0017a550: 0000802d  move	s0,zero
+   0017a554: 240f0001  li	t7,1                                          | 0017a554: 240f0001  li	t7,1
+!! 0017a558: 144f0007  bne	v0,t7,0x17a578                               | 0017a558: 144f0006  bne	v0,t7,17a574 <func_0017a538+0x3c>
+!! 0017a55c: 0220102d  move	v0,s1                                       | 0017a55c: 0200102d  move	v0,s0
+!! 0017a560: 8e0f0b50  lw	t7,2896(s0)                                   | 0017a560: 8e2f0b50  lw	t7,2896(s1)
+   0017a564: 39ee0000  xori	t6,t7,0x0                                   | 0017a564: 39ee0000  xori	t6,t7,0x0
+   0017a568: 29ef0007  slti	t7,t7,7                                     | 0017a568: 29ef0007  slti	t7,t7,7
+!! 0017a56c: 000e780a  movz	t7,zero,t6                                  | 0017a56c: 01ee800b  movn	s0,t7,t6
+!! 0017a570: 01e0882d  move	s1,t7                                       | 0017a570: 0200102d  move	v0,s0
+!! 0017a574: 0220102d  move	v0,s1                                       | 0017a574: dfb10008  ld	s1,8(sp)
+   0017a578: dfb00000  ld	s0,0(sp)                                      | 0017a578: dfb00000  ld	s0,0(sp)
+!! 0017a57c: dfb10008  ld	s1,8(sp)                                      | 0017a57c: dfbf0010  ld	ra,16(sp)
+!! 0017a580: dfbf0010  ld	ra,16(sp)                                     | 0017a580: 03e00008  jr	ra
+!! 0017a584: 03e00008  jr	ra                                            | 0017a584: 27bd0020  addiu	sp,sp,32
+!! 0017a588: 27bd0020  addiu	sp,sp,32                                   | 

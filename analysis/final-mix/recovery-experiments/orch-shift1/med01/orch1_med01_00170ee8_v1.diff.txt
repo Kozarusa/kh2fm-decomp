@@ -1,0 +1,23 @@
+00170ee8: compiled 76 bytes, target 76 bytes, exact=False
+Differing words: 8. First difference at instruction 5 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00170ee8: 340fffff  li	t7,0xffff                                     | 00170ee8: 340fffff  li	t7,0xffff
+   00170eec: 14af000f  bne	a1,t7,0x170f2c                               | 00170eec: 14af000f  bne	a1,t7,170f2c <func_00170ee8+0x44>
+   00170ef0: 240f0001  li	t7,1                                          | 00170ef0: 240f0001  li	t7,1
+   00170ef4: 148f0006  bne	a0,t7,0x170f10                               | 00170ef4: 148f0006  bne	a0,t7,170f10 <func_00170ee8+0x28>
+   00170ef8: 340fffff  li	t7,0xffff                                     | 00170ef8: 340fffff  li	t7,0xffff
+!! 00170efc: 3c0e0035  lui	t6,0x35                                      | 00170efc: 3c0f0035  lui	t7,0x35
+!! 00170f00: 25cfdca0  addiu	t7,t6,-9056   ; = D_0034dca0               | 00170f00: ade0dca0  sw	zero,-9056(t7)   ; = D_0034dca0
+!! 00170f04: adc0dca0  sw	zero,-9056(t6)   ; = D_0034dca0               | 00170f04: 25eedca0  addiu	t6,t7,-9056   ; = D_0034dca0
+!! 00170f08: ade00004  sw	zero,4(t7)                                    | 00170f08: adc00004  sw	zero,4(t6)
+   00170f0c: 340fffff  li	t7,0xffff                                     | 00170f0c: 340fffff  li	t7,0xffff
+   00170f10: 14af0006  bne	a1,t7,0x170f2c                               | 00170f10: 14af0006  bne	a1,t7,170f2c <func_00170ee8+0x44>
+   00170f14: 240f0001  li	t7,1                                          | 00170f14: 240f0001  li	t7,1
+   00170f18: 148f0004  bne	a0,t7,0x170f2c                               | 00170f18: 148f0004  bne	a0,t7,170f2c <func_00170ee8+0x44>
+!! 00170f1c: 3c0e0035  lui	t6,0x35                                      | 00170f1c: 3c0f0035  lui	t7,0x35
+!! 00170f20: 25cfdcb8  addiu	t7,t6,-9032   ; = D_0034dcb8               | 00170f20: ade0dcb8  sw	zero,-9032(t7)   ; = D_0034dcb8
+!! 00170f24: adc0dcb8  sw	zero,-9032(t6)   ; = D_0034dcb8               | 00170f24: 25eedcb8  addiu	t6,t7,-9032   ; = D_0034dcb8
+!! 00170f28: ade00004  sw	zero,4(t7)                                    | 00170f28: adc00004  sw	zero,4(t6)
+   00170f2c: 03e00008  jr	ra                                            | 00170f2c: 03e00008  jr	ra
+   00170f30: 00000000  nop                                              | 00170f30: 00000000  nop

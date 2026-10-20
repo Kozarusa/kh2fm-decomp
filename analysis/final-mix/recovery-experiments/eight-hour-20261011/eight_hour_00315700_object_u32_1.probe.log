@@ -1,0 +1,6 @@
+recovery-experiments/eight_hour_00315700_object_u32_1/probe.cpp: In function 
+   `void func_00315700(unsigned int)':
+recovery-experiments/eight_hour_00315700_object_u32_1/probe.cpp:9: warning: cast
+   from pointer to integer of different size
+Exact probe matches: 0/1
+Detailed proof: analysis/final-mix/recovery-experiments/eight-hour-20261011/eight_hour_00315700_object_u32_1.verification.json

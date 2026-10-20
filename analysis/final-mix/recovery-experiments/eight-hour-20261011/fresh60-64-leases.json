@@ -1,0 +1,203 @@
+[
+  {
+    "address": "00123d90",
+    "token": "b4d540b544b0419e87ec0c95ee132158",
+    "expires": 1791747673.4540348,
+    "metadata": {
+      "address": "00123d90",
+      "end": "00123dcc",
+      "bytes": 60,
+      "priority": 2,
+      "pseudocode_available": true,
+      "callees": [
+        "00124748"
+      ],
+      "best_proposal": null
+    },
+    "blocker": null,
+    "attempts": 1
+  },
+  {
+    "address": "00124100",
+    "token": "16174a4c7eb4478882ec303a7e5087c7",
+    "expires": 1791747673.5799403,
+    "metadata": {
+      "address": "00124100",
+      "end": "0012413c",
+      "bytes": 60,
+      "priority": 2,
+      "pseudocode_available": true,
+      "callees": [
+        "00124748"
+      ],
+      "best_proposal": null
+    },
+    "blocker": null,
+    "attempts": 1
+  },
+  {
+    "address": "00132270",
+    "token": "42c90ea7ebda4a0da1b3a803768708e7",
+    "expires": 1791747673.7067666,
+    "metadata": {
+      "address": "00132270",
+      "end": "001322ac",
+      "bytes": 60,
+      "priority": 2,
+      "pseudocode_available": true,
+      "callees": [],
+      "best_proposal": null
+    },
+    "blocker": null,
+    "attempts": 1
+  },
+  {
+    "address": "001375f0",
+    "token": "eb15541ae60444b3a943155d3323b571",
+    "expires": 1791747673.8302643,
+    "metadata": {
+      "address": "001375f0",
+      "end": "00137630",
+      "bytes": 64,
+      "priority": 2,
+      "pseudocode_available": true,
+      "callees": [
+        "001374c8"
+      ],
+      "best_proposal": null
+    },
+    "blocker": null,
+    "attempts": 1
+  },
+  {
+    "address": "0013f608",
+    "token": "ec0b0533b51945459d79a61b07f937f6",
+    "expires": 1791747673.9633536,
+    "metadata": {
+      "address": "0013f608",
+      "end": "0013f644",
+      "bytes": 60,
+      "priority": 2,
+      "pseudocode_available": true,
+      "callees": [
+        "0017ce10"
+      ],
+      "best_proposal": {
+        "proof": "analysis/final-mix/recovery-experiments/fm_return_variants_v2_00_0.verification.json",
+        "source": "analysis/final-mix/recovery-experiments/fm_return_variants_v2_00_0.cpp",
+        "compiled_bytes": 64,
+        "target_bytes": 60,
+        "different_words": 12
+      }
+    },
+    "blocker": null,
+    "attempts": 1
+  },
+  {
+    "address": "0014f688",
+    "token": "7769d5f6af6b4c1fa8dc4ac030561d80",
+    "expires": 1791747674.091931,
+    "metadata": {
+      "address": "0014f688",
+      "end": "0014f6c8",
+      "bytes": 64,
+      "priority": 2,
+      "pseudocode_available": true,
+      "callees": [
+        "00150dc0"
+      ],
+      "best_proposal": null
+    },
+    "blocker": null,
+    "attempts": 1
+  },
+  {
+    "address": "00153310",
+    "token": "8e5828a163ec43c5b5bbccce2c6072ca",
+    "expires": 1791747674.2167482,
+    "metadata": {
+      "address": "00153310",
+      "end": "00153350",
+      "bytes": 64,
+      "priority": 2,
+      "pseudocode_available": true,
+      "callees": [
+        "0031cc30"
+      ],
+      "best_proposal": null
+    },
+    "blocker": null,
+    "attempts": 1
+  },
+  {
+    "address": "0015a118",
+    "token": "ab976907e52845ea9bf60ff900555a38",
+    "expires": 1791747674.3427181,
+    "metadata": {
+      "address": "0015a118",
+      "end": "0015a154",
+      "bytes": 60,
+      "priority": 2,
+      "pseudocode_available": true,
+      "callees": [
+        "0015a098",
+        "0017ce10"
+      ],
+      "best_proposal": null
+    },
+    "blocker": null,
+    "attempts": 1
+  },
+  {
+    "address": "0017c8f0",
+    "token": "1dbd003f2b9341a0b7f33fe0cc148ead",
+    "expires": 1791747674.478042,
+    "metadata": {
+      "address": "0017c8f0",
+      "end": "0017c930",
+      "bytes": 64,
+      "priority": 2,
+      "pseudocode_available": true,
+      "callees": [
+        "0017c870"
+      ],
+      "best_proposal": null
+    },
+    "blocker": null,
+    "attempts": 1
+  },
+  {
+    "address": "001b6f48",
+    "token": "9c7298dc7fda45bb9d8ec0aaee374df9",
+    "expires": 1791747674.600509,
+    "metadata": {
+      "address": "001b6f48",
+      "end": "001b6f88",
+      "bytes": 64,
+      "priority": 2,
+      "pseudocode_available": true,
+      "callees": [
+        "0017c870"
+      ],
+      "best_proposal": null
+    },
+    "blocker": null,
+    "attempts": 1
+  },
+  {
+    "address": "001d4dc0",
+    "token": "c91194513fa940c2893c9b08bd0dfa04",
+    "expires": 1791747674.7236638,
+    "metadata": {
+      "address": "001d4dc0",
+      "end": "001d4dfc",
+      "bytes": 60,
+      "priority": 2,
+      "pseudocode_available": true,
+      "callees": [],
+      "best_proposal": null
+    },
+    "blocker": null,
+    "attempts": 1
+  }
+]

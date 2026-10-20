@@ -1,0 +1,17 @@
+00185da8: compiled 52 bytes, target 52 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00185da8: 27bdfff0  addiu	sp,sp,-16                                  | 00185da8: 27bdfff0  addiu	sp,sp,-16
+   00185dac: ffbf0000  sd	ra,0(sp)                                      | 00185dac: ffbf0000  sd	ra,0(sp)
+   00185db0: 0c06e6f2  jal	0x1b9bc8                                     | 00185db0: 0c06e6f2  jal	1b9bc8 <func_001b9bc8>
+   00185db4: 00000000  nop                                              | 00185db4: 00000000  nop
+   00185db8: 10400005  beqz	v0,0x185dd0                                 | 00185db8: 10400005  beqz	v0,185dd0 <func_00185da8+0x28>
+   00185dbc: 0040202d  move	a0,v0                                       | 00185dbc: 0040202d  move	a0,v0
+   00185dc0: 8c4f0588  lw	t7,1416(v0)                                   | 00185dc0: 8c4f0588  lw	t7,1416(v0)
+   00185dc4: 31ef0010  andi	t7,t7,0x10                                  | 00185dc4: 31ef0010  andi	t7,t7,0x10
+   00185dc8: 11e0fff9  beqz	t7,0x185db0                                 | 00185dc8: 11e0fff9  beqz	t7,185db0 <func_00185da8+0x8>
+   00185dcc: 00000000  nop                                              | 00185dcc: 00000000  nop
+   00185dd0: dfbf0000  ld	ra,0(sp)                                      | 00185dd0: dfbf0000  ld	ra,0(sp)
+   00185dd4: 03e00008  jr	ra                                            | 00185dd4: 03e00008  jr	ra
+   00185dd8: 27bd0010  addiu	sp,sp,16                                   | 00185dd8: 27bd0010  addiu	sp,sp,16

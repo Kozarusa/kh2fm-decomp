@@ -1,0 +1,26 @@
+001a78c0: compiled 88 bytes, target 88 bytes, exact=True
+Differing words: 0. First difference at instruction None (0-based).
+
+ORIGINAL                                                                | COMPILED
+   001a78c0: 27bdffb0  addiu	sp,sp,-80                                  | 001a78c0: 27bdffb0  addiu	sp,sp,-80
+   001a78c4: e7b50044  swc1	$f21,68(sp)                                 | 001a78c4: e7b50044  swc1	$f21,68(sp)
+   001a78c8: e7b40040  swc1	$f20,64(sp)                                 | 001a78c8: e7b40040  swc1	$f20,64(sp)
+   001a78cc: 46007d46  mov.s	$f21,$f15                                  | 001a78cc: 46007d46  mov.s	$f21,$f15
+   001a78d0: ffb00030  sd	s0,48(sp)                                     | 001a78d0: ffb00030  sd	s0,48(sp)
+   001a78d4: 46007506  mov.s	$f20,$f14                                  | 001a78d4: 46007506  mov.s	$f20,$f14
+   001a78d8: ffbf0038  sd	ra,56(sp)                                     | 001a78d8: ffbf0038  sd	ra,56(sp)
+   001a78dc: 0080802d  move	s0,a0                                       | 001a78dc: 0080802d  move	s0,a0
+   001a78e0: 0c069e92  jal	0x1a7a48                                     | 001a78e0: 0c069e92  jal	1a7a48 <func_001a7a48>
+   001a78e4: 03a0202d  move	a0,sp                                       | 001a78e4: 03a0202d  move	a0,sp
+   001a78e8: 4600a306  mov.s	$f12,$f20                                  | 001a78e8: 4600a306  mov.s	$f12,$f20
+   001a78ec: 0200202d  move	a0,s0                                       | 001a78ec: 0200202d  move	a0,s0
+   001a78f0: 4600ab46  mov.s	$f13,$f21                                  | 001a78f0: 4600ab46  mov.s	$f13,$f21
+   001a78f4: 0c069f6a  jal	0x1a7da8                                     | 001a78f4: 0c069f6a  jal	1a7da8 <func_001a7da8>
+   001a78f8: 03a0282d  move	a1,sp                                       | 001a78f8: 03a0282d  move	a1,sp
+   001a78fc: 0200102d  move	v0,s0                                       | 001a78fc: 0200102d  move	v0,s0
+   001a7900: dfbf0038  ld	ra,56(sp)                                     | 001a7900: dfbf0038  ld	ra,56(sp)
+   001a7904: dfb00030  ld	s0,48(sp)                                     | 001a7904: dfb00030  ld	s0,48(sp)
+   001a7908: c7b50044  lwc1	$f21,68(sp)                                 | 001a7908: c7b50044  lwc1	$f21,68(sp)
+   001a790c: c7b40040  lwc1	$f20,64(sp)                                 | 001a790c: c7b40040  lwc1	$f20,64(sp)
+   001a7910: 03e00008  jr	ra                                            | 001a7910: 03e00008  jr	ra
+   001a7914: 27bd0050  addiu	sp,sp,80                                   | 001a7914: 27bd0050  addiu	sp,sp,80

@@ -1,0 +1,18 @@
+{
+  "source_sha256": "4d10f6f99e7839e229f57d780c734dc85e9dc1a7639e452c7e0388a8f993c1cb",
+  "source": "analysis/final-mix/recovery-experiments/fm_primary_fourword_v2_002f10c0.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "002f10c0",
+      "symbol": "_Z13func_002f10c0Pi",
+      "compiled_size": 60,
+      "target_size": 60,
+      "ghidra_body_size": 60,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "f0ffbd270000b0ff0800bfff2d80800000008f8cfa31040c0400e48d2d2040000c000dc608000cc60400058e0800bfdf0000b0df4e6a04081000bd27",
+      "target_hex": "f0ffbd270000b0ff0800bfff2d80800000008f8cfa31040c0400e48d0400058e2d2040000c000dc608000cc60800bfdf0000b0df4e6a04081000bd27"
+    }
+  ]
+}

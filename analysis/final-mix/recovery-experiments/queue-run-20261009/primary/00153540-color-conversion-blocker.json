@@ -1,0 +1,230 @@
+{
+  "address": "00153540",
+  "status": "blocked_not_accepted",
+  "complete_original_bytes": 112,
+  "specialty": "float-conversion-scheduling",
+  "hypothesis": "Baseline typed byte-color conversion preserves complete size and VU tail but five scalar conversion/mask words schedule differently. Explicit word types repeat baseline; paired output transport adds eight bytes. Seek an evidence-backed operand or constructor lifetime that preserves mask/MTC1/CVT order without replacing scalar C++ with instruction assembly.",
+  "controls": [
+    {
+      "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\queue-run-20261009\\primary\\fm_queue_primary_00153540_c5ea05d3_color.cpp",
+      "source_sha256": "aabf389e18a48df0ece2c6da5b2103054f46449561482342192394b3dbeb016f",
+      "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\queue-run-20261009\\primary\\fm_queue_primary_00153540_c5ea05d3_color.verification.json",
+      "proof_sha256": "207c902b462b2975cab2f38e0ecb292a7976b7bd4ac2f7a0fa2fd7bb01b52d67",
+      "compiled_size": 112,
+      "target_size": 112,
+      "exact_match": false,
+      "different_words": [
+        {
+          "index": 2,
+          "compiled": "ff00e730",
+          "target": "00008544"
+        },
+        {
+          "index": 3,
+          "compiled": "00008544",
+          "target": "ff00e730"
+        },
+        {
+          "index": 6,
+          "compiled": "00108744",
+          "target": "20008046"
+        },
+        {
+          "index": 8,
+          "compiled": "00188844",
+          "target": "00108744"
+        },
+        {
+          "index": 10,
+          "compiled": "20008046",
+          "target": "00188844"
+        }
+      ],
+      "target_hex": "ff00a530ff00c63000008544ff00e730ff000831000886442000804637000f3c0010874450b2ef250018884460088046a0108046e0188046000080e4040081e4080082e40c0083e40000e0c5000081d8000008440010a848bc03624abf03004a5c08e04b000081f80800e00300000000"
+    },
+    {
+      "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\queue-run-20261009\\primary\\fm_queue_primary_00153540_c5ea05d3_color_transfer.cpp",
+      "source_sha256": "823402e4db44eb0ff927155b42d0b3b2045babcdf73ce0df7313f0a78b01328d",
+      "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\queue-run-20261009\\primary\\fm_queue_primary_00153540_c5ea05d3_color_transfer.verification.json",
+      "proof_sha256": "7f4dbb376add32fb3bf0b66398dfd9d8eec0bab49fc7a3490b187d34e4e54d30",
+      "compiled_size": 120,
+      "target_size": 112,
+      "exact_match": false,
+      "different_words": [
+        {
+          "index": 1,
+          "compiled": "ff00e730",
+          "target": "ff00c630"
+        },
+        {
+          "index": 3,
+          "compiled": "ff000831",
+          "target": "ff00e730"
+        },
+        {
+          "index": 4,
+          "compiled": "ff00c630",
+          "target": "ff000831"
+        },
+        {
+          "index": 5,
+          "compiled": "2d78e000",
+          "target": "00088644"
+        },
+        {
+          "index": 6,
+          "compiled": "2d700001",
+          "target": "20008046"
+        },
+        {
+          "index": 7,
+          "compiled": "20008046",
+          "target": "37000f3c"
+        },
+        {
+          "index": 8,
+          "compiled": "00088644",
+          "target": "00108744"
+        },
+        {
+          "index": 9,
+          "compiled": "00108f44",
+          "target": "50b2ef25"
+        },
+        {
+          "index": 10,
+          "compiled": "00188e44",
+          "target": "00188844"
+        },
+        {
+          "index": 12,
+          "compiled": "37000f3c",
+          "target": "a0108046"
+        },
+        {
+          "index": 13,
+          "compiled": "a0108046",
+          "target": "e0188046"
+        },
+        {
+          "index": 14,
+          "compiled": "50b2ef25",
+          "target": "000080e4"
+        },
+        {
+          "index": 15,
+          "compiled": "e0188046",
+          "target": "040081e4"
+        },
+        {
+          "index": 16,
+          "compiled": "000080e4",
+          "target": "080082e4"
+        },
+        {
+          "index": 17,
+          "compiled": "040081e4",
+          "target": "0c0083e4"
+        },
+        {
+          "index": 18,
+          "compiled": "080082e4",
+          "target": "0000e0c5"
+        },
+        {
+          "index": 19,
+          "compiled": "0c0083e4",
+          "target": "000081d8"
+        },
+        {
+          "index": 20,
+          "compiled": "0000e0c5",
+          "target": "00000844"
+        },
+        {
+          "index": 21,
+          "compiled": "000081d8",
+          "target": "0010a848"
+        },
+        {
+          "index": 22,
+          "compiled": "00000844",
+          "target": "bc03624a"
+        },
+        {
+          "index": 23,
+          "compiled": "0010a848",
+          "target": "bf03004a"
+        },
+        {
+          "index": 24,
+          "compiled": "bc03624a",
+          "target": "5c08e04b"
+        },
+        {
+          "index": 25,
+          "compiled": "bf03004a",
+          "target": "000081f8"
+        },
+        {
+          "index": 26,
+          "compiled": "5c08e04b",
+          "target": "0800e003"
+        },
+        {
+          "index": 27,
+          "compiled": "000081f8",
+          "target": "00000000"
+        },
+        {
+          "index": 28,
+          "compiled": "0800e003",
+          "target": ""
+        },
+        {
+          "index": 29,
+          "compiled": "00000000",
+          "target": ""
+        }
+      ],
+      "target_hex": "ff00a530ff00c63000008544ff00e730ff000831000886442000804637000f3c0010874450b2ef250018884460088046a0108046e0188046000080e4040081e4080082e40c0083e40000e0c5000081d8000008440010a848bc03624abf03004a5c08e04b000081f80800e00300000000"
+    },
+    {
+      "source": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\queue-run-20261009\\primary\\fm_queue_primary_00153540_c5ea05d3_color_words.cpp",
+      "source_sha256": "fd334a5ab0f4621a8a9941aa653cecc4b2e8bb145a3ec499ba0da58b6e5c09c1",
+      "proof": "C:\\Users\\KoZa\\Documents\\AGENTS\\Codex\\analysis\\final-mix\\recovery-experiments\\queue-run-20261009\\primary\\fm_queue_primary_00153540_c5ea05d3_color_words.verification.json",
+      "proof_sha256": "309128ce5a16fcfbc2d546674666f4c9c787752ccc57c7765ee5d514636d9fb2",
+      "compiled_size": 112,
+      "target_size": 112,
+      "exact_match": false,
+      "different_words": [
+        {
+          "index": 2,
+          "compiled": "ff00e730",
+          "target": "00008544"
+        },
+        {
+          "index": 3,
+          "compiled": "00008544",
+          "target": "ff00e730"
+        },
+        {
+          "index": 6,
+          "compiled": "00108744",
+          "target": "20008046"
+        },
+        {
+          "index": 8,
+          "compiled": "00188844",
+          "target": "00108744"
+        },
+        {
+          "index": 10,
+          "compiled": "20008046",
+          "target": "00188844"
+        }
+      ],
+      "target_hex": "ff00a530ff00c63000008544ff00e730ff000831000886442000804637000f3c0010874450b2ef250018884460088046a0108046e0188046000080e4040081e4080082e40c0083e40000e0c5000081d8000008440010a848bc03624abf03004a5c08e04b000081f80800e00300000000"
+    }
+  ]
+}

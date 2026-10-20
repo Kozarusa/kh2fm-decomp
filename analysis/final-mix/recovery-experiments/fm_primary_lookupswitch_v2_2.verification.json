@@ -1,0 +1,29 @@
+{
+  "source_sha256": "7af999db8626896825eab201a725ecde91f34e5d8caa4e4460f175bdf7f2bd55",
+  "source": "analysis/final-mix/recovery-experiments/fm_primary_lookupswitch_v2_2.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "00155ee8",
+      "symbol": "_Z13func_00155ee8j",
+      "compiled_size": 88,
+      "target_size": 88,
+      "ghidra_body_size": 88,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "34008f8c0e00e011000000008c04ee8daf01ce910500cf2d0900e01180780e0037000e3cc4b2ce252178ee010000ed8d0800a001000000000800e003120002240800e003150002240800e003320002240800e0038c000224",
+      "target_hex": "34008f8c0e00e011000000008c04ef8daf01ef910500ee2d0900c01137000e3c80780f00c4b2ce252178ee010000ed8d0800a001000000000800e003120002240800e003150002240800e003320002240800e0038c000224"
+    },
+    {
+      "address": "00155fc0",
+      "symbol": "_Z13func_00155fc0j",
+      "compiled_size": 80,
+      "target_size": 80,
+      "ghidra_body_size": 80,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "34008f8c1000e011000000008c04ee8daf01ce910500cf2d0b00e01180780e0037000e3cecb2ce252178ee010000ed8d0800a001000000000800e003310002240800e0038b0002240800e00319000224",
+      "target_hex": "34008f8c1000e011000000008c04ef8daf01ef910500ee2d0b00c01137000e3c80780f00ecb2ce252178ee010000ed8d0800a001000000000800e003310002240800e0038b0002240800e00319000224"
+    }
+  ]
+}

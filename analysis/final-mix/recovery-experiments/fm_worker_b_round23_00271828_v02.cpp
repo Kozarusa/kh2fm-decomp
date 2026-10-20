@@ -1,0 +1,16 @@
+#include "../common/types.h"
+
+extern "C" u32 func_00192048(u32);
+extern "C" void func_002595e8(u32,u32);
+extern "C" char func_00373970;
+
+u32 func_00271828(u32 param_1, u32 param_2)
+{
+  u32 *puVar1;
+  u32 uVar1;
+  puVar1 = (u32 *)(long)&func_00373970;
+  puVar1 = (u32 *)((u8 *)puVar1 + param_1 * 4);
+  uVar1 = func_00192048(*puVar1);
+  func_002595e8(param_2, uVar1);
+  return param_2;
+}

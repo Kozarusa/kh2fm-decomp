@@ -1,0 +1,34 @@
+001c18d0: compiled 120 bytes, target 104 bytes, exact=False
+Differing words: 27. First difference at instruction 0 (0-based).
+
+ORIGINAL                                                                | COMPILED
+!! 001c18d0: 27bdfff0  addiu	sp,sp,-16                                  | 001c18d0: 27bdffe0  addiu	sp,sp,-32
+   001c18d4: ffb00000  sd	s0,0(sp)                                      | 001c18d4: ffb00000  sd	s0,0(sp)
+!! 001c18d8: ffbf0008  sd	ra,8(sp)                                      | 001c18d8: ffb10008  sd	s1,8(sp)
+!! 001c18dc: 8c820010  lw	v0,16(a0)                                     | 001c18dc: ffbf0010  sd	ra,16(sp)
+!! 001c18e0: 0040f809  jalr	v0                                          | 001c18e0: 0080802d  move	s0,a0
+!! 001c18e4: 0080802d  move	s0,a0                                       | 001c18e4: 8c820010  lw	v0,16(a0)
+!! 001c18e8: 1040000e  beqz	v0,0x1c1924                                 | 001c18e8: 0040f809  jalr	v0
+!! 001c18ec: 0000782d  move	t7,zero                                     | 001c18ec: 0000882d  move	s1,zero
+!! 001c18f0: 8e0e0020  lw	t6,32(s0)                                     | 001c18f0: 5040000c  beqzl	v0,1c1924 <func_001c18d0+0x54>
+!! 001c18f4: 11c0000b  beqz	t6,0x1c1924                                 | 001c18f4: 0220102d  move	v0,s1
+!! 001c18f8: 240f0001  li	t7,1                                          | 001c18f8: 8e0d0020  lw	t5,32(s0)
+!! 001c18fc: 8e0f001c  lw	t7,28(s0)                                     | 001c18fc: 11a00008  beqz	t5,1c1920 <func_001c18d0+0x50>
+!! 001c1900: 8ded0004  lw	t5,4(t7)                                      | 001c1900: 24110001  li	s1,1
+!! 001c1904: 51a00005  beqzl	t5,0x1c191c                                | 001c1904: 8e0f001c  lw	t7,28(s0)
+!! 001c1908: 91cf000f  lbu	t7,15(t6)                                    | 001c1908: 8dee0004  lw	t6,4(t7)
+!! 001c190c: 240f0001  li	t7,1                                          | 001c190c: 15c0000a  bnez	t6,1c1938 <func_001c18d0+0x68>
+!! 001c1910: 51af0002  beql	t5,t7,0x1c191c                              | 001c1910: 00000000  nop
+!! 001c1914: 91cf000d  lbu	t7,13(t6)                                    | 001c1914: 91af000f  lbu	t7,15(t5)
+!! 001c1918: 0000782d  move	t7,zero                                     | 001c1918: a20f0017  sb	t7,23(s0)
+!! 001c191c: a20f0017  sb	t7,23(s0)                                     | 001c191c: 24110001  li	s1,1
+!! 001c1920: 240f0001  li	t7,1                                          | 001c1920: 0220102d  move	v0,s1
+   001c1924: dfb00000  ld	s0,0(sp)                                      | 001c1924: dfb00000  ld	s0,0(sp)
+!! 001c1928: 01e0102d  move	v0,t7                                       | 001c1928: dfb10008  ld	s1,8(sp)
+!! 001c192c: dfbf0008  ld	ra,8(sp)                                      | 001c192c: dfbf0010  ld	ra,16(sp)
+   001c1930: 03e00008  jr	ra                                            | 001c1930: 03e00008  jr	ra
+!! 001c1934: 27bd0010  addiu	sp,sp,16                                   | 001c1934: 27bd0020  addiu	sp,sp,32
+!!                                                                      | 001c1938: 15d1fff7  bne	t6,s1,1c1918 <func_001c18d0+0x48>
+!!                                                                      | 001c193c: 0000782d  move	t7,zero
+!!                                                                      | 001c1940: 1000fff5  b	1c1918 <func_001c18d0+0x48>
+!!                                                                      | 001c1944: 91af000d  lbu	t7,13(t5)

@@ -1,0 +1,93 @@
+0016fa58 [(4, 'c601043c', 'c501043c'), (12, '1700063c', '1600063c'), (16, '60c48424', '60c48434'), (20, 'e8f9c624', '00300524'), (28, '00300524', 'e8f9c634')]
+void func_0016fa58(void)
+
+{
+  func_0014d358(0x1c5c460,0x3000,0x16f9e8,0);
+  return;
+}
+0018f9b8 [(12, '0000848c', '0800888c'), (16, '1000edc5', '1000e58d'), (20, '0400e58d', '0c00848c'), (24, '0800e68d', '0000e68d'), (28, '0c00ecc5', '0400e78d')]
+void func_0018f9b8(u32 *param_1)
+
+{
+  func_001a4d40(param_1[3],param_1[4],*param_1,param_1[1],param_1[2]);
+  return;
+}
+002e8c28 [(8, '04008f8c', '2d28a003'), (12, '0000e879', '04008e8c'), (16, '0000a87f', '0000848c'), (20, '0000848c', '0000cf8d'), (28, '2d28a003', '0000afaf')]
+void func_002e8c28(u32 *param_1)
+
+{
+  u32 *puVar1;
+  u32 uStack_20;
+  u32 uStack_1c;
+  u32 uStack_18;
+  u32 uStack_14;
+  
+  puVar1 = (u32 *)param_1[1];
+  uStack_20 = *puVar1;
+  uStack_1c = puVar1[1];
+  uStack_18 = puVar1[2];
+  uStack_14 = puVar1[3];
+  func_002e9610(*param_1,&uStack_20);
+  return;
+}
+00171a40 [(16, '10008fc4', '1000878c'), (20, '0400ecc5', '0400c88d'), (24, '0400c48d', '0400848c'), (28, '0800edc5', '0800e58d'), (32, '0c00eec5', '0c00e68d')]
+void func_00171a40(int *param_1)
+
+{
+  func_001cfac0(param_1[1],param_1[2],param_1[3],param_1[4],*(u32 *)(*param_1 + 4));
+  return;
+}
+001db850 [(12, '10008f8c', '10008e8c'), (16, '80700d00', '80780d00'), (20, '2170cf01', '2178ee01'), (24, '0000cdad', '0000edad'), (44, '10008f8c', '10008e8c')]
+void func_001db850(int param_1)
+
+{
+  int iVar1;
+  int iVar2;
+  
+  iVar2 = *(int *)(param_1 + 0x18);
+  iVar1 = 0;
+  if (0 < iVar2) {
+    iVar2 = *(int *)(param_1 + 0x10);
+    while( true ) {
+      *(int *)(iVar1 * 4 + iVar2) = iVar1;
+      iVar2 = *(int *)(param_1 + 0x18);
+      iVar1 = iVar1 + 1;
+      if (iVar2 <= iVar1) break;
+      iVar2 = *(int *)(param_1 + 0x10);
+    }
+  }
+  *(int *)(param_1 + 8) = iVar2;
+  return;
+}
+00304db0 [(20, '3f100400', '3f200400'), (28, '24104e00', '24208e00'), (36, 'f07f0e3c', 'f07f023c'), (40, '25104f00', '25208f00'), (44, '2310c201', '23104400')]
+u32 func_00304db0(u64 param_1)
+
+{
+  return 0x7ff00000 -
+         ((u32)((u64)param_1 >> 0x20) & 0x7fffffff | ((u32)param_1 | -(u32)param_1) >> 0x1f) >>
+         0x1f;
+}
+00307fe0 [(4, '2d10c000', '2d78c000'), (20, '3000043c', '1000bfff'), (24, '1000bfff', '3000043c'), (28, 'e87e8424', '2d38e001'), (32, '2d384000', 'e87e8434')]
+void func_00307fe0(u32 param_1,u32 param_2,u32 param_3,u32 param_4)
+
+{
+  u32 auStack_20 [4];
+  
+  auStack_20[0] = param_1;
+  func_003071d0(0x307ee8,auStack_20,param_2,param_3,param_4); asm volatile("" ::: "memory");
+  return;
+}
+002e98b0 [(36, '80700f00', '0100ee25'), (40, '0100ef25', '80780f00'), (44, '2170cd01', 'f807aead'), (48, 'f807afad', '2178ed01'), (56, '8007c4ad', '8007e4ad')]
+void func_002e98b0(int param_1)
+
+{
+  int iVar1;
+  
+  D_01e2bfa4 = D_01e2bfa4 + -1;
+  param_1 = param_1 - D_01e2bfa0;
+  iVar1 = *(int *)(D_01e2bfa0 + 0x7f8) * 4 + D_01e2bfa0;
+  *(int *)(D_01e2bfa0 + 0x7f8) = *(int *)(D_01e2bfa0 + 0x7f8) + 1;
+  *(int *)(iVar1 + 0x780) = param_1 >> 6;
+  return;
+}
+19 disjoint 5-word proposals and full original byte proofs prepared.

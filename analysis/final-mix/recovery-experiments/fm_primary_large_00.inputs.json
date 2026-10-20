@@ -1,0 +1,91 @@
+{
+  "source_sha256": "d29c2901602a7047614ccc1ebaca3dd2a4748cb57602704cdcf7da76cfcb9541",
+  "superseded_failed_source_sha256": null,
+  "main_export_sha256": "a048feba3f72ff96b81797ae5c562d7b42c00e6c702c4f0813ffb07b23ec5145",
+  "rows": [
+    {
+      "address": "00120a20",
+      "size": 716,
+      "export_sha256": "3b03002f2763f3bb6597b38e23c7a4baeb1196b3d0d8a1bdc2dd66e4089d0ed0"
+    },
+    {
+      "address": "00132850",
+      "size": 524,
+      "export_sha256": "9745ca3ed9e9adcf9f813b294c998bf50c77cbdb1441867365a4e6f485d9cb18"
+    },
+    {
+      "address": "0014bb30",
+      "size": 540,
+      "export_sha256": "dbd570b7ff2bfcb88d92e78e5068fc7caa817cd0031e2c8c1c58beae9424acfb"
+    },
+    {
+      "address": "00154558",
+      "size": 648,
+      "export_sha256": "bac7633fa3d151e8284c368bc38914b9c9fc1bbc8aa650aa65e5d8b93486b948"
+    },
+    {
+      "address": "00154f30",
+      "size": 976,
+      "export_sha256": "aa258c2caca8708b6b8183440460e8ddd06d347d52bb1f941d7411937252586c"
+    },
+    {
+      "address": "00156130",
+      "size": 724,
+      "export_sha256": "3d4e4cfe26f04ad16e8d8dabdabcea429740c72f27d4cc764e31b50360cff5d4"
+    },
+    {
+      "address": "001565c0",
+      "size": 704,
+      "export_sha256": "5bc9ffe46d5c2e685161679ce103c89260b1ca267e6f98c60e1ffaf8c0aaac70"
+    },
+    {
+      "address": "00156e48",
+      "size": 540,
+      "export_sha256": "13672e401f92be17448181571387781a3d2c42ad0148687d401baae414ae4c84"
+    },
+    {
+      "address": "00157c88",
+      "size": 636,
+      "export_sha256": "58773bd7ea399becd77a8252d17193016b6ed5aff1151df30be4368ecf7f45a8"
+    },
+    {
+      "address": "001620a8",
+      "size": 772,
+      "export_sha256": "dc4a0539e83996eefa4777bb1ee74f56a0bb10c07378411a811011bc0fc52f2c"
+    },
+    {
+      "address": "001ab890",
+      "size": 516,
+      "export_sha256": "338c2bb81b24b4fab7f61f96b308ea265b6001032eab833759cd4b01d4230147"
+    },
+    {
+      "address": "002298a8",
+      "size": 640,
+      "export_sha256": "e9f07c64421f6b94b554a1e7d47c8dd1d88bc05238e61207bb943c45ca604eec"
+    },
+    {
+      "address": "0022c1f8",
+      "size": 536,
+      "export_sha256": "6ddf479a4a835908d46fb58179afb30289f70f428433b9e67681eba4af92e99a"
+    },
+    {
+      "address": "0023bc58",
+      "size": 836,
+      "export_sha256": "67b613a28fcc4b579a6e15e67e810726473b42b6fa10d00a5418fe8fe70a2d9c"
+    },
+    {
+      "address": "002b4070",
+      "size": 768,
+      "export_sha256": "c272968c0eb8d88d4320265427cf500798e022646916ee4e3f1efc4e83a771c9"
+    },
+    {
+      "address": "00303ff8",
+      "size": 516,
+      "export_sha256": "5a070ab92ca71185ae291222c773a5b24bcc5ac876496fe56dcc89739d66d4f9"
+    }
+  ],
+  "limitations": [
+    "Variadic callee declarations are provisional; exact instruction gates decide acceptance.",
+    "A generated proposal is not a verified source recovery."
+  ]
+}

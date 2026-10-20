@@ -1,0 +1,278 @@
+[
+  {
+    "address": "002fd348",
+    "bytes": 136,
+    "original_range_sha256": "124634880875173f68b201b699e755651742712601be72a9b377b4e9dbe5a1cd",
+    "hex": "d0ffbd2736000f3c1800b3ff0000b0ff0800b1ff1000b2ff2000bfff485cee8d4801d28d100040122d9880000400518effff312608002006807811002178f2010800f02500000f8e09f8e001ffff3126fcff2106fcff10260000528ef4ff40560400518e36000f3c485ce48d3c008f8c0300e0110000000009f8e00100000000a800040c2d206002",
+    "words": [
+      {
+        "address": "002fd348",
+        "word": "27bdffd0"
+      },
+      {
+        "address": "002fd34c",
+        "word": "3c0f0036"
+      },
+      {
+        "address": "002fd350",
+        "word": "ffb30018"
+      },
+      {
+        "address": "002fd354",
+        "word": "ffb00000"
+      },
+      {
+        "address": "002fd358",
+        "word": "ffb10008"
+      },
+      {
+        "address": "002fd35c",
+        "word": "ffb20010"
+      },
+      {
+        "address": "002fd360",
+        "word": "ffbf0020"
+      },
+      {
+        "address": "002fd364",
+        "word": "8dee5c48"
+      },
+      {
+        "address": "002fd368",
+        "word": "8dd20148"
+      },
+      {
+        "address": "002fd36c",
+        "word": "12400010"
+      },
+      {
+        "address": "002fd370",
+        "word": "0080982d"
+      },
+      {
+        "address": "002fd374",
+        "word": "8e510004"
+      },
+      {
+        "address": "002fd378",
+        "word": "2631ffff"
+      },
+      {
+        "address": "002fd37c",
+        "word": "06200008"
+      },
+      {
+        "address": "002fd380",
+        "word": "00117880"
+      },
+      {
+        "address": "002fd384",
+        "word": "01f27821"
+      },
+      {
+        "address": "002fd388",
+        "word": "25f00008"
+      },
+      {
+        "address": "002fd38c",
+        "word": "8e0f0000"
+      },
+      {
+        "address": "002fd390",
+        "word": "01e0f809"
+      },
+      {
+        "address": "002fd394",
+        "word": "2631ffff"
+      },
+      {
+        "address": "002fd398",
+        "word": "0621fffc"
+      },
+      {
+        "address": "002fd39c",
+        "word": "2610fffc"
+      },
+      {
+        "address": "002fd3a0",
+        "word": "8e520000"
+      },
+      {
+        "address": "002fd3a4",
+        "word": "5640fff4"
+      },
+      {
+        "address": "002fd3a8",
+        "word": "8e510004"
+      },
+      {
+        "address": "002fd3ac",
+        "word": "3c0f0036"
+      },
+      {
+        "address": "002fd3b0",
+        "word": "8de45c48"
+      },
+      {
+        "address": "002fd3b4",
+        "word": "8c8f003c"
+      },
+      {
+        "address": "002fd3b8",
+        "word": "11e00003"
+      },
+      {
+        "address": "002fd3bc",
+        "word": "00000000"
+      },
+      {
+        "address": "002fd3c0",
+        "word": "01e0f809"
+      },
+      {
+        "address": "002fd3c4",
+        "word": "00000000"
+      },
+      {
+        "address": "002fd3c8",
+        "word": "0c0400a8",
+        "direct_target": "001002a0",
+        "opcode": "jal"
+      },
+      {
+        "address": "002fd3cc",
+        "word": "0260202d"
+      }
+    ]
+  },
+  {
+    "address": "001002a0",
+    "bytes": 8,
+    "original_range_sha256": "d44168d850be4f1d63d84a790453144b7193bc6363f0038c60ede6a9711ec4d7",
+    "hex": "1a3d0c0800000000",
+    "words": [
+      {
+        "address": "001002a0",
+        "word": "080c3d1a",
+        "direct_target": "0030f468",
+        "opcode": "j"
+      },
+      {
+        "address": "001002a4",
+        "word": "00000000"
+      }
+    ]
+  },
+  {
+    "address": "0030f468",
+    "bytes": 40,
+    "original_range_sha256": "b57963182130d12c4a27b254bb56ac5f6dae8a72fb28ac7ba87d4e545879d1d3",
+    "hex": "e0ffbd270000b0ff1000bfffea3c0c0c2d8080002d2000021000bfdf0000b0df90140c082000bd27",
+    "words": [
+      {
+        "address": "0030f468",
+        "word": "27bdffe0"
+      },
+      {
+        "address": "0030f46c",
+        "word": "ffb00000"
+      },
+      {
+        "address": "0030f470",
+        "word": "ffbf0010"
+      },
+      {
+        "address": "0030f474",
+        "word": "0c0c3cea",
+        "direct_target": "0030f3a8",
+        "opcode": "jal"
+      },
+      {
+        "address": "0030f478",
+        "word": "0080802d"
+      },
+      {
+        "address": "0030f47c",
+        "word": "0200202d"
+      },
+      {
+        "address": "0030f480",
+        "word": "dfbf0010"
+      },
+      {
+        "address": "0030f484",
+        "word": "dfb00000"
+      },
+      {
+        "address": "0030f488",
+        "word": "080c1490",
+        "direct_target": "00305240",
+        "opcode": "j"
+      },
+      {
+        "address": "0030f48c",
+        "word": "27bd0020"
+      }
+    ]
+  },
+  {
+    "address": "0030f3a8",
+    "bytes": 8,
+    "original_range_sha256": "121e3f52ee926ebcdc3c5faa6bfb59db9715194d226de327528a9fc787c3b516",
+    "hex": "3c450c0800000000",
+    "words": [
+      {
+        "address": "0030f3a8",
+        "word": "080c453c",
+        "direct_target": "003114f0",
+        "opcode": "j"
+      },
+      {
+        "address": "0030f3ac",
+        "word": "00000000"
+      }
+    ]
+  },
+  {
+    "address": "002fe0a0",
+    "bytes": 32,
+    "original_range_sha256": "cddbef802988db2b51571983a0ddb77b8c03b93df63200cb3bb189289035ef5f",
+    "hex": "f0ffbd272d2880000000bfff36000f3c485ce48d0000bfdf06f80b081000bd27",
+    "words": [
+      {
+        "address": "002fe0a0",
+        "word": "27bdfff0"
+      },
+      {
+        "address": "002fe0a4",
+        "word": "0080282d"
+      },
+      {
+        "address": "002fe0a8",
+        "word": "ffbf0000"
+      },
+      {
+        "address": "002fe0ac",
+        "word": "3c0f0036"
+      },
+      {
+        "address": "002fe0b0",
+        "word": "8de45c48"
+      },
+      {
+        "address": "002fe0b4",
+        "word": "dfbf0000"
+      },
+      {
+        "address": "002fe0b8",
+        "word": "080bf806",
+        "direct_target": "002fe018",
+        "opcode": "j"
+      },
+      {
+        "address": "002fe0bc",
+        "word": "27bd0010"
+      }
+    ]
+  }
+]

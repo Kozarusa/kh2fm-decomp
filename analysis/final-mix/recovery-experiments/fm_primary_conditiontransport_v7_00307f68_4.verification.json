@@ -1,0 +1,18 @@
+{
+  "source_sha256": "c61dad3b269f1320ac1647c98f0fbe215ffa53a9ac2b8586d632b7e71ee43d6f",
+  "source": "analysis/final-mix/recovery-experiments/fm_primary_conditiontransport_v7_00307f68_4.cpp",
+  "range_override": null,
+  "rows": [
+    {
+      "address": "00307f68",
+      "symbol": "_Z13func_00307f68jji",
+      "compiled_size": 44,
+      "target_size": 40,
+      "ghidra_body_size": 40,
+      "boundary_agreement": true,
+      "exact_match": false,
+      "compiled_hex": "f0ffbd272d20c0000000bfff0400c0100000bfdfcc1b0c0c000000000000bfdf010002240800e0031000bd27",
+      "target_hex": "f0ffbd272d20c000030080100000bfffcc1b0c0c000000000000bfdf010002240800e0031000bd27"
+    }
+  ]
+}

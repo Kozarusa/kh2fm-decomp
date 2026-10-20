@@ -1,0 +1,28 @@
+00135d00: compiled 132 bytes, target 116 bytes, exact=False
+Differing words: 13. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   00135d00: 8c8e000c  lw	t6,12(a0)                                     | 00135d00: 8c8e000c  lw	t6,12(a0)
+!! 00135d04: 11c00019  beqz	t6,0x135d6c                                 | 00135d04: 11c0001d  beqz	t6,135d7c <func_00135d00+0x7c>
+   00135d08: 0000102d  move	v0,zero                                     | 00135d08: 0000102d  move	v0,zero
+   00135d0c: 04a1000a  bgez	a1,0x135d38                                 | 00135d0c: 04a1000a  bgez	a1,135d38 <func_00135d00+0x38>
+   00135d10: 00ae782a  slt	t7,a1,t6                                     | 00135d10: 00ae782a  slt	t7,a1,t6
+   00135d14: 00ae2821  addu	a1,a1,t6                                    | 00135d14: 00ae2821  addu	a1,a1,t6
+   00135d2c: 04a2fffa  bltzl	a1,0x135d18                                | 00135d2c: 04a2fffa  bltzl	a1,135d18 <func_00135d00+0x18>
+   00135d30: 00ae2821  addu	a1,a1,t6                                    | 00135d30: 00ae2821  addu	a1,a1,t6
+   00135d34: 00ae782a  slt	t7,a1,t6                                     | 00135d34: 00ae782a  slt	t7,a1,t6
+!! 00135d38: 15e0000a  bnez	t7,0x135d64                                 | 00135d38: 15e0000e  bnez	t7,135d74 <func_00135d00+0x74>
+   00135d3c: 00057880  sll	t7,a1,0x2                                    | 00135d3c: 00057880  sll	t7,a1,0x2
+   00135d40: 00ae2823  subu	a1,a1,t6                                    | 00135d40: 00ae2823  subu	a1,a1,t6
+   00135d44: 00ae782a  slt	t7,a1,t6                                     | 00135d44: 00ae782a  slt	t7,a1,t6
+!! 00135d58: 51e0fffa  beqzl	t7,0x135d44                                | 00135d48: 15e0000a  bnez	t7,135d74 <func_00135d00+0x74>
+!! 00135d5c: 00ae2823  subu	a1,a1,t6                                    | 00135d4c: 00057880  sll	t7,a1,0x2
+!! 00135d60: 00057880  sll	t7,a1,0x2                                    | 00135d50: 00ae2823  subu	a1,a1,t6
+!! 00135d64: 01e47821  addu	t7,t7,a0                                    | 00135d54: 00ae782a  slt	t7,a1,t6
+!! 00135d68: 8de20010  lw	v0,16(t7)                                     | 00135d68: 51e0fffa  beqzl	t7,135d54 <func_00135d00+0x54>
+!! 00135d6c: 03e00008  jr	ra                                            | 00135d6c: 00ae2823  subu	a1,a1,t6
+!! 00135d70: 00000000  nop                                              | 00135d70: 00057880  sll	t7,a1,0x2
+!!                                                                      | 00135d74: 01e47821  addu	t7,t7,a0
+!!                                                                      | 00135d78: 8de20010  lw	v0,16(t7)
+!!                                                                      | 00135d7c: 03e00008  jr	ra
+!!                                                                      | 00135d80: 00000000  nop

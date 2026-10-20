@@ -1,0 +1,8 @@
+Exact probe matches: 1/1
+Detailed proof: analysis/final-mix/recovery-experiments/queue-run-20261009/recovery-c/recovery_c_00103480_8e060c45_v1.verification.json
+recovery-experiments/recovery_c_00103480_8e060c45_v1/probe.cpp: In function 
+   `void func_00103480()':
+recovery-experiments/recovery_c_00103480_8e060c45_v1/probe.cpp:7: warning: assignment
+    of negative value `-1' to `u32'
+recovery-experiments/recovery_c_00103480_8e060c45_v1/probe.cpp:7: warning: argument
+    of negative value `-1' to `unsigned int'

@@ -1,0 +1,27 @@
+002a7678: compiled 92 bytes, target 92 bytes, exact=False
+Differing words: 2. First difference at instruction 1 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   002a7678: 27bdfff0  addiu	sp,sp,-16                                  | 002a7678: 27bdfff0  addiu	sp,sp,-16
+!! 002a767c: ffbf0008  sd	ra,8(sp)                                      | 002a767c: ffb00000  sd	s0,0(sp)
+!! 002a7680: ffb00000  sd	s0,0(sp)                                      | 002a7680: ffbf0008  sd	ra,8(sp)
+   002a7684: 0c040d5c  jal	0x103570                                     | 002a7684: 0c040d5c  jal	103570 <func_00103570>
+   002a7688: 00000000  nop                                              | 002a7688: 00000000  nop
+   002a768c: 0040282d  move	a1,v0                                       | 002a768c: 0040282d  move	a1,v0
+   002a7690: 0c0418f0  jal	0x1063c0                                     | 002a7690: 0c0418f0  jal	1063c0 <func_001063c0>
+   002a7694: 24040104  li	a0,260                                        | 002a7694: 24040104  li	a0,260
+   002a7698: 3c0f0036  lui	t7,0x36                                      | 002a7698: 3c0f0036  lui	t7,0x36
+   002a769c: 0c040d5c  jal	0x103570                                     | 002a769c: 0c040d5c  jal	103570 <func_00103570>
+   002a76a0: ade2f600  sw	v0,-2560(t7)   ; = D_0035f600                 | 002a76a0: ade2f600  sw	v0,-2560(t7)   ; = D_0035f600
+   002a76a4: 0040282d  move	a1,v0                                       | 002a76a4: 0040282d  move	a1,v0
+   002a76a8: 0c0418f0  jal	0x1063c0                                     | 002a76a8: 0c0418f0  jal	1063c0 <func_001063c0>
+   002a76ac: 24042350  li	a0,9040                                       | 002a76ac: 24042350  li	a0,9040
+   002a76b0: 0040802d  move	s0,v0                                       | 002a76b0: 0040802d  move	s0,v0
+   002a76b4: 0c0c9112  jal	0x324448                                     | 002a76b4: 0c0c9112  jal	324448 <func_00324448>
+   002a76b8: 0040202d  move	a0,v0                                       | 002a76b8: 0040202d  move	a0,v0
+   002a76bc: 3c0f0036  lui	t7,0x36                                      | 002a76bc: 3c0f0036  lui	t7,0x36
+   002a76c0: dfbf0008  ld	ra,8(sp)                                      | 002a76c0: dfbf0008  ld	ra,8(sp)
+   002a76c4: adf0f604  sw	s0,-2556(t7)   ; = D_0035f604                 | 002a76c4: adf0f604  sw	s0,-2556(t7)   ; = D_0035f604
+   002a76c8: dfb00000  ld	s0,0(sp)                                      | 002a76c8: dfb00000  ld	s0,0(sp)
+   002a76cc: 03e00008  jr	ra                                            | 002a76cc: 03e00008  jr	ra
+   002a76d0: 27bd0010  addiu	sp,sp,16                                   | 002a76d0: 27bd0010  addiu	sp,sp,16

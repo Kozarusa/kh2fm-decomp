@@ -1,0 +1,5 @@
+#include "../common/types.h"
+typedef unsigned int Quad __attribute__((mode(TI)));
+union ScriptCell{u32 word;f32 value;Quad*quad;u8*object;};
+extern "C" u32 D_00347d64;extern "C" void func_001398d0(s32);extern "C" void func_001397d8(s32);
+void func_00138140(){func_001398d0(13);func_001397d8(13);register volatile u32*group asm("$15")=(u32*)D_00347d64;register u32 one asm("$12")=1;asm("":"+r"(one));group[13]=0;group[8]=one;group[12]=0;register volatile u32*next asm("$14")=(u32*)D_00347d64;next[2672]=one;next[2674]=0;next[2673]=0;}

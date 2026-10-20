@@ -1,0 +1,22 @@
+0021f5d8: compiled 68 bytes, target 72 bytes, exact=False
+Differing words: 6. First difference at instruction 12 (0-based).
+
+ORIGINAL                                                                | COMPILED
+   0021f5d8: 27bdfff0  addiu	sp,sp,-16                                  | 0021f5d8: 27bdfff0  addiu	sp,sp,-16
+   0021f5dc: 3c0f01da  lui	t7,0x1da                                     | 0021f5dc: 3c0f01da  lui	t7,0x1da
+   0021f5e0: ffb00000  sd	s0,0(sp)                                      | 0021f5e0: ffb00000  sd	s0,0(sp)
+   0021f5e4: ffbf0008  sd	ra,8(sp)                                      | 0021f5e4: ffbf0008  sd	ra,8(sp)
+   0021f5e8: 0080802d  move	s0,a0                                       | 0021f5e8: 0080802d  move	s0,a0
+   0021f5ec: 8deee6e0  lw	t6,-6432(t7)   ; = D_01d9e6e0                 | 0021f5ec: 8deee6e0  lw	t6,-6432(t7)   ; = D_01d9e6e0
+   0021f5f0: 24840040  addiu	a0,a0,64                                   | 0021f5f0: 24840040  addiu	a0,a0,64
+   0021f5f4: 240f0002  li	t7,2                                          | 0021f5f4: 240f0002  li	t7,2
+   0021f5f8: 0c0bd000  jal	0x2f4000                                     | 0021f5f8: 0c0bd000  jal	2f4000 <func_002f4000>
+   0021f5fc: a1cf00a8  sb	t7,168(t6)                                    | 0021f5fc: a1cf00a8  sb	t7,168(t6)
+   0021f600: 3c0f0037  lui	t7,0x37                                      | 0021f600: 3c0f0037  lui	t7,0x37
+   0021f604: dfbf0008  ld	ra,8(sp)                                      | 0021f604: dfbf0008  ld	ra,8(sp)
+!! 0021f608: 25ef0b6c  addiu	t7,t7,2924   ; = D_00370b6c                | 0021f608: c5e00b6c  lwc1	$f0,2924(t7)   ; = D_00370b6c
+!! 0021f60c: c5e00000  lwc1	$f0,0(t7)                                   | 0021f60c: e60000ac  swc1	$f0,172(s0)
+!! 0021f610: e60000ac  swc1	$f0,172(s0)                                 | 0021f610: dfb00000  ld	s0,0(sp)
+!! 0021f614: dfb00000  ld	s0,0(sp)                                      | 0021f614: 03e00008  jr	ra
+!! 0021f618: 03e00008  jr	ra                                            | 0021f618: 27bd0010  addiu	sp,sp,16
+!! 0021f61c: 27bd0010  addiu	sp,sp,16                                   | 

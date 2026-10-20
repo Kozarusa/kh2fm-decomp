@@ -1,0 +1,48 @@
+# Target packet 0027ead0
+
+- Range: `0027ead0`..`0027eb0c`, **60 bytes = 15 instructions**. This size is the acceptance size.
+- Layout name: `FUN_0027ead0`
+- Registry names for this address: none
+- Queue: state `leased`, queue `general`, attempts 1, priority 2
+
+## Callees
+
+- `0028da70` registry: `Tz::Select::SetSequence(...)`
+  - accepted sources that already call it (copy their declaration): `fm_primary_dependencyfamily_recovered_00272a00.cpp`, `fm_primary_dependencyfamily_recovered_00272a70.cpp`, `fm_primary_oneword_recovered_00232510.cpp`, `fm_primary_oneword_recovered_0023a9c0.cpp`, `fm_primary_oneword_recovered_0023f8c8.cpp`
+
+## Original instructions (absolute addresses decoded; low halves are signed)
+
+```
+0027ead0: 27bdfff0  addiu	sp,sp,-16
+0027ead4: 3c0f0036  lui	t7,0x36
+0027ead8: ffbf0000  sd	ra,0(sp)
+0027eadc: 240e0006  li	t6,6
+0027eae0: 3c0d0036  lui	t5,0x36
+0027eae4: 81ecf24c  lb	t4,-3508(t7)   ; = D_0035f24c
+0027eae8: 8da4f244  lw	a0,-3516(t5)   ; = D_0035f244
+0027eaec: 018e6018  mult	t4,t4,t6
+0027eaf0: dfbf0000  ld	ra,0(sp)
+0027eaf4: 3c0f0037  lui	t7,0x37
+0027eaf8: 25ef4050  addiu	t7,t7,16464   ; = D_00374050
+0027eafc: 018f6021  addu	t4,t4,t7
+0027eb00: 85850004  lh	a1,4(t4)
+0027eb04: 080a369c  j	0x28da70
+0027eb08: 27bd0010  addiu	sp,sp,16
+```
+
+## Ghidra pseudocode (advisory only: signatures, widths and returns are often wrong)
+
+Signature: `undefined FUN_0027ead0(void)`
+
+```c
+void FUN_0027ead0(void)
+
+{
+  FUN_0028da70(DAT_0035f244,u_fhji_00374054[DAT_0035f24c * 3]);
+  return;
+}
+```
+
+## Earlier attempts (newest first)
+
+- none found
