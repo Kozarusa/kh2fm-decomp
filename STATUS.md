@@ -81,6 +81,6 @@ Historical paths written as `analysis/...` resolve under Codex. Paths written as
 
 `archive/2026-10-12-housekeeping/` holds unmodified copies of the documents that were rewritten or trimmed on 2026-10-12, with `SHA256SUMS.txt`. Current docs refer to them as history only.
 
-`archive/2026-10-19-housekeeping/` holds the superseded root `PROGRESS.md` and `SESSION_STATUS.md`, plus the superseded "October 16 handoff" paragraph of this page, stray copies of five `orch1_rec*.cpp` sources (byte-identical to their `orch-shift1/recNN/` originals) and two orchestrator preflight logs, with `SHA256SUMS.txt`.
+`archive/2026-10-19-housekeeping/` holds the superseded root `PROGRESS.md` and `SESSION_STATUS.md`, plus the superseded "October 16 handoff" paragraph of this page, a stray earlier draft of `orch1_rec116_001dcfb0_v1.cpp` (the verified, submitted version lives in `orch-shift1/rec116/`), stray copies of five `orch1_rec*.cpp` sources (byte-identical to their `orch-shift1/recNN/` originals) and two orchestrator preflight logs, with `SHA256SUMS.txt`.
 
 
