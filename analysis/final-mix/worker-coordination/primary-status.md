@@ -1,12 +1,12 @@
 # Primary worker status — 2026-10-08
 
-Accepted: 6,798 equal-size exact matches, 6,802 C++ ranges, 4,581 fallback ranges,
-3,303 staged inputs, and four unchanged padding cases. Full ELF equality, provenance,
-objdiff, all 263 recovery bundles, all three switch batches, finalization, warning audit and the
+Accepted: 6,800 equal-size exact matches, 6,804 C++ ranges, 4,579 fallback ranges,
+3,305 staged inputs, and four unchanged padding cases. Full ELF equality, provenance,
+objdiff, all 264 recovery bundles, all three switch batches, finalization, warning audit and the
 current checkpoint passed.
 
-Gate from AGENTS: `python Public/tools/kh2-audit/verify_fm_primary_orchfd_checkpoint.py`.
-Manifest: `analysis/final-mix/primary-orchfd-checkpoint-2026-10-08.json`.
+Gate from AGENTS: `python Public/tools/kh2-audit/verify_fm_primary_orchfe_checkpoint.py`.
+Manifest: `analysis/final-mix/primary-orchfe-checkpoint-2026-10-08.json`.
 Previous accepted build, registry, layout and original linker helper are preserved in
 `accepted-snapshots/2026-10-08-before-workerbacklog/`. Historical manifests are unchanged.
 
@@ -452,3 +452,5 @@ orchfb accepts 4 complete ranges (002b2840, 002b2d48, 002b3ae8, 002b4f50), total
 orchfc accepts 5 complete ranges (002b4fb8, 002b5078, 002b56e8, 002b5768, 002b6338), totaling 524 instruction bytes. Independent curated probes, full build, cumulative bundles and switch receipts, finalization, warning audit and checkpoint pass. Five-hour queue run continues.
 
 orchfd accepts 1 complete ranges (002b6ab8), totaling 36 instruction bytes. Independent curated probes, full build, cumulative bundles and switch receipts, finalization, warning audit and checkpoint pass. Five-hour queue run continues.
+
+orchfe accepts 2 complete ranges (002b9b78, 002b9e80), totaling 164 instruction bytes. Independent curated probes, full build, cumulative bundles and switch receipts, finalization, warning audit and checkpoint pass. Five-hour queue run continues.

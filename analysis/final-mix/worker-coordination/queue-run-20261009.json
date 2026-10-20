@@ -2811,6 +2811,18 @@
       "inputs": 3303,
       "accepted_utc": "2026-10-20T01:44:08.516652+00:00",
       "checkpoint": "primary-orchfd-checkpoint-2026-10-08.json"
+    },
+    {
+      "phase": "orchfe",
+      "addresses": [
+        "002b9b78",
+        "002b9e80"
+      ],
+      "instruction_bytes": 164,
+      "exact_matches": 6800,
+      "inputs": 3305,
+      "accepted_utc": "2026-10-20T03:12:43.175823+00:00",
+      "checkpoint": "primary-orchfe-checkpoint-2026-10-08.json"
     }
   ],
   "interruption": {

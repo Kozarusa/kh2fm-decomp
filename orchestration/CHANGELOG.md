@@ -171,3 +171,5 @@ One line per published batch (RECIPES O6). Earlier batches are listed in `analys
 
 - orchfb: +4 functions (002b2840, 002b2d48, 002b3ae8, 002b4f50), 420 instruction bytes; exact 6792, fallback 4587. rec187 independently reviewed; all independent probes, MATCHED!, both publish gates, 261 bundles and final full preflight passed.
 - orchfc: +5 functions (002b4fb8, 002b5078, 002b56e8, 002b5768, 002b6338), 524 instruction bytes; exact 6797, fallback 4582. rec188 independently reviewed; all independent probes, MATCHED!, both publish gates, 262 bundles and final full preflight passed.
+- orchfd: +1 function (002b6ab8), 36 instruction bytes; exact 6798, fallback 4581. nm36 independently reviewed; probes, MATCHED!, both publish gates, 263 bundles and full preflight passed.
+- orchfe: +2 functions (002b9b78, 002b9e80), 164 instruction bytes; exact 6800, fallback 4579. rec191 reviewed by the orchestrator (spot-check diff 0); probes, MATCHED!, both publish gates, 264 bundles and full preflight passed. rec190 submissions 002b81ec and 002b8214 returned to the queue (4-mod-8 alignment diff, missing why comment).

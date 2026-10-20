@@ -15,10 +15,10 @@ It targets the same executable as [GovanifY/kh2](https://github.com/GovanifY/kh2
 
 | Measure | Value |
 | --- | ---: |
-| Functions matching the original instruction for instruction | 6,798 |
+| Functions matching the original instruction for instruction | 6,800 |
 | Declared code ranges | 11,383 |
-| Accepted share of declared code bytes | 19.7% (392,792 of 1,989,428) |
-| Original-byte fallback ranges remaining | 4,581 (4,585 by byte coverage, counting the 4 padding cases) |
+| Accepted share of declared code bytes | 19.8% (392,956 of 1,989,428) |
+| Original-byte fallback ranges remaining | 4,579 (4,583 by byte coverage, counting the 4 padding cases) |
 | Script payloads rebuilt byte-exact | 2,503 of 2,503 |
 
 Whole-ELF equality holds, but the build starts from the original ELF and swaps in the registered C++ ranges, so this is not yet a source-only rebuild. Data and tables, IOP modules, overlays and vector-unit programs are not covered, and the byte share above is not a whole-game completion figure. Types, names, boundaries and runtime behavior are provisional. The live numbers are in [STATUS.md](STATUS.md).

@@ -1138,3 +1138,8 @@ Only the orchestrator writes this file. At step 0 of a new shift, move the lines
 2026-10-20T01:49:00Z | spawn | rec190 and rec191 inherited workers /root/rec190,/root/rec191 started at20%five-hour; each K6budget8strictR7 general recovery.
 2026-10-20T01:57:00Z | report | rec191 finished: submitted002b9b78,002b9e80 exact164bytes; four blockers002b81b8/002b82f8/002b8984/002b99a0; K6budget8strictR7 reported clean. Review pending; rec190 active.
 2026-10-20T02:00:00Z | report | rec190 finished: submitted002b81ec,002b8214 exact80bytes; four blockers002b740c/002b84b8/002b8a70/002b9bd0; K6budget8strictR7 reported clean. Both workers closed; review pending.
+2026-10-20T03:09:10Z | review | rec190 verdict DO NOT MERGE reject 002b81ec,002b8214 spot 002b81ec Differing words 10 (4-mod-8 leading nop); missing why comment
+2026-10-20T03:09:10Z | review | rec191 verdict MERGE merge 002b9b78,002b9e80 spot 002b9b78 ok
+2026-10-20T03:09:10Z | resolve-reject | 002b81ec,002b8214 spot-check diff nonzero evidence rec190/REVIEW.md
+2026-10-20T03:10:55Z | integrate-start | orchfe after orchfd addresses 002b9b78,002b9e80
+2026-10-20T03:13:21Z | bookkeeping | orchfe STATUS/CHANGELOG/HANDOFF/ORCHESTRATION/README reconciled; exact6800 fallback4579 bundles264

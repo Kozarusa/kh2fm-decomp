@@ -164,8 +164,8 @@ WP directories: `C:\Users\KoZa\Documents\AGENTS\Codex\analysis\final-mix\recover
 | rec188 | General recovery K6 budget8 strictR7 | GPT-6 inherited | rec188.md | rec185/186 closure and eligible publication, fresh preflight/usage | orch-shift1/rec188/ | integrated orchfc; 002b5108 blocked register-allocation |
 | rec189 | General recovery K6 budget8 strictR7 | GPT-6 inherited | rec189.md | rec188 integrated orchfc, fresh preflight/usage | orch-shift1/rec189/ | independently closed zero-submission at90% stop; 002b6ab8 bestv5 five words, v8 hypothesis retained |
 | nm36 | Explicit frame-restoration retry K1 budget8 strictR7 | GPT-6 inherited | nm36.md | rec189 independently closed, orchfc published, fresh preflight/usage | orch-shift1/nm36/ | integrated orchfd; 002b6ab8 v8 exact36bytes from accepted002b6b84 pattern |
-| rec190 | General recovery K6 budget8 strictR7 | GPT-6 inherited | rec190.md | nm36 integrated orchfd, fresh preflight/usage | orch-shift1/rec190/ | ready |
-| rec191 | General recovery K6 budget8 strictR7 | GPT-6 inherited | rec191.md | nm36 integrated orchfd, fresh preflight/usage | orch-shift1/rec191/ | ready |
+| rec190 | General recovery K6 budget8 strictR7 | GPT-6 inherited | rec190.md | nm36 integrated orchfd, fresh preflight/usage | orch-shift1/rec190/ | reviewed: 2 submissions returned to queue |
+| rec191 | General recovery K6 budget8 strictR7 | GPT-6 inherited | rec191.md | nm36 integrated orchfd, fresh preflight/usage | orch-shift1/rec191/ | integrated orchfe |
 | rec178 | General queue K6 budget8 strictR7 | GPT-6 inherited | rec178.md | nm32/nm33 closure and eligible integration, fresh preflight/usage | orch-shift1/rec178/ | integrated orchew |
 | rec179 | General queue K6 budget8 strictR7 | GPT-6 inherited | rec179.md | nm32/nm33 closure and eligible integration, fresh preflight/usage | orch-shift1/rec179/ | integrated orchew |
 | nm33 | Isolated signed-result retry K1 budget8 strictR7 | GPT-6 inherited | nm33.md | rec175 review and rec176/177 closure/publication, fresh preflight/usage | orch-shift1/nm33/ | integrated orchev |

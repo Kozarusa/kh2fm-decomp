@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" role="img" aria-label="Code coverage treemap: 392,792 of 1,989,428 declared code bytes recovered">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" role="img" aria-label="Code coverage treemap: 392,956 of 1,989,428 declared code bytes recovered">
 <rect width="1200" height="680" fill="#0d1117"/>
-<text x="8" y="22" fill="#e6edf3" font-family="sans-serif" font-size="15">SLPM_666.75 declared code by 64 KiB address block: <tspan fill="#2da44e">green</tspan> = accepted C++, <tspan fill="#8b949e">grey</tspan> = original-byte fallback (19.7% of 1,989,428 bytes accepted)</text>
+<text x="8" y="22" fill="#e6edf3" font-family="sans-serif" font-size="15">SLPM_666.75 declared code by 64 KiB address block: <tspan fill="#2da44e">green</tspan> = accepted C++, <tspan fill="#8b949e">grey</tspan> = original-byte fallback (19.8% of 1,989,428 bytes accepted)</text>
 <g><title>00120000: 2.8% of 64,080 bytes accepted</title>
 <rect x="0.0" y="34.0" width="153.5" height="161.2" fill="#0d1117"/>
 <rect x="1.5" y="35.5" width="79.3" height="70.7" fill="#57606a" stroke="#0d1117" stroke-width="0.4"><title>00129c38 (15088 bytes)</title></rect>
@@ -892,7 +892,7 @@
 <rect x="149.3" y="671.4" width="2.7" height="1.1" fill="#2da44e" stroke="#0d1117" stroke-width="0.4"><title>0029ee30 (8 bytes)</title></rect>
 <text x="5.0" y="530.4" fill="#e6edf3" font-family="monospace" font-size="11" stroke="#0d1117" stroke-width="2.5" paint-order="stroke">00290000 16%</text>
 </g>
-<g><title>002b0000: 22.0% of 62,632 bytes accepted</title>
+<g><title>002b0000: 22.3% of 62,632 bytes accepted</title>
 <rect x="153.5" y="34.0" width="150.1" height="161.1" fill="#0d1117"/>
 <rect x="155.0" y="35.5" width="32.0" height="22.4" fill="#57606a" stroke="#0d1117" stroke-width="0.4"><title>002b8c78 (1932 bytes)</title></rect>
 <rect x="187.0" y="35.5" width="20.2" height="22.4" fill="#57606a" stroke="#0d1117" stroke-width="0.4"><title>002b3440 (1220 bytes)</title></rect>
@@ -1088,7 +1088,7 @@
 <rect x="238.2" y="129.9" width="5.6" height="6.1" fill="#2da44e" stroke="#0d1117" stroke-width="0.4"><title>002bc188 (92 bytes)</title></rect>
 <rect x="238.2" y="136.0" width="5.6" height="6.1" fill="#57606a" stroke="#0d1117" stroke-width="0.4"><title>002bd7d8 (92 bytes)</title></rect>
 <rect x="238.2" y="142.1" width="5.6" height="5.9" fill="#2da44e" stroke="#0d1117" stroke-width="0.4"><title>002b7d5c (88 bytes)</title></rect>
-<rect x="238.2" y="148.0" width="5.6" height="5.9" fill="#57606a" stroke="#0d1117" stroke-width="0.4"><title>002b9b78 (88 bytes)</title></rect>
+<rect x="238.2" y="148.0" width="5.6" height="5.9" fill="#2da44e" stroke="#0d1117" stroke-width="0.4"><title>002b9b78 (88 bytes)</title></rect>
 <rect x="238.2" y="153.9" width="5.6" height="5.9" fill="#2da44e" stroke="#0d1117" stroke-width="0.4"><title>002bb2b8 (88 bytes)</title></rect>
 <rect x="238.2" y="159.7" width="5.6" height="5.9" fill="#57606a" stroke="#0d1117" stroke-width="0.4"><title>002bd1c0 (88 bytes)</title></rect>
 <rect x="238.2" y="165.6" width="5.6" height="5.6" fill="#2da44e" stroke="#0d1117" stroke-width="0.4"><title>002b64d8 (84 bytes)</title></rect>
@@ -1112,7 +1112,7 @@
 <rect x="243.8" y="146.4" width="5.5" height="5.4" fill="#57606a" stroke="#0d1117" stroke-width="0.4"><title>002beea8 (80 bytes)</title></rect>
 <rect x="243.8" y="151.8" width="5.5" height="5.4" fill="#57606a" stroke="#0d1117" stroke-width="0.4"><title>002bfaf0 (80 bytes)</title></rect>
 <rect x="243.8" y="157.2" width="5.5" height="5.4" fill="#57606a" stroke="#0d1117" stroke-width="0.4"><title>002bfb40 (80 bytes)</title></rect>
-<rect x="243.8" y="162.6" width="5.5" height="5.2" fill="#57606a" stroke="#0d1117" stroke-width="0.4"><title>002b9e80 (76 bytes)</title></rect>
+<rect x="243.8" y="162.6" width="5.5" height="5.2" fill="#2da44e" stroke="#0d1117" stroke-width="0.4"><title>002b9e80 (76 bytes)</title></rect>
 <rect x="243.8" y="167.8" width="5.5" height="5.2" fill="#2da44e" stroke="#0d1117" stroke-width="0.4"><title>002bac08 (76 bytes)</title></rect>
 <rect x="243.8" y="173.0" width="5.5" height="5.2" fill="#2da44e" stroke="#0d1117" stroke-width="0.4"><title>002bb5a8 (76 bytes)</title></rect>
 <rect x="243.8" y="178.1" width="5.5" height="5.2" fill="#57606a" stroke="#0d1117" stroke-width="0.4"><title>002bbe80 (76 bytes)</title></rect>

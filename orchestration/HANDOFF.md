@@ -1,5 +1,9 @@
 # Orchestrator handoff
 
+## Published orchfe transaction — 2026-10-20
+
+After the forced stop of orchestrator gpt6-orch-oct19-retry, lock holder cld-orch (stale lock replaced by the user's direction) reviewed rec190 and rec191. rec191 submissions 002b9b78 (88 bytes) and 002b9e80 (76 bytes) passed the spot-check diff (0 differing words), independent probes, full acceptance (MATCHED!, 264 recovery bundles, 3 switch receipts), both publish gates and full preflight: exact 6,800, C++ 6,804, fallback 4,579, inputs 3,305. rec190 submissions 002b81ec and 002b8214 were returned to the queue: kh2w.py diff shows 10 differing words (4-mod-8 address, leading alignment nop in the probe ELF) and the argumentArea asm lacks a why: comment. The same alignment blocker appears in the 002b740c report. Needs the user: Docker Desktop and WSL were started on the user's explicit yes; root-level orch1_rec116_001dcfb0_v1.cpp differs from orch-shift1/rec116/ and was left in place.
+
 ## Published orchfd transaction — 2026-10-20
 
 The separately numbered nm36 retry recovered 002b6ab8 in v8 by isolating accepted 002b6b84 explicit frame restoration. Independent review approved the 36-byte source. Full cumulative acceptance ended in MATCHED!, 263 recovery bundles and three switch receipts; both gates, full preflight, coverage and accepted-source inspection with `Differing words: 0` passed.
