@@ -478,6 +478,13 @@ u32 func_00136958(u32 a0, u32 a1, u32 a2, u32 a3) {
 
 extern "C" void func_00136a50(u32, u32, u32, u32) asm("_ZN2dk4BGSE8clearOffEv");
 
+// FM dispatch-table return stubs. Parameter types are not yet recovered.
+void func_001391e8(void) {
+}
+
+void func_001391f8(void) {
+}
+
 void func_001391f0(u32 a0, u32 a1, u32 a2, u32 a3) {
     (void)a0;
     (void)a1;

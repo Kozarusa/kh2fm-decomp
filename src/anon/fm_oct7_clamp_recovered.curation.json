@@ -1,0 +1,15 @@
+{
+  "probe_source": "analysis/final-mix/recovery-experiments/fm_oct7_clamp_branch_v12.cpp",
+  "probe_source_sha256": "6817fc71207137f85dc17a0fcf2c7db4075a7f3a06912a802754ad1c3199adb5",
+  "probe_proof_sha256": "c448d1918fe69f96f3a2366b214ade16e8218237d50a5b8fc459c42d94694f69",
+  "curated_source": "tools/kh2-reference/src/anon/fm_oct7_clamp_recovered.cpp",
+  "curated_source_sha256": "2dca7ccc7a3cdece61d9328a08b15fd296419f80c898907b6391050f75a2300c",
+  "selected_addresses": [
+    "00161a58",
+    "00161a80"
+  ],
+  "exclusion_receipt": null,
+  "limitations": [
+    "Curated source still requires a new probe, registration and full build."
+  ]
+}

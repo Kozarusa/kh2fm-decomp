@@ -1,0 +1,35 @@
+#include "../common/types.h"
+struct Node;
+struct VTable {
+    void* slot0;
+    void (*slot1)(Node*);
+};
+struct Node {
+    VTable* vtable;
+    u8 pad[0xbc];
+    Node* next;
+};
+extern "C" Node* D_01c60cd8;
+extern "C" u8 D_01c60ce0;
+
+// Preserve original registry aliases.
+void func_0018d790() asm("_Z16u_call0_0018d790v");
+
+void func_0018d790() {
+    Node* node = D_01c60cd8;
+    Node* iter = node;
+    while (node != 0) {
+        Node* next;
+        if (iter == 0) {
+            next = D_01c60cd8;
+        } else {
+            next = iter->next;
+        }
+        iter = next;
+        if (node != 0) {
+            node->vtable->slot1(node);
+        }
+        node = next;
+    }
+    D_01c60ce0 = 0;
+}

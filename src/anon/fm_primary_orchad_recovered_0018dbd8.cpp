@@ -1,0 +1,15 @@
+#include "../common/types.h"
+
+// Preserve original registry aliases.
+bool func_0018dbd8(u8* object) asm("_ZN2YS6ATTACK6is_hitEv");
+
+bool func_0018dbd8(u8* object) {
+    u32 flags = *(u32*)(object + 4);
+    return (flags & 2) || ({
+        bool selected = false;
+        if (({ flags & 8; }) || ({ flags & 0x10; })) {
+            selected = true;
+        }
+        selected != 0;
+    }) || (flags & 0x200);
+}
