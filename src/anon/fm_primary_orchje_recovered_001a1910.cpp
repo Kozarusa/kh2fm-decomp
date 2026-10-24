@@ -1,0 +1,16 @@
+#include "../common/types.h"
+
+s32 func_001a1910(s32* base, s32 delta, s32 index) {
+    s32* entry = (s32*)((u8*)base + index * 12);
+    s32 low = *(volatile s32*)&entry[2];
+    s32 sum = *(volatile s32*)&entry[0] + delta;
+    s32 result = low;
+    if (!(sum < low)) {
+        result = sum;
+        if (entry[1] < sum) {
+            result = entry[1];
+        }
+    }
+    entry[0] = result;
+    return result;
+}
