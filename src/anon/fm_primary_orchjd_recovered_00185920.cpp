@@ -1,0 +1,20 @@
+#include "../common/types.h"
+extern "C" u8* D_01c6088c;
+extern "C" u8 D_01c60890[];
+extern "C" u8 D_0036c8f0[];
+extern "C" u32 func_002fee78(...);
+
+u8* func_00185920(s32 row, s32 column, u8* buffer) {
+    u8* result = 0;
+    u8* rowp = D_01c6088c + row * 64;
+    column = column * 32 + (s32)rowp;
+    s8* entry = (s8*)column;
+    if (*entry != 0) {
+        if (buffer == 0) {
+            buffer = D_01c60890;
+        }
+        func_002fee78(buffer, D_0036c8f0, entry);
+        result = buffer;
+    }
+    return result;
+}
