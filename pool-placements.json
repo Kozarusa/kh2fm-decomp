@@ -183,6 +183,13 @@
       "address": "00375f60",
       "size": 4,
       "original_sha256": "030a1a64b337c633d995221728d15e8b0d086cc0dcf4557205111b089b04464d"
+    },
+    {
+      "function": "002e3540",
+      "section": ".sdata",
+      "address": "00375f68",
+      "size": 4,
+      "original_sha256": "e00e5eb9444182f352323374ef4e08ebcb784725fdd4fd612d7730540b3e0c8c"
     }
   ]
 }
