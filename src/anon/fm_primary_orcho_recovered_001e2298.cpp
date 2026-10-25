@@ -1,5 +1,4 @@
 #include "../common/types.h"
-extern "C" const void* D_0036e950[8];
 extern "C" f32 D_00349e10;
 // copied from fm_primary_fiveword_recovered_0016fa58.cpp
 extern "C" bool func_0019ba60(u64);
@@ -34,48 +33,39 @@ extern "C" u32 func_001e2640(u8* object);
 // The only call site (auto80_199_queue.cpp, a placeholder) discards the result.
 
 u32 func_001e2298(u8* object) {
-    // why: named label table keeps the switch targets while the dispatch reads the original table D_0036e950
-    // (computed-goto pattern of fm_primary_orchiy_recovered_001815d0.cpp)
-    static const void* targets[8] asm("fm_switch_table_001e2298") = {
-        &&state0, &&state1, &&state2, &&state3, &&state4, &&state5, &&state6, &&state7};
     if (!func_0019ba60(*(s32*)(object + 0xdd0))) {
         *(s32*)(object + 0xdc0) = 7;
     }
-    {
-        u32 index = *(u32*)(object + 0xdc0);
-        if (index >= 8) goto done;
-        goto *D_0036e950[index];
+    switch (*(u32*)(object + 0xdc0)) {
+    case 0:
+        func_001e1ce0((int)object);
+        break;
+    case 1:
+        func_001e1d20(object);
+        break;
+    case 2:
+        func_001e1df0(object);
+        break;
+    case 3:
+        func_001e1df8(object);
+        break;
+    case 4:
+        func_001e1e40(object);
+        break;
+    case 5:
+        func_001e2130(object);
+        break;
+    case 6:
+        func_001e21f0(object);
+        break;
+    case 7:
+        func_001e21f8(object);
+        break;
     }
-state0:
-    func_001e1ce0((int)object);
-done:
-    {
-        func_001e2238((int)object);
-        func_001e2620(object);
-        u32 result = func_001e2640(object);
-        *(f32*)(object + 0xde4) = *(f32*)(object + 0xde4) + D_00349e10;
-        *(f32*)(object + 0xde8) = *(f32*)(object + 0xde8) + D_00349e10;
-        return result;
-    }
-state1:
-    func_001e1d20(object);
-    goto done;
-state2:
-    func_001e1df0(object);
-    goto done;
-state3:
-    func_001e1df8(object);
-    goto done;
-state4:
-    func_001e1e40(object);
-    goto done;
-state5:
-    func_001e2130(object);
-    goto done;
-state6:
-    func_001e21f0(object);
-    goto done;
-state7:
-    func_001e21f8(object);
-    goto done;
+    func_001e2238((int)object);
+    func_001e2620(object);
+    u32 result = func_001e2640(object);
+    *(f32*)(object + 0xde4) = *(f32*)(object + 0xde4) + D_00349e10;
+    *(f32*)(object + 0xde8) = *(f32*)(object + 0xde8) + D_00349e10;
+    return result;
 }
