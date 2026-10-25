@@ -1,7 +1,6 @@
 #include "../common/types.h"
 extern "C" u8 D_0035eb98[];
 extern "C" u8 D_0034a7c0[];
-extern "C" f32 D_0036b26c;
 extern "C" u8* func_0023ee30(s32);
 extern "C" void func_002369a0(u8*);
 extern "C" void func_0023c008(u8*);
@@ -18,11 +17,7 @@ u8* func_00153d70(s32 name, s32 size) {
     *(u8**)(object + 0) = D_0034a7c0;
     func_00153cc8(object, name, 4800, size, 0);
     if (func_0013a9d0()) {
-        register u8* sprite asm("$4") = object + 24; // why: original sets a0 before the address of the global
-        asm volatile("" : : "r"(sprite)); // why: orders a0 before the global address (blocks hoisting the lui)
-        f32* pointer = &D_0036b26c;
-        asm("" : "+r"(pointer)); // why: original materializes the full global address before the load
-        func_00236bb8(*pointer, (s32)sprite);
+        func_00236bb8(1.0f, (s32)(object + 24));
     }
     return object;
 }

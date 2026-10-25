@@ -1,18 +1,14 @@
 #include "../common/types.h"
-extern "C" f32 D_0036af68[];
 
 void func_00144be0(f32* box, f32* corners) {
-    f32* source = D_0036af68;
-    asm("" : "+r"(source)); // why: original materializes the full address before the load
-    f32 one = *source;
-    corners[31] = one;
-    corners[27] = one;
-    corners[23] = one;
-    corners[19] = one;
-    corners[15] = one;
-    corners[11] = one;
-    corners[7] = one;
-    corners[3] = one;
+    corners[31] = 1.0f;
+    corners[27] = 1.0f;
+    corners[23] = 1.0f;
+    corners[19] = 1.0f;
+    corners[15] = 1.0f;
+    corners[11] = 1.0f;
+    corners[7] = 1.0f;
+    corners[3] = 1.0f;
     corners[0] = box[0];
     corners[1] = -box[4];
     corners[2] = -box[5];

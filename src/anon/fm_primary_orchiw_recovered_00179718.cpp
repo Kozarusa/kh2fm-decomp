@@ -1,6 +1,5 @@
 #include "../common/types.h"
 #include "../kn/fvector.hpp"
-extern "C" f32 D_0036c4dc;
 extern "C" f32 D_00349e10;
 extern "C" s32 func_0015ef18();
 extern "C" u32 func_0015ef28();
@@ -39,9 +38,7 @@ void func_00179718(u8* object) {
             *(s32*)(object + 2904) = current;
             (*(void (**)(u8*, u32))(*(u8**)object + 148))(object, current);
         }
-        const f32* reset = &D_0036c4dc;
-        asm("" : "+r"(reset)); // why: original forms the full address before the lwc1
-        *(f32*)(object + 2908) = *reset;
+        *(f32*)(object + 2908) = 30.0f;
     } else {
         f32 timer = *(f32*)(object + 2908);
         if (timer > 0.0f) {

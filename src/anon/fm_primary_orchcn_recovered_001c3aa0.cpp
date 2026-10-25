@@ -1,5 +1,4 @@
 #include "../common/types.h"
-extern "C" f32 D_0036de10;
 extern "C" void func_0017f540(u8*, s32, f32, f32);
 extern "C" u32 func_0016bd60(u8*, s32);
 extern "C" void func_001c39d0(u32, u32);
@@ -9,9 +8,6 @@ void func_001c3aa0(u32 self, u8* object) {
         func_0016bd60(object, 0x12);
         return;
     }
-    f32* coefficient = &D_0036de10;
-    // why: forces address materialization before the load, as the original does
-    asm("" : "+r"(coefficient));
-    func_0017f540(object + 0x140, 0xd0, *coefficient, 0.0f);
+    func_0017f540(object + 0x140, 0xd0, 16.0f, 0.0f);
     func_001c39d0(self, (u32)object);
 }

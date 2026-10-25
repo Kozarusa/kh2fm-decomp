@@ -1,5 +1,4 @@
 #include "../common/types.h"
-extern "C" f32 D_0036cd20;
 extern "C" u32 func_0016bc20(u64,u64,u32);
 extern "C" u32 func_0018a818(void*,u64,u32);
 extern "C" u32 func_001902a8(void*,void*);
@@ -13,7 +12,6 @@ void func_001904f0(s32* object, u8* target) {
     } else {
         func_001902a8(object, target);
     }
-    f32* source = &D_0036cd20;
-    asm("" : "+r"(source)); // why: original forms the full address before the load
-    *(f32*)(target + 28) = *source;
+
+         *(f32*)(target + 28) = 1.0f;
 }

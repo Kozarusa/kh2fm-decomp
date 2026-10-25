@@ -3,7 +3,6 @@ typedef unsigned int Quad __attribute__((mode(TI)));
 typedef s32 (*Method)(void*);
 struct Object { Method* table; };
 extern "C" u8 D_0034a9f0[];
-extern "C" f32 D_0036b324;
 extern "C" u64 func_001b9d40(...);
 extern "C" u32 func_00190140(s32);
 extern "C" Quad* func_001904a8(Quad* result, const void* source);
@@ -19,9 +18,7 @@ s32 func_00159070(u8* object) {
     }
     Quad buffer;
     func_001904a8(&buffer, D_0034a9f0);
-    const f32* speed = &D_0036b324;
-    asm("" : "+r"(speed)); // why: original forms the full address before the lwc1
-    func_0015a260(object, &buffer, *speed);
+    func_0015a260(object, &buffer, 1.0f);
     u32 state = func_00167f18(0);
     Object* owner = *(Object**)(object + 68);
     if (owner->table[16](owner) != 0) {
