@@ -10,6 +10,27 @@
       "original_sha256": "65d6be5c1be5d60a3db6a6df9b326a77b94f4a002b3e6d2a903b391ab54ebe00"
     },
     {
+      "function": "00182280",
+      "section": ".rodata",
+      "address": "0036c850",
+      "size": 36,
+      "original_sha256": "bb43c47a9c3c4cc43df6a02eb56fff0b16b1076cb299dcad66fe0f73f6f8f4e9"
+    },
+    {
+      "function": "00186110",
+      "section": ".rodata",
+      "address": "0036c908",
+      "size": 40,
+      "original_sha256": "40db13f81e585b319a6aaa2fae6d68bfd637aec07b3c5c6ae2e09f3ec03bd078"
+    },
+    {
+      "function": "0018caf8",
+      "section": ".rodata",
+      "address": "0036cc74",
+      "size": 68,
+      "original_sha256": "b1ab69ff79a191329d64b92d573bd2cb46de419813e69d410ed8540bc175ce4b"
+    },
+    {
       "function": "00192cc0",
       "section": ".rodata",
       "address": "0036ce14",
@@ -87,11 +108,25 @@
       "original_sha256": "228560a262b7ce0297915aa05d7cfe0717b11ea2b24b532be79dc9975f72e01d"
     },
     {
+      "function": "002af010",
+      "section": ".rodata",
+      "address": "00374c48",
+      "size": 28,
+      "original_sha256": "b24a5d9801419f3d09e81b64234b61adbcdacc90e2a278bf8c3e45e98b3dbc5f"
+    },
+    {
       "function": "002b3b78",
       "section": ".rodata",
       "address": "00374c80",
       "size": 28,
       "original_sha256": "19a52588676693c016a95e942d5a5e13e0164921059d94632e006624bde6d821"
+    },
+    {
+      "function": "002bea88",
+      "section": ".sdata",
+      "address": "003753f4",
+      "size": 8,
+      "original_sha256": "43dce96ed636a6a060bc282e8134d31895ad0bd8678d074e38c4f01d70328948"
     },
     {
       "function": "002cb188",
