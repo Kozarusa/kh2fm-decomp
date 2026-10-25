@@ -1,0 +1,104 @@
+#include "../common/types.h"
+extern "C" u8 D_0035eae8[];
+
+struct Part {
+    s32 first;
+    s32 second;
+    s32 third;
+    s32 fourth;
+    s32 fifth;
+    s32 sixth;
+};
+
+struct Object {
+    u32 table; // why: an integer field (v2 used void*) keeps the flag word load after the table store; v3 matched it
+    s32 word04;
+    s32 word08;
+    s32 word0c;
+    u32 flag0 : 1;
+    u32 flag1 : 1;
+    u32 flag2 : 1;
+    u32 flag3 : 1;
+    u32 flag4 : 1;
+    u32 flag5 : 1;
+    u32 flag6 : 1;
+    s32 word14;
+    s32 word18;
+    s32 word1c;
+    s32 word20;
+    s32 word24;
+    s32 word28;
+    s32 word2c;
+    s32 word30;
+    s32 word34;
+    s32 word38;
+    s32 word3c;
+    s32 word40;
+    s32 word44;
+    s32 word48;
+    s32 word4c;
+    Part part;
+    s32 word68;
+    s32 word6c;
+    s32 word70;
+    s32 word74;
+    s32 word78;
+    s32 word7c;
+    s32 word80;
+    s32 word84;
+    s32 word88;
+    s32 word8c;
+    s32 word90;
+    s32 word94;
+    s32 word98;
+    s32 word9c;
+};
+
+void func_00237068(Object* object) {
+    Part* part = &object->part;
+    part->first = 0;
+    object->table = (u32)D_0035eae8;
+    part->second = 0;
+    part->third = 0;
+    part->fourth = 0;
+    part->fifth = 0;
+    part->sixth = 0;
+    object->word04 = 0;
+    object->word08 = 0;
+    object->word0c = 0;
+    object->flag0 = 0;
+    object->word14 = 0;
+    object->word18 = 0;
+    object->flag1 = 0;
+    object->word1c = 0;
+    object->word20 = 0;
+    object->flag2 = 0;
+    object->word24 = 0;
+    object->word28 = 0;
+    object->flag3 = 0;
+    object->word2c = 0;
+    object->word34 = 0;
+    object->flag4 = 0;
+    object->word38 = 0;
+    object->word3c = 0;
+    object->flag5 = 0;
+    object->word40 = 0;
+    object->flag6 = 0;
+    object->word44 = 0;
+    object->word48 = 0;
+    object->word4c = 0;
+    object->word68 = 0;
+    object->word6c = 0;
+    object->word70 = 0;
+    object->word74 = 0;
+    object->word78 = 0;
+    object->word7c = 0;
+    object->word80 = 0;
+    object->word84 = 0;
+    object->word88 = 0;
+    object->word8c = 0;
+    object->word90 = 0;
+    object->word94 = 0;
+    object->word98 = 0;
+    object->word9c = 0;
+}
