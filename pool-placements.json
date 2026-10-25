@@ -134,6 +134,55 @@
       "address": "00375870",
       "size": 8,
       "original_sha256": "7b4ae312931bed534f42a1317ee1dece6190a19042bf7d81cf804d2508a3bbb1"
+    },
+    {
+      "function": "002cd1d8",
+      "section": ".sdata",
+      "address": "003758e8",
+      "size": 4,
+      "original_sha256": "03e3c2420f5066a5fa6e36735ed8cc4f6a251046263e1a6024f009deeee3b952"
+    },
+    {
+      "function": "002cef80",
+      "section": ".sdata",
+      "address": "00375968",
+      "size": 12,
+      "original_sha256": "2df42f5a3ac0ce83b3910372215a08ed6c2bcbe281451b46ee01786bc92958cb"
+    },
+    {
+      "function": "002d48b8",
+      "section": ".sdata",
+      "address": "00375ae0",
+      "size": 12,
+      "original_sha256": "453f353fe98d22ec42cfa731f8760ce16560038783d04aecec8c5dbbbde543b9"
+    },
+    {
+      "function": "002da958",
+      "section": ".sdata",
+      "address": "00375cfc",
+      "size": 4,
+      "original_sha256": "03e3c2420f5066a5fa6e36735ed8cc4f6a251046263e1a6024f009deeee3b952"
+    },
+    {
+      "function": "002de968",
+      "section": ".sdata",
+      "address": "00375e24",
+      "size": 12,
+      "original_sha256": "453f353fe98d22ec42cfa731f8760ce16560038783d04aecec8c5dbbbde543b9"
+    },
+    {
+      "function": "002e1908",
+      "section": ".sdata",
+      "address": "00375f08",
+      "size": 4,
+      "original_sha256": "030a1a64b337c633d995221728d15e8b0d086cc0dcf4557205111b089b04464d"
+    },
+    {
+      "function": "002e2f08",
+      "section": ".sdata",
+      "address": "00375f60",
+      "size": 4,
+      "original_sha256": "030a1a64b337c633d995221728d15e8b0d086cc0dcf4557205111b089b04464d"
     }
   ]
 }
