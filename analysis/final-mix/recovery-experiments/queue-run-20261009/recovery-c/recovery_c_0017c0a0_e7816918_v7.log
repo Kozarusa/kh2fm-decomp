@@ -1,9 +1,0 @@
-Exact probe matches: 0/1
-Detailed proof: analysis/final-mix/recovery-experiments/queue-run-20261009/recovery-c/recovery_c_0017c0a0_e7816918_v7.verification.json
-recovery-experiments/recovery_c_0017c0a0_e7816918_v7/probe.cpp: In function 
-   `void func_0017c0a0(long long unsigned int, long long unsigned int, unsigned 
-   int)':
-recovery-experiments/recovery_c_0017c0a0_e7816918_v7/probe.cpp:27: warning: cast
-   to pointer from integer of different size
-recovery-experiments/recovery_c_0017c0a0_e7816918_v7/probe.cpp:27: warning: cast
-   to pointer from integer of different size

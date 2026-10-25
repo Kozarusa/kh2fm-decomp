@@ -1,6 +1,0 @@
-# 0018c528 blocked
-- Range: 0018c528, 64 bytes. Versions tried: 7. Best: v4 with 6 differing words (68/64 bytes).
-- First difference of the best version: !! 0018c52c: 11e0000c  beqz	t7,0x18c560 | 0018c52c: 11e0000d  beqz	t7,18c564 (later words: table base lui/addiu are relocation placeholders 0x0000, and the tail has an extra li 287 block)
-- Changes tried: v1 if(<14)+switch 2,3,4 only (14, no jump table emitted); v2 all 14 cases listed, switch only (15, 52 bytes); v3 if + switch with case 3 break (15); v4 result variable, case 2/3/4 separate, other cases break (6, 68 bytes: duplicate li 287 block); v5 cases 2 and 4 grouped (7, 60 bytes); v6 case 3 return 0 (7); v7 case 3 first with direct returns (worse).
-- Why it stops here: no improvement for 3 versions.
-- Next hypothesis: original has three distinct sinks (li 287 + jr, move v0,zero in jr delay slot, bare jr ra); the jump table at D_0036cbe4 should be read (outside the manual) to learn which of cases 0..13 target which block; then keep cases 2 and 4 as separate case labels that share one 287 block through a goto-free shape, e.g. case 4 mapped to the same block as 2 and case 3 returning a non-constant-folded zero.

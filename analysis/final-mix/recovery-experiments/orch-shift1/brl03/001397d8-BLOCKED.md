@@ -1,6 +1,0 @@
-# 001397d8 blocked
-- Range: 001397d8, 124 bytes. Versions tried: 5. Best: v1 with 2 differing words (124/124 bytes) (copy of rec08 v8); v5 also 2.
-- First difference of the best version: !! 001397fc: 8e447f80  lw	a0,32640(s2)   ; = D_00347f80  (compiled lw t7,32640(s2), then lw a0,4(t7))
-- Changes tried: v1 copy of rec08 v8 (2); v2 drop volatile on node->next read (14, 116 bytes, bnezl layout, worse); v3 C11(c) register List* list asm("$4") assigned in the head arm (12: a0 now right, but the lw is no longer placed in the bnez delay slot, nop inserted and loop branch shifts); v4 sentinel form (node == 0 ? (Node*)D : node)->next (22, worse); v5 C11(b) plain List* temp in the head arm (2, no change).
-- Why it stops here: no improvement for 3 versions (v2-v4; v5 also no improvement).
-- Next hypothesis: v3 proves a0 is reachable via binding but the hard-register variable blocks delay-slot filling; try C11(d) asm("" : "+r"(...)) on the head value or another way to make the list-pointer pseudo share node's a0 (e.g. Node* cast of the list read reused as the call argument).

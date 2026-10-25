@@ -1,8 +1,0 @@
-{
-  "source": "Public\\tools\\kh2-reference\\src\\anon\\fm_primary_queuedelta_recovered_002f3cd8.cpp",
-  "before_sha256": "c0801ec86ddba348fe830d26fa0955e3694a190877a7bd8e038da98aa67e6517",
-  "after_sha256": "ae5e616b9f51ad646f7f166ba9bc0c5a270d02002d00d0305f91eeb743044ee3",
-  "alias": "void func_002f3cd8(VUVector* result,const VUMatrix* matrix,const VUVector* vector) asm(\"_Z16wtarget_002f3cd8jjjj\");\r",
-  "change": "Move original alias declaration after shared vector types; preserve declaration and function body",
-  "previous_accepted_snapshot": "accepted-snapshots/2026-10-09-before-queuedelta"
-}

@@ -1,4 +1,0 @@
-#include "../common/types.h"
-extern "C" void func_003167f8(void);
-extern "C" void func_00106420(u32);
-void func_00315678(u32 p) { register u32 table asm("$15"); asm("lui %0,0x36; addiu %0,%0,30816" : "=r"(table)); asm("sw %1,%0" : "=m"(*(u32*)p) : "r"(table)); func_003167f8(); func_00106420(p); asm volatile(""); }

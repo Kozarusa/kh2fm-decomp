@@ -1,6 +1,0 @@
-# 001945a0 blocked
-- Range: 001945a0, 108 bytes. Versions tried: 5. Best: v1 with 13 differing words (108/108 bytes; later versions are 104 bytes).
-- First difference of the best version: !! 001945c0: 3c0e0037  lui	t6,0x37  vs  dsll32 a0,v0,0 (v1 declared func_001bfd60 returning u64). With a pointer return (v2-v5) the first difference is the same word: the original forms the D_0036cf00 address (lui/addiu t6) right after the call, before sb s0,4(v0), and loads lwc1 f13,0(t6) with a zero offset; the compiler folds it into lwc1 -12544(t7) and schedules it later.
-- Changes tried: v1 u64 callee return, stores 4,7,5,6 (13); v2 pointer return, cursor=record+4 stores 0,3,1,2 (19); v3 f32 local loaded before stores (17); v4 D as f32 array, record[4] direct then cursor stores (19); v5 D as u8 array read through f32 pointer first (17).
-- Why it stops here: no improvement for 3 versions (best stayed 13 at v1).
-- Next hypothesis: C9 volatile read of the float or pointer-to-D held in a variable (f32* pointer set to the address with a separate lui/addiu), C8-style temporary split; the original also keeps a single u8* t7=v0+4 for stores 3,1,2 while store 4 uses v0 directly, so try a union/struct at record+4 (C18).

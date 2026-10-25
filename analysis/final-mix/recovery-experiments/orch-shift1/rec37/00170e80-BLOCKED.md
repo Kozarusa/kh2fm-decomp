@@ -1,6 +1,0 @@
-# 00170e80 blocked
-- Range: 00170e80, 100 bytes. Versions tried: 6. Best: v2 with 17 differing words (100/100 bytes; v5/v6 also 17 but 108 bytes).
-- First difference of the best version: !! 00170e88: 8de2dc9c  lw	v0,-9060(t7)   ; = D_0034dc9c  (compiled: lw t2; low/high swapped between v0 and t2).
-- Changes tried: v1 struct offsets wrong (my bug, fixed in v2); v2 corrected node struct, while(1)+break: 17; v3 C7c early return inside loop: 17 (same output); v4 C7a/b inverted skip with continue (kind>=10000): 17 (same output); v5 C6 explicit (kind<10000)^1 skip variable: 17, xori now emitted but 108 bytes and exit block placed at the end; v6 body inside if(node!=0) with return after: 17 (identical to v5).
-- Why it stops here: no improvement for 3 versions.
-- Next hypothesis: original puts the return block directly after the node test (bnez forward to body, move t4,t5 in delay slot) and keeps low in v0 / high in t2; try C11 register binding (register s32 low asm("$2")) plus C8 volatile read of node->kind, or a for-loop with the advance in the increment clause.

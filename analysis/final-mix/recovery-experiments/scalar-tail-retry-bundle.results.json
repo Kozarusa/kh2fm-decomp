@@ -1,9 +1,0 @@
-[
-  {
-    "source": "analysis/final-mix/recovery-experiments/fm_scalar_09.cpp",
-    "exit_code": 0,
-    "log": "analysis/final-mix/recovery-experiments/fm_scalar_09.probe.log",
-    "functions": 98,
-    "exact": 13
-  }
-]

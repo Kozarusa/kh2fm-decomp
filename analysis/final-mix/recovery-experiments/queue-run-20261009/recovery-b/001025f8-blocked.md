@@ -1,7 +1,0 @@
-# 001025f8: intrusive-link memory lifetime
-
-Current declared original range is116 bytes. Saved archived raw source is112 bytes and differs in head-address reuse, repeated next-link loading, branch displacements and final call/epilogue. Four new complete isolated probes retain all failed sources and proofs. Removing the trailing memory marker permits the original tail-jump style but yields108 bytes. Typed Owner/Node records produce104 bytes; explicitly retaining a pointer to the owner's first/last pair produces112 bytes. A final shared marker produces108 bytes. None match the complete original range.
-
-The typed model fixes logical owner/head/current and node next/previous relationships but appears to allow stronger load reuse than the original. Existing proof bytes show the original re-reading node+0x38 in a nonzero previous-link path and retaining an owner+8 head pointer for the last-link update. 001025f8-blocked-evidence.json binds each source/proof and full original range hash. Native aliases and node/owner types remain provisional.
-
-Next hypothesis: start from structlist and make only the next/previous link field visibility explicit, then determine whether a volatile next-link read restores the original extra load without adding new stores or changing tail-call scheduling. Inspect complete original flow before probing. Do not repeat broad trailing barriers or shorten the116-byte range. No compiler impossibility is established.

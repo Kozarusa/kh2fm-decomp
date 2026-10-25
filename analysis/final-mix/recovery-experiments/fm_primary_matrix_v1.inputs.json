@@ -1,9 +1,0 @@
-{
-  "draft": "analysis/final-mix/recovery-drafts/fm_boundary_matrix.cpp",
-  "draft_sha256": "218d15c4de457a8ae1b08e705815075c3dde500ef6345831679980a44b5f0481",
-  "source": "analysis/final-mix/recovery-experiments/fm_primary_matrix_v1.cpp",
-  "source_sha256": "6021605354c33576731c3624e801d56d0f0752d6c8554ff31626e2503473ef01",
-  "address": "0011d500",
-  "status": "isolated_unprobed",
-  "rationale": "Preserve branch-likely conditional addition and post-copy base reload; leave floating-point sign changes in C++."
-}

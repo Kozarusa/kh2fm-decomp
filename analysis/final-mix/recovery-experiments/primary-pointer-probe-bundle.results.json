@@ -1,9 +1,0 @@
-[
-  {
-    "source": "analysis/final-mix/recovery-experiments/fm_primary_width_00_all_pointer.cpp",
-    "exit_code": 0,
-    "log": "analysis/final-mix/recovery-experiments/fm_primary_width_00_all_pointer.probe.log",
-    "functions": 4,
-    "exact": 0
-  }
-]

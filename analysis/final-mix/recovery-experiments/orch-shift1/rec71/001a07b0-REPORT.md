@@ -1,5 +1,0 @@
-# 001a07b0 submitted
-- Range: 001a07b0, 80 bytes. Source: orch1_rec71_001a07b0_v1.cpp (exact). Versions tried: 1.
-- Changes that mattered: none (first attempt exact).
-- Emitted assembly or register bindings: none.
-- Provisional: names and types are inferred from instructions only.

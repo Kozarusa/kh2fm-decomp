@@ -2,7 +2,7 @@
 
 Research and recovery workspace for the Japanese PlayStation 2 release of Kingdom Hearts II Final Mix. The goal is C++ that the pinned original-era compiler turns into exactly the instructions of the main executable, `SLPM_666.75`.
 
-It targets the same executable as [GovanifY/kh2](https://github.com/GovanifY/kh2) and builds on its layout and symbol approach. This repository holds the evidence, experiments and coordination around that work; the accepted source tree itself lives in the shared `Public/tools/kh2-reference` checkout (see [STATUS.md](STATUS.md#where-things-live)).
+It targets the same executable as [GovanifY/kh2](https://github.com/GovanifY/kh2) and builds on its layout and symbol approach. This repository holds the analysis data around that work; the accepted source tree itself is on the `fm-source` branch.
 
 - SLPM\_666.75 sha256: `d869ce4b8edd61cb978c4ff9ede595fe4d7d7b21cbb96a145275217120d8bc87`
 - Compiler: `kh2-local/ps2-compiler:3.2-ee-040921-objdiff`, flags `-O2 -g0 -x c++ -fno-exceptions -fno-rtti -fpermissive -ffunction-sections`
@@ -11,20 +11,20 @@ It targets the same executable as [GovanifY/kh2](https://github.com/GovanifY/kh2
 
 ![Progress map](docs/progress.svg)
 
-*Declared code of `SLPM_666.75` by 64 KiB address block. Each small cell is one function range sized by bytes; green is accepted C++, grey is still original-byte fallback. Regenerate with `python -I orchestration/tools/treemap.py`.*
+*Declared code of `SLPM_666.75` by 64 KiB address block. Each small cell is one function range sized by bytes; green is accepted C++, grey is still original-byte fallback.*
 
 <!-- progress:start -->
 | Measure | Value |
 | --- | ---: |
-| Functions matching the original instruction for instruction | 6,800 |
+| Functions matching the original instruction for instruction | 8,067 |
 | Declared code ranges | 11,383 |
-| Accepted share of declared code bytes | 19.8% (392,956 of 1,989,428) |
-| Original-byte fallback ranges remaining | 4,583 (includes 4 zero-padded ranges) |
+| Accepted share of declared code bytes | 30.6% (609,468 of 1,989,428) |
+| Original-byte fallback ranges remaining | 3,316 (includes 4 zero-padded ranges) |
 <!-- progress:end -->
 
 All 2,503 game scripts (733 AI, 727 area, 1,043 event) rebuild byte-exact.
 
-Whole-ELF equality holds, but the build starts from the original ELF and swaps in the registered C++ ranges, so this is not yet a source-only rebuild. Data and tables, IOP modules, overlays and vector-unit programs are not covered, and the byte share above is not a whole-game completion figure. Types, names, boundaries and runtime behavior are provisional. The live numbers are in [STATUS.md](STATUS.md).
+Whole-ELF equality holds, but the build starts from the original ELF and swaps in the registered C++ ranges, so this is not yet a source-only rebuild. Data and tables, IOP modules, overlays and vector-unit programs are not covered, and the byte share above is not a whole-game completion figure. Types, names, boundaries and runtime behavior are provisional.
 
 ## How it is run
 
@@ -35,19 +35,17 @@ Recovery is a queue of fallback ranges. A worker claims one address, writes C++ 
 3. It is registered and built in full, ending in `MATCHED!`, with provenance and objdiff checks.
 4. A checkpoint is saved and its gate passes.
 
-Failed experiments are kept as evidence. See [HANDOFF.md](HANDOFF.md) for the rules, [PLAYBOOK.md](PLAYBOOK.md) for how the project is run, and [orchestration/ORCHESTRATION.md](orchestration/ORCHESTRATION.md) for the orchestrator and worker setup.
+The accepted C++ lives on the `fm-source` branch (a fork of [GovanifY/kh2](https://github.com/GovanifY/kh2) with the Final Mix ranges registered).
 
 ## Repository layout
 
 | Path | Contents |
 | --- | --- |
-| [STATUS.md](STATUS.md) | Current counts, checkpoint, gate and open work. Start here. |
-| [HANDOFF.md](HANDOFF.md), [PLAYBOOK.md](PLAYBOOK.md), [WORKER_BRIEF.md](WORKER_BRIEF.md), [GLOSSARY.md](GLOSSARY.md) | Rules, practice, worker guidance, terms |
-| [FOLDER_GUIDE.md](FOLDER_GUIDE.md), [DIRECTORY_INDEX.md](DIRECTORY_INDEX.md) | What every folder holds |
-| `orchestration/` | Orchestrator plan, recipes, briefs, logs and helper tools |
-| `analysis/final-mix/` | The active Japanese Final Mix project: experiments, worker coordination, evidence |
-| `archive/` | Unmodified copies of rewritten documents, each batch with `SHA256SUMS.txt` |
-| `docs/` | Generated figures |
+| [GLOSSARY.md](GLOSSARY.md) | Project terms |
+| `analysis/final-mix/` | Core analysis data for the Japanese Final Mix executable: function list, exports, overlay layout, ISO file list, build environment, summaries |
+| `docs/` | Generated progress figure |
+
+The accepted source tree, build tooling and verifier live on the `fm-source` branch. Working notes, orchestration files, experiment logs and checkpoints are not tracked.
 
 ## Setup
 

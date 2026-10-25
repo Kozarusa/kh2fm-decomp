@@ -1,3 +1,0 @@
-#include "../common/types.h"
-extern "C" u64 func_001de168(u8*,u64,u64,s32,u64,u8*);
-u64 func_0016ac38(u8*object,u64 second,u64 third,u64 fourth,u8*fallback){register u8*target asm("$9")=fallback;register u64 savedFourth asm("$14")=fourth;asm("":"+r"(target),"+r"(savedFourth));if(!fallback)target=object;asm("":"+r"(target):"r"(savedFourth));register u8*sub asm("$15")=object+128;asm("":"+r"(sub):"r"(target));register u32 ready asm("$13")=*(u32*)(object+128);register s32 one asm("$7")=1;register u64 outgoingFourth asm("$8");asm ("daddu %0,%1,$0":"=r"(outgoingFourth):"r"(savedFourth),"r"(object),"r"(ready),"r"(one));if(ready)return func_001de168(sub,second,third,one,outgoingFourth,target);return 0;}

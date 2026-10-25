@@ -1,3 +1,0 @@
-#include "../common/types.h"
-extern "C" s32* func_00316d08(void);
-s32 func_00305e20() { register s32* pointer asm("$2")=func_00316d08(); register s32 value asm("$3")=5; asm volatile("" : "+r"(value)); asm("sw %1,0(%0)" :: "r"(pointer),"r"(value)); return -1; }

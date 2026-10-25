@@ -1,6 +1,0 @@
-Exact probe matches: 1/1
-Detailed proof: analysis/final-mix/recovery-experiments/fm_primary_oneword_recovered_001ac1d0.verification.json
-recovery-experiments/fm_primary_oneword_recovered_001ac1d0/probe.cpp: In 
-   function `bool func_001ac1d0(char*)':
-recovery-experiments/fm_primary_oneword_recovered_001ac1d0/probe.cpp:92: warning: invalid
-   conversion from `char*' to `int'

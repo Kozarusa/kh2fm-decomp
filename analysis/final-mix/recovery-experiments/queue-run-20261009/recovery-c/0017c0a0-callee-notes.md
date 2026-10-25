@@ -1,6 +1,0 @@
-# Callee evidence after initial blocker
-
-The native-pseudocode/main.jsonl record for 0017c030 explicitly returns its output pointer param_1 after object vector-copy and helper work. The current best caller source declares the helper void, ignoring that returned pointer. The four-argument explicit output-pointer ABI remains supported by the advisory decompilation; hidden aggregate return is still ambiguous because it also commonly returns its output pointer.
-
-Three new source variants v18-v20 are prepared, not claimed or probed: declare the first helper void*, u32, or u64 while retaining the exact best caller body. The void* declaration most directly follows the callee evidence. Changing the call's result declaration may change CALL_INSN scheduling without changing used instructions, and is worth testing before further manual address assembly. The variants require a new atomic claim and current compiler availability. Original callee instructions should be inspected before interpreting signatures as semantics.
-Original ELF confirms return transport at 0017c074: word0200102d is daddu v0,s0,zero, in the zero-flag branch delay slot. Full original callee words and SHA256 are retained in0017c0a0-callees-original.json. The return-pointer observation is therefore supported by original instructions, not only pseudocode.

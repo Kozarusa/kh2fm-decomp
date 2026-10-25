@@ -1,9 +1,0 @@
-[
-  {
-    "address": "00158ac8",
-    "owner": "eight-hour-primary",
-    "metadata": "{\"address\": \"00158ac8\", \"end\": \"00158b1c\", \"bytes\": 84, \"priority\": 1, \"pseudocode_available\": true, \"callees\": [], \"best_proposal\": {\"proof\": \"analysis/final-mix/recovery-experiments/fm_primary_maskcopy_v2_00158ac8_2.verification.json\", \"source\": \"analysis/final-mix/recovery-experiments/fm_primary_maskcopy_v2_00158ac8_2.cpp\", \"compiled_bytes\": 84, \"target_bytes\": 84, \"different_words\": 2}}",
-    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_00158ac8_symbolic_symbolic.cpp\", \"source_sha256\": \"b02258c955d9de45b174b26280dc52b88c6f073c657a80ec4163edf583fd34ac\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_00158ac8_symbolic_symbolic.verification.json\", \"proof_sha256\": \"fa88f80380d08af1ff1bbd6d6bba6874e0eb8ca5fdafc9a75a8aa39b6386b751\"}",
-    "curated": "analysis/final-mix/recovery-experiments/fm_primary_queuekappa_recovered_00158ac8.cpp"
-  }
-]

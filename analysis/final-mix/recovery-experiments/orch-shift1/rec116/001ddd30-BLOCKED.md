@@ -1,6 +1,0 @@
-# 001ddd30 blocked
-- Range: 001ddd30, 84 bytes. Versions tried: 8. Best: v5 with 17 differing words (76/84 bytes).
-- First difference of the best version: !! 001ddd3c: 3c0c01da  lui	t4,0x1da  |  001ddd3c: 01a0702d  move	t6,t5
-- Changes tried: v1 plain while loop with flag (19 words, peeled first iteration); v2 flag set at break (19); v3 empty asm guard on node to stop peeling (18); v4 found=1 before compare (18); v5 do-while with found=1 after loop and goto (17); v6 no asm, D first then conditional override (18); v7 found=1 inside loop (18); v8 v5 plus empty asm guard on found (17).
-- Why it stops here: budget reached (8 versions, no improvement for 3 versions). Original keeps node as non-peeled loop-carried t5 with bnezl choosing lw 20(t5) or lw D, tests next!=0 then next==target in a tail block, found=1 set in the delay slot, flag merged with andi 0xff; compiler keeps rotating the loop so the branch-likely and block placement differ.
-- Next hypothesis: branch-layout: keep the iterator as a single expression whose false arm is the delay-slot load (bnezl), e.g. write the traversal as an inlined helper-style ternary inside a for(;;) with found as the loop condition result, or use volatile on node reads.

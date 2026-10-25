@@ -1,5 +1,0 @@
-Traceback (most recent call last):
-  File "/mnt/c/Users/KoZa/Documents/AGENTS/Public/tools/kh2-audit/probe_fm_source.py", line 23, in <module>
-    assert re.fullmatch(r'[a-zA-Z0-9_-]+', name)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError

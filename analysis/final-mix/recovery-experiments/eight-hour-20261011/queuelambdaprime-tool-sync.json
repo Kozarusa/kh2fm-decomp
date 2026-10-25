@@ -1,6 +1,0 @@
-[
-  {
-    "file": "tools/build_elf.py",
-    "expected_stage_sha256": "c6f54d493f707fbe0e7218a3f1bf7c0078e1e5834f26508157b3c7544d277d9a"
-  }
-]

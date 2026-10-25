@@ -1,9 +1,0 @@
-[
-  {
-    "address": "0028f690",
-    "owner": "orch1-nm31",
-    "metadata": "{\"address\": \"0028f690\", \"end\": \"0028f6ec\", \"bytes\": 92, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [], \"best_proposal\": null}",
-    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\orch-shift1\\\\nm31\\\\orch1_nm31_0028f690_v4.cpp\", \"source_sha256\": \"fa05c9dd556d95f78e8baf8e0261097f15ac86ee3f9057d17f34d4a20dd893af\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\orch-shift1\\\\nm31\\\\orch1_nm31_0028f690_v4.verification.json\", \"proof_sha256\": \"b4afe26b9885d42f2af08fcbe5bea28bdd5333ff13abda0a4de75e3e8f914b57\"}",
-    "curated": "analysis/final-mix/recovery-experiments/fm_primary_orchet_recovered_0028f690.cpp"
-  }
-]

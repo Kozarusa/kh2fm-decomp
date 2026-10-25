@@ -1,9 +1,0 @@
-/opt/ps2/gcc/bin/ee-ld: final link failed: Bad value
-Traceback (most recent call last):
-  File "/mnt/c/Users/KoZa/Documents/AGENTS/Public/tools/kh2-audit/probe_fm_source.py", line 51, in <module>
-    run(f'/opt/ps2/gcc/bin/ee-ld --no-check-sections -T {relative}/probe.ld {relative}/probe.o -o {relative}/probe.elf -L/opt/ps2/gcc/lib/gcc-lib/ee/3.2-ee-040921 -lgcc')
-  File "/mnt/c/Users/KoZa/Documents/AGENTS/Public/tools/kh2-audit/probe_fm_source.py", line 32, in run
-    subprocess.run(['docker', 'run', '--rm', '--platform', 'linux/amd64',
-  File "/usr/lib/python3.12/subprocess.py", line 571, in run
-    raise CalledProcessError(retcode, process.args,
-subprocess.CalledProcessError: Command '['docker', 'run', '--rm', '--platform', 'linux/amd64', '-v', '/root/kh2fm-build:/work', '-w', '/work', 'kh2-local/ps2-compiler:3.2-ee-040921-objdiff', 'bash', '-lc', '/opt/ps2/gcc/bin/ee-ld --no-check-sections -T recovery-experiments/fm_primary_shortresidual_v3_00308cd0_2/probe.ld recovery-experiments/fm_primary_shortresidual_v3_00308cd0_2/probe.o -o recovery-experiments/fm_primary_shortresidual_v3_00308cd0_2/probe.elf -L/opt/ps2/gcc/lib/gcc-lib/ee/3.2-ee-040921 -lgcc']' returned non-zero exit status 1.

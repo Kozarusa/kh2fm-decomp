@@ -1,8 +1,0 @@
-Exact probe matches: 0/1
-Detailed proof: analysis/final-mix/recovery-experiments/fm_primary_twoword_v1_00322ba8.verification.json
-recovery-experiments/fm_primary_twoword_v1_00322ba8/probe.cpp: In function 
-   `void func_00322ba8(int)':
-recovery-experiments/fm_primary_twoword_v1_00322ba8/probe.cpp:42: warning: invalid
-   conversion from `s32' to `void*'
-recovery-experiments/fm_primary_twoword_v1_00322ba8/probe.cpp:43: warning: invalid
-   conversion from `int' to `void*'

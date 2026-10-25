@@ -1,9 +1,0 @@
-[
-  {
-    "source": "analysis/final-mix/recovery-experiments/fm_primary_floatpacket_recovered_002e8c58.cpp",
-    "exit_code": 0,
-    "log": "analysis/final-mix/recovery-experiments/fm_primary_floatpacket_recovered_002e8c58.probe.log",
-    "functions": 1,
-    "exact": 1
-  }
-]

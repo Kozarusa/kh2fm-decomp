@@ -1,6 +1,0 @@
-# 00155f40 blocked
-- Range: 00155f40, 124 bytes. Versions tried: 6. Best: v5 with 2 differing words (124/124 bytes).
-- First difference of the best version: !! 00155f64: 3c0e0037  lui	t6,0x37                                      | 00155f64: 3c0e0000  lui	t6,0x0 (and the matching addiu at 00155f6c: original D_0036b2d8, compiled placeholder 0).
-- Changes tried: v1 plain switch, no table 30; v2 explicit case 0/1 labels (jump table emitted) with ternary 20; v3 callee returns s64 20; v4 Ghidra order, result init 0x17, s64 flag 19; v5 case 4 first in source order 2 (all code and registers match, only the table address differs); v6 computed goto through extern D_0036b2d8 24.
-- Why it stops here: the compiler emits its own switch table symbol, so the lui/addiu pair cannot be made to point at the original table D_0036b2d8; the only route found (computed goto) disturbs the register allocation and layout.
-- Next hypothesis: keep the v5 switch exactly and find a way to bind the table to address 0x0036b2d8 (the orchestrator/linker may resolve the switch table symbol in the full build, so v5 may be exact there), or a computed-goto form that keeps owner in t4.

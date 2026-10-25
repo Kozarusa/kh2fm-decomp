@@ -1,9 +1,0 @@
-[
-  {
-    "address": "0023e788",
-    "owner": "eight-hour-primary",
-    "metadata": "{\"address\": \"0023e788\", \"end\": \"0023e7b0\", \"bytes\": 40, \"priority\": 2, \"pseudocode_available\": true, \"callees\": [], \"best_proposal\": {\"proof\": \"analysis/final-mix/recovery-experiments/fm_scalar_06.verification.json\", \"source\": \"analysis/final-mix/recovery-experiments/fm_scalar_06.cpp\", \"compiled_bytes\": 68, \"target_bytes\": 40, \"different_words\": 16}}",
-    "artifacts": "{\"source\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_0023e788_v3_0.cpp\", \"source_sha256\": \"3c7fb5b3f9613a800bd64f83ebbad7ee7aa20777351db3998e5427df266d5170\", \"proof\": \"C:\\\\Users\\\\KoZa\\\\Documents\\\\AGENTS\\\\Codex\\\\analysis\\\\final-mix\\\\recovery-experiments\\\\eight-hour-20261011\\\\eight_hour_0023e788_v3_0.verification.json\", \"proof_sha256\": \"d93968fcc9907f11f82410f64b791469b09b55a4b5fc6b043443f23684911791\"}",
-    "curated": "analysis/final-mix/recovery-experiments/fm_primary_queueomicron_recovered_0023e788.cpp"
-  }
-]

@@ -1,3 +1,0 @@
-# 001e5fd8 exact proposal
-
-All 36 original bytes are independently compared in fm_queue_primary_001e5fd8_f54e20d0_delayslot.verification.json. The hardware mode at 0x10000010 is read, ORed with 0x83 and written, followed by counter zero at 0x10000000. Typed volatile accesses preserve their order. The unmodified plain compiler proposal has 32 bytes and moves the counter store into the return delay slot. An explicit source NOP after the stores lets the pinned compiler schedule the original return delay-slot NOP, giving all 36 bytes exactly. No raw executable patch, manual epilogue, boundary change or compiler-flag change was used.

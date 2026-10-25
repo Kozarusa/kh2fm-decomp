@@ -1,7 +1,0 @@
-{
-  "start_utc": "2026-10-09T06:32:21Z",
-  "minimum_end_utc": "2026-10-09T10:32:21Z",
-  "baseline_exact": 5631,
-  "report_required": true,
-  "blocker_policy": "Record evidence and move to another target."
-}
