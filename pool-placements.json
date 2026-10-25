@@ -3,11 +3,39 @@
   "slpm_sha256": "d869ce4b8edd61cb978c4ff9ede595fe4d7d7b21cbb96a145275217120d8bc87",
   "entries": [
     {
+      "function": "00155f40",
+      "section": ".rodata",
+      "address": "0036b2d8",
+      "size": 20,
+      "original_sha256": "65d6be5c1be5d60a3db6a6df9b326a77b94f4a002b3e6d2a903b391ab54ebe00"
+    },
+    {
       "function": "00192cc0",
       "section": ".rodata",
       "address": "0036ce14",
       "size": 128,
       "original_sha256": "a3abb315ff300fcced69847b71ddb856fe72a2f799c956c6efe05adf34b5b2f6"
+    },
+    {
+      "function": "00198040",
+      "section": ".rodata",
+      "address": "0036d0ac",
+      "size": 28,
+      "original_sha256": "053ffa295661f770691c7d2ef7ffc807e5df56664df155cf60d4f5e3142b1d15"
+    },
+    {
+      "function": "001991a8",
+      "section": ".rodata",
+      "address": "0036d0d0",
+      "size": 480,
+      "original_sha256": "475320b2d0d390045b9b9edcac9acef289ecfa295cac7fb934adb875df97324d"
+    },
+    {
+      "function": "0019bc38",
+      "section": ".rodata",
+      "address": "0036d368",
+      "size": 56,
+      "original_sha256": "f562c4e16d133e046d373a73e63d374a16572a9600b2da5303c36f0782cbeff6"
     },
     {
       "function": "001aaea8",
@@ -29,6 +57,41 @@
       "address": "0036e950",
       "size": 32,
       "original_sha256": "22d9ba2ce4ed4a03d257b97fea9437292949a7f9405fcb825011e8ede9e79cf6"
+    },
+    {
+      "function": "001e3590",
+      "section": ".rodata",
+      "address": "0036eaf8",
+      "size": 48,
+      "original_sha256": "ef9f5f5b0b1b2730541b4b0e5857c310b68a32af5033e5bf1a18fc8d39aabbc6"
+    },
+    {
+      "function": "001e35f0",
+      "section": ".rodata",
+      "address": "0036eb28",
+      "size": 52,
+      "original_sha256": "17576db300073b84f92d935fcac42443db665bbfd96cf9e6941ab023f0ee38c2"
+    },
+    {
+      "function": "002642a8",
+      "section": ".rodata",
+      "address": "003732a0",
+      "size": 68,
+      "original_sha256": "e0e34828defc4b46ea1d1ec7ea4f8c7c5ff83d5e1e8394d5af35c4409b2d4ac6"
+    },
+    {
+      "function": "0029ecf0",
+      "section": ".rodata",
+      "address": "00374aac",
+      "size": 36,
+      "original_sha256": "228560a262b7ce0297915aa05d7cfe0717b11ea2b24b532be79dc9975f72e01d"
+    },
+    {
+      "function": "002b3b78",
+      "section": ".rodata",
+      "address": "00374c80",
+      "size": 28,
+      "original_sha256": "19a52588676693c016a95e942d5a5e13e0164921059d94632e006624bde6d821"
     },
     {
       "function": "002cb188",
