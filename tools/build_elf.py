@@ -9,8 +9,11 @@ import subprocess
 from dataclasses import dataclass
 from pathlib import Path
 
+import pool_manifest
 from common import (
+    CTORS_VADDR,
     GENERATED_DIR,
+    MAIN_VADDR,
     REGISTRY_TSV,
     ROOT,
     SLPM_PATH,
@@ -34,6 +37,8 @@ OBJECTS_MK_OUT = GENERATED_DIR / "objects.mk"
 LAYOUT_STATUS_OUT = GENERATED_DIR / "layout_status.tsv"
 SYMBOLS_LD_OUT = GENERATED_DIR / "symbols.ld"
 FULL_LINKED_ELF = ROOT / "out" / "linked.tmp.elf"
+# tool2 patch: hash-bound placement manifest for jump tables / float literal pools (see tools/pool_manifest.py)
+POOL_MANIFEST_PATH = ROOT / "pool-placements.json"  # fixed location, no override (it must be in the inputs stamp)
 INPUT_STAMP_SUFFIXES = {".c", ".cc", ".cp", ".cpp", ".cxx", ".h", ".hpp", ".s", ".S"}
 SOURCE_SUFFIXES = {".c", ".cc", ".cp", ".cpp", ".cxx", ".s", ".S"}
 HEADER_SUFFIXES = {".h", ".hpp"}
@@ -323,6 +328,8 @@ def compute_incremental_state(
     layout_state = {
         "layout_status": _path_stamp(LAYOUT_STATUS_OUT),
         "registry": _path_stamp(REGISTRY_TSV),
+        # tool2 patch: editing the pool manifest forces a non-incremental normalize (re-verifies every pool)
+        "pool_manifest": _path_stamp(POOL_MANIFEST_PATH),
     }
     cache = _load_cache()
     incremental = (
@@ -372,6 +379,11 @@ def iter_build_inputs() -> list[Path]:
         for path in base.rglob("*"):
             if path.is_file() and path.suffix in INPUT_STAMP_SUFFIXES:
                 inputs.append(path)
+    # tool2 patch: the pool manifest is a build input. Make's mtime check alone is not enough (a restored or
+    # `mv`ed manifest keeps an old mtime and would leave a kh2.elf built without it), so it joins the stamp that
+    # records [mtime, size] per input and fires on any change, addition or removal.
+    if POOL_MANIFEST_PATH.is_file():
+        inputs.append(POOL_MANIFEST_PATH)
     inputs.sort(key=lambda path: path.as_posix())
     return inputs
 
@@ -646,6 +658,21 @@ def section_patterns(sym: str) -> list[str]:
     return [f".text.{sym}", f".gnu.linkonce.t.{sym}"]
 
 
+def load_pool_groups(check_objects: bool = True) -> list:
+    """Load + validate the pool manifest (empty list when no manifest exists, so the default build is unchanged)."""
+    if not POOL_MANIFEST_PATH.exists():
+        return []
+    slpm = SLPM_PATH.read_bytes()
+    entries = pool_manifest.load_manifest(
+        POOL_MANIFEST_PATH, slpm, addr_to_file_offset, MAIN_VADDR, CTORS_VADDR
+    )
+    boundaries, layout_sources, _symbol_map, by_source = load_cxx_rows()
+    groups = pool_manifest.build_groups(entries, layout_sources, list(boundaries.values()), by_source)
+    if check_objects:
+        pool_manifest.check_objects(groups, ROOT, src_to_obj)
+    return groups
+
+
 def align_native_function_section(obj: Path, symbol: TextSym, address: int) -> None:
     """Keep word-aligned native entry points from acquiring linker padding.
 
@@ -724,6 +751,18 @@ def generate_link_sections() -> int:
             lines.append(f"    KEEP(*({pattern}))\n")
         lines.append("  }\n")
 
+    # tool2 patch: pool placements. Listed before kh2.ld's generic .cxx_rodata/.cxx_data catch-alls so the
+    # named object section is taken here first (ld uses the first matching statement).
+    try:
+        groups = load_pool_groups()
+    except Exception as exc:  # any manifest problem (PoolError, bad JSON, bad types) must fail the build cleanly
+        print(f"pool-placement: ERROR {exc}")
+        (ROOT / "kh2.elf").unlink(missing_ok=True)  # no stale MATCHED-able ELF after a manifest error
+        return 1
+    if groups:
+        lines.append("  /* pool placements from pool-placements.json */\n")
+        lines.extend(pool_manifest.ld_lines(groups, src_to_obj))
+
     CXX_SECTIONS_OUT.parent.mkdir(parents=True, exist_ok=True)
     CXX_SECTIONS_OUT.write_text("".join(lines))
     return 0
@@ -756,6 +795,16 @@ def try_fast_link(linked_elf: Path, out_elf: Path, full_linked_elf: Path = FULL_
     if cache.get("cxx_sections_stamp") != _path_stamp(CXX_SECTIONS_OUT):
         return 1
     if cache.get("symbols_stamp") != _path_stamp(SYMBOLS_LD_OUT):
+        return 1
+
+    # tool2 patch: a changed source that owns a placed pool must go through the full link, where the pool is
+    # placed and byte-checked. (Its objects also have non-text alloc sections, which already block fast-link;
+    # this is an explicit second guard.)
+    try:
+        pool_sources = {g.source for g in load_pool_groups(check_objects=False)}
+    except Exception:
+        return 1  # the full link path reports the manifest error
+    if changed_sources & pool_sources:
         return 1
 
     prev_linked_syms = {sym.name: sym for sym in load_text_symbols(full_linked_elf)}
@@ -868,6 +917,28 @@ def normalize_final_elf(linked_elf: Path, out_elf: Path) -> int:
     else:
         linked_data = b""
 
+    # tool2 patch: HARD ASSERTION. The output ELF is the original with function text swapped in, so it never
+    # contains the linked pool bytes and `make verify` cannot see them. Compare them here, for every pool whose
+    # source object was (re)linked. Any difference (wrong literal, wrong table entry, wrong size/placement) fails.
+    if changed_sources:
+        try:
+            pool_groups = [g for g in load_pool_groups(check_objects=False) if g.source in changed_sources]
+        except Exception as exc:
+            print(f"pool-placement: ERROR {exc}")
+            out_elf.unlink(missing_ok=True)
+            return 1
+        if pool_groups:
+            slpm_bytes = SLPM_PATH.read_bytes()
+            pool_errors = pool_manifest.verify_linked(linked_elf, pool_groups, slpm_bytes, addr_to_file_offset)
+            for msg in pool_errors:
+                print(f"pool-placement: ERROR {msg}")
+            if pool_errors:
+                print(f"pool-placement: FAIL ({len(pool_errors)} pool(s) differ from the original)")
+                # never leave a stale kh2.elf that a bare `objdiff.py verify` could still report as MATCHED
+                out_elf.unlink(missing_ok=True)
+                return 1
+            print(f"pool-placement: OK {len(pool_groups)} pool(s) byte-identical to the original")
+
     for source, rows in sorted(by_source.items()):
         if source not in changed_sources:
             continue
@@ -968,6 +1039,54 @@ def normalize_final_elf(linked_elf: Path, out_elf: Path) -> int:
     return 0
 
 
+def derive_pool_entries(sources: list[str]) -> int:
+    """Print candidate manifest entries for registered sources (does NOT write the manifest).
+
+    Method = tool1/probe_auto.py: for each HI16/LO16 relocation of a registered function's text section that
+    points into a .rodata/.sdata/... input section, take the same two instruction words from the ORIGINAL SLPM
+    and recover the original section base. The result is only a candidate: the manifest's original_sha256 pins
+    the original bytes and the post-link assertion proves the derivation, so a wrong candidate cannot pass.
+    """
+    _boundaries, _layout_sources, _symbol_map, by_source = load_cxx_rows()
+    slpm = SLPM_PATH.read_bytes()
+    entries = []
+    exit_code = 0
+    for source in sources:
+        rows = by_source.get(source)
+        if not rows:
+            print(f"pool-derive: {source}: not a registered C++ source in layout_status", flush=True)
+            exit_code = 1
+            continue
+        obj = ROOT / src_to_obj(source)
+        obj_syms = load_obj_text_symbols(obj)
+        for addr, symbol in sorted(rows):
+            obj_sym = pick_obj_symbol(obj_syms, symbol, addr)
+            if obj_sym is None:
+                continue
+            found = None
+            for pattern in section_patterns(obj_sym.name):
+                try:
+                    found, notes = pool_manifest.derive_for_function(obj, pattern, addr, slpm, addr_to_file_offset)
+                    break
+                except KeyError:
+                    continue
+            if found is None:
+                continue
+            for note in notes:
+                print(f"pool-derive: {source} {addr:08x}: note: {note}", flush=True)
+            for section, base, size in found:
+                want = slpm[addr_to_file_offset(base):addr_to_file_offset(base) + size]
+                entries.append({
+                    "function": f"{addr:08x}",
+                    "section": section,
+                    "address": f"{base:08x}",
+                    "size": size,
+                    "original_sha256": pool_manifest.sha(want),
+                })
+    print(json.dumps({"version": 1, "slpm_sha256": pool_manifest.sha(slpm), "entries": entries}, indent=2))
+    return exit_code
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         description="ELF build helpers: generate layout outputs, linker sections, and normalize the final ELF"
@@ -1005,6 +1124,12 @@ def build_parser() -> argparse.ArgumentParser:
     )
     normalize.add_argument("--linked-elf", required=True, help="temporary linked ELF (relaxed layout)")
     normalize.add_argument("--out-elf", required=True, help="output ELF path")
+
+    derive = sub.add_parser(
+        "pool-derive",
+        help="print candidate pool-placements.json entries derived from the compiled objects of registered sources",
+    )
+    derive.add_argument("sources", nargs="+", help="registered source paths relative to the repo root")
     return parser
 
 
@@ -1022,6 +1147,8 @@ def main() -> int:
         return try_fast_link(Path(args.linked_elf), Path(args.out_elf), Path(args.full_linked_elf))
     if args.cmd == "normalize":
         return normalize_final_elf(Path(args.linked_elf), Path(args.out_elf))
+    if args.cmd == "pool-derive":
+        return derive_pool_entries(args.sources)
     parser.error(f"unknown command: {args.cmd}")
     return 2
 

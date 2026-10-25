@@ -15,6 +15,9 @@ TMP_LD := $(GEN)/kh2.temp.ld
 LINK_RSP := $(OUT)/link.rsp
 SLPM := $(ROOT)/SLPM_666.75
 
+# Optional hash-bound pool placement manifest (see tools/pool_manifest.py); a prerequisite only when it exists.
+POOL_MANIFEST := $(wildcard $(ROOT)/pool-placements.json)
+
 MAKE_JOBS ?= $(shell nproc 2>/dev/null || getconf _NPROCESSORS_ONLN 2>/dev/null || echo 1)
 KH2_PS2_IMAGE ?= kh2-local/ps2-compiler:3.2-ee-040921-objdiff
 
@@ -68,7 +71,7 @@ $(BOUNDARIES):
 	@echo "error: missing $(BOUNDARIES)" >&2
 	@exit 1
 
-$(GEN)/objects.mk $(GEN)/layout_status.tsv $(GEN)/symbols.ld: $(BOUNDARIES) $(ROOT)/functions.tsv $(TOOLS)/build_elf.py $(TOOLS)/common.py
+$(GEN)/objects.mk $(GEN)/layout_status.tsv $(GEN)/symbols.ld: $(BOUNDARIES) $(ROOT)/functions.tsv $(TOOLS)/build_elf.py $(TOOLS)/common.py $(TOOLS)/pool_manifest.py
 	@mkdir -p $(GEN)
 	@python3 $(TOOLS)/build_elf.py objects
 
@@ -84,7 +87,7 @@ $(TMP_LD): $(ROOT)/kh2.ld $(GEN)/cxx_sections.ld
 	     -e '/\/\* @CXX_SECTIONS@ \*\//d' $(ROOT)/kh2.ld > $@
 
 $(TARGET): $(SLPM) $(BOUNDARIES) $(GEN)/objects.mk $(GEN)/layout_status.tsv $(GEN)/symbols.ld $(ROOT)/functions.tsv $(ROOT)/kh2.ld \
-           $(TOOLS)/build_elf.py $(TOOLS)/common.py $(BUILD_INPUTS_STAMP)
+           $(TOOLS)/build_elf.py $(TOOLS)/pool_manifest.py $(TOOLS)/common.py $(BUILD_INPUTS_STAMP) $(POOL_MANIFEST)
 	@$(PS2_PREP)
 	@$(DOCKER_RUN_PS2) bash -lc '/usr/bin/make -j"$(MAKE_JOBS)" inner-all'
 	@echo "Built $@"
