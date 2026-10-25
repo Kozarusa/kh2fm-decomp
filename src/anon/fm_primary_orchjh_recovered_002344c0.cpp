@@ -1,31 +1,26 @@
 #include "../common/types.h"
+
+struct Request {
+    s32 type;
+    s32 serial;
+    s32 args[6];
+};
+
 extern "C" s32 D_0035e360;
 extern "C" s32 D_0035e368;
-extern "C" u8 D_01dadc00[];
+extern "C" Request D_01dadc00[64];
 
 s32 func_002344c0(s32 first, s32 second, s32 third, s32 fourth, s32 fifth) {
-    s32 index = D_0035e360;
     s32 serial = D_0035e368;
-    s32* pointer = (s32*)(D_01dadc00 + index * 32);
-    register s32 nextIndex asm("$13") = (index + 1) & 63; // why: original next index uses t5
-    asm("" : "+r"(nextIndex)); // why: original next index computation precedes serial increment
-    asm("" : "+r"(serial) : "r"(nextIndex)); // why: original masked index precedes serial increment
-    register s32 nextSerial asm("$12") = serial + 1; // why: original next serial uses t4
-    asm("" : "+r"(nextSerial)); // why: retains original next serial allocation
-    pointer[6] = fifth;
-    asm volatile("" ::: "memory"); // why: keeps store order
-    register s32 tag asm("$15") = 9; // why: original tag uses t7 before global stores
-    asm volatile("" : "+r"(tag) : : "memory"); // why: keeps tag materialization before global stores
-    register s32 result asm("$2") = serial; // why: original return serial uses v0 before global stores
-    asm volatile("" : "+r"(result) : : "memory"); // why: materializes returned serial before global stores
-    D_0035e360 = nextIndex;
-    D_0035e368 = nextSerial;
-    pointer[0] = tag;
-    pointer[2] = first;
-    pointer[3] = second;
-    pointer[4] = third;
-    pointer[5] = fourth;
-    asm volatile("" : "+r"(serial) : : "memory"); // why: keeps serial store after other payload stores
-    pointer[1] = serial;
-    return result;
+    Request* request = &D_01dadc00[D_0035e360];
+    request->type = 9;
+    request->serial = serial;
+    request->args[0] = first;
+    request->args[1] = second;
+    request->args[2] = third;
+    request->args[3] = fourth;
+    request->args[4] = fifth;
+    D_0035e360 = (D_0035e360 + 1) & 63;
+    D_0035e368 = serial + 1;
+    return serial;
 }
