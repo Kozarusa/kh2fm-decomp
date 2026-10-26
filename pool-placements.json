@@ -66,6 +66,13 @@
       "original_sha256": "e00e5eb9444182f352323374ef4e08ebcb784725fdd4fd612d7730540b3e0c8c"
     },
     {
+      "function": "00159f90",
+      "section": ".sdata",
+      "address": "0036b380",
+      "size": 8,
+      "original_sha256": "5daaae6a57513aa1210f48f3121ebca84a81681683a0caac3375d6a17e8b8377"
+    },
+    {
       "function": "0015a5a8",
       "section": ".sdata",
       "address": "0036b3a0",
