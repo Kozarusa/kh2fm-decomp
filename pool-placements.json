@@ -283,6 +283,13 @@
       "original_sha256": "2238f30df488055daf5e8f362cf904e370011a172d20df193c1b7ae8e5db8e01"
     },
     {
+      "function": "001f04a8",
+      "section": ".sdata",
+      "address": "0037012c",
+      "size": 4,
+      "original_sha256": "719b774d7d3b2ebd5e2ce1cde4f59a2ebb8f1f7069daa0baecc564a83abd5bc6"
+    },
+    {
       "function": "0021f5d8",
       "section": ".sdata",
       "address": "00370b6c",
