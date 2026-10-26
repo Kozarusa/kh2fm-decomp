@@ -528,6 +528,13 @@
       "original_sha256": "03e3c2420f5066a5fa6e36735ed8cc4f6a251046263e1a6024f009deeee3b952"
     },
     {
+      "function": "002ecb10",
+      "section": ".sdata",
+      "address": "00376174",
+      "size": 4,
+      "original_sha256": "80c8a717ccd70c8809eb78e6a9591c003e11c721fe0ccaf62fd592abda1a5593"
+    },
+    {
       "function": "002eda90",
       "section": ".sdata",
       "address": "003761a4",
