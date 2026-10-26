@@ -5,10 +5,8 @@ extern "C" s8 D_00371f30[];
 s32 func_0024ac88(void) {
     s32 result = 1;
     s8* base = D_00371f30;
-    asm("" : "+r"(base)); // why: original materializes the table base before adding 28
     s8* cursor = base + 28;
-    asm("" : "+r"(cursor)); // why: original forms the cursor before the result flag
-    register s32 index asm("$16"); // why: original loop counter occupies s0
+    s32 index;
     for (index = 0; index < 4; index++) {
         s8 flag = *cursor++;
         if (flag < 0) break;
@@ -30,3 +28,4 @@ s32 func_0024ac88(void) {
     }
     return result;
 }
+

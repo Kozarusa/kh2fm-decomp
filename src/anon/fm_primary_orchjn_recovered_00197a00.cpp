@@ -13,16 +13,16 @@ void func_00197a00(u32 value) {
             return;
         }
         u32 object = D_0035037c;
-        u8 flag = *(volatile u16*)(*(u8**)(object + 0x3c) + 2) & 1;
+        u16 half = *(u16*)(*(u8**)(object + 0x3c) + 2);
+        u8 flag = half & 1;
         if (object != 0) {
             func_00196e00(object);
             func_00105110(object);
         }
         if (flag) {
-            register s32 count asm("$15") = D_01c61b40; // why: original keeps the counter in t7
+            s32 count = D_01c61b40;
             s32 previous = count;
             count = count + 1;
-            asm("" : "+r"(count)); // why: keeps the incremented counter in t7
             D_01c61b40 = count;
             if (func_001991a8(0x4c, previous) != 0) {
                 return;
@@ -31,3 +31,5 @@ void func_00197a00(u32 value) {
     }
     func_001024a8(value);
 }
+
+

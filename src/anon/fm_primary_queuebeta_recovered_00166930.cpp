@@ -1,12 +1,9 @@
 #include "../common/types.h"
 extern "C" void func_001666a0(void);
-
-void func_00166930(u32 p) {
-  func_001666a0();
-  u32 one=1;
-  asm volatile("" : "+r"(one));
-  *(volatile u16*)(p+10)=0;
-  *(volatile u8*)(p+14)=one;
-  asm volatile("" ::: "memory");
-  *(volatile u16*)(p+12)=0;
+struct Object { u8 pad[10]; u16 field0A; u16 field0C; u8 field0E; };
+void func_00166930(Object* object) {
+    func_001666a0();
+    object->field0C = 0;
+    object->field0E = 1;
+    object->field0A = 0;
 }

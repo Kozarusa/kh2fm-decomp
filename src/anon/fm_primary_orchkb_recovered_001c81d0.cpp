@@ -10,13 +10,10 @@ extern "C" u32 func_00105110(...);
 u32 func_001c81d0(u32* object) {
     object[0] = (u32)D_00351e18;
     u32* entry = D_01d49960;
-    // why: original keeps the live-entry count in t4 (register 12)
-    register s32 count asm("$12") = 0;
-    // why: original keeps the loop index in t5 (register 13)
-    register s32 index asm("$13");
+    s32 count = 0;
+    s32 index;
     for (index = 1; index >= 0; index--) {
-        // why: original loads each table entry into t7 (register 15)
-        register u32 value asm("$15") = *entry;
+        u32 value = *entry;
         if (value != 0) {
             if (value == (u32)object) {
                 *entry = 0;
@@ -31,10 +28,8 @@ u32 func_001c81d0(u32* object) {
     }
     object[0] = (u32)D_00345c08;
     if ((s32)object != -3184) {
-        // why: original keeps the loop cursor in t7 (register 15), as accepted 001a4060
-        register u32* cursor asm("$15") = object + 0x334;
-        // why: original keeps the loop end in t6 (register 14), as accepted 001a4060
-        register u32* end asm("$14") = object + 0x31c;
+        u32* cursor = object + 0x334;
+        u32* end = object + 0x31c;
         while (1) {
             if (end == cursor) {
                 cursor = cursor - 4;
@@ -47,3 +42,4 @@ u32 func_001c81d0(u32* object) {
     func_00320fa8(object);
     return func_00105110(object);
 }
+
