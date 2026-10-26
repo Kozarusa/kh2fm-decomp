@@ -227,6 +227,13 @@
       "original_sha256": "140efb356462f70dd1c7f1dfb10bcc07d0f14d439043fb9e9d50f4d7be71ea96"
     },
     {
+      "function": "001c5f90",
+      "section": ".sdata",
+      "address": "0036ded4",
+      "size": 8,
+      "original_sha256": "a8d20ad809f9dff904283d981f88829cd817101153f19db981ff9d32d6ea2ce4"
+    },
+    {
       "function": "001cbf50",
       "section": ".sdata",
       "address": "0036e164",
@@ -456,6 +463,13 @@
       "address": "00375db8",
       "size": 4,
       "original_sha256": "bfdc115a065d54c11547d050bc55134b079bc62fcb88bff853d2fad5f136b711"
+    },
+    {
+      "function": "002dd730",
+      "section": ".sdata",
+      "address": "00375dd8",
+      "size": 4,
+      "original_sha256": "e00e5eb9444182f352323374ef4e08ebcb784725fdd4fd612d7730540b3e0c8c"
     },
     {
       "function": "002de968",
