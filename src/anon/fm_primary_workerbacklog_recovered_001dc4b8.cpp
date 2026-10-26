@@ -1,15 +1,11 @@
 #include "../common/types.h"
 
-asm(".globl DAT_01d6bb00
-	DAT_01d6bb00 = 0x1d6bb00
-");
+struct Object;
+typedef void (*Method)(Object*, u32);
+struct Object { Method* vtable; };
+extern "C" Object* D_01d5bb00;
 
-extern "C" u32 DAT_01d6bb00;
-
-typedef void (*code)(u32, u32);
-
-void func_001dc4b8(u32 param_1)
-{
-  (*(code *)(*(u32 *)DAT_01d6bb00 + 4))(DAT_01d6bb00, param_1);
-  asm volatile ("");
+void func_001dc4b8(u32 param_1) {
+    Object* object = D_01d5bb00;
+    object->vtable[1](object, param_1);
 }
