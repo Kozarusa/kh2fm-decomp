@@ -7,8 +7,8 @@ void func_0014ba90(u32* object)
 {
  func_0014b290(object);
  u64 data=D_0036b0e0;
- register u64 flags asm("$14")=1ULL<<60;
- asm("" : "+r"(flags));
+ u64 flags =1ULL<<60;
+ 
  *(u64*)(object+0x48)=flags|0x8001;
  *(u64*)(object+0x4a)=14;
  *(u64*)(object+0x4c)=data;

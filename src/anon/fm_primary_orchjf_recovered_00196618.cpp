@@ -16,7 +16,7 @@ s32 func_00196618(u32 first, u32 second) {
             }
             table = D_01c61b08;
             index++;
-            asm volatile("" ::: "memory"); // why: original reloads the table pointer every iteration
+             // why: original reloads the table pointer every iteration
         } while (index < (s32)table->count);
     }
     return -1;

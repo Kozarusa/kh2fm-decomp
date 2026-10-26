@@ -1,4 +1,5 @@
 #include "../common/types.h"
+
 extern "C" bool func_00181500(s64);
 extern "C" u8 func_001a3570(...);
 
@@ -8,7 +9,6 @@ s32 func_00294480(u8* object) {
         if (func_00181500(*(u16*)object)) result = 1;
     } else {
         s32 value = func_001a3570(*(u16*)object);
-        asm("" : "+r"(value)); // why: preserve signed full-word comparison of the callee result
         result = value > 0;
     }
     return result;
