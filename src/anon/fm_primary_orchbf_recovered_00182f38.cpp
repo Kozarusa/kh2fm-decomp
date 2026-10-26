@@ -7,9 +7,8 @@ extern "C" void func_0019a308(s32);
 void func_00182f38(void) {
     s32 index = 0;
     if (D_0034ed00 > 0) {
+        // why: folding the base local into D_01c60588 + 2 compiles 4 bytes shorter (measured)
         s32* base = D_01c60588;
-        // why: keeps the table base in its own register before the +8 field offset is added
-        asm("" : "+r"(base));
         s32* entry = base + 2;
         do {
             index++;

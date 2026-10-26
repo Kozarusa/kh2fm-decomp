@@ -1,10 +1,12 @@
 #include "../common/types.h"
-union WordHalfCell { s32 word; s16 halves[2]; };
-extern "C" WordHalfCell* func_001058e8();
+// why: the outputs are word/halfword cells; with plain s32* the compiler loads both halves before the first store (measured, 4 words off)
+union Cell { s32 word; s16 half[2]; };
+struct Context { u8 pad[0x41a0]; s16 low; s16 high; };
+extern "C" Context* func_001058e8();
 
-void func_00242980(WordHalfCell* first,WordHalfCell* second)
+void func_00242980(Cell* first, Cell* second)
 {
- WordHalfCell* context=func_001058e8();
- first->word=context[0x1068].halves[0];
- second->word=context[0x1068].halves[1];
+    Context* context = func_001058e8();
+    first->word = context->low;
+    second->word = context->high;
 }

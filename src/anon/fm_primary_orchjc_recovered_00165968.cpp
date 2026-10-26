@@ -7,7 +7,7 @@ void func_00165968() {
     if (base != 0) {
         u8* cursor = (u8*)base + 0x400;
         while (1) {
-            asm("" : "+r"(cursor)); // why: keeps the empty element loop the original runs
+            // why: testing the end in the loop head instead compiles 24 bytes shorter (measured)
             if ((u8*)base == cursor) {
                 break;
             }

@@ -1,16 +1,14 @@
 #include "../common/types.h"
+struct Object { void* vtable; };
+extern "C" void func_0023c098(void*);
+extern "C" void func_002369f0(void*);
+extern "C" u8 D_00363880;
+extern "C" u8 D_003637e0;
 
-extern "C" void func_0023c098(u32);
-extern "C" void func_002369f0(u32);
-extern "C" char func_00363880;
-extern "C" char func_003637e0;
-
-void func_00325aa0(u32 param_1)
+void func_00325aa0(Object* object)
 {
-  *(u32 *)param_1 = (u32)(long)&func_00363880;
-  func_0023c098(param_1 + 64);
-  func_002369f0(param_1 + 40);
-  asm volatile ("" ::: "memory");
-  *(u32 *)param_1 = (u32)(long)&func_003637e0;
-  return;
+    object->vtable = &D_00363880;
+    func_0023c098((u8*)object + 64);
+    func_002369f0((u8*)object + 40);
+    object->vtable = &D_003637e0;
 }

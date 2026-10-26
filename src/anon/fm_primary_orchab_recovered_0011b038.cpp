@@ -11,9 +11,8 @@ void func_0011b038(u64 object) {
     f32 vec[4];
     f32 x = source[6];
     f32 z = source[14];
+    // why: a zero held in a local shared by both stores; two 0.0f literals compile 4 bytes shorter (measured)
     f32 zero = 0.0f;
-    // why: keeps the zero in a float register (mtc1) shared by both stores
-    asm("" : "+f"(zero));
     vec[0] = x;
     vec[2] = z;
     vec[1] = zero;

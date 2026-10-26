@@ -1,9 +1,11 @@
 #include "../common/types.h"
-union Value { s16 half[2]; s32 word; };
+// why: remainder/quotient alias the s16 fields; with plain s32* the second divisor load is merged away (measured, 6 words off)
+union Cell { s16 half[2]; s32 word; };
+struct Divider { s16 base; u8 pad0[16]; s16 offset; u8 pad1[4]; s16 count; };
 
-void func_0028b120(Value* object,Value* remainder,Value* quotient,s32 value) {
-    if (value < 0) value = object[0].half[0] + object[4].half[1];
-    s16 count = object[6].half[0];
+void func_0028b120(Divider* object,Cell* remainder,Cell* quotient,s32 value) {
+    if (value < 0) value = object->base + object->offset;
+    s16 count = object->count;
     remainder->word = value % count;
-    quotient->word = value / object[6].half[0];
+    quotient->word = value / object->count;
 }

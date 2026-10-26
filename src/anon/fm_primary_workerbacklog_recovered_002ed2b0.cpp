@@ -1,16 +1,12 @@
 #include "../common/types.h"
+struct Object { void* vtable; };
+extern "C" void func_001c23a8(Object*,u32,u32,u32,u32,u32,u32);
+extern "C" void* D_00363748;
+extern "C" u8 D_00363758;
 
-extern "C" void func_001c23a8(u32,u32,u32,u32,u32,u32,u32);
-extern "C" u32 DAT_00363748;
-asm(".globl DAT_00363748
-	DAT_00363748 = 0x363748
-");
-extern "C" char func_00363758;
-
-void func_002ed2b0(u32 param_1, u32 param_2, u32 param_3)
+void func_002ed2b0(Object* object, u32 second, u32 third)
 {
-  func_001c23a8(param_1, param_2, 0, 1, 0, 128, param_3);
-  *(u32 *)param_1 = (u32)(long)&func_00363758;
-  DAT_00363748 = param_1;
-  return;
+    func_001c23a8(object, second, 0, 1, 0, 128, third);
+    object->vtable = &D_00363758;
+    D_00363748 = object;
 }
